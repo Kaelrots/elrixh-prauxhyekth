@@ -28,6 +28,14 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build
+      # ---- 여기서부터 추가 ----
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run mirror_assets.py
+        run: python mirror_assets.py
+      # ---- 여기까지 추가 ----
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
