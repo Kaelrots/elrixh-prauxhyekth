@@ -1,0 +1,501 @@
+/* ===== Prism 헤더 색상 변수 ===== */
+:root {
+  --color-h1: #88DFD0;
+  --color-h2: #95C69E;
+  --color-h3: #BF8383;
+  --color-h4: #FFD700;
+  --color-h5: #FFA500;
+  --color-h6: #FF69B4;
+}
+
+:root {
+  --color-h1: #88DFD0;
+  --color-h2: #95C69E;
+  --color-h3: #BF8383;
+  --color-h4: #FFD700;
+  --color-h5: #FFA500;
+  --color-h6: #FF69B4;
+}
+/* ...(위의 기존 코드)... */
+/* 헤더 색상(읽기/라이브 프리뷰) */
+.markdown-preview-view h1 { color: var(--color-h1) !important; }
+span.cm-header-1, .cm-header-1 { color: var(--color-h1) !important; }
+.markdown-preview-view h2 { color: var(--color-h2) !important; }
+span.cm-header-2, .cm-header-2 { color: var(--color-h2) !important; }
+.markdown-preview-view h3 { color: var(--color-h3) !important; }
+span.cm-header-3, .cm-header-3 { color: var(--color-h3) !important; }
+.markdown-preview-view h4 { color: var(--color-h4) !important; }
+span.cm-header-4, .cm-header-4 { color: var(--color-h4) !important; }
+.markdown-preview-view h5 { color: var(--color-h5) !important; }
+span.cm-header-5, .cm-header-5 { color: var(--color-h5) !important; }
+.markdown-preview-view h6 { color: var(--color-h6) !important; }
+span.cm-header-6, .cm-header-6 { color: var(--color-h6) !important; }
+
+/* 존재하는 인링크 (읽기 + 라이브 프리뷰) */
+.markdown-preview-view a.internal-link,
+.markdown-preview-view .internal-link,
+.cm-hmd-internal-link, .cm-link, .cm-underline {
+  color: #88DFD0 !important;
+}
+.markdown-preview-view a.internal-link:hover,
+.markdown-preview-view .internal-link:hover,
+.cm-hmd-internal-link:hover, .cm-link:hover, .cm-underline:hover {
+  color: #BF8383 !important;
+}
+
+/* 존재하지 않는 인링크 (읽기 + 라이브 프리뷰) */
+.markdown-preview-view a.internal-link.is-unresolved,
+.markdown-preview-view .internal-link.is-unresolved,
+.cm-hmd-internal-link.is-unresolved,
+span.cm-hmd-internal-link.is-unresolved,
+.cm-link.is-unresolved,
+span.cm-link.is-unresolved,
+.cm-underline.is-unresolved,
+span.cm-underline.is-unresolved,
+a.internal-link.is-unresolved,
+span[aria-label][class*="is-unresolved"],
+span[class*="is-unresolved"] {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  text-shadow: none !important;
+  filter: none !important;
+  background: none !important;
+}
+
+/* 표 내부 인링크도 동일하게 */
+.markdown-preview-view td a.internal-link,
+.markdown-preview-view td .internal-link {
+  color: #88DFD0 !important;
+}
+.markdown-preview-view td a.internal-link:hover,
+.markdown-preview-view td .internal-link:hover {
+  color: #BF8383 !important;
+}
+.markdown-preview-view td a.internal-link.is-unresolved,
+.markdown-preview-view td .internal-link.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+
+
+/* 문서 제목 색상 */
+.inline-title, .view-header-title {
+  color: #95CCCB !important;
+}
+
+/* ===== 본문/테이블/폰트 ===== */
+body, p, span, div, li, ul, ol, blockquote, td, th,
+h1, h2, h3, h4, h5, h6, input, button, a,
+.markdown-preview-view, .tree-item-self, .search-bar,
+.nav-file-title-content, .nav-folder-title-content {
+  font-family: "Malgun Gothic", "맑은 고딕", Arial, sans-serif !important;
+  color: #E0E0E0 !important;
+}
+
+/* ===== 표 및 중앙정렬/배경 ===== */
+.markdown-preview-view table {
+  border-collapse: collapse;
+}
+
+.markdown-preview-view tr:nth-child(odd),
+.markdown-preview-view tr:nth-child(even) {
+  background-color: unset !important;
+}
+.markdown-preview-view td,
+.markdown-preview-view th,
+table td, table th {
+  text-align: center !important;
+  line-height: 1.4 !important;
+  border: 1px solid #CCF4F9 !important;
+}
+
+/* 편집모드(CM6) 표 셀도 중앙 정렬 */
+/* === 라이브 프리뷰 표 전체를 중앙 정렬로 보여주기 === */
+/* 줄바꿈 대응 */
+table td br {
+  content: '';
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* 표 강조용 span 스타일 */
+span.table-highlight { color: #87DFD0 !important; font-weight: bold; }
+span.hi-red         { color: #BF8383 !important; font-weight: bold; }
+span.hi-blue        { color: #87DFD0 !important; font-weight: bold; }
+span.hi-green       { color: #95C69E !important; font-weight: bold; }
+span.hi-yellow      { color: #FFD700 !important; font-weight: bold; }
+
+/* ===== 인링크 (존재/비존재) ===== */
+/* 존재하는 인링크: 헤더1 컬러, hover시 헤더3 컬러 */
+a.internal-link, .internal-link {
+  color: var(--color-h1, #88DFD0) !important;
+}
+a.internal-link:hover, .internal-link:hover {
+  color: var(--color-h3, #BF8383) !important;
+}
+/* 존재하지 않는 인링크(비존재) : 모든 상황, 표 포함 */
+a.internal-link.is-unresolved,
+table a.internal-link.is-unresolved,
+.markdown-preview-view td a.internal-link.is-unresolved,
+.markdown-preview-view th a.internal-link.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+/* ===== hr(굵은 가로줄) 스타일 ===== */
+hr.hr-thick-1 {
+  height: 2px;
+  background-color: #88DFD0;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-2 {
+  height: 6px;
+  background-color: #88DFD0;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-3 {
+  height: 10px;
+  background-color: #88DFD0;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-4 {
+  height: 2px;
+  background-color: #FFC100; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-5 {
+  height: 4px;
+  background-color: #FFC100; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-6 {
+  height: 6px;
+  background-color: #FFC100; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+
+/* ===== mark(하이라이트) ===== */
+mark, .highlight {
+  background-color: #F1AAAA !important;
+  color: #CCF4F9 !important;
+  border: 1px solid #CCF4F9;
+  border-radius: 0.2em;
+  padding: 0.1em 0.4em;
+}
+
+/* ===== 표 헤더 밑 가로줄 제거 ===== */
+.markdown-preview-view h1,
+.markdown-preview-view h2 {
+  border-bottom: none !important;
+}
+
+/* --- 라이브 프리뷰(CM6) 본문 비존재 인링크 강제 붉은색 --- */
+span.cm-hmd-internal-link.is-unresolved,
+span.cm-link.is-unresolved,
+span.cm-underline.is-unresolved,
+span[class*="cm-hmd-internal-link"].is-unresolved,
+span[class*="cm-link"].is-unresolved,
+span[class*="cm-underline"].is-unresolved,
+span[aria-label][class*="is-unresolved"],
+span[class*="is-unresolved"] {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  background: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+  /* 혹시 테마가 --link-color 변수를 사용한다면 덮어쓰기 */
+  --link-color: #FF5A5A !important;
+}
+
+/* 라이브 프리뷰에서 "비존재 인링크" 모든 span, a, .is-unresolved class에 강제 */
+span.is-unresolved,
+a.is-unresolved,
+.cm-hmd-internal-link.is-unresolved,
+.cm-link.is-unresolved,
+.cm-underline.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-line span.is-unresolved,
+.markdown-source-view.mod-cm6 span.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-link.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-underline.is-unresolved,
+span[aria-label][class*="is-unresolved"],
+span[class*="is-unresolved"] {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  background: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+  --link-color: #FF5A5A !important;
+  /* font-weight: bold !important;  // 필요하면 사용 */
+}
+
+.markdown-source-view.mod-cm6 span.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-line span.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+/* 라이브 프리뷰(편집모드)에서 본문 비존재 인링크를 붉게! */
+span.is-unresolved > a.cm-underline,
+span.is-unresolved > a.cm-hmd-internal-link,
+span.is-unresolved > a.cm-link,
+span.is-unresolved > a.internal-link,
+span.is-unresolved > a {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  background: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+.markdown-preview-view table th {
+  color: #fff !important;
+}
+
+/* === 스크롤바 색상 변경 (Local only) — Publish 스타일 === */
+:root{
+  --scrollbar-size: 10px;
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: var(--color-h1); /* 민트 (#88DFD0) */
+  --scrollbar-thumb-hover: color-mix(in srgb, var(--color-h1) 85%, white);
+  --scrollbar-thumb-active: color-mix(in srgb, var(--color-h1) 70%, white);
+}
+
+/* Chromium/Electron (Obsidian) */
+*::-webkit-scrollbar{
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+*::-webkit-scrollbar-track{
+  background: var(--scrollbar-track);
+}
+*::-webkit-scrollbar-thumb{
+  background-color: var(--scrollbar-thumb);
+  border-radius: 999px;
+  border: 2px solid rgba(0,0,0,.35); /* 다크 테마에서 테두리로 대비 */
+}
+*::-webkit-scrollbar-thumb:hover{  background-color: var(--scrollbar-thumb-hover); }
+*::-webkit-scrollbar-thumb:active{ background-color: var(--scrollbar-thumb-active); }
+*::-webkit-scrollbar-corner{ background: transparent; }
+
+/* Firefox 용(선택) – 데스크톱 앱에선 효과 없을 수 있음 */
+*{
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* ===== 로컬 전용: 표만 줄바꿈 금지 + 넘치면 표 안에서 가로 스크롤 ===== */
+
+/* ===== Live Preview(CM6) — Publish 스타일 테이블 (no-wrap + 내부 가로 스크롤 + 색상) ===== */
+:root{
+  /* Publish와 맞춘 팔레트 */
+  --tbl-header-bg: #40B3A1;   /* 헤더 배경(민트) */
+  --tbl-header-fg: #FFFFFF;   /* 헤더 글자 */
+  --tbl-body-bg:   #202020;   /* 바디 배경 */
+  --tbl-body-fg:   #E0E0E0;   /* 바디 글자 */
+  --tbl-border:    #CCF4F9;   /* 테두리 */
+}
+
+/* ── (LP + 읽기) 표를 문서 가운데 배치 ─────────────────────────── */
+.markdown-source-view.mod-cm6 .cm-table-widget,
+.markdown-source-view.mod-cm6 .table-editor{
+  width: 100% !important;                     /* 표 컨테이너를 문서 폭으로 */
+}
+.markdown-source-view.mod-cm6 .cm-table-widget table,
+.markdown-source-view.mod-cm6 .table-editor table,
+.markdown-preview-view table{
+  margin-left: auto !important;               /* 가운데 정렬 */
+  margin-right: auto !important;
+}
+
+/* (LP) 가로 스크롤은 컨테이너 1개만 쓰고 내부는 스크롤 제거 */
+.markdown-source-view.mod-cm6 .cm-table-widget{
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-editor,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-widget{
+  overflow: visible !important;
+}
+
+/* ── (LP + 읽기) 셀 안 텍스트 가로·세로 중앙 정렬 ─────────────── */
+.markdown-source-view.mod-cm6 .cm-table-widget table th,
+.markdown-source-view.mod-cm6 .cm-table-widget table td,
+.markdown-source-view.mod-cm6 .table-editor th,
+.markdown-source-view.mod-cm6 .table-editor td,
+.markdown-preview-view th,
+.markdown-preview-view td{
+  text-align: center !important;              /* 좌우 중앙 */
+  vertical-align: middle !important;          /* 상하 중앙 */
+  line-height: 1.4 !important;
+}
+
+/* (LP) 코드미러가 아직 셀을 span으로 보여줄 때 대비용(세로/가로 중앙) */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row span.cm-table-cell{
+  display: inline-flex !important;
+  align-items: center !important;             /* 세로 중앙 */
+  justify-content: center !important;         /* 가로 중앙 */
+}
+
+/* === FINAL (CM6 Live Preview 전용): 표 가운데 + 셀 가로/세로 중앙 정렬 === */
+/* 라이브 프리뷰 컨테이너: 표가 넘치면 컨테이너 하나만 가로 스크롤 */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget{
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;     /* 표가 넓을 때 여기서만 가로 스크롤 */
+  overflow-y: visible !important;
+  background: transparent !important;
+}
+
+/* 실제 <table>: 내용 너비 기준 + 문서 가운데 배치 */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget table{
+  width: max-content !important;   /* 내용만큼만 넓이 */
+  max-width: 100% !important;      /* 작으면 문서폭까지만 */
+  margin: 0 auto !important;       /* 가운데 정렬 */
+  border-collapse: collapse !important;
+}
+
+/* 헤더/바디 모든 셀: 좌우/상하 중앙정렬 */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget table th,
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget table td{
+  text-align: center !important;   /* 좌우 중앙 */
+  vertical-align: middle !important; /* 상하 중앙 */
+  line-height: 1.4 !important;
+}
+
+/* 일부 편집 상태에서 셀을 <span>으로 그리는 경우도 중앙 정렬 보정 */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell{
+  display: inline-flex !important;
+  align-items: center !important;  /* 세로 중앙 */
+  justify-content: center !important; /* 좌우 중앙 */
+}
+
+/* === 읽기 모드(미리보기)도 동일하게 일관성 유지 === */
+.markdown-preview-view table{
+  margin: 0 auto !important;       /* 표 전체 가운데 */
+  width: max-content !important;
+  max-width: 100% !important;
+}
+.markdown-preview-view th,
+.markdown-preview-view td{
+  text-align: center !important;   /* 좌우 중앙 */
+  vertical-align: middle !important; /* 상하 중앙 */
+  line-height: 1.4 !important;
+}
+
+/* === 250812: LP 표 가운데 + 셀 중앙정렬 + 헤더/바디 색 적용 (최종 오버라이드) === */
+
+/* 2-1. LP 컨테이너: 가로 스크롤은 여기서만 */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget{
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  background: transparent !important;
+}
+
+/* 2-2. LP 테이블 자체: 내용 너비 기준 + 가운데 정렬 + min-width 해제 */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget table,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget .table-editor table{
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;        /* 가운데 정렬 */
+  border-collapse: collapse !important;
+}
+
+/* 2-3. LP 셀 정렬 (헤더/바디 공통) */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget table th,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget table td,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .table-editor th,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .table-editor td{
+  text-align: center !important;     /* 좌우 중앙 */
+  vertical-align: middle !important; /* 상하 중앙 */
+  line-height: 1.4 !important;
+  border: 1px solid var(--tbl-border, #CCF4F9) !important;
+}
+
+/* 2-4. LP 편집중(span 셀) 보정 */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 2-5. LP 색상 적용 (팔레트 변수 사용) */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget thead th{
+  background: var(--tbl-header-bg, #40B3A1) !important;
+  color: var(--tbl-header-fg, #FFFFFF) !important;
+}
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget tbody th,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget tbody td{
+  background: var(--tbl-body-bg, #202020) !important;
+  color: var(--tbl-body-fg, #E0E0E0) !important;
+}
+
+/* 2-6. 읽기 모드도 동일 적용 (일관성) */
+.markdown-preview-view table{
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  border-collapse: collapse !important;
+}
+.markdown-preview-view thead th{
+  background: var(--tbl-header-bg, #40B3A1) !important;
+  color: var(--tbl-header-fg, #FFFFFF) !important;
+}
+.markdown-preview-view tbody th,
+.markdown-preview-view tbody td{
+  background: var(--tbl-body-bg, #202020) !important;
+  color: var(--tbl-body-fg, #E0E0E0) !important;
+}
+.markdown-preview-view th,
+.markdown-preview-view td{
+  text-align: center !important;
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  border: 1px solid var(--tbl-border, #CCF4F9) !important;
+}
+
+/* === LP 전용: 표 자체를 문서 가운데 정렬 (스크롤/줄바꿈 규칙은 그대로 유지) === */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget{
+  /* 네가 이미 쓰는 가로 스크롤 유지 */
+  overflow-x: auto !important;
+  /* 표가 문서 폭보다 좁을 때 중앙에 놓기 위한 컨테이너 정렬 */
+  text-align: center !important;
+}
+
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget > .table-wrapper,
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget > table{
+  /* 표 덩어리를 인라인 박스로 만들어 컨테이너의 text-align:center를 따르게 함 */
+  display: inline-block !important;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget table{
+  /* 내용 너비 기준으로 중앙 배치, 너무 넓으면 스크롤로 보이도록 */
+  width: max-content !important;
+  max-width: 100% !important;
+}

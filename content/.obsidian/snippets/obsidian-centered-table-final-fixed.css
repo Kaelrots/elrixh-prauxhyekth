@@ -1,0 +1,98 @@
+/* 📌 편집 + 읽기 모드에서 셀 중앙 정렬 + 빈 셀 줄어듦 방지 */
+.markdown-source-view.mod-cm6 .cm-table-widget {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row {
+  display: table-row;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row span.cm-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 6px;
+  min-height: 28px;
+  white-space: normal;
+  word-break: keep-all;
+  line-height: 1.4;
+}
+
+/* 📌 읽기 모드에서 셀 중앙 정렬 */
+.markdown-preview-view td,
+.markdown-preview-view th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 📌 PDF 출력 시에도 셀 중앙 정렬 강제 */
+@media print {
+  table td, table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+}
+
+.markdown-preview-view table td,
+.markdown-preview-view table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* 읽기/편집/PDF 출력 모든 모드에서 중앙 정렬 */
+table td, table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  white-space: normal !important;
+}
+
+/* <br> 줄바꿈 대응 */
+table td br {
+  content: '';
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* PDF 출력 시 강제 중앙 정렬 */
+@media print {
+  table td, table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+  }
+}
+
+/* 편집 모드에서 빈 셀 찌그러짐 방지 + 중앙 정렬 유지 */
+.cm-preview-content table td:empty::before,
+.markdown-source-view.mod-cm6 .cm-line span.cm-table-cell:not(:has(span)):before {
+  content: " ";
+  display: inline-block;
+  min-height: 1.5em;
+  width: 100%;
+}
+
+.markdown-preview-view table {
+  display: table !important;
+  border-collapse: collapse;
+}
+
+.markdown-preview-view td,
+.markdown-preview-view th {
+  border: 1px solid var(--background-modifier-border);
+  padding: 4px;
+}
+
+table td {
+  vertical-align: middle; /* 세로 중앙 정렬 */
+}
+
+table td input[type="checkbox"] {
+  display: block;
+  margin: 0 auto; /* 가로 중앙 정렬 */
+}

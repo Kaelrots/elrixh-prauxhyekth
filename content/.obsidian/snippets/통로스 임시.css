@@ -1,0 +1,298 @@
+/* ==========================================================================
+   통합 로컬 스니펫 (V16: 원본 디자인 복구 + 중앙 정렬 완벽 해결)
+   ========================================================================== */
+
+/* 🌌 [FONT] Elruhngara (엘루닉어 엘룬 문자 가라 폰트) - 로컬용
+* 전제: 윈도우/맥에 폰트 파일이 설치되어 있어야 보입니다.
+========================================= */
+@font-face {
+    font-family: 'Elruhngara';
+    /* PC에 설치된 폰트 이름들을 샅샅이 뒤져서 연결합니다 */
+    src: local('Elruhngara'), local('Elruhngara Regular'), local('Elruhngara-Regular');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. 적용 클래스 (두 가지 이름 모두 지원) */
+.elrunik, .elruhn-gara {
+    font-family: 'Elruhngara', sans-serif !important;
+    font-size: 1.5em; /* 잘 보이게 조금 키움 */
+    line-height: 1.4;
+}
+
+/* 3. 편집 모드(Live Preview)에서도 보이게 하기 */
+.markdown-source-view.mod-cm6 .elrunik,
+.markdown-source-view.mod-cm6 .elruhn-gara {
+    font-family: 'Elruhngara', sans-serif !important;
+    font-size: 1.5em;
+}
+
+/* 1. Prism 헤더 색상 및 스크롤바 연결 */
+:root {
+  --color-h1: #88DFD0;
+  --color-h2: #95C69E;
+  --color-h3: #BF8383;
+  --color-h4: #FFD700;
+  --color-h5: #FFA500;
+  --color-h6: #FF69B4;
+  
+  /* 스크롤바 색상 연결 */
+  --scrollbar-thumb-bg: var(--color-h1) !important;
+  --scrollbar-active-thumb-bg: var(--color-h1) !important;
+}
+
+/* 2. 헤더/링크/제목 색상 (디자인 유지) */
+.markdown-preview-view h1, span.cm-header-1, .cm-header-1 { color: var(--color-h1) !important; }
+.markdown-preview-view h2, span.cm-header-2, .cm-header-2 { color: var(--color-h2) !important; }
+.markdown-preview-view h3, span.cm-header-3, .cm-header-3 { color: var(--color-h3) !important; }
+.markdown-preview-view h4, span.cm-header-4, .cm-header-4 { color: var(--color-h4) !important; }
+.markdown-preview-view h5, span.cm-header-5, .cm-header-5 { color: var(--color-h5) !important; }
+.markdown-preview-view h6, span.cm-header-6, .cm-header-6 { color: var(--color-h6) !important; }
+
+a.internal-link, .internal-link, .cm-hmd-internal-link, .cm-link, .cm-underline { color: #88DFD0 !important; }
+a.internal-link:hover, .internal-link:hover { color: #BF8383 !important; }
+.is-unresolved, a.internal-link.is-unresolved, .cm-hmd-internal-link.is-unresolved { color: #FF5A5A !important; border-bottom: 1px dotted #FF5A5A !important; opacity: 0.85 !important; }
+.inline-title, .view-header-title { color: #95CCCB !important; }
+
+/* [복구] 존재하지 않는 인링크: 읽기 모드 + 라이브 프리뷰 전체 타겟팅 */
+.is-unresolved,
+.markdown-preview-view a.internal-link.is-unresolved,
+.markdown-preview-view .internal-link.is-unresolved,
+.cm-hmd-internal-link.is-unresolved,
+span.cm-hmd-internal-link.is-unresolved,
+span.cm-link.is-unresolved,
+span.cm-underline.is-unresolved,
+span[class*="is-unresolved"],
+.markdown-source-view.mod-cm6 .cm-line span.is-unresolved {
+  color: #FF5A5A !important;             /* 기존 코드의 붉은색 */
+  /* color: var(--color-h3) !important;  <- H3 색상(#BF8383)과 완전히 일치시키려면 이 줄을 사용하세요 */
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  background: none !important;
+  text-shadow: none !important;
+  --link-color: #FF5A5A !important;
+}
+
+/* 라이브 프리뷰에서 링크 내부 a 태그까지 강제 적용 */
+span.is-unresolved > a.cm-underline,
+span.is-unresolved > a.cm-hmd-internal-link,
+span.is-unresolved > a.internal-link {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+}
+
+/* 3. 기본 폰트 색상 */
+:root { --text-normal: #E0E0E0; --text-muted: #B0B0B0; }
+input, button, .markdown-preview-view, .view-header-title, .search-bar { color: #E0E0E0 !important; }
+h1, h2, h3, h4, h5, h6 { color: inherit !important; }
+
+/* ============================================================
+   [핵심 수정] 표 중앙 정렬 + 슬림 유지 + 렉/스크롤바 해결
+   ============================================================ */
+:root{
+  --tbl-header-bg: #12393e;
+  --tbl-header-fg: #FFFFFF;
+  --tbl-body-bg:   #202020;
+  --tbl-body-fg:   #E0E0E0;
+  --tbl-border:    #CCF4F9;
+}
+
+/* 1) 위젯(컨테이너): 화면 꽉 채우기 (그래야 내부의 표가 가운데로 갈 공간이 생김) */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget {
+  display: block !important;       /* Block 유지 (렉 방지) */
+  width: 100% !important;          /* [핵심] 부모 너비를 꽉 채움 */
+  text-align: left !important;     /* 커서 꼬임 방지 */
+  
+  /* 가로 스크롤 허용, 세로(우측) 스크롤 숨김 */
+  overflow-x: auto !important;     
+  overflow-y: hidden !important;   
+  
+  padding: 4px 0 !important;
+  background: transparent !important;
+}
+
+/* 2) 표 본체: "슬림하게(auto) + 가운데 정렬(margin)" */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget table,
+.markdown-preview-view table {
+  /* [핵심] 내용물 크기만큼만 잡음 (뚱뚱해짐 방지) */
+  width: auto !important;          
+  min-width: 0 !important;
+  max-width: 100% !important;
+  
+  /* [핵심] 남은 공간을 좌우 균등 분배 -> 표 자체 중앙 정렬 */
+  margin-left: auto !important;    
+  margin-right: auto !important;   
+  
+  border-collapse: collapse !important;
+  display: table !important;
+}
+
+/* 3) 셀 스타일: [요청사항] 자동 줄바꿈 방지 */
+.markdown-preview-view th, .markdown-preview-view td,
+.markdown-source-view.mod-cm6 .cm-table-widget th, 
+.markdown-source-view.mod-cm6 .cm-table-widget td {
+  /* [핵심] <br> 외에는 줄바꿈 금지 */
+  white-space: nowrap !important;
+  
+  border: 1px solid var(--tbl-border) !important;
+  padding: 6px 10px !important;
+  line-height: 1.4 !important;
+  
+  /* 셀 내부 텍스트 정렬 */
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* 색상 */
+.markdown-preview-view thead th, .cm-table-widget thead th {
+  background: var(--tbl-header-bg) !important; color: var(--tbl-header-fg) !important;
+}
+.markdown-preview-view tbody td, .cm-table-widget tbody td {
+  background: var(--tbl-body-bg) !important; color: var(--tbl-body-fg) !important;
+}
+
+/* ============================================================ */
+
+/* 4. 스크롤바 (Local) */
+:root{ --scrollbar-size: 10px; --scrollbar-track: transparent; --scrollbar-thumb: var(--color-h1); }
+body:not(.is-mobile) .workspace-leaf-content ::-webkit-scrollbar,
+body:not(.is-mobile) .nav-header ::-webkit-scrollbar,
+body:not(.is-mobile) .nav-files-container ::-webkit-scrollbar {
+   width: var(--scrollbar-size); height: var(--scrollbar-size);
+}
+*::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb) !important;
+  border-radius: 999px;
+  border: 2px solid rgba(0,0,0,.35);
+}
+*::-webkit-scrollbar-corner { background: transparent; }
+
+/* 5. 체크박스 (원본 유지) */
+:root { --task-accent: var(--color-h1, #88DFD0); }
+.markdown-preview-view input[type="checkbox"],
+.markdown-source-view.mod-cm6 input[type="checkbox"],
+input.task-list-item-checkbox {
+  accent-color: var(--task-accent) !important;
+  border: 2px solid var(--task-accent) !important;
+  width: 16px; height: 16px;
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+}
+.markdown-preview-view input[type="checkbox"]:checked,
+.markdown-source-view.mod-cm6 input[type="checkbox"]:checked,
+input.task-list-item-checkbox:checked {
+  background-color: var(--task-accent) !important;
+  border-color: var(--task-accent) !important;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget td input[type="checkbox"] {
+  margin: 0 !important; vertical-align: middle !important; position: static !important; transform: none !important;
+}
+
+/* 6. 기타 (Callout, Tag, HR) */
+.callout[data-callout="custom-imaged"]{ --ci-border: var(--color-h1); --ci-text: #232323; --ci-icon-size: 18px; }
+.callout[data-callout="custom-imaged"] > .callout-title { color: var(--ci-text) !important; border-color: var(--ci-border) !important; background: transparent; }
+.callout[data-callout="custom-imaged"] .callout-icon { background-color: var(--ci-border) !important; -webkit-mask: url("https://api.iconify.design/lucide/newspaper.svg") center/contain no-repeat; mask: url("https://api.iconify.design/lucide/newspaper.svg") center/contain no-repeat; }
+
+/* ===== hr(굵은 가로줄) 스타일 ===== */
+
+hr.hr-thick-1 {
+  height: 9px;
+  background-color: #88DFD0;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-2 {
+  height: 7px;
+  background-color: #95C69E;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-3 {
+  height: 6px;
+  background-color: #BF8383;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-4 {
+  height: 6px;
+  background-color: #FFD700; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-5 {
+  height: 4px;
+  background-color: #FFA500; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-6 {
+  height: 4px;
+  background-color: #FF69B4; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+
+.callout:has(img[alt~="callbg"]){ background: transparent !important; border-left: 0 !important; overflow: hidden !important; }
+.callout:has(img[alt~="callbg"]) .callout-title, .callout:has(img[alt~="callbg"]) .callout-content{ position: static !important; background: transparent; color: #eaeaea; }
+.callout:has(img[alt~="callbg"]) img[alt~="callbg"]{ position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; object-fit: cover !important; z-index: -1 !important; opacity: 0.4; pointer-events: none !important; }
+
+/* 이미지 중앙 정렬 */
+.markdown-reading-view img, .markdown-source-view.mod-cm6 .image-embed img { display: block; margin: 0 auto; }
+
+/* 태그 칩 */
+:root{ --tag-bg: #90e5da; --tag-fg: #262626; --tag-border: color-mix(in srgb, var(--tag-bg), #000 22%); --tag-radius: 9999px; }
+.markdown-source-view.mod-cm6 .cm-hashtag {
+  background: var(--tag-bg) !important; color: var(--tag-fg) !important;
+  border: 1px solid var(--tag-border) !important; border-radius: var(--tag-radius) !important;
+  padding: 2px 8px !important; font-weight: 700;
+}
+
+/* ============================================================
+   [V18 Final] 진짜 중앙 정렬 (fit-content + margin auto)
+   ============================================================ */
+
+/* 1. 최상위 위젯: 공간만 깔아주고 스크롤은 끕니다 */
+.markdown-source-view.mod-cm6 .cm-table-widget {
+  display: block !important;
+  width: 100% !important;
+  padding: 4px 0 !important;
+  background: transparent !important;
+  overflow: visible !important;   /* 여기선 스크롤 안 함 */
+  text-align: center !important;  /* 보조적 정렬 */
+}
+
+/* 2. 래퍼(Wrapper): 여기가 핵심입니다 */
+.markdown-source-view.mod-cm6 .cm-table-widget > * {
+  /* [핵심 1] 무조건 100%가 아니라, 표 크기만큼만 차지하게 함 */
+  width: fit-content !important; 
+  
+  /* [핵심 2] 하지만 화면보다는 커지지 않게 제한 */
+  max-width: 100% !important; 
+  
+  /* [핵심 3] 블록 요소로 만들고 마진 오토로 중앙 정렬 */
+  display: block !important; 
+  margin-left: auto !important; 
+  margin-right: auto !important;
+  
+  /* [핵심 4] 스크롤은 '표가 화면보다 클 때'만 여기서 발생 */
+  overflow-x: auto !important;  
+  overflow-y: hidden !important; 
+  
+  /* 패딩 때문에 스크롤 생기는 것 방지 */
+  box-sizing: border-box !important; 
+}
+
+/* 3. 표 본체 */
+.markdown-source-view.mod-cm6 .cm-table-widget table {
+  width: max-content !important; 
+  margin: 0 !important;
+  border-collapse: collapse !important;
+}
+
+/* 4. 셀 스타일: 줄바꿈 방지 */
+.markdown-source-view.mod-cm6 .cm-table-widget th, 
+.markdown-source-view.mod-cm6 .cm-table-widget td {
+  white-space: nowrap !important;
+}

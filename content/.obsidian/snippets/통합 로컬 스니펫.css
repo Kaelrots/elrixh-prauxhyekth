@@ -1,0 +1,1262 @@
+/* ===== Prism 헤더 색상 변수 ===== */
+:root {
+  --color-h1: #88DFD0;
+  --color-h2: #95C69E;
+  --color-h3: #BF8383;
+  --color-h4: #FFD700;
+  --color-h5: #FFA500;
+  --color-h6: #FF69B4;
+}
+
+:root {
+  --color-h1: #88DFD0;
+  --color-h2: #95C69E;
+  --color-h3: #BF8383;
+  --color-h4: #FFD700;
+  --color-h5: #FFA500;
+  --color-h6: #FF69B4;
+}
+/* ...(위의 기존 코드)... */
+/* 헤더 색상(읽기/라이브 프리뷰) */
+.markdown-preview-view h1 { color: var(--color-h1) !important; }
+span.cm-header-1, .cm-header-1 { color: var(--color-h1) !important; }
+.markdown-preview-view h2 { color: var(--color-h2) !important; }
+span.cm-header-2, .cm-header-2 { color: var(--color-h2) !important; }
+.markdown-preview-view h3 { color: var(--color-h3) !important; }
+span.cm-header-3, .cm-header-3 { color: var(--color-h3) !important; }
+.markdown-preview-view h4 { color: var(--color-h4) !important; }
+span.cm-header-4, .cm-header-4 { color: var(--color-h4) !important; }
+.markdown-preview-view h5 { color: var(--color-h5) !important; }
+span.cm-header-5, .cm-header-5 { color: var(--color-h5) !important; }
+.markdown-preview-view h6 { color: var(--color-h6) !important; }
+span.cm-header-6, .cm-header-6 { color: var(--color-h6) !important; }
+
+/* 존재하는 인링크 (읽기 + 라이브 프리뷰) */
+.markdown-preview-view a.internal-link,
+.markdown-preview-view .internal-link,
+.cm-hmd-internal-link, .cm-link, .cm-underline {
+  color: #88DFD0 !important;
+}
+.markdown-preview-view a.internal-link:hover,
+.markdown-preview-view .internal-link:hover,
+.cm-hmd-internal-link:hover, .cm-link:hover, .cm-underline:hover {
+  color: #BF8383 !important;
+}
+
+/* 존재하지 않는 인링크 (읽기 + 라이브 프리뷰) */
+.markdown-preview-view a.internal-link.is-unresolved,
+.markdown-preview-view .internal-link.is-unresolved,
+.cm-hmd-internal-link.is-unresolved,
+span.cm-hmd-internal-link.is-unresolved,
+.cm-link.is-unresolved,
+span.cm-link.is-unresolved,
+.cm-underline.is-unresolved,
+span.cm-underline.is-unresolved,
+a.internal-link.is-unresolved,
+span[aria-label][class*="is-unresolved"],
+span[class*="is-unresolved"] {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  text-shadow: none !important;
+  filter: none !important;
+  background: none !important;
+}
+
+/* 표 내부 인링크도 동일하게 */
+.markdown-preview-view td a.internal-link,
+.markdown-preview-view td .internal-link {
+  color: #88DFD0 !important;
+}
+.markdown-preview-view td a.internal-link:hover,
+.markdown-preview-view td .internal-link:hover {
+  color: #BF8383 !important;
+}
+.markdown-preview-view td a.internal-link.is-unresolved,
+.markdown-preview-view td .internal-link.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+
+
+/* 문서 제목 색상 */
+.inline-title, .view-header-title {
+  color: #95CCCB !important;
+}
+
+/* ===== 본문/테이블/폰트 ===== */
+/* ===== [수정됨] 본문/테이블/폰트 최적화 ===== */
+/* UI 전체의 텍스트 색상을 변수로 제어하여 렉 방지 */
+:root {
+  --text-normal: #E0E0E0;          /* 본문 기본 색상 */
+  --text-muted:  #B0B0B0;          /* 연한 텍스트 */
+  --nav-item-color: #E0E0E0;       /* 좌우측 패널 파일명 색상 */
+  --nav-folder-color: #E0E0E0;     /* 좌우측 패널 폴더명 색상 */
+  --icon-color: #E0E0E0;           /* UI 아이콘 색상 */
+}
+
+/* 변수만으로 해결 안 되는 인풋/버튼/특수요소만 안전하게 타겟팅 */
+input, button, 
+.markdown-preview-view, 
+.view-header-title,
+.search-bar {
+  color: #E0E0E0 !important;
+}
+
+/* 제목 등은 기존 변수 유지 */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit !important; /* 위쪽 :root에서 설정한 색상 따름 */
+}
+
+/* ===== 표 및 중앙정렬/배경 ===== */
+.markdown-preview-view table {
+  border-collapse: collapse;
+}
+
+.markdown-preview-view tr:nth-child(odd),
+.markdown-preview-view tr:nth-child(even) {
+  background-color: unset !important;
+}
+.markdown-preview-view td,
+.markdown-preview-view th,
+table td, table th {
+  text-align: center !important;
+  line-height: 1.4 !important;
+  border: 1px solid #CCF4F9 !important;
+}
+
+/* 편집모드(CM6) 표 셀도 중앙 정렬 */
+/* === 라이브 프리뷰 표 전체를 중앙 정렬로 보여주기 === */
+/* 줄바꿈 대응 */
+table td br {
+  content: '';
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* 표 강조용 span 스타일 */
+span.table-highlight { color: #87DFD0 !important; font-weight: bold; }
+span.hi-red         { color: #BF8383 !important; font-weight: bold; }
+span.hi-blue        { color: #87DFD0 !important; font-weight: bold; }
+span.hi-green       { color: #95C69E !important; font-weight: bold; }
+span.hi-yellow      { color: #FFD700 !important; font-weight: bold; }
+
+/* ===== 인링크 (존재/비존재) ===== */
+/* 존재하는 인링크: 헤더1 컬러, hover시 헤더3 컬러 */
+a.internal-link, .internal-link {
+  color: var(--color-h1, #88DFD0) !important;
+}
+a.internal-link:hover, .internal-link:hover {
+  color: var(--color-h3, #BF8383) !important;
+}
+/* 존재하지 않는 인링크(비존재) : 모든 상황, 표 포함 */
+a.internal-link.is-unresolved,
+table a.internal-link.is-unresolved,
+.markdown-preview-view td a.internal-link.is-unresolved,
+.markdown-preview-view th a.internal-link.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+/* ===== hr(굵은 가로줄) 스타일 ===== */
+
+hr.hr-thick-1 {
+  height: 9px;
+  background-color: #88DFD0;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-2 {
+  height: 7px;
+  background-color: #95C69E;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-3 {
+  height: 6px;
+  background-color: #BF8383;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-4 {
+  height: 6px;
+  background-color: #FFD700; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-5 {
+  height: 4px;
+  background-color: #FFA500; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-6 {
+  height: 4px;
+  background-color: #FF69B4; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+
+/* ===== mark(하이라이트) ===== */
+mark, .highlight {
+  background-color: #F1AAAA !important;
+  color: #CCF4F9 !important;
+  border: 1px solid #CCF4F9;
+  border-radius: 0.2em;
+  padding: 0.1em 0.4em;
+}
+
+/* ===== 표 헤더 밑 가로줄 제거 ===== */
+.markdown-preview-view h1,
+.markdown-preview-view h2 {
+  border-bottom: none !important;
+}
+
+/* --- 라이브 프리뷰(CM6) 본문 비존재 인링크 강제 붉은색 --- */
+span.cm-hmd-internal-link.is-unresolved,
+span.cm-link.is-unresolved,
+span.cm-underline.is-unresolved,
+span[class*="cm-hmd-internal-link"].is-unresolved,
+span[class*="cm-link"].is-unresolved,
+span[class*="cm-underline"].is-unresolved,
+span[aria-label][class*="is-unresolved"],
+span[class*="is-unresolved"] {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  background: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+  /* 혹시 테마가 --link-color 변수를 사용한다면 덮어쓰기 */
+  --link-color: #FF5A5A !important;
+}
+
+/* 라이브 프리뷰에서 "비존재 인링크" 모든 span, a, .is-unresolved class에 강제 */
+span.is-unresolved,
+a.is-unresolved,
+.cm-hmd-internal-link.is-unresolved,
+.cm-link.is-unresolved,
+.cm-underline.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-line span.is-unresolved,
+.markdown-source-view.mod-cm6 span.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-link.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-underline.is-unresolved,
+span[aria-label][class*="is-unresolved"],
+span[class*="is-unresolved"] {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  background: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+  --link-color: #FF5A5A !important;
+  /* font-weight: bold !important;  // 필요하면 사용 */
+}
+
+.markdown-source-view.mod-cm6 span.is-unresolved,
+.markdown-source-view.mod-cm6 .cm-line span.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+/* 라이브 프리뷰(편집모드)에서 본문 비존재 인링크를 붉게! */
+span.is-unresolved > a.cm-underline,
+span.is-unresolved > a.cm-hmd-internal-link,
+span.is-unresolved > a.cm-link,
+span.is-unresolved > a.internal-link,
+span.is-unresolved > a {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  background: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+.markdown-preview-view table th {
+  color: #fff !important;
+}
+
+/* === 스크롤바 색상 변경 (Local only) — Publish 스타일 === */
+:root{
+  --scrollbar-size: 10px;
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: var(--color-h1); /* 민트 (#88DFD0) */
+  --scrollbar-thumb-hover: color-mix(in srgb, var(--color-h1) 85%, white);
+  --scrollbar-thumb-active: color-mix(in srgb, var(--color-h1) 70%, white);
+}
+
+/* Chromium/Electron (Obsidian) */
+/* 추천 수정 (모든 요소 대신, 스크롤이 생기는 메인 컨테이너만 타겟팅) */
+body:not(.is-mobile) .workspace-leaf-content ::-webkit-scrollbar,
+body:not(.is-mobile) .nav-header ::-webkit-scrollbar,
+body:not(.is-mobile) .nav-files-container ::-webkit-scrollbar {
+  /* ... 기존 내용 유지 ... */
+   width: var(--scrollbar-size);
+   height: var(--scrollbar-size);
+}
+*::-webkit-scrollbar-track{
+  background: var(--scrollbar-track);
+}
+*::-webkit-scrollbar-thumb{
+  background-color: var(--scrollbar-thumb);
+  border-radius: 999px;
+  border: 2px solid rgba(0,0,0,.35); /* 다크 테마에서 테두리로 대비 */
+}
+*::-webkit-scrollbar-thumb:hover{  background-color: var(--scrollbar-thumb-hover); }
+*::-webkit-scrollbar-thumb:active{ background-color: var(--scrollbar-thumb-active); }
+*::-webkit-scrollbar-corner{ background: transparent; }
+
+/* Firefox 용(선택) – 데스크톱 앱에선 효과 없을 수 있음 */
+*{
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* ===== 로컬 전용: 표만 줄바꿈 금지 + 넘치면 표 안에서 가로 스크롤 ===== */
+
+/* ===== Live Preview(CM6) — Publish 스타일 테이블 (no-wrap + 내부 가로 스크롤 + 색상) ===== */
+:root{
+  /* Publish와 맞춘 팔레트 */
+  --tbl-header-bg: #12393e;   /* 헤더 배경(민트) */
+  --tbl-header-fg: #FFFFFF;   /* 헤더 글자 */
+  --tbl-body-bg:   #202020;   /* 바디 배경 */
+  --tbl-body-fg:   #E0E0E0;   /* 바디 글자 */
+  --tbl-border:    #CCF4F9;   /* 테두리 */
+}
+
+/* ── (LP + 읽기) 표를 문서 가운데 배치 ─────────────────────────── */
+.markdown-source-view.mod-cm6 .cm-table-widget,
+.markdown-source-view.mod-cm6 .table-editor{
+  width: 100% !important;                     /* 표 컨테이너를 문서 폭으로 */
+}
+.markdown-source-view.mod-cm6 .cm-table-widget table,
+.markdown-source-view.mod-cm6 .table-editor table,
+.markdown-preview-view table{
+  margin-left: auto !important;               /* 가운데 정렬 */
+  margin-right: auto !important;
+}
+
+/* (LP) 가로 스크롤은 컨테이너 1개만 쓰고 내부는 스크롤 제거 */
+.markdown-source-view.mod-cm6 .cm-table-widget{
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-editor,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-widget{
+  overflow: visible !important;
+}
+
+/* ── (LP + 읽기) 셀 안 텍스트 가로·세로 중앙 정렬 ─────────────── */
+.markdown-source-view.mod-cm6 .cm-table-widget table th,
+.markdown-source-view.mod-cm6 .cm-table-widget table td,
+.markdown-source-view.mod-cm6 .table-editor th,
+.markdown-source-view.mod-cm6 .table-editor td,
+.markdown-preview-view th,
+.markdown-preview-view td{
+  text-align: center !important;              /* 좌우 중앙 */
+  vertical-align: middle !important;          /* 상하 중앙 */
+  line-height: 1.4 !important;
+}
+
+/* (LP) 코드미러가 아직 셀을 span으로 보여줄 때 대비용(세로/가로 중앙) */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row span.cm-table-cell{
+  display: inline-flex !important;
+  align-items: center !important;             /* 세로 중앙 */
+  justify-content: center !important;         /* 가로 중앙 */
+}
+
+/* === FINAL (CM6 Live Preview 전용): 표 가운데 + 셀 가로/세로 중앙 정렬 === */
+/* 라이브 프리뷰 컨테이너: 표가 넘치면 컨테이너 하나만 가로 스크롤 */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget{
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;     /* 표가 넓을 때 여기서만 가로 스크롤 */
+  overflow-y: visible !important;
+  background: transparent !important;
+}
+
+/* 실제 <table>: 내용 너비 기준 + 문서 가운데 배치 */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget table{
+  width: max-content !important;   /* 내용만큼만 넓이 */
+  max-width: 100% !important;      /* 작으면 문서폭까지만 */
+  margin: 0 auto !important;       /* 가운데 정렬 */
+  border-collapse: collapse !important;
+}
+
+/* 헤더/바디 모든 셀: 좌우/상하 중앙정렬 */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget table th,
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget table td{
+  text-align: center !important;   /* 좌우 중앙 */
+  vertical-align: middle !important; /* 상하 중앙 */
+  line-height: 1.4 !important;
+}
+
+/* 일부 편집 상태에서 셀을 <span>으로 그리는 경우도 중앙 정렬 보정 */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell{
+  display: inline-flex !important;
+  align-items: center !important;  /* 세로 중앙 */
+  justify-content: center !important; /* 좌우 중앙 */
+}
+
+/* === 읽기 모드(미리보기)도 동일하게 일관성 유지 === */
+.markdown-preview-view table{
+  margin: 0 auto !important;       /* 표 전체 가운데 */
+  width: max-content !important;
+  max-width: 100% !important;
+}
+.markdown-preview-view th,
+.markdown-preview-view td{
+  text-align: center !important;   /* 좌우 중앙 */
+  vertical-align: middle !important; /* 상하 중앙 */
+  line-height: 1.4 !important;
+}
+
+/* === 250812: LP 표 가운데 + 셀 중앙정렬 + 헤더/바디 색 적용 (최종 오버라이드) === */
+
+/* 2-1. LP 컨테이너: 가로 스크롤은 여기서만 */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget{
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  background: transparent !important;
+}
+
+/* 2-2. LP 테이블 자체: 내용 너비 기준 + 가운데 정렬 + min-width 해제 */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget table,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget .table-editor table{
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;        /* 가운데 정렬 */
+  border-collapse: collapse !important;
+}
+
+/* 2-3. LP 셀 정렬 (헤더/바디 공통) */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget table th,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget table td,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .table-editor th,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .table-editor td{
+  text-align: center !important;     /* 좌우 중앙 */
+  vertical-align: middle !important; /* 상하 중앙 */
+  line-height: 1.4 !important;
+  border: 1px solid var(--tbl-border, #CCF4F9) !important;
+}
+
+/* 2-4. LP 편집중(span 셀) 보정 */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 2-5. LP 색상 적용 (팔레트 변수 사용) */
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget thead th{
+  background: var(--tbl-header-bg, #40B3A1) !important;
+  color: var(--tbl-header-fg, #FFFFFF) !important;
+}
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget tbody th,
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-table-widget tbody td{
+  background: var(--tbl-body-bg, #202020) !important;
+  color: var(--tbl-body-fg, #E0E0E0) !important;
+}
+
+/* 2-6. 읽기 모드도 동일 적용 (일관성) */
+.markdown-preview-view table{
+  width: max-content !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  border-collapse: collapse !important;
+}
+.markdown-preview-view thead th{
+  background: var(--tbl-header-bg, #40B3A1) !important;
+  color: var(--tbl-header-fg, #FFFFFF) !important;
+}
+.markdown-preview-view tbody th,
+.markdown-preview-view tbody td{
+  background: var(--tbl-body-bg, #202020) !important;
+  color: var(--tbl-body-fg, #E0E0E0) !important;
+}
+.markdown-preview-view th,
+.markdown-preview-view td{
+  text-align: center !important;
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  border: 1px solid var(--tbl-border, #CCF4F9) !important;
+}
+
+/* === LP 전용: 표 자체를 문서 가운데 정렬 (스크롤/줄바꿈 규칙은 그대로 유지) === */
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget{
+  /* 네가 이미 쓰는 가로 스크롤 유지 */
+  overflow-x: auto !important;
+  /* 표가 문서 폭보다 좁을 때 중앙에 놓기 위한 컨테이너 정렬 */
+  text-align: center !important;
+}
+
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget > .table-wrapper,
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget > table{
+  /* 표 덩어리를 인라인 박스로 만들어 컨테이너의 text-align:center를 따르게 함 */
+  display: inline-block !important;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+body:not(.is-mobile) .markdown-source-view.is-live-preview.mod-cm6 .cm-table-widget table{
+  /* 내용 너비 기준으로 중앙 배치, 너무 넓으면 스크롤로 보이도록 */
+  width: max-content !important;
+  max-width: 100% !important;
+}
+
+/* === 250813 로컬용: 체크박스 중앙 정렬 + 색상 통일 ===================== */
+/* 퍼블리시와 동일 팔레트 사용 */
+:root { --task-accent: var(--color-h1, #88DFD0); }
+
+/* 1) 체크박스 색상 — 본문/표, 읽기/라이브 공통 */
+.markdown-preview-view input[type="checkbox"],
+.markdown-source-view.mod-cm6 input[type="checkbox"],
+input.task-list-item-checkbox {
+  accent-color: var(--task-accent) !important;
+  border: 2px solid var(--task-accent) !important;
+  width: 16px; height: 16px;
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+}
+
+.markdown-preview-view input[type="checkbox"]:checked,
+.markdown-source-view.mod-cm6 input[type="checkbox"]:checked,
+input.task-list-item-checkbox:checked {
+  background-color: var(--task-accent) !important;
+  border-color: var(--task-accent) !important;
+}
+
+/* === 250813 표 체크박스 중앙 고정 — 최종 정리 패치 ==================== */
+/* A) 과거 absolute 배치/변형이 남아있어도 무력화 */
+.markdown-preview-view table td input[type="checkbox"],
+.markdown-preview-view table th input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-table-widget td input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-table-widget th input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell input[type="checkbox"] {
+  position: static !important;
+  top: auto !important; left: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  vertical-align: middle !important;
+}
+
+/* B) 셀 자체는 테이블 레이아웃 유지 + 가운데 기준 */
+.markdown-preview-view table td,
+.markdown-preview-view table th,
+.markdown-source-view.mod-cm6 .cm-table-widget td,
+.markdown-source-view.mod-cm6 .cm-table-widget th {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+/* C) 래퍼가 셀을 꽉 채우게 하고, 그리드로 한가운데 고정 (읽기 모드) */
+.markdown-preview-view td > .table-cell-wrapper:has(> input[type="checkbox"]),
+.markdown-preview-view th > .table-cell-wrapper:has(> input[type="checkbox"]) {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  line-height: normal !important;
+}
+
+/* D) Live Preview - 표 위젯 구조 */
+.markdown-source-view.mod-cm6 .cm-table-widget td > .table-cell-wrapper:has(> input[type="checkbox"]),
+.markdown-source-view.mod-cm6 .cm-table-widget th > .table-cell-wrapper:has(> input[type="checkbox"]) {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  line-height: normal !important;
+}
+
+/* E) Live Preview - span 기반 폴백 구조 */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell > .table-cell-wrapper:has(> input[type="checkbox"]) {
+  display: inline-grid !important;   /* 인라인 컨텍스트 유지 */
+  place-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  line-height: normal !important;
+}
+
+/* F) 색상은 그대로 퍼블리시 팔레트 사용 */
+:root { --task-accent: var(--color-h1, #88DFD0); }
+.markdown-preview-view input[type="checkbox"],
+.markdown-source-view.mod-cm6 input[type="checkbox"],
+input.task-list-item-checkbox {
+  accent-color: var(--task-accent) !important;
+  border: 2px solid var(--task-accent) !important;
+  width: 16px; height: 16px;
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+}
+.markdown-preview-view input[type="checkbox"]:checked,
+.markdown-source-view.mod-cm6 input[type="checkbox"]:checked,
+input.task-list-item-checkbox:checked {
+  background-color: var(--task-accent) !important;
+  border-color: var(--task-accent) !important;
+}
+
+/* === LP/읽기 공통: 체크박스 색 통일 === */
+:root { --task-accent: var(--color-h1, #87DFD0); }  /* 필요시 이 변수만 바꿔 */
+.markdown-preview-view input[type="checkbox"],
+.markdown-source-view.mod-cm6 input[type="checkbox"],
+input.task-list-item-checkbox {
+  accent-color: var(--task-accent) !important;
+  border: 2px solid var(--task-accent) !important;
+  width: 16px; height: 16px;
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+}
+.markdown-preview-view input[type="checkbox"]:checked,
+.markdown-source-view.mod-cm6 input[type="checkbox"]:checked,
+input.task-list-item-checkbox:checked {
+  background-color: var(--task-accent) !important;
+  border-color: var(--task-accent) !important;
+}
+
+/* === 읽기 모드: 표 셀 중앙 정렬 === */
+.markdown-preview-view table td,
+.markdown-preview-view table th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+.markdown-preview-view td > .table-cell-wrapper:has(> input[type="checkbox"]),
+.markdown-preview-view th > .table-cell-wrapper:has(> input[type="checkbox"]) {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+}
+
+/* === 라이브 프리뷰: 표 셀 중앙 정렬 + 원문 <input …> 텍스트 숨김 === */
+/* 표 위젯 구조 */
+.markdown-source-view.mod-cm6 .cm-table-widget td,
+.markdown-source-view.mod-cm6 .cm-table-widget th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget td > .table-cell-wrapper:has(> input[type="checkbox"]),
+.markdown-source-view.mod-cm6 .cm-table-widget th > .table-cell-wrapper:has(> input[type="checkbox"]) {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+
+  /* ↓ 이 두 줄이 ‘이중 표시’ 막는 핵심(원문 HTML 토큰 숨김) */
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget td > .table-cell-wrapper:has(> input[type="checkbox"]) input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-table-widget th > .table-cell-wrapper:has(> input[type="checkbox"]) input[type="checkbox"] {
+  font-size: initial !important;
+  line-height: normal !important;
+  margin: 0 !important;
+}
+
+/* 폴백(span 기반) 구조 */
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell > .table-cell-wrapper:has(> input[type="checkbox"]) {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: 100% !important; height: 100% !important;
+  padding: 0 !important;
+  font-size: 0 !important;      /* 원문 태그 문자열 숨김 */
+  line-height: 0 !important;
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell > .table-cell-wrapper:has(> input[type="checkbox"]) input[type="checkbox"]{
+  font-size: initial !important;
+  line-height: normal !important;
+  margin: 0 !important;
+}
+
+/* 안전장치: 혹시 남아있을 절대배치 룰 무력화 */
+.markdown-preview-view table td input[type="checkbox"],
+.markdown-preview-view table th input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-table-widget td input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-table-widget th input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row .cm-table-cell input[type="checkbox"] {
+  position: static !important;
+  top: auto !important; left: auto !important;
+  transform: none !important;
+}
+
+/* 250813 — LP 테이블 체크박스 좌하단 밀림/중복 표시 픽스 */
+
+/* 색상은 퍼블리시와 동일 팔레트 사용 */
+:root { --task-accent: var(--color-h1, #87DFD0); }
+.markdown-preview-view input[type="checkbox"],
+.markdown-source-view.mod-cm6 input[type="checkbox"] {
+  accent-color: var(--task-accent) !important;
+  border: 2px solid var(--task-accent) !important;
+  width: 16px; height: 16px;
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+}
+.markdown-preview-view input[type="checkbox"]:checked,
+.markdown-source-view.mod-cm6 input[type="checkbox"]:checked {
+  background-color: var(--task-accent) !important;
+  border-color: var(--task-accent) !important;
+}
+
+/* === Live Preview (CodeMirror 6) =============================== */
+/* 1) 셀을 기준 좌표로 */
+.markdown-source-view.mod-cm6 .cm-table-widget td,
+.markdown-source-view.mod-cm6 .cm-table-widget th { position: relative !important; }
+
+/* 2) 중복 input 제거: td/th의 직계 input 및 숨김 래퍼 속 input은 숨김 */
+.markdown-source-view.mod-cm6 .cm-table-widget td > input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-table-widget th > input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-table-widget td > .table-cell-wrapper[style*="display: none"] > input[type="checkbox"],
+.markdown-source-view.mod-cm6 .cm-table-widget th > .table-cell-wrapper[style*="display: none"] > input[type="checkbox"] {
+  display: none !important;
+}
+
+/* 3) 진짜 것만 중앙에 고정: cm-html-embed 안의 input */
+.markdown-source-view.mod-cm6 .cm-table-widget .cm-html-embed > input[type="checkbox"] {
+  position: absolute !important;
+  top: 50% !important; left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  pointer-events: auto;
+}
+
+/* === 읽기 모드(Preview) ======================================== */
+/* 읽기 모드는 간단히 셀 기준 중앙 고정 */
+.markdown-preview-view table td,
+.markdown-preview-view table th {
+  position: relative; vertical-align: middle; text-align: center;
+}
+.markdown-preview-view table td > input[type="checkbox"],
+.markdown-preview-view table th > input[type="checkbox"] {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); margin: 0;
+}
+
+/* 래퍼 구조인 경우(읽기 모드) */
+.markdown-preview-view td > .table-cell-wrapper:has(> input[type="checkbox"]),
+.markdown-preview-view th > .table-cell-wrapper:has(> input[type="checkbox"]) {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* === Table cell background via class palette ========================= */
+/* 팔레트(원하면 바꿔도 됨) */
+:root {
+  --cell-c1-bg:#215E66;  /* hr-1 계열 */
+  --cell-c2-bg:#87DFD0;  /* hr-2 계열 */
+  --cell-c3-bg:#95C69E;  /* hr-3 계열 */
+  --cell-c4-bg:#BF8383;  /* hr-4 계열 */
+  --cell-c5-bg:#F1AAAA;  /* hr-5 계열 */
+  --cell-c6-bg:#CCF4F9;  /* hr-6 계열 */
+}
+
+/* 마커 자체는 보이지 않게 (줄높이 영향 없음) */
+.cellbg { display:inline; font-size:0; line-height:0; }
+
+/* ── Live Preview: wrapper 하얀 배경을 팔레트 색으로 고정 ── */
+.is-live-preview .cm-table-widget td:has(.cellbg.c1) > .table-cell-wrapper,
+.is-live-preview .cm-table-widget th:has(.cellbg.c1) > .table-cell-wrapper,
+.is-live-preview .table-cell-wrapper:has(.cellbg.c1) { background-color: var(--cell-c1-bg) !important; }
+
+.is-live-preview .cm-table-widget td:has(.cellbg.c2) > .table-cell-wrapper,
+.is-live-preview .cm-table-widget th:has(.cellbg.c2) > .table-cell-wrapper,
+.is-live-preview .table-cell-wrapper:has(.cellbg.c2) { background-color: var(--cell-c2-bg) !important; }
+
+.is-live-preview .cm-table-widget td:has(.cellbg.c3) > .table-cell-wrapper,
+.is-live-preview .cm-table-widget th:has(.cellbg.c3) > .table-cell-wrapper,
+.is-live-preview .table-cell-wrapper:has(.cellbg.c3) { background-color: var(--cell-c3-bg) !important; }
+
+.is-live-preview .cm-table-widget td:has(.cellbg.c4) > .table-cell-wrapper,
+.is-live-preview .cm-table-widget th:has(.cellbg.c4) > .table-cell-wrapper,
+.is-live-preview .table-cell-wrapper:has(.cellbg.c4) { background-color: var(--cell-c4-bg) !important; }
+
+.is-live-preview .cm-table-widget td:has(.cellbg.c5) > .table-cell-wrapper,
+.is-live-preview .cm-table-widget th:has(.cellbg.c5) > .table-cell-wrapper,
+.is-live-preview .table-cell-wrapper:has(.cellbg.c5) { background-color: var(--cell-c5-bg) !important; }
+
+.is-live-preview .cm-table-widget td:has(.cellbg.c6) > .table-cell-wrapper,
+.is-live-preview .cm-table-widget th:has(.cellbg.c6) > .table-cell-wrapper,
+.is-live-preview .table-cell-wrapper:has(.cellbg.c6) { background-color: var(--cell-c6-bg) !important; }
+
+/* ── Reading: td, th 자체 배경 ── */
+.markdown-preview-view table td:has(.cellbg.c1),
+.markdown-preview-view table th:has(.cellbg.c1) { background-color: var(--cell-c1-bg) !important; }
+
+.markdown-preview-view table td:has(.cellbg.c2),
+.markdown-preview-view table th:has(.cellbg.c2) { background-color: var(--cell-c2-bg) !important; }
+
+.markdown-preview-view table td:has(.cellbg.c3),
+.markdown-preview-view table th:has(.cellbg.c3) { background-color: var(--cell-c3-bg) !important; }
+
+.markdown-preview-view table td:has(.cellbg.c4),
+.markdown-preview-view table th:has(.cellbg.c4) { background-color: var(--cell-c4-bg) !important; }
+
+.markdown-preview-view table td:has(.cellbg.c5),
+.markdown-preview-view table th:has(.cellbg.c5) { background-color: var(--cell-c5-bg) !important; }
+
+.markdown-preview-view table td:has(.cellbg.c6),
+.markdown-preview-view table th:has(.cellbg.c6) { background-color: var(--cell-c6-bg) !important; }
+
+/* 기존 배경 투명화(겹침 방지) */
+.markdown-preview-view table tbody,
+.is-live-preview .cm-table-widget tbody { background: transparent !important; }
+
+/* ======================================= */
+/* 250814 커스텀 콜아웃 배경 사진 집어넣기 작업 */
+/* ======================================= */
+
+/* ============================
+   250814 Textured Callout |callbg
+   사용: 콜아웃 안 첫 줄에
+        ![[Assets/textures/parchment.png|callbg]]
+   ============================ */
+
+/* 튜닝 변수 */
+:root{
+  --callbg-inset: 4.5px;                 /* 테두리 안쪽으로 살짝 끼우기 */
+  --callbg-fit: cover;                 /* cover | contain */
+  --callbg-fg: #eaeaea;                /* 글자 색 보정 */
+  --callbg-title-strip: rgba(0,0,0,.20);/* 제목 바 톤 */
+}
+
+/* 콜아웃은 라운드/클립/스택 컨텍스트 */
+.callout{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* callbg 쓰면 테마 기본 배경/좌측 띠 제거 */
+.callout:has(img[alt~="callbg"]){
+  background: transparent !important;
+  --callout-color: transparent !important;
+  border-left: 0 !important;
+}
+
+/* (중요) 제목/본문에 걸려 있던 position/z-index 커스텀 무효화
+   -> 배경 앵커를 .callout(전체)로 고정하기 위함 */
+.callout:has(img[alt~="callbg"]) .callout-title,
+.callout:has(img[alt~="callbg"]) .callout-content{
+  position: static !important;
+  z-index: auto !important;
+  background: transparent;
+  color: var(--callbg-fg);
+}
+
+/* 배경 임베드를 .callout 전체에 절대배치 (테두리 안쪽으로 끼움) */
+.callout:has(img[alt~="callbg"])
+  :is(.internal-embed.image-embed,.cm-embed-block):has(> .image-embed > img[alt~="callbg"]),
+.callout:has(img[alt~="callbg"]) .internal-embed.image-embed:has(> img[alt~="callbg"]){
+  position: absolute !important;
+  inset: var(--callbg-inset) !important;    /* ← 테두리 안쪽 */
+  z-index: -1 !important;                   /* 항상 텍스트 뒤 */
+  pointer-events: none !important;
+  display: block !important;
+  border-radius: inherit !important;        /* 라운드 정확히 적용 */
+}
+
+.callout:has(img[alt~="callbg"]) img[alt~="callbg"]{
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: var(--callbg-fit) !important;
+  border-radius: inherit !important;
+}
+
+/* 제목 바는 살짝 어둡게 (이미지 위, 텍스트 아래 아님 — 그냥 배경색) */
+.callout:has(img[alt~="callbg"]) .callout-title{
+  background: var(--callbg-title-strip) !important;
+  color: var(--callbg-fg) !important;
+}
+
+/* 접힘 상태에서도 배경이 사라지지 않도록 콘텐츠를 0높이로 유지 */
+.callout.is-collapsed:has(img[alt~="callbg"]) .callout-content{
+  display: block !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  visibility: hidden !important;     /* 내용은 숨기되 배경 임베드는 유지 */
+}
+
+/* 이미지 끝 라운드 처리 */
+
+/* 250814 — callbg: 배경을 콜아웃 엣지 곡률과 정확히 일치시키기 */
+.callout:has(img[alt~="callbg"]) {
+  /* 라운드 클리핑을 확실히 보장 */
+  overflow: hidden !important;           /* (fallback) */
+  overflow: clip !important;             /* chromium 지원 시 더 정확 */
+  /* 테마가 쓰는 라운드 값 추정/고정(덮어쓰지 않음) */
+  --callout-radius: var(--callout-radius, var(--radius-l, 12px));
+}
+
+/* 배경 임베드 컨테이너를 콜아웃 안쪽으로 끼우되, 곡률을 ‘R - inset’로 보정 */
+.callout:has(img[alt~="callbg"])
+  :is(.internal-embed.image-embed, .cm-embed-block):has(> .image-embed > img[alt~="callbg"]),
+.callout:has(img[alt~="callbg"]) .internal-embed.image-embed:has(> img[alt~="callbg"]) {
+  /* 기존 절대배치/스택 규칙은 유지하되, 라운드만 보정 */
+  --_inset: var(--callbg-inset, 0px);
+  --_r: max(0px, calc(var(--callout-radius, var(--radius-l, 12px)) - var(--_inset)));
+  inset: var(--_inset) !important;
+  border-radius: var(--_r) !important;   /* ← 핵심: 외곽선과 같은 곡률로 라운드 */
+  overflow: hidden !important;           /* 내부 img도 같이 잘리도록 */
+}
+
+/* 내부 이미지도 컨테이너 라운드를 그대로 따르도록 */
+.callout:has(img[alt~="callbg"]) img[alt~="callbg"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: var(--callbg-fit, cover) !important;
+  border-radius: inherit !important;     /* 컨테이너 곡률을 그대로 상속 */
+  display: block !important;
+}
+
+/* ====== CUSTOM CALLOUT (Local) — [!custom-imaged] ====== */
+.markdown-preview-view .callout[data-callout="custom-imaged"],
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"]{
+  --ci-border: var(--h1-color, var(--color-h1));
+  --ci-text:   #232323;
+
+  /* 네가 맞춘 값 */
+  --ci-icon-size: 18px;
+  --ci-gap: 3px;
+  --ci-leftpad: 0px;
+}
+
+/* (공통) 제목/본문 색/보더 */
+.markdown-preview-view .callout[data-callout="custom-imaged"] > .callout-title,
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"] > .callout-title,
+.markdown-preview-view .callout[data-callout="custom-imaged"] > .callout-content,
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"] > .callout-content{
+  color: var(--ci-text) !important;
+  border-color: var(--ci-border) !important;
+  background: transparent;
+}
+
+/* (접힘 상태) 타이틀 배경: H1색 20% */
+.markdown-preview-view .callout[data-callout="custom-imaged"].is-collapsible.is-collapsed > .callout-title,
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"].is-collapsible.is-collapsed > .callout-title{
+  background-color: color-mix(in srgb, var(--ci-border), transparent 80%);
+  border-color: var(--ci-border) !important;
+  color: var(--ci-text) !important;
+}
+
+/* 기본 svg 아이콘 숨기기 */
+.markdown-preview-view .callout[data-callout="custom-imaged"] > .callout-title .callout-icon .svg-icon,
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"] > .callout-title .callout-icon .svg-icon{
+  display:none !important;
+}
+
+/* 아이콘: 둥근 잘림 제거 + 마스크 아이콘 */
+.markdown-preview-view .callout[data-callout="custom-imaged"] > .callout-title .callout-icon,
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"] > .callout-title .callout-icon{
+  width: var(--ci-icon-size);
+  height: var(--ci-icon-size);
+  min-width: var(--ci-icon-size);
+  min-height: var(--ci-icon-size);
+  flex: 0 0 var(--ci-icon-size);
+  margin-right: var(--ci-gap);
+  border-radius: 0 !important;
+  overflow: visible !important;
+  background: none !important;
+
+  background-color: var(--ci-border) !important; /* 아이콘 색 = H1 */
+  -webkit-mask: url("https://api.iconify.design/lucide/newspaper.svg") center/contain no-repeat;
+          mask: url("https://api.iconify.design/lucide/newspaper.svg") center/contain no-repeat;
+}
+
+/* 좌측 패딩 (기본 0) */
+.markdown-preview-view .callout[data-callout="custom-imaged"] > .callout-title,
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"] > .callout-title{
+  padding-left: var(--ci-leftpad) !important;
+}
+
+/* === 250818 custom-imaged x callbg: Expanded title darker strip === */
+/* 튜닝 변수: 진하기를 여기서 조절 (기본 0.38) */
+:root{
+  --ci-title-strip-expanded: rgba(0,0,0,.35);
+  --ci-title-fg: #fff;                 /* 타이틀 글자색(확장 시) */
+}
+
+/* (읽기/라이브 공통) callbg를 쓰는 custom-imaged가 '펼쳐져 있을 때'만 더 진하게 */
+.markdown-preview-view .callout[data-callout="custom-imaged"]:has(img[alt~="callbg"]):not(.is-collapsed) > .callout-title,
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"]:has(img[alt~="callbg"]):not(.is-collapsed) > .callout-title{
+  background: var(--ci-title-strip-expanded) !important;
+  color: var(--ci-title-fg) !important;
+  /* 필요 시 살짝 가독성 업: 아래 두 줄은 취향껏 켜기 */
+  /* text-shadow: 0 1px 2px rgba(0,0,0,.35); */
+  /* backdrop-filter: saturate(120%) blur(1px); */
+}
+
+/* 아이콘도 타이틀 오버레이 위에서 또렷하게 보이도록(색은 기존 mint 유지) */
+.markdown-preview-view .callout[data-callout="custom-imaged"]:has(img[alt~="callbg"]):not(.is-collapsed) > .callout-title .callout-icon,
+.markdown-source-view.mod-cm6 .callout[data-callout="custom-imaged"]:has(img[alt~="callbg"]):not(.is-collapsed) > .callout-title .callout-icon{
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* 접힘 상태는 너가 쓰던 규칙 유지(= H1색 20% 오버레이) — 별도 수정 없음 */
+
+/* === 250818 FINAL OVERRIDE — Callout border width: 3px (Local) === */
+/* 읽기 모드 + 라이브 프리뷰 공통 */
+.markdown-preview-view .callout > .callout-title,
+.markdown-source-view.mod-cm6 .callout > .callout-title{
+  border-width: 3px !important;
+}
+.markdown-preview-view .callout > .callout-content,
+.markdown-source-view.mod-cm6 .callout > .callout-content{
+  border-right-width: 3px !important;
+  border-bottom-width: 3px !important;
+  border-left-width: 3px !important;
+}
+
+/* === 250818: 이미지 중앙 정렬 (Live Preview + Reading + Publish) === */
+/* Obsidian 내부 이미지 임베드 공통 */
+.markdown-reading-view .image-embed img:not([alt~="callbg"]),
+.markdown-source-view.mod-cm6 .cm-content .image-embed img:not([alt~="callbg"]) {
+  display: block;
+  margin-inline: auto;   /* 좌우 중앙 */
+  max-width: 100%;
+  height: auto;
+}
+
+/* 콜아웃 안에서도 확실히 중앙에 오도록 */
+.callout .callout-content .image-embed {
+  text-align: center;
+}
+
+/* (옵션) HTML <img>로 넣은 외부 이미지도 중앙 정렬하고 싶다면 추가 */
+.markdown-reading-view p > img:not(.emoji),
+.markdown-source-view.mod-cm6 .cm-content p > img:not(.emoji) {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* === BULLETS — final v7 (LP repaint, Reading/Publish ::marker) ========= */
+/* 팔레트 */
+:root{
+  --dot-normal:#87DFD0;  /* 기본 */
+  --dot-fnt:#F0C04A;     /* 풋노트 */
+  --dot-warn:#E06363;    /* 경고 */
+  --dot-ask:#95CCCB;     /* 메모/질문 */
+  --dot-size:.40em;      /* 점 지름 */
+  --dot-x:0;             /* LP에서 점의 X 보정(필요시 0.1em 등) */
+}
+
+/* ── 읽기/퍼블리시: ::marker 유지 ─────────────────────────────────── */
+.markdown-preview-view ul>li::marker,
+.published-container ul>li::marker{ color:var(--dot-normal) !important; }
+:is(.markdown-preview-view,.published-container) li:has(.dot.fnt)::marker  { color:var(--dot-fnt)  !important; }
+:is(.markdown-preview-view,.published-container) li:has(.dot.warn)::marker { color:var(--dot-warn) !important; }
+:is(.markdown-preview-view,.published-container) li:has(.dot.ask)::marker  { color:var(--dot-ask)  !important; }
+
+/* 표식(span.dot …)은 화면에서 숨김 */
+.markdown-preview-view span.dot,
+.published-container span.dot,
+.markdown-source-view.mod-cm6 .cm-content span.dot{
+  display:inline-block!important; width:0!important; height:0!important; overflow:hidden!important;
+  padding:0!important; margin:0!important; border:0!important;
+}
+
+/* ── Live Preview(CM6): line 단위로 색 변수 지정 ─────────────────── */
+.markdown-source-view.mod-cm6 .cm-line{ --_dot: var(--dot-normal); }
+.markdown-source-view.mod-cm6 .cm-line:has(.dot.fnt)  { --_dot: var(--dot-fnt);  }
+.markdown-source-view.mod-cm6 .cm-line:has(.dot.warn) { --_dot: var(--dot-warn); }
+.markdown-source-view.mod-cm6 .cm-line:has(.dot.ask)  { --_dot: var(--dot-ask);  }
+
+/* LP: 테마가 그리던 불릿(글리프/::before 마스크) 완전 무력화 + 투명화 */
+.markdown-source-view.mod-cm6 .list-bullet,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul{
+  position:relative !important;
+  color:transparent !important;
+  -webkit-text-fill-color:transparent !important;
+  text-shadow:none !important;
+}
+.markdown-source-view.mod-cm6 .list-bullet::before,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul::before{
+  content:none !important; background:transparent !important;
+  border:0 !important; box-shadow:none !important; -webkit-mask:none !important; mask:none !important;
+}
+
+/* LP: 우리가 도트를 직접 그림 — .list-bullet 있으면 거기에 */
+.markdown-source-view.mod-cm6 .list-bullet::after{
+  content:"" !important;
+  position:absolute !important;
+  top:50% !important; left:var(--dot-x) !important; transform:translateY(-50%) !important;
+  width:var(--dot-size) !important; height:var(--dot-size) !important;
+  background:var(--_dot) !important; border-radius:999px !important;
+}
+
+/* LP 폴백: .list-bullet 없는 라인(하이픈 토큰만 있을 때) */
+.markdown-source-view.mod-cm6
+.cm-line:has(.cm-formatting-list-ul):not(:has(.list-bullet)) .cm-formatting-list-ul::after{
+  content:"" !important; display:inline-block !important;
+  vertical-align:middle !important; transform:translateY(-.06em) !important;
+  width:var(--dot-size) !important; height:var(--dot-size) !important;
+  background:var(--_dot) !important; border-radius:999px !important;
+}
+
+/* 태그 시각화 - 2025-08-26 */
+/* === TAG CHIP: Live Preview(편집모드) — 단일 배경 + pill 라운드 v4 === */
+/* 팔레트 & 모양(여기만 바꾸면 됨) */
+:root{
+  --tag-bg: #90e5da;      /* 칩 배경 */
+  --tag-fg: #262626;      /* 글자 */
+  --tag-border: color-mix(in srgb, var(--tag-bg), #000 22%);
+  --tag-bg-hover:  color-mix(in srgb, var(--tag-bg), #fff 14%);
+  --tag-bg-active: color-mix(in srgb, var(--tag-bg), #000 12%);
+  --tag-radius: 9999px;   /* pill. 필요시 12~16px 등으로 */
+  --tag-pad-x: 10px;      /* 좌/우 패딩 */
+  --tag-join-overlap: .2em; /* 조각들 사이 겹침(틈 보이면 올리기, 너무 겹치면 내리기) */
+  --tag-font-weight: 700;
+}
+
+/* 0) 안전장치 — 예전에 숨겼다면 되살리기(칩에 포함되게) */
+.markdown-source-view.mod-cm6 .cm-content .cm-formatting-hashtag{
+  display:inline-block !important;
+}
+
+/* 1) 기본 베이스: 모든 조각을 같은 '칩' 룩으로 */
+.markdown-source-view.mod-cm6 .cm-line .cm-hashtag{
+  background: var(--tag-bg) !important;
+  color: var(--tag-fg) !important;
+  border: 1px solid var(--tag-border) !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  letter-spacing: 0 !important;
+  line-height: 1.35 !important;
+  font-weight: var(--tag-font-weight) !important;
+  vertical-align: middle !important;
+
+  /* 가운데 조각 기준: 세로 패딩만 두고 좌/우는 0, 라운드는 일단 0 */
+  padding: 2px 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+/* 2) 맨 앞 조각(= 실제 '#') — 왼쪽 라운드 + 좌패딩, 오른쪽 보더/라운드 열기 */
+.markdown-source-view.mod-cm6 .cm-line .cm-formatting-hashtag.cm-hashtag{
+  border-top-left-radius: var(--tag-radius) !important;
+  border-bottom-left-radius: var(--tag-radius) !important;
+  padding-left: var(--tag-pad-x) !important;
+  border-right-width: 0 !important;
+}
+
+/* 3) 중간 조각 — 좌/우 보더 제거 + 겹치기(틈 제거) + 패딩 0 */
+.markdown-source-view.mod-cm6 .cm-line .cm-formatting-hashtag.cm-hashtag + .cm-hashtag,
+.markdown-source-view.mod-cm6 .cm-line .cm-hashtag + .cm-hashtag{
+  border-left-width: 0 !important;
+  border-right-width: 0 !important;
+  margin-left: calc(var(--tag-join-overlap) * -1) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 4) 맨 끝 조각 — 오른쪽 라운드 + 우패딩, 왼쪽 보더는 닫지 않음(연결 유지) */
+.markdown-source-view.mod-cm6 .cm-line .cm-hashtag:not(:has(+ .cm-hashtag)){
+  border-top-right-radius: var(--tag-radius) !important;
+  border-bottom-right-radius: var(--tag-radius) !important;
+  padding-right: var(--tag-pad-x) !important;
+  border-left-width: 0 !important;
+  margin-left: calc(var(--tag-join-overlap) * -1) !important;
+}
+
+/* 5) 상태 */
+.markdown-source-view.mod-cm6 .cm-line .cm-hashtag:hover{
+  background: var(--tag-bg-hover) !important;
+}
+.markdown-source-view.mod-cm6 .cm-line .cm-hashtag:active{
+  background: var(--tag-bg-active) !important;
+}
+
+:root{
+  --tag-join-overlap: .10em;  /* ← 짜부러짐 줄이기 */
+  --tag-pad-x: 8px;          /* ← 좌/우 여유 */
+  --tag-hash-gap: .40em;      /* ← # 오른쪽 간격 */
+}
+
+/* # 조각(맨 앞) 오른쪽에만 살짝 간격 부여 */
+.markdown-source-view.mod-cm6 .cm-line .cm-formatting-hashtag.cm-hashtag{
+  padding-left: var(--tag-pad-x) !important;   /* (유지) 왼쪽 패딩 */
+  padding-right: var(--tag-hash-gap) !important;/* (신규) # 다음 간격 */
+}
+
+/* === TAG: 마지막 조각 우측 여유 강제 오버라이드 ================== */
+:root{
+  --tag-pad-end: 8px;   /* ← 여기 숫자만 바꾸면 우측 여유가 변함 (12~22px 권장) */
+}
+
+/* 끝 조각(.cm-hashtag-end)을 높은 특이성으로 타깃팅해 덮어쓰기 */
+.markdown-source-view.mod-cm6 .cm-editor .cm-line
+.cm-hashtag.cm-hashtag-end.cm-tag{
+  padding-right: var(--tag-pad-end) !important;
+  border-top-right-radius: var(--tag-radius) !important;
+  border-bottom-right-radius: var(--tag-radius) !important;
+}
+
+/* 끝 조각이 .cm-tag 클래스를 안 갖는 테마 대비 백업 셀렉터 */
+.markdown-source-view.mod-cm6 .cm-editor .cm-line
+.cm-hashtag.cm-hashtag-end{
+  padding-right: var(--tag-pad-end) !important;
+}
+
+/* 1) '같은 태그'의 중간 조각만 직사각형 처리
+   - 다음 형제가 '포매팅 해시(#) 아님' = 언더스코어로 이어진 같은 태그의 다음 조각 */
+.markdown-source-view.mod-cm6 .cm-editor .cm-line
+.cm-hashtag:not(.cm-formatting-hashtag):has(+ .cm-hashtag:not(.cm-formatting-hashtag)){
+  border-radius: 0 !important;
+  border-left-width: 0 !important;
+  border-right-width: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: calc(var(--tag-join-overlap, .12em) * -1) !important;
+}
+
+/* 2) '끝 조각' 정의(= 같은 태그의 다음 조각이 없을 때)
+   - 다음 형제가 없거나, 있더라도 그게 새 태그의 '#'이면 '끝'으로 판단 */
+.markdown-source-view.mod-cm6 .cm-editor .cm-line
+.cm-hashtag:not(.cm-formatting-hashtag):not(:has(+ .cm-hashtag:not(.cm-formatting-hashtag))){
+  border-top-right-radius: var(--tag-radius) !important;
+  border-bottom-right-radius: var(--tag-radius) !important;
+  border-left-width: 0 !important;
+  padding-right: var(--tag-pad-end, var(--tag-pad-x, 12px)) !important;
+  margin-left: calc(var(--tag-join-overlap, .12em) * -1) !important;
+}
+
+/* 숫자 마커 색상 */
+
+/* Live Preview: 숫자 목록 마커 색상(H1 팔레트) */
+.markdown-source-view.mod-cm6 .cm-line .list-number,
+.markdown-source-view.mod-cm6 .cm-line .cm-formatting-list-ol{
+  color: var(--color-h1, #87DFD0) !important;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
