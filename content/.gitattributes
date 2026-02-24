@@ -1,0 +1,17 @@
+# text files: normalize to LF in repo
+*.md  text eol=lf
+*.txt text eol=lf
+*.css text eol=lf
+*.js  text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# binaries: never touch line endings
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.pdf binary
+*.drawio binary
