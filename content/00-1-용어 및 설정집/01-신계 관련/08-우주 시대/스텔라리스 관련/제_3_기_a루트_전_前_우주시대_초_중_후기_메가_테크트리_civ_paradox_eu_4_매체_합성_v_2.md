@@ -1,18 +1,18 @@
 # 서문
-본 문서는 **모노리스 이전(고대→중세→근세→근대→현대→근미래)**의 전(前)우주시대 기술을, 스텔라리스의 **Physics / Engineering / Society** 3대 축에 맞춰 **초기/중기/후기** 3단계로 세분하여 정리한 **메가 테크트리**다. 각 시대는 **최소 30개 이상**의 기술 항목을 포함하며(실제론 36개 이상), 항목마다 **Prereq(선결)**, **Next(후속 가능)**, **Field(분야/하위분야)**, **Unlocks/Notes(해금/메모)**, **영감 출처**(시드마이어의 문명, Paradox 타이틀—CK3/Victoria/HOI4/**EU4**, 기타 매체)를 병기한다.
+본 문서는 <font style="font-weight:bold">모노리스 이전(고대→중세→근세→근대→현대→근미래)</font>의 전(前)우주시대 기술을, 스텔라리스의 <font style="font-weight:bold">Physics / Engineering / Society</font> 3대 축에 맞춰 <font style="font-weight:bold">초기/중기/후기</font> 3단계로 세분하여 정리한 <font style="font-weight:bold">메가 테크트리</font>다. 각 시대는 <font style="font-weight:bold">최소 30개 이상</font>의 기술 항목을 포함하며(실제론 36개 이상), 항목마다 <font style="font-weight:bold">Prereq(선결)</font>, <font style="font-weight:bold">Next(후속 가능)</font>, <font style="font-weight:bold">Field(분야/하위분야)</font>, <font style="font-weight:bold">Unlocks/Notes(해금/메모)</font>, <font style="font-weight:bold">영감 출처</font>(시드마이어의 문명, Paradox 타이틀—CK3/Victoria/HOI4/<font style="font-weight:bold">EU4</font>, 기타 매체)를 병기한다.
 
-> 분류 원칙: 스텔라리스 축(Physics/Engineering/Society)에 매핑되도록 기술을 배치하되, 필요 시 하위 세부(Computing, Materials, Biology/Medicine, Statecraft 등)를 병기. **Prereq/Next**는 같은 시대 안에서의 유기적 연결을 우선, 시대 간 연결은 [메타 연결 규칙] 참조.
+> 분류 원칙: 스텔라리스 축(Physics/Engineering/Society)에 매핑되도록 기술을 배치하되, 필요 시 하위 세부(Computing, Materials, Biology/Medicine, Statecraft 등)를 병기. <font style="font-weight:bold">Prereq/Next</font>는 같은 시대 안에서의 유기적 연결을 우선, 시대 간 연결은 [메타 연결 규칙] 참조.
 
 ---
 
 ## 0) 공통 메타 연결 규칙
-- **Physics → Engineering → Society → (수요·문제) → Physics**의 순환. 예: (전기이론) → (발전/배전 인프라) → (전력시장·야간경제) → (전력 수요 폭증) → (반도체/컴퓨팅/제어공학).
-- **교통·통신은 모든 시대의 승수**: 도로/철도/전신/무선/인터넷/위성과 같은 네트워크 기술은 **연구 확산 속도**를 상수배로 끌어올린다.
-- **표준화는 확산의 핵**: 도량형→게이지→인터페이스→프로토콜.
+- <font style="font-weight:bold">Physics → Engineering → Society → (수요·문제) → Physics</font>의 순환. 예: (전기이론) → (발전/배전 인프라) → (전력시장·야간경제) → (전력 수요 폭증) → (반도체/컴퓨팅/제어공학).
+- <font style="font-weight:bold">교통·통신은 모든 시대의 승수</font>: 도로/철도/전신/무선/인터넷/위성과 같은 네트워크 기술은 <font style="font-weight:bold">연구 확산 속도</font>를 상수배로 끌어올린다.
+- <font style="font-weight:bold">표준화는 확산의 핵</font>: 도량형→게이지→인터페이스→프로토콜.
 
 ---
 
-# 1) **고대(Ancient)** — 도시·문자·청동에서 철기까지 (초·중·후 각 12개 = 36)
+# 1) <font style="font-weight:bold">고대(Ancient)</font> — 도시·문자·청동에서 철기까지 (초·중·후 각 12개 = 36)
 ### 1-A. 초기(정주·도시 탄생기)
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -354,7 +354,7 @@
 
 ---
 
-# 2) **중세(Medieval)** — 봉건·길드·스콜라·화약 (초·중·후 각 12개 = 36)
+# 2) <font style="font-weight:bold">중세(Medieval)</font> — 봉건·길드·스콜라·화약 (초·중·후 각 12개 = 36)
 ### 2-A. 초기
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -600,7 +600,7 @@
       <td>대학·문서</td>
       <td>계몽·신문</td>
       <td>정보 확산 가속</td>
-      <td>(Civ V Printing Press, **EU4 Institution: Printing Press**)</td>
+      <td>(Civ V Printing Press, <font style="font-weight:bold">EU4 Institution: Printing Press</font>)</td>
     </tr>
     <tr>
       <td>화약 무기 대중화(Arquebus)</td>
@@ -632,7 +632,7 @@
       <td>회계·상업</td>
       <td>합자·주식거래</td>
       <td>위험 분산</td>
-      <td>(네덜란드 동인도, EU4 **Trade Company**)</td>
+      <td>(네덜란드 동인도, EU4 <font style="font-weight:bold">Trade Company</font>)</td>
     </tr>
     <tr>
       <td>해군 행정(조선소/선창)</td>
@@ -672,7 +672,7 @@
       <td>인쇄·대학</td>
       <td>과학혁명</td>
       <td>사고 전환</td>
-      <td>(EU4 **Institution: Renaissance**)</td>
+      <td>(EU4 <font style="font-weight:bold">Institution: Renaissance</font>)</td>
     </tr>
     <tr>
       <td>도시 공중보건</td>
@@ -696,7 +696,7 @@
 
 ---
 
-# 3) **근세(Early Modern)** — 대항해·과학혁명·상비군 (초·중·후 각 12개 = 36)
+# 3) <font style="font-weight:bold">근세(Early Modern)</font> — 대항해·과학혁명·상비군 (초·중·후 각 12개 = 36)
 ### 3-A. 초기
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -1038,7 +1038,7 @@
 
 ---
 
-# 4) **근대(Industrial/19C)** — 증기·철도·전기·대량생산 (초·중·후 각 12개 = 36)
+# 4) <font style="font-weight:bold">근대(Industrial/19C)</font> — 증기·철도·전기·대량생산 (초·중·후 각 12개 = 36)
 ### 4-A. 초기
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -1380,7 +1380,7 @@
 
 ---
 
-# 5) **현대(20C~Information)** — 항공·전차·전자·핵·컴퓨팅 (초·중·후 각 12개 = 36)
+# 5) <font style="font-weight:bold">현대(20C~Information)</font> — 항공·전차·전자·핵·컴퓨팅 (초·중·후 각 12개 = 36)
 ### 5-A. 초기(1900~30s)
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -1722,7 +1722,7 @@
 
 ---
 
-# 6) **근미래(Near Future, Pre-Monolith)** — 우주 문턱 전야 (초·중·후 각 12개 = 36)
+# 6) <font style="font-weight:bold">근미래(Near Future, Pre-Monolith)</font> — 우주 문턱 전야 (초·중·후 각 12개 = 36)
 ### 6-A. 초기
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -2043,15 +2043,15 @@
       <td>(바이오돔)</td>
     </tr>
     <tr>
-      <td>**모노리스 전야 표준**</td>
+      <td><font style="font-weight:bold">모노리스 전야 표준</font></td>
       <td>Soc.(Statecraft)</td>
       <td>위 모든 축</td>
-      <td>**제3기 개막 트리거**</td>
+      <td><font style="font-weight:bold">제3기 개막 트리거</font></td>
       <td>연구 윤리·프로토콜</td>
       <td>(세계관 고유)</td>
     </tr>
     <tr>
-      <td>**모노리스 접촉**</td>
+      <td><font style="font-weight:bold">모노리스 접촉</font></td>
       <td>Physics(특수)</td>
       <td>전야 표준</td>
       <td>FTL 사상</td>
@@ -2065,12 +2065,12 @@
 ---
 
 ## 부록) 시대별 빠른 색인 & EU4 기관(Institutions) 매핑
-- **EU4 Institutions**: Renaissance(중세 후기) → Colonialism(근세 초기) → Printing Press(중세 후기/근세 전환) → Global Trade(근세 중기) → Manufactories(근세 후기) → Enlightenment(근세 후기) → Industrialization(근대 초기). 각 기관을 본 테크트리의 **Society(문화/경제/교육)** 라인에 매핑하여 **연구 확산 가속** 효과로 해석.
-- **EU4 Tech Lines**: **Administrative/Diplomatic/Military**를 각각 **Society(행정/경제/법)** / **Physics·Engineering(항해/지도/외교기술)** / **Society(군사이론)+Engineering(군수)**에 연결.
+- <font style="font-weight:bold">EU4 Institutions</font>: Renaissance(중세 후기) → Colonialism(근세 초기) → Printing Press(중세 후기/근세 전환) → Global Trade(근세 중기) → Manufactories(근세 후기) → Enlightenment(근세 후기) → Industrialization(근대 초기). 각 기관을 본 테크트리의 <font style="font-weight:bold">Society(문화/경제/교육)</font> 라인에 매핑하여 <font style="font-weight:bold">연구 확산 가속</font> 효과로 해석.
+- <font style="font-weight:bold">EU4 Tech Lines</font>: <font style="font-weight:bold">Administrative/Diplomatic/Military</font>를 각각 <font style="font-weight:bold">Society(행정/경제/법)</font> / <font style="font-weight:bold">Physics·Engineering(항해/지도/외교기술)</font> / <font style="font-weight:bold">Society(군사이론)+Engineering(군수)</font>에 연결.
 
 ---
 
 ### 메모
-- 본 트리는 **세계관 설정용**이므로 수치·계수 없이 **연결 구조와 순서**를 강조.
-- 필요 시, 특정 시대만 분리하여 **각 60~90개 규모의 세부 트리**로 확장 가능(EU4/CK3/HOI4/V3/Civ의 **실명 항목**을 더 치밀하게 주석화).
+- 본 트리는 <font style="font-weight:bold">세계관 설정용</font>이므로 수치·계수 없이 <font style="font-weight:bold">연결 구조와 순서</font>를 강조.
+- 필요 시, 특정 시대만 분리하여 <font style="font-weight:bold">각 60~90개 규모의 세부 트리</font>로 확장 가능(EU4/CK3/HOI4/V3/Civ의 <font style="font-weight:bold">실명 항목</font>을 더 치밀하게 주석화).
 
