@@ -481,3 +481,35 @@ article a.internal, article a.external {
     padding-right: 0 !important;
   }
 }
+
+/* 모바일 환경에만 적용되는 반응형 규칙 */
+@media all and (max-width: 768px) {
+  
+  /* 1. 로고 등 너무 큰 이미지 크기 제한 */
+  img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; /* 로고가 너무 크지 않게 높이 상한선 설정 */
+    object-fit: contain;
+  }
+
+  /* 2. 제목 폰트 크기 및 줄바꿈 최적화 */
+  h1, h2, h3 {
+    font-size: 1.4rem; /* 모바일에 맞게 제목 크기 약간 축소 */
+    word-break: keep-all; /* 단어 중간에 어색하게 줄바꿈되는 것 방지 */
+    line-height: 1.4;
+  }
+
+  /* 3. 표(Table) 가로 스크롤 허용 (짤림 방지) */
+  .table-container, table {
+    display: block;
+    width: 100%;
+    overflow-x: auto; /* 좌우 스크롤 생성 */
+    -webkit-overflow-scrolling: touch; /* 모바일에서 부드러운 스크롤 지원 */
+    white-space: nowrap; /* 셀 내부 텍스트가 강제로 줄바꿈되지 않도록 설정 */
+  }
+  
+  th, td {
+    padding: 0.5rem; /* 모바일 화면에 맞게 표 내부 여백 조정 */
+  }
+}
