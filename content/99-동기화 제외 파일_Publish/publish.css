@@ -1,0 +1,1899 @@
+/* ===== Obsidian Publish Themed CSS ===== */
+
+@font-face {
+  font-family: 'Elruhngara'; /* 사용하시려는 폰트 이름 */
+  /* url('/경로/파일.woff2') 대신 아래처럼 코드를 직접 넣습니다 */
+  src: url(data:application/font-woff2;charset=utf-8;base64,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) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 로컬 CSS와 퍼블리시 CSS의 클래스명을 모두 지원하도록 통합 */
+.ellunic, .elrunik, .elruhn-gara {
+  font-family: 'Elruhngara', sans-serif !important;
+  font-size: 1.5em; /* 로컬 설정에 맞춰 1.5em으로 키움 */
+  line-height: 1.4;
+}
+
+:root {
+  --color-h1: #88DFD0;
+  --color-h2: #95C69E;
+  --color-h3: #BF8383;
+  --color-h4: #FFD700;
+  --color-h5: #FFA500;
+  --color-h6: #FF69B4;
+}
+
+/* 퍼블리시에서 h1~h3에 색 적용 */
+.markdown-preview-view h1 {
+  color: var(--color-h1);
+}
+.markdown-preview-view h2 {
+  color: var(--color-h2);
+}
+.markdown-preview-view h3 {
+  color: var(--color-h3);
+}
+
+/* 문서 제목 색상 지정 */
+.view-header-title {
+  color: var(--color-h1);
+}
+
+
+/* ===== dark-pdf.css ===== */
+body {
+  background-color: #232323 !important;
+}
+
+body, p, span, div, li, ul, ol, blockquote, .cm-line, .markdown-preview-view {
+  color: #E0E0E0 !important;
+}
+
+.inline-title {
+  color: #95CCCB !important;
+}
+
+hr {
+  border-color: #CCF4F9 !important;
+}
+
+mark, .highlight {
+  background-color: #F1AAAA !important;
+  color: #CCF4F9 !important;
+  border: 1px solid #CCF4F9;
+  border-radius: 0.2em;
+  padding: 0.1em 0.4em;
+}
+
+table, th, td {
+  border: 1px solid #CCF4F9 !important;
+  color: #E0E0E0 !important;
+}
+
+/* Header 1~3: Prism 테마 Style Settings 변수 그대로 */
+.cm-s-obsidian .cm-header-1 { color: var(--h1-text-color-custom-dt) !important; }
+.cm-s-obsidian .cm-header-2 { color: var(--h2-text-color-custom-dt) !important; }
+.cm-s-obsidian .cm-header-3 { color: var(--h3-text-color-custom-dt) !important; }
+
+:root {
+  --color-h4: #FFD700;
+  --color-h5: #FFA500;
+  --color-h6: #FF69B4;
+}
+
+.markdown-preview-view h4,
+.cm-s-obsidian .cm-header-4 { color: var(--color-h4) !important; }
+
+.markdown-preview-view h5,
+.cm-s-obsidian .cm-header-5 { color: var(--color-h5) !important; }
+
+.markdown-preview-view h6,
+.cm-s-obsidian .cm-header-6 { color: var(--color-h6) !important; }
+
+/* ===== obsidian-centered-table-final-fixed.css ===== */
+/* 📌 편집 + 읽기 모드에서 셀 중앙 정렬 + 빈 셀 줄어듦 방지 */
+.markdown-source-view.mod-cm6 .cm-table-widget {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row {
+  display: table-row;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row span.cm-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 6px;
+  /* min-height: 28px; */
+  /* white-space: normal; */
+  word-break: keep-all;
+  /* line-height: 1.4; */
+}
+
+/* 📌 읽기 모드에서 셀 중앙 정렬 */
+.markdown-preview-view td,
+.markdown-preview-view th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 📌 PDF 출력 시에도 셀 중앙 정렬 강제 */
+@media print {
+  table td, table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+}
+
+.markdown-preview-view table td,
+.markdown-preview-view table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* 읽기/편집/PDF 출력 모든 모드에서 중앙 정렬 */
+table td, table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  /* white-space: normal !important; */
+}
+
+/* <br> 줄바꿈 대응 */
+table td br {
+  content: '';
+  /*display: block;*/
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* PDF 출력 시 강제 중앙 정렬 */
+@media print {
+  table td, table th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+  }
+}
+
+/* 편집 모드에서 빈 셀 찌그러짐 방지 + 중앙 정렬 유지 */
+.cm-preview-content table td:empty::before,
+.markdown-source-view.mod-cm6 .cm-line span.cm-table-cell:not(:has(span)):before {
+  content: " ";
+  display: inline-block;
+  min-height: 1.5em;
+  width: 100%;
+}
+
+/* ===== color-chips-for-pdf.css ===== */
+/* 컬러칩 셀 내부 div 중앙 정렬 + margin 보정 */
+td > div[style*="background-color"] {
+  /*display: block;*/
+  margin: auto;
+  border-radius: 3px;
+  width: 60px;
+  height: 20px;
+}
+
+/* Better Export PDF용 강제 색상 출력 대응 */
+.table td > div {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* 퍼블리시 문서 제목 색상 */
+.published-container {
+  --page-title-color: #88DFD0;
+}
+
+/* hr-thickness-publish.css */
+/* Publish 전용 - 연속 hr 굵기 조절 (색상 직접 지정) */
+/* ===== hr(굵은 가로줄) 스타일 ===== */
+
+hr.hr-thick-1 {
+  height: 9px;
+  background-color: #88DFD0;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-2 {
+  height: 7px;
+  background-color: #95C69E;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-3 {
+  height: 6px;
+  background-color: #BF8383;
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-4 {
+  height: 6px;
+  background-color: #FFD700; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-5 {
+  height: 4px;
+  background-color: #FFA500; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+hr.hr-thick-6 {
+  height: 4px;
+  background-color: #FF69B4; /* #FFD700(h4)와 #FFA500(h5)의 중간색 */
+  border: none;
+  margin: 1em 0 !important;
+}
+
+/* 1. 리스트 불릿 색상 (• 점) */
+.markdown-preview-view ul > li::marker {
+  color: #87DFD0; /* 원하는 색상 */
+}
+
+/* 스크롤바 너비 (표준 너비로 변경) */
+body:not(.native-scrollbars) *,
+.published-container *,
+.published-container ::-webkit-scrollbar {
+  scrollbar-width: auto !important; /* Firefox */
+}
+
+/* WebKit 계열 브라우저에서 넓은 scrollbar 적용 */
+.published-container ::-webkit-scrollbar {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+/* 스크롤 핸들(thumb) 색 지정 */
+.published-container ::-webkit-scrollbar-thumb {
+  background-color: #87DFD0 !important;
+  border-radius: 6px !important;
+}
+
+/* 스크롤바 트랙 색 지정 */
+.published-container ::-webkit-scrollbar-track {
+  background-color: #1a1a1a !important;
+}
+
+/* 퍼블리시에서 <!-- publish-hide:start --> ~ <!-- publish-hide:end --> 감추기 */
+div:has(> .cm-line:has-text("<!-- publish-hide:start -->")) ~ div:has(> .cm-line:has-text("<!-- publish-hide:end -->")) {
+  display: none;
+}
+
+/* 실제 퍼블리시 기준 대응 */
+.markdown-preview-section :is(.publish-hide-start, .publish-hide-end),
+.markdown-preview-section :has(> .publish-hide-start) ~ *:has(> .publish-hide-end) {
+  display: none !important;
+}
+/* 퍼블리시에서 숨기기 */
+.publish-hide {
+  display: none !important;
+}
+
+/* === 인링크 색상: 제목(h1) 컬러로, hover 시 h3 컬러로 === */
+a.internal-link, .internal-link {
+  color: var(--color-h1, #88DFD0) !important;
+}
+a.internal-link:hover, .internal-link:hover {
+  color: var(--color-h3, #BF8383) !important;
+}
+
+/* 최상위 트리 세로줄만 제거 (퍼블리시 기준) */
+/* 더 강력하게: 루트에만 */
+div.tree-item-self.mod-root + div.tree-item-children::before {
+  background: none !important;
+}
+
+div.tree-item-children::before {
+  background: none !important;
+  content: "";
+  /* display: block; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  z-index: 10;
+}
+div.tree-item-children {
+  position: relative;
+}
+
+* {
+  border-left-color: var(--color-h1, #88DFD0) !important;
+  box-shadow: none !important;
+}
+
+/* 퍼블리시 트리에서 선택된(활성화된) 문서 강조 */
+.tree-item-self.mod-active {
+  background: rgb(189, 140, 140) !important;  /* 연한 붉은색 배경 */
+  color: var(--color-h3, #e1a1a1) !important;        /* Prism h3 컬러 */
+  font-weight: bold;
+  border-radius: 6px;
+  /* 원하는 경우 box-shadow 등 추가 */
+  /* box-shadow: 0 0 0 2px var(--color-h3, #BF8383) inset !important; */
+}
+
+/* 체크박스 체크됐을 때 박스/체크 컬러 커스텀 */
+input.task-list-item-checkbox:checked {
+  accent-color: var(--color-h1, #88DFD0) !important; /* 최신 브라우저 지원 */
+  accent-color: var(--color-h1, #88DFD0) !important;
+  width: 16px;
+  height: 16px;
+  appearance: auto !important; /* 시스템 기본 스타일 회복 */
+  -webkit-appearance: checkbox !important;
+}
+
+input.task-list-item-checkbox {
+  border: 2px solid var(--color-h1, #88DFD0) !important;      /* 전체 테두리 색상 */
+}
+
+input.task-list-item-checkbox:checked {
+  border: 2px solid var(--color-h1, #88DFD0) !important;      /* 체크시 테두리 색상 */
+}
+
+/* 서치 박스(왼쪽 상단 검색 입력창)만 Prism 컬러 테두리 */
+input.search-bar {
+  border: 2px solid var(--color-h1, #88DFD0) !important;
+  border-radius: 8px;
+}
+
+/* 우측 INTERACTIVE GRAPH 박스에만 Prism 컬러 테두리 */
+.graph-view-container {
+  border: 2px solid var(--color-h1, #88DFD0) !important;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* 퍼블리시 publish.css 하단에 추가 */
+.theme-dark {
+  --text-selection: rgba(136, 223, 208, 0.35) !important;
+}
+
+/* 각주 자체 색, 마우스 오버 색 */
+a.footnote-link {
+  color: var(--color-h1, #88DFD0) !important;
+}
+a.footnote-link:hover {
+  color: var(--color-h3, #BF8383) !important;
+}
+
+/* 모든 글 폰트 맑은 고딕으로 */
+body, p, span, div, li, ul, ol, blockquote, td, th,
+h1, h2, h3, h4, h5, h6, input, button, a,
+.markdown-preview-view, .tree-item-self, .search-bar,
+.nav-file-title-content, .nav-folder-title-content {
+  font-family: "Malgun Gothic", "맑은 고딕", Arial, sans-serif !important;
+}
+
+/* 기본적으로 모든 줄 제거 */
+.tree-item::before {
+  border-left: none !important;
+  background: none !important;
+}
+
+/* 오른쪽 목차 안의 줄만 복원 */
+.table-of-contents .tree-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background-color: var(--background-modifier-border);
+}
+
+.nav-files-container .tree-item::before {
+  display: none !important;
+}
+
+/* 표 안의 인링크에 색상 적용 (Obsidian Publish용) */
+table a[href^="/kael/"] {
+  color: var(--color-h1, #88DFD0) !important;
+}
+table a[href^="/kael/"]:hover {
+  color: var(--color-h3, #BF8383) !important;
+}
+
+span.table-highlight {
+  color: #87DFD0 !important;
+  font-weight: bold;
+}
+
+span.hi-red {
+  color: var(--color-accent-header, #BF8383) !important;
+  font-weight: bold;
+}
+
+span.hi-blue {
+  color: #87DFD0 !important;
+  font-weight: bold;
+}
+
+span.hi-green {
+  color: #95C69E !important;
+  font-weight: bold;
+}
+
+span.hi-yellow {
+  color: #FFD700 !important;
+  font-weight: bold; 
+}
+
+/* 마크다운 HTML 테이블 중앙 정렬 */
+.markdown-preview-view table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 표 전체 배경색 */
+.markdown-preview-view table {
+  background-color: rgb(43, 42, 42); /* 표 테두리 배경 */
+}
+
+/* 제목 셀 배경 및 색상 통일 */
+.markdown-preview-view table th {
+  background-color: rgb(64, 179, 161) !important;
+  color: rgb(0, 0, 0); /* 필요시 조정 */
+}
+
+/* 제목 셀의 홀짝 교차 배경 제거 */
+.markdown-preview-view thead tr:nth-child(odd) th,
+.markdown-preview-view thead tr:nth-child(even) th {
+  background-color: rgba(12, 59, 65, 0.836) !important;
+}
+
+/* 내용 셀 배경 및 교차 제거 */
+.markdown-preview-view table td {
+  background-color: rgb(32, 32, 32) !important;
+}
+.markdown-preview-view tr:nth-child(odd),
+.markdown-preview-view tr:nth-child(even) {
+  background-color: unset !important;
+}
+
+/* 헤더 1~2번 아래의 가로줄 없애기 */
+.markdown-preview-view h1,
+.markdown-preview-view h2 {
+  border-bottom: none !important;
+}
+
+/* 표 헤더 폰트 사이즈 1.2배 */
+.markdown-preview-view table th {
+  font-size: 1.2em !important;
+}
+
+/* 퍼블리시 전용: .only-local 클래스는 퍼블리시에서 숨김 */
+body.is-publish .only-local {
+  display: none !important;
+}
+
+/* 표 안의 체크박스에도 퍼블리시 스타일 적용 */
+.markdown-preview-view input[type="checkbox"] {
+  accent-color: var(--color-h1, #88DFD0) !important;
+  border: 2px solid var(--color-h1, #88DFD0) !important;
+  width: 16px;
+  height: 16px;
+}
+
+.markdown-preview-view input[type="checkbox"]:checked {
+  background-color: var(--color-h1, #88DFD0) !important;
+  border-color: var(--color-h1, #88DFD0) !important;
+}
+
+/* 존재하지 않는 인링크 스타일 강제 덮어쓰기 */
+a.internal-link.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+/* ❗ 표 안 포함, 비존재 인링크만 강제 빨간색 표시 */
+table a.internal-link.is-unresolved,
+.markdown-preview-view td a.internal-link.is-unresolved,
+.markdown-preview-view th a.internal-link.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+/* 비존재 인링크를 모든 상황에서 강제로 붉게 */
+table a.internal-link[href*="%EC%A4%91%EC%9A%94"][class*="is-unresolved"],
+table a.internal-link.is-unresolved {
+  color: #FF5A5A !important;
+  border-bottom: 1px dotted #FF5A5A !important;
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+}
+
+/* 퍼블리시 표 안 체크박스를 수직/수평 완전 중앙 정렬 */
+.markdown-preview-view table td {
+  position: relative;
+}
+
+.markdown-preview-view table td input[type="checkbox"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+/* 필요시 더 추가 가능 */
+
+.published-container{
+/* Prism 색 토큰(HSL) */
+--color-grey-base-hsl: 0, 0%, 16%;
+--color-red-base-hsl: 2, 55%, 19%;
+--color-orange-base-hsl: 26, 65%, 15%;
+--color-yellow-base-hsl: 43, 73%, 12%;
+--color-green-base-hsl: 124, 54%, 12%;
+--color-mint-base-hsl: 165, 88%, 10%;
+--color-cyan-base-hsl: 195, 65%, 13%;
+--color-blue-base-hsl: 225, 50%, 20%;
+--color-purple-base-hsl: 271, 48%, 21%;
+
+--color-grey-tint-hsl: 0, 0%, 40%;
+--color-red-tint-hsl: 3, 49%, 46%;
+--color-orange-tint-hsl: 27, 53%, 37%;
+--color-yellow-tint-hsl: 44, 59%, 31%;
+--color-green-tint-hsl: 123, 43%, 32%;
+--color-mint-tint-hsl: 166, 73%, 26%;
+--color-cyan-tint-hsl: 195, 52%, 34%;
+--color-blue-tint-hsl: 224, 44%, 49%;
+--color-purple-tint-hsl: 271, 43%, 51%;
+
+--color-grey-text-hsl: 0, 0%, 67%;
+--color-red-text-hsl: 4, 74%, 74%;
+--color-orange-text-hsl: 26, 85%, 63%;
+--color-yellow-text-hsl: 44, 60%, 53%;
+--color-green-text-hsl: 124, 48%, 54%;
+--color-mint-text-hsl: 166, 67%, 45%;
+--color-cyan-text-hsl: 195, 69%, 58%;
+--color-blue-text-hsl: 225, 61%, 75%;
+--color-purple-text-hsl: 267, 52%, 75%;
+
+/* computed */
+--color-grey-base: hsl(var(--color-grey-base-hsl));
+--color-red-base: hsl(var(--color-red-base-hsl));
+--color-orange-base: hsl(var(--color-orange-base-hsl));
+--color-yellow-base: hsl(var(--color-yellow-base-hsl));
+--color-green-base: hsl(var(--color-green-base-hsl));
+--color-mint-base: hsl(var(--color-mint-base-hsl));
+--color-cyan-base: hsl(var(--color-cyan-base-hsl));
+--color-blue-base: hsl(var(--color-blue-base-hsl));
+--color-purple-base: hsl(var(--color-purple-base-hsl));
+
+--color-grey-tint: hsl(var(--color-grey-tint-hsl));
+--color-red-tint: hsl(var(--color-red-tint-hsl));
+--color-orange-tint: hsl(var(--color-orange-tint-hsl));
+--color-yellow-tint: hsl(var(--color-yellow-tint-hsl));
+--color-green-tint: hsl(var(--color-green-tint-hsl));
+--color-mint-tint: hsl(var(--color-mint-tint-hsl));
+--color-cyan-tint: hsl(var(--color-cyan-tint-hsl));
+--color-blue-tint: hsl(var(--color-blue-tint-hsl));
+--color-purple-tint: hsl(var(--color-purple-tint-hsl));
+
+--color-grey-text: hsl(var(--color-grey-text-hsl));
+--color-red-text: hsl(var(--color-red-text-hsl));
+--color-orange-text: hsl(var(--color-orange-text-hsl));
+--color-yellow-text: hsl(var(--color-yellow-text-hsl));
+--color-green-text: hsl(var(--color-green-text-hsl));
+--color-mint-text: hsl(var(--color-mint-text-hsl));
+--color-cyan-text: hsl(var(--color-cyan-text-hsl));
+--color-blue-text: hsl(var(--color-blue-text-hsl));
+--color-purple-text: hsl(var(--color-purple-text-hsl));
+}
+
+/* 프레임(로컬 Prism 매칭) */
+.published-container .callout{
+--callout-background-alpha: 20%;
+--callout-radius: 12px; /* 필요시 조정 */
+background-color: unset;
+box-shadow: none;
+border-left: 0 !important; /* 좌보더/섀도우 제거 */
+border-inline-start: 0 !important;
+}
+.published-container .callout::before{ content:none !important; }
+
+.published-container .callout > .callout-title{
+position: relative; z-index: 5;
+display:flex; align-items:center;
+min-height:36px;
+padding:6px 10px;
+border:2px solid;
+border-radius: var(--callout-radius);
+}
+.published-container .callout > .callout-title .callout-icon{
+margin:0 8px 0 10px; border-radius: var(--callout-radius);
+}
+.published-container .callout > .callout-title .callout-title-inner{
+margin:0 8px 0 10px; font-weight:700;
+}
+.published-container .callout > .callout-title .callout-fold{
+display:flex; margin-inline-start:auto;
+}
+.published-container .callout > .callout-content{
+padding:20px 12px 4px 12px;
+margin-top:-16px; /* 타이틀 보더와 결속 */
+border-right:1px solid;
+border-bottom:1px solid;
+border-left:1px solid;
+border-bottom-right-radius: var(--callout-radius);
+border-bottom-left-radius: var(--callout-radius);
+}
+
+/* 타입별 색상 매핑 */
+.published-container .callout{ --co-left: var(--color-grey-tint); } /* 기본값 */
+
+.published-container .callout[data-callout="note"] > .callout-title{
+color: var(--color-grey-text); background: var(--color-grey-base); border-color: var(--color-grey-tint);
+}
+.published-container .callout[data-callout="note"] > .callout-title .svg-icon{ color: var(--color-grey-text); }
+.published-container .callout[data-callout="note"] > .callout-content{
+background: hsla(var(--color-grey-base-hsl), var(--callout-background-alpha)); border-color: var(--color-grey-tint);
+}
+
+.published-container .callout:is([data-callout="abstract"],[data-callout="summary"],[data-callout="tldr"]){ --co-left: var(--color-cyan-tint); }
+.published-container .callout:is([data-callout="abstract"],[data-callout="summary"],[data-callout="tldr"]) > .callout-title{
+color: var(--color-cyan-text); background: var(--color-cyan-base); border-color: var(--color-cyan-tint);
+}
+.published-container .callout:is([data-callout="abstract"],[data-callout="summary"],[data-callout="tldr"]) > .callout-content{
+background: hsla(var(--color-cyan-base-hsl), var(--callout-background-alpha)); border-color: var(--color-cyan-tint);
+}
+
+.published-container .callout:is([data-callout="info"],[data-callout="todo"]){ --co-left: var(--color-blue-tint); }
+.published-container .callout:is([data-callout="info"],[data-callout="todo"]) > .callout-title{
+color: var(--color-blue-text); background: var(--color-blue-base); border-color: var(--color-blue-tint);
+}
+.published-container .callout:is([data-callout="info"],[data-callout="todo"]) > .callout-content{
+background: hsla(var(--color-blue-base-hsl), var(--callout-background-alpha)); border-color: var(--color-blue-tint);
+}
+
+.published-container .callout:is([data-callout="important"],[data-callout="hint"],[data-callout="tip"]){ --co-left: var(--color-mint-tint); }
+.published-container .callout:is([data-callout="important"],[data-callout="hint"],[data-callout="tip"]) > .callout-title{
+color: var(--color-mint-text); background: var(--color-mint-base); border-color: var(--color-mint-tint);
+}
+.published-container .callout:is([data-callout="important"],[data-callout="hint"],[data-callout="tip"]) > .callout-content{
+background: hsla(var(--color-mint-base-hsl), var(--callout-background-alpha)); border-color: var(--color-mint-tint);
+}
+
+.published-container .callout:is([data-callout="success"],[data-callout="check"],[data-callout="done"]){ --co-left: var(--color-green-tint); }
+.published-container .callout:is([data-callout="success"],[data-callout="check"],[data-callout="done"]) > .callout-title{
+color: var(--color-green-text); background: var(--color-green-base); border-color: var(--color-green-tint);
+}
+.published-container .callout:is([data-callout="success"],[data-callout="check"],[data-callout="done"]) > .callout-content{
+background: hsla(var(--color-green-base-hsl), var(--callout-background-alpha)); border-color: var(--color-green-tint);
+}
+
+.published-container .callout:is([data-callout="question"],[data-callout="help"],[data-callout="faq"]){ --co-left: var(--color-yellow-tint); }
+.published-container .callout:is([data-callout="question"],[data-callout="help"],[data-callout="faq"]) > .callout-title{
+color: var(--color-yellow-text); background: var(--color-yellow-base); border-color: var(--color-yellow-tint);
+}
+.published-container .callout:is([data-callout="question"],[data-callout="help"],[data-callout="faq"]) > .callout-content{
+background: hsla(var(--color-yellow-base-hsl), var(--callout-background-alpha)); border-color: var(--color-yellow-tint);
+}
+
+.published-container .callout:is([data-callout="warning"],[data-callout="caution"],[data-callout="attention"]){ --co-left: var(--color-orange-tint); }
+.published-container .callout:is([data-callout="warning"],[data-callout="caution"],[data-callout="attention"]) > .callout-title{
+color: var(--color-orange-text); background: var(--color-orange-base); border-color: var(--color-orange-tint);
+}
+.published-container .callout:is([data-callout="warning"],[data-callout="caution"],[data-callout="attention"]) > .callout-content{
+background: hsla(var(--color-orange-base-hsl), var(--callout-background-alpha)); border-color: var(--color-orange-tint);
+}
+
+.published-container .callout:is([data-callout="failure"],[data-callout="danger"],[data-callout="error"]){ --co-left: var(--color-red-tint); }
+.published-container .callout:is([data-callout="failure"],[data-callout="danger"],[data-callout="error"]) > .callout-title{
+color: var(--color-red-text); background: var(--color-red-base); border-color: var(--color-red-tint);
+}
+.published-container .callout:is([data-callout="failure"],[data-callout="danger"],[data-callout="error"]) > .callout-content{
+background: hsla(var(--color-red-base-hsl), var(--callout-background-alpha)); border-color: var(--color-red-tint);
+}
+
+.published-container .callout[data-callout="bug"],
+.published-container .callout[data-callout="example"]{ --co-left: var(--color-purple-tint); }
+.published-container .callout[data-callout="bug"] > .callout-title,
+.published-container .callout[data-callout="example"] > .callout-title{
+color: var(--color-purple-text); background: var(--color-purple-base); border-color: var(--color-purple-tint);
+}
+.published-container .callout[data-callout="bug"] > .callout-content,
+.published-container .callout[data-callout="example"] > .callout-content{
+background: hsla(var(--color-purple-base-hsl), var(--callout-background-alpha)); border-color: var(--color-purple-tint);
+}
+
+.published-container .callout[data-callout="quote"] > .callout-title{
+color: var(--color-grey-text); background: var(--color-grey-base); border-color: var(--color-grey-tint);
+}
+.published-container .callout[data-callout="quote"] > .callout-content{
+background: hsla(var(--color-grey-base-hsl), var(--callout-background-alpha)); border-color: var(--color-grey-tint);
+}
+
+/* 전역 좌보더 하늘색 덮어쓰기(콜아웃 내부만) */
+.published-container .callout > .callout-title,
+.published-container .callout > .callout-content{
+border-left-color: var(--co-left) !important;
+}
+
+/* === 250813 레이아웃 최종 — 좌(사이드바), 중(본문), 우(목차) 고정 (수정판) === */
+/* 3열 고정: 좌 고정 + 중앙 유동 + 우 고정 (명시적 grid-area로 강제 배치) */
+.published-container .site-body {
+  display: grid !important;
+  grid-template-columns:
+    var(--site-left-column-width, 260px)
+    minmax(0, 1fr)
+    0;                       /* ← 3번째 트랙 접기 */
+  grid-template-areas: "left center right";
+  column-gap: 0 !important;  /* ← 가운데-오른쪽 사이 여백 제거 */
+  align-items: start !important;
+}
+
+/* 칼럼 배치 강제 */
+.published-container .site-body-left-column  { grid-area: left; }
+.published-container .site-body-center-column{ grid-area: center; min-width: 0; }
+.published-container .site-body-right-column { grid-area: right; }
+
+/* 중앙 칼럼: 높이 고정 + 자체 세로 스크롤 + 내용 폭 제한 해제 */
+.published-container .site-body-center-column {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: visible;
+  margin-right: calc(var(--site-right-column-width) + var(--site-right-gap)) !important; /* ← 핵심 */
+  padding-right: 0 !important;
+}
+
+.published-container .site-body-center-column > .render-container {
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  display: block !important;
+}
+
+/* 우측 칼럼: 상단 고정 + 필요 시 자체 스크롤 (hidden 제거) */
+:root{
+  --site-right-column-width: 240px; /* 필요시 조절 */
+  --site-right-gap: 12px;            /* 본문과의 간격 */
+}
+.published-container .site-body-right-column {
+  position: fixed !important;
+  right: var(--site-right-gap) !important;
+  top: 0 !important;
+  width: var(--site-right-column-width) !important;
+  height: 100vh !important;
+  overflow: auto !important;
+  z-index: 5 !important;
+  word-break: break-word;
+}
+
+/* === 표: 컨테이너 넘칠 때 '표 안에서만' 가로 스크롤 (유지) === */
+.published-container .markdown-preview-view table {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  table-layout: auto;
+}
+.published-container .markdown-preview-view th,
+.published-container .markdown-preview-view td {
+  white-space: nowrap;
+}
+.published-container .markdown-preview-view table.wrap th,
+.published-container .markdown-preview-view table.wrap td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* === 250813 긴급 고정 오버라이드: 3열 + 본문 스크롤 + 우측 상단 고정 === */
+
+/* 1) 페이지 스크롤 막는 hidden 상쇄 (중복 정의 무력화) */
+html, body { overflow-y: auto !important; }
+
+/* 2) 레이아웃을 확실히 3열로 고정 (grid) + flex 폴백 */
+.published-container .site-body {
+  display: grid !important;
+  grid-template-columns:
+    var(--site-left-column-width, 260px)
+    minmax(0, 1fr)
+    var(--site-right-column-width, 240px) !important;
+  grid-template-areas: "left center right" !important;
+  column-gap: var(--site-columns-gap, 24px) !important;
+  align-items: start !important;
+}
+.published-container .site-body-left-column  { grid-area: left !important; }
+.published-container .site-body-center-column{ grid-area: center !important; min-width: 0 !important; }
+.published-container .site-body-right-column { grid-area: right !important; }
+
+/* flex 폴백 (혹시 상위 CSS가 grid를 깨면 강제 적용) */
+@supports not (grid-template-areas: "a b c") {
+  .published-container .site-body { display:flex !important; gap:24px !important; flex-wrap: nowrap !important; }
+  .published-container .site-body-left-column   { flex: 0 0 var(--site-left-column-width,260px) !important; }
+  .published-container .site-body-center-column { flex: 1 1 auto !important; min-width:0 !important; }
+  .published-container .site-body-right-column  { flex: 0 0 var(--site-right-column-width,240px) !important; }
+}
+
+/* 3) 본문 칼럼: 자체 세로 스크롤 켜기 */
+.published-container .site-body-center-column,
+.published-container .site-body-center-column > .render-container,
+.published-container .site-body-center-column .markdown-preview-view {
+  height: 100vh !important;
+  overflow-y: auto !important;
+  overflow-x: visible !important;
+}
+
+/* 4) 우측 칼럼: 오른쪽 상단에 고정 + 필요시 자체 스크롤 */
+.published-container .site-body-right-column {
+  position: sticky !important;
+  top: 0 !important;
+  height: 100vh !important;
+  overflow: auto !important;        /* hidden으로 덮이지 않게 */
+  align-self: start !important;
+  word-break: break-word !important;
+}
+
+/* === 250813 HARD-LOCK: 우측 패널을 뷰포트 오른쪽에 고정 === */
+@media (min-width: 1200px) {
+  /* 부모 overflow 영향 차단 + 오른쪽 고정 */
+  .published-container .site-body { 
+    overflow: visible !important; 
+  }
+
+  /* 중앙 칼럼이 우측 패널 밑으로 파고들지 않도록 공간 확보 */
+  .published-container .site-body-center-column {
+    margin-right: calc(var(--site-right-column-width, 240px) + var(--site-columns-gap, 24px)) !important;
+    min-width: 0 !important;      /* 긴 표/코드로 인해 가로로 밀리지 않게 */
+    height: 100vh !important;     
+    overflow-y: auto !important;  /* 본문 자체 스크롤 확실히 유지 */
+  }
+
+  /* 좌측은 기존 sticky/스크롤 유지(필요 시 주석 해제)
+  .published-container .site-body-left-column { 
+    position: sticky; top: 0; height: 100vh; overflow: auto; 
+  }
+  */
+}
+
+/* === 250813 Right rail tight-fit === */
+/* 우측 패널 폭과 간격을 변수로 통일 관리 */
+:root{
+  --site-right-column-width: 240px;   /* 우측 패널 실제 폭 */
+  --site-right-gap: 16px;             /* 중앙↔우측 간격 (원하면 12~24px로 미세조정) */
+}
+
+/* 우측 패널: 고정 위치 + 간격을 동일 변수로 */
+.published-container .site-body-right-column {
+  position: fixed !important;
+  right: var(--site-right-gap) !important;
+  top: var(--site-header-height, 0px) !important;
+  width: var(--site-right-column-width) !important;
+  height: calc(100vh - var(--site-header-height, 0px)) !important;
+  overflow: auto !important;
+  z-index: 5 !important;
+}
+
+/* 중앙 칼럼: 우측에 '패널폭 + 간격' 만큼만 정확히 비워둠 */
+.published-container .site-body-center-column {
+  margin-right: calc(var(--site-right-column-width) + var(--site-right-gap)) !important;
+  min-width: 0 !important;
+  height: 100vh !important;
+  overflow-y: auto !important;
+}
+
+/* 오른쪽 여백을 키워버리던 내부 패딩 제거(중복 예약 방지) */
+.published-container .site-body,
+.published-container .site-body-center-column,
+.published-container .site-body-center-column > .render-container,
+.published-container .site-body-center-column .render-container-inner,
+.published-container .site-body-center-column .markdown-preview-view {
+  padding-right: 0 !important;
+  max-width: none !important;
+}
+
+/* 중앙 칼럼 오른쪽 여백(주황)을 제거 */
+/* .published-container .site-body-center-column { margin-right: 0 !important; } */
+
+/* 0) (중요) 이 전역 규칙에서 white-space 강제 해제 or 삭제 */
+table td, table th {
+  text-align: center !important;
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  /* white-space: normal !important;  ← 이 줄을 지우거나 주석 처리 */
+}
+
+/* 1) 표 기본은 줄바꿈 금지(가독성 유지) 
+.published-container .markdown-preview-view :is(th, td) {
+  white-space: nowrap !important;
+} */
+
+/* 2) 줄바꿈이 필요한 표에는 .wrap 클래스로 예외 허용 */
+.published-container .markdown-preview-view table.wrap :is(th, td) {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+}
+
+/* 3) 우측 패널 공간 확보 규칙은 유지하고… */
+.published-container .site-body-center-column {
+  margin-right: calc(var(--site-right-column-width) + var(--site-right-gap)) !important;
+  min-width: 0 !important;
+  height: 100vh !important;
+  overflow-y: auto !important;
+}
+
+/* …아래 줄은 반드시 삭제(또는 주석 처리) */
+ /* .published-container .site-body-center-column { margin-right: 0 !important; } */
+
+ /* 표 기본: 줄바꿈 금지 */
+.published-container .markdown-preview-view :is(th, td) {
+  white-space: nowrap !important;
+}
+
+/* 필요할 때만 .wrap 표에 줄바꿈 허용 */
+.published-container .markdown-preview-view table.wrap :is(th, td) {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+}
+
+/* 본문 칼럼: 우측 패널 공간 확보 */
+.published-container .site-body-center-column {
+  margin-right: calc(var(--site-right-column-width) + var(--site-right-gap)) !important;
+  min-width: 0 !important;
+  height: 100vh !important;
+  overflow-y: auto !important;
+}
+
+/* === Right rail flush: center를 우측 패널에 딱 붙이기 === */
+/* 1) 그리드 칼럼 간격을 0으로(주황 틈 제거) */
+.published-container .site-body{
+  column-gap: 0 !important;
+}
+
+/* 4) center 쪽에 남아있을 수 있는 내부 padding/margin 제거(중복 방지) */
+.published-container .site-body-center-column,
+.published-container .site-body-center-column > .render-container,
+.published-container .site-body-center-column .render-container-inner,
+.published-container .site-body-center-column .markdown-preview-view{
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+}
+
+/* 반응형 브레이크포인트(좁은 화면에서 우측 패널 접기) */
+@media (max-width: 1280px){
+  .published-container .site-body-right-column{
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    right: auto !important;
+  }
+  .published-container .site-body-center-column{
+    margin-right: 0 !important;
+  }
+}
+
+/* 스크롤바 생길 때 미세한 레이아웃 흔들림 방지 */
+.published-container .site-body-center-column{
+  scrollbar-gutter: stable; /* both-edges;*/
+}
+
+/* 좁은 화면에서 우측 패널 완전히 접기 */
+@media (max-width: 1400px) {
+  .published-container .site-body-right-column {
+    display: none !important;   /* 자리 자체를 없애버림 */
+  }
+  .published-container .site-body-center-column {
+    margin-right: 0 !important; /* 본문을 끝까지 붙이기 */
+    width: auto !important;
+  }
+}
+
+/* 우측 패널을 fixed로 쓰므로, 그리드의 3번째 트랙 자체를 접는다 */
+.published-container .site-body{
+  grid-template-columns:
+    var(--site-left-column-width, 260px)
+    minmax(0, 1fr)
+    0 !important;
+  column-gap: 0 !important; /* 남는 틈 제거 */
+}
+
+/* 본문은 우측 패널(고정)의 폭+간격 만큼만 정확히 비워둔다 */
+:root{
+  --site-right-column-width: 240px;
+  --site-right-gap: 12px; /* 붙이는 간격, 원하면 8~12로 */
+}
+.published-container .site-body-center-column{
+  margin-right: 0 !important;
+  padding-right: calc(var(--site-right-column-width) + var(--site-right-gap)) !important;
+  box-sizing: border-box;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: 100vh !important;
+  overflow-y: auto !important;
+}
+
+/* 우측 패널은 고정 유지 */
+.published-container .site-body-right-column{
+  position: fixed !important;
+  right: var(--site-right-gap) !important;
+  top: var(--site-header-height, 0px) !important;
+  width: var(--site-right-column-width) !important;
+  height: calc(100vh - var(--site-header-height, 0px)) !important;
+  overflow: auto !important;
+  z-index: 5 !important;
+}
+
+/* === FINAL OVERRIDE — put AT THE VERY END === */
+:root{
+  --site-right-column-width: 275px;
+  --site-right-gap: -16px;   /* 본문↔우측패널 간격: 4~12px로 취향 조절 */
+}
+
+/* 1) 그리드의 3번째 트랙(우측 칼럼 자리)을 0으로 접기 */
+.published-container .site-body{
+  grid-template-columns:
+    var(--site-left-column-width, 260px)
+    minmax(0, 1fr)
+    0 !important;
+  column-gap: 0 !important;            /* 가운데-오른쪽 사이 간격 제거 */
+}
+
+/* 2) 우측 패널은 화면 오른쪽에 고정 */
+.published-container .site-body-right-column{
+  position: fixed !important;          /* sticky 충돌 방지 */
+  right: var(--site-right-gap) !important;
+  top: 0 !important;
+  width: var(--site-right-column-width) !important;
+  height: 100vh !important;
+  overflow: auto !important;
+  z-index: 5 !important;
+}
+
+/* 3) 본문은 ‘패널폭 + 간격’만큼만 정확히 비워서 바로 붙이기 */
+.published-container .site-body-center-column{
+  margin-right: 0 !important;
+  padding-right: calc(var(--site-right-column-width) + var(--site-right-gap)) !important;
+  box-sizing: border-box;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: 100vh !important;
+  overflow-y: auto !important;
+}
+
+/* 아래 내부 컨테이너들의 padding-right:0 규칙은 그대로 둬도 됩니다.
+   (부모의 padding이 공간을 확보하므로 겹치지 않아요) */
+
+
+/* 4) 혹시 남아 있을 수 있는 내부 padding/right 여백들 제거 */
+.published-container .site-body-center-column > .render-container,
+.published-container .site-body-center-column .render-container-inner,
+.published-container .site-body-center-column .markdown-preview-view{
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+}
+
+/* 좁은 화면에서 우측 패널 자동 접기 + 본문 꽉 채우기 */
+@media (max-width: 1350px){
+  .published-container .site-body-right-column{
+    display: none !important;
+  }
+  .published-container .site-body-center-column{
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* === 좌측 칼럼 정렬 보정(강화판): inner를 부모 폭에 정확히 붙이고 쏠림 해제 === */
+.published-container .site-body-left-column {
+  box-sizing: border-box !important;
+}
+
+/* 혹시 남아있을 수 있는 덮어쓰기 규칙 차단 */
+a.site-body-left-column-site-name::after,
+.published-container .site-body-left-column-site-name:not(:has(a))::after { content: none !important; }
+.published-container .site-body-left-column-site-name:not(:has(a)) {
+  font: inherit !important;
+  line-height: normal !important;
+  text-align: center !important;
+}
+
+/* 좌측 패널 로고 크게 보이게 */
+/* 좌측 패널 로고 250×250 고정 */
+.published-container .site-body-left-column .site-body-left-column-site-logo {
+  display: block !important;
+  width: 250px !important;
+  height: 250px !important;
+  margin: 8px auto 12px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  border-radius: 12px;
+}
+
+/* 만약 로고가 <img>로 들어오는 테마라면(백그라운드가 아닌 경우) 같이 사용 */
+.published-container .site-body-left-column .site-body-left-column-site-logo img {
+  display: block !important;
+  width: 100% !important;      /* 컨테이너(250px) 폭에 딱 맞춤 */
+  height: 100% !important;     /* 컨테이너(250px) 높이에 딱 맞춤 */
+  max-width: none !important;  /* 혹시 테마에서 max 제한을 걸면 해제 */
+  max-height: none !important;
+  object-fit: contain !important; /* 비율 유지하며 250×250 안에 꽉 차게 */
+  margin: 0 auto !important;
+}
+
+/* 좌측 컬럼 이너를 부모 폭에 정확히 맞춤 */
+/* 좌측 컬럼 이너를 부모 폭에 정확히 맞춤(정렬 고정판) */
+.published-container .site-body-left-column-inner {
+  position: static !important;       /* ← 흐름에 자연스럽게 배치 */
+  top: auto !important;              /* inset/offset 값 무력화 */
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  display: block !important;
+}
+
+
+/* 좌측 패널 사이트 제목만 큰 폰트(2줄 유지) */
+.published-container .site-body-left-column .site-body-left-column-site-name a,
+.published-container a.site-body-left-column-site-name {
+  display: block !important;
+  margin: 0 auto 10px !important;
+  text-align: center !important;
+
+  /* 줄바꿈/분할 규칙 */
+  white-space: normal !important;
+  word-break: keep-all !important;
+  text-wrap: balance;
+
+  /* shorthand로 테마의 font:14px !important 완전히 덮어쓰기 */
+  font: 800 clamp(24px, 3vw, 24px) / 1.28 "Malgun Gothic","맑은 고딕", Arial, sans-serif !important;
+
+  /* 2줄로 예쁘게 떨어지도록 폭 고정(필요시 13.8~15em에서 미세조정) */
+  width: 15.0em !important;
+  max-width: 100% !important;
+  padding: 0 4px !important;
+}
+
+/* 좌측 파일목록도 상단 고정 + 자체 스크롤 */
+.published-container .site-body-left-column {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+  padding: 0 !important;   /* ← 내부 여백 제거 */
+  margin: 0 !important;    /* ← 바깥 여백 제거 */
+  box-sizing: border-box !important;
+}
+
+/* 좌측 패널: 검색박스와 트리 전체를 좌측에서 6px 인셋 */
+:root { --left-rail-inset: 16px; } /* 4~6px로 취향 조정 */
+
+.published-container .site-body-left-column .search-view-outer {
+  margin-left: var(--left-rail-inset) !important;
+}
+
+/* 콜아웃 배경 이미지 삽입 */
+/* === Callout BG – clean v3.2 ===
+   - anchor: .callout (배경은 여기에 절대배치)
+   - title/content: 앞으로(z), 배경: 뒤로(z:-1)
+   - top 계산식: (제목 높이 + 제목 테두리) - 콘텐츠 overlap + 미세조정
+   -------------------------------------------------------------- */
+
+/* 조정용 변수(필요하면 아래 값만 만지면 됩니다) */
+:root{
+  --callbg-right: 1px;        /* 오른쪽 여백(테두리 안쪽) */
+  --callbg-bottom: 1px;       /* 아래 여백(테두리 안쪽) */
+  --callbg-left: 1px;         /* 왼쪽 여백(테두리 안쪽) */
+  --callbg-radius: 12px;      /* 배경 모서리 반경 */
+  --callbg-fit: fill;        /* 이미지 채움 방식 */
+  /* 레이아웃 상수(현재 테마 기준) */
+  --callout-title-min: 36px;  /* 제목 바 높이 */
+  --callout-title-border: 2px;/* 제목 바 테두리(상단) */
+  --callout-content-overlap: 16px; /* 콘텐츠가 제목 쪽으로 들어가는 양(= -16px 마진의 절댓값) */
+  --callbg-top-adjust: 0px;   /* 미세조정: 위로 올리면 음수, 내리면 양수 */
+}
+
+/* 1) 콜아웃을 배경의 기준점으로 만든다 */
+.published-container .markdown-preview-view .callout.is-collapsible{
+  position: relative;         /* anchor */
+  overflow: hidden;           /* 배경을 테두리 안으로 클리핑 */
+  border-radius: var(--callbg-radius);
+}
+
+/* 2) 제목/콘텐츠는 항상 앞쪽(z) — 클릭/선택 보장 */
+.published-container .markdown-preview-view .callout.is-collapsible > .callout-title{
+  position: relative; z-index: 3;
+}
+.published-container .markdown-preview-view .callout.is-collapsible > .callout-content{
+  position: static !important; /* ★ 중요: 상대배치 제거 → 배경의 기준이 .callout이 되도록 */
+  z-index: auto;
+}
+
+/* ==== callbg — rounded clip + live insets (final fix) ==== */
+:root{
+  /* 전역 미세조정(원하면 여기 숫자만 바꾸면 됩니다) */
+  --callbg-radius: 12px;      /* 콜아웃 라운드와 동일 */
+  --callbg-top-adjust: -10px;   /* 위로 붙이면 -1px, 내려면 1px */
+  --callbg-right: 12px;        /* 우측 안쪽 인셋 */
+  --callbg-bottom: 12px;       /* 하단 안쪽 인셋 */
+  --callbg-left: 25px;         /* 좌측 안쪽 인셋 */
+}
+
+/* 배경 래퍼: inset:0로 전체 덮고, clip-path로 '안쪽만' 자른 뒤 모서리 라운드도 함께 적용 */
+.published-container .markdown-preview-view
+.callout.is-collapsible:has(img[alt~="callbg"])
+  :is(.image-embed:has(> img[alt~="callbg"]), .internal-embed.image-embed:has(> img[alt~="callbg"])) {
+
+  /* 상단 잘라낼 양(제목바 바로 아래까지) */
+  --_clip-top: calc(
+    var(--callout-title-min, 36px) + var(--callout-title-border, 2px)
+    - var(--callout-content-overlap, 16px) + var(--callbg-top-adjust, 0px)
+  );
+  /* 각 모서리의 유효 반경(라운드가 똑같이 보이도록) */
+  --_r: var(--callbg-radius, 12px);
+  --_rtop: calc(max(0px, var(--_r) - var(--_clip-top)));
+  --_rbottom: calc(max(0px, var(--_r) - var(--callbg-bottom, 1px)));
+
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+
+  /* ← 핵심: 코너까지 따로 둥글게 자르기 */
+  clip-path: inset(
+    var(--_clip-top)
+    var(--callbg-right, 1px)
+    var(--callbg-bottom, 1px)
+    var(--callbg-left, 1px)
+    round var(--_rtop) var(--_rtop) var(--_rbottom) var(--_rbottom)
+  );
+}
+
+/* === callbg: top-only rounding override ===================== */
+/* 상단 내부 라운드 반경(원하는 값으로만 조절) */
+:root{
+  --callbg-top-round: 14px;                       /* ← 여기만 바꾸면 됨 (0~12px 권장) */
+  --callbg-bottom-round: var(--callbg-radius, 12px);
+}
+
+.published-container .markdown-preview-view
+.callout.is-collapsible:has(img[alt~="callbg"])
+  :is(.image-embed:has(> img[alt~="callbg"]), .internal-embed.image-embed:has(> img[alt~="callbg"])){
+  /* 기존 clip-path를 '라운드 반경 고정'으로 재정의 */
+  clip-path: inset(
+    var(--_clip-top)
+    var(--callbg-right, 1px)
+    var(--callbg-bottom, 1px)
+    var(--callbg-left, 1px)
+    round var(--callbg-top-round) var(--callbg-top-round)
+          var(--callbg-bottom-round) var(--callbg-bottom-round)
+  ) !important;
+}
+
+/* === callbg: expand image by the inset amounts (no more gaps) === */
+.published-container .markdown-preview-view
+.callout.is-collapsible:has(img[alt~="callbg"])
+  :is(.image-embed:has(> img[alt~="callbg"]), .internal-embed.image-embed:has(> img[alt~="callbg"])) > img[alt~="callbg"]{
+  position: absolute !important;
+
+  /* 인셋만큼 바깥으로 뻗쳐서 깔기(보이는 건 clip-path 안쪽만) */
+  left:   calc(-1 * var(--callbg-left,   0px));
+  right:  calc(-1 * var(--callbg-right,  0px));
+  top:    calc(-1 * var(--_clip-top,     0px));  /* 제목 쪽 잘라낸 만큼 위로 확장 */
+  bottom: calc(-1 * var(--callbg-bottom, 0px));
+
+  /* 위 네 변을 음수로 뻗쳤으니, 크기도 그만큼 더 크게 */
+  width:  calc(100% + var(--callbg-left,0px) + var(--callbg-right,0px));
+  height: calc(100% + var(--_clip-top,0px)   + var(--callbg-bottom,0px));
+
+  /* 취향: 비율 무시하고 늘리려면 fill, 비율 유지면 cover */
+  object-fit: var(--callbg-fit, cover) !important;
+  object-position: center !important;
+
+  /* 기본 max 제한/여백 제거 */
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  z-index: -1 !important;        /* 항상 뒤 */
+  pointer-events: none !important;
+}
+
+/* ====== CUSTOM CALLOUT (Publish) — [!custom-imaged] ====== */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"]{
+  /* 색/타이포 기본값 */
+  --ci-border: var(--h1-color, var(--color-h1)); /* H1색 */
+  --ci-text:   #232323;
+
+  /* 아이콘/간격 기본값 (로컬에서 맞춘 값과 동일) */
+  --ci-icon-size: 16px;
+  --ci-gap: 8px;
+  --ci-leftpad: 10px;
+}
+
+/* (공통) 제목/본문 폰트/보더 컬러 */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"] > .callout-title,
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"] > .callout-content{
+  color: var(--ci-text) !important;
+  border-color: var(--ci-border) !important;
+  background: transparent;
+}
+
+/* (접힘 상태) 타이틀 배경: H1색 20% */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"].is-collapsible.is-collapsed > .callout-title{
+  background-color: color-mix(in srgb, var(--ci-border), transparent 80%);
+  border-color: var(--ci-border) !important;
+  color: var(--ci-text) !important;
+}
+
+/* 기본 svg 아이콘 숨기기 */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"] > .callout-title .callout-icon .svg-icon{
+  display:none !important;
+}
+
+/* 아이콘: 둥근 잘림/배경뱃지 제거 + 마스크 아이콘 */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"] > .callout-title .callout-icon{
+  width: var(--ci-icon-size);
+  height: var(--ci-icon-size);
+  min-width: var(--ci-icon-size);
+  min-height: var(--ci-icon-size);
+  flex: 0 0 var(--ci-icon-size);
+  margin-right: var(--ci-gap);
+  border-radius: 0 !important;
+  overflow: visible !important;
+  background: none !important;
+
+  /* 아이콘 색 = H1색 */
+  background-color: var(--ci-border) !important;
+  -webkit-mask: url("https://api.iconify.design/lucide/newspaper.svg") center/contain no-repeat;
+          mask: url("https://api.iconify.design/lucide/newspaper.svg") center/contain no-repeat;
+}
+
+/* 좌측 내어쓰기(필요 시 조정; 기본 0) */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"] > .callout-title{
+  padding-left: var(--ci-leftpad) !important;
+}
+
+/* ===== custom-imaged (Publish) — 타이틀 가독성 오버레이 ===== */
+/* 강도 조절용(작게 = 옅게, 크게 = 진하게) */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"]{
+  --ci-title-open-tint: color-mix(in srgb, #232323 18%, transparent 82%); /* 펼친 상태 음영 */
+}
+
+/* 접힌 상태: 기존처럼 H1색의 옅은 배경(이미 적용돼 있으면 유지) */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"].is-collapsible.is-collapsed > .callout-title{
+  background-color: color-mix(in srgb, var(--ci-border), transparent 80%) !important;
+  border-color: var(--ci-border) !important;
+  color: var(--ci-text) !important;
+}
+
+/* 펼친 상태: 이미지 위에 은은한 음영을 얹어 글자 가독성 확보 */
+.published-container .markdown-preview-view
+.callout[data-callout="custom-imaged"].is-collapsible:not(.is-collapsed) > .callout-title{
+  background-color: var(--ci-title-open-tint) !important;
+  border-color: var(--ci-border) !important;   /* h1색 테두리 유지 */
+  color: var(--ci-text) !important;            /* 글자색 232323 유지 */
+  /* 선택: 경계가 살짝 드러나게 아주 미세한 인셋 그림자 */
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, #000 10%, transparent) !important;
+}
+
+/* === Normalize callout icons (Publish) =========================== */
+/* 아이콘 배경 뱃지 제거 + 아이콘 색을 제목색(=currentColor)으로 통일 */
+.published-container .callout > .callout-title .callout-icon{
+  background: none !important; box-shadow: none !important; border: 0 !important;
+}
+.published-container .callout > .callout-title .callout-icon .svg-icon{
+  color: currentColor !important;  /* Lucide는 stroke: currentColor 를 사용 */
+}
+
+/* === 보완: 각 타입별 매핑에서 제목색/테두리/콘텐츠가 이미 세팅되어 있으므로
+   아이콘은 위 규칙으로 자동 상속됩니다. 필요 시 아이콘 테두리 느낌을 주고 싶다면: */
+.published-container .callout:is(
+  [data-callout="bug"],
+  [data-callout="example"],
+  [data-callout="failure"],
+  [data-callout="danger"],
+  [data-callout="warning"],
+  [data-callout="question"],
+  [data-callout="note"],
+  [data-callout="abstract"],
+  [data-callout="info"],
+  [data-callout="todo"],
+  [data-callout="important"],
+  [data-callout="hint"],
+  [data-callout="tip"],
+  [data-callout="success"],
+  [data-callout="check"],
+  [data-callout="done"],
+  [data-callout="quote"]
+) > .callout-title .callout-icon{
+  /* 살짝 공간만 유지(선택사항) */
+  margin-left: 8px; margin-right: 8px;
+}
+
+/* (선택) bug / example 에 아이콘 외곽선 느낌을 추가하고 싶으면: 
+.published-container .callout[data-callout="bug"] > .callout-title .callout-icon,
+.published-container .callout[data-callout="example"] > .callout-title .callout-icon{
+  outline: 1px solid var(--color-purple-tint); border-radius: 4px;
+}
+*/
+
+/* === Publish: Callout 아이콘 색을 '외곽선 색'으로 통일 === */
+/* 외곽선 색 변수 우선순위: --co-left → --callout-accent → --callout-color → 현재 글자색 */
+.published-container .callout > .callout-title{
+  --_ci-border-color: var(--co-left, var(--callout-accent, var(--callout-color, currentColor)));
+}
+
+/* 아이콘 자체 색상을 외곽선 색으로 */
+.published-container .callout > .callout-title .callout-icon,
+.published-container .callout > .callout-title .callout-icon .svg-icon{
+  color: var(--_ci-border-color) !important;
+}
+
+/* Lucide(선 아이콘) 스트로크를 현재색으로 강제 */
+.published-container .callout > .callout-title .callout-icon .svg-icon *,
+.published-container .callout > .callout-title .callout-icon svg *{
+  stroke: currentColor !important;
+}
+
+/* 혹시 채움 아이콘이 섞여 있으면 fill도 현재색으로 */
+.published-container .callout > .callout-title .callout-icon .svg-icon [fill]:not([fill="none"]),
+.published-container .callout > .callout-title .callout-icon svg [fill]:not([fill="none"]){
+  fill: currentColor !important;
+}
+
+/* === Bug 색상 미세조절(퍼블리시) ===================================== */
+/* 0%면 완전 보라, 100%면 완전 빨강 — 취향대로 가감하세요 */
+:root{
+  --bug-mix: 28%; /* ← 다홍으로 보이면 값을 낮추고(보라쪽), 빨갛게 하려면 높여요 */
+}
+
+/* 보라/빨강 팔레트에서 섞은 버전 만들기 (HSL 공간에서 섞음) */
+.published-container{
+  --bug-base: color-mix(in hsl,
+                 var(--color-purple-base) calc(100% - var(--bug-mix)),
+                 var(--color-red-base)     var(--bug-mix));
+  --bug-tint: color-mix(in hsl,
+                 var(--color-purple-tint) calc(100% - var(--bug-mix)),
+                 var(--color-red-tint)     var(--bug-mix));
+  --bug-text: color-mix(in hsl,
+                 var(--color-purple-text) calc(100% - var(--bug-mix)),
+                 var(--color-red-text)     var(--bug-mix));
+}
+
+/* Bug 콜아웃에 섞은 색 적용 (기존 보라 매핑을 덮어씀) */
+.published-container .callout[data-callout="bug"] > .callout-title{
+  color: var(--bug-text) !important;
+  background: var(--bug-base) !important;
+  border-color: var(--bug-tint) !important;
+}
+/* 본문 패널 */
+.published-container .callout[data-callout="bug"] > .callout-content{
+  background: color-mix(in hsl, var(--bug-base) 20%, transparent) !important;
+  border-color: var(--bug-tint) !important;
+}
+/* 좌측 보더·아이콘 색(우리가 만든 외곽선 색 상속 규칙 그대로) */
+.published-container .callout[data-callout="bug"] > .callout-title,
+.published-container .callout[data-callout="bug"] > .callout-content{
+  --co-left: var(--bug-tint) !important;
+}
+
+/* === 250818 FINAL OVERRIDE — custom-imaged: expanded title dark overlay (Publish) === */
+/* 강도/글자색 튜닝 포인트 (원하면 여기만 조절) */
+:root{
+  --ci-title-open-tint: rgba(0,0,0,.45); /* 0.30~0.55 사이로 취향 조절 */
+  --ci-title-open-fg:   #fff;            /* 타이틀 글자/아이콘 색 (펼침 시) */
+}
+
+/* 펼침 상태(비접힘 전체 포함): 타이틀 바에 진한 오버레이 얹기 */
+.published-container .callout[data-callout="custom-imaged"]:not(.is-collapsed) > .callout-title{
+  background-color: var(--ci-title-open-tint) !important;
+  color: var(--ci-title-open-fg) !important;
+  /* 선택: 가독성 미세 강화 */
+  /* text-shadow: 0 1px 1px rgba(0,0,0,.25); */
+}
+
+/* 아이콘은 currentColor를 따르므로 위 색상과 동기화됨(가독성 살짝 업) */
+.published-container .callout[data-callout="custom-imaged"]:not(.is-collapsed) > .callout-title .callout-icon,
+.published-container .callout[data-callout="custom-imaged"]:not(.is-collapsed) > .callout-title .callout-icon .svg-icon{
+  color: currentColor !important;
+  filter: brightness(1.05) contrast(1.05);
+}
+
+/* 접힘 상태는 기존 규칙 유지(연한 H1 틴트) — 별도 수정 불필요 */
+/* === 250818 Publish — callbg가 있는 콜아웃의 '펼친' 타이틀만 어둡게 === */
+/* 진하기/글자색 튜닝 포인트 */
+:root{
+  --ci-title-strip-expanded: rgba(0,0,0,.30); /* 0.30~0.60에서 취향 조절 */
+  --ci-title-strip-fg: #fff;                  /* 타이틀 글자/아이콘 색 */
+}
+
+/* 타이틀에 오버레이 레이어를 올리기 위한 준비 */
+.published-container .markdown-preview-view
+.callout:has(img[alt~="callbg"]) > .callout-title{
+  position: relative; /* ::after 기준점 */
+}
+
+/* 펼친 상태(비접힘): 어두운 오버레이 추가 */
+.published-container .markdown-preview-view
+.callout:has(img[alt~="callbg"]):not(.is-collapsed) > .callout-title::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ci-title-strip-expanded);
+  border-radius: inherit;      /* 타이틀 둥근모서리 따라감 */
+  pointer-events: none;
+  z-index: 0;                  /* 텍스트 아래, 배경 위 */
+}
+
+/* 타이틀 안의 실제 텍스트/아이콘을 오버레이 위로 올림 */
+.published-container .markdown-preview-view
+.callout:has(img[alt~="callbg"]) > .callout-title > *{
+  position: relative;
+  z-index: 1;
+}
+
+/* 펼친 상태에선 글자/아이콘을 밝게 */
+.published-container .markdown-preview-view
+.callout:has(img[alt~="callbg"]):not(.is-collapsed) > .callout-title{
+  color: var(--ci-title-strip-fg) !important;
+}
+
+/* 아이콘은 currentColor를 따르게 통일(이미 있더라도 한번 더 고정) */
+.published-container .markdown-preview-view
+.callout:has(img[alt~="callbg"]):not(.is-collapsed) > .callout-title .callout-icon,
+.published-container .markdown-preview-view
+.callout:has(img[alt~="callbg"]):not(.is-collapsed) > .callout-title .callout-icon .svg-icon{
+  color: currentColor !important;
+  filter: brightness(1.05) contrast(1.05);
+}
+
+/* === 250818 FINAL OVERRIDE — Callout border width: 3px (Publish) === */
+.published-container .callout > .callout-title{
+  border-width: 3px !important;           /* 상·우·하·좌 모두 3px */
+}
+.published-container .callout > .callout-content{
+  /* 콘텐츠 영역은 기존 구조 유지: 위쪽 테두리는 비워서 타이틀과 결속 */
+  border-right-width: 3px !important;
+  border-bottom-width: 3px !important;
+  border-left-width: 3px !important;
+}
+
+/* callbg 클리핑 계산에서 쓰는 상단 테두리 두께 변수도 3px로 일치 */
+:root{
+  --callout-title-border: 3px;
+}
+
+/* 250818: Publish — 이미지 중앙 정렬 (확정판 / callbg 제외) */
+
+/* 1) 이미지 래퍼(.image-embed)를 블록화해서 줄바꿈 기준을 잡고 */
+.published-container .markdown-preview-view
+:is(.image-embed, .internal-embed.image-embed):has(> img:not([alt~="callbg"])) {
+  display: block !important;
+  text-align: center; /* 캡션/인라인 텍스트가 있을 때도 가운데 */
+}
+
+/* 2) 실제 <img>를 ‘마진 자동’으로 중앙 정렬 */
+.published-container .markdown-preview-view
+:is(.image-embed, .internal-embed.image-embed) > img:not([alt~="callbg"]) {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;     /* 테마에서 왼쪽으로 띄우는 규칙 무력화 */
+  max-width: 100%;
+  height: auto;
+}
+
+/* 3) 콜아웃 안에서도 동일하게 확실히 적용(보강) */
+.published-container .markdown-preview-view
+.callout .callout-content :is(.image-embed, .internal-embed.image-embed) {
+  text-align: center;
+}
+
+/* (옵션) HTML <img>로 박은 외부 이미지도 가운데로 */
+.published-container .markdown-preview-view
+p > img:not(.emoji):not([alt~="callbg"]) {
+  display: block !important;
+  margin-inline: auto !important;
+  float: none !important;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 250818: Publish — 이미지 완전 중앙 정렬 브루트-포스 (callbg 제외) */
+
+/* 0) 유틸: 필요 시 클래스로도 강제 중앙 정렬 가능 */
+.published-container .center-img { display:flex !important; justify-content:center !important; }
+.published-container .center-img > img { display:block !important; margin:auto !important; float:none !important; }
+
+/* 1) 이미지 래퍼를 flex 컨테이너로 만들어 가운데 정렬 */
+.published-container .markdown-preview-view
+:is(.image-embed, figure.image-embed, .internal-embed.image-embed)
+:has(> img:not([alt~="callbg"])) {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  float: none !important;
+  text-align: center !important;
+}
+
+/* 2) 실제 <img>는 마진-오토 + 어떤 float도 금지 */
+.published-container .markdown-preview-view
+:is(.image-embed, figure.image-embed, .internal-embed.image-embed) > img:not([alt~="callbg"]),
+.published-container .markdown-preview-view
+.callout .callout-content img:not(.emoji):not([alt~="callbg"]) {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* 3) 콜아웃 내부의 어떤 인라인 규칙도 덮어쓰기 */
+.published-container .markdown-preview-view
+.callout .callout-content :is(.image-embed, figure.image-embed, .internal-embed.image-embed){
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* === Publish: Tag chip 스타일 (오버라이드) ===========================
+   ▼ 아래 두 가지만 바꾸면 됩니다
+   --tag-bg : 태그 '배경색'
+   --tag-fg : 태그 '글자색'
+   나머지(테두리/hover/active/포커스링 등)는 자동 파생
+===================================================================== */
+:root{
+  --tag-bg: #90e5da;   /* ← 태그 배경색 (예: 프리즘 h1 톤 계열) */
+  --tag-fg: #262626;   /* ← 태그 글자색 (밝은 배경이면 어두운 글자 추천) */
+
+  /* 선택: 모서리/간격/굵기 조절 */
+  --tag-radius: 10px;     /* 모서리 반경 */
+  --tag-gap: 6px;         /* 칩 사이 간격 */
+  --tag-weight: 700;      /* 글자 굵기 */
+}
+
+/* 파생 색상(자동 계산) */
+.published-container{
+  --tag-border: color-mix(in srgb, var(--tag-bg), #000 22%);
+  --tag-bg-hover: color-mix(in srgb, var(--tag-bg), #fff 14%);
+  --tag-bg-active: color-mix(in srgb, var(--tag-bg), #000 12%);
+  --tag-ring: color-mix(in srgb, var(--tag-bg), #fff 35%);
+}
+
+/* 기본 칩 모양 */
+.published-container a.tag,
+.published-container .tag {
+  background: var(--tag-bg) !important;
+  color: var(--tag-fg) !important;
+  border: 1px solid var(--tag-border) !important;
+  border-radius: var(--tag-radius) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: .35em !important;
+  padding: 2px 10px !important;
+  line-height: 1.35 !important;
+  font-weight: var(--tag-weight) !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  margin: 0 var(--tag-gap) var(--tag-gap) 0 !important;
+  box-shadow: none !important;
+}
+
+/* 상태: hover / active / keyboard focus */
+.published-container a.tag:hover,
+.published-container .tag:hover {
+  background: var(--tag-bg-hover) !important;
+  border-color: color-mix(in srgb, var(--tag-border), #fff 20%) !important;
+}
+
+.published-container a.tag:active,
+.published-container .tag:active {
+  background: var(--tag-bg-active) !important;
+  border-color: color-mix(in srgb, var(--tag-border), #000 12%) !important;
+}
+
+.published-container a.tag:focus-visible,
+.published-container .tag:focus-visible {
+  outline: 2px solid var(--tag-ring) !important;
+  outline-offset: 2px !important;
+}
+
+/* 표/콜아웃 안에서도 동일하게 고정 */
+.published-container .markdown-preview-view table a.tag,
+.published-container .markdown-preview-view .callout a.tag {
+  white-space: nowrap !important;
+}
+
+/* 긴 태그 강제 줄바꿈이 필요하면 부모에 .tag-wrap 클래스를 주기 */
+.published-container .tag-wrap a.tag { white-space: normal !important; }
+
+/* ===== Bullet 도트 색 사용자 정의 (로컬 + 퍼블리시 공통) =================
+   ▼ 여기 네 가지 변수만 바꾸면 됩니다
+   ======================================================================= */
+:root{
+  --dot-normal: #87DFD0; /* 기본 도트(보통 설명) */
+  --dot-fnt:    #F0C04A; /* 풋노트(노랑) */
+  --dot-warn:   #E06363; /* 경고/주의(빨강) */
+  --dot-ask:    #95CCCB; /* 메모/질문(민트) */
+}
+
+/* 기본 도트 색 */
+.markdown-preview-view ul > li::marker,
+.published-container     ul > li::marker{
+  color: var(--dot-normal) !important;
+}
+
+/* 표식(span.dot …)은 화면에 보이지 않게 숨김 */
+.markdown-preview-view span.dot,
+.published-container span.dot,
+.markdown-source-view.mod-cm6 .cm-content span.dot{
+  display:inline-block !important;
+  width:0 !important; height:0 !important; overflow:hidden !important;
+  padding:0 !important; margin:0 !important; border:0 !important;
+}
+
+/* 표식이 있는 항목만 마커 색 바꾸기 */
+/* 표식이 있는 항목만 마커 색 바꾸기 — 어떤 래퍼(p/div)가 끼어도 동작 */
+:is(.markdown-preview-view, .published-container) li:has(.dot.fnt)::marker { 
+  color: var(--dot-fnt) !important; 
+}
+:is(.markdown-preview-view, .published-container) li:has(.dot.warn)::marker { 
+  color: var(--dot-warn) !important; 
+}
+:is(.markdown-preview-view, .published-container) li:has(.dot.ask)::marker { 
+  color: var(--dot-ask) !important; 
+}
+
+
+/* 표 셀 안에서도 동일 적용(선택: 필요시) */
+.published-container td li::marker,
+.markdown-preview-view td li::marker{
+  font-size: 1em; /* 테마/폰트에 따라 조정 */
+}
+
+/* Live Preview(에디터)에서도 기본 불릿 색 보정(선택) */
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ul ~ .list-bullet{
+  color: var(--dot-normal) !important;
+}
+
+/* 퍼블리시/읽기 모드: 숫자 마커를 H1 색으로 */
+:is(.markdown-preview-view, .published-container) ol > li::marker {
+  color: var(--color-h1, #88DFD0) !important;
+}
+/* 표 안에서도 동일 */
+:is(.markdown-preview-view, .published-container) table ol > li::marker {
+  color: var(--color-h1, #88DFD0) !important;
+}
+
+/* 라이브 프리뷰(에디터) 숫자 마커 색 */
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol,
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol ~ .list-number {
+  color: var(--color-h1, #88DFD0) !important;
+}
+
+/* ==========================================================================
+   [Mobile Fix V3] 모바일 안전 여백 + 닫기 버튼 트릭
+   설명: 1. 무조건 우측 50px 이상 틈을 남겨서 '닫을 공간'을 확보함
+         2. 그 틈에 X 아이콘을 띄워 사용자가 누르기 쉽게 유도 (클릭 투과 트릭)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+
+  /* 1. 레이아웃 초기화 */
+  .published-container .site-body {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* 2. 본문: 화면 꽉 채우기 */
+  .published-container .site-body-center-column {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 16px 60px 16px !important;
+    height: auto !important;
+  }
+
+  /* 3. 우측 목차 숨김 */
+  .published-container .site-body-right-column {
+    display: none !important;
+  }
+
+  /* 4. 좌측 사이드바 (평소엔 숨김) */
+  .published-container .site-body-left-column {
+    display: none !important;
+  }
+
+  /* ★ 사이드바가 열렸을 때 (is-left-column-open) */
+  .published-container.is-left-column-open .site-body-left-column,
+  .site-body-left-column.mod-active {
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    
+    /* [핵심] 화면 너비에서 50px(닫기 버튼 공간)을 뺀 만큼만 차지 */
+    /* 화면이 아무리 좁아도 오른쪽 50px은 무조건 남음 */
+    width: calc(100% - 50px) !important; 
+    max-width: 300px !important; 
+    
+    z-index: 9999 !important;
+    background-color: var(--background-secondary, #202020) !important;
+    border-right: 1px solid var(--background-modifier-border) !important;
+    padding: 20px !important;
+    overflow-y: auto !important;
+
+    /* 배경을 어둡게 처리 (여기를 누르면 닫힘을 암시) */
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6) !important; 
+  }
+
+  /* ★ [CSS 트릭] 우측 빈 공간에 '가짜 닫기 버튼(X)' 띄우기 */
+  .published-container.is-left-column-open .site-body-left-column::after {
+    content: "✕";               /* X 아이콘 문자 */
+    
+    /* 위치: 패널의 오른쪽 바깥(빈 공간)에 고정 */
+    position: fixed;
+    top: 15px; 
+    right: 10px;               /* 화면 오른쪽 끝에서 10px 안쪽 */
+    
+    /* 버튼 스타일 */
+    width: 36px; height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 50%;        /* 동그라미 */
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+    font-weight: bold;
+    
+    /* [핵심 기술] 터치 투과 설정 */
+    /* 사용자가 이 X를 누르면, 터치가 통과되어 뒤에 있는 '어두운 배경(빈 공간)'이 눌림 */
+    /* -> 결과적으로 사이드바가 닫힘 */
+    pointer-events: none !important; 
+    z-index: 10000;
+  }
+  
+  /* 5. 기타 요소 모바일 최적화 */
+  .published-container .markdown-preview-view table {
+    display: block !important; width: 100% !important; overflow-x: auto !important; margin-left: 0 !important;
+  }
+  .published-container img, .published-container .callout {
+    max-width: 100% !important; height: auto !important;
+  }
+  .published-container .site-body-left-column .site-body-left-column-site-logo {
+    width: 120px !important; height: 120px !important; margin: 10px auto !important;
+  }
+  .published-container .site-body-left-column .site-body-left-column-site-name a {
+    font-size: 1.2rem !important; width: auto !important;
+  }
+}

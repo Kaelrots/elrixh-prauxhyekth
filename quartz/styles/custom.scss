@@ -284,8 +284,8 @@ article h6, .page h6 { color: var(--color-h6) !important; }
 .page-title a::before {
   content: "";
   display: block;
-  width: 300px; /* 로고 가로 크기 */
-  height: 300px; /* 로고 세로 크기 */
+  width: 250px; /* 로고 가로 크기 */
+  height: 250px; /* 로고 세로 크기 */
   /* 🚨 중요: 로고 이미지를 quartz/static/ 폴더에 넣고 파일명을 맞춰주세요 */
   background-image: url('/elrixh-prauxhyekth/assets/media/엘리시움-연방-문장-(채색).png');
   background-size: contain;
