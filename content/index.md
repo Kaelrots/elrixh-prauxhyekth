@@ -1,5 +1,5 @@
 ```yaml
-title: '"환영합니다! 《엘리스 프라우셰크트》 메인"'
+title: 환영합니다! 《엘리스 프라우셰크트》 메인
 ```
 <font style="font-weight:bold; font-size:1.85em"><center><font color="#88dfd0">《엘리스 프라우셰크트》<br>카엘 창작 세계관</font></center></font>
 
