@@ -20,14 +20,23 @@ def master_sync():
             os.makedirs(t_dir, exist_ok=True)
 
     exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.mp3', '.mp4')
-    print("--- 1. 미디어 파일 양방향 수집 ---")
+    print("--- 1. 미디어 파일 양방향 수집 시작 (원본 폴더 보호 패치) ---")
     
     count = 0
-    ignore_content_media = os.path.join(content_dir, media_dir_name).lower()
+    # 무시할 정확한 '목적지' 폴더 경로 생성 (content/assets/media)
+    ignore_target_path = os.path.join(content_dir, media_dir_name).lower()
     
     for root, dirs, files in os.walk(content_dir):
         root_lower = root.lower()
-        if root_lower == ignore_content_media or "public" in root_lower:
+        
+        # 🚨 [핵심 수정] 이름에 'assets'가 있다고 무조건 거르는 게 아니라,
+        # 우리가 파일을 복사해 넣을 '목적지 폴더(content/assets/media)'만 정확히 건너뜁니다.
+        # 이렇게 해야 원본 'content/Assets' 폴더의 이미지가 정상적으로 복사됩니다.
+        if ignore_target_path in root_lower:
+            continue
+            
+        # public 폴더는 건너뜀
+        if "public" in root_lower:
             continue
             
         for file in files:
@@ -37,6 +46,7 @@ def master_sync():
                 
                 for t_dir in target_dirs:
                     dest_path = os.path.join(t_dir, safe_name)
+                    
                     try:
                         shutil.copy(source_path, dest_path)
                     except shutil.SameFileError:
@@ -50,7 +60,7 @@ def master_sync():
                 count += 1
     print(f"--- 총 {count}개의 미디어 파일 소스 처리 완료 ---")
 
-    # 2단계: HTML 링크 교정 (쿼츠 내부 길찾기 공식 스틸 로직)
+    # 2단계: HTML 링크 교정 (스마트 경로 훔치기 전략 유지)
     print("--- 2. 웹사이트(HTML) 스마트 상대경로 교정 시작 ---")
     html_count = 0
     for root, dirs, files in os.walk(public_dir):
@@ -61,14 +71,12 @@ def master_sync():
                 with open(html_path, 'r', encoding='utf-8') as f:
                     content = f.read()
 
-                # 🚨 [핵심] Quartz가 이 페이지에서 최상위 폴더로 가기 위해 계산한 경로를 훔쳐옵니다.
-                # 모든 Quartz 페이지는 항상 최상위의 index.css를 로드합니다.
+                # Quartz가 생성한 index.css의 경로를 훔쳐서 이미지 경로에 적용
                 root_prefix = "./"
                 css_match = re.search(r'href="([^"]*?)index\.css"', content)
                 if css_match:
-                    root_prefix = css_match.group(1) # 예: "../../" 또는 "../" 또는 "./"
+                    root_prefix = css_match.group(1)
 
-                # 훔쳐온 경로 뒤에 assets/media/ 를 붙여서 완벽한 미디어 경로 생성
                 prefix = f"{root_prefix}assets/media/"
 
                 def fix_path(match):
@@ -78,12 +86,9 @@ def master_sync():
                         return match.group(0)
                         
                     if any(ext in url.lower() for ext in exts):
-                        # 기존 경로에 붙어있는 ../ 다 떼어내고 순수 파일명만 추출
                         filename = url.rstrip('/').split('/')[-1]
                         filename = urllib.parse.unquote(filename).replace('+', ' ')
                         filename = re.sub(r'\s+', '-', filename.strip())
-                        
-                        # 쿼츠와 똑같이 계산된 완벽한 상대 경로 꽂아넣기
                         return f"{attr}{prefix}{filename}{quote}"
                         
                     return match.group(0)
