@@ -1,13 +1,14 @@
 import os
 import re
+import urllib.parse
 
-# 1. 경로 설정 (퍼블리시용 복사본 content 폴더)
+# 1. 경로 설정
 vault_path = r"./content"
 
 def master_link_fixer():
-    print("--- [업데이트] 표 내부 HTML 링크 절대경로(/) 강제 보정 시작 ---")
+    exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.mp3', '.mp4')
+    print("--- [궁극의 해결책] 마크다운 이미지 절대경로 주입 및 표 링크 보정 시작 ---")
     
-    link_fix_count = 0
     for root, dirs, files in os.walk(vault_path):
         for name in files:
             if name.endswith(".md"):
@@ -15,56 +16,45 @@ def master_link_fixer():
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()
 
-                original_content = content
-
                 def clean_url(match):
                     prefix = match.group(1) # ![[ , [[ , href=" , src="
                     url_part = match.group(2) # 실제 파일 경로/이름
                     suffix = match.group(3) # ]] , "
                     
-                    # 1. 외부 인터넷 링크는 무시
-                    if url_part.lower().startswith('http://') or url_part.lower().startswith('https://'):
+                    # 1. 외부 링크 무시
+                    if url_part.lower().startswith("http"):
                         return match.group(0)
 
-                    # 2. 앵커 링크(#문단) 단독 사용 시 무시
-                    if url_part.startswith('#'):
-                        return match.group(0)
+                    # 2. 미디어(이미지) 파일인 경우
+                    if any(ext in url_part.lower() for ext in exts):
+                        # 앞에 무슨 경로가 붙어있든 싹둑 자르고 순수 파일명만 추출
+                        filename = url_part.split('/')[-1]
+                        filename = urllib.parse.unquote(filename).replace('+', ' ')
+                        filename = re.sub(r'\s+', '-', filename.strip())
+                        
+                        # HTML 태그인 경우 깃허브가 무조건 찾을 수 있게 절대경로 주입
+                        if prefix in ('src="', 'href="'):
+                            return f'{prefix}/assets/media/{filename}{suffix}'
+                        # 옵시디언 고유 문법(![[ ]])인 경우 (쿼츠가 알아서 찾음)
+                        else:
+                            return f'{prefix}{filename}{suffix}'
 
-                    # 🚨 [핵심] 표 내부의 HTML href 링크만 타겟팅하여 절대경로로 멱살 잡기
+                    # 3. 미디어가 아닌 경우 (표 안의 문서 링크 등)
                     if prefix == 'href="':
-                        # 미디어 파일(.png 등)은 mirror_assets.py가 처리하므로 건드리지 않음
-                        exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.mp3', '.mp4')
-                        if not any(ext in url_part.lower() for ext in exts):
-                            # 혹시라도 kael/ 이 이미 적혀있다면 싹둑 자름
-                            if url_part.startswith('/kael/'):
-                                url_part = url_part[6:]
-                            elif url_part.startswith('kael/'):
-                                url_part = url_part[5:]
-                            
-                            # 브라우저가 현재 폴더(/kael/)를 덧붙이지 못하도록 최상위 경로(/) 강제 주입
-                            if not url_part.startswith('/'):
-                                url_part = '/' + url_part
-
-                    # 3. 옵시디언 별칭(|) 분리 보호
-                    parts = url_part.split('|', 1)
-                    path_and_anchor = parts[0]
-                    alias = f"|{parts[1]}" if len(parts) > 1 else ""
-
-                    # 4. 해시(#) 앵커 분리 보호
-                    pa_parts = path_and_anchor.split('#', 1)
-                    target_path = pa_parts[0]
-                    anchor = f"#{pa_parts[1]}" if len(pa_parts) > 1 else ""
-
-                    # 5. 경로 부분의 공백만 쿼츠 규칙에 맞게 하이픈(-)으로 변환
-                    if target_path:
-                        new_path = target_path.rstrip('/')
-                        new_path = new_path.replace('+', ' ')
-                        new_path = re.sub(r'\s+', '-', new_path.strip())
-                    else:
-                        new_path = ""
-                    
-                    new_url_part = f"{new_path}{anchor}{alias}"
-                    return f"{prefix}{new_url_part}{suffix}"
+                        new_url = url_part
+                        # kael/ 잉여 경로가 있으면 제거
+                        if new_url.startswith('/kael/'): new_url = new_url[6:]
+                        elif new_url.startswith('kael/'): new_url = new_url[5:]
+                        
+                        # 최상위 경로(/) 강제 부여하여 404 방지
+                        if not new_url.startswith('/') and not new_url.startswith('#'):
+                            new_url = '/' + new_url
+                        
+                        new_url = new_url.replace('+', ' ')
+                        new_url = re.sub(r'\s+', '-', new_url.strip())
+                        return f'{prefix}{new_url}{suffix}'
+                        
+                    return match.group(0)
 
                 # 규칙 1: Obsidian 문법 [[ ]] 또는 ![[ ]]
                 content = re.sub(r'(!?\[\[)(.*?)(\]\])', clean_url, content)
@@ -72,13 +62,10 @@ def master_link_fixer():
                 # 규칙 2: HTML 문법 href="..." 또는 src="..."
                 content = re.sub(r'(href="|src=")(.*?)(")', clean_url, content)
 
-                # 파일 내용이 변경되었을 때만 덮어쓰기
-                if content != original_content:
-                    with open(file_path, 'w', encoding='utf-8') as f:
-                        f.write(content)
-                    link_fix_count += 1
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
 
-    print(f"--- 완료: 총 {link_fix_count}개 문서의 표/HTML 링크 경로 보정 성공! ---")
+    print("--- 마크다운 내 이미지 및 링크 경로 완벽 수정 완료! ---")
 
 if __name__ == "__main__":
     master_link_fixer()
