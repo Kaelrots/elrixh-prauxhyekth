@@ -20,16 +20,13 @@ def master_sync():
             os.makedirs(t_dir, exist_ok=True)
 
     exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.mp3', '.mp4')
-    print("--- 1. 미디어 파일 수집 (원본 폴더 스킵 버그 수정판) ---")
+    print("--- 1. 미디어 파일 양방향 수집 ---")
     
     count = 0
-    # 무시할 정확한 목적지 폴더만 지정 (무고한 Assets 원본 폴더 보호)
     ignore_content_media = os.path.join(content_dir, media_dir_name).lower()
     
     for root, dirs, files in os.walk(content_dir):
         root_lower = root.lower()
-        
-        # 🚨 [핵심 수정] 무조건 assets를 거르는 게 아니라, 'content/assets/media'만 정확히 거름
         if root_lower == ignore_content_media or "public" in root_lower:
             continue
             
@@ -40,7 +37,6 @@ def master_sync():
                 
                 for t_dir in target_dirs:
                     dest_path = os.path.join(t_dir, safe_name)
-                    
                     try:
                         shutil.copy(source_path, dest_path)
                     except shutil.SameFileError:
@@ -50,12 +46,11 @@ def master_sync():
                         try:
                             shutil.copy(source_path, dest_path)
                         except:
-                            print(f"⚠️ 건너뜀 (사용 중인 파일): {safe_name}")
-                            
+                            pass
                 count += 1
     print(f"--- 총 {count}개의 미디어 파일 소스 처리 완료 ---")
 
-    # 2단계: HTML 링크 교정 및 표 이미지 복구
+    # 2단계: HTML 링크 교정 (브라우저 착각 보정)
     print("--- 2. 웹사이트(HTML) 링크 교정 및 표 이미지 복구 중 ---")
     html_count = 0
     for root, dirs, files in os.walk(public_dir):
@@ -63,9 +58,14 @@ def master_sync():
             if file.endswith(".html"):
                 html_path = os.path.join(root, file)
                 rel_dir = os.path.relpath(root, public_dir)
+                
+                # 🚨 핵심 수정: 브라우저의 주소창(Clean URL) 기준 깊이 계산
+                # 파일시스템 깊이에서 1을 빼주어 브라우저가 바깥으로 튕겨 나가는 것을 방지합니다.
                 depth = 0 if rel_dir == "." else len(rel_dir.split(os.sep))
+                url_depth = max(0, depth - 1) 
+                
                 prefix_media = media_dir_name.replace(os.sep, '/')
-                prefix = f"./{prefix_media}/" if depth == 0 else "../" * depth + f"{prefix_media}/"
+                prefix = f"./{prefix_media}/" if url_depth == 0 else "../" * url_depth + f"{prefix_media}/"
 
                 with open(html_path, 'r', encoding='utf-8') as f:
                     content = f.read()
