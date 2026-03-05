@@ -50,37 +50,36 @@ def master_sync():
                 count += 1
     print(f"--- 총 {count}개의 미디어 파일 소스 처리 완료 ---")
 
-    # 2단계: HTML 링크 교정 (브라우저 착각 보정)
-    print("--- 2. 웹사이트(HTML) 링크 교정 및 표 이미지 복구 중 ---")
+    # 2단계: HTML 링크 교정 (절대 경로 강제 적용)
+    print("--- 2. 웹사이트(HTML) 미디어 절대 경로(/) 꽂아넣기 시작 ---")
     html_count = 0
     for root, dirs, files in os.walk(public_dir):
         for file in files:
             if file.endswith(".html"):
                 html_path = os.path.join(root, file)
-                rel_dir = os.path.relpath(root, public_dir)
                 
-                # 🚨 핵심 수정: 브라우저의 주소창(Clean URL) 기준 깊이 계산
-                # 파일시스템 깊이에서 1을 빼주어 브라우저가 바깥으로 튕겨 나가는 것을 방지합니다.
-                depth = 0 if rel_dir == "." else len(rel_dir.split(os.sep))
-                url_depth = max(0, depth - 1) 
-                
-                prefix_media = media_dir_name.replace(os.sep, '/')
-                prefix = f"./{prefix_media}/" if url_depth == 0 else "../" * url_depth + f"{prefix_media}/"
-
                 with open(html_path, 'r', encoding='utf-8') as f:
                     content = f.read()
 
                 def fix_path(match):
                     attr, url, quote = match.group(1), match.group(2), match.group(3)
-                    if url.startswith("http") or "static/" in url or "Assets/" in url:
+                    
+                    # 외부 링크나 이미 /assets/media/ 가 박힌 건 패스
+                    if url.startswith("http") or "static/" in url or "Assets/" in url or url.startswith("/assets/media/"):
                         return match.group(0)
+                        
                     if any(ext in url.lower() for ext in exts):
+                        # 기존 경로에 붙어있는 지저분한 ../ 다 떼어내고 순수 파일명만 추출
                         filename = url.rstrip('/').split('/')[-1]
                         filename = urllib.parse.unquote(filename).replace('+', ' ')
                         filename = re.sub(r'\s+', '-', filename.strip())
-                        return f"{attr}{prefix}{filename}{quote}"
+                        
+                        # 🚨 [핵심] 복잡한 계산 집어치우고 무조건 사이트 최상위(/)부터 찾아가도록 박아줌!
+                        return f'{attr}/assets/media/{filename}{quote}'
+                        
                     return match.group(0)
 
+                # src="...", href="..." 찾아내기
                 content = re.sub(r'(src="|href=")(.*?)(")', fix_path, content)
 
                 def restore_table_image(match):
