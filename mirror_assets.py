@@ -50,8 +50,8 @@ def master_sync():
                 count += 1
     print(f"--- 총 {count}개의 미디어 파일 소스 처리 완료 ---")
 
-    # 2단계: HTML 링크 교정 (절대 경로 강제 적용)
-    print("--- 2. 웹사이트(HTML) 미디어 절대 경로(/) 꽂아넣기 시작 ---")
+    # 2단계: HTML 링크 교정 (쿼츠 내부 길찾기 공식 스틸 로직)
+    print("--- 2. 웹사이트(HTML) 스마트 상대경로 교정 시작 ---")
     html_count = 0
     for root, dirs, files in os.walk(public_dir):
         for file in files:
@@ -61,25 +61,33 @@ def master_sync():
                 with open(html_path, 'r', encoding='utf-8') as f:
                     content = f.read()
 
+                # 🚨 [핵심] Quartz가 이 페이지에서 최상위 폴더로 가기 위해 계산한 경로를 훔쳐옵니다.
+                # 모든 Quartz 페이지는 항상 최상위의 index.css를 로드합니다.
+                root_prefix = "./"
+                css_match = re.search(r'href="([^"]*?)index\.css"', content)
+                if css_match:
+                    root_prefix = css_match.group(1) # 예: "../../" 또는 "../" 또는 "./"
+
+                # 훔쳐온 경로 뒤에 assets/media/ 를 붙여서 완벽한 미디어 경로 생성
+                prefix = f"{root_prefix}assets/media/"
+
                 def fix_path(match):
                     attr, url, quote = match.group(1), match.group(2), match.group(3)
                     
-                    # 외부 링크나 이미 /assets/media/ 가 박힌 건 패스
-                    if url.startswith("http") or "static/" in url or "Assets/" in url or url.startswith("/assets/media/"):
+                    if url.startswith("http") or "static/" in url or "Assets/" in url:
                         return match.group(0)
                         
                     if any(ext in url.lower() for ext in exts):
-                        # 기존 경로에 붙어있는 지저분한 ../ 다 떼어내고 순수 파일명만 추출
+                        # 기존 경로에 붙어있는 ../ 다 떼어내고 순수 파일명만 추출
                         filename = url.rstrip('/').split('/')[-1]
                         filename = urllib.parse.unquote(filename).replace('+', ' ')
                         filename = re.sub(r'\s+', '-', filename.strip())
                         
-                        # 🚨 [핵심] 복잡한 계산 집어치우고 무조건 사이트 최상위(/)부터 찾아가도록 박아줌!
-                        return f'{attr}/assets/media/{filename}{quote}'
+                        # 쿼츠와 똑같이 계산된 완벽한 상대 경로 꽂아넣기
+                        return f"{attr}{prefix}{filename}{quote}"
                         
                     return match.group(0)
 
-                # src="...", href="..." 찾아내기
                 content = re.sub(r'(src="|href=")(.*?)(")', fix_path, content)
 
                 def restore_table_image(match):
@@ -93,7 +101,7 @@ def master_sync():
                 with open(html_path, 'w', encoding='utf-8') as f:
                     f.write(content)
                     html_count += 1
-    print(f"--- 총 {html_count}개의 HTML 파일 처리 완료! ---")
+    print(f"--- 총 {html_count}개의 HTML 파일 스마트 경로 보정 완료! ---")
 
 if __name__ == "__main__":
     master_sync()
