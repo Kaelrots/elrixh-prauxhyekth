@@ -20,13 +20,17 @@ def master_sync():
             os.makedirs(t_dir, exist_ok=True)
 
     exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.mp3', '.mp4')
-    print("--- 1. 미디어 파일 양방향 수집 시작 (자기복제 방지 완벽판) ---")
+    print("--- 1. 미디어 파일 수집 (원본 폴더 스킵 버그 수정판) ---")
     
     count = 0
+    # 무시할 정확한 목적지 폴더만 지정 (무고한 Assets 원본 폴더 보호)
+    ignore_content_media = os.path.join(content_dir, media_dir_name).lower()
+    
     for root, dirs, files in os.walk(content_dir):
-        # 🚨 핵심 수정: 대문자 Assets, 소문자 assets 모두 정확히 필터링 (root.lower() 사용)
         root_lower = root.lower()
-        if "assets" in root_lower or "public" in root_lower:
+        
+        # 🚨 [핵심 수정] 무조건 assets를 거르는 게 아니라, 'content/assets/media'만 정확히 거름
+        if root_lower == ignore_content_media or "public" in root_lower:
             continue
             
         for file in files:
@@ -40,7 +44,6 @@ def master_sync():
                     try:
                         shutil.copy(source_path, dest_path)
                     except shutil.SameFileError:
-                        # 💡 원본과 대상이 완전히 같은 파일(대소문자만 다른 경우 등)이면 그냥 넘어감
                         pass
                     except PermissionError:
                         time.sleep(0.3)
@@ -61,7 +64,6 @@ def master_sync():
                 html_path = os.path.join(root, file)
                 rel_dir = os.path.relpath(root, public_dir)
                 depth = 0 if rel_dir == "." else len(rel_dir.split(os.sep))
-                # HTML 내 미디어 경로 구분자는 항상 '/'여야 함
                 prefix_media = media_dir_name.replace(os.sep, '/')
                 prefix = f"./{prefix_media}/" if depth == 0 else "../" * depth + f"{prefix_media}/"
 
