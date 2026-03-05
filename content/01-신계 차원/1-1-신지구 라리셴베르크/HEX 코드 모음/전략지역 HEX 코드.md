@@ -214,7 +214,7 @@
     </tr>
     <tr>
       <td>33</td>
-      <td><a href="/kael/그랑블루츠+제도">그랑블루츠 제도</a></td>
+      <td><a href="/kael/그랑블루츠-제도">그랑블루츠 제도</a></td>
       <td>`#E6B7B5`</td>
       <td><span style="display:inline-block; background-color:#E6B7B5; width:60px; height:20px; border-radius:3px;"></span></td>
     </tr>
@@ -478,7 +478,7 @@
     </tr>
     <tr>
       <td>77</td>
-      <td><a href="/kael/이벨루탄스+제도">이벨루탄스 제도</a></td>
+      <td><a href="/kael/이벨루탄스-제도">이벨루탄스 제도</a></td>
       <td>`#5CAE97`</td>
       <td><span style="display:inline-block; background-color:#5CAE97; width:60px; height:20px; border-radius:3px;"></span></td>
     </tr>
@@ -502,7 +502,7 @@
     </tr>
     <tr>
       <td>81</td>
-      <td><a href="/kael/프로탄츠+제도">프로탄츠 제도</a></td>
+      <td><a href="/kael/프로탄츠-제도">프로탄츠 제도</a></td>
       <td>`#E8F3A4`</td>
       <td><span style="display:inline-block; background-color:#E8F3A4; width:60px; height:20px; border-radius:3px;"></span></td>
     </tr>
@@ -646,13 +646,13 @@
     </tr>
     <tr>
       <td>105</td>
-      <td><a href="/kael/서부+남극해+제도">서부 남극해 제도</a></td>
+      <td><a href="/kael/서부-남극해-제도">서부 남극해 제도</a></td>
       <td>`#50D566`</td>
       <td><span style="display:inline-block; background-color:#50D566; width:60px; height:20px; border-radius:3px;"></span></td>
     </tr>
     <tr>
       <td>106</td>
-      <td><a href="/kael/중앙+남극해+제도">중앙 남극해 제도</a></td>
+      <td><a href="/kael/중앙-남극해-제도">중앙 남극해 제도</a></td>
       <td>`#B86FC7`</td>
       <td><span style="display:inline-block; background-color:#B86FC7; width:60px; height:20px; border-radius:3px;"></span></td>
     </tr>
