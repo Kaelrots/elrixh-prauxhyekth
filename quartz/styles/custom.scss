@@ -515,26 +515,20 @@ article a.internal, article a.external {
 }
 
 /* ==========================================
-   우측 정렬된 사상 카드의 제목 레이아웃 보정
+   우측 정렬된 사상 카드의 제목 레이아웃 완벽 보정
    ========================================== */
-div[style*="text-align: right"] h1,
-div[style*="text-align: right"] h2,
-div[style*="text-align: right"] h3,
-div[style*="text-align: right"] h4,
-div[style*="text-align: right"] h5,
-div[style*="text-align: right"] h6 {
-    /* Flexbox를 사용해 가로 정렬 제어 */
-    display: flex;
-    /* 핵심: 순서를 뒤집어서 아이콘을 텍스트 왼쪽으로 보냄 */
-    flex-direction: row-reverse; 
-    /* row-reverse 상태에서 flex-start는 '오른쪽 창가'를 의미함 -> 텍스트 우측 완전 밀착 */
-    justify-content: flex-start; 
-    align-items: center;
-    gap: 8px; /* 아이콘과 글자 사이의 간격 */
+div[style*="text-align: right"] :is(h1,h2,h3,h4,h5,h6) {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important; /* 텍스트와 아이콘을 묶어서 오른쪽 창가로 완전히 밀착 */
+    align-items: center !important;
+    gap: 8px !important; /* 아이콘과 글자 사이의 간격 */
 }
 
-/* 쿼츠 앵커 아이콘이 제멋대로 여백을 만드는 것 방지 */
+/* 쿼츠의 고집을 꺾고 아이콘을 무조건 왼쪽으로 보내기 */
 div[style*="text-align: right"] :is(h1,h2,h3,h4,h5,h6) > a {
+    position: static !important; /* 쿼츠가 걸어둔 공중부양(absolute) 무력화 -> 플렉스 박스 안으로 끌고 옴 */
+    order: -1 !important;        /* HTML 순서가 어떻든 간에 무조건 텍스트 앞(왼쪽)으로 강제 배치 */
     margin: 0 !important;
     padding: 0 !important;
 }
