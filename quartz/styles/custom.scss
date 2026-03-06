@@ -513,3 +513,28 @@ article a.internal, article a.external {
     padding: 0.5rem; /* 모바일 화면에 맞게 표 내부 여백 조정 */
   }
 }
+
+/* ==========================================
+   우측 정렬된 사상 카드의 제목 레이아웃 보정
+   ========================================== */
+div[style*="text-align: right"] h1,
+div[style*="text-align: right"] h2,
+div[style*="text-align: right"] h3,
+div[style*="text-align: right"] h4,
+div[style*="text-align: right"] h5,
+div[style*="text-align: right"] h6 {
+    /* Flexbox를 사용해 가로 정렬 제어 */
+    display: flex;
+    /* 핵심: 순서를 뒤집어서 아이콘을 텍스트 왼쪽으로 보냄 */
+    flex-direction: row-reverse; 
+    /* row-reverse 상태에서 flex-start는 '오른쪽 창가'를 의미함 -> 텍스트 우측 완전 밀착 */
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 8px; /* 아이콘과 글자 사이의 간격 */
+}
+
+/* 쿼츠 앵커 아이콘이 제멋대로 여백을 만드는 것 방지 */
+div[style*="text-align: right"] :is(h1,h2,h3,h4,h5,h6) > a {
+    margin: 0 !important;
+    padding: 0 !important;
+}
