@@ -27,15 +27,31 @@ def master_link_fixer():
 
                     # 2. 미디어(이미지) 파일인 경우
                     if any(ext in url_part.lower() for ext in exts):
+                        
+                        # 🔥 수정된 핵심 포인트: 파이프(|)로 크기 조절 옵션 분리
+                        img_size = ""
+                        if '|' in url_part:
+                            base_url, img_size = url_part.split('|', 1)
+                        else:
+                            base_url = url_part
+
                         # 앞에 무슨 경로가 붙어있든 싹둑 자르고 순수 파일명만 추출
-                        filename = url_part.split('/')[-1]
+                        filename = base_url.split('/')[-1]
                         filename = urllib.parse.unquote(filename).replace('+', ' ')
                         filename = re.sub(r'\s+', '-', filename.strip())
                         
                         # HTML 태그인 경우 깃허브가 무조건 찾을 수 있게 절대경로 주입
                         if prefix in ('src="', 'href="'):
                             return f'{prefix}/assets/media/{filename}{suffix}'
-                        # 옵시디언 고유 문법(![[ ]])인 경우 (쿼츠가 알아서 찾음)
+                            
+                        # 🔥 옵시디언 고유 문법(![[ ]])인 경우 HTML <img> 태그로 완전 변환! (표 깨짐 원천 차단)
+                        elif prefix == '![[':
+                            if img_size:
+                                return f'<img src="/assets/media/{filename}" width="{img_size}">'
+                            else:
+                                return f'<img src="/assets/media/{filename}">'
+                                
+                        # 일반 링크([[ ]])인 경우
                         else:
                             return f'{prefix}{filename}{suffix}'
 
