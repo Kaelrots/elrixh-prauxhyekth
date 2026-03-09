@@ -7,7 +7,7 @@ vault_path = r"./content"
 
 def master_link_fixer():
     exts = ('.png', '.jpg', '.jpeg', '.gif', '.webp', '.mp3', '.mp4')
-    print("--- [궁극의 해결책] 마크다운 이미지 절대경로 주입 및 표 링크 보정 시작 ---")
+    print("--- [궁극의 해결책 V2] 마크다운 이미지 절대경로 주입 및 표 링크 보정 시작 ---")
     
     for root, dirs, files in os.walk(vault_path):
         for name in files:
@@ -21,6 +21,9 @@ def master_link_fixer():
                     url_part = match.group(2) # 실제 파일 경로/이름
                     suffix = match.group(3) # ]] , "
                     
+                    # 🔥 핵심 추가: 표 깨짐 방지용으로 넣었던 역슬래시(\) 완벽 제거!
+                    url_part = url_part.replace('\\', '')
+                    
                     # 1. 외부 링크 무시
                     if url_part.lower().startswith("http"):
                         return match.group(0)
@@ -28,7 +31,6 @@ def master_link_fixer():
                     # 2. 미디어(이미지) 파일인 경우
                     if any(ext in url_part.lower() for ext in exts):
                         
-                        # 🔥 수정된 핵심 포인트: 파이프(|)로 크기 조절 옵션 분리
                         img_size = ""
                         if '|' in url_part:
                             base_url, img_size = url_part.split('|', 1)
