@@ -2,45 +2,46 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 
 const FontSizeAdjust: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
   return (
-    <div class={`font-size-adjust ${displayClass ?? ""}`}>
-      <span class="font-label">본문 크기</span>
-      <button id="font-decrease" class="font-btn" aria-label="글씨 크기 줄이기">A-</button>
+    <div class={`font-size-adjust-floating ${displayClass ?? ""}`}>
       <button id="font-increase" class="font-btn" aria-label="글씨 크기 키우기">A+</button>
+      <div class="font-divider"></div>
+      <button id="font-decrease" class="font-btn" aria-label="글씨 크기 줄이기">A-</button>
     </div>
   )
 }
 
 FontSizeAdjust.beforeDOMLoaded = `
-  // 쿼츠의 SPA 라우팅(페이지 이동) 이벤트에 맞춰 실행
   document.addEventListener("nav", () => {
     const article = document.querySelector("article");
     const btnInc = document.getElementById("font-increase");
     const btnDec = document.getElementById("font-decrease");
     
-    // 브라우저에 저장된 폰트 크기 불러오기 (기본값 1)
+    // 저장된 폰트 크기 불러오기 (기본 1)
     let currentSize = localStorage.getItem("customFontSize") ? parseFloat(localStorage.getItem("customFontSize")) : 1;
 
-    const updateFontSize = (size) => {
+    const updateStyle = (size) => {
       if (article) {
-        // 본문 크기 변경 (rem 단위 사용)
+        // 1. 폰트 크기 변경
         article.style.fontSize = size + "rem";
+        // 2. [핵심] 줄간격 강제 비율 설정 (글씨가 커져도 1.7배 비율로 넉넉하게 간격 유지!)
+        article.style.lineHeight = "1.7"; 
       }
     };
 
-    // 페이지 접속 시 저장된 폰트 크기 즉시 적용
-    updateFontSize(currentSize);
+    // 접속 시 즉시 적용
+    updateStyle(currentSize);
 
-    // 버튼 클릭 이벤트 설정
+    // 버튼 클릭 이벤트 (최대 1.8배, 최소 0.8배)
     if (btnInc && btnDec && article) {
       btnInc.addEventListener("click", () => {
-        currentSize = Math.min(currentSize + 0.1, 2.0); // 최대 2배까지 확대
-        updateFontSize(currentSize);
+        currentSize = Math.min(currentSize + 0.1, 1.8); 
+        updateStyle(currentSize);
         localStorage.setItem("customFontSize", currentSize);
       });
       
       btnDec.addEventListener("click", () => {
-        currentSize = Math.max(currentSize - 0.1, 0.7); // 최소 0.7배까지 축소
-        updateFontSize(currentSize);
+        currentSize = Math.max(currentSize - 0.1, 0.8); 
+        updateStyle(currentSize);
         localStorage.setItem("customFontSize", currentSize);
       });
     }
@@ -48,31 +49,67 @@ FontSizeAdjust.beforeDOMLoaded = `
 `
 
 FontSizeAdjust.css = `
-  .font-size-adjust {
+  /* 우측 하단 플로팅 버튼 스타일 */
+  .font-size-adjust-floating {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    z-index: 999;
+    background: var(--light);
+    padding: 0.3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--lightgray);
+    transition: all 0.3s ease;
   }
-  .font-label {
-    font-size: 0.85rem;
-    color: var(--gray);
-    margin-right: 0.2rem;
+
+  /* 다크모드 대응 (엘리시움의 고급스러운 느낌) */
+  [saved-theme="dark"] .font-size-adjust-floating {
+    background: var(--dark);
+    border: 1px solid var(--darkgray);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   }
+
+  /* 버튼 디자인 */
   .font-btn {
-    background: var(--lightgray);
-    border: 1px solid var(--gray);
-    padding: 0.2rem 0.6rem;
-    border-radius: 5px;
+    background: transparent;
+    border: none;
     cursor: pointer;
-    color: var(--darkgray);
+    color: var(--gray);
     font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
     transition: all 0.2s ease;
+    width: 100%;
   }
+
   .font-btn:hover {
-    background: var(--secondary);
-    color: var(--light);
+    color: var(--secondary);
+    background: rgba(150, 150, 150, 0.1);
+  }
+
+  /* 버튼 사이 얇은 구분선 */
+  .font-divider {
+    width: 70%;
+    height: 1px;
+    background: var(--lightgray);
+    margin: 2px 0;
+  }
+  
+  [saved-theme="dark"] .font-divider {
+    background: var(--darkgray);
+  }
+
+  /* 모바일 화면에서는 버튼 위치 살짝 조정 */
+  @media all and (max-width: 800px) {
+    .font-size-adjust-floating {
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
   }
 `
 
