@@ -49,7 +49,7 @@ FontSizeAdjust.beforeDOMLoaded = `
 `
 
 FontSizeAdjust.css = `
-  /* 우측 하단 플로팅 버튼 스타일 */
+  /* 기존 우측 하단 플로팅 버튼 스타일 */
   .font-size-adjust-floating {
     position: fixed;
     bottom: 2.5rem;
@@ -110,6 +110,23 @@ FontSizeAdjust.css = `
       bottom: 1.5rem;
       right: 1.5rem;
     }
+  }
+
+  /* -------------------------------------------------- */
+  /* 🔥 핵심 추가: 헤더(제목) 크기 동기화 및 줄간격 보정 */
+  /* -------------------------------------------------- */
+  
+  /* 1. 헤더 크기를 본문(article) 크기에 비례하는 em 단위로 강제 변환 */
+  article h1 { font-size: 1.75em !important; }
+  article h2 { font-size: 1.4em !important; }
+  article h3 { font-size: 1.12em !important; }
+  article h4 { font-size: 1em !important; }
+  article h5 { font-size: 0.87em !important; }
+  article h6 { font-size: 0.85em !important; }
+
+  /* 2. 본문 줄간격이 넓어질 때, 헤더의 줄간격은 너무 벌어지지 않게 타이트하게 잡아줌 */
+  article h1, article h2, article h3, article h4, article h5, article h6 {
+    line-height: 1.3 !important;
   }
 `
 
