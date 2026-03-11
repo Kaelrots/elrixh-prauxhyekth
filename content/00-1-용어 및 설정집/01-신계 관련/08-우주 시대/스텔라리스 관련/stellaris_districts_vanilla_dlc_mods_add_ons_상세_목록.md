@@ -104,7 +104,7 @@
 
 ---
 
-## 2) Vanilla & DLC — <font style="font-weight:bold">Habitat(거주지/오비탈)</font> 지구
+## 2) Vanilla & DLC — Habitat(거주지/오비탈) 지구
 
 > 4.0 이후 <font style="font-weight:bold">중앙 콤플렉스 + 오비탈</font> 구조. <font style="font-weight:bold">Habitation/Industrial</font>은 공통, <font style="font-weight:bold">전문화 지구</font>는 <font style="font-weight:bold">해당 궤도 자원 매장량</font>에 따라 개방·최대치가 결정됨.
 
@@ -154,7 +154,7 @@
 
 ---
 
-## 3) Vanilla & DLC — <font style="font-weight:bold">Arcology(Ecumenopolis) 아콜로지 지구</font>
+## 3) Vanilla & DLC — Arcology(Ecumenopolis) 아콜로지 지구
 
 > 에큐메노폴리스(세계도시)는 <font style="font-weight:bold">기본 자원 지구 없음</font>. 대신 <font style="font-weight:bold">주거/산업/여가/행정/종교/보트로피</font> 등 <font style="font-weight:bold">아콜로지 전용 지구</font>를 사용. 대부분 <font style="font-weight:bold">전략자원 유지비</font>가 있으며, <font style="font-weight:bold">Arcology Project</font> 승천 특전을 선행.
 
@@ -216,7 +216,7 @@
 
 ---
 
-## 4) Vanilla & DLC — <font style="font-weight:bold">Ring World(링월드) 세그먼트 지구</font>
+## 4) Vanilla & DLC — Ring World(링월드) 세그먼트 지구
 
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -272,7 +272,7 @@
 
 ## 5) Mods — 주요 추가/확장 지구 (대표 예시)
 
-### A. Planetary Diversity — <font style="font-weight:bold">More Arcologies</font>
+### A. Planetary Diversity — More Arcologies
 
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -312,7 +312,7 @@
 </table></div>
 
 
-### B. <font style="font-weight:bold">Eutopia: Arcology Expansion</font> (애드온)
+### B. Eutopia: Arcology Expansion (애드온)
 
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -334,7 +334,7 @@
 </table></div>
 
 
-### C. <font style="font-weight:bold">Real Space — New Arcologies</font> (애드온)
+### C. Real Space — New Arcologies (애드온)
 
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -356,7 +356,7 @@
 </table></div>
 
 
-### D. Planetary Diversity — <font style="font-weight:bold">Planetary Habitats</font> (구형/파생 모듈)
+### D. Planetary Diversity — Planetary Habitats (구형/파생 모듈)
 
 <div class="scroll-x nowrap"><table>
   <thead>

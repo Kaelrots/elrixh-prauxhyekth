@@ -12,7 +12,7 @@
 
 ---
 
-# 1) <font style="font-weight:bold">고대(Ancient)</font> — 도시·문자·청동에서 철기까지 (초·중·후 각 12개 = 36)
+# 1) 고대(Ancient) — 도시·문자·청동에서 철기까지 (초·중·후 각 12개 = 36)
 ### 1-A. 초기(정주·도시 탄생기)
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -354,7 +354,7 @@
 
 ---
 
-# 2) <font style="font-weight:bold">중세(Medieval)</font> — 봉건·길드·스콜라·화약 (초·중·후 각 12개 = 36)
+# 2) 중세(Medieval) — 봉건·길드·스콜라·화약 (초·중·후 각 12개 = 36)
 ### 2-A. 초기
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -696,7 +696,7 @@
 
 ---
 
-# 3) <font style="font-weight:bold">근세(Early Modern)</font> — 대항해·과학혁명·상비군 (초·중·후 각 12개 = 36)
+# 3) 근세(Early Modern) — 대항해·과학혁명·상비군 (초·중·후 각 12개 = 36)
 ### 3-A. 초기
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -1038,7 +1038,7 @@
 
 ---
 
-# 4) <font style="font-weight:bold">근대(Industrial/19C)</font> — 증기·철도·전기·대량생산 (초·중·후 각 12개 = 36)
+# 4) 근대(Industrial/19C) — 증기·철도·전기·대량생산 (초·중·후 각 12개 = 36)
 ### 4-A. 초기
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -1380,7 +1380,7 @@
 
 ---
 
-# 5) <font style="font-weight:bold">현대(20C~Information)</font> — 항공·전차·전자·핵·컴퓨팅 (초·중·후 각 12개 = 36)
+# 5) 현대(20C~Information) — 항공·전차·전자·핵·컴퓨팅 (초·중·후 각 12개 = 36)
 ### 5-A. 초기(1900~30s)
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -1722,7 +1722,7 @@
 
 ---
 
-# 6) <font style="font-weight:bold">근미래(Near Future, Pre-Monolith)</font> — 우주 문턱 전야 (초·중·후 각 12개 = 36)
+# 6) 근미래(Near Future, Pre-Monolith) — 우주 문턱 전야 (초·중·후 각 12개 = 36)
 ### 6-A. 초기
 <div class="scroll-x nowrap"><table>
   <thead>

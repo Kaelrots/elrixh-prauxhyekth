@@ -515,23 +515,23 @@
 ## 6) 대형/인기 Mod & Addon — ‘기술 라인’만 요약
 > *모드마다 수치가 다르므로 <font style="font-weight:bold">원문 기준 의미·언락 구조</font>만 기입.*
 
-### 6-1. <font style="font-weight:bold">NSC3 — New Ship Classes</font>
+### 6-1. NSC3 — New Ship Classes
 - <font style="font-weight:bold">핵심</font>: 프리깃/스트라이크 크루저/배틀크루저/드레드노트/항모/플래그십 <font style="font-weight:bold">선체 언락 기술</font>과, 그에 상응하는 <font style="font-weight:bold">컴퓨터·오라·추진·센서 상향 라인</font>. 일부 <font style="font-weight:bold">FTL 대응(스크램블러)</font>나 <font style="font-weight:bold">보조 내비게이션</font>이 기술 트리에 포함.
 - <font style="font-weight:bold">세계관 연결</font>: ‘역할 세분화’로 <font style="font-weight:bold">함대 열차 편성</font>이 가능—릴레이·관문망 위에서 <font style="font-weight:bold">계층 기동</font> 구현.
 
-### 6-2. <font style="font-weight:bold">ACOT — Ancient Cache of Technologies</font>
+### 6-2. ACOT — Ancient Cache of Technologies
 - <font style="font-weight:bold">핵심</font>: <font style="font-weight:bold">Dark/Enigmatic/Alpha/Stellarite/Phanon</font> 등 <font style="font-weight:bold">상위 드라이브·리액터·추진</font> 라인. <font style="font-weight:bold">점프 초기 가속</font>, <font style="font-weight:bold">도착 오차 보정</font>, <font style="font-weight:bold">연쇄 운용</font>이 개선되어 사실상 <font style="font-weight:bold">워프 감각</font>을 복권.
 - <font style="font-weight:bold">세계관 연결</font>: ‘암흑 에너지 항법학’—난류권에서 <font style="font-weight:bold">위상 피로</font>를 낮추고 <font style="font-weight:bold">잔광 관리</font>를 표준화.
 
-### 6-3. <font style="font-weight:bold">Gigastructural Engineering & More</font>
+### 6-3. Gigastructural Engineering & More
 - <font style="font-weight:bold">핵심</font>: 거대구조 허브·수송·행정 네트워크가 <font style="font-weight:bold">관문/릴레이</font>와 결합. 일부 기술은 <font style="font-weight:bold">관문망 효율</font>을 시스템 단위로 증폭.
 - <font style="font-weight:bold">세계관 연결</font>: <font style="font-weight:bold">전 은하 행정국</font> 구상—이동/통치/징발을 <font style="font-weight:bold">하나의 표준</font>으로 묶음.
 
-### 6-4. <font style="font-weight:bold">Real Space(및 유사 스케일 모드)</font>
+### 6-4. Real Space(및 유사 스케일 모드)
 - <font style="font-weight:bold">핵심</font>: 거리·항로 체감의 재정의 → <font style="font-weight:bold">하이퍼/관문/점프 배합</font>의 <font style="font-weight:bold">재설계</font>가 필요.
 - <font style="font-weight:bold">세계관 연결</font>: <font style="font-weight:bold">지도 제작학</font>의 혁신—항성권을 <font style="font-weight:bold">시간 아이소크론 지도</font>로 인식.
 
-### 6-5. <font style="font-weight:bold">Classic/Return FTL (계열)</font>
+### 6-5. Classic/Return FTL (계열)
 - <font style="font-weight:bold">핵심</font>: 구워프/웜홀 <font style="font-weight:bold">복원형 기술 라인</font>. 점프 파라미터·하이퍼 파라미터 조정으로 <font style="font-weight:bold">연속 항해</font> 구현.
 - <font style="font-weight:bold">세계관 연결</font>: <font style="font-weight:bold">항해학파</font> 간 이론 다원주의—‘감각(워프)·사건(점프)·구조(하이퍼)’ 통합 교범의 토대.
 

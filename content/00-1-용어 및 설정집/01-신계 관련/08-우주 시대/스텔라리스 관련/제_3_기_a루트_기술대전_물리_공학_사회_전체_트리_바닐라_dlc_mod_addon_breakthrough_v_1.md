@@ -702,37 +702,37 @@
 
 ---
 
-## 5. 모드·애드온: <font style="font-weight:bold">기술 라인 전용</font> 정리
+## 5. 모드·애드온: 기술 라인 전용 정리
 > *수치 밸런스는 모드 버전에 따라 변동. 여기서는 <font style="font-weight:bold">언락 구조와 의미</font>만 요약.*
 
-### 5-1) <font style="font-weight:bold">ACOT — Ancient Cache of Technologies</font>
+### 5-1) ACOT — Ancient Cache of Technologies
 - <font style="font-weight:bold">개요</font>: 다크/에너지 계열 기반의 <font style="font-weight:bold">상위 티어</font> 기술군(리액터·드라이브·실드·무장·행정). 이벤트 체인으로 <font style="font-weight:bold">접근권</font>을 얻고, 연구/탈취/거래로 확장. 
 - <font style="font-weight:bold">핵심 라인</font>: 
   - <font style="font-weight:bold">Drives</font>: Dark/Enigmatic/Alpha/Stellarite/Phanon → 초기 가속·도착 오차 보정·연쇄 운용 강화.
   - <font style="font-weight:bold">Reactors/Power</font>: Enigmatic/Dark Matter 계열 상향 → <font style="font-weight:bold">Jump/Psi Jump</font>·관문 운용에 전력 여유.
   - <font style="font-weight:bold">Shields/Utilities</font>: 고성능 방어·보조 모듈 → 난류권 <font style="font-weight:bold">위상 피로</font> 완화.
 
-### 5-2) <font style="font-weight:bold">NSC3 — New Ship Classes</font> (기술 연계만)
+### 5-2) NSC3 — New Ship Classes (기술 연계만)
 - <font style="font-weight:bold">개요</font>: 프리깃·스트라이크 크루저·배틀크루저·드레드노트·항모·플래그십 등 <font style="font-weight:bold">함체 언락 기술</font> 추가. 
 - <font style="font-weight:bold">연계 라인</font>: 전용 <font style="font-weight:bold">컴퓨터·오라·추진·센서</font> 상향, 일부 <font style="font-weight:bold">FTL 대응(스크램블러)</font>·내비 보조 기술 포함.
 
-### 5-3) <font style="font-weight:bold">Gigastructural Engineering & More</font> (기술 연계만)
+### 5-3) Gigastructural Engineering & More (기술 연계만)
 - <font style="font-weight:bold">개요</font>: 거대구조 <font style="font-weight:bold">허브/네트워크</font> 계열 기술. <font style="font-weight:bold">Mega-Engineering</font> 이후 단계에서 관문·릴레이와 결합.
 - <font style="font-weight:bold">연계 라인</font>: <font style="font-weight:bold">Neutronium Gigaforge / Stellar Particle Accelerator / Matrioskha Brain / Nicoll–Dyson Beam</font> 등 전용 연구가 <font style="font-weight:bold">국가 인프라</font>를 재정의.
 
-### 5-4) <font style="font-weight:bold">Extra Ship Components (NEXT)</font>
+### 5-4) Extra Ship Components (NEXT)
 - <font style="font-weight:bold">개요</font>: 기술 트리를 <font style="font-weight:bold">무장·방어·유틸리티</font> 축에서 확장. 
 - <font style="font-weight:bold">연계 라인</font>: <font style="font-weight:bold">Psionic/Nanite/Leviathan/Crystalline/Gravitic</font> 무장·장갑·실드, <font style="font-weight:bold">Reactor Booster 상위</font> 등.
 
-### 5-5) <font style="font-weight:bold">Expanded Megastructures & Technology</font>
+### 5-5) Expanded Megastructures & Technology
 - <font style="font-weight:bold">개요</font>: 메가구조 매력도 상향 + <font style="font-weight:bold">전략자원 제조/개선</font> 기술 다수 추가(가이아·하비타트 보강 등). 
 - <font style="font-weight:bold">연계 라인</font>: <font style="font-weight:bold">Zro/Dark Matter/Living Metal 제조</font>·개량, <font style="font-weight:bold">클론/합성</font> 관련 보조 연구 등.
 
-### 5-6) <font style="font-weight:bold">Classic/Return FTL 계열</font>
+### 5-6) Classic/Return FTL 계열
 - <font style="font-weight:bold">개요</font>: 구워프/웜홀 방식을 <font style="font-weight:bold">의사-연속 도약</font>·스테이션 운용으로 복원하는 <font style="font-weight:bold">FTL 복귀</font> 모드군. 
 - <font style="font-weight:bold">연계 라인</font>: 점프 쿨다운·거리·오차 파라미터 조정, 하이퍼 파라미터 변조 → <font style="font-weight:bold">연속 항해 감각(워프)</font> 복권.
 
-### 5-7) <font style="font-weight:bold">Technology Ascendant (Breakthrough)</font> / <font style="font-weight:bold">Research Breakthrough</font>
+### 5-7) Technology Ascendant (Breakthrough) / Research Breakthrough
 - <font style="font-weight:bold">개요</font>: 분야별 <font style="font-weight:bold">Breakthrough Tech</font>를 희귀 카드로 추가하여 <font style="font-weight:bold">해당 분야 연구 가속/고유 보너스</font> 제공. 
 - <font style="font-weight:bold">연계 라인</font>: 물리(Particles/Field/Computing), 공학(Materials/Voidcraft/Propulsion), 사회(Biology/Statecraft/Military Theory/New Worlds) 각각에 <font style="font-weight:bold">1개 이상 브레이크스루</font> 등장. 일부 모드 패치에서 <font style="font-weight:bold">윤리/전통/초월 특전</font>에 따라 <font style="font-weight:bold">출현 가중치</font> 연동.
 

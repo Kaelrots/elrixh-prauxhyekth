@@ -35,7 +35,7 @@
 
 ---
 
-## 2) DLC 상호작용 — <font style="font-weight:bold">유물 세계 복원 / Restore Ecumenopolis</font> (고고학·유물 연계)
+## 2) DLC 상호작용 — 유물 세계 복원 / Restore Ecumenopolis (고고학·유물 연계)
 
 <div class="scroll-x nowrap"><table>
   <thead>
@@ -252,7 +252,7 @@
 
 ---
 
-### 7-2) 모드 — Planetary Habitats (행성 해비타트) : <font style="font-weight:bold">Molten Habitat (용암 해비타트)</font>
+### 7-2) 모드 — Planetary Habitats (행성 해비타트) : Molten Habitat (용암 해비타트)
 <div class="scroll-x nowrap"><table>
   <thead>
     <tr>
@@ -278,7 +278,7 @@
 
 ---
 
-### 7-3) 모드 — Terraform Everything : <font style="font-weight:bold">Molten Terraforming (용암 테라포밍)</font>
+### 7-3) 모드 — Terraform Everything : Molten Terraforming (용암 테라포밍)
 <div class="scroll-x nowrap"><table>
   <thead>
     <tr>
@@ -304,7 +304,7 @@
 
 ---
 
-### 7-4) 모드 — Terraforming Candidates : <font style="font-weight:bold">Molten → Volcanic 단계 테라포밍</font>
+### 7-4) 모드 — Terraforming Candidates : Molten → Volcanic 단계 테라포밍
 <div class="scroll-x nowrap"><table>
   <thead>
     <tr>
@@ -330,7 +330,7 @@
 
 ---
 
-### 7-5) 모드 — Machine‑Forge & Hive Bioforge Worlds : <font style="font-weight:bold">기계/하이브 포지 월드 결정</font>
+### 7-5) 모드 — Machine‑Forge & Hive Bioforge Worlds : 기계/하이브 포지 월드 결정
 <div class="scroll-x nowrap"><table>
   <thead>
     <tr>
@@ -357,7 +357,7 @@
 
 ---
 
-### 7-6) 모드 — Gigastructural Engineering & More : <font style="font-weight:bold">용암 연계 메가 구조물</font>
+### 7-6) 모드 — Gigastructural Engineering & More : 용암 연계 메가 구조물
 <div class="scroll-x nowrap"><table>
   <thead>
     <tr>
