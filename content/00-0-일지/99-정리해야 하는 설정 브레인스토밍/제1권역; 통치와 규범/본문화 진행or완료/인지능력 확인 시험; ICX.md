@@ -111,7 +111,7 @@
 6. <font style="font-weight:bold">국제정치학에 대한 이해</font>
 7. <font style="font-weight:bold">인류헌장 및 심우주 개척 규범에 대한 이해</font>
 8. <font style="font-weight:bold">연방의 국가 감사 및 행정 투명성에 대한 이해</font>
-9. <font style="font-weight:bold">거대공학과 우주 항행 함선 설계에 대한 이해 (신설):</font> 궤도 엘리베이터, 관문 네트워크, 도시함 등 연방 거대구조물청의 정책 판단을 위해 도입된 심화 과목이다.
+9. <font style="font-weight:bold">거대공학과 우주 항행·함선 설계에 대한 이해 (신설):</font> 궤도 엘리베이터, 관문 네트워크, 도시함 등 연방 거대구조물청의 정책 판단을 위해 도입된 심화 과목이다.
 
 <hr class="hr-thick-2">
 
@@ -247,7 +247,7 @@ ICX는 단순한 자격 검증을 넘어, 연방 행정부의 거대한 관료�
 - <font style="font-weight:bold">다루는 범위:</font> 국가 감사원의 전권 감사 한계, 시민 숙의 권고에 대한 C/E(수용 또는 설명) 의무 분석, 오픈 API를 통한 행정 정보 공개 규범.
 - <font style="font-weight:bold">매칭 권력기관:</font> <font style="font-weight:bold">감사 기관(연방 감사원)</font>의 회계 및 직무 감찰 행위, <font style="font-weight:bold">행정 기관</font>의 행정 정보 공개(전자관보) 행위.
 
-#### 9. 거대공학과 우주 항행 함선 설계에 대한 이해 (신설)
+#### 9. 거대공학과 우주 항행·함선 설계에 대한 이해 (신설)
 
 - <font style="font-weight:bold">설명 & 당위성:</font> 연방 헌법에 명시된 궤도 엘리베이터, 관문 네트워크, 행성 크기 도시함 등 초거대 구조물 인프라의 정책 가치를 판단합니다. 천문학적인 연방 예산이 소요되는 거대공학 인프라의 타당성을 감시하기 위한 심화 영역입니다.
 - <font style="font-weight:bold">다루는 범위:</font> 연방 거대구조물청의 정책 수립, 초대형 우주 인프라의 안전성/경제성 분석.
