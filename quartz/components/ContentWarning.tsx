@@ -247,4 +247,7 @@ ContentWarning.css = `
 }
 `
 
+ContentWarning.afterDOMLoaded = ContentWarning.afterDOMLoaded
+ContentWarning.css = ContentWarning.css
+
 export default (() => ContentWarning) satisfies QuartzComponentConstructor
