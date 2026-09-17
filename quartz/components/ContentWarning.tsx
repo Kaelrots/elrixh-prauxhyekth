@@ -7,7 +7,7 @@ const WARNING_DEFINITIONS: Record<string, { badge: string; title: string; desc: 
     desc: "만 15세 미만의 청소년에게 부적합한 폭력성, 암투 또는 경미한 선정적 요소가 포함되어 있습니다.",
   },
   "nsfw-18": {
-    badge: "19+",
+    badge: "18+",
     title: "성인 등급 (청소년 관람불가)",
     desc: "수위 높은 폭력, 잔혹한 유혈 묘사 또는 성인 등급의 설정 및 서사가 포함되어 있습니다.",
   },
@@ -19,8 +19,19 @@ const WARNING_DEFINITIONS: Record<string, { badge: string; title: string; desc: 
   "wip": {
     badge: "WIP",
     title: "작업 진행 중 (미완성)",
-    desc: "현재 집필 중인 문서입니다. 내용 누락, 설정 오류 또는 예고 없는 대규모 수정이 빈번할 수 있습니다.",
+    desc: "현재 집필 또는 수정이 진행 중인 문서입니다. 내용 누락, 설정 오류 또는 예고 없는 대규모 수정이 있을 수 있습니다.",
   },
+  "unwritten": {
+    badge: "UNW",
+    title: "미작성 문서",
+    desc: "아직 본문 작성이 완료되지 않은 문서입니다. 개요, 메모 또는 최소한의 정보만 포함되어 있을 수 있습니다.",
+  },
+}
+
+const WARNING_ALIASES: Record<string, string> = {
+  "unw": "unwritten",
+  "unwritten": "unwritten",
+  "ai": "ai-generated",
 }
 
 export default (() => {
@@ -32,6 +43,7 @@ export default (() => {
     
     const activeWarnings = warningList
       .map((w) => String(w).trim().toLowerCase())
+      .map((w) => WARNING_ALIASES[w] ?? w)
       .filter((w) => WARNING_DEFINITIONS[w])
       .map((w) => ({ key: w, ...WARNING_DEFINITIONS[w] }))
 
@@ -161,23 +173,42 @@ export default (() => {
 
   .warning-item {
     display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    padding: 0.75rem;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.8rem 0.9rem;
     border-radius: 8px;
     background: var(--highlight);
     border: 1px solid var(--lightgray);
   }
 
   .item-badge {
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+    width: 2.7rem;
+    min-width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1;
     background: var(--secondary);
     color: var(--light);
     white-space: nowrap;
-    margin-top: 0.1rem;
+    flex-shrink: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .item-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .warning-type-wip .item-badge,
+  .warning-type-unwritten .item-badge {
+    font-size: 0.62rem;
   }
 
   .warning-type-nsfw-18 .item-badge {
@@ -197,6 +228,11 @@ export default (() => {
 
   .warning-type-wip .item-badge {
     background: #689f38;
+    color: #ffffff;
+  }
+
+  .warning-type-unwritten .item-badge {
+    background: #607d8b;
     color: #ffffff;
   }
 
