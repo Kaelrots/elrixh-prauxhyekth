@@ -1,6 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-// 4가지 모달 팝업 대상 정의
 const WARNING_DEFINITIONS: Record<string, { badge: string; title: string; desc: string }> = {
   "nsfw-15": {
     badge: "15+",
@@ -24,230 +23,229 @@ const WARNING_DEFINITIONS: Record<string, { badge: string; title: string; desc: 
   },
 }
 
-const ContentWarning: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
-  const rawWarning = fileData.frontmatter?.warning
-  if (!rawWarning) return null
+export default (() => {
+  const ContentWarning: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+    const rawWarning = fileData.frontmatter?.warning
+    if (!rawWarning) return null
 
-  // 문자열 또는 배열 모두 배열 형태로 정규화
-  const warningList = Array.isArray(rawWarning) ? rawWarning : [rawWarning]
-  
-  // 모달 대상 4개 키에 해당하는 것만 필터링
-  const activeWarnings = warningList
-    .map((w) => String(w).toLowerCase())
-    .filter((w) => WARNING_DEFINITIONS[w])
-    .map((w) => ({ key: w, ...WARNING_DEFINITIONS[w] }))
+    const warningList = Array.isArray(rawWarning) ? rawWarning : [rawWarning]
+    
+    const activeWarnings = warningList
+      .map((w) => String(w).trim().toLowerCase())
+      .filter((w) => WARNING_DEFINITIONS[w])
+      .map((w) => ({ key: w, ...WARNING_DEFINITIONS[w] }))
 
-  if (activeWarnings.length === 0) return null
+    if (activeWarnings.length === 0) return null
 
-  return (
-    <div id="content-warning-modal" class="warning-overlay">
-      <div class="warning-card">
-        <div class="warning-header">
-          <span class="warning-icon">⚠️</span>
-          <h3>열람 전 주의사항 안내</h3>
-        </div>
+    return (
+      <div id="content-warning-modal" class="warning-overlay">
+        <div class="warning-card">
+          <div class="warning-header">
+            <span class="warning-icon">⚠️</span>
+            <h3>열람 전 주의사항 안내</h3>
+          </div>
 
-        <p class="warning-subtext">
-          본 문서는 아래와 같은 요소를 포함하고 있습니다. 내용을 확인한 후 열람을 진행해 주세요.
-        </p>
+          <p class="warning-subtext">
+            본 문서는 아래와 같은 요소를 포함하고 있습니다. 내용을 확인한 후 열람을 진행해 주세요.
+          </p>
 
-        <ul class="warning-items">
-          {activeWarnings.map((item) => (
-            <li class={`warning-item warning-type-${item.key}`}>
-              <div class="item-badge">{item.badge}</div>
-              <div class="item-content">
-                <strong>{item.title}</strong>
-                <p>{item.desc}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+          <ul class="warning-items">
+            {activeWarnings.map((item) => (
+              <li class={`warning-item warning-type-${item.key}`}>
+                <div class="item-badge">{item.badge}</div>
+                <div class="item-content">
+                  <strong>{item.title}</strong>
+                  <p>{item.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
 
-        <div class="warning-actions">
-          <button id="warning-decline" class="btn-decline">이전으로</button>
-          <button id="warning-accept" class="btn-accept">확인 및 계속 읽기</button>
+          <div class="warning-actions">
+            <button id="warning-decline" class="btn-decline" type="button">이전으로</button>
+            <button id="warning-accept" class="btn-accept" type="button">확인 및 계속 읽기</button>
+          </div>
         </div>
       </div>
-    </div>
-  )
-}
+    )
+  }
 
-ContentWarning.afterDOMLoaded = `
-document.addEventListener("nav", () => {
-  const modal = document.getElementById("content-warning-modal")
-  if (!modal) return
+  ContentWarning.afterDOMLoaded = `
+  const attachWarningEvents = () => {
+    const modal = document.getElementById("content-warning-modal")
+    if (!modal) return
 
-  // 팝업 시 배경 스크롤 차단
-  document.body.style.overflow = "hidden"
+    document.body.style.overflow = "hidden"
 
-  const acceptBtn = document.getElementById("warning-accept")
-  const declineBtn = document.getElementById("warning-decline")
+    const acceptBtn = document.getElementById("warning-accept")
+    const declineBtn = document.getElementById("warning-decline")
 
-  acceptBtn?.addEventListener("click", () => {
-    modal.style.display = "none"
-    document.body.style.overflow = "auto"
-  })
+    acceptBtn?.addEventListener("click", () => {
+      modal.style.display = "none"
+      document.body.style.overflow = "auto"
+    })
 
-  declineBtn?.addEventListener("click", () => {
-    if (window.history.length > 1) {
-      window.history.back()
-    } else {
-      window.location.href = "/"
-    }
-  })
-})
-`
+    declineBtn?.addEventListener("click", () => {
+      if (window.history.length > 1) {
+        window.history.back()
+      } else {
+        window.location.href = "/"
+      }
+    })
+  }
 
-ContentWarning.css = `
-.warning-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.82);
-  backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10000;
-  padding: 1rem;
-}
+  document.addEventListener("nav", attachWarningEvents)
+  attachWarningEvents()
+  `
 
-.warning-card {
-  background: var(--light);
-  color: var(--dark);
-  border: 1px solid var(--lightgray);
-  border-radius: 12px;
-  padding: 1.75rem;
-  max-width: 520px;
-  width: 100%;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+  ContentWarning.css = `
+  .warning-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    padding: 1rem;
+  }
 
-.warning-header {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
+  .warning-card {
+    background: var(--light);
+    color: var(--dark);
+    border: 1px solid var(--lightgray);
+    border-radius: 12px;
+    padding: 1.75rem;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-.warning-header h3 {
-  margin: 0;
-  font-size: 1.25rem;
-  color: var(--secondary);
-}
+  .warning-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
 
-.warning-icon {
-  font-size: 1.4rem;
-}
+  .warning-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--secondary);
+  }
 
-.warning-subtext {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--gray);
-  line-height: 1.4;
-}
+  .warning-icon {
+    font-size: 1.4rem;
+  }
 
-.warning-items {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  max-height: 40vh;
-  overflow-y: auto;
-}
+  .warning-subtext {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.4;
+  }
 
-.warning-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  padding: 0.75rem;
-  border-radius: 8px;
-  background: var(--highlight);
-  border: 1px solid var(--lightgray);
-}
+  .warning-items {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    max-height: 40vh;
+    overflow-y: auto;
+  }
 
-.item-badge {
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  background: var(--secondary);
-  color: var(--light);
-  white-space: nowrap;
-  margin-top: 0.1rem;
-}
+  .warning-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: var(--highlight);
+    border: 1px solid var(--lightgray);
+  }
 
-.warning-type-nsfw-18 .item-badge {
-  background: #d32f2f;
-  color: #ffffff;
-}
+  .item-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: var(--secondary);
+    color: var(--light);
+    white-space: nowrap;
+    margin-top: 0.1rem;
+  }
 
-.warning-type-nsfw-15 .item-badge {
-  background: #f57c00;
-  color: #ffffff;
-}
+  .warning-type-nsfw-18 .item-badge {
+    background: #d32f2f;
+    color: #ffffff;
+  }
 
-.warning-type-ai-generated .item-badge {
-  background: #1976d2;
-  color: #ffffff;
-}
+  .warning-type-nsfw-15 .item-badge {
+    background: #f57c00;
+    color: #ffffff;
+  }
 
-.warning-type-wip .item-badge {
-  background: #689f38;
-  color: #ffffff;
-}
+  .warning-type-ai-generated .item-badge {
+    background: #1976d2;
+    color: #ffffff;
+  }
 
-.item-content strong {
-  display: block;
-  font-size: 0.95rem;
-  margin-bottom: 0.2rem;
-  color: var(--dark);
-}
+  .warning-type-wip .item-badge {
+    background: #689f38;
+    color: #ffffff;
+  }
 
-.item-content p {
-  margin: 0;
-  font-size: 0.85rem;
-  line-height: 1.4;
-  color: var(--darkgray);
-}
+  .item-content strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    color: var(--dark);
+  }
 
-.warning-actions {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-}
+  .item-content p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--darkgray);
+  }
 
-.warning-actions button {
-  padding: 0.55rem 1.1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: opacity 0.15s ease;
-}
+  .warning-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
 
-.warning-actions button:hover {
-  opacity: 0.85;
-}
+  .warning-actions button {
+    padding: 0.55rem 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: opacity 0.15s ease;
+  }
 
-.btn-accept {
-  background: var(--secondary);
-  color: var(--light);
-  border: none;
-}
+  .warning-actions button:hover {
+    opacity: 0.85;
+  }
 
-.btn-decline {
-  background: transparent;
-  border: 1px solid var(--lightgray);
-  color: var(--darkgray);
-}
-`
+  .btn-accept {
+    background: var(--secondary);
+    color: var(--light);
+    border: none;
+  }
 
-ContentWarning.afterDOMLoaded = ContentWarning.afterDOMLoaded
-ContentWarning.css = ContentWarning.css
+  .btn-decline {
+    background: transparent;
+    border: 1px solid var(--lightgray);
+    color: var(--darkgray);
+  }
+  `
 
-export default (() => ContentWarning) satisfies QuartzComponentConstructor
+  return ContentWarning
+}) satisfies QuartzComponentConstructor
