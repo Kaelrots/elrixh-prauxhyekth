@@ -1,4 +1,4 @@
-```yaml
+---
 제목: 전략지역 HEX 코드
 카테고리: HEX 코드 모음
 작성자: 현카엘
@@ -9,7 +9,8 @@
 태그:
   - HEX 코드 모음
   - 전략지역 HEX 코드
-```
+---
+
 <div class="scroll-x nowrap"><table>
   <thead>
     <tr>
