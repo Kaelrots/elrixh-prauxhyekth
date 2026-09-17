@@ -36,7 +36,19 @@ const WARNING_ALIASES: Record<string, string> = {
 
 export default (() => {
   const ContentWarning: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
-    const rawWarning = fileData.frontmatter?.warning
+    const frontmatter = fileData.frontmatter as Record<string, unknown> | undefined
+    const access = String(frontmatter?.access ?? "").trim().toLowerCase()
+    const rawTags = frontmatter?.tags
+    const tags = (Array.isArray(rawTags) ? rawTags : rawTags ? [rawTags] : [])
+      .map((tag) => String(tag).trim().toLowerCase())
+
+    const contentBlocked =
+      ["unavailable", "blocked", "locked"].includes(access) ||
+      tags.some((tag) => ["unavailable", "unreleased", "blocked", "locked"].includes(tag))
+
+    if (contentBlocked) return null
+
+    const rawWarning = frontmatter?.warning
     if (!rawWarning) return null
 
     const warningList = Array.isArray(rawWarning) ? rawWarning : [rawWarning]
@@ -85,7 +97,10 @@ export default (() => {
   ContentWarning.afterDOMLoaded = `
   const attachWarningEvents = () => {
     const modal = document.getElementById("content-warning-modal")
-    if (!modal) return
+    if (!modal) {
+      document.body.style.overflow = "auto"
+      return
+    }
 
     document.body.style.overflow = "hidden"
 
@@ -98,6 +113,7 @@ export default (() => {
     })
 
     declineBtn?.addEventListener("click", () => {
+      document.body.style.overflow = "auto"
       if (window.history.length > 1) {
         window.history.back()
       } else {

@@ -24,6 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import ContentWarning from "./ContentWarning"
+import ContentGate from "./ContentGate"
 
 export {
   ArticleTitle,
@@ -52,6 +53,7 @@ export {
   Flex,
   ConditionalRender,
   ContentWarning,
+  ContentGate,
 }
 
 export { default as FontSizeAdjust } from "./FontSizeAdjust"
