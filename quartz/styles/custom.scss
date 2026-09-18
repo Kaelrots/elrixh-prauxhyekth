@@ -899,15 +899,10 @@ article a.internal, article a.external {
   }
 
   .sidebar.right .backlinks {
-    order: 0;
     padding: 1rem;
     border: 1px solid var(--lightgray);
     border-radius: 0.75rem;
     box-sizing: border-box;
-  }
-
-  .sidebar.right .graph {
-    order: 1;
   }
 
   .sidebar.right .graph > h3,
