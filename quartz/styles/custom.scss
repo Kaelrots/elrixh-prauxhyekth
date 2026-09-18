@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
 // ==========================================================================
 // 1. 커스텀 폰트 (Elruhngara) & 전역 변수 설정
@@ -34,6 +35,25 @@
   --tbl-border:    #CCF4F9;
   
   --task-accent: var(--color-h1);
+
+  /* 테마별 표·검색 UI 토큰: 고정 다크 색상을 제거해 라이트 모드도 일관되게 표시 */
+  --search-surface: color-mix(in srgb, var(--light) 88%, var(--lightgray));
+  --search-surface-hover: color-mix(in srgb, var(--light) 74%, var(--secondary));
+  --search-text: var(--darkgray);
+}
+
+:root[saved-theme="light"] {
+  --tbl-header-bg: #d9f1ee;
+  --tbl-header-fg: #173c3d;
+  --tbl-body-bg: #ffffff;
+  --tbl-body-fg: #252525;
+  --tbl-border: #87b8b3;
+}
+
+:root[saved-theme="dark"] {
+  --search-surface: rgba(60, 60, 60, 0.4);
+  --search-surface-hover: rgba(80, 80, 80, 0.6);
+  --search-text: #e0e0e0;
 }
 
 // 맑은 고딕 강제 적용 (Quartz 구조 타겟팅)
@@ -300,16 +320,16 @@ article h6, .page h6 { color: var(--color-h6) !important; }
 .search-button {
   border: 2px solid var(--color-h1) !important; 
   border-radius: 8px !important;
-  background-color: rgba(60, 60, 60, 0.4) !important; /* 배경과 구분되는 색상 */
+  background-color: var(--search-surface) !important;
   padding: 8px 12px !important;
   width: 100%;
   box-shadow: none !important;
 }
 .search-button:hover {
-  background-color: rgba(80, 80, 80, 0.6) !important;
+  background-color: var(--search-surface-hover) !important;
 }
 .search-button .search-title {
-  color: #e0e0e0 !important;
+  color: var(--search-text) !important;
 }
 
 // ==========================================================================
@@ -461,16 +481,15 @@ article a.internal, article a.external {
 // ==========================================================================
 // 15. 좌우 패널 완전 확장 및 여백 낭비 제거 (Title 짤림 해결)
 // ==========================================================================
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1600px) {
   .page {
     max-width: 100vw !important; /* 화면 전체를 100% 끝까지 꽉 채움 */
     padding: 0 1vw !important;   /* 브라우저 끝단에 너무 달라붙지 않게 최소한의 여백만 부여 */
   }
   
   .page > #quartz-body {
-    /* 기존 280px에서 340px로 좌우 패널 너비를 넉넉하게 확장 (사이트 제목 짤림 완벽 방지) */
-    grid-template-columns: 340px minmax(0, 1fr) 340px !important; 
-    column-gap: 3rem !important; /* 본문과 패널 사이 간격 */
+    grid-template-columns: clamp(260px, 19vw, 340px) minmax(0, 1fr) clamp(260px, 19vw, 340px) !important;
+    column-gap: clamp(1.5rem, 2.5vw, 3rem) !important;
   }
 
   /* 패널 안에 숨어있던 쓸데없는 두꺼운 여백(기본 2rem)을 완전히 제거하여 바깥으로 쫙 밀어냄 */
@@ -482,8 +501,37 @@ article a.internal, article a.external {
   }
 }
 
+/* 1200~1599px에서는 우측 패널을 본문 아래로 보내 본문 폭을 확보합니다. */
+@media all and (min-width: 1200px) and (max-width: 1599px) {
+  .page {
+    max-width: 100vw !important;
+    padding: 0 1.5rem !important;
+  }
+
+  .page > #quartz-body {
+    grid-template-columns: clamp(260px, 24vw, 320px) minmax(0, 1fr) !important;
+    grid-template-rows: auto auto auto auto !important;
+    grid-template-areas:
+      "grid-sidebar-left grid-header"
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-sidebar-right"
+      "grid-sidebar-left grid-footer" !important;
+    column-gap: clamp(1.5rem, 3vw, 2.5rem) !important;
+  }
+
+  .page > #quartz-body .sidebar.right {
+    position: static !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 2rem 0 0 !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+
 /* 모바일 환경에만 적용되는 반응형 규칙 */
-@media all and (max-width: 768px) {
+@media all and ($mobile) {
   
   /* 1. 로고 등 너무 큰 이미지 크기 제한 */
   img {
@@ -501,16 +549,285 @@ article a.internal, article a.external {
   }
 
   /* 3. 표(Table) 가로 스크롤 허용 (짤림 방지) */
-  .table-container, table {
+  .table-container {
     display: block;
     width: 100%;
-    overflow-x: auto; /* 좌우 스크롤 생성 */
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* 모바일에서 부드러운 스크롤 지원 */
     white-space: nowrap; /* 셀 내부 텍스트가 강제로 줄바꿈되지 않도록 설정 */
+    background:
+      linear-gradient(to right, var(--light) 30%, transparent),
+      linear-gradient(to left, var(--light) 30%, transparent),
+      linear-gradient(to right, rgba(0, 0, 0, 0.16), transparent 12px),
+      linear-gradient(to left, rgba(0, 0, 0, 0.16), transparent 12px);
+    background-position: left center, right center, left center, right center;
+    background-repeat: no-repeat;
+    background-size: 28px 100%, 28px 100%, 12px 100%, 12px 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
+
+  .table-container > table :is(th, td):first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    box-shadow: 1px 0 0 var(--tbl-border);
+  }
+
+  .table-container > table thead th:first-child {
+    z-index: 2;
   }
   
   th, td {
     padding: 0.5rem; /* 모바일 화면에 맞게 표 내부 여백 조정 */
+  }
+}
+
+// ==========================================================================
+// 16. 모바일 앱 바 및 모바일 전용 정보 구조
+// ==========================================================================
+@media all and ($mobile) {
+  html {
+    scroll-padding-top: calc(4.25rem + env(safe-area-inset-top));
+  }
+
+  .page > #quartz-body {
+    padding-top: calc(3.5rem + env(safe-area-inset-top));
+  }
+
+  .page > #quartz-body .sidebar.left:has(.explorer) {
+    position: fixed !important;
+    inset: 0 0 auto 0;
+    z-index: 1000 !important;
+    width: 100%;
+    height: calc(3.5rem + env(safe-area-inset-top)) !important;
+    min-height: calc(3.5rem + env(safe-area-inset-top));
+    padding: env(safe-area-inset-top) 0.55rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.25rem !important;
+    background: color-mix(in srgb, var(--light) 92%, transparent) !important;
+    border-bottom: 1px solid var(--lightgray);
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .sidebar.left > .page-title {
+    order: 1;
+    min-width: 0;
+    flex: 1 1 auto;
+    margin: 0 !important;
+  }
+
+  .sidebar.left > .page-title a {
+    min-width: 0;
+    height: 3.5rem;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    overflow: hidden;
+    color: var(--dark) !important;
+    font-size: 1rem !important;
+    font-weight: 700;
+    line-height: 1.15;
+    white-space: nowrap !important;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar.left > .page-title a::before {
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: 0 0 2.25rem;
+  }
+
+  .sidebar.left > .mobile-only {
+    display: none !important;
+  }
+
+  .sidebar.left > .flex-component {
+    order: 2;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .sidebar.left > .explorer {
+    order: 0;
+    flex: 0 0 3rem !important;
+    align-self: center !important;
+    margin: 0 !important;
+  }
+
+  /* 터치 환경에서 읽기 모드를 다시 끌 수 있도록 앱 바는 항상 유지합니다. */
+  :root[reader-mode="on"] .sidebar.left {
+    opacity: 1 !important;
+  }
+
+  button.mobile-explorer,
+  .darkmode,
+  .readermode,
+  .search > .search-button {
+    min-width: 2.75rem !important;
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+    min-height: 2.75rem !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 0.6rem !important;
+  }
+
+  .search {
+    flex: 0 0 2.75rem !important;
+    min-width: 2.75rem !important;
+    max-width: 2.75rem !important;
+  }
+
+  .search > .search-button {
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  .search > .search-button > p,
+  button.mobile-explorer h2 {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+  }
+
+  .search > .search-button svg {
+    margin: 0 !important;
+  }
+
+  .breadcrumb-container {
+    flex-wrap: nowrap !important;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  .breadcrumb-container .breadcrumb-element:not(:first-child):not(:nth-last-child(-n + 2)) {
+    display: none;
+  }
+
+  .breadcrumb-container .breadcrumb-element:nth-last-child(2):not(:first-child)::before {
+    content: "…  ❯";
+    margin-right: 0.45rem;
+    color: var(--gray);
+  }
+
+  .breadcrumb-container .breadcrumb-element a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .page > #quartz-body .sidebar.right {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    padding: 1.5rem 0 0 !important;
+  }
+
+  .sidebar.right > * {
+    width: 100% !important;
+    max-height: none !important;
+    flex: 0 0 auto !important;
+  }
+
+  .sidebar.right .backlinks {
+    order: 0;
+    padding: 1rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+  }
+
+  .sidebar.right .graph {
+    order: 1;
+  }
+
+  .sidebar.right .graph > h3,
+  .sidebar.right .graph .graph-container {
+    display: none !important;
+  }
+
+  .sidebar.right .graph > .graph-outer {
+    height: 3rem !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .sidebar.right .graph .global-graph-icon {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    opacity: 0.8 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+  }
+
+  .sidebar.right .graph .global-graph-icon::before {
+    content: "관계 그래프 보기";
+    color: var(--darkgray);
+    font-weight: 700;
+  }
+
+  .sidebar.right .graph .global-graph-icon svg {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+
+  .graph > .global-graph-outer,
+  .search > .search-container {
+    width: 100dvw !important;
+    height: 100dvh !important;
+  }
+
+  .graph > .global-graph-outer > .global-graph-container {
+    width: calc(100dvw - 1rem) !important;
+    height: calc(100dvh - 1rem) !important;
+  }
+
+  .search > .search-container {
+    background: var(--light);
+    backdrop-filter: none;
+  }
+
+  .search > .search-container > .search-space {
+    box-sizing: border-box;
+    width: 100% !important;
+    min-height: 100dvh;
+    margin: 0 !important;
+    padding: calc(0.75rem + env(safe-area-inset-top)) 0.75rem calc(0.75rem + env(safe-area-inset-bottom));
+  }
+
+  .search > .search-container > .search-space > input {
+    position: sticky;
+    top: calc(0.75rem + env(safe-area-inset-top));
+    z-index: 2;
+    min-height: 3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .search > .search-container .search-layout,
+  .search > .search-container .search-layout > div,
+  .search > .search-container .results-container {
+    height: calc(100dvh - 5.25rem - env(safe-area-inset-top) - env(safe-area-inset-bottom)) !important;
+    max-height: none !important;
   }
 }
 

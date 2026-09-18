@@ -18,7 +18,7 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
-      component: Component.Breadcrumbs({ rootName: "홈(Home)" }),
+      component: Component.Breadcrumbs({ rootName: "홈(Home)", showCurrentPage: false }),
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.ArticleTitle(),
@@ -52,7 +52,11 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [
+    Component.Breadcrumbs({ rootName: "홈(Home)", showCurrentPage: false }),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
@@ -63,6 +67,7 @@ export const defaultListPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
       ],
     }),
     Component.Explorer(),

@@ -107,8 +107,24 @@ FontSizeAdjust.css = `
   /* 모바일 화면에서는 버튼 위치 살짝 조정 */
   @media all and (max-width: 800px) {
     .font-size-adjust-floating {
-      bottom: 1.5rem;
-      right: 1.5rem;
+      bottom: calc(0.75rem + env(safe-area-inset-bottom));
+      right: calc(0.75rem + env(safe-area-inset-right));
+      flex-direction: row;
+      padding: 0.15rem;
+      border-radius: 999px;
+      opacity: 0.9;
+    }
+
+    .font-size-adjust-floating .font-btn {
+      min-width: 44px;
+      min-height: 44px;
+      padding: 0.35rem 0.55rem;
+    }
+
+    .font-size-adjust-floating .font-divider {
+      width: 1px;
+      height: 24px;
+      margin: 0 1px;
     }
   }
 
