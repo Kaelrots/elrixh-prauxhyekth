@@ -43,11 +43,23 @@
 }
 
 :root[saved-theme="light"] {
+  --color-h1: #14695f;
+  --color-h2: #35693e;
+  --color-h3: #925052;
+  --color-h4: #806400;
+  --color-h5: #995114;
+  --color-h6: #a03974;
   --tbl-header-bg: #d9f1ee;
   --tbl-header-fg: #173c3d;
   --tbl-body-bg: #ffffff;
   --tbl-body-fg: #252525;
   --tbl-border: #87b8b3;
+
+  a.internal.broken {
+    color: #b3262e !important;
+    border-bottom-color: #b3262e !important;
+    opacity: 1 !important;
+  }
 }
 
 :root[saved-theme="dark"] {
@@ -130,6 +142,28 @@ a.internal {
     tbody td {
       background: var(--tbl-body-bg) !important;
       color: var(--tbl-body-fg) !important;
+    }
+  }
+
+  /* 긴 설명 열만 줄바꿈합니다. 숫자와 짧은 항목은 기존 정렬을 유지합니다. */
+  > table.table-prose {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    :is(th, td).prose-column {
+      white-space: normal !important;
+      overflow-wrap: anywhere;
+      min-width: 12rem;
+      max-width: 36rem;
+      text-align: start !important;
+    }
+
+    :is(th, td).prose-column[align="center"] {
+      text-align: center !important;
+    }
+
+    :is(th, td).prose-column[align="right"] {
+      text-align: right !important;
     }
   }
 }
@@ -318,7 +352,7 @@ article h6, .page h6 { color: var(--color-h6) !important; }
 // ==========================================================================
 // 검색 버튼 영역에 Prism 테마의 민트색 테두리를 두르고, 살짝 밝은 배경을 줍니다.
 .search-button {
-  border: 2px solid var(--color-h1) !important; 
+  border: 1px solid var(--lightgray) !important;
   border-radius: 8px !important;
   background-color: var(--search-surface) !important;
   padding: 8px 12px !important;
@@ -326,6 +360,7 @@ article h6, .page h6 { color: var(--color-h6) !important; }
   box-shadow: none !important;
 }
 .search-button:hover {
+  border-color: var(--secondary) !important;
   background-color: var(--search-surface-hover) !important;
 }
 .search-button .search-title {
@@ -347,6 +382,18 @@ article h6, .page h6 { color: var(--color-h6) !important; }
   --co-orange-base: hsl(26, 65%, 15%); --co-orange-tint: hsl(27, 53%, 37%); --co-orange-text: hsl(26, 85%, 63%);
   --co-red-base: hsl(2, 55%, 19%);     --co-red-tint: hsl(3, 49%, 46%);     --co-red-text: hsl(4, 74%, 74%);
   --co-purple-base: hsl(271, 48%, 21%);--co-purple-tint: hsl(271, 43%, 51%);--co-purple-text: hsl(267, 52%, 75%);
+}
+
+:root[saved-theme="light"] {
+  --co-grey-base: #e9eceb; --co-grey-tint: #a3adaa; --co-grey-text: #414b48;
+  --co-cyan-base: #def0f5; --co-cyan-tint: #78a9b9; --co-cyan-text: #205767;
+  --co-blue-base: #e5ebfa; --co-blue-tint: #8b9fcc; --co-blue-text: #334b82;
+  --co-mint-base: #dff2ea; --co-mint-tint: #72a895; --co-mint-text: #235c49;
+  --co-green-base: #e5f0df; --co-green-tint: #8aa77b; --co-green-text: #3c5f2e;
+  --co-yellow-base: #faf0d5; --co-yellow-tint: #bba165; --co-yellow-text: #73581d;
+  --co-orange-base: #f9e9da; --co-orange-tint: #c49871; --co-orange-text: #854b22;
+  --co-red-base: #f7e3e2; --co-red-tint: #c88e8a; --co-red-text: #8a3934;
+  --co-purple-base: #eee4f6; --co-purple-tint: #ac92bf; --co-purple-text: #684181;
 }
 
 /* 기존 커스텀 이미지 콜아웃이나 callbg가 적용된 콜아웃은 건드리지 않도록 예외 처리 */
@@ -478,6 +525,10 @@ article a.internal, article a.external {
   margin-top: 2rem !important;
 }
 
+.sidebar.left > .flex-component > div:empty {
+  display: none;
+}
+
 /* 본문 스크롤과 분리된, 화면 높이 안에서 스크롤하는 사이드바입니다. */
 @media all and (min-width: 801px) {
   .page {
@@ -505,10 +556,19 @@ article a.internal, article a.external {
   }
 
   .sidebar.left .page-title a::before {
-    width: min(250px, 100%);
+    width: min(120px, 100%);
     height: auto;
     aspect-ratio: 1;
     flex-shrink: 0;
+  }
+
+  body[data-slug="index"] .sidebar.left .page-title a::before {
+    width: min(250px, 100%);
+  }
+
+  body:not([data-slug="index"]) .sidebar.left .page-title a {
+    font-size: 1.1rem !important;
+    gap: 0.6rem;
   }
 
   .sidebar.left > .flex-component {
@@ -519,6 +579,10 @@ article a.internal, article a.external {
     min-width: 0;
   }
 
+  .sidebar.left > .flex-component > div:has(> .mobile-toc) {
+    flex-shrink: 0;
+  }
+
   .sidebar.left .search {
     min-width: 0;
     width: 100%;
@@ -526,6 +590,10 @@ article a.internal, article a.external {
 }
 
 @media all and (min-width: 1200px) {
+  .sidebar.left > .flex-component > div:has(> .mobile-toc) {
+    display: none;
+  }
+
   .page > #quartz-body .sidebar.right {
     position: sticky;
     align-self: start;
@@ -549,6 +617,22 @@ article a.internal, article a.external {
 :root[reader-mode="on"] .sidebar:focus-within,
 .page > #quartz-body .sidebar.graph-open {
   opacity: 1 !important;
+}
+
+/* 문서의 Prism 제목색과 구분되는 차분한 탐색 패널 제목입니다. */
+.page .sidebar :is(.graph-header, .backlinks-header, .toc-header) > h3,
+.page .sidebar .explorer :is(h2, h3) {
+  color: var(--darkgray) !important;
+}
+
+.page .sidebar :is(.graph-header, .backlinks-header, .toc-header) {
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.page .sidebar button:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
 }
 
 // ==========================================================================
@@ -599,12 +683,15 @@ article a.internal, article a.external {
 /* 모바일 환경에만 적용되는 반응형 규칙 */
 @media all and ($mobile) {
   
-  /* 1. 로고 등 너무 큰 이미지 크기 제한 */
+  /* 본문 삽화와 지도는 원래 비율로 표시하고 작은 UI 이미지와 분리합니다. */
   img {
     max-width: 100%;
     height: auto;
-    max-height: 250px; /* 로고가 너무 크지 않게 높이 상한선 설정 */
     object-fit: contain;
+  }
+
+  article img:not([alt~="callbg"]) {
+    max-height: none;
   }
 
   /* 2. 제목 폰트 크기 및 줄바꿈 최적화 */
@@ -641,6 +728,10 @@ article a.internal, article a.external {
 
   .table-container > table thead th:first-child {
     z-index: 2;
+  }
+
+  .table-container > table.table-prose :is(th, td).prose-column:first-child {
+    position: static;
   }
   
   th, td {
@@ -716,7 +807,7 @@ article a.internal, article a.external {
     order: 2;
     flex: 0 0 auto;
     align-items: center;
-    gap: 0.1rem;
+    gap: 0.125rem !important;
   }
 
   .sidebar.left > .explorer {
@@ -857,8 +948,7 @@ article a.internal, article a.external {
     height: 1.35rem;
   }
 
-  .graph > .global-graph-outer,
-  .search > .search-container {
+  .graph > .global-graph-outer {
     width: 100dvw !important;
     height: 100dvh !important;
   }
@@ -868,33 +958,6 @@ article a.internal, article a.external {
     height: calc(100dvh - 1rem) !important;
   }
 
-  .search > .search-container {
-    background: var(--light);
-    backdrop-filter: none;
-  }
-
-  .search > .search-container > .search-space {
-    box-sizing: border-box;
-    width: 100% !important;
-    min-height: 100dvh;
-    margin: 0 !important;
-    padding: calc(0.75rem + env(safe-area-inset-top)) 0.75rem calc(0.75rem + env(safe-area-inset-bottom));
-  }
-
-  .search > .search-container > .search-space > input {
-    position: sticky;
-    top: calc(0.75rem + env(safe-area-inset-top));
-    z-index: 2;
-    min-height: 3rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .search > .search-container .search-layout,
-  .search > .search-container .search-layout > div,
-  .search > .search-container .results-container {
-    height: calc(100dvh - 5.25rem - env(safe-area-inset-top) - env(safe-area-inset-bottom)) !important;
-    max-height: none !important;
-  }
 }
 
 /* ==========================================

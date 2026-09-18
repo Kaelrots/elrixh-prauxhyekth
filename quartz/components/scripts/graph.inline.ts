@@ -695,6 +695,11 @@ document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
   }
 
   function showGlobalGraph(overlay: HTMLElement) {
+    if (
+      document.querySelector("dialog[open]") ||
+      document.documentElement.matches(".content-gate-open, .content-warning-open")
+    )
+      return
     if (activeOverlay === overlay) return
     hideGlobalGraph(false)
     returnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null
@@ -761,6 +766,12 @@ document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
   }
 
   function keyboardHandler(event: KeyboardEvent) {
+    // Native dialogs own focus and keyboard input while they occupy the top layer.
+    if (
+      document.querySelector("dialog[open]") ||
+      document.documentElement.matches(".content-gate-open, .content-warning-open")
+    )
+      return
     if (event.key.toLowerCase() === "g" && (event.ctrlKey || event.metaKey) && !event.shiftKey) {
       const overlay = globalControllers.keys().next().value
       if (!overlay) return

@@ -1,11 +1,13 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import ImageViewer from "./quartz/components/ImageViewer"
+import TableFormatting from "./quartz/components/TableFormatting"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [ImageViewer(), TableFormatting()],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
@@ -26,7 +28,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
     Component.ContentGate(),
     Component.ContentWarning(),
-    Component.FontSizeAdjust(),
   ],
   left: [
     Component.PageTitle(),
@@ -37,16 +38,16 @@ export const defaultContentPageLayout: PageLayout = {
           Component: Component.Search(),
           grow: true,
         },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
+        { Component: Component.TableOfContents({ variant: "mobile" }), shrink: false },
+        { Component: Component.FontSizeAdjust(), shrink: false },
       ],
     }),
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.Graph(),
   ],
 }
 
@@ -66,8 +67,7 @@ export const defaultListPageLayout: PageLayout = {
           Component: Component.Search(),
           grow: true,
         },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
+        { Component: Component.FontSizeAdjust(), shrink: false },
       ],
     }),
     Component.Explorer(),

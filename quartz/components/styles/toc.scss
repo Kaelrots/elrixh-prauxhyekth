@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-  min-height: 1.4rem;
+  min-height: 44px;
   flex: 0 0.5 auto;
   &:has(button.toc-header.collapsed) {
-    flex: 0 1 1.4rem;
+    flex: 0 0 44px;
   }
 }
 
@@ -17,50 +17,186 @@ button.toc-header {
   text-align: left;
   cursor: pointer;
   padding: 0;
+  min-height: 44px;
+  flex-shrink: 0;
+  width: 100%;
   color: var(--dark);
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
+  gap: 0.5rem;
   & h3 {
     font-size: 1rem;
-    display: inline-block;
     margin: 0;
+    color: inherit;
   }
-
   & .fold {
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
+    flex: 0 0 24px;
+    transition: transform 0.2s ease;
     opacity: 0.8;
   }
-
   &.collapsed .fold {
     transform: rotateZ(-90deg);
   }
 }
 
-ul.toc-content.overflow {
+.toc-content,
+.mobile-toc-content {
   list-style: none;
-  position: relative;
-  margin: 0.5rem 0;
+  margin: 0;
   padding: 0;
-  max-height: calc(100% - 2rem);
-  overscroll-behavior: contain;
-  list-style: none;
-
   & > li > a {
-    color: var(--dark);
-    opacity: 0.35;
-    transition:
-      0.5s ease opacity,
-      0.3s ease color;
-    &.in-view {
-      opacity: 0.75;
+    display: block;
+    padding: 0.35rem 0.4rem;
+    border-radius: 5px;
+    color: var(--darkgray);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    font-weight: 400;
+    transition: background-color 0.2s ease;
+    &[aria-current="location"] {
+      color: var(--secondary);
+      background: var(--highlight);
+      font-weight: 600;
+    }
+    &:hover {
+      background: var(--lightgray);
     }
   }
-
   @for $i from 0 through 6 {
     & .depth-#{$i} {
-      padding-left: calc(1rem * #{$i});
+      padding-left: calc(0.75rem * #{$i});
     }
+  }
+}
+
+ul.toc-content {
+  position: relative;
+  min-height: 0;
+  max-height: 40dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  &[hidden] {
+    display: none;
+  }
+}
+
+.mobile-toc {
+  display: none;
+  @media all and not ($desktop) {
+    display: block;
+  }
+}
+
+.mobile-toc-trigger,
+.mobile-toc-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.35rem;
+  box-sizing: border-box;
+  color: var(--darkgray);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  cursor: pointer;
+  &:hover {
+    background: var(--lightgray);
+  }
+  & svg {
+    flex-shrink: 0;
+  }
+}
+
+html.mobile-toc-open {
+  overflow: hidden;
+}
+
+dialog.mobile-toc-dialog {
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: var(--darkgray);
+  overflow: hidden;
+  &[open] {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &::backdrop {
+    background: rgb(0 0 0 / 0.35);
+    backdrop-filter: blur(3px);
+  }
+}
+
+.mobile-toc-sheet {
+  box-sizing: border-box;
+  width: min(100%, 48rem);
+  max-height: min(80dvh, 48rem);
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom))
+    max(1rem, env(safe-area-inset-left));
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 -8px 32px rgb(0 0 0 / 0.2);
+  & > nav {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    min-height: 0;
+  }
+  & .mobile-toc-content > li > a {
+    box-sizing: border-box;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mobile-toc-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--lightgray);
+  margin-bottom: 0.5rem;
+  & h2 {
+    color: var(--dark);
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}
+
+.toc-header:focus-visible,
+.mobile-toc-trigger:focus-visible,
+.mobile-toc-close:focus-visible,
+.mobile-toc-dialog a:focus-visible,
+.toc-content a:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button.toc-header .fold,
+  .toc-content > li > a,
+  .mobile-toc-content > li > a {
+    transition: none;
   }
 }
