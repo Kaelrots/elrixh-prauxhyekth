@@ -1,9 +1,40 @@
 @use "../../styles/variables.scss" as *;
 
 .graph {
-  & > h3 {
-    font-size: 1rem;
-    margin: 0;
+  min-width: 0;
+
+  & > .graph-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--dark);
+    text-align: left;
+    cursor: pointer;
+
+    & > h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    & > .fold {
+      flex-shrink: 0;
+      margin-left: 0.5rem;
+      transition: transform 0.2s ease;
+    }
+
+    &[aria-expanded="false"] > .fold {
+      transform: rotate(-90deg);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--secondary);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
   }
 
   & > .graph-outer {
@@ -14,6 +45,15 @@
     margin: 0.5em 0;
     position: relative;
     overflow: hidden;
+
+    &[hidden] {
+      display: none !important;
+    }
+
+    & > .graph-container {
+      width: 100%;
+      height: 100%;
+    }
 
     & > .global-graph-icon {
       cursor: pointer;
@@ -53,6 +93,28 @@
       display: inline-block;
     }
 
+    & > .global-graph-close {
+      position: absolute;
+      z-index: 1;
+      top: max(1rem, env(safe-area-inset-top));
+      right: max(1rem, env(safe-area-inset-right));
+      display: grid;
+      place-items: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      padding: 0;
+      border: 1px solid var(--gray);
+      border-radius: 0.5rem;
+      background: var(--light);
+      color: var(--dark);
+      cursor: pointer;
+
+      &:focus-visible {
+        outline: 2px solid var(--secondary);
+        outline-offset: 3px;
+      }
+    }
+
     & > .global-graph-container {
       border: 1px solid var(--lightgray);
       background-color: var(--light);
@@ -69,5 +131,20 @@
         width: 90%;
       }
     }
+  }
+}
+
+html.quartz-graph-open {
+  overflow: hidden;
+}
+
+.page > #quartz-body .sidebar.graph-open {
+  z-index: 10000 !important;
+  opacity: 1 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .graph > .graph-header > .fold {
+    transition: none;
   }
 }

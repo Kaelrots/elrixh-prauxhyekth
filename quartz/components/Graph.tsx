@@ -59,16 +59,38 @@ const defaultOptions: GraphOptions = {
   },
 }
 
+let graphPanelCount = 0
+
 export default ((opts?: Partial<GraphOptions>) => {
   const Graph: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const localGraph = { ...defaultOptions.localGraph, ...opts?.localGraph }
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
+    const panelId = `graph-panel-${graphPanelCount++}`
     return (
       <div class={classNames(displayClass, "graph")}>
-        <h3>{i18n(cfg.locale).components.graph.title}</h3>
-        <div class="graph-outer">
+        <button type="button" class="graph-header" aria-expanded="true" aria-controls={panelId}>
+          <h3>{i18n(cfg.locale).components.graph.title}</h3>
+          <svg
+            class="fold"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="graph-outer" id={panelId}>
           <div class="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
-          <button class="global-graph-icon" aria-label="Global Graph">
+          <button
+            type="button"
+            class="global-graph-icon"
+            aria-label="Global Graph"
+            aria-haspopup="dialog"
+          >
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,8 +117,30 @@ export default ((opts?: Partial<GraphOptions>) => {
             </svg>
           </button>
         </div>
-        <div class="global-graph-outer">
+        <div
+          class="global-graph-outer"
+          role="dialog"
+          aria-modal="true"
+          aria-label={i18n(cfg.locale).components.graph.title}
+        >
           <div class="global-graph-container" data-cfg={JSON.stringify(globalGraph)}></div>
+          <button
+            type="button"
+            class="global-graph-close"
+            aria-label={cfg.locale.startsWith("ko") ? "전체 그래프 닫기" : "Close global graph"}
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="M6 6l12 12M18 6 6 18" />
+            </svg>
+          </button>
         </div>
       </div>
     )

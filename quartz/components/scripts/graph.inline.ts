@@ -16,8 +16,8 @@ import {
 } from "d3"
 import { Text, Graphics, Application, Container, Circle } from "pixi.js"
 import { Group as TweenGroup, Tween as Tweened } from "@tweenjs/tween.js"
-import { registerEscapeHandler, removeAllChildren } from "./util"
-import { FullSlug, SimpleSlug, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
+import { removeAllChildren } from "./util"
+import { FullSlug, SimpleSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { D3Config } from "../Graph"
 
 type GraphicsInfo = {
@@ -54,13 +54,22 @@ type NodeRenderData = GraphicsInfo & {
 
 const localStorageKey = "graph-visited"
 function getVisited(): Set<SimpleSlug> {
-  return new Set(JSON.parse(localStorage.getItem(localStorageKey) ?? "[]"))
+  try {
+    const stored: unknown = JSON.parse(localStorage.getItem(localStorageKey) ?? "[]")
+    return new Set(Array.isArray(stored) ? stored : [])
+  } catch {
+    return new Set()
+  }
 }
 
 function addToVisited(slug: SimpleSlug) {
   const visited = getVisited()
   visited.add(slug)
-  localStorage.setItem(localStorageKey, JSON.stringify([...visited]))
+  try {
+    localStorage.setItem(localStorageKey, JSON.stringify([...visited]))
+  } catch {
+    // Graph navigation remains usable when browser storage is unavailable.
+  }
 }
 
 type TweenNode = {
@@ -68,7 +77,7 @@ type TweenNode = {
   stop: () => void
 }
 
-async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
+async function renderGraph(graph: HTMLElement, fullSlug: FullSlug, signal: AbortSignal) {
   const slug = simplifySlug(fullSlug)
   const visited = getVisited()
   removeAllChildren(graph)
@@ -95,6 +104,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       v,
     ]),
   )
+  if (signal.aborted || !graph.isConnected || graph.offsetWidth === 0) return () => {}
   const links: SimpleLinkData[] = []
   const tags: SimpleSlug[] = []
   const validLinks = new Set(data.keys())
@@ -170,6 +180,9 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     .force("center", forceCenter().strength(centerForce))
     .force("link", forceLink(graphData.links).distance(linkDistance))
     .force("collide", forceCollide<NodeData>((n) => nodeRadius(n)).iterations(3))
+
+  const stopSimulation = () => simulation.stop()
+  signal.addEventListener("abort", stopSimulation, { once: true })
 
   const radius = (Math.min(width, height) / 2) * 0.8
   if (enableRadial) simulation.force("radial", forceRadial(radius).strength(0.2))
@@ -350,25 +363,47 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   tweens.clear()
 
   const app = new Application()
-  await app.init({
-    width,
-    height,
-    antialias: true,
-    autoStart: false,
-    autoDensity: true,
-    backgroundAlpha: 0,
-    preference: "webgpu",
-    resolution: window.devicePixelRatio,
-    eventMode: "static",
-  })
+  try {
+    await app.init({
+      width,
+      height,
+      antialias: true,
+      autoStart: false,
+      autoDensity: true,
+      backgroundAlpha: 0,
+      preference: "webgpu",
+      resolution: window.devicePixelRatio,
+      eventMode: "static",
+    })
+  } catch (error) {
+    simulation.stop()
+    signal.removeEventListener("abort", stopSimulation)
+    if (app.renderer) app.destroy(true, { children: true })
+    throw error
+  }
+  if (signal.aborted || !graph.isConnected || graph.offsetWidth === 0) {
+    simulation.stop()
+    signal.removeEventListener("abort", stopSimulation)
+    app.destroy(true, { children: true })
+    return () => {}
+  }
   graph.appendChild(app.canvas)
 
   const stage = app.stage
   stage.interactive = false
 
-  const labelsContainer = new Container<Text>({ zIndex: 3, isRenderGroup: true })
-  const nodesContainer = new Container<Graphics>({ zIndex: 2, isRenderGroup: true })
-  const linkContainer = new Container<Graphics>({ zIndex: 1, isRenderGroup: true })
+  const labelsContainer = new Container<Text>({
+    zIndex: 3,
+    isRenderGroup: true,
+  })
+  const nodesContainer = new Container<Graphics>({
+    zIndex: 2,
+    isRenderGroup: true,
+  })
+  const linkContainer = new Container<Graphics>({
+    zIndex: 1,
+    isRenderGroup: true,
+  })
   stage.addChild(nodesContainer, labelsContainer, linkContainer)
 
   for (const n of graphData.nodes) {
@@ -524,6 +559,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   let stopAnimation = false
+  let animationFrame = 0
   function animate(time: number) {
     if (stopAnimation) return
     for (const n of nodeRenderData) {
@@ -546,104 +582,231 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     tweens.forEach((t) => t.update(time))
     app.renderer.render(stage)
-    requestAnimationFrame(animate)
+    animationFrame = requestAnimationFrame(animate)
   }
 
-  requestAnimationFrame(animate)
+  animationFrame = requestAnimationFrame(animate)
   return () => {
+    if (stopAnimation) return
     stopAnimation = true
-    app.destroy()
+    cancelAnimationFrame(animationFrame)
+    simulation.stop()
+    signal.removeEventListener("abort", stopSimulation)
+    tweens.forEach((tween) => tween.stop())
+    tweens.clear()
+    app.destroy(true, { children: true })
   }
 }
 
-let localGraphCleanups: (() => void)[] = []
-let globalGraphCleanups: (() => void)[] = []
+// A controller owns one canvas, including renders still awaiting Pixi initialization.
+// This prevents hidden panels, rapid resize/theme changes, or SPA navigation from
+// leaving stale canvases, force simulations, or animation loops behind.
+function createGraphController(graph: HTMLElement, slug: FullSlug, isVisible: () => boolean) {
+  let disposed = false
+  let revision = 0
+  let frame = 0
+  let forceNextRender = false
+  let dimensions = ""
+  let cleanup: (() => void) | undefined
+  let pending: AbortController | undefined
 
-function cleanupLocalGraphs() {
-  for (const cleanup of localGraphCleanups) {
-    cleanup()
+  function stop() {
+    revision++
+    pending?.abort()
+    pending = undefined
+    cleanup?.()
+    cleanup = undefined
+    dimensions = ""
   }
-  localGraphCleanups = []
+
+  async function update() {
+    frame = 0
+    const force = forceNextRender
+    forceNextRender = false
+    if (disposed) return
+    if (
+      !isVisible() ||
+      !graph.isConnected ||
+      graph.offsetWidth === 0 ||
+      graph.getClientRects().length === 0
+    ) {
+      stop()
+      return
+    }
+    const nextDimensions = `${graph.offsetWidth}:${graph.offsetHeight}:${window.devicePixelRatio}`
+    if (!force && dimensions === nextDimensions) return
+    stop()
+    dimensions = nextDimensions
+    const currentRevision = revision
+    const abort = new AbortController()
+    pending = abort
+    try {
+      const destroy = await renderGraph(graph, slug, abort.signal)
+      if (disposed || abort.signal.aborted || currentRevision !== revision) {
+        destroy()
+      } else {
+        cleanup = destroy
+      }
+    } catch (error) {
+      if (!disposed && !abort.signal.aborted) console.warn("Unable to render Quartz graph", error)
+    }
+  }
+
+  function refresh(force = false) {
+    if (disposed) return
+    forceNextRender ||= force
+    if (!isVisible()) stop()
+    if (!frame) frame = requestAnimationFrame(() => void update())
+  }
+
+  const observer = new ResizeObserver(() => refresh())
+  observer.observe(graph)
+  refresh()
+  return {
+    refresh,
+    dispose() {
+      disposed = true
+      cancelAnimationFrame(frame)
+      observer.disconnect()
+      stop()
+    },
+  }
 }
 
-function cleanupGlobalGraphs() {
-  for (const cleanup of globalGraphCleanups) {
-    cleanup()
-  }
-  globalGraphCleanups = []
-}
-
-document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
+document.addEventListener("nav", (e: CustomEventMap["nav"]) => {
   const slug = e.detail.url
   addToVisited(simplifySlug(slug))
+  const controllers: ReturnType<typeof createGraphController>[] = []
+  const globalControllers = new Map<HTMLElement, ReturnType<typeof createGraphController>>()
+  const listeners: (() => void)[] = []
+  let activeOverlay: HTMLElement | undefined
+  let returnFocus: HTMLElement | null = null
 
-  async function renderLocalGraph() {
-    cleanupLocalGraphs()
-    const localGraphContainers = document.getElementsByClassName("graph-container")
-    for (const container of localGraphContainers) {
-      localGraphCleanups.push(await renderGraph(container as HTMLElement, slug))
-    }
+  function hideGlobalGraph(restoreFocus = true) {
+    if (!activeOverlay) return
+    const overlay = activeOverlay
+    activeOverlay = undefined
+    overlay.classList.remove("active")
+    overlay.closest(".sidebar")?.classList.remove("graph-open")
+    document.documentElement.classList.remove("quartz-graph-open")
+    globalControllers.get(overlay)?.refresh()
+    if (restoreFocus && returnFocus?.isConnected) returnFocus.focus({ preventScroll: true })
+    returnFocus = null
   }
 
-  await renderLocalGraph()
-  const handleThemeChange = () => {
-    void renderLocalGraph()
+  function showGlobalGraph(overlay: HTMLElement) {
+    if (activeOverlay === overlay) return
+    hideGlobalGraph(false)
+    returnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null
+    activeOverlay = overlay
+    overlay.classList.add("active")
+    overlay.closest(".sidebar")?.classList.add("graph-open")
+    document.documentElement.classList.add("quartz-graph-open")
+    overlay.querySelector<HTMLButtonElement>(".global-graph-close")?.focus({ preventScroll: true })
+    globalControllers.get(overlay)?.refresh(true)
   }
 
-  document.addEventListener("themechange", handleThemeChange)
-  window.addCleanup(() => {
-    document.removeEventListener("themechange", handleThemeChange)
-  })
-
-  const containers = [...document.getElementsByClassName("global-graph-outer")] as HTMLElement[]
-  async function renderGlobalGraph() {
-    const slug = getFullSlug(window)
-    for (const container of containers) {
-      container.classList.add("active")
-      const sidebar = container.closest(".sidebar") as HTMLElement
-      if (sidebar) {
-        sidebar.style.zIndex = "1"
+  for (const root of document.querySelectorAll<HTMLElement>(".graph")) {
+    const button = root.querySelector<HTMLButtonElement>(".graph-header")
+    const panel = root.querySelector<HTMLElement>(".graph-outer")
+    const local = root.querySelector<HTMLElement>(".graph-container")
+    if (button && panel && local) {
+      let collapsed = false
+      try {
+        collapsed = localStorage.getItem("quartz-graph-collapsed") === "true"
+      } catch {}
+      const applyState = () => {
+        button.setAttribute("aria-expanded", String(!collapsed))
+        panel.hidden = collapsed
       }
-
-      const graphContainer = container.querySelector(".global-graph-container") as HTMLElement
-      registerEscapeHandler(container, hideGlobalGraph)
-      if (graphContainer) {
-        globalGraphCleanups.push(await renderGraph(graphContainer, slug))
+      applyState()
+      const controller = createGraphController(local, slug, () => !panel.hidden)
+      controllers.push(controller)
+      const toggle = () => {
+        collapsed = !collapsed
+        applyState()
+        controller.refresh(true)
+        try {
+          localStorage.setItem("quartz-graph-collapsed", String(collapsed))
+        } catch {}
       }
+      button.addEventListener("click", toggle)
+      listeners.push(() => button.removeEventListener("click", toggle))
     }
+
+    const overlay = root.querySelector<HTMLElement>(".global-graph-outer")
+    const global = overlay?.querySelector<HTMLElement>(".global-graph-container")
+    if (!overlay || !global) continue
+    const controller = createGraphController(global, slug, () =>
+      overlay.classList.contains("active"),
+    )
+    controllers.push(controller)
+    globalControllers.set(overlay, controller)
+
+    const icon = root.querySelector<HTMLButtonElement>(".global-graph-icon")
+    const close = overlay.querySelector<HTMLButtonElement>(".global-graph-close")
+    const show = () => showGlobalGraph(overlay)
+    const hide = () => hideGlobalGraph()
+    const backdrop = (event: MouseEvent) => {
+      if (event.target === overlay) hideGlobalGraph()
+    }
+    icon?.addEventListener("click", show)
+    close?.addEventListener("click", hide)
+    overlay.addEventListener("click", backdrop)
+    listeners.push(() => {
+      icon?.removeEventListener("click", show)
+      close?.removeEventListener("click", hide)
+      overlay.removeEventListener("click", backdrop)
+    })
   }
 
-  function hideGlobalGraph() {
-    cleanupGlobalGraphs()
-    for (const container of containers) {
-      container.classList.remove("active")
-      const sidebar = container.closest(".sidebar") as HTMLElement
-      if (sidebar) {
-        sidebar.style.zIndex = ""
-      }
+  function keyboardHandler(event: KeyboardEvent) {
+    if (event.key.toLowerCase() === "g" && (event.ctrlKey || event.metaKey) && !event.shiftKey) {
+      const overlay = globalControllers.keys().next().value
+      if (!overlay) return
+      event.preventDefault()
+      activeOverlay ? hideGlobalGraph() : showGlobalGraph(overlay)
+      return
     }
-  }
-
-  async function shortcutHandler(e: HTMLElementEventMap["keydown"]) {
-    if (e.key === "g" && (e.ctrlKey || e.metaKey) && !e.shiftKey) {
-      e.preventDefault()
-      const anyGlobalGraphOpen = containers.some((container) =>
-        container.classList.contains("active"),
+    if (!activeOverlay) return
+    if (event.key === "Escape") {
+      event.preventDefault()
+      hideGlobalGraph()
+    } else if (event.key === "Tab") {
+      const focusable = [
+        ...activeOverlay.querySelectorAll<HTMLElement>(
+          'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+        ),
+      ].filter(
+        (element) => !element.hasAttribute("disabled") && element.getClientRects().length > 0,
       )
-      anyGlobalGraphOpen ? hideGlobalGraph() : renderGlobalGraph()
+      const first = focusable[0]
+      const last = focusable.at(-1)
+      if (
+        first &&
+        last &&
+        (!activeOverlay.contains(document.activeElement) ||
+          (event.shiftKey && document.activeElement === first) ||
+          (!event.shiftKey && document.activeElement === last))
+      ) {
+        event.preventDefault()
+        const focusTarget = event.shiftKey ? last : first
+        focusTarget.focus()
+      }
     }
   }
 
-  const containerIcons = document.getElementsByClassName("global-graph-icon")
-  Array.from(containerIcons).forEach((icon) => {
-    icon.addEventListener("click", renderGlobalGraph)
-    window.addCleanup(() => icon.removeEventListener("click", renderGlobalGraph))
-  })
-
-  document.addEventListener("keydown", shortcutHandler)
+  const themeChange = () => controllers.forEach((controller) => controller.refresh(true))
+  const resize = () => controllers.forEach((controller) => controller.refresh())
+  document.addEventListener("themechange", themeChange)
+  document.addEventListener("keydown", keyboardHandler)
+  window.addEventListener("resize", resize)
   window.addCleanup(() => {
-    document.removeEventListener("keydown", shortcutHandler)
-    cleanupLocalGraphs()
-    cleanupGlobalGraphs()
+    hideGlobalGraph(false)
+    document.removeEventListener("themechange", themeChange)
+    document.removeEventListener("keydown", keyboardHandler)
+    window.removeEventListener("resize", resize)
+    listeners.forEach((remove) => remove())
+    controllers.forEach((controller) => controller.dispose())
   })
 })

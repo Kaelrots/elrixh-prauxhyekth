@@ -54,26 +54,29 @@ export default (() => {
   }
 
   ContentGate.afterDOMLoaded = `
+  let detachContentGateEvents = () => {}
   const attachContentGateEvents = () => {
+    detachContentGateEvents()
     const modal = document.getElementById("content-gate-modal")
+    const root = document.documentElement
 
-    if (!modal) {
-      document.body.style.overflow = "auto"
-      return
-    }
-
-    document.body.style.overflow = "hidden"
+    root.classList.toggle("content-gate-open", Boolean(modal))
+    if (!modal) return
 
     const backBtn = document.getElementById("content-gate-back")
-    backBtn?.addEventListener("click", () => {
-      document.body.style.overflow = "auto"
-
+    const goBack = () => {
       if (window.history.length > 1) {
         window.history.back()
       } else {
         window.location.href = "/"
       }
-    })
+    }
+    backBtn?.addEventListener("click", goBack)
+    detachContentGateEvents = () => {
+      backBtn?.removeEventListener("click", goBack)
+      root.classList.remove("content-gate-open")
+    }
+    window.addCleanup?.(detachContentGateEvents)
   }
 
   document.addEventListener("nav", attachContentGateEvents)
@@ -81,6 +84,10 @@ export default (() => {
   `
 
   ContentGate.css = `
+  html.content-gate-open {
+    overflow: hidden;
+  }
+
   .content-gate-overlay {
     position: fixed;
     inset: 0;

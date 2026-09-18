@@ -95,31 +95,38 @@ export default (() => {
   }
 
   ContentWarning.afterDOMLoaded = `
+  let detachWarningEvents = () => {}
   const attachWarningEvents = () => {
+    detachWarningEvents()
     const modal = document.getElementById("content-warning-modal")
-    if (!modal) {
-      document.body.style.overflow = "auto"
-      return
-    }
-
-    document.body.style.overflow = "hidden"
+    const root = document.documentElement
+    const isOpen = Boolean(modal && modal.style.display !== "none")
+    root.classList.toggle("content-warning-open", isOpen)
+    if (!isOpen) return
 
     const acceptBtn = document.getElementById("warning-accept")
     const declineBtn = document.getElementById("warning-decline")
 
-    acceptBtn?.addEventListener("click", () => {
+    const acceptWarning = () => {
       modal.style.display = "none"
-      document.body.style.overflow = "auto"
-    })
+      root.classList.remove("content-warning-open")
+    }
 
-    declineBtn?.addEventListener("click", () => {
-      document.body.style.overflow = "auto"
+    const declineWarning = () => {
       if (window.history.length > 1) {
         window.history.back()
       } else {
         window.location.href = "/"
       }
-    })
+    }
+    acceptBtn?.addEventListener("click", acceptWarning)
+    declineBtn?.addEventListener("click", declineWarning)
+    detachWarningEvents = () => {
+      acceptBtn?.removeEventListener("click", acceptWarning)
+      declineBtn?.removeEventListener("click", declineWarning)
+      root.classList.remove("content-warning-open")
+    }
+    window.addCleanup?.(detachWarningEvents)
   }
 
   document.addEventListener("nav", attachWarningEvents)
@@ -127,6 +134,10 @@ export default (() => {
   `
 
   ContentWarning.css = `
+  html.content-warning-open {
+    overflow: hidden;
+  }
+
   .warning-overlay {
     position: fixed;
     inset: 0;

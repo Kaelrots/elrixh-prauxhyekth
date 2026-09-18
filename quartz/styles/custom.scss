@@ -478,6 +478,79 @@ article a.internal, article a.external {
   margin-top: 2rem !important;
 }
 
+/* 본문 스크롤과 분리된, 화면 높이 안에서 스크롤하는 사이드바입니다. */
+@media all and (min-width: 801px) {
+  .page {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .page > #quartz-body .sidebar.left {
+    position: sticky;
+    align-self: start;
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+  }
+
+  .sidebar.left > * {
+    flex-shrink: 0;
+  }
+
+  .sidebar.left > .explorer {
+    max-height: 60dvh;
+  }
+
+  .sidebar.left .page-title a::before {
+    width: min(250px, 100%);
+    height: auto;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+  }
+
+  .sidebar.left > .flex-component {
+    gap: 0.5rem !important;
+  }
+
+  .sidebar.left > .flex-component > div {
+    min-width: 0;
+  }
+
+  .sidebar.left .search {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .page > #quartz-body .sidebar.right {
+    position: sticky;
+    align-self: start;
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+  }
+
+  .sidebar.right > * {
+    flex-shrink: 0;
+  }
+
+  .sidebar.right .toc-content {
+    max-height: 40dvh;
+  }
+}
+
+:root[reader-mode="on"] .sidebar:focus-within,
+.page > #quartz-body .sidebar.graph-open {
+  opacity: 1 !important;
+}
+
 // ==========================================================================
 // 15. 좌우 패널 완전 확장 및 여백 낭비 제거 (Title 짤림 해결)
 // ==========================================================================
@@ -501,7 +574,7 @@ article a.internal, article a.external {
   }
 }
 
-/* 1200~1599px에서는 우측 패널을 본문 아래로 보내 본문 폭을 확보합니다. */
+/* 노트북 폭에서도 좌우 패널을 유지하고, 패널 폭과 여백만 줄입니다. */
 @media all and (min-width: 1200px) and (max-width: 1599px) {
   .page {
     max-width: 100vw !important;
@@ -509,24 +582,17 @@ article a.internal, article a.external {
   }
 
   .page > #quartz-body {
-    grid-template-columns: clamp(260px, 24vw, 320px) minmax(0, 1fr) !important;
-    grid-template-rows: auto auto auto auto !important;
-    grid-template-areas:
-      "grid-sidebar-left grid-header"
-      "grid-sidebar-left grid-center"
-      "grid-sidebar-left grid-sidebar-right"
-      "grid-sidebar-left grid-footer" !important;
-    column-gap: clamp(1.5rem, 3vw, 2.5rem) !important;
+    grid-template-columns: clamp(210px, 18vw, 280px) minmax(0, 1fr) clamp(200px, 17vw, 260px) !important;
+    column-gap: clamp(1rem, 1.5vw, 1.5rem) !important;
   }
 
-  .page > #quartz-body .sidebar.right {
-    position: static !important;
-    height: auto !important;
-    width: 100% !important;
-    padding: 2rem 0 0 !important;
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    gap: 1.5rem !important;
+  .page > #quartz-body .sidebar {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .sidebar.left .page-title a {
+    font-size: 1.1rem !important;
   }
 }
 

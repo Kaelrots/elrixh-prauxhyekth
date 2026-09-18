@@ -1,18 +1,58 @@
 @use "../../styles/variables.scss" as *;
 
 .backlinks {
+  display: flex;
   flex-direction: column;
+  min-height: 0;
 
-  & > h3 {
-    font-size: 1rem;
-    margin: 0;
+  & > .backlinks-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 2.75rem;
+    flex-shrink: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--dark);
+    text-align: left;
+    cursor: pointer;
+
+    & > h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    & > .fold {
+      flex-shrink: 0;
+      margin-left: 0.5rem;
+      transition: transform 0.2s ease;
+    }
+
+    &[aria-expanded="false"] > .fold {
+      transform: rotate(-90deg);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--secondary);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
   }
 
-  & > ul.overflow {
+  & > .backlinks-content {
+    min-height: 0;
+
+    &[hidden] {
+      display: none !important;
+    }
+  }
+
+  & > .backlinks-content > ul.overflow {
     list-style: none;
     padding: 0;
     margin: 0.5rem 0;
-    max-height: calc(100% - 2rem);
+    max-height: min(22rem, 40dvh);
     overscroll-behavior: contain;
 
     & > li {
@@ -20,5 +60,11 @@
         background-color: transparent;
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backlinks > .backlinks-header > .fold {
+    transition: none;
   }
 }
