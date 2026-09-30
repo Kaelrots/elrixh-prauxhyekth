@@ -5,6 +5,7 @@ import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
 import { BuildCtx } from "../util/ctx"
 import { styleText } from "util"
+import { buildProgress } from "../util/buildProgress"
 
 export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
   const { argv, cfg } = ctx
@@ -15,6 +16,7 @@ export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
 
   let emittedFiles = 0
   const staticResources = getStaticResourcesFromPlugins(ctx)
+  const progress = buildProgress("emit", cfg.plugins.emitters.length)
   await Promise.all(
     cfg.plugins.emitters.map(async (emitter) => {
       try {
@@ -40,6 +42,7 @@ export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
             }
           }
         }
+        progress()
       } catch (err) {
         trace(`Failed to emit from plugin \`${emitter.name}\``, err as Error)
       }

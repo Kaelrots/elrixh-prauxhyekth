@@ -14,6 +14,7 @@ import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
 import { BuildCtx, WorkerSerializableBuildCtx } from "../util/ctx"
 import { styleText } from "util"
+import { buildProgress } from "../util/buildProgress"
 
 export type QuartzMdProcessor = Processor<MDRoot, MDRoot, MDRoot>
 export type QuartzHtmlProcessor = Processor<undefined, MDRoot, HTMLRoot>
@@ -86,6 +87,7 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
   const { argv, cfg } = ctx
   return async (processor: QuartzMdProcessor) => {
     const res: MarkdownContent[] = []
+    const progress = buildProgress("markdown", fps.length)
     for (const fp of fps) {
       try {
         const perf = new PerfTimer()
@@ -107,6 +109,7 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         const ast = processor.parse(file)
         const newAst = await processor.run(ast, file)
         res.push([newAst, file])
+        progress()
 
         if (argv.verbose) {
           console.log(`[markdown] ${fp} -> ${file.data.slug} (${perf.timeSince()})`)
@@ -123,12 +126,14 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
 export function createMarkdownParser(ctx: BuildCtx, mdContent: MarkdownContent[]) {
   return async (processor: QuartzHtmlProcessor) => {
     const res: ProcessedContent[] = []
+    const progress = buildProgress("html", mdContent.length)
     for (const [ast, file] of mdContent) {
       try {
         const perf = new PerfTimer()
 
         const newAst = await processor.run(ast as MDRoot, file)
         res.push([newAst, file])
+        progress()
 
         if (ctx.argv.verbose) {
           console.log(`[html] ${file.data.slug} (${perf.timeSince()})`)
