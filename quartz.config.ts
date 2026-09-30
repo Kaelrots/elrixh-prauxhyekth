@@ -16,8 +16,14 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "ko-KR",
-    baseUrl: "kaelrots.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "kaelrots.github.io/elrixh-prauxhyekth",
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "00-0-탬플릿/**",
+      "90-볼트 운영/**",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
