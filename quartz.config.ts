@@ -17,7 +17,8 @@ const config: QuartzConfig = {
     },
     locale: "ko-KR",
     baseUrl: "kaelrots.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    // Obsidian Templater source is not a renderable website document.
+    ignorePatterns: ["private", "templates", ".obsidian", "90-볼트 운영/00-템플릿/**"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

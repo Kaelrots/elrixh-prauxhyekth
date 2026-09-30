@@ -1,10 +1,16 @@
 ---
 title: 환영합니다! 《엘리스 프라우셰크트》 메인
+분야:
+  - 세계관 안내
+  - MOC
+문서유형: index
+정본상태: canon
+기원상태: original
 ---
 
 <font style="font-weight:bold; font-size:1.85em"><center><font color="#88dfd0">《엘리스 프라우셰크트》<br>카엘 창작 세계관</font></center></font>
 
-<img src="/assets/media/엘리시움-연방-문장-(채색).png" width="400">
+<img src="/assets/media/엘리시움-연방-문장-(채색).png" alt="엘리시움 연방 문장 (채색).png" width="400">
 
 # 🌌 이 사이트는?
 
@@ -21,7 +27,7 @@ title: 환영합니다! 《엘리스 프라우셰크트》 메인
 1.  <font style="font-weight:bold">역사의 흐름</font>: [[라리셴베르크의 시대 구분]] — 선사시대부터 우주시대까지, 문명의 흥망성쇠와 거대한 연대기
     *   <font style="font-weight:bold">구지구의 기억</font>: [[제73분기 구지구의 역사 분기점]] — 제1차 대전이로 멸망한 <font style="font-weight:bold">제73분기 지구(에아르트)</font>의 엇갈린 역사
 2.  <font style="font-weight:bold">세계의 지도</font>: [[지역 목록]] — 지구 표면적의 6,003배에 달하는 거대한 행성의 대륙과 전략 요충지
-3.  <font style="font-weight:bold">통치와 법</font>: [[엘리시움 연방 헌법]] — 신성 제국이자 <font style="font-weight:bold">'일극우위 연방'</font>인 국가의 헌정 질서와 통치 구조
+3.  <font style="font-weight:bold">통치와 법</font>: [[01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/엘리시움 연방 헌법]] — 신성 제국이자 <font style="font-weight:bold">'일극우위 연방'</font>인 국가의 헌정 질서와 통치 구조
     *   <font style="font-weight:bold">구지구의 유산</font>: [[제73분기 구지구 국가 설정]] — 대전이 이전, 구지구에 존재했던 국가들의 기록
 4.  <font style="font-weight:bold">힘의 원리</font>: [[마법 기본설정]] — 차원의 섭리를 빌려 세계를 비틀어내는 이능력(마법·신성력·생명력)의 법칙
 5.  <font style="font-weight:bold">행정 체계</font>: [[라리셴베르크의 지역 구분]] — <font style="font-weight:bold">거대한 행성을 통치하기 위한 황제직할령과 자치령의 이원화된 행정 구조</font>
@@ -63,12 +69,12 @@ title: 환영합니다! 《엘리스 프라우셰크트》 메인
 ### 🚀 최근 수정된 문서들
 
 <center><font style="font-size:1.5em"><a class="internal-link"
-   data-href="/00-0-수정기록/수정-기록-모음"
-   href="/00-0-수정기록/수정-기록-모음">
+   data-href="90-볼트 운영/01-수정기록/수정 기록 모음"
+   href="90-볼트 운영/01-수정기록/수정 기록 모음">
   》》》》》 수정 기록 모음 《《《《《
 </a>
 </font></center>
-<font style="font-size:1.25em"><a class="internal-link" data-href="/00-0-수정기록/수정-기록-모음" href="/00-0-수정기록/수정-기록-모음">수정 기록 모음</a></font>에서 최근 수정된 문서, 가장 많이 수정된 문서, 최근 30일 이내 수정된 문서 (최대 30개)의 리스트를 볼 수 있습니다.
+<font style="font-size:1.25em"><a class="internal-link" data-href="90-볼트 운영/01-수정기록/수정 기록 모음" href="90-볼트 운영/01-수정기록/수정 기록 모음">수정 기록 모음</a></font>에서 최근 수정된 문서, 가장 많이 수정된 문서, 최근 30일 이내 수정된 문서 (최대 30개)의 리스트를 볼 수 있습니다.
 -  가장 많이 수정된 문서의 수정 기록의 시작은 2025.08.04. 이후부터 집계되었습니다.
 
 <hr class="hr-thick-3">

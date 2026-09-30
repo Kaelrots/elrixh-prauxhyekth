@@ -71,7 +71,12 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   console.log(`Cleaned output directory \`${output}\` in ${perf.timeSince("clean")}`)
 
   perf.addEvent("glob")
-  const allFiles = await glob("**/*.*", argv.directory, cfg.configuration.ignorePatterns)
+  const allFiles = await glob(
+    "**/*.*",
+    argv.directory,
+    cfg.configuration.ignorePatterns,
+    argv.gitignore,
+  )
   const markdownPaths = allFiles.filter((fp) => fp.endsWith(".md")).sort()
   console.log(
     `Found ${markdownPaths.length} input files from \`${argv.directory}\` in ${perf.timeSince("glob")}`,
@@ -128,7 +133,7 @@ async function startWatching(
     ignored: (fp) => {
       const pathStr = toPosixPath(fp.toString())
       if (pathStr.startsWith(".git/")) return true
-      if (gitIgnoredMatcher(pathStr)) return true
+      if (argv.gitignore !== false && gitIgnoredMatcher(pathStr)) return true
       for (const pattern of cfg.configuration.ignorePatterns) {
         if (minimatch(pathStr, pattern)) {
           return true

@@ -60,6 +60,12 @@ export const SyncArgv = {
 
 export const BuildArgv = {
   ...CommonArgv,
+  gitignore: {
+    boolean: true,
+    default: true,
+    describe:
+      "respect Git ignore rules when discovering content (disable only for verified staging)",
+  },
   output: {
     string: true,
     alias: ["o"],
