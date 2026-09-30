@@ -19,8 +19,8 @@
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "quartz": "./quartz/bootstrap-cli.mjs",
     "build": "npx quartz build",
-    "sync-build": "npx quartz build && python mirror_assets.py",
-    "sync-serve": "npx quartz build && python mirror_assets.py && npx quartz serve",
+    "sync-build": "node scripts/retired-sync.cjs",
+    "sync-serve": "node scripts/retired-sync.cjs",
     "serve": "npx quartz build --serve"
   },
   "engines": {
