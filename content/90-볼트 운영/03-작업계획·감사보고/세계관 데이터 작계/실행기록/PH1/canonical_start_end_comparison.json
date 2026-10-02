@@ -1,0 +1,2557 @@
+[
+  {
+    "source_file_code": "REG-V1",
+    "status": "수출 원문 literal 및 수식·수식속성 동일",
+    "export_literal_and_formula_equal": true,
+    "formula_cache_changed_cells": 0,
+    "before_file_sha256": "1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+    "after_file_sha256": "dd6eb1e95bbe85225a6201c346aef6ed802dc2fe5be5984579ad446729e62c91",
+    "sheets": [
+      {
+        "sheet_name": "00 공통 기준",
+        "checks": {
+          "export_literal": {
+            "before_count": 849,
+            "after_count": 849,
+            "before_sha256": "33f3ff19cfd2929170a700f1615ebba7f98bce1baaad63da635ba81fcaab1037",
+            "after_sha256": "33f3ff19cfd2929170a700f1615ebba7f98bce1baaad63da635ba81fcaab1037",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1000,
+            "after_count": 1000,
+            "before_sha256": "2340cf068e5c35074285fb13e094ff4f30f515cca882ee3e0dc05ad99f067c0c",
+            "after_sha256": "2340cf068e5c35074285fb13e094ff4f30f515cca882ee3e0dc05ad99f067c0c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1000,
+            "after_count": 1000,
+            "before_sha256": "6f9bacbc4e8a7f428d762d6980cfa179b7e2c228cb37922c3144c259ac4c2fd2",
+            "after_sha256": "6f9bacbc4e8a7f428d762d6980cfa179b7e2c228cb37922c3144c259ac4c2fd2",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "00_기준_메타",
+        "checks": {
+          "export_literal": {
+            "before_count": 59,
+            "after_count": 59,
+            "before_sha256": "3769a8556a0253dd855b0f89afbc7e0b9bb7d977353889a249ccb6e8c6cd2986",
+            "after_sha256": "3769a8556a0253dd855b0f89afbc7e0b9bb7d977353889a249ccb6e8c6cd2986",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1,
+            "after_count": 1,
+            "before_sha256": "b819d241e13dbf24e67e2e1ccdad63eac1695112ccf6aaeef81c1b39fea17b8a",
+            "after_sha256": "b819d241e13dbf24e67e2e1ccdad63eac1695112ccf6aaeef81c1b39fea17b8a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1,
+            "after_count": 1,
+            "before_sha256": "d40fbe9ef82b52db605509fe5c136529719e7f824002109bffd29760dde45890",
+            "after_sha256": "d40fbe9ef82b52db605509fe5c136529719e7f824002109bffd29760dde45890",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "01-지역 마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 1496,
+            "after_count": 1496,
+            "before_sha256": "a602f9c7d175cddd1e826f8c4fa90f6fa512e3c866d51ea432935cb1347b910b",
+            "after_sha256": "a602f9c7d175cddd1e826f8c4fa90f6fa512e3c866d51ea432935cb1347b910b",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3002,
+            "after_count": 3002,
+            "before_sha256": "6777f54f36347a9431ea099a064fceddfd126febeca1731768d0c9fe12174db6",
+            "after_sha256": "6777f54f36347a9431ea099a064fceddfd126febeca1731768d0c9fe12174db6",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3002,
+            "after_count": 3002,
+            "before_sha256": "b3e71f1fdc910acc83758371c9beb8555d527286f055687c50f1a290b2926ce6",
+            "after_sha256": "b3e71f1fdc910acc83758371c9beb8555d527286f055687c50f1a290b2926ce6",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "02 국가 마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 17,
+            "after_count": 17,
+            "before_sha256": "be82395cd286302e0f6c642cacfbe2c31b54b1c07f3381a3e1fb9ad64a66fc3a",
+            "after_sha256": "be82395cd286302e0f6c642cacfbe2c31b54b1c07f3381a3e1fb9ad64a66fc3a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "bb7cda94a749bb6e56fe7638a44c3c9780a9df265aa4e541cebcae2a1912fb50",
+            "after_sha256": "bb7cda94a749bb6e56fe7638a44c3c9780a9df265aa4e541cebcae2a1912fb50",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "dea8771d0d85e261d2e11301384aa7f7195edb64b7f16cfddda68f9020a721d6",
+            "after_sha256": "dea8771d0d85e261d2e11301384aa7f7195edb64b7f16cfddda68f9020a721d6",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "02_지역_관계",
+        "checks": {
+          "export_literal": {
+            "before_count": 7,
+            "after_count": 7,
+            "before_sha256": "e9c982c55a841ba24d72fc585c63c50fca4c9b9c6bc8437b20c71e21dbb4cf84",
+            "after_sha256": "e9c982c55a841ba24d72fc585c63c50fca4c9b9c6bc8437b20c71e21dbb4cf84",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14014,
+            "after_count": 14014,
+            "before_sha256": "43522fdbee02b01b9af3140d9684a59b70ed3ecd746cdc031ddd1a013f518afc",
+            "after_sha256": "43522fdbee02b01b9af3140d9684a59b70ed3ecd746cdc031ddd1a013f518afc",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14014,
+            "after_count": 14014,
+            "before_sha256": "f84bc9564fc5de4f87953d6430d9e8d46395cfbfe0c70d5f5c1f8423bb768041",
+            "after_sha256": "f84bc9564fc5de4f87953d6430d9e8d46395cfbfe0c70d5f5c1f8423bb768041",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "03 문화 마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 13,
+            "after_count": 13,
+            "before_sha256": "2fd342baacfd78c66b1a84f26b64c987b7f15eeaef9e6263c6f309c4fbce7807",
+            "after_sha256": "2fd342baacfd78c66b1a84f26b64c987b7f15eeaef9e6263c6f309c4fbce7807",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "787fc14e038e3090623a815284254f8204cd33a8e55b727146516bef071afc58",
+            "after_sha256": "787fc14e038e3090623a815284254f8204cd33a8e55b727146516bef071afc58",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "9d73179885098fe55af9e7c96a8d21ff4eb6a3018ed7e68dced95a6b2b484c4e",
+            "after_sha256": "9d73179885098fe55af9e7c96a8d21ff4eb6a3018ed7e68dced95a6b2b484c4e",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "04 종교 마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 13,
+            "after_count": 13,
+            "before_sha256": "8d5ebe26b51f0e764b6591ea34634e929aa6d670fb06e58bddd1ed15b066bd01",
+            "after_sha256": "8d5ebe26b51f0e764b6591ea34634e929aa6d670fb06e58bddd1ed15b066bd01",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "787fc14e038e3090623a815284254f8204cd33a8e55b727146516bef071afc58",
+            "after_sha256": "787fc14e038e3090623a815284254f8204cd33a8e55b727146516bef071afc58",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "9d73179885098fe55af9e7c96a8d21ff4eb6a3018ed7e68dced95a6b2b484c4e",
+            "after_sha256": "9d73179885098fe55af9e7c96a8d21ff4eb6a3018ed7e68dced95a6b2b484c4e",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "05 언어 마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 72,
+            "after_count": 72,
+            "before_sha256": "7438adc7b3c2c0e5dee5d30c1e2ea72a03f991bb00edda5c3307c343b9d2c90d",
+            "after_sha256": "7438adc7b3c2c0e5dee5d30c1e2ea72a03f991bb00edda5c3307c343b9d2c90d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "787fc14e038e3090623a815284254f8204cd33a8e55b727146516bef071afc58",
+            "after_sha256": "787fc14e038e3090623a815284254f8204cd33a8e55b727146516bef071afc58",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "fe6a1ee1c85cef1d0584410af5489c49c4e86c8aa7df54d019bf16719ef4acdc",
+            "after_sha256": "fe6a1ee1c85cef1d0584410af5489c49c4e86c8aa7df54d019bf16719ef4acdc",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "06 종족 마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 14,
+            "after_count": 14,
+            "before_sha256": "59e9968f0a932b063ca990cbc169a71a8790e1ba1f3e92208b2c70862f56714d",
+            "after_sha256": "59e9968f0a932b063ca990cbc169a71a8790e1ba1f3e92208b2c70862f56714d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "515cb3d2d653c6e3c18309082268d298a3fe325d9bc6d3ab92fb56eb67eff1cb",
+            "after_sha256": "515cb3d2d653c6e3c18309082268d298a3fe325d9bc6d3ab92fb56eb67eff1cb",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1998,
+            "after_count": 1998,
+            "before_sha256": "de638ac9cdf9eb2f579b9c017e5848289e4bcb3faf21a5600a302c73c521da36",
+            "after_sha256": "de638ac9cdf9eb2f579b9c017e5848289e4bcb3faf21a5600a302c73c521da36",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "07 자원 마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 9,
+            "after_count": 9,
+            "before_sha256": "2532c2ad8691ad480e0c8a8b8040338934c0560a57c460089166f6f7724ea3fc",
+            "after_sha256": "2532c2ad8691ad480e0c8a8b8040338934c0560a57c460089166f6f7724ea3fc",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 999,
+            "after_count": 999,
+            "before_sha256": "3b4f55184d8a3a84e070f10baaf85ca5a175a28ad3e8af7a90721c06fb72a5fa",
+            "after_sha256": "3b4f55184d8a3a84e070f10baaf85ca5a175a28ad3e8af7a90721c06fb72a5fa",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 999,
+            "after_count": 999,
+            "before_sha256": "88679facf2fc4c789c446ad1d1eec74d0aa4992b24fe3d27482a18db2985688b",
+            "after_sha256": "88679facf2fc4c789c446ad1d1eec74d0aa4992b24fe3d27482a18db2985688b",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "08 특성 사전",
+        "checks": {
+          "export_literal": {
+            "before_count": 11,
+            "after_count": 11,
+            "before_sha256": "81ebb077e4dda38eb842c71641a9b46d1b007be549bd6e89828faa740bea853d",
+            "after_sha256": "81ebb077e4dda38eb842c71641a9b46d1b007be549bd6e89828faa740bea853d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 999,
+            "after_count": 999,
+            "before_sha256": "820dbb909f8daac02371d5b9486608e598be7b446062d02544e279b3a21fbc42",
+            "after_sha256": "820dbb909f8daac02371d5b9486608e598be7b446062d02544e279b3a21fbc42",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 999,
+            "after_count": 999,
+            "before_sha256": "639f02306d1da0f7464835d60b18e92ba88558d7dddf0b8dab8c40848518d6a8",
+            "after_sha256": "639f02306d1da0f7464835d60b18e92ba88558d7dddf0b8dab8c40848518d6a8",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "09 경제 지표 정의",
+        "checks": {
+          "export_literal": {
+            "before_count": 13,
+            "after_count": 13,
+            "before_sha256": "486f21cfc7c0d58585893244106dafb9c0c83b692e14a1cd56e22bd5a54e996f",
+            "after_sha256": "486f21cfc7c0d58585893244106dafb9c0c83b692e14a1cd56e22bd5a54e996f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 999,
+            "after_count": 999,
+            "before_sha256": "d8f9307d26198c7de6e88a57daec060d4d2bd5b1d96cb5c016cadf1e7155814e",
+            "after_sha256": "d8f9307d26198c7de6e88a57daec060d4d2bd5b1d96cb5c016cadf1e7155814e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 999,
+            "after_count": 999,
+            "before_sha256": "039c080d2f4945f900fce9c26feb143dca4eb5db1ae8dcff8e9a3a248115e5e9",
+            "after_sha256": "039c080d2f4945f900fce9c26feb143dca4eb5db1ae8dcff8e9a3a248115e5e9",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "10 정치 지역관계",
+        "checks": {
+          "export_literal": {
+            "before_count": 14,
+            "after_count": 14,
+            "before_sha256": "88128bec8903354684997608c50edc59d7c636670f6a2b7c188c7354ba0ee93f",
+            "after_sha256": "88128bec8903354684997608c50edc59d7c636670f6a2b7c188c7354ba0ee93f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 8997,
+            "after_count": 8997,
+            "before_sha256": "1a8aa80a617330294d1fffe32cf556513db3db2b76e8c7d89328b3cd11bed3c4",
+            "after_sha256": "1a8aa80a617330294d1fffe32cf556513db3db2b76e8c7d89328b3cd11bed3c4",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 8997,
+            "after_count": 8997,
+            "before_sha256": "5313eb1ed9284568ccef544bd53b89cc0489dd53b9e92f47792d5a99ef84abcc",
+            "after_sha256": "5313eb1ed9284568ccef544bd53b89cc0489dd53b9e92f47792d5a99ef84abcc",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "10_행성_기본값",
+        "checks": {
+          "export_literal": {
+            "before_count": 235,
+            "after_count": 235,
+            "before_sha256": "2d0b62571c4a3ded32846d2422d1f05080955d2c1df4dd83762b5518607f08b6",
+            "after_sha256": "2d0b62571c4a3ded32846d2422d1f05080955d2c1df4dd83762b5518607f08b6",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 7,
+            "after_count": 7,
+            "before_sha256": "c9fd119ce92248c6b973f1f3c0a61e660ec0df9e145565c96c5110dd0c4b9e58",
+            "after_sha256": "c9fd119ce92248c6b973f1f3c0a61e660ec0df9e145565c96c5110dd0c4b9e58",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 7,
+            "after_count": 7,
+            "before_sha256": "e29ea1fde35f64922e3f1bcbc6c73a6dd20b45f634a7a28f75d255e4723a1952",
+            "after_sha256": "e29ea1fde35f64922e3f1bcbc6c73a6dd20b45f634a7a28f75d255e4723a1952",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "11 역사 사건",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "b512c64c058c1b96c22c1d40084df17b83409a64e5f416d9607361c516b6b065",
+            "after_sha256": "b512c64c058c1b96c22c1d40084df17b83409a64e5f416d9607361c516b6b065",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 8997,
+            "after_count": 8997,
+            "before_sha256": "7618262e0014dcd62125071250673a421707ad2e104855f5da6d767b63bb0def",
+            "after_sha256": "7618262e0014dcd62125071250673a421707ad2e104855f5da6d767b63bb0def",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 8997,
+            "after_count": 8997,
+            "before_sha256": "3c164a549f8dd266fa3ecff4943da688f4638c2149cb7682172c5e035f3dac51",
+            "after_sha256": "3c164a549f8dd266fa3ecff4943da688f4638c2149cb7682172c5e035f3dac51",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "11_행성_연간지표",
+        "checks": {
+          "export_literal": {
+            "before_count": 1176,
+            "after_count": 1176,
+            "before_sha256": "f0fcee10528e21307fd13364f329a8b69beba0e31062647655827f4fdfda6f6d",
+            "after_sha256": "f0fcee10528e21307fd13364f329a8b69beba0e31062647655827f4fdfda6f6d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 9000,
+            "after_count": 9000,
+            "before_sha256": "15ed2fe0dad346de9d48e24b84bebddc6e6fd3d533255772c53f778d867c60eb",
+            "after_sha256": "15ed2fe0dad346de9d48e24b84bebddc6e6fd3d533255772c53f778d867c60eb",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 9000,
+            "after_count": 9000,
+            "before_sha256": "f0570d0a848a2517b09fdc5a98d653d027dce84367bde40b0e4d4e708bed76aa",
+            "after_sha256": "f0570d0a848a2517b09fdc5a98d653d027dce84367bde40b0e4d4e708bed76aa",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "12_지역_인구",
+        "checks": {
+          "export_literal": {
+            "before_count": 1015,
+            "after_count": 1015,
+            "before_sha256": "1809280329832693779a15fe189804209d0a5fff078e3480cf1781e629143460",
+            "after_sha256": "1809280329832693779a15fe189804209d0a5fff078e3480cf1781e629143460",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 2000,
+            "after_count": 2000,
+            "before_sha256": "b8b997d6255cbf40487cc8566a1307621718992aa953741ec5211e6a6c541d1f",
+            "after_sha256": "b8b997d6255cbf40487cc8566a1307621718992aa953741ec5211e6a6c541d1f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 2000,
+            "after_count": 2000,
+            "before_sha256": "b2dd51ed588d133c4bf482e5a29585f3dea51bca27b2992692b683ae26c13efe",
+            "after_sha256": "b2dd51ed588d133c4bf482e5a29585f3dea51bca27b2992692b683ae26c13efe",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "13_지역_경제",
+        "checks": {
+          "export_literal": {
+            "before_count": 1018,
+            "after_count": 1018,
+            "before_sha256": "d407beb109dd074570a60b15b8775816a0e7d8ca18fdaebb0ce997396bcf4dcd",
+            "after_sha256": "d407beb109dd074570a60b15b8775816a0e7d8ca18fdaebb0ce997396bcf4dcd",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 2000,
+            "after_count": 2000,
+            "before_sha256": "78caff7845468194880a2922435a0ceaac12cf38c093f9738220b3449e5c5155",
+            "after_sha256": "78caff7845468194880a2922435a0ceaac12cf38c093f9738220b3449e5c5155",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 2000,
+            "after_count": 2000,
+            "before_sha256": "48c6efa84e3547c45635ab19d7a0e0eac67b29c230fe480bd8e04256d52513d4",
+            "after_sha256": "48c6efa84e3547c45635ab19d7a0e0eac67b29c230fe480bd8e04256d52513d4",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "14_지역_자연환경",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "3eb21cd7ad11b8db8e9eb93be2cafc78208b906293f29fb2130d79f996e561bd",
+            "after_sha256": "3eb21cd7ad11b8db8e9eb93be2cafc78208b906293f29fb2130d79f996e561bd",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "15_지역_소속이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "d965507792033329b55f936ad5b37f2fd72ad00a97b220c0d9384c525e776e20",
+            "after_sha256": "d965507792033329b55f936ad5b37f2fd72ad00a97b220c0d9384c525e776e20",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1000,
+            "after_count": 1000,
+            "before_sha256": "3e67e840739e626047968bbcd6fb805d81ca76fb7042defc48b7605aabeb563e",
+            "after_sha256": "3e67e840739e626047968bbcd6fb805d81ca76fb7042defc48b7605aabeb563e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1000,
+            "after_count": 1000,
+            "before_sha256": "e2a69d2c47a6800cfee8f75eee983571809a164460564362e39ebad83ce35d46",
+            "after_sha256": "e2a69d2c47a6800cfee8f75eee983571809a164460564362e39ebad83ce35d46",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "20 인구",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "26e2cc53f996066a80f0927646477917d4d7458b514000f02d27ab8f3e51639b",
+            "after_sha256": "26e2cc53f996066a80f0927646477917d4d7458b514000f02d27ab8f3e51639b",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 5998,
+            "after_count": 5998,
+            "before_sha256": "0d22581d4ab24746ed90033d86ec3a80082fbefe9f83c4fe505415e5504be3c6",
+            "after_sha256": "0d22581d4ab24746ed90033d86ec3a80082fbefe9f83c4fe505415e5504be3c6",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 5998,
+            "after_count": 5998,
+            "before_sha256": "5b4e17f0b4fc9eaf3eff36b2bc76bc718123b855afab5ee8972e8123a7252f1f",
+            "after_sha256": "5b4e17f0b4fc9eaf3eff36b2bc76bc718123b855afab5ee8972e8123a7252f1f",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "21 인구 변동",
+        "checks": {
+          "export_literal": {
+            "before_count": 16,
+            "after_count": 16,
+            "before_sha256": "2fa6937dae93baf32b67bf38fb404d32fa34675a6519cdc9bfe8525f72b8037f",
+            "after_sha256": "2fa6937dae93baf32b67bf38fb404d32fa34675a6519cdc9bfe8525f72b8037f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 5998,
+            "after_count": 5998,
+            "before_sha256": "4bb352385fcaadee696dd3a590a39384d0274c7c788d275257acad251a67d5da",
+            "after_sha256": "4bb352385fcaadee696dd3a590a39384d0274c7c788d275257acad251a67d5da",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 5998,
+            "after_count": 5998,
+            "before_sha256": "71e6e8ce50a5b56bed70b24c2e830a86972c260e9a9e5c00c3697e1e19e773c7",
+            "after_sha256": "71e6e8ce50a5b56bed70b24c2e830a86972c260e9a9e5c00c3697e1e19e773c7",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "30 문화 분포",
+        "checks": {
+          "export_literal": {
+            "before_count": 14,
+            "after_count": 14,
+            "before_sha256": "4dd87f8cff1d88f08e64cc373f22ed570e1f1c212c4092f0e2be53a8f99c074a",
+            "after_sha256": "4dd87f8cff1d88f08e64cc373f22ed570e1f1c212c4092f0e2be53a8f99c074a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "ccac4a11422d1956c4fd4492009a8dd01ea019e55d2cdea2a7e2a8c091547dff",
+            "after_sha256": "ccac4a11422d1956c4fd4492009a8dd01ea019e55d2cdea2a7e2a8c091547dff",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "b2becf9b772f374798b4c30c175ca1f60864e28632e9b22656832ddbea248c51",
+            "after_sha256": "b2becf9b772f374798b4c30c175ca1f60864e28632e9b22656832ddbea248c51",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "31 종교 분포",
+        "checks": {
+          "export_literal": {
+            "before_count": 14,
+            "after_count": 14,
+            "before_sha256": "02a451b2017ce4191abdbab5a327846342dd494bd14692a1a9efe345742e04b3",
+            "after_sha256": "02a451b2017ce4191abdbab5a327846342dd494bd14692a1a9efe345742e04b3",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "728ecfd9371c9fc3ce22a4594bc2914d3cc22351cb5c399e04ca416668fd8381",
+            "after_sha256": "728ecfd9371c9fc3ce22a4594bc2914d3cc22351cb5c399e04ca416668fd8381",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "b2becf9b772f374798b4c30c175ca1f60864e28632e9b22656832ddbea248c51",
+            "after_sha256": "b2becf9b772f374798b4c30c175ca1f60864e28632e9b22656832ddbea248c51",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "32 언어 분포",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "fa2a95c5d6c87135f5b285e9ca60ccf850ebd2e7d99e426ce0f775208a1a1d80",
+            "after_sha256": "fa2a95c5d6c87135f5b285e9ca60ccf850ebd2e7d99e426ce0f775208a1a1d80",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "ce0f237bf7453c9935bc7f8661a195398342fd4215d5bab4870abe0e6f4f10a2",
+            "after_sha256": "ce0f237bf7453c9935bc7f8661a195398342fd4215d5bab4870abe0e6f4f10a2",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "0fceb600ad8ba6c992ca2f5566452eaa638c81f368284af6a61de1826486a4d1",
+            "after_sha256": "0fceb600ad8ba6c992ca2f5566452eaa638c81f368284af6a61de1826486a4d1",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "33 종족 분포",
+        "checks": {
+          "export_literal": {
+            "before_count": 14,
+            "after_count": 14,
+            "before_sha256": "425894112e3cffb1d6c8970975a07acde64d8f3f156ed180a54f7401fd98062d",
+            "after_sha256": "425894112e3cffb1d6c8970975a07acde64d8f3f156ed180a54f7401fd98062d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "2fac870377eb0693896366fbc03ef4695e2c0afe190f3078f711afd17e7cc777",
+            "after_sha256": "2fac870377eb0693896366fbc03ef4695e2c0afe190f3078f711afd17e7cc777",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "b2becf9b772f374798b4c30c175ca1f60864e28632e9b22656832ddbea248c51",
+            "after_sha256": "b2becf9b772f374798b4c30c175ca1f60864e28632e9b22656832ddbea248c51",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "40 경제 지역값",
+        "checks": {
+          "export_literal": {
+            "before_count": 14,
+            "after_count": 14,
+            "before_sha256": "71ef5cc68967455095b5d7bd7fdb719394b82bc8f7948dd72f2ea01c5f5fdba8",
+            "after_sha256": "71ef5cc68967455095b5d7bd7fdb719394b82bc8f7948dd72f2ea01c5f5fdba8",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 19996,
+            "after_count": 19996,
+            "before_sha256": "aa2923ba8a6c6512b358a5340eca73294339438eecf91805d1e06ad85409ecc8",
+            "after_sha256": "aa2923ba8a6c6512b358a5340eca73294339438eecf91805d1e06ad85409ecc8",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 19996,
+            "after_count": 19996,
+            "before_sha256": "beedc30e6a3a46d8e04e854f888e175b15f7fff7f6471bacc142a38c42db4c14",
+            "after_sha256": "beedc30e6a3a46d8e04e854f888e175b15f7fff7f6471bacc142a38c42db4c14",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "41 산업",
+        "checks": {
+          "export_literal": {
+            "before_count": 16,
+            "after_count": 16,
+            "before_sha256": "9a37a8a4872b1dca6fd4173bc1db746165475ca32cd4064a2eb85faca33b36d0",
+            "after_sha256": "9a37a8a4872b1dca6fd4173bc1db746165475ca32cd4064a2eb85faca33b36d0",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 9998,
+            "after_count": 9998,
+            "before_sha256": "033725d0a1c903163e38df106d03e6d9fd031d392fa53d7163cca2ec7755ffe8",
+            "after_sha256": "033725d0a1c903163e38df106d03e6d9fd031d392fa53d7163cca2ec7755ffe8",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 9998,
+            "after_count": 9998,
+            "before_sha256": "9882193ceeed7c0d6759eb678144a7951850d4c3169b4e5660bc66c1249c0f7d",
+            "after_sha256": "9882193ceeed7c0d6759eb678144a7951850d4c3169b4e5660bc66c1249c0f7d",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "42 교역",
+        "checks": {
+          "export_literal": {
+            "before_count": 17,
+            "after_count": 17,
+            "before_sha256": "8547af92a76c9a679f6ace897707e64dc757794240a0e13c1bc4649fab28d872",
+            "after_sha256": "8547af92a76c9a679f6ace897707e64dc757794240a0e13c1bc4649fab28d872",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "ff9fde619e6a6eca528da8f16e9617f777a8845157818a08358dad498117ef1f",
+            "after_sha256": "ff9fde619e6a6eca528da8f16e9617f777a8845157818a08358dad498117ef1f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "57f43ba50bd644979e5d74d0fe91574822dd118a30ead8e96722622247da79bc",
+            "after_sha256": "57f43ba50bd644979e5d74d0fe91574822dd118a30ead8e96722622247da79bc",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "50 환경 지역값",
+        "checks": {
+          "export_literal": {
+            "before_count": 13,
+            "after_count": 13,
+            "before_sha256": "15b43d315e1265018a5b2690079a11878f432e6f08198ea7dacc5f4e0f0abb82",
+            "after_sha256": "15b43d315e1265018a5b2690079a11878f432e6f08198ea7dacc5f4e0f0abb82",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 9998,
+            "after_count": 9998,
+            "before_sha256": "52550b6ee3a011463882d2334666e1ac1e3bccdd7857e656be685d4f3327cd8e",
+            "after_sha256": "52550b6ee3a011463882d2334666e1ac1e3bccdd7857e656be685d4f3327cd8e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 9998,
+            "after_count": 9998,
+            "before_sha256": "d5333c1db4816867c45982c8197725bb8a2be8cbd63d4bcb798e531e824212a8",
+            "after_sha256": "d5333c1db4816867c45982c8197725bb8a2be8cbd63d4bcb798e531e824212a8",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "51 자원 분포",
+        "checks": {
+          "export_literal": {
+            "before_count": 16,
+            "after_count": 16,
+            "before_sha256": "f3267622ce487b57288eeb9807b123a70760a80b1b755172abe5cceb019999a2",
+            "after_sha256": "f3267622ce487b57288eeb9807b123a70760a80b1b755172abe5cceb019999a2",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "f421cfb233becf31b4fc306efc0f2ca3799f5c1807c4c7450cf5fd000111b7f6",
+            "after_sha256": "f421cfb233becf31b4fc306efc0f2ca3799f5c1807c4c7450cf5fd000111b7f6",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "38eb7771db1db255e1d36af5ce940aaeb5fb9ed6ef2a4d08d8508a418e9c49a2",
+            "after_sha256": "38eb7771db1db255e1d36af5ce940aaeb5fb9ed6ef2a4d08d8508a418e9c49a2",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "60 거점 시설",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "09f25f8a6be11c1d76b63fc9bc98f9b40f73fa92645dc6a9ffa63d8fb875f619",
+            "after_sha256": "09f25f8a6be11c1d76b63fc9bc98f9b40f73fa92645dc6a9ffa63d8fb875f619",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 5998,
+            "after_count": 5998,
+            "before_sha256": "c3af097e9cbd2394e2a8ca847ed8bb8ac2e50b9dffa5762a4f6bb95088bcad36",
+            "after_sha256": "c3af097e9cbd2394e2a8ca847ed8bb8ac2e50b9dffa5762a4f6bb95088bcad36",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 5998,
+            "after_count": 5998,
+            "before_sha256": "6a6f4a1fed9b7c9a1d50668262efaaa2f97c82bf8029b74562391601dba10d11",
+            "after_sha256": "6a6f4a1fed9b7c9a1d50668262efaaa2f97c82bf8029b74562391601dba10d11",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "61 교통망",
+        "checks": {
+          "export_literal": {
+            "before_count": 20,
+            "after_count": 20,
+            "before_sha256": "e3ad406902eab97af72fb886cf82ca2606492b433d79920857873409fd3f54bc",
+            "after_sha256": "e3ad406902eab97af72fb886cf82ca2606492b433d79920857873409fd3f54bc",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 8997,
+            "after_count": 8997,
+            "before_sha256": "fd9732a6c706c898d99c171ca49cccd3a21f40ca5091ee02e98969d947cd5afa",
+            "after_sha256": "fd9732a6c706c898d99c171ca49cccd3a21f40ca5091ee02e98969d947cd5afa",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 8997,
+            "after_count": 8997,
+            "before_sha256": "973c90827d80e9b8ed6ea56de779b6da1242c9b90b7aef99309d62db53e303f9",
+            "after_sha256": "973c90827d80e9b8ed6ea56de779b6da1242c9b90b7aef99309d62db53e303f9",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "70 지역 특성",
+        "checks": {
+          "export_literal": {
+            "before_count": 12,
+            "after_count": 12,
+            "before_sha256": "1a84e78c32b5861294db16d5034df56401a4cc331538bf259dca0228733eacb5",
+            "after_sha256": "1a84e78c32b5861294db16d5034df56401a4cc331538bf259dca0228733eacb5",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "5a67942397b4184c8b415e62f60c518f09ba8cb35e9b56b08e616c32f229e20d",
+            "after_sha256": "5a67942397b4184c8b415e62f60c518f09ba8cb35e9b56b08e616c32f229e20d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14997,
+            "after_count": 14997,
+            "before_sha256": "c8738f52b085476e1a1d4dde0e5f0d3d7051455662092a207e41a0edfb532a37",
+            "after_sha256": "c8738f52b085476e1a1d4dde0e5f0d3d7051455662092a207e41a0edfb532a37",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "90 출처",
+        "checks": {
+          "export_literal": {
+            "before_count": 243,
+            "after_count": 243,
+            "before_sha256": "94837def9481ce5f72ff6c39a16fdd103e1f0c49bd927704d542c1b216cf4793",
+            "after_sha256": "94837def9481ce5f72ff6c39a16fdd103e1f0c49bd927704d542c1b216cf4793",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "99_검증",
+        "checks": {
+          "export_literal": {
+            "before_count": 8043,
+            "after_count": 8043,
+            "before_sha256": "4ccca721d6a346d9332a4f1496145d9994a62dada2549a600a5e643e30d8a128",
+            "after_sha256": "4ccca721d6a346d9332a4f1496145d9994a62dada2549a600a5e643e30d8a128",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 8013,
+            "after_count": 8013,
+            "before_sha256": "bc46b7cccaab9dfae6d4478dae3cbf2e0aee5490269559920a7466e37551e9cf",
+            "after_sha256": "bc46b7cccaab9dfae6d4478dae3cbf2e0aee5490269559920a7466e37551e9cf",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 8013,
+            "after_count": 8013,
+            "before_sha256": "dfb4e2b700f94cf7b58fef58613d7b98a41fa966d1fd6287bac02015fcfcea45",
+            "after_sha256": "dfb4e2b700f94cf7b58fef58613d7b98a41fa966d1fd6287bac02015fcfcea45",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      }
+    ],
+    "limitations": [
+      "XLSX 내 shared strings는 실문자열로 확장, 숫자는 원문 lexical string 보존, 셀은 행·열 순 정렬",
+      "수식 text/attributes와 캐시 결과를 별도로 비교함",
+      "literal에는 수출된 spill 출력이 포함될 수 있어 실제 사용자 입력과 구별 필요",
+      "네이티브 권한·드롭다운 칩·서식 무변경은 별도 온라인 증거가 필요"
+    ]
+  },
+  {
+    "source_file_code": "NAT-V1",
+    "status": "수출 원문 literal 및 수식·수식속성 동일",
+    "export_literal_and_formula_equal": true,
+    "formula_cache_changed_cells": 0,
+    "before_file_sha256": "f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1",
+    "after_file_sha256": "dd9a706ab53713511a3d5b4ab01b849f0d2ca10aabd9cbc8809e16b7952401a2",
+    "sheets": [
+      {
+        "sheet_name": "00_기준_메타",
+        "checks": {
+          "export_literal": {
+            "before_count": 181,
+            "after_count": 181,
+            "before_sha256": "b0395497e3f47e9961fddf54c460c24ded616d9abec74f11ed1e990e2ca20c7c",
+            "after_sha256": "b0395497e3f47e9961fddf54c460c24ded616d9abec74f11ed1e990e2ca20c7c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1,
+            "after_count": 1,
+            "before_sha256": "edd145efb32848a70523cd58848faffdccaee9cb1d9b077206af863d4e3b44f1",
+            "after_sha256": "edd145efb32848a70523cd58848faffdccaee9cb1d9b077206af863d4e3b44f1",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1,
+            "after_count": 1,
+            "before_sha256": "b10608a728f20c41619d1f08da362442cfdd721678ee13ca9606e1702e002f52",
+            "after_sha256": "b10608a728f20c41619d1f08da362442cfdd721678ee13ca9606e1702e002f52",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "00_코드북",
+        "checks": {
+          "export_literal": {
+            "before_count": 1275,
+            "after_count": 1275,
+            "before_sha256": "bc3b6f17dfe2102cae7ad87cd7d0a8b6bca073892e7a83226f628e1496acd423",
+            "after_sha256": "bc3b6f17dfe2102cae7ad87cd7d0a8b6bca073892e7a83226f628e1496acd423",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 234,
+            "after_count": 234,
+            "before_sha256": "7944e3941a9f3117d4aba6c5b7da3df6a39b9371f4a965dda8c9920a64a5c808",
+            "after_sha256": "7944e3941a9f3117d4aba6c5b7da3df6a39b9371f4a965dda8c9920a64a5c808",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 234,
+            "after_count": 234,
+            "before_sha256": "6c7adc65236112a0dba333f64134ac7561210fbeac17937434e4f2715bb09e05",
+            "after_sha256": "6c7adc65236112a0dba333f64134ac7561210fbeac17937434e4f2715bb09e05",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "01_국가_기본정보",
+        "checks": {
+          "export_literal": {
+            "before_count": 25,
+            "after_count": 25,
+            "before_sha256": "cdd77bb4e5c833ccdaff25c50cab7ed6b24f1680f26477bf88ff21b526ed4df6",
+            "after_sha256": "cdd77bb4e5c833ccdaff25c50cab7ed6b24f1680f26477bf88ff21b526ed4df6",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 2000,
+            "after_count": 2000,
+            "before_sha256": "a5b8e5a5f9cfe20940bec9987b6274c0bb9433f226dcbb7d59099daae1c2c74b",
+            "after_sha256": "a5b8e5a5f9cfe20940bec9987b6274c0bb9433f226dcbb7d59099daae1c2c74b",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 2000,
+            "after_count": 2000,
+            "before_sha256": "0b3f1d525f5d3b3c302e85a1be832444f6ebceeca76ba5f7e56b2703d326fa24",
+            "after_sha256": "0b3f1d525f5d3b3c302e85a1be832444f6ebceeca76ba5f7e56b2703d326fa24",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "02_국호_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 14,
+            "after_count": 14,
+            "before_sha256": "b888cb0296c7693ac5aa73d665c610a1b5eeb50dce1e9661b44f56b7c935e8d7",
+            "after_sha256": "b888cb0296c7693ac5aa73d665c610a1b5eeb50dce1e9661b44f56b7c935e8d7",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 500,
+            "after_count": 500,
+            "before_sha256": "102dcfa7bed0c1ae495490c0e700e15a201ab82f1932c92d367ceee00ec60a6f",
+            "after_sha256": "102dcfa7bed0c1ae495490c0e700e15a201ab82f1932c92d367ceee00ec60a6f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 500,
+            "after_count": 500,
+            "before_sha256": "964578ba068390342056952c2dc042aba7ad2fc3f794cca46ee4e1ed27a2c3b1",
+            "after_sha256": "964578ba068390342056952c2dc042aba7ad2fc3f794cca46ee4e1ed27a2c3b1",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "03_영토_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 517,
+            "after_count": 517,
+            "before_sha256": "8922c302643ad8bfbd105b3b658ea1dd79e01ba1693745da12f683110f5b426a",
+            "after_sha256": "8922c302643ad8bfbd105b3b658ea1dd79e01ba1693745da12f683110f5b426a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1000,
+            "after_count": 1000,
+            "before_sha256": "a1bfe1be71d1ef836407327d5fea713f1558427752a8d67ea6fade882311d13f",
+            "after_sha256": "a1bfe1be71d1ef836407327d5fea713f1558427752a8d67ea6fade882311d13f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1000,
+            "after_count": 1000,
+            "before_sha256": "68145197ceafa4070c6eae1cc980b25c85599d9a075dd377b207153b040e8ce3",
+            "after_sha256": "68145197ceafa4070c6eae1cc980b25c85599d9a075dd377b207153b040e8ce3",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "04_헌정국체_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 28,
+            "after_count": 28,
+            "before_sha256": "0d00f6d548d87f99374c4c4bae826c2070f109e1769791972214c5ebc5fa4290",
+            "after_sha256": "0d00f6d548d87f99374c4c4bae826c2070f109e1769791972214c5ebc5fa4290",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "f9684145612a60871d8db3dc3246afa7a4f734505f8438c9940af3ba81695cf8",
+            "after_sha256": "f9684145612a60871d8db3dc3246afa7a4f734505f8438c9940af3ba81695cf8",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "7bdd970311fa676655a53511742a34abed7dd57d3a8d9a5f968d01e2a67df524",
+            "after_sha256": "7bdd970311fa676655a53511742a34abed7dd57d3a8d9a5f968d01e2a67df524",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "05_수도_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 25,
+            "after_count": 25,
+            "before_sha256": "490413a6a008ccfcf8dfbc14fbd5a8826927a243d1d99d215961513619443282",
+            "after_sha256": "490413a6a008ccfcf8dfbc14fbd5a8826927a243d1d99d215961513619443282",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3500,
+            "after_count": 3500,
+            "before_sha256": "825fb5dc67047325d5ca3c526aeb2c0b60070742a38f7366ba39d4a48215fd8e",
+            "after_sha256": "825fb5dc67047325d5ca3c526aeb2c0b60070742a38f7366ba39d4a48215fd8e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3500,
+            "after_count": 3500,
+            "before_sha256": "f00b2d5bef01b5ed482cc860edac833facc8758d155db0b46ccc4582ace6d8c6",
+            "after_sha256": "f00b2d5bef01b5ed482cc860edac833facc8758d155db0b46ccc4582ace6d8c6",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "06_기관구조_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 32,
+            "after_count": 32,
+            "before_sha256": "085c653991b1794db9628830262c3b4455bd09a80fd70b2fa17f9e1dfff44e46",
+            "after_sha256": "085c653991b1794db9628830262c3b4455bd09a80fd70b2fa17f9e1dfff44e46",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "fb2ce253bb2c53e38d5ca47887c41a881204ca1da2cdd7ceb0f34cb7729ab752",
+            "after_sha256": "fb2ce253bb2c53e38d5ca47887c41a881204ca1da2cdd7ceb0f34cb7729ab752",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "4457e70a9968055ae8c131cc69f67b0d026340249f15b131d8931d0fe67fb1c6",
+            "after_sha256": "4457e70a9968055ae8c131cc69f67b0d026340249f15b131d8931d0fe67fb1c6",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "07_선거구_계보",
+        "checks": {
+          "export_literal": {
+            "before_count": 17,
+            "after_count": 17,
+            "before_sha256": "4327b017247b02ea94cdecca81cd9b0ef3cb4dcbaf50fcb1796c39bfc6f7339d",
+            "after_sha256": "4327b017247b02ea94cdecca81cd9b0ef3cb4dcbaf50fcb1796c39bfc6f7339d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "f7e390ed8280c493c91f0e4812d72134c4fd0250ff7eab4f0b02f022bd5fbd56",
+            "after_sha256": "f7e390ed8280c493c91f0e4812d72134c4fd0250ff7eab4f0b02f022bd5fbd56",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "7e4172a28f5ff41a77ba6318072c17ee343556559c40bcbd818b9b19ccb37f1c",
+            "after_sha256": "7e4172a28f5ff41a77ba6318072c17ee343556559c40bcbd818b9b19ccb37f1c",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "10_인구_연간",
+        "checks": {
+          "export_literal": {
+            "before_count": 12,
+            "after_count": 12,
+            "before_sha256": "027fb0501d5426c59bf50232d866437174a3f43ca027cdeecc3d0d5f78432e52",
+            "after_sha256": "027fb0501d5426c59bf50232d866437174a3f43ca027cdeecc3d0d5f78432e52",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 500,
+            "after_count": 500,
+            "before_sha256": "8a715f0634e8905fa006641f6d0f527cdf507277cf25f1580a0b4991e56eb3e6",
+            "after_sha256": "8a715f0634e8905fa006641f6d0f527cdf507277cf25f1580a0b4991e56eb3e6",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 500,
+            "after_count": 500,
+            "before_sha256": "795aa2e5acd4e593832ab2015c010a4d11b0faa33a726547f5002e00ab555962",
+            "after_sha256": "795aa2e5acd4e593832ab2015c010a4d11b0faa33a726547f5002e00ab555962",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "11_경제_연간",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "f385842fa2da15e1ea085ed5cf8760f6998c6e9f2f0603abb61da33124c57dd4",
+            "after_sha256": "f385842fa2da15e1ea085ed5cf8760f6998c6e9f2f0603abb61da33124c57dd4",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 500,
+            "after_count": 500,
+            "before_sha256": "e32ae00d2ff0d8206eb852326d07664fca06e5f49dc672a364dbc24ce63ffadf",
+            "after_sha256": "e32ae00d2ff0d8206eb852326d07664fca06e5f49dc672a364dbc24ce63ffadf",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 500,
+            "after_count": 500,
+            "before_sha256": "3e0a7c0316484d08ed0c2dd53ab8e1a0a437df05c326b0d9c6b539533fc45173",
+            "after_sha256": "3e0a7c0316484d08ed0c2dd53ab8e1a0a437df05c326b0d9c6b539533fc45173",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "12_경제_파생",
+        "checks": {
+          "export_literal": {
+            "before_count": 18,
+            "after_count": 18,
+            "before_sha256": "c0ce3c715015fb81aeaeb72979751aa95d6dd1c97bc7988f64885e583eeee621",
+            "after_sha256": "c0ce3c715015fb81aeaeb72979751aa95d6dd1c97bc7988f64885e583eeee621",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 18000,
+            "after_count": 18000,
+            "before_sha256": "cfe0f288cb0b4f373459a8b82b593f25d6f8d65b67a6c85743b557c5a828c603",
+            "after_sha256": "cfe0f288cb0b4f373459a8b82b593f25d6f8d65b67a6c85743b557c5a828c603",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 18000,
+            "after_count": 18000,
+            "before_sha256": "1ad05165d6d11023f44e77c829a0ed9cc089b2ebd76c5e188b3a23c4dc38618f",
+            "after_sha256": "1ad05165d6d11023f44e77c829a0ed9cc089b2ebd76c5e188b3a23c4dc38618f",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "20_기관_마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 587,
+            "after_count": 587,
+            "before_sha256": "876afce1b90b8175702db91816c55ceaf2f2df9a84862b10d91ef28d710077e6",
+            "after_sha256": "876afce1b90b8175702db91816c55ceaf2f2df9a84862b10d91ef28d710077e6",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "16a456fc3d5445118b5be12ab07f6d605bb110db783c9417745a734b661e03ee",
+            "after_sha256": "16a456fc3d5445118b5be12ab07f6d605bb110db783c9417745a734b661e03ee",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "92be5994fa96b616cb899c230c8dc60b11c3e2db43c214a5c33c22f2362fb930",
+            "after_sha256": "92be5994fa96b616cb899c230c8dc60b11c3e2db43c214a5c33c22f2362fb930",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "21_공직_임기",
+        "checks": {
+          "export_literal": {
+            "before_count": 37,
+            "after_count": 37,
+            "before_sha256": "f67eaea265c05f80f0de3d6169aa1dc89f916f7a0cd07a6a5a905025e2814d04",
+            "after_sha256": "f67eaea265c05f80f0de3d6169aa1dc89f916f7a0cd07a6a5a905025e2814d04",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 6500,
+            "after_count": 6500,
+            "before_sha256": "72aeea211c10f1be00652ec88eeea37b25cace2103dd4b93e4e99967f0fb35f0",
+            "after_sha256": "72aeea211c10f1be00652ec88eeea37b25cace2103dd4b93e4e99967f0fb35f0",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 6500,
+            "after_count": 6500,
+            "before_sha256": "4126e3eaa5336672da29ffe1e1d488a1b5939af5164e3f31f9b79557e445938e",
+            "after_sha256": "4126e3eaa5336672da29ffe1e1d488a1b5939af5164e3f31f9b79557e445938e",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "22_정당_마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 25,
+            "after_count": 25,
+            "before_sha256": "17d4edd70cc65f7dd3e2c86238193038b9e69f08531110a2332ba7c1955da45d",
+            "after_sha256": "17d4edd70cc65f7dd3e2c86238193038b9e69f08531110a2332ba7c1955da45d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 2000,
+            "after_count": 2000,
+            "before_sha256": "e5b4f2ab3e166ca3abb577b1e2f5e32d8456a4aad56aaad908e4b23ea74d2449",
+            "after_sha256": "e5b4f2ab3e166ca3abb577b1e2f5e32d8456a4aad56aaad908e4b23ea74d2449",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 2000,
+            "after_count": 2000,
+            "before_sha256": "b9d4895fb81a75642d90e0b0c5e495dd2990235b59c5071f7454a705245d50a8",
+            "after_sha256": "b9d4895fb81a75642d90e0b0c5e495dd2990235b59c5071f7454a705245d50a8",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "23_선거_마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 43,
+            "after_count": 43,
+            "before_sha256": "bc92a124de5cca2753923d4f8945b65a715d33b1b5f85f9189910354aafc296c",
+            "after_sha256": "bc92a124de5cca2753923d4f8945b65a715d33b1b5f85f9189910354aafc296c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 7000,
+            "after_count": 7000,
+            "before_sha256": "3ab9360a1d08d194c1163854a45c71baa7a59cb4d0a05c1950f84db8da2000bd",
+            "after_sha256": "3ab9360a1d08d194c1163854a45c71baa7a59cb4d0a05c1950f84db8da2000bd",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 7000,
+            "after_count": 7000,
+            "before_sha256": "f277b5f729e9c84b311bf9877aaf5636004290ef7d1246550417a5b2a8f499af",
+            "after_sha256": "f277b5f729e9c84b311bf9877aaf5636004290ef7d1246550417a5b2a8f499af",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "24_선거_결과",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "95f757b90cdfe535e24711a23b4830888f0999c257b29e218aa71fb3a8fa803c",
+            "after_sha256": "95f757b90cdfe535e24711a23b4830888f0999c257b29e218aa71fb3a8fa803c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 500,
+            "after_count": 500,
+            "before_sha256": "3bb5ba7a1edf2e24d613c024a1b0fb5fda90d3b1373f2417acc2a13eebed177c",
+            "after_sha256": "3bb5ba7a1edf2e24d613c024a1b0fb5fda90d3b1373f2417acc2a13eebed177c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 500,
+            "after_count": 500,
+            "before_sha256": "795aa2e5acd4e593832ab2015c010a4d11b0faa33a726547f5002e00ab555962",
+            "after_sha256": "795aa2e5acd4e593832ab2015c010a4d11b0faa33a726547f5002e00ab555962",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "25_선거구_결과",
+        "checks": {
+          "export_literal": {
+            "before_count": 526,
+            "after_count": 526,
+            "before_sha256": "164991fdc6d73dccdcbfe223b99ef34160f9185ca3a7f3d44b66a3a877aaa268",
+            "after_sha256": "164991fdc6d73dccdcbfe223b99ef34160f9185ca3a7f3d44b66a3a877aaa268",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3500,
+            "after_count": 3500,
+            "before_sha256": "0eb5879ccd47ac686fd5a2c57b7adab5b705f957bf768f1fb6d408379c58fd0e",
+            "after_sha256": "0eb5879ccd47ac686fd5a2c57b7adab5b705f957bf768f1fb6d408379c58fd0e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3500,
+            "after_count": 3500,
+            "before_sha256": "11a7d2962836145efb334749f8de0a8ac443e3f0079efd65f5d60812a45f4737",
+            "after_sha256": "11a7d2962836145efb334749f8de0a8ac443e3f0079efd65f5d60812a45f4737",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "26_선거제도",
+        "checks": {
+          "export_literal": {
+            "before_count": 36,
+            "after_count": 36,
+            "before_sha256": "c460a74d658e915c0e64252ceed98d079d0ba35076b8b9e210fab66f93b48c66",
+            "after_sha256": "c460a74d658e915c0e64252ceed98d079d0ba35076b8b9e210fab66f93b48c66",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1000,
+            "after_count": 1000,
+            "before_sha256": "019d3d18a449c2ea06d5d9d96eb2e2fa0a53153fe6d8e91b1a373f3a287ef377",
+            "after_sha256": "019d3d18a449c2ea06d5d9d96eb2e2fa0a53153fe6d8e91b1a373f3a287ef377",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1000,
+            "after_count": 1000,
+            "before_sha256": "cdee498f0d605f5838f0cff4faf11575d741ae17c51796e8b336c1ac8104d4b5",
+            "after_sha256": "cdee498f0d605f5838f0cff4faf11575d741ae17c51796e8b336c1ac8104d4b5",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "27_정당_연간",
+        "checks": {
+          "export_literal": {
+            "before_count": 28,
+            "after_count": 28,
+            "before_sha256": "0d6111b2480a6803ecc67ae0d4950a644a3b0659ebea0d25f9ffaf51b291612a",
+            "after_sha256": "0d6111b2480a6803ecc67ae0d4950a644a3b0659ebea0d25f9ffaf51b291612a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 5000,
+            "after_count": 5000,
+            "before_sha256": "66bec8c0932bc1a44b0a6c55055c78ecb37f25512f3ebe9b16899a2da1864db0",
+            "after_sha256": "66bec8c0932bc1a44b0a6c55055c78ecb37f25512f3ebe9b16899a2da1864db0",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 5000,
+            "after_count": 5000,
+            "before_sha256": "d522da0433783a5770dadb45a3f3de26b46801eef43f3528d2fb693ab9023838",
+            "after_sha256": "d522da0433783a5770dadb45a3f3de26b46801eef43f3528d2fb693ab9023838",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "28_선거_부문",
+        "checks": {
+          "export_literal": {
+            "before_count": 24,
+            "after_count": 24,
+            "before_sha256": "dd03e45b9fae19e11a3f3131353c647cafe59497675db7780f3b7aaa4b789225",
+            "after_sha256": "dd03e45b9fae19e11a3f3131353c647cafe59497675db7780f3b7aaa4b789225",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "41576704e2383f1ebfee07a74364f1bee5deba8cea4a620f2c23e87a30a97a61",
+            "after_sha256": "41576704e2383f1ebfee07a74364f1bee5deba8cea4a620f2c23e87a30a97a61",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "3f21e5ecb4738f44417e9cffe048112813ab2dd38842d779b4d54ff451560ee4",
+            "after_sha256": "3f21e5ecb4738f44417e9cffe048112813ab2dd38842d779b4d54ff451560ee4",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "29_선거_계산",
+        "checks": {
+          "export_literal": {
+            "before_count": 28,
+            "after_count": 28,
+            "before_sha256": "b8614a14a8ef5638e1e1f809dde3f0e3bacae85253829bd3710c27bb915c289a",
+            "after_sha256": "b8614a14a8ef5638e1e1f809dde3f0e3bacae85253829bd3710c27bb915c289a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 14000,
+            "after_count": 14000,
+            "before_sha256": "649aa385ac1bfcf8079e5d6756f95d2130edfe54792453decd4215106f10e2d8",
+            "after_sha256": "649aa385ac1bfcf8079e5d6756f95d2130edfe54792453decd4215106f10e2d8",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 14000,
+            "after_count": 14000,
+            "before_sha256": "1dcf5748af0e6eccfdbda01f5e5c21d885ab0bcfa0a87877a44ff3261a4d27bb",
+            "after_sha256": "1dcf5748af0e6eccfdbda01f5e5c21d885ab0bcfa0a87877a44ff3261a4d27bb",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "30_역사사건",
+        "checks": {
+          "export_literal": {
+            "before_count": 12,
+            "after_count": 12,
+            "before_sha256": "0de4ae8966b6f310d23b77788253aab669ebf72a37d319f309adab87ef5a4228",
+            "after_sha256": "0de4ae8966b6f310d23b77788253aab669ebf72a37d319f309adab87ef5a4228",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "31_인물_마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 22,
+            "after_count": 22,
+            "before_sha256": "c721bae37e62c3328e550b709cb746f63aec9e00d77893d608def8e0c2d76125",
+            "after_sha256": "c721bae37e62c3328e550b709cb746f63aec9e00d77893d608def8e0c2d76125",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "07e5ee2176012f040676b9349c7112b644b00ba628cad718213be8b4d23b1e03",
+            "after_sha256": "07e5ee2176012f040676b9349c7112b644b00ba628cad718213be8b4d23b1e03",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "292d7967c7951efe0934ca002df0d2cdf58570195fe7c69bca7be187a553675b",
+            "after_sha256": "292d7967c7951efe0934ca002df0d2cdf58570195fe7c69bca7be187a553675b",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "32_정당직책_마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 1018,
+            "after_count": 1018,
+            "before_sha256": "700437c9f5bc43d8cabedff6bbf16fa9f068fd0e11f8a1d6bc06caae9631b76b",
+            "after_sha256": "700437c9f5bc43d8cabedff6bbf16fa9f068fd0e11f8a1d6bc06caae9631b76b",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "842e2fe4f5b72e7b6cd2548568e8c8d351e8a1ab35c396e558d60e80bbf2e439",
+            "after_sha256": "842e2fe4f5b72e7b6cd2548568e8c8d351e8a1ab35c396e558d60e80bbf2e439",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "1899cc51dfd3fe47d77ee8a157403b550c19e4f72b8d5a9dd25ab78c73ce616a",
+            "after_sha256": "1899cc51dfd3fe47d77ee8a157403b550c19e4f72b8d5a9dd25ab78c73ce616a",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "33_정당지도부_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 36,
+            "after_count": 36,
+            "before_sha256": "31cd3bb8558306c3953999c05eba7b32f3820a3e510e1fab75b03575c1d30651",
+            "after_sha256": "31cd3bb8558306c3953999c05eba7b32f3820a3e510e1fab75b03575c1d30651",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 6000,
+            "after_count": 6000,
+            "before_sha256": "2f9c6118a9c58d209d8c99f4bb18b5b7d5ba84289468e077b9a1ce2c950a812d",
+            "after_sha256": "2f9c6118a9c58d209d8c99f4bb18b5b7d5ba84289468e077b9a1ce2c950a812d",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 6000,
+            "after_count": 6000,
+            "before_sha256": "1055f6a398922b24db707baef4b90f31c57405832502731560be263651750e4c",
+            "after_sha256": "1055f6a398922b24db707baef4b90f31c57405832502731560be263651750e4c",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "34_정당계파_마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 29,
+            "after_count": 29,
+            "before_sha256": "4e9899fa80e78ced8819da07bf6569c0910bf6cae9db5a73da9c6e7d42c2afe1",
+            "after_sha256": "4e9899fa80e78ced8819da07bf6569c0910bf6cae9db5a73da9c6e7d42c2afe1",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "72b7461a4f798c79cb6384a7a38ee383dbb44e4a9b1f04e7b827251f98fa812e",
+            "after_sha256": "72b7461a4f798c79cb6384a7a38ee383dbb44e4a9b1f04e7b827251f98fa812e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "794c170dbcd5377305405790e9b1b7f2eae0a53b5ef0d4794ad26b71d36ec9ed",
+            "after_sha256": "794c170dbcd5377305405790e9b1b7f2eae0a53b5ef0d4794ad26b71d36ec9ed",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "35_황실신분_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 32,
+            "after_count": 32,
+            "before_sha256": "65121381fb95c76cf41ec6fd6a7c38fbf89ac08ce496d7d17ad080656af35075",
+            "after_sha256": "65121381fb95c76cf41ec6fd6a7c38fbf89ac08ce496d7d17ad080656af35075",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 4000,
+            "after_count": 4000,
+            "before_sha256": "eff6bfd315bba6ad48803ae5b469dd66eefd1e6457188dcebff34c26b9c4065b",
+            "after_sha256": "eff6bfd315bba6ad48803ae5b469dd66eefd1e6457188dcebff34c26b9c4065b",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 4000,
+            "after_count": 4000,
+            "before_sha256": "edc5c78832ab90bf31201035d578776636b3a63a562e724d7ee9693345717441",
+            "after_sha256": "edc5c78832ab90bf31201035d578776636b3a63a562e724d7ee9693345717441",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "36_친족관계_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 30,
+            "after_count": 30,
+            "before_sha256": "cb7c96c2a14c74cc139428b6c070d78392131d6ca96ae887db05e7d5fd5f140c",
+            "after_sha256": "cb7c96c2a14c74cc139428b6c070d78392131d6ca96ae887db05e7d5fd5f140c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 4500,
+            "after_count": 4500,
+            "before_sha256": "b669725413bcd067c0e5b1558e7380ca3893a9609fd3e9f24a22cc6706b02e52",
+            "after_sha256": "b669725413bcd067c0e5b1558e7380ca3893a9609fd3e9f24a22cc6706b02e52",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 4500,
+            "after_count": 4500,
+            "before_sha256": "85e93208bc7478fb6b899fd4a6f445693aaa43399cfaf3d85c09fa7e24fb61d8",
+            "after_sha256": "85e93208bc7478fb6b899fd4a6f445693aaa43399cfaf3d85c09fa7e24fb61d8",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "37_황위계승_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 37,
+            "after_count": 37,
+            "before_sha256": "5fc7bee937d4644406558014838223161369a11e2630bb585142bb32b12bef8c",
+            "after_sha256": "5fc7bee937d4644406558014838223161369a11e2630bb585142bb32b12bef8c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 5000,
+            "after_count": 5000,
+            "before_sha256": "8a4e2f884222b53f695df74960ab2ce9073448fde8d5b5fea84f5da0294a5417",
+            "after_sha256": "8a4e2f884222b53f695df74960ab2ce9073448fde8d5b5fea84f5da0294a5417",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 5000,
+            "after_count": 5000,
+            "before_sha256": "cb8b5e3345457d5a1872eb2c5121404614f583d3b34c640e158f40bc830f4a32",
+            "after_sha256": "cb8b5e3345457d5a1872eb2c5121404614f583d3b34c640e158f40bc830f4a32",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "38_정당관계_이력",
+        "checks": {
+          "export_literal": {
+            "before_count": 18,
+            "after_count": 18,
+            "before_sha256": "e6c4d61e8ceff52a2c9846ddfa4e633c9b999890b706dcb793b1dc8bdb7fb203",
+            "after_sha256": "e6c4d61e8ceff52a2c9846ddfa4e633c9b999890b706dcb793b1dc8bdb7fb203",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "dca3d7fec1f5af5b5a1554f29bb610a0122def73ae17ef7a3331fc01dc0cca75",
+            "after_sha256": "dca3d7fec1f5af5b5a1554f29bb610a0122def73ae17ef7a3331fc01dc0cca75",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1500,
+            "after_count": 1500,
+            "before_sha256": "1899cc51dfd3fe47d77ee8a157403b550c19e4f72b8d5a9dd25ab78c73ce616a",
+            "after_sha256": "1899cc51dfd3fe47d77ee8a157403b550c19e4f72b8d5a9dd25ab78c73ce616a",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "39_선거구_마스터",
+        "checks": {
+          "export_literal": {
+            "before_count": 31,
+            "after_count": 31,
+            "before_sha256": "3d9e68506c1e7cc85ddd5ae0176841d5d182293955096cb0c16d4a5f46e7e9e9",
+            "after_sha256": "3d9e68506c1e7cc85ddd5ae0176841d5d182293955096cb0c16d4a5f46e7e9e9",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "7d0b2468008b91ca0d2ba4436d0b11c9c731330b236cc6123ca8dd91c3bc84de",
+            "after_sha256": "7d0b2468008b91ca0d2ba4436d0b11c9c731330b236cc6123ca8dd91c3bc84de",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3000,
+            "after_count": 3000,
+            "before_sha256": "bd4d8c6cca4ea1c429f9ff896aaf1630e798faa9e7307bf9006f6337a3206c66",
+            "after_sha256": "bd4d8c6cca4ea1c429f9ff896aaf1630e798faa9e7307bf9006f6337a3206c66",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "40_행성대비_지표",
+        "checks": {
+          "export_literal": {
+            "before_count": 13,
+            "after_count": 13,
+            "before_sha256": "6959a40732c0dde14a9e5ca70467b306023ffe6c0eee7397be720f39a9e45efe",
+            "after_sha256": "6959a40732c0dde14a9e5ca70467b306023ffe6c0eee7397be720f39a9e45efe",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 13000,
+            "after_count": 13000,
+            "before_sha256": "182f75dd54e0d226cf29522d0722a141b4eb7be81b88b8b838d6e74a66ddbf9c",
+            "after_sha256": "182f75dd54e0d226cf29522d0722a141b4eb7be81b88b8b838d6e74a66ddbf9c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 13000,
+            "after_count": 13000,
+            "before_sha256": "b0f053da7f011c4ccca96eb710500137e46da87a127b87038deda3a3f132c1a1",
+            "after_sha256": "b0f053da7f011c4ccca96eb710500137e46da87a127b87038deda3a3f132c1a1",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "41_행성_연결",
+        "checks": {
+          "export_literal": {
+            "before_count": 12053,
+            "after_count": 12053,
+            "before_sha256": "67f0397e2db7fe7f6034ed781de6b5faf166ca8343374d1ccea8bdc44bc36d36",
+            "after_sha256": "67f0397e2db7fe7f6034ed781de6b5faf166ca8343374d1ccea8bdc44bc36d36",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 4,
+            "after_count": 4,
+            "before_sha256": "7501339d5ad377b1cd239da536e8401704a1638cef225d76c5708568551c18e6",
+            "after_sha256": "7501339d5ad377b1cd239da536e8401704a1638cef225d76c5708568551c18e6",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 4,
+            "after_count": 4,
+            "before_sha256": "38078485d5420c3a8486fc4a015fbd376ebacfaeb4affb25a22c669daa577542",
+            "after_sha256": "38078485d5420c3a8486fc4a015fbd376ebacfaeb4affb25a22c669daa577542",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "42_행성_기본속성_연결",
+        "checks": {
+          "export_literal": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 242,
+            "after_count": 242,
+            "before_sha256": "0eaf132167c63242b46ca3e2b3fbbad3a242e27e75d9b31b59707b6008e12783",
+            "after_sha256": "0eaf132167c63242b46ca3e2b3fbbad3a242e27e75d9b31b59707b6008e12783",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 242,
+            "after_count": 242,
+            "before_sha256": "927544d3826d553e56f179f7df77c3e8de3fca8048b8a9ffd9c48608ba3d24f9",
+            "after_sha256": "927544d3826d553e56f179f7df77c3e8de3fca8048b8a9ffd9c48608ba3d24f9",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "43_지역_참조_연결",
+        "checks": {
+          "export_literal": {
+            "before_count": 15,
+            "after_count": 15,
+            "before_sha256": "03cebe341d4bc5e979c3ce704457d0f97c863b046c043b7780764232a487081f",
+            "after_sha256": "03cebe341d4bc5e979c3ce704457d0f97c863b046c043b7780764232a487081f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1614,
+            "after_count": 1614,
+            "before_sha256": "2c50fad68dab14bfc5197794f394d8e74130c886d5d68a2327f33b32cc29d71e",
+            "after_sha256": "2c50fad68dab14bfc5197794f394d8e74130c886d5d68a2327f33b32cc29d71e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1614,
+            "after_count": 1614,
+            "before_sha256": "7b589ece07309edb20c5574449429497fbb025827379940d81f6298df1097ce1",
+            "after_sha256": "7b589ece07309edb20c5574449429497fbb025827379940d81f6298df1097ce1",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "44_행성_연간지표_연결",
+        "checks": {
+          "export_literal": {
+            "before_count": 1,
+            "after_count": 1,
+            "before_sha256": "28cdc06204b28e697f82633055304b3251c3f32ed5be184061a261dabd1145b4",
+            "after_sha256": "28cdc06204b28e697f82633055304b3251c3f32ed5be184061a261dabd1145b4",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 10177,
+            "after_count": 10177,
+            "before_sha256": "c5e562c616ce4b253d727d42ade4d1d0c5885fefe6eb5ef26909386b798f396e",
+            "after_sha256": "c5e562c616ce4b253d727d42ade4d1d0c5885fefe6eb5ef26909386b798f396e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 10177,
+            "after_count": 10177,
+            "before_sha256": "cb622f42419094f3a5944bb821e510843dc7c124aa14653799b0ae92f9456de0",
+            "after_sha256": "cb622f42419094f3a5944bb821e510843dc7c124aa14653799b0ae92f9456de0",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "80_연도별_정치현황",
+        "checks": {
+          "export_literal": {
+            "before_count": 11,
+            "after_count": 11,
+            "before_sha256": "e847a457e008dabbec3344f1bb01630c7cb6905186e5f55b9fa7c58a73834caa",
+            "after_sha256": "e847a457e008dabbec3344f1bb01630c7cb6905186e5f55b9fa7c58a73834caa",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 11000,
+            "after_count": 11000,
+            "before_sha256": "41a54c3f8e2ffddc0af3e4dce01c1e74ef42c448f7289d34adfb1fda3f0f2bca",
+            "after_sha256": "41a54c3f8e2ffddc0af3e4dce01c1e74ef42c448f7289d34adfb1fda3f0f2bca",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 11000,
+            "after_count": 11000,
+            "before_sha256": "c429044f64f190a801bd06a61909cc8ac98505f9254884fc1d9d6a6a777ed70a",
+            "after_sha256": "c429044f64f190a801bd06a61909cc8ac98505f9254884fc1d9d6a6a777ed70a",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "81_연도별_선거현황",
+        "checks": {
+          "export_literal": {
+            "before_count": 7,
+            "after_count": 7,
+            "before_sha256": "e0cd3e741cea2b62c3a5727f797b7347fe3b7a293031ca280b76fd63811de94a",
+            "after_sha256": "e0cd3e741cea2b62c3a5727f797b7347fe3b7a293031ca280b76fd63811de94a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 7000,
+            "after_count": 7000,
+            "before_sha256": "d7a3542cd25d19ba0ee2480fd070a7e92fe5b1eecb81bb2d68d8f6ebb9be9d5a",
+            "after_sha256": "d7a3542cd25d19ba0ee2480fd070a7e92fe5b1eecb81bb2d68d8f6ebb9be9d5a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 7000,
+            "after_count": 7000,
+            "before_sha256": "68424a31162819458a51654cd79fb95f5f58a252453e397c87b570790b05bb93",
+            "after_sha256": "68424a31162819458a51654cd79fb95f5f58a252453e397c87b570790b05bb93",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "82_연도별_경제현황",
+        "checks": {
+          "export_literal": {
+            "before_count": 10,
+            "after_count": 10,
+            "before_sha256": "2dc61981cfa4d40ae499d63f788a64f2b8c3cc64fee2794281aa9c8bfbf1f03c",
+            "after_sha256": "2dc61981cfa4d40ae499d63f788a64f2b8c3cc64fee2794281aa9c8bfbf1f03c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 10000,
+            "after_count": 10000,
+            "before_sha256": "b2b76fc046f6c292a0edcdcd2011eb0b6f8f7f34dadb526e769f35483af2bf19",
+            "after_sha256": "b2b76fc046f6c292a0edcdcd2011eb0b6f8f7f34dadb526e769f35483af2bf19",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 10000,
+            "after_count": 10000,
+            "before_sha256": "c9edea550a87b79cb248409cbbff86920b32ed6bec7b55be288e43c11ec47469",
+            "after_sha256": "c9edea550a87b79cb248409cbbff86920b32ed6bec7b55be288e43c11ec47469",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "83_연방_통합연표",
+        "checks": {
+          "export_literal": {
+            "before_count": 22,
+            "after_count": 22,
+            "before_sha256": "9c65d20c96b333eadd41d59221ca4e82e9e995b26ba5ff9682530a1baeea491a",
+            "after_sha256": "9c65d20c96b333eadd41d59221ca4e82e9e995b26ba5ff9682530a1baeea491a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 22000,
+            "after_count": 22000,
+            "before_sha256": "eafc40dd8d5fbcad728f965054e45d533d66c4a4b9bcf599f420c4fdaf179c65",
+            "after_sha256": "eafc40dd8d5fbcad728f965054e45d533d66c4a4b9bcf599f420c4fdaf179c65",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 22000,
+            "after_count": 22000,
+            "before_sha256": "c0fd5655e2e38ff78e708a1f5a2e90456a8425c6260f3797952a2262b134bcad",
+            "after_sha256": "c0fd5655e2e38ff78e708a1f5a2e90456a8425c6260f3797952a2262b134bcad",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "84_연도별_행정부",
+        "checks": {
+          "export_literal": {
+            "before_count": 6,
+            "after_count": 6,
+            "before_sha256": "be9d13ec7ee48363c3079b9e2bb65d199d6368dbbaf310dc64606bd8ddf9957f",
+            "after_sha256": "be9d13ec7ee48363c3079b9e2bb65d199d6368dbbaf310dc64606bd8ddf9957f",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 6000,
+            "after_count": 6000,
+            "before_sha256": "9c37b187dd7f40709d59bb0475716b3290e5c510b211e443cdfaf0db6ec62165",
+            "after_sha256": "9c37b187dd7f40709d59bb0475716b3290e5c510b211e443cdfaf0db6ec62165",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 6000,
+            "after_count": 6000,
+            "before_sha256": "2f76f1d5e803c1281fbe5e99c170ab666688f143742065e5489f75a30e0be837",
+            "after_sha256": "2f76f1d5e803c1281fbe5e99c170ab666688f143742065e5489f75a30e0be837",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "85_연도별_정당지도부",
+        "checks": {
+          "export_literal": {
+            "before_count": 9,
+            "after_count": 9,
+            "before_sha256": "ef498b7e08c81b6c40dfcb01c976100d84f1a76655c9642a4dd757b627f516d9",
+            "after_sha256": "ef498b7e08c81b6c40dfcb01c976100d84f1a76655c9642a4dd757b627f516d9",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 9000,
+            "after_count": 9000,
+            "before_sha256": "27dee3159887917c34013c0444370f619974891abe3e7e2812c46e53d630b021",
+            "after_sha256": "27dee3159887917c34013c0444370f619974891abe3e7e2812c46e53d630b021",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 9000,
+            "after_count": 9000,
+            "before_sha256": "93705dae431cac0eacc43d1fa7d9cb75cc96eac6b7fb1d35db89851c59d635b0",
+            "after_sha256": "93705dae431cac0eacc43d1fa7d9cb75cc96eac6b7fb1d35db89851c59d635b0",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "86_연도별_황실계승",
+        "checks": {
+          "export_literal": {
+            "before_count": 12,
+            "after_count": 12,
+            "before_sha256": "6a679974ba8ca01b480c41e84dfc5d66a2840ff77efd895d0c672c3def279eeb",
+            "after_sha256": "6a679974ba8ca01b480c41e84dfc5d66a2840ff77efd895d0c672c3def279eeb",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 12000,
+            "after_count": 12000,
+            "before_sha256": "bbab49cac537ad9aaffd437f60e98fa6235f79dd8557d819a40cacd2a86d9b6e",
+            "after_sha256": "bbab49cac537ad9aaffd437f60e98fa6235f79dd8557d819a40cacd2a86d9b6e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 12000,
+            "after_count": 12000,
+            "before_sha256": "5b21b3292b98208f6a9e26a95bae2db0fbae37c4aedc5058152cc8c5e88f6d5e",
+            "after_sha256": "5b21b3292b98208f6a9e26a95bae2db0fbae37c4aedc5058152cc8c5e88f6d5e",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "87_시점별_황위계승",
+        "checks": {
+          "export_literal": {
+            "before_count": 23,
+            "after_count": 23,
+            "before_sha256": "080d07aa75f3945bd1a98c3fc5f2b58c1e30c0bb7ea1323cc88b643dfd9f62a3",
+            "after_sha256": "080d07aa75f3945bd1a98c3fc5f2b58c1e30c0bb7ea1323cc88b643dfd9f62a3",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3,
+            "after_count": 3,
+            "before_sha256": "a0392c1ca84ab1a9ff910f9f488c7ef5c12799fad91ee8932553d122cd104476",
+            "after_sha256": "a0392c1ca84ab1a9ff910f9f488c7ef5c12799fad91ee8932553d122cd104476",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3,
+            "after_count": 3,
+            "before_sha256": "23771e8cf72576c183004317f18b8531ff99d02f889559ed2b5fbd78f05516fa",
+            "after_sha256": "23771e8cf72576c183004317f18b8531ff99d02f889559ed2b5fbd78f05516fa",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "88_친족관계_조회",
+        "checks": {
+          "export_literal": {
+            "before_count": 18,
+            "after_count": 18,
+            "before_sha256": "17ffe41410d74989ab9dc96f2538b5a096d1c47ffe25eff5ac1050d873869f12",
+            "after_sha256": "17ffe41410d74989ab9dc96f2538b5a096d1c47ffe25eff5ac1050d873869f12",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 3,
+            "after_count": 3,
+            "before_sha256": "942aa0bbceededef8fbc19ee759825ac56374d6a26e659db4a98fcd799ba6477",
+            "after_sha256": "942aa0bbceededef8fbc19ee759825ac56374d6a26e659db4a98fcd799ba6477",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 3,
+            "after_count": 3,
+            "before_sha256": "22dfffe13fddb799d62921e6180d6366115ab73e8dce4adf44db0f11d5d9bda2",
+            "after_sha256": "22dfffe13fddb799d62921e6180d6366115ab73e8dce4adf44db0f11d5d9bda2",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "89_변동_연표",
+        "checks": {
+          "export_literal": {
+            "before_count": 10,
+            "after_count": 10,
+            "before_sha256": "22492312e6ebe93ebd52a3c4f5fb29d2de1aeab03649af6ae07d0926ada3cc0a",
+            "after_sha256": "22492312e6ebe93ebd52a3c4f5fb29d2de1aeab03649af6ae07d0926ada3cc0a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 1,
+            "after_count": 1,
+            "before_sha256": "cfcb7bd5daa2fa2939f6d691037b363cbb0c342bb35a67f4cca1e4dcd2733487",
+            "after_sha256": "cfcb7bd5daa2fa2939f6d691037b363cbb0c342bb35a67f4cca1e4dcd2733487",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 1,
+            "after_count": 1,
+            "before_sha256": "1db2e948b7dfc2e2e3184ff9c360347afce66fa9bf0191d55662a538bb91c0d1",
+            "after_sha256": "1db2e948b7dfc2e2e3184ff9c360347afce66fa9bf0191d55662a538bb91c0d1",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "90_출처_레지스트리",
+        "checks": {
+          "export_literal": {
+            "before_count": 31,
+            "after_count": 31,
+            "before_sha256": "55a37a6aea509a6eafb3c27af634dfe43e0a893f5b61a214f27e954bf0b42a49",
+            "after_sha256": "55a37a6aea509a6eafb3c27af634dfe43e0a893f5b61a214f27e954bf0b42a49",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 0,
+            "after_count": 0,
+            "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "91_스키마_안내",
+        "checks": {
+          "export_literal": {
+            "before_count": 290,
+            "after_count": 290,
+            "before_sha256": "8d1134b90db3511cc793e6132a875a1e6908c1c74b3b9948b8f63455f585d82a",
+            "after_sha256": "8d1134b90db3511cc793e6132a875a1e6908c1c74b3b9948b8f63455f585d82a",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 2,
+            "after_count": 2,
+            "before_sha256": "fd59df00940986f50cf5f283c6a5b0f687c51bef175fa967efeba68e7d30102c",
+            "after_sha256": "fd59df00940986f50cf5f283c6a5b0f687c51bef175fa967efeba68e7d30102c",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 2,
+            "after_count": 2,
+            "before_sha256": "0c2f18471faef640a3bf7c8480a5bb624b0cc3bd2d426519763220d2622ee273",
+            "after_sha256": "0c2f18471faef640a3bf7c8480a5bb624b0cc3bd2d426519763220d2622ee273",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "98_검증_요약",
+        "checks": {
+          "export_literal": {
+            "before_count": 72,
+            "after_count": 72,
+            "before_sha256": "56ef90aa2fdac8ad5514a118d96e4075ad2d31d397d10b88f026555afbfa2efe",
+            "after_sha256": "56ef90aa2fdac8ad5514a118d96e4075ad2d31d397d10b88f026555afbfa2efe",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 150,
+            "after_count": 150,
+            "before_sha256": "356ee9c8859681274e09827a02e25932f38e434e269037c4c58876f10be9e5f1",
+            "after_sha256": "356ee9c8859681274e09827a02e25932f38e434e269037c4c58876f10be9e5f1",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 150,
+            "after_count": 150,
+            "before_sha256": "85924dc7c5ca43ce287ba4a8cd79c16e9f0b3f566ac7dfb26f07acb7152ff094",
+            "after_sha256": "85924dc7c5ca43ce287ba4a8cd79c16e9f0b3f566ac7dfb26f07acb7152ff094",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      },
+      {
+        "sheet_name": "99_검증_상세",
+        "checks": {
+          "export_literal": {
+            "before_count": 45486,
+            "after_count": 45486,
+            "before_sha256": "7cde277612928641fc5a0e60289da82d674a8d9c1a8e6cc60a3b815000a0c834",
+            "after_sha256": "7cde277612928641fc5a0e60289da82d674a8d9c1a8e6cc60a3b815000a0c834",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_text_and_attributes": {
+            "before_count": 64177,
+            "after_count": 64177,
+            "before_sha256": "c6772ca6f973fac691d54b09db422a208a523ef42c5f9f60be8e8d5e23b67c5e",
+            "after_sha256": "c6772ca6f973fac691d54b09db422a208a523ef42c5f9f60be8e8d5e23b67c5e",
+            "changed_cells": 0,
+            "changed_examples": []
+          },
+          "formula_cached_results": {
+            "before_count": 64177,
+            "after_count": 64177,
+            "before_sha256": "d978786ef13ad524f13e9eb9d38a301ee66ff1244d9eb5000722e0602fb6d22d",
+            "after_sha256": "d978786ef13ad524f13e9eb9d38a301ee66ff1244d9eb5000722e0602fb6d22d",
+            "changed_cells": 0,
+            "changed_examples": []
+          }
+        }
+      }
+    ],
+    "limitations": [
+      "XLSX 내 shared strings는 실문자열로 확장, 숫자는 원문 lexical string 보존, 셀은 행·열 순 정렬",
+      "수식 text/attributes와 캐시 결과를 별도로 비교함",
+      "literal에는 수출된 spill 출력이 포함될 수 있어 실제 사용자 입력과 구별 필요",
+      "네이티브 권한·드롭다운 칩·서식 무변경은 별도 온라인 증거가 필요"
+    ]
+  }
+]

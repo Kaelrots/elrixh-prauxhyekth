@@ -1,0 +1,1350 @@
+{
+  "c": "H90",
+  "started_at": "2026-10-02T09:33:55.950Z",
+  "elapsed_ms": 820,
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY/edit",
+      "properties": {
+        "title": "TEST-H90 · 소형 연결시험 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 71005001,
+            "title": "01_설정",
+            "index": 1,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 19,
+              "startColumn": 5,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "region_id|time_raw|value_status|value_numeric|value_min|value_max|unit|population_definition|data_scope|value_basis|setting_status|source_id|notes|record_id|planet_scope_id|route|era|year|aggregation_include|metric_id|species_scope|calendar_revision|month|day|date_precision|start_era|start_year|start_month|start_day|start_precision|start_raw|end_era|end_year|end_month|end_day|end_precision|end_raw|end_status|legacy_locator|legacy_record_id|original_location|source_snapshot_id|validation_status|value_raw|value_text|generation_method|selection_status|selection_reason|region_name|source_name|region_level|observation_key",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_POPULATION!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_POPULATION!A3:AZ3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id|time_raw|value_status|value_numeric|value_min|value_max|unit|population_definition|data_scope|value_basis|setting_status|source_id|notes|record_id|planet_scope_id|route|era|year|aggregation_include|metric_id|species_scope|calendar_revision|month|day|date_precision|start_era|start_year|start_month|start_day|start_precision|start_raw|end_era|end_year|end_month|end_day|end_precision|end_raw|end_status|legacy_locator|legacy_record_id|original_location|source_snapshot_id|validation_status|value_raw|value_text|generation_method|selection_status|selection_reason|region_name|source_name|region_level|observation_key"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_POPULATION!A3),IF(N20=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F20<>E20,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_POPULATION!A3),\"메타 연결실패\",IF(RMETA_POPULATION!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_POPULATION!C4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",COUNTIF(REF_POPULATION!$N$4:$N$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H20)),NOT(ISNUMBER(I20))),\"미확인\",IF(H20=I20,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_POPULATION!A3),\"미확인\",RMETA_POPULATION!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "판본 일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",IF(L20=K20,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "판본 일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "승인 대기",
+                      "userEnteredValue": {
+                        "stringValue": "승인 대기"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "승인 대기"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "person_id|name_ko|name_elun|name_other|birth_era|birth_year|birth_month|birth_day|death_era|death_year|death_month|death_day|person_classification_raw|person_description_raw|인물 상태|setting_status|source_id|source_locator|note|legacy_locator|source_snapshot_id|schema_version|release_id|value_status|generation_method|adoption_status|birth_precision|death_precision|calendar_revision|validation_status|connection_status",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_PERSON!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_PERSON!A3:AE3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "person_id|name_ko|name_elun|name_other|birth_era|birth_year|birth_month|birth_day|death_era|death_year|death_month|death_day|person_classification_raw|person_description_raw|인물 상태|setting_status|source_id|source_locator|note|legacy_locator|source_snapshot_id|schema_version|release_id|value_status|generation_method|adoption_status|birth_precision|death_precision|calendar_revision|validation_status|connection_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_PERSON!A3),IF(N21=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F21<>E21,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_PERSON!A3),\"메타 연결실패\",IF(RMETA_PERSON!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_PERSON!C4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G21<>\"연결확인\",\"미확인\",COUNTIF(REF_PERSON!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H21)),NOT(ISNUMBER(I21))),\"미확인\",IF(H21=I21,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_PERSON!A3),\"미확인\",RMETA_PERSON!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "판본 일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G21<>\"연결확인\",\"미확인\",IF(L21=K21,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "판본 일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "승인 대기",
+                      "userEnteredValue": {
+                        "stringValue": "승인 대기"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "승인 대기"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "term_id|nation_id|route|era|office_id|person_id|start_year|end_year|end_status|party_id|인물·직함 메모|setting_status|source_id|source_locator|재직 구분|취임 경위|election_id|previous_term_id|start_month|start_day|end_month|end_day|예외·특별법 근거|succession_term_id|legacy_locator|source_snapshot_id|schema_version|release_id|value_status|generation_method|adoption_status|note|start_era|start_precision|end_era|end_precision|calendar_revision|person_name|query_end_year|연표 표시명|query_start_order|query_end_order|직위명_자동|행정부 출력_자동|조회 시작일_자동|조회 종료일_자동|source_record_id|validation_status|connection_status",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_OFFICE_TERM!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_OFFICE_TERM!A3:AW3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "term_id|nation_id|route|era|office_id|person_id|start_year|end_year|end_status|party_id|인물·직함 메모|setting_status|source_id|source_locator|재직 구분|취임 경위|election_id|previous_term_id|start_month|start_day|end_month|end_day|예외·특별법 근거|succession_term_id|legacy_locator|source_snapshot_id|schema_version|release_id|value_status|generation_method|adoption_status|note|start_era|start_precision|end_era|end_precision|calendar_revision|person_name|query_end_year|연표 표시명|query_start_order|query_end_order|직위명_자동|행정부 출력_자동|조회 시작일_자동|조회 종료일_자동|source_record_id|validation_status|connection_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_OFFICE_TERM!A3),IF(N22=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F22<>E22,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_OFFICE_TERM!A3),\"메타 연결실패\",IF(RMETA_OFFICE_TERM!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_OFFICE_TERM!C4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G22<>\"연결확인\",\"미확인\",COUNTIF(REF_OFFICE_TERM!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H22)),NOT(ISNUMBER(I22))),\"미확인\",IF(H22=I22,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_OFFICE_TERM!A3),\"미확인\",RMETA_OFFICE_TERM!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "판본 일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G22<>\"연결확인\",\"미확인\",IF(L22=K22,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "판본 일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "승인 대기",
+                      "userEnteredValue": {
+                        "stringValue": "승인 대기"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "승인 대기"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_CODEBOOK!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_CODEBOOK!A3:S3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_CODEBOOK!A3),IF(N23=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F23<>E23,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "2",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_CODEBOOK!A3),\"메타 연결실패\",IF(RMETA_CODEBOOK!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_CODEBOOK!C4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 2
+                      }
+                    },
+                    {
+                      "formattedValue": "2",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G23<>\"연결확인\",\"미확인\",COUNTIF(REF_CODEBOOK!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 2
+                      }
+                    },
+                    {
+                      "formattedValue": "일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H23)),NOT(ISNUMBER(I23))),\"미확인\",IF(H23=I23,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_CODEBOOK!A3),\"미확인\",RMETA_CODEBOOK!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "판본 일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G23<>\"연결확인\",\"미확인\",IF(L23=K23,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "판본 일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "승인 대기",
+                      "userEnteredValue": {
+                        "stringValue": "승인 대기"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "승인 대기"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71005002,
+            "title": "CONFIG_조회조건",
+            "index": 2,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "route_filter",
+                      "userEnteredValue": {
+                        "stringValue": "route_filter"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "route_filter"
+                      }
+                    },
+                    {
+                      "formattedValue": "era_filter",
+                      "userEnteredValue": {
+                        "stringValue": "era_filter"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era_filter"
+                      }
+                    },
+                    {
+                      "formattedValue": "start_year",
+                      "userEnteredValue": {
+                        "stringValue": "start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_year"
+                      }
+                    },
+                    {
+                      "formattedValue": "end_year",
+                      "userEnteredValue": {
+                        "stringValue": "end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_year"
+                      }
+                    },
+                    {
+                      "formattedValue": "reference_year",
+                      "userEnteredValue": {
+                        "stringValue": "reference_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "reference_year"
+                      }
+                    },
+                    {
+                      "formattedValue": "point_year",
+                      "userEnteredValue": {
+                        "stringValue": "point_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "point_year"
+                      }
+                    },
+                    {
+                      "formattedValue": "point_month",
+                      "userEnteredValue": {
+                        "stringValue": "point_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "point_month"
+                      }
+                    },
+                    {
+                      "formattedValue": "point_day",
+                      "userEnteredValue": {
+                        "stringValue": "point_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "point_day"
+                      }
+                    },
+                    {
+                      "formattedValue": "party_filter_id",
+                      "userEnteredValue": {
+                        "stringValue": "party_filter_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "party_filter_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "person_filter_id",
+                      "userEnteredValue": {
+                        "stringValue": "person_filter_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "person_filter_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "emperor_filter_id",
+                      "userEnteredValue": {
+                        "stringValue": "emperor_filter_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "emperor_filter_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "view_id",
+                      "userEnteredValue": {
+                        "stringValue": "view_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "view_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "nation_id",
+                      "userEnteredValue": {
+                        "stringValue": "nation_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "nation_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_id",
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "filter_policy_id",
+                      "userEnteredValue": {
+                        "stringValue": "filter_policy_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "filter_policy_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "query_status",
+                      "userEnteredValue": {
+                        "stringValue": "query_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "query_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "page_size",
+                      "userEnteredValue": {
+                        "stringValue": "page_size"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "page_size"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "TEST-A",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-A"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-A"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-ERA",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-ERA"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-ERA"
+                      }
+                    },
+                    {},
+                    {},
+                    {
+                      "formattedValue": "100",
+                      "userEnteredValue": {
+                        "numberValue": 100
+                      },
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    },
+                    {
+                      "formattedValue": "100",
+                      "userEnteredValue": {
+                        "numberValue": 100
+                      },
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "numberValue": 1
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "numberValue": 1
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "TEST-PERSON-001",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-PERSON-001"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-PERSON-001"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "TEST-SMALL-FLOW",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-SMALL-FLOW"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SMALL-FLOW"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "TEST-REGION-001",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-REGION-001"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-001"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71005007,
+            "title": "VIEW_소형흐름",
+            "index": 7,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "항목",
+                      "userEnteredValue": {
+                        "stringValue": "항목"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목"
+                      }
+                    },
+                    {
+                      "formattedValue": "결과",
+                      "userEnteredValue": {
+                        "stringValue": "결과"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "결과"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "인구 자료 상태",
+                      "userEnteredValue": {
+                        "stringValue": "인구 자료 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "인구 자료 상태"
+                      }
+                    },
+                    {
+                      "formattedValue": "자료 있음",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF('01_설정'!J20<>\"일치\",\"건수 불일치\",IF('01_설정'!M20<>\"판본 일치\",\"갱신 대기\",IF('01_설정'!G23<>\"연결확인\",'01_설정'!G23,IF(NOT(COUNTIFS(REF_CODEBOOK!$A$4:$A$13,\"value_status\",REF_CODEBOOK!$B$4:$B$13,\"값 있음\")=1),\"값상태 코드 없음·중복\",IF(COUNTIFS(REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4)=0,\"자료없음\",IF(COUNTIFS(REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4,REF_POPULATION!$C$4:$C$13,\"값 있음\")<>COUNTIFS(REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4),\"값상태 확인 필요\",\"자료 있음\")))))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "자료 있음"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "동일조건 자료 건수",
+                      "userEnteredValue": {
+                        "stringValue": "동일조건 자료 건수"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "동일조건 자료 건수"
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",\"미확인\",COUNTIFS(REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "동일조건 인구",
+                      "userEnteredValue": {
+                        "stringValue": "동일조건 인구"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "동일조건 인구"
+                      }
+                    },
+                    {
+                      "formattedValue": "100",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(B4<>\"자료 있음\",B4,IF((IF(AND(REF_POPULATION!P4='CONFIG_조회조건'!A4,REF_POPULATION!Q4='CONFIG_조회조건'!B4,REF_POPULATION!R4='CONFIG_조회조건'!E4,REF_POPULATION!A4='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D4)),1,0)+IF(AND(REF_POPULATION!P5='CONFIG_조회조건'!A4,REF_POPULATION!Q5='CONFIG_조회조건'!B4,REF_POPULATION!R5='CONFIG_조회조건'!E4,REF_POPULATION!A5='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D5)),1,0)+IF(AND(REF_POPULATION!P6='CONFIG_조회조건'!A4,REF_POPULATION!Q6='CONFIG_조회조건'!B4,REF_POPULATION!R6='CONFIG_조회조건'!E4,REF_POPULATION!A6='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D6)),1,0)+IF(AND(REF_POPULATION!P7='CONFIG_조회조건'!A4,REF_POPULATION!Q7='CONFIG_조회조건'!B4,REF_POPULATION!R7='CONFIG_조회조건'!E4,REF_POPULATION!A7='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D7)),1,0)+IF(AND(REF_POPULATION!P8='CONFIG_조회조건'!A4,REF_POPULATION!Q8='CONFIG_조회조건'!B4,REF_POPULATION!R8='CONFIG_조회조건'!E4,REF_POPULATION!A8='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D8)),1,0)+IF(AND(REF_POPULATION!P9='CONFIG_조회조건'!A4,REF_POPULATION!Q9='CONFIG_조회조건'!B4,REF_POPULATION!R9='CONFIG_조회조건'!E4,REF_POPULATION!A9='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D9)),1,0)+IF(AND(REF_POPULATION!P10='CONFIG_조회조건'!A4,REF_POPULATION!Q10='CONFIG_조회조건'!B4,REF_POPULATION!R10='CONFIG_조회조건'!E4,REF_POPULATION!A10='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D10)),1,0)+IF(AND(REF_POPULATION!P11='CONFIG_조회조건'!A4,REF_POPULATION!Q11='CONFIG_조회조건'!B4,REF_POPULATION!R11='CONFIG_조회조건'!E4,REF_POPULATION!A11='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D11)),1,0)+IF(AND(REF_POPULATION!P12='CONFIG_조회조건'!A4,REF_POPULATION!Q12='CONFIG_조회조건'!B4,REF_POPULATION!R12='CONFIG_조회조건'!E4,REF_POPULATION!A12='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D12)),1,0)+IF(AND(REF_POPULATION!P13='CONFIG_조회조건'!A4,REF_POPULATION!Q13='CONFIG_조회조건'!B4,REF_POPULATION!R13='CONFIG_조회조건'!E4,REF_POPULATION!A13='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D13)),1,0))<>B5,\"수치 없음\",SUMIFS(REF_POPULATION!$D$4:$D$13,REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4)))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "인구 원본 위치",
+                      "userEnteredValue": {
+                        "stringValue": "인구 원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "인구 원본 위치"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF(COUNTIFS(REF_POPULATION!$N$4:$N$13,\"TEST-POP-001\")<>1,\"키 없음·중복\",INDEX(REF_POPULATION!$AM$4:$AM$13,MATCH(\"TEST-POP-001\",REF_POPULATION!$N$4:$N$13,0))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "N20 임기에서 읽은 인물명",
+                      "userEnteredValue": {
+                        "stringValue": "N20 임기에서 읽은 인물명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "N20 임기에서 읽은 인물명"
+                      }
+                    },
+                    {
+                      "formattedValue": "시험 인물",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G22<>\"연결확인\",'01_설정'!G22,IF(COUNTIFS(REF_OFFICE_TERM!$A$4:$A$13,\"TEST-TERM-001\")<>1,\"키 없음·중복\",INDEX(REF_OFFICE_TERM!$AL$4:$AL$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시험 인물"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "조회 시점 재직 여부",
+                      "userEnteredValue": {
+                        "stringValue": "조회 시점 재직 여부"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "조회 시점 재직 여부"
+                      }
+                    },
+                    {
+                      "formattedValue": "TRUE",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G22<>\"연결확인\",'01_설정'!G22,IF(COUNTIFS(REF_OFFICE_TERM!$A$4:$A$13,\"TEST-TERM-001\")<>1,\"키 없음·중복\",IF(AND(ISNUMBER(INDEX(REF_OFFICE_TERM!$AO$4:$AO$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))),ISNUMBER(INDEX(REF_OFFICE_TERM!$AP$4:$AP$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0)))),AND(INDEX(REF_OFFICE_TERM!$C$4:$C$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))='CONFIG_조회조건'!A4,INDEX(REF_OFFICE_TERM!$D$4:$D$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))='CONFIG_조회조건'!B4,'CONFIG_조회조건'!F4*10000+'CONFIG_조회조건'!G4*100+'CONFIG_조회조건'!H4>=INDEX(REF_OFFICE_TERM!$AO$4:$AO$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0)),'CONFIG_조회조건'!F4*10000+'CONFIG_조회조건'!G4*100+'CONFIG_조회조건'!H4<INDEX(REF_OFFICE_TERM!$AP$4:$AP$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))),\"정밀도 부족\")))"
+                      },
+                      "effectiveValue": {
+                        "boolValue": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "N30 직접 인물명",
+                      "userEnteredValue": {
+                        "stringValue": "N30 직접 인물명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "N30 직접 인물명"
+                      }
+                    },
+                    {
+                      "formattedValue": "시험 인물",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G21<>\"연결확인\",'01_설정'!G21,IF(COUNTIFS(REF_PERSON!$A$4:$A$13,\"TEST-PERSON-001\")<>1,\"키 없음·중복\",INDEX(REF_PERSON!$B$4:$B$13,MATCH(\"TEST-PERSON-001\",REF_PERSON!$A$4:$A$13,0))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시험 인물"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "이름 일치",
+                      "userEnteredValue": {
+                        "stringValue": "이름 일치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "이름 일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "TRUE",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR('01_설정'!G22<>\"연결확인\",'01_설정'!G21<>\"연결확인\"),\"연결 미확인\",IF(OR(COUNTIFS(REF_OFFICE_TERM!$A$4:$A$13,\"TEST-TERM-001\")<>1,COUNTIFS(REF_PERSON!$A$4:$A$13,\"TEST-PERSON-001\")<>1),\"키 없음·중복\",IF(INDEX(REF_OFFICE_TERM!$AW$4:$AW$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))<>\"연결확인\",\"상위 연결 미확인\",IF(OR(B8=\"\",B10=\"\"),\"이름 없음\",B8=B10))))"
+                      },
+                      "effectiveValue": {
+                        "boolValue": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71005008,
+            "title": "REF_POPULATION",
+            "index": 8,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "region_id",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C20,'01_설정'!D20)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "time_raw",
+                      "effectiveValue": {
+                        "stringValue": "time_raw"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_status",
+                      "effectiveValue": {
+                        "stringValue": "value_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_numeric",
+                      "effectiveValue": {
+                        "stringValue": "value_numeric"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_min",
+                      "effectiveValue": {
+                        "stringValue": "value_min"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_max",
+                      "effectiveValue": {
+                        "stringValue": "value_max"
+                      }
+                    },
+                    {
+                      "formattedValue": "unit",
+                      "effectiveValue": {
+                        "stringValue": "unit"
+                      }
+                    },
+                    {
+                      "formattedValue": "population_definition",
+                      "effectiveValue": {
+                        "stringValue": "population_definition"
+                      }
+                    },
+                    {
+                      "formattedValue": "data_scope",
+                      "effectiveValue": {
+                        "stringValue": "data_scope"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_basis",
+                      "effectiveValue": {
+                        "stringValue": "value_basis"
+                      }
+                    },
+                    {
+                      "formattedValue": "setting_status",
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_id",
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "notes",
+                      "effectiveValue": {
+                        "stringValue": "notes"
+                      }
+                    },
+                    {
+                      "formattedValue": "record_id",
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "planet_scope_id",
+                      "effectiveValue": {
+                        "stringValue": "planet_scope_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "route",
+                      "effectiveValue": {
+                        "stringValue": "route"
+                      }
+                    },
+                    {
+                      "formattedValue": "era",
+                      "effectiveValue": {
+                        "stringValue": "era"
+                      }
+                    },
+                    {
+                      "formattedValue": "year",
+                      "effectiveValue": {
+                        "stringValue": "year"
+                      }
+                    },
+                    {
+                      "formattedValue": "aggregation_include",
+                      "effectiveValue": {
+                        "stringValue": "aggregation_include"
+                      }
+                    },
+                    {
+                      "formattedValue": "metric_id",
+                      "effectiveValue": {
+                        "stringValue": "metric_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "species_scope",
+                      "effectiveValue": {
+                        "stringValue": "species_scope"
+                      }
+                    },
+                    {
+                      "formattedValue": "calendar_revision",
+                      "effectiveValue": {
+                        "stringValue": "calendar_revision"
+                      }
+                    },
+                    {
+                      "formattedValue": "month",
+                      "effectiveValue": {
+                        "stringValue": "month"
+                      }
+                    },
+                    {
+                      "formattedValue": "day",
+                      "effectiveValue": {
+                        "stringValue": "day"
+                      }
+                    },
+                    {
+                      "formattedValue": "date_precision",
+                      "effectiveValue": {
+                        "stringValue": "date_precision"
+                      }
+                    },
+                    {
+                      "formattedValue": "start_era",
+                      "effectiveValue": {
+                        "stringValue": "start_era"
+                      }
+                    },
+                    {
+                      "formattedValue": "start_year",
+                      "effectiveValue": {
+                        "stringValue": "start_year"
+                      }
+                    },
+                    {
+                      "formattedValue": "start_month",
+                      "effectiveValue": {
+                        "stringValue": "start_month"
+                      }
+                    },
+                    {
+                      "formattedValue": "start_day",
+                      "effectiveValue": {
+                        "stringValue": "start_day"
+                      }
+                    },
+                    {
+                      "formattedValue": "start_precision",
+                      "effectiveValue": {
+                        "stringValue": "start_precision"
+                      }
+                    },
+                    {
+                      "formattedValue": "start_raw",
+                      "effectiveValue": {
+                        "stringValue": "start_raw"
+                      }
+                    },
+                    {
+                      "formattedValue": "end_era",
+                      "effectiveValue": {
+                        "stringValue": "end_era"
+                      }
+                    },
+                    {
+                      "formattedValue": "end_year",
+                      "effectiveValue": {
+                        "stringValue": "end_year"
+                      }
+                    },
+                    {
+                      "formattedValue": "end_month",
+                      "effectiveValue": {
+                        "stringValue": "end_month"
+                      }
+                    },
+                    {
+                      "formattedValue": "end_day",
+                      "effectiveValue": {
+                        "stringValue": "end_day"
+                      }
+                    },
+                    {
+                      "formattedValue": "end_precision",
+                      "effectiveValue": {
+                        "stringValue": "end_precision"
+                      }
+                    },
+                    {
+                      "formattedValue": "end_raw",
+                      "effectiveValue": {
+                        "stringValue": "end_raw"
+                      }
+                    },
+                    {
+                      "formattedValue": "end_status",
+                      "effectiveValue": {
+                        "stringValue": "end_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "legacy_locator",
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      }
+                    },
+                    {
+                      "formattedValue": "legacy_record_id",
+                      "effectiveValue": {
+                        "stringValue": "legacy_record_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "original_location",
+                      "effectiveValue": {
+                        "stringValue": "original_location"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_snapshot_id",
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "validation_status",
+                      "effectiveValue": {
+                        "stringValue": "validation_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_raw",
+                      "effectiveValue": {
+                        "stringValue": "value_raw"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_text",
+                      "effectiveValue": {
+                        "stringValue": "value_text"
+                      }
+                    },
+                    {
+                      "formattedValue": "generation_method",
+                      "effectiveValue": {
+                        "stringValue": "generation_method"
+                      }
+                    },
+                    {
+                      "formattedValue": "selection_status",
+                      "effectiveValue": {
+                        "stringValue": "selection_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "selection_reason",
+                      "effectiveValue": {
+                        "stringValue": "selection_reason"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_name",
+                      "effectiveValue": {
+                        "stringValue": "region_name"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_name",
+                      "effectiveValue": {
+                        "stringValue": "source_name"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_level",
+                      "effectiveValue": {
+                        "stringValue": "region_level"
+                      }
+                    },
+                    {
+                      "formattedValue": "observation_key",
+                      "effectiveValue": {
+                        "stringValue": "observation_key"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "TEST-REGION-001",
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-ERA 100",
+                      "effectiveValue": {
+                        "stringValue": "TEST-ERA 100"
+                      }
+                    },
+                    {
+                      "formattedValue": "값 있음",
+                      "effectiveValue": {
+                        "stringValue": "값 있음"
+                      }
+                    },
+                    {
+                      "formattedValue": "100",
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                      "formattedValue": "SF-01 동일조건 인구",
+                      "effectiveValue": {
+                        "stringValue": "SF-01 동일조건 인구"
+                      }
+                    },
+                    {},
+                    {},
+                    {
+                      "formattedValue": "초안",
+                      "effectiveValue": {
+                        "stringValue": "초안"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "합성 기술 시험값. 운영 파일에 이관 금지.",
+                      "effectiveValue": {
+                        "stringValue": "합성 기술 시험값. 운영 파일에 이관 금지."
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-POP-001",
+                      "effectiveValue": {
+                        "stringValue": "TEST-POP-001"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "TEST-A",
+                      "effectiveValue": {
+                        "stringValue": "TEST-A"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-ERA",
+                      "effectiveValue": {
+                        "stringValue": "TEST-ERA"
+                      }
+                    },
+                    {
+                      "formattedValue": "100",
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    },
+                    {
+                      "formattedValue": "TRUE",
+                      "effectiveValue": {
+                        "boolValue": true
+                      }
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    },
+                    {},
+                    {},
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                      "formattedValue": "시험 지역",
+                      "effectiveValue": {
+                        "stringValue": "시험 지역"
+                      }
+                    },
+                    {},
+                    {},
+                    {
+                      "formattedValue": "TEST-A|TEST-ERA|100|TEST-REGION-001",
+                      "effectiveValue": {
+                        "stringValue": "TEST-A|TEST-ERA|100|TEST-REGION-001"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

@@ -1,0 +1,1543 @@
+{
+  "file_code": "N70",
+  "spreadsheet_id": "1vTc4nWwOV0J2FLol5Ul6rpZC5JpY0vae_jZa9lygBT8",
+  "requests": [
+    {
+      "updateSpreadsheetProperties": {
+        "properties": {
+          "locale": "ko_KR",
+          "timeZone": "Asia/Seoul"
+        },
+        "fields": "locale,timeZone"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 215422551,
+          "gridProperties": {
+            "frozenRowCount": 0
+          }
+        },
+        "fields": "gridProperties.frozenRowCount"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 2044858960,
+          "gridProperties": {
+            "frozenRowCount": 0
+          }
+        },
+        "fields": "gridProperties.frozenRowCount"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 53113518,
+          "gridProperties": {
+            "frozenRowCount": 3
+          }
+        },
+        "fields": "gridProperties.frozenRowCount"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "T_N70_3b0cdeaddc65",
+          "range": {
+            "sheetId": 53113518,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 32
+          }
+        }
+      }
+    },
+    {
+      "addTable": {
+        "table": {
+          "tableId": "1547109516",
+          "name": "V2T_N70_675be3e4c2f04fde",
+          "range": {
+            "sheetId": 53113518,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 32
+          }
+        }
+      }
+    },
+    {
+      "updateTable": {
+        "table": {
+          "tableId": "1547109516",
+          "rowsProperties": {
+            "headerColorStyle": {
+              "rgbColor": {
+                "red": 0.94,
+                "green": 0.94,
+                "blue": 0.94
+              }
+            },
+            "firstBandColorStyle": {
+              "rgbColor": {
+                "red": 1,
+                "green": 1,
+                "blue": 1
+              }
+            },
+            "secondBandColorStyle": {
+              "rgbColor": {
+                "red": 1,
+                "green": 1,
+                "blue": 1
+              }
+            }
+          }
+        },
+        "fields": "rowsProperties"
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 53113518,
+            "startRowIndex": 0,
+            "endRowIndex": 3,
+            "startColumnIndex": 0,
+            "endColumnIndex": 32
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 53113518,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 32
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 1788721528,
+          "gridProperties": {
+            "frozenRowCount": 3
+          }
+        },
+        "fields": "gridProperties.frozenRowCount"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "T_N70_1a1b6c7b8ee7",
+          "range": {
+            "sheetId": 1788721528,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          }
+        }
+      }
+    },
+    {
+      "addTable": {
+        "table": {
+          "tableId": "1669240240",
+          "name": "V2T_N70_a828889d10889f62",
+          "range": {
+            "sheetId": 1788721528,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          }
+        }
+      }
+    },
+    {
+      "updateTable": {
+        "table": {
+          "tableId": "1669240240",
+          "rowsProperties": {
+            "headerColorStyle": {
+              "rgbColor": {
+                "red": 0.94,
+                "green": 0.94,
+                "blue": 0.94
+              }
+            },
+            "firstBandColorStyle": {
+              "rgbColor": {
+                "red": 1,
+                "green": 1,
+                "blue": 1
+              }
+            },
+            "secondBandColorStyle": {
+              "rgbColor": {
+                "red": 1,
+                "green": 1,
+                "blue": 1
+              }
+            }
+          }
+        },
+        "fields": "rowsProperties"
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 1788721528,
+            "startRowIndex": 0,
+            "endRowIndex": 3,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 1788721528,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 35
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 265096872,
+          "gridProperties": {
+            "frozenRowCount": 3
+          }
+        },
+        "fields": "gridProperties.frozenRowCount"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "T_N70_43895dad2aa3",
+          "range": {
+            "sheetId": 265096872,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 33
+          }
+        }
+      }
+    },
+    {
+      "addTable": {
+        "table": {
+          "tableId": "1040237181",
+          "name": "V2T_N70_d57feabd5511697e",
+          "range": {
+            "sheetId": 265096872,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 33
+          }
+        }
+      }
+    },
+    {
+      "updateTable": {
+        "table": {
+          "tableId": "1040237181",
+          "rowsProperties": {
+            "headerColorStyle": {
+              "rgbColor": {
+                "red": 0.94,
+                "green": 0.94,
+                "blue": 0.94
+              }
+            },
+            "firstBandColorStyle": {
+              "rgbColor": {
+                "red": 1,
+                "green": 1,
+                "blue": 1
+              }
+            },
+            "secondBandColorStyle": {
+              "rgbColor": {
+                "red": 1,
+                "green": 1,
+                "blue": 1
+              }
+            }
+          }
+        },
+        "fields": "rowsProperties"
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 265096872,
+            "startRowIndex": 0,
+            "endRowIndex": 3,
+            "startColumnIndex": 0,
+            "endColumnIndex": 33
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 265096872,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 33
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 1173964665,
+          "gridProperties": {
+            "frozenRowCount": 3
+          }
+        },
+        "fields": "gridProperties.frozenRowCount"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "T_N70_9ce03ec84ad2",
+          "range": {
+            "sheetId": 1173964665,
+            "startRowIndex": 2,
+            "endRowIndex": 253,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 1173964665,
+            "startRowIndex": 2,
+            "endRowIndex": 253,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 1173964665,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 38
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 1369415472,
+          "gridProperties": {
+            "frozenRowCount": 0
+          }
+        },
+        "fields": "gridProperties.frozenRowCount"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "PUB_NATION_RELIGION_RELATION_V2",
+          "range": {
+            "sheetId": 1369415472,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 34
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 1369415472,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 34
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 1369415472,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 34
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "PUB_RELIGIOUS_AFFAIRS_HISTORY_V2",
+          "range": {
+            "sheetId": 1369415472,
+            "startRowIndex": 59,
+            "endRowIndex": 110,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 1369415472,
+            "startRowIndex": 59,
+            "endRowIndex": 110,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 1369415472,
+          "startRowIndex": 59,
+          "endRowIndex": 60,
+          "startColumnIndex": 0,
+          "endColumnIndex": 35
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "PUB_RELIGIOUS_ORGANIZATION_V2",
+          "range": {
+            "sheetId": 1369415472,
+            "startRowIndex": 116,
+            "endRowIndex": 167,
+            "startColumnIndex": 0,
+            "endColumnIndex": 37
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 1369415472,
+            "startRowIndex": 116,
+            "endRowIndex": 167,
+            "startColumnIndex": 0,
+            "endColumnIndex": 37
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 1369415472,
+          "startRowIndex": 116,
+          "endRowIndex": 117,
+          "startColumnIndex": 0,
+          "endColumnIndex": 37
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "PUB_N70_CHECK_RESULTS_V2",
+          "range": {
+            "sheetId": 1369415472,
+            "startRowIndex": 173,
+            "endRowIndex": 424,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 1369415472,
+            "startRowIndex": 173,
+            "endRowIndex": 424,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 1369415472,
+          "startRowIndex": 173,
+          "endRowIndex": 174,
+          "startColumnIndex": 0,
+          "endColumnIndex": 38
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 800381484,
+          "gridProperties": {
+            "frozenRowCount": 0
+          }
+        },
+        "fields": "gridProperties.frozenRowCount"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "REF_PUB_CALENDAR_V2",
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 2,
+            "endRowIndex": 328,
+            "startColumnIndex": 0,
+            "endColumnIndex": 46
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 2,
+            "endRowIndex": 328,
+            "startColumnIndex": 0,
+            "endColumnIndex": 46
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 800381484,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 46
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "REF_PUB_CODEBOOK_V2",
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 334,
+            "endRowIndex": 660,
+            "startColumnIndex": 0,
+            "endColumnIndex": 19
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 334,
+            "endRowIndex": 660,
+            "startColumnIndex": 0,
+            "endColumnIndex": 19
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 800381484,
+          "startRowIndex": 334,
+          "endRowIndex": 335,
+          "startColumnIndex": 0,
+          "endColumnIndex": 19
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "REF_PUB_NATIONS_V2",
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 666,
+            "endRowIndex": 717,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 666,
+            "endRowIndex": 717,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 800381484,
+          "startRowIndex": 666,
+          "endRowIndex": 667,
+          "startColumnIndex": 0,
+          "endColumnIndex": 16
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "REF_PUB_PERSON_V2",
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 723,
+            "endRowIndex": 774,
+            "startColumnIndex": 0,
+            "endColumnIndex": 31
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 723,
+            "endRowIndex": 774,
+            "startColumnIndex": 0,
+            "endColumnIndex": 31
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 800381484,
+          "startRowIndex": 723,
+          "endRowIndex": 724,
+          "startColumnIndex": 0,
+          "endColumnIndex": 31
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "name": "REF_PUB_SOURCES_V2",
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 780,
+            "endRowIndex": 856,
+            "startColumnIndex": 0,
+            "endColumnIndex": 22
+          }
+        }
+      }
+    },
+    {
+      "addProtectedRange": {
+        "protectedRange": {
+          "range": {
+            "sheetId": 800381484,
+            "startRowIndex": 780,
+            "endRowIndex": 856,
+            "startColumnIndex": 0,
+            "endColumnIndex": 22
+          },
+          "warningOnly": true,
+          "description": "V2 헤더/출력 범위 · 구조 준비 · 계산/검증 미실행"
+        }
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 800381484,
+          "startRowIndex": 780,
+          "endRowIndex": 781,
+          "startColumnIndex": 0,
+          "endColumnIndex": 22
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "foregroundColorStyle": {
+                "rgbColor": {
+                  "red": 0,
+                  "green": 0,
+                  "blue": 0
+                }
+              },
+              "bold": true
+            }
+          }
+        },
+        "fields": "userEnteredFormat.textFormat"
+      }
+    },
+    {
+      "updateCells": {
+        "start": {
+          "sheetId": 215422551,
+          "rowIndex": 20,
+          "columnIndex": 0
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "실제 V2 파일 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "1vTc4nWwOV0J2FLol5Ul6rpZC5JpY0vae_jZa9lygBT8"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "네이티브 구조"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "입력 표 3개·이름 범위·헤더/출력 경고 보호 준비. 자료행 0. 참조·수식·시험 미완료."
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    }
+  ],
+  "header_ranges": [
+    "'IN_국가종교관계'!A3:AF3",
+    "'IN_종교조직'!A3:AI3",
+    "'IN_종무이력'!A3:AG3",
+    "'CHECK_검증01'!A3:AL3",
+    "'PUB_제공01'!A3:AH3",
+    "'PUB_제공01'!A60:AI60",
+    "'PUB_제공01'!A117:AK117",
+    "'PUB_제공01'!A174:AL174",
+    "'REF_참조01'!A3:AT3",
+    "'REF_참조01'!A335:S335",
+    "'REF_참조01'!A667:P667",
+    "'REF_참조01'!A724:AE724",
+    "'REF_참조01'!A781:V781"
+  ],
+  "expected_headers": [
+    {
+      "sheetId": 53113518,
+      "row": 3,
+      "values": [
+        "relation_id",
+        "nation_id",
+        "route",
+        "religion_id",
+        "denomination_id",
+        "legal_status_code",
+        "relation_type",
+        "scope_definition",
+        "legal_basis",
+        "legacy_locator",
+        "source_snapshot_id",
+        "schema_version",
+        "release_id",
+        "value_status",
+        "generation_method",
+        "adoption_status",
+        "setting_status",
+        "source_id",
+        "source_locator",
+        "note",
+        "start_era",
+        "start_year",
+        "start_month",
+        "start_day",
+        "start_precision",
+        "end_era",
+        "end_year",
+        "end_month",
+        "end_day",
+        "end_precision",
+        "end_status",
+        "calendar_revision"
+      ]
+    },
+    {
+      "sheetId": 1788721528,
+      "row": 3,
+      "values": [
+        "religious_org_id",
+        "nation_id",
+        "route",
+        "religion_id",
+        "denomination_id",
+        "name_ko",
+        "name_elun",
+        "name_other",
+        "legal_entity_kind",
+        "parent_religious_org_id",
+        "headquarters_region_id",
+        "legal_basis",
+        "legacy_locator",
+        "source_snapshot_id",
+        "schema_version",
+        "release_id",
+        "value_status",
+        "generation_method",
+        "adoption_status",
+        "setting_status",
+        "source_id",
+        "source_locator",
+        "note",
+        "start_era",
+        "start_year",
+        "start_month",
+        "start_day",
+        "start_precision",
+        "end_era",
+        "end_year",
+        "end_month",
+        "end_day",
+        "end_precision",
+        "end_status",
+        "calendar_revision"
+      ]
+    },
+    {
+      "sheetId": 265096872,
+      "row": 3,
+      "values": [
+        "affairs_record_id",
+        "nation_id",
+        "route",
+        "religious_org_id",
+        "person_id",
+        "affairs_role_name_raw",
+        "affairs_relation_type",
+        "political_office_id",
+        "political_term_id",
+        "legal_basis",
+        "legacy_locator",
+        "source_snapshot_id",
+        "schema_version",
+        "release_id",
+        "value_status",
+        "generation_method",
+        "adoption_status",
+        "setting_status",
+        "source_id",
+        "source_locator",
+        "note",
+        "start_era",
+        "start_year",
+        "start_month",
+        "start_day",
+        "start_precision",
+        "end_era",
+        "end_year",
+        "end_month",
+        "end_day",
+        "end_precision",
+        "end_status",
+        "calendar_revision"
+      ]
+    },
+    {
+      "sheetId": 1173964665,
+      "row": 3,
+      "values": [
+        "owner_file_code",
+        "run_id",
+        "check_id",
+        "result_id",
+        "record_id",
+        "subject_kind",
+        "source_table",
+        "source_field",
+        "source_range",
+        "source_record_link",
+        "subject_count",
+        "actual",
+        "expected",
+        "value_type",
+        "unit",
+        "comparison_rule",
+        "status",
+        "execution_status",
+        "severity",
+        "issue_kind",
+        "message",
+        "checked_at",
+        "started_at",
+        "evidence",
+        "source_revision",
+        "schema_version",
+        "source_schema_version",
+        "release_id",
+        "dependency_status",
+        "dependency_dataset_ids",
+        "route",
+        "era",
+        "scope_json",
+        "test_ids",
+        "is_test_data",
+        "test_run_id",
+        "delegated_check_owner",
+        "correlation_id"
+      ]
+    },
+    {
+      "sheetId": 1369415472,
+      "row": 3,
+      "values": [
+        "relation_id",
+        "nation_id",
+        "route",
+        "religion_id",
+        "denomination_id",
+        "legal_status_code",
+        "relation_type",
+        "scope_definition",
+        "legal_basis",
+        "legacy_locator",
+        "source_snapshot_id",
+        "schema_version",
+        "release_id",
+        "value_status",
+        "generation_method",
+        "adoption_status",
+        "setting_status",
+        "source_id",
+        "source_locator",
+        "note",
+        "start_era",
+        "start_year",
+        "start_month",
+        "start_day",
+        "start_precision",
+        "end_era",
+        "end_year",
+        "end_month",
+        "end_day",
+        "end_precision",
+        "end_status",
+        "calendar_revision",
+        "validation_status",
+        "connection_status"
+      ]
+    },
+    {
+      "sheetId": 1369415472,
+      "row": 60,
+      "values": [
+        "affairs_record_id",
+        "nation_id",
+        "route",
+        "religious_org_id",
+        "person_id",
+        "affairs_role_name_raw",
+        "affairs_relation_type",
+        "political_office_id",
+        "political_term_id",
+        "legal_basis",
+        "legacy_locator",
+        "source_snapshot_id",
+        "schema_version",
+        "release_id",
+        "value_status",
+        "generation_method",
+        "adoption_status",
+        "setting_status",
+        "source_id",
+        "source_locator",
+        "note",
+        "start_era",
+        "start_year",
+        "start_month",
+        "start_day",
+        "start_precision",
+        "end_era",
+        "end_year",
+        "end_month",
+        "end_day",
+        "end_precision",
+        "end_status",
+        "calendar_revision",
+        "validation_status",
+        "connection_status"
+      ]
+    },
+    {
+      "sheetId": 1369415472,
+      "row": 117,
+      "values": [
+        "religious_org_id",
+        "nation_id",
+        "route",
+        "religion_id",
+        "denomination_id",
+        "name_ko",
+        "name_elun",
+        "name_other",
+        "legal_entity_kind",
+        "parent_religious_org_id",
+        "headquarters_region_id",
+        "legal_basis",
+        "legacy_locator",
+        "source_snapshot_id",
+        "schema_version",
+        "release_id",
+        "value_status",
+        "generation_method",
+        "adoption_status",
+        "setting_status",
+        "source_id",
+        "source_locator",
+        "note",
+        "start_era",
+        "start_year",
+        "start_month",
+        "start_day",
+        "start_precision",
+        "end_era",
+        "end_year",
+        "end_month",
+        "end_day",
+        "end_precision",
+        "end_status",
+        "calendar_revision",
+        "validation_status",
+        "connection_status"
+      ]
+    },
+    {
+      "sheetId": 1369415472,
+      "row": 174,
+      "values": [
+        "owner_file_code",
+        "run_id",
+        "check_id",
+        "result_id",
+        "record_id",
+        "subject_kind",
+        "source_table",
+        "source_field",
+        "source_range",
+        "source_record_link",
+        "subject_count",
+        "actual",
+        "expected",
+        "value_type",
+        "unit",
+        "comparison_rule",
+        "status",
+        "execution_status",
+        "severity",
+        "issue_kind",
+        "message",
+        "checked_at",
+        "started_at",
+        "evidence",
+        "source_revision",
+        "schema_version",
+        "source_schema_version",
+        "release_id",
+        "dependency_status",
+        "dependency_dataset_ids",
+        "route",
+        "era",
+        "scope_json",
+        "test_ids",
+        "is_test_data",
+        "test_run_id",
+        "delegated_check_owner",
+        "correlation_id"
+      ]
+    },
+    {
+      "sheetId": 800381484,
+      "row": 3,
+      "values": [
+        "record_kind",
+        "record_id",
+        "calendar_id",
+        "calendar_revision_id",
+        "calendar_name",
+        "months_per_year",
+        "days_per_month",
+        "days_per_year",
+        "civil_day_seconds",
+        "correction_seconds",
+        "correction_after_month",
+        "correction_after_day",
+        "correction_is_date",
+        "source_standard_revision_ids",
+        "calendar_rule_raw",
+        "era_mapping_id",
+        "from_era",
+        "from_year",
+        "to_era",
+        "to_year",
+        "mapping_type",
+        "approval_status",
+        "era_edition",
+        "legacy_era_description",
+        "current_era_description",
+        "policy_id",
+        "policy_revision_id",
+        "policy_name",
+        "policy_raw",
+        "annual_boundary_rule_raw",
+        "unknown_end_rule_raw",
+        "exact_boundary_rule_raw",
+        "annual_point_difference_raw",
+        "setting_status",
+        "source_namespace",
+        "source_id",
+        "owner_file_code",
+        "owner_spreadsheet_id",
+        "schema_version",
+        "release_id",
+        "source_revision",
+        "validation_status",
+        "checked_at",
+        "record_count",
+        "coverage",
+        "value_status"
+      ]
+    },
+    {
+      "sheetId": 800381484,
+      "row": 335,
+      "values": [
+        "group_code",
+        "stored_code",
+        "display_name",
+        "definition",
+        "name_elun",
+        "name_other",
+        "usage_status",
+        "notes",
+        "owner_file_code",
+        "owner_spreadsheet_id",
+        "schema_version",
+        "release_id",
+        "source_revision",
+        "validation_status",
+        "checked_at",
+        "record_count",
+        "coverage",
+        "value_status",
+        "setting_status"
+      ]
+    },
+    {
+      "sheetId": 800381484,
+      "row": 667,
+      "values": [
+        "nation_id",
+        "neutral_name",
+        "sort_order",
+        "owner_file_code",
+        "setting_status",
+        "source_namespace",
+        "source_id",
+        "owner_spreadsheet_id",
+        "schema_version",
+        "release_id",
+        "source_revision",
+        "validation_status",
+        "checked_at",
+        "record_count",
+        "coverage",
+        "value_status"
+      ]
+    },
+    {
+      "sheetId": 800381484,
+      "row": 724,
+      "values": [
+        "person_id",
+        "name_ko",
+        "name_elun",
+        "name_other",
+        "birth_era",
+        "birth_year",
+        "birth_month",
+        "birth_day",
+        "death_era",
+        "death_year",
+        "death_month",
+        "death_day",
+        "person_classification_raw",
+        "person_description_raw",
+        "인물 상태",
+        "setting_status",
+        "source_id",
+        "source_locator",
+        "note",
+        "legacy_locator",
+        "source_snapshot_id",
+        "schema_version",
+        "release_id",
+        "value_status",
+        "generation_method",
+        "adoption_status",
+        "birth_precision",
+        "death_precision",
+        "calendar_revision",
+        "validation_status",
+        "connection_status"
+      ]
+    },
+    {
+      "sheetId": 800381484,
+      "row": 781,
+      "values": [
+        "source_namespace",
+        "source_id",
+        "source_title",
+        "source_kind",
+        "edition_raw",
+        "original_location",
+        "url",
+        "canon_status",
+        "modified_at_raw",
+        "usage_scope",
+        "notes",
+        "owner_file_code",
+        "owner_spreadsheet_id",
+        "schema_version",
+        "release_id",
+        "source_revision",
+        "validation_status",
+        "checked_at",
+        "record_count",
+        "coverage",
+        "value_status",
+        "setting_status"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "1547109516",
+      "name": "V2T_N70_675be3e4c2f04fde",
+      "range": {
+        "sheetId": 53113518,
+        "startRowIndex": 2,
+        "endRowIndex": 53,
+        "startColumnIndex": 0,
+        "endColumnIndex": 32
+      }
+    },
+    {
+      "id": "1669240240",
+      "name": "V2T_N70_a828889d10889f62",
+      "range": {
+        "sheetId": 1788721528,
+        "startRowIndex": 2,
+        "endRowIndex": 53,
+        "startColumnIndex": 0,
+        "endColumnIndex": 35
+      }
+    },
+    {
+      "id": "1040237181",
+      "name": "V2T_N70_d57feabd5511697e",
+      "range": {
+        "sheetId": 265096872,
+        "startRowIndex": 2,
+        "endRowIndex": 53,
+        "startColumnIndex": 0,
+        "endColumnIndex": 33
+      }
+    }
+  ],
+  "notes": "New-domain native finish only. No world data/formulas. Unspecified column types preserve blank inputs."
+}

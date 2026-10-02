@@ -1,0 +1,1772 @@
+{
+  "spreadsheet_id": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+  "requests": [
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001002,
+          "startRowIndex": 0,
+          "endRowIndex": 1,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역목록 · 전용 TEST"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001002,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 13
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "정렬 / 순서"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역명 / 한글 표기"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "로마자 표기"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "엘룬 표기"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역 분류 / 지역 단계"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역 구분자 / 지역 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "세부 분류 / 지역 등급"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역 분류"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "HEX / HEX 값"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "관리 / 상태"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "출처 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 스냅샷 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 위치"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "sort_order"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "name_ko"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "name_roman"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "name_elun"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_level"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_grade"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_class"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "hex_color"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "setting_status"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "source_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "source_snapshot_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "legacy_locator"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "namedRangeId": "T_TEST_R10_dc9b0a7ca33a",
+          "name": "T_TEST_R10_dc9b0a7ca33a",
+          "range": {
+            "sheetId": 71001002,
+            "startRowIndex": 2,
+            "endRowIndex": 13,
+            "startColumnIndex": 0,
+            "endColumnIndex": 13
+          }
+        }
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001003,
+          "startRowIndex": 0,
+          "endRowIndex": 1,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역목록_조회계산 · 전용 TEST"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001003,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 4
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "컬러칩"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 위치"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 스냅샷 ID"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "color_chip"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "legacy_locator"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "source_snapshot_id"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "namedRangeId": "T_TEST_R10_600dfea500c6",
+          "name": "T_TEST_R10_600dfea500c6",
+          "range": {
+            "sheetId": 71001003,
+            "startRowIndex": 2,
+            "endRowIndex": 13,
+            "startColumnIndex": 0,
+            "endColumnIndex": 4
+          }
+        }
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001004,
+          "startRowIndex": 0,
+          "endRowIndex": 1,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "PUB_REGIONS_V2 · 전용 TEST"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001004,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 14
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "정렬 / 순서"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역명 / 한글 표기"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "로마자 표기"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "엘룬 표기"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역 분류 / 지역 단계"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역 구분자 / 지역 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "세부 분류 / 지역 등급"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역 분류"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "HEX / HEX 값"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "관리 / 상태"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "출처 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 스냅샷 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 위치"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "컬러칩"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "sort_order"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "name_ko"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "name_roman"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "name_elun"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_level"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_grade"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "region_class"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "hex_color"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "setting_status"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "source_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "source_snapshot_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "legacy_locator"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "color_chip"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "namedRangeId": "PUB_REGIONS_V2",
+          "name": "PUB_REGIONS_V2",
+          "range": {
+            "sheetId": 71001004,
+            "startRowIndex": 2,
+            "endRowIndex": 13,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          }
+        }
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001000,
+          "startRowIndex": 0,
+          "endRowIndex": 8,
+          "startColumnIndex": 0,
+          "endColumnIndex": 2
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "소형 연결시험"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-R10"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "자료 성격"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "합성 기술시험값. 세계관 설정 및 운영16파일과 분리."
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "실행 상태"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "시험 미실행. API와 UI 읽기로 기대값까지 검증한 뒤 판정."
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 단일화"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "N30 인물 → N20 임기 → H90. N30은 N20을 읽지 않음."
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "연결 승인"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "REF 탭의 A3에서 접근 허용이 필요하면 실제 TEST 공급자 ID를 확인한 후 허용."
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "코드 근거"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "값 있음: REG-V1 온라인 인구 D열 검증옵션. TEST 코드북에만 명시해 사용. 운영 채택과 구별."
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "오류 처리"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "REF 원오류 보존. 0·자료없음·연결실패·스키마 불일치·갱신 대기를 구별."
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "범위"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "초기 자료행4:13. 다음 경계행14. 확장시 입력·계산·검증·제공·소비를 동시 갱신."
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 0,
+          "endRowIndex": 7,
+          "startColumnIndex": 0,
+          "endColumnIndex": 2
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "시험 설정"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "값"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "파일 코드"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-R10"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "범위"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST 전용"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "실제 파일 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "시험 실행 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-SF-20261002-01"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 판본"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST.REV.1"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "자료 용량"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "numberValue": 10
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 18,
+          "endRowIndex": 19,
+          "startColumnIndex": 0,
+          "endColumnIndex": 14
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "제공자료"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "공급 파일"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "실제 공급자 ID"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "수신 범위"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "기대 스키마"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "읽은 스키마"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "연결 상태"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "공급 건수"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "수신 건수"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "건수 비교"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "기대 판본"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "읽은 판본"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "갱신 상태"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "권한 관측"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001005,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 4
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "원자료표"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "현재 건수"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "다음 행 초과"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "스키마 서명"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001006,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 2
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "결과"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001002,
+          "startRowIndex": 3,
+          "endRowIndex": 4,
+          "startColumnIndex": 0,
+          "endColumnIndex": 13
+        },
+        "rows": [
+          {
+            "values": [
+              {},
+              {
+                "userEnteredValue": {
+                  "stringValue": "시험 지역"
+                }
+              },
+              {},
+              {},
+              {},
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-REGION-001"
+                }
+              },
+              {},
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-REGION-CLASS"
+                }
+              },
+              {},
+              {
+                "userEnteredValue": {
+                  "stringValue": "초안"
+                }
+              },
+              {},
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-SF-20261002-01"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-SF-20261002-01"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001007,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 5
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "dataset_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "source_revision"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "record_count"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "schema_signature"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "run_id"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "addNamedRange": {
+        "namedRange": {
+          "namedRangeId": "META_PUB_REGIONS_V2",
+          "name": "META_PUB_REGIONS_V2",
+          "range": {
+            "sheetId": 71001007,
+            "startRowIndex": 2,
+            "endRowIndex": 4,
+            "startColumnIndex": 0,
+            "endColumnIndex": 5
+          }
+        }
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 19,
+          "endRowIndex": 20,
+          "startColumnIndex": 0,
+          "endColumnIndex": 5
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "PUB_CODEBOOK_V2"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-C00"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "PUB_CODEBOOK_V2"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 19,
+          "endRowIndex": 20,
+          "startColumnIndex": 13,
+          "endColumnIndex": 14
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "미확인"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001008,
+          "startRowIndex": 0,
+          "endRowIndex": 1,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST-C00 PUB_CODEBOOK_V2 · 원오류 보존"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001008,
+          "startRowIndex": 1,
+          "endRowIndex": 2,
+          "startColumnIndex": 0,
+          "endColumnIndex": 19
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · group_code"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · stored_code"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · display_name"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · definition"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "엘룬 이름"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · name_other"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · usage_status"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "비고"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "소유 파일 코드"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · owner_spreadsheet_id"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "스키마 판본"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "제공 판본"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "원본 판본"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · validation_status"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "검사 시각"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · record_count"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "포괄 범위"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "항목 · value_status"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "설정 상태"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001000,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001000,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001000,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001001,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001002,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001002,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001002,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001003,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001003,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001003,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001004,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001004,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001004,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001005,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001005,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001005,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001006,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001006,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001006,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001007,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001007,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001007,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001008,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001008,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001008,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001009,
+          "startRowIndex": 0,
+          "endRowIndex": 30,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "textFormat": {
+              "fontFamily": "Arial",
+              "fontSize": 10
+            },
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat.textFormat,userEnteredFormat.verticalAlignment,userEnteredFormat.wrapStrategy"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 71001009,
+          "startRowIndex": 1,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 80
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.95,
+              "green": 0.96,
+              "blue": 0.96
+            }
+          }
+        },
+        "fields": "userEnteredFormat.backgroundColor"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 71001009,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 80
+        },
+        "properties": {
+          "pixelSize": 170
+        },
+        "fields": "pixelSize"
+      }
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+﻿#EXA = {
+#	color = { 39 84 135 } #The colour of this country on the map.
+#
+#	country_type = recognized #See common\country_types
+#	recognized = 승인 / unrecognized = 비승인 / decentralized = 분권화
+#
+#	tier = kingdom #See common\country_ranks
+#	principality = 공작 / kingdom = 왕국 / empire = 제국
+#
+#	cultures = { examplish } #What are their primary culture/s - you can set multiple.
+#	capital = STATE_EXAMPLE #Which state holds this nation's default capital
+#}
+#####################
+
+ELX = { #엘리시움 신성제국 연방
+	color = { 83 247 252 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { ilrenxhiel }
+	capital = STATE_RARHELIYA
+}
+
+AXT = { #아스텔란트 왕국
+	color = { 34 122 49 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { ilrenxhiel }
+	capital = STATE_ANXHTELRANTH
+}
+
+ISV = { #이스벨리야 공국
+	color = { 154 238 156 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { ilrenxhiel }
+	capital = STATE_ISVELRIYA
+}
+
+ION = { #이오니트 공국
+	color = { 226 80 135 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { ilrenxhiel }
+	capital = STATE_IOHNITH
+}
+
+PIY = { #피예르토 왕국
+	color = { 43 92 136 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { ilrenxhiel }
+	capital = STATE_PIYERHTO
+}
+
+NIX = { #니스첼란트 왕국
+	color = { 122 34 67 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { ilrenxhiel }
+	capital = STATE_NIXHTSELRANTH
+}
+
+EHE = { #에헬라시야 연방왕국
+	color = { 86 197 107 }
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { ilrenxhiel }
+	capital = STATE_RIOXHUTATH
+}
+
+ASL = { #아슬라야 왕국
+	color = { 167 217 114 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { ilrenxhiel }
+	capital = STATE_RIXH
+}
+
+KIY = { #키예펠로츠 제국
+	color = { 234 130 144 }
+	country_type = recognized
+	tier = empire
+	cultures = { aspelriel }
+	capital = STATE_KIYEFELROTS
+}
+
+APA = { #아파첼라스 제국 연방
+	color = { 199 219 105 }
+	country_type = recognized
+	tier = empire
+	cultures = { aspelriel }
+	capital = STATE_AKAVANAH
+}
+
+SPE = { #스펠리츠 제국
+	color = { 204 40 40 }
+	country_type = recognized
+	tier = empire
+	cultures = { aspelriel }
+	capital = STATE_SPELRITS
+}
+
+GRI = { #그리엔드 공화국
+	color = { 20 21 184 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { griaziel }
+	capital = STATE_GRIENDH
+}
+
+RAF = { #라프첼란트 왕국
+	color = { 77 63 237 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { ilrenxhiel }
+	capital = STATE_AFANXHINIAH
+}
+
+RIX = { #리스란트 왕국
+	color = { 162 94 163 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { griaziel }
+	capital = STATE_RIXHRANTH
+}
+
+KRP = { #카르펠라니아 왕국
+	color = { 158 131 175 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { aspelriel }
+	capital = STATE_KARFELRANIAH
+}
+
+HAP = { #하플라츠 왕국
+	color = { 36 93 194 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { aspelriel }
+	capital = STATE_HAPLRATS
+}
+
+RXT = { #류스텔라니아 연합왕국
+	color = { 217 170 114 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { ilrenxhiel }
+	capital = STATE_RYUXHTELRONTH
+}
+
+OHE = { #오헬리야 공화국
+	color = { 175 131 156 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { dyuelroniel }
+	captial = STATE_AHELRONIAH
+}
+
+RHZ = { #리히즐레니아 공화국
+	color = { 235 244 135 }
+	country_type = recognized
+	tier = kingdom
+	cultures = { dyuelroniel }
+	capital = STATE_RIHIZERTH
+}
+
+RPT = { #레판트 연방공화국
+	color = { 108 109 168 }
+	country_tpye = recognized
+	tier = kingdom
+	cultures = { dyuelroniel }
+	capital = STATE_REFANTH
+}
+
+AMR = { #아마르니아 왕국
+	color = { 217 209 114 }
+	country_tpye = recognized
+	tier = kingdom
+	cultures = { ilrenxhiel }
+	captial = STATE_AMARHNIAH
+}
+
+#대한-라이오니온 지역
+
+KRR = { 대한-라이오니온 연방
+	color = { 151 196 209 }
+	country_type = recognized
+	tier = empire
+	cultures = { korean ilrenxhiel }
+	capital = STATE_SHINSEOUL
+}
+
+
+#그랑블루츠 지역
+
+TER = { #테르체아 라이반국
+	color = { 171 89 39 }
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { grazunta }
+	capital = STATE_TERHCZEAH
+}
+
+VEX = { #베스젤라츠 부족연합
+	color = { 229 236 47 }
+	country_type = unrecognized
+	tier = principality
+	cultures = { grazunta }
+	capital = STATE_VEXHZELATS
+}
+
+GRN = { #그랑블루츠 야만인 지대
+	color = { 135 46 99 }
+	country_type = decentralized
+	tier = principality
+	cultures = { grazunta }
+	capital = STATE_DONIAH_GRANGBLRUTS
+}
+
+#분권화 플레이 불가능 국가
+
+IMS = { #중앙 세나스 미수복 지대
+	color = { 1 17 156 }
+	country_type = decentralized
+	cultures = { ilrenxhiel }
+	capital = STATE_SHUTHFAL
+}
+
+VBA = { #고원 서부 미수복 지대
+	color = { 0 10 41 }
+	country_type = decentralized
+	cultures = { ilrenxhiel }
+	capital = STATE_AHALRANENTH
+}
+
+EBA = { #고원 동부 미수복 지대
+	color = { 68 125 44 }
+	country_type = decentralized
+	cultures = { ilrenxhiel }
+	capital = STATE_RUTORINVERKH
+}

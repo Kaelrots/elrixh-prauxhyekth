@@ -1,0 +1,102 @@
+{
+  "status": "NATIVE_INPUT_CELL_COMPARISON_PASS",
+  "checked_at": "2026-10-02T09:37:15.798888+00:00",
+  "counts": {
+    "expected_cells": 6313,
+    "matched_user_values": 6313,
+    "matched_effective_values": 6313,
+    "matched_notes": 6313,
+    "untouched_cells_compared": 6782,
+    "headers_compared": 144
+  },
+  "files": {
+    "C00": {
+      "status": "NATIVE_CELL_READBACK_PASS",
+      "counts": {
+        "expected_cells": 3581,
+        "matched_user_values": 3581,
+        "matched_effective_values": 3581,
+        "matched_notes": 3581,
+        "untouched_cells_compared": 2673,
+        "headers_compared": 95
+      },
+      "errors": [],
+      "table_counts": {
+        "C00.코드북": {
+          "rows": 234,
+          "cells": 1690,
+          "null_cells_excluded": 884
+        },
+        "C00.출처레지스트리": {
+          "rows": 29,
+          "cells": 342,
+          "null_cells_excluded": 64
+        },
+        "C00.공통기준": {
+          "rows": 101,
+          "cells": 303,
+          "null_cells_excluded": 202
+        },
+        "C00.국가식별목록": {
+          "rows": 1,
+          "cells": 5,
+          "null_cells_excluded": 6
+        },
+        "C00.기준개정이력": {
+          "rows": 97,
+          "cells": 1161,
+          "null_cells_excluded": 1458
+        },
+        "C00.언어분류": {
+          "rows": 8,
+          "cells": 74,
+          "null_cells_excluded": 54
+        },
+        "C00.개체별칭": {
+          "rows": 1,
+          "cells": 6,
+          "null_cells_excluded": 5
+        }
+      },
+      "source_prewrite_sha256": "1f0e81031651c2474f189e92d3c2d6214578bb2d61076be49f2767ed10762e02",
+      "postwrite_sha256": "46e809fc99686eec0922a49cdd120a2cf4fdf0a3bf4761ae893f8a9cf6695fde",
+      "limitations": [
+        "This verifies literal values/effective values/notes and untouched null fields, not calculation or 84 operational tests.",
+        "Formatting/validation is not changed by userEnteredValue,note requests; visual inspection is separately recorded."
+      ]
+    },
+    "R10": {
+      "status": "NATIVE_CELL_READBACK_PASS",
+      "counts": {
+        "expected_cells": 2732,
+        "matched_user_values": 2732,
+        "matched_effective_values": 2732,
+        "matched_notes": 2732,
+        "untouched_cells_compared": 4109,
+        "headers_compared": 49
+      },
+      "errors": [],
+      "table_counts": {
+        "R10.지역목록": {
+          "rows": 133,
+          "cells": 1596,
+          "null_cells_excluded": 133
+        },
+        "R10.지역관계": {
+          "rows": 142,
+          "cells": 1136,
+          "null_cells_excluded": 3976
+        }
+      },
+      "source_prewrite_sha256": "24bca0682f489b99d42283d0ef4061207e2e289d204682d84bd6cf257e9e3040",
+      "postwrite_sha256": "c9c0653e3769adb10c68d99c6d56245b9aeb37541f2cde4472b953a7203b0c1c",
+      "limitations": [
+        "This verifies literal values/effective values/notes and untouched null fields, not calculation or 84 operational tests.",
+        "Formatting/validation is not changed by userEnteredValue,note requests; visual inspection is separately recorded."
+      ]
+    }
+  },
+  "online_operational_tests_passed": 0,
+  "test_checklist_status": "84개 시험표 자동 변경 없음",
+  "runtime_scope": "C00/R10 literal migration cell verification only"
+}

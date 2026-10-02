@@ -1,0 +1,87 @@
+{
+  "pass": 20,
+  "fail": 0,
+  "scope": "synthetic node/edge data; no live vault mutation or full-vault compatibility claim",
+  "results": [
+    {
+      "name": "유효 DAG·선택 weight·입력 불변",
+      "result": "PASS"
+    },
+    {
+      "name": "명칭 변경은 ID 관계에 영향 없음",
+      "result": "PASS"
+    },
+    {
+      "name": "중복 노드 ID",
+      "result": "PASS"
+    },
+    {
+      "name": "미존재 노드",
+      "result": "PASS"
+    },
+    {
+      "name": "자기참조",
+      "result": "PASS"
+    },
+    {
+      "name": "임의 관계 유형",
+      "result": "PASS"
+    },
+    {
+      "name": "중복 관계 ID",
+      "result": "PASS"
+    },
+    {
+      "name": "동일 활성 관계 중복",
+      "result": "PASS"
+    },
+    {
+      "name": "방향 없는 관계의 역방향 중복",
+      "result": "PASS"
+    },
+    {
+      "name": "잘못된 weight",
+      "result": "PASS"
+    },
+    {
+      "name": "양끝 weight",
+      "result": "PASS"
+    },
+    {
+      "name": "폐기 노드의 활성 관계",
+      "result": "PASS"
+    },
+    {
+      "name": "폐기 관계는 활성 충돌에 포함 안 함",
+      "result": "PASS"
+    },
+    {
+      "name": "직접·간접 mutex 선행 충돌",
+      "result": "PASS"
+    },
+    {
+      "name": "서로 다른 자연어 유효 시대는 검토 경고",
+      "result": "PASS"
+    },
+    {
+      "name": "선행 순환",
+      "result": "PASS"
+    },
+    {
+      "name": "synergy 순환은 선행 순환이 아님",
+      "result": "PASS"
+    },
+    {
+      "name": "교차시대 이유·근거 필수",
+      "result": "PASS"
+    },
+    {
+      "name": "노드·엣지 시대 불일치",
+      "result": "PASS"
+    },
+    {
+      "name": "잘못된 입력과 상태",
+      "result": "PASS"
+    }
+  ]
+}

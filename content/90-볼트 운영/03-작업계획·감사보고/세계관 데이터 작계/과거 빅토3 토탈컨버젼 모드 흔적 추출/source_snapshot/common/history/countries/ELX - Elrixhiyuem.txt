@@ -1,0 +1,60 @@
+﻿COUNTRIES = {
+	c:ELX = {
+		set_next_election_date = 1836.7.4
+
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+		
+		effect_starting_technology_tier_1_tech = yes
+
+		add_technology_researched = law_enforcement
+
+		set_tax_level = medium
+		
+		#법률: 권력 구조
+		activate_law = law_type:law_monarchy #통치 원칙: 군주정
+		activate_law = law_type:law_wealth_voting #권력 분배: 금권선거권
+		activate_law = law_type:law_national_supremacy #시민권: 자문화 중심주의
+		activate_law = law_type:law_freedom_of_conscience #교회와 국가: 신앙의 자유
+		activate_law = law_type:law_appointed_bureaucrats #관료제: 임명 관료제
+		activate_law = law_type:law_national_militia #군대 모범법: 국가 민병대
+		activate_law = law_type:law_guaranteed_liberties #보안법: 자유 보장
+		
+		#법률: 경제
+		activate_law = law_type:law_interventionism #경제 체제: 간섭주의
+		activate_law = law_type:law_free_trade #무역 정책: 자유무역
+		activate_law = law_type:law_proportional_taxation #조세: 비례 조세
+		activate_law = law_type:law_colonial_resettlement #식민화: 식민지 이주
+		activate_law = law_type:law_dedicated_police #경찰 조직: 전문 경찰
+		activate_law = law_type:law_public_schools #교육 체제: 공립 학교
+		activate_law = law_type:law_public_health_insurance #보건 체제: 국립건강보험
+		
+		#법률: 인권
+		activate_law = law_type:law_protected_speech #표현의 자유: 표현 보장
+		activate_law = law_type:law_regulatory_bodies #노동권: 규제 기관
+		activate_law = law_type:law_compulsory_primary_school #아동권: 초등 교육 의무화
+		activate_law = law_type:law_women_own_property #여성권: 여성의 재산권
+		activate_law = law_type:law_poor_laws #복지: 구빈법
+		activate_law = law_type:law_no_migration_controls #이주: 이주 통제 철폐
+		activate_law = law_type:law_slavery_banned #노예제: 노예제 금지
+			
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 2
+		}
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 2
+		}
+		add_modifier = {
+			name = modifier_ilrenxhiel_nationalism
+		}
+	}
+}

@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-02T09:31:24.548Z",
+  "requests": [
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005007,
+          "startRowIndex": 10,
+          "endRowIndex": 11,
+          "startColumnIndex": 1,
+          "endColumnIndex": 2
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(OR('01_설정'!G22<>\"연결확인\",'01_설정'!G21<>\"연결확인\"),\"연결 미확인\",IF(OR(COUNTIFS('REF_OFFICE_TERM'!$A$4:$A$13,\"TEST-TERM-001\")<>1,COUNTIFS('REF_PERSON'!$A$4:$A$13,\"TEST-PERSON-001\")<>1),\"키 없음·중복\",IF(INDEX('REF_OFFICE_TERM'!$AW$4:$AW$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0))<>\"연결확인\",\"상위 연결 미확인\",IF(OR(B8=\"\",B10=\"\"),\"이름 없음\",B8=B10))))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    }
+  ],
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "replies": [
+        {}
+      ],
+      "updatedSpreadsheet": null
+    },
+    "isError": false
+  }
+}

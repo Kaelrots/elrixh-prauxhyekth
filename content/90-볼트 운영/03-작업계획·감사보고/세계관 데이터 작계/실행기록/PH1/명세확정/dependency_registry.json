@@ -1,0 +1,437 @@
+{
+  "status": "정적 연결 설계; 실제 file ID/range graph 미구현",
+  "direction": "provider to consumer",
+  "nodes": [
+    "C00",
+    "H90",
+    "N10",
+    "N20",
+    "N30",
+    "N40",
+    "N50",
+    "N60",
+    "N70",
+    "R10",
+    "R20",
+    "R30",
+    "R40",
+    "R50",
+    "R60",
+    "R70"
+  ],
+  "edges": [
+    {
+      "provider": "C00",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "N10",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "N20",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "N30",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "N40",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "N50",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "N60",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "N70",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "R10",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "R20",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "R30",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "R40",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "R50",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "R60",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "C00",
+      "consumer": "R70",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N10",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N20",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N30",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N30",
+      "consumer": "N20",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N30",
+      "consumer": "N70",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N40",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N40",
+      "consumer": "N50",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N50",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N60",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "N70",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "N10",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "N20",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "R20",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "R30",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "R40",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "R50",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "R60",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R10",
+      "consumer": "R70",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R20",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R20",
+      "consumer": "N40",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R20",
+      "consumer": "N50",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R20",
+      "consumer": "R30",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R20",
+      "consumer": "R40",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R20",
+      "consumer": "R60",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R30",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R30",
+      "consumer": "N40",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R30",
+      "consumer": "N60",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R40",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R40",
+      "consumer": "N70",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R50",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R50",
+      "consumer": "N40",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R50",
+      "consumer": "N50",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R50",
+      "consumer": "N60",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R50",
+      "consumer": "N70",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R60",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R60",
+      "consumer": "N50",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R70",
+      "consumer": "H90",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R70",
+      "consumer": "N50",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    },
+    {
+      "provider": "R70",
+      "consumer": "R60",
+      "provider_file_id": null,
+      "consumer_file_id": null,
+      "implemented": false
+    }
+  ],
+  "topological_order": [
+    "C00",
+    "N30",
+    "R10",
+    "N10",
+    "N20",
+    "R20",
+    "R30",
+    "R40",
+    "R50",
+    "N40",
+    "N60",
+    "N70",
+    "R70",
+    "R60",
+    "N50",
+    "H90"
+  ],
+  "design_cycle_count": 0,
+  "actual_graph_cycle_count": null,
+  "constraints": {
+    "C00_imports_none": true,
+    "H90_is_not_a_provider": true,
+    "N30_never_imports_N20": true,
+    "office_person_period_reverse_validation": "H90"
+  },
+  "edge_count": 55,
+  "static_errors": []
+}

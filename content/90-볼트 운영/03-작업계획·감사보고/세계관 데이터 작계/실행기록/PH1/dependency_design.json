@@ -1,0 +1,566 @@
+{
+  "project": "세계관 데이터 V2",
+  "schema_version": "draft-1",
+  "created_at": "2026-10-02T16:42:33+09:00",
+  "status": "PH1 설계 초안 · 운영 구현/실제 ID 검증 미실행",
+  "source_type": "사용자 승인 계획서의 설계 규칙",
+  "source": "01 계획서 8.3절 523~542행",
+  "direction": "provider -> consumer (데이터 흐름 방향)",
+  "nodes": [
+    {
+      "file_code": "C00",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "R10",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "R20",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "R30",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "R40",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "R50",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "R70",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "R60",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "N10",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "N30",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "N20",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "N40",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "N50",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "N60",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "N70",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    },
+    {
+      "file_code": "H90",
+      "spreadsheet_id": null,
+      "created_by_this_artifact": false
+    }
+  ],
+  "edges": [
+    {
+      "provider": "C00",
+      "consumer": "R10",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "R20",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "R20",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "R30",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "R30",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R20",
+      "consumer": "R30",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "R40",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "R40",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R20",
+      "consumer": "R40",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "R50",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "R50",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "R70",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "R70",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "R60",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "R60",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R70",
+      "consumer": "R60",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R20",
+      "consumer": "R60",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "N10",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "N10",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "N30",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "N20",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "N20",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N30",
+      "consumer": "N20",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "N40",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R20",
+      "consumer": "N40",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R30",
+      "consumer": "N40",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R50",
+      "consumer": "N40",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "N50",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N40",
+      "consumer": "N50",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R60",
+      "consumer": "N50",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R50",
+      "consumer": "N50",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R70",
+      "consumer": "N50",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R20",
+      "consumer": "N50",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "N60",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R30",
+      "consumer": "N60",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R50",
+      "consumer": "N60",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "N70",
+      "edge_type": "기본 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R40",
+      "consumer": "N70",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R50",
+      "consumer": "N70",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N30",
+      "consumer": "N70",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "C00",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R10",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R20",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R30",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R40",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R50",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R60",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "R70",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N10",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N20",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N30",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N40",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N50",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N60",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    },
+    {
+      "provider": "N70",
+      "consumer": "H90",
+      "edge_type": "필요시 허용",
+      "implemented": false,
+      "provider_spreadsheet_id": null,
+      "consumer_spreadsheet_id": null
+    }
+  ],
+  "planned_topological_order": [
+    "C00",
+    "R10",
+    "N30",
+    "R20",
+    "R50",
+    "R70",
+    "N10",
+    "N20",
+    "R30",
+    "R40",
+    "R60",
+    "N40",
+    "N60",
+    "N70",
+    "N50",
+    "H90"
+  ],
+  "design_static_cycle_count": 0,
+  "actual_file_id_graph_cycle_count": null,
+  "static_validation_scope": "모든 기본/선택 허용 간선을 포함한 문서 설계만 검사. T-069 운영 시험의 통과를 뜻하지 않음.",
+  "rules": [
+    "C00 외부 import 없음",
+    "N20이 N30 인물을 읽고 N30은 N20 임기를 import하지 않음",
+    "H90은 필요한 원본을 읽고 다른 운영 파일은 H90을 import하지 않음",
+    "R70의 생산 비교와 N30 외부 term_id 존재/기간 검증은 H90에서 수행",
+    "하이퍼링크와 값으로 보존된 외래 ID는 import 간선에 포함하지 않음",
+    "선택 허용 간선도 실제 필요와 계약 검증 후에만 구현"
+  ],
+  "ph2_small_tests": [
+    "C00 -> R10 -> R20 -> H90",
+    "N30 -> N20 -> H90"
+  ]
+}

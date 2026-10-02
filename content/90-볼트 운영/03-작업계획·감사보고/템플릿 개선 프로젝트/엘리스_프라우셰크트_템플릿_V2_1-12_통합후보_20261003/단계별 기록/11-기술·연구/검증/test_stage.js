@@ -1,0 +1,228 @@
+// Node.js + PyYAML. --engine은 설치된 Templater 2.13.1 WASM 파서를 사용한다.
+// Vault/Editor/Obsidian YAML API는 두 모드 모두 모의 환경이며 GUI 시험이 아니다.
+const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
+const {execFileSync}=require('child_process');
+const root=path.resolve(__dirname,'../../..');
+const dir='90-볼트 운영/00-템플릿/';
+const sourcePath=dir+'00-yaml 속성탭.md';
+const cfg=JSON.parse(fs.readFileSync(path.join(__dirname,'검증설정.json'),'utf8'));
+const key=cfg.key,label=cfg.label;
+const vaultRoot=process.env.TEST_VAULT_ROOT||path.join(root,'vault');
+const moduleDir=dir+label+' V2 구성요소/';
+const entries=Object.fromEntries(Object.entries(cfg.presets).map(([k,p])=>[k,p.name+'.md']));
+const moduleNames=[...new Set(Object.values(cfg.presets).flatMap(p=>p.modules))];
+const fmRenderer=require(path.join(vaultRoot,dir,'유저 스크립트/render_frontmatter.js'));
+const stageRenderer=require(path.join(vaultRoot,dir,'유저 스크립트/render_'+key+'.js'));
+const defaultMeta=cfg.presets.core.metadata;
+const engine=process.argv.includes('--engine');
+let parser,parserHash;
+const yamlBridge=String.raw`
+import sys,json,yaml
+from yaml.constructor import ConstructorError
+class StrictLoader(yaml.SafeLoader): pass
+def mapping(loader,node,deep=False):
+    out={}
+    for k,v in node.value:
+        key=loader.construct_object(k,deep=deep)
+        if key in out: raise ConstructorError('mapping',node.start_mark,'duplicate key: '+str(key),k.start_mark)
+        out[key]=loader.construct_object(v,deep=deep)
+    return out
+StrictLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG,mapping)
+data=sys.stdin.read()
+if sys.argv[1]=='load': print(json.dumps(yaml.load(data,Loader=StrictLoader),ensure_ascii=False))
+else: print(yaml.safe_dump(json.loads(data),allow_unicode=True,sort_keys=False),end='')
+`;
+function yamlLoad(s){return JSON.parse(execFileSync(process.env.PYTHON||'python',['-c',yamlBridge,'load'],{input:s,encoding:'utf8'}));}
+function yamlDump(x){return execFileSync(process.env.PYTHON||'python',['-c',yamlBridge,'dump'],{input:JSON.stringify(x),encoding:'utf8'});}
+const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor;
+async function renderText(s,tp){
+  if(engine) return parser.parse_commands(s,tp);
+  let out='',offset=0;
+  for(const m of s.matchAll(/<%(\*?)([\s\S]*?)%>/g)){
+    out+=s.slice(offset,m.index);
+    out+=m[1]?await new AsyncFunction('tp','tR',m[2]+'\nreturn tR;')(tp,''):await new AsyncFunction('tp','return ('+m[2]+');')(tp);
+    offset=m.index+m[0].length;
+  }
+  return out+s.slice(offset);
+}
+function mock(config={}){
+  const files=new Map();
+  for(const name of ['00-yaml 속성탭.md',...Object.values(entries),...moduleNames.map(x=>label+' V2 구성요소/'+x)]){
+    files.set(dir+name,fs.readFileSync(path.join(vaultRoot,dir,name),'utf8'));
+  }
+  if(config.sourcePath){files.set(config.sourcePath,files.get(sourcePath));files.delete(sourcePath);}
+  if(config.sourceChange){const key=config.sourcePath||sourcePath;files.set(key,config.sourceChange(files.get(key)));}
+  for(const [key,value] of Object.entries(config.replace??{}))files.set(key,value);
+  for(const key of config.missing??[])files.delete(key);
+  const state={files,writes:0,target:config.content??'',editor:config.editor??'',reads:[]};
+  const target={path:config.targetPath??'시험/가상 문서.md',extension:'md',basename:config.title??'가상 문서'};
+  const tf=p=>({path:p,extension:'md',basename:path.posix.basename(p,'.md')});
+  const vault={getAbstractFileByPath:p=>files.has(p)?tf(p):null,
+    read:async f=>{state.reads.push(f.path);return f.path===target.path?state.target:files.get(f.path);},
+    modify:()=>{state.writes++;throw Error('쓰기 금지');},create:()=>{state.writes++;throw Error('쓰기 금지');}};
+  const tp={app:{vault},config:{target_file:target,template_file:tf(dir+entries[config.preset??'core'])},
+    date:{now:()=> '2026-10-02T20:00:00'},obsidian:{parseYaml:yamlLoad,stringifyYaml:yamlDump},
+    file:{title:target.basename,include:async f=>renderText(files.get(f.path),tp)},user:{}};
+  tp.user.render_frontmatter=async(...args)=>{
+    const out=await fmRenderer(...args);
+    if(config.afterFM)config.afterFM(state,tp);
+    return out;
+  };
+  tp.user["render_"+key]=stageRenderer;
+  if(config.editor!==undefined||config.afterFM)tp.app.workspace={activeEditor:{file:tf(config.editorPath??target.path),editor:{getValue:()=>state.editor}}};
+  return{tp,state};
+}
+function parsed(out){const match=out.match(/^---\n([\s\S]*?)\n---\n/);assert(match,'출력 시작에 YAML 필요');return yamlLoad(match[1]);}
+async function generate(preset='core',values={},config={},extra={}){
+  const {tp,state}=mock({...config,preset});
+  const out=await stageRenderer(tp,{preset,values,...extra});assert.equal(state.writes,0);
+  return{out,data:parsed(out),state,tp};
+}
+async function rejected(options,config={},pattern){
+  const {tp,state}=mock(config);await assert.rejects(stageRenderer(tp,options),pattern);assert.equal(state.writes,0);
+}
+const results=[];
+async function test(name,fn){try{await fn();results.push({name,result:'PASS'});}catch(e){results.push({name,result:'FAIL',error:e.stack});}}
+(async()=>{
+ if(engine){
+   const bundle=fs.readFileSync(process.env.TEMPLATER_BUNDLE,'utf8');
+   const start=bundle.indexOf('var Vs={},N,He='),end=bundle.indexOf('var Xe;',start);
+   assert(start>=0&&end>start,'Templater 2.13.1 파서 어댑터 확인 필요');
+   const Parser=new Function('Ui',bundle.slice(start,end)+';return vi;')(s=>new Uint8Array(Buffer.from(s,'base64')));
+   parser=new Parser();await parser.init();parserHash=crypto.createHash('sha256').update(bundle).digest('hex');
+ }
+ for(const [preset,name] of Object.entries(entries)){
+   await test(`실제 시작형 전체 삽입: ${preset}`,async()=>{
+     const {tp,state}=mock({preset});const text=fs.readFileSync(path.join(vaultRoot,dir,name),'utf8');
+     const output=await renderText(text,tp),data=parsed(output);
+     assert.equal(data['제목'],'가상 문서');for(const [k,v] of Object.entries(cfg.presets[preset].metadata))assert.deepEqual(data[k],v);
+     assert.equal(data['사용된 템플릿'],name.slice(0,-3));
+     assert.equal(data['템플릿 버전'],'2.0.0-rc.1');assert.equal(data['스키마버전'],'2.0.0');
+     assert.equal(data.draft,true);assert.equal(data['정본상태'],'draft');assert.equal(data['작성상태'],'outline');assert.equal(data['검토상태'],'unreviewed');
+     assert.equal(data['기준시점'],null);assert.equal(typeof data['최초작성일'],'string');assert.equal(state.writes,0);
+     assert.equal((output.match(/^---$/gm)||[]).length,2);assert(!output.includes('<%'));assert(!output.includes('NATION_TIMESTAMP_BUTTON'));
+     const dest=path.join(__dirname,'생성예시',engine?'실제파서':'모의');fs.mkdirSync(dest,{recursive:true});fs.writeFileSync(path.join(dest,name),output);
+   });
+   await test(`구획 구성: ${preset}`,async()=>{
+     const {out}=await generate(preset);
+     for(const name of moduleNames){
+       const text=fs.readFileSync(path.join(vaultRoot,moduleDir,name),'utf8').trim();
+       assert.equal(out.includes(text),cfg.presets[preset].modules.includes(name),name);
+     }
+
+   });
+   await test(`시각 문법과 미입력 유지: ${preset}`,async()=>{
+     const {out}=await generate(preset);for(const marker of ['| < |','| ^ |','<span','hr-thick-1','hr-thick-2','hr-thick-3','<center','<br','{작성}'])assert(out.includes(marker),marker);
+     assert(!out.includes('#XXXXXX'));assert(!out.includes('98-%'));assert(!out.includes('[[]]'));assert(!out.includes('- [x]'));
+   });
+   await test(`기존 문서 삽입 거부: ${preset}`,()=>rejected({preset},{content:'---\ndraft: false\n---\n# 기존 설정'},/비어 있지/));
+   await test(`시작형 생성기 누락 안내: ${preset}`,async()=>{
+     const {tp}=mock({preset});delete tp.user["render_"+key];
+     await assert.rejects(renderText(fs.readFileSync(path.join(vaultRoot,dir,name),'utf8'),tp),/User Script Folder/);
+   });
+ }
+ await test('Frontmatter 원본 변경은 모든 해당 시작형에 함께 반영',async()=>{
+   for(const preset of Object.keys(entries))assert.equal((await generate(preset,{}, {sourceChange:s=>s.replace('작성자: 현카엘','작성자: 시험작성자')})).data['작성자'],'시험작성자');
+ });
+ await test('Core 본문 한 곳 변경은 모든 해당 시작형에 함께 반영',async()=>{
+   const file=moduleDir+moduleNames[0],original=fs.readFileSync(path.join(vaultRoot,file),'utf8');
+   for(const preset of Object.keys(entries).filter(k=>cfg.presets[k].modules.includes(moduleNames[0])))assert((await generate(preset,{}, {replace:{[file]:original+'\n공통본문변경시험\n'}})).out.includes('공통본문변경시험'));
+ });
+ await test('연속성·적용범위·기준시점·주소 값 보존',async()=>{
+   const values={'연속성':['B루트'],'적용범위':['신계','라리셴베르크'],'기준시점':'제2기 100년',aliases:['과거 명칭','/old-policy'],permalink:'/policy-test'};
+   const {data}=await generate('core',values);for(const [k,v] of Object.entries(values))assert.deepEqual(data[k],v);
+ });
+ await test('B루트 누락 거부',()=>rejected({preset:'core'},{targetPath:'80-대체루트·비정사/01-신계 B루트/문서.md'},/B루트/));
+ await test('B루트 명시 생성',async()=>assert.deepEqual((await generate('core',{'연속성':['B루트']},{targetPath:'80-대체루트·비정사/01-신계 B루트/문서.md'})).data['연속성'],['B루트']));
+ await test('복원 출처 및 호환값 보존',async()=>{
+   const {data}=await generate('core',{'기원상태':'restored','복원원문문서명':'옛 문서 기록','복원원문최초작성일':'2015년 추정'});
+   assert.equal(data['복원여부'],true);assert.equal(data['복원원문최초작성일'],'2015년 추정');assert.equal(data['복원원문최종수정일'],null);
+ });
+ await test('original과 복원 출처 충돌 거부',()=>rejected({values:{'복원원문문서명':'옛 기록'}},{},/충돌/));
+ for(const title of ['문서: 부제','위키 [[표현]]', '따옴표 "문서"', '역슬래시\\문서','줄\n바꿈']){
+   await test(`특수 제목 직렬화 ${JSON.stringify(title)}`,async()=>assert.equal((await generate('core',{}, {title})).data['제목'],title));
+ }
+ await test('공백 필수값 거부',()=>rejected({values:{'작성자':' \t '}},{},/필수값/));
+ await test('저장 전 편집 내용 거부',()=>rejected({preset:'core'},{editor:'기존 내용'},/편집기/));
+ await test('다른 활성 문서는 변경하거나 대상으로 삼지 않음',async()=>assert.equal((await generate('core',{}, {editor:'다른 기록',editorPath:'다른.md'})).data['세부유형'],defaultMeta['세부유형']));
+ await test('공백만 있는 새 노트 허용',async()=>assert.equal((await generate('core',{}, {content:'\uFEFF\n ',editor:'\n '})).data.draft,true));
+ for(const [key,value] of [['draft',false],['정본상태','canon'],['스키마버전','9.9.9'],['세부유형','region'],['사용된 템플릿','임의'],['분야',['법률']]]){
+   await test(`상태·고정 분류 재정의 거부 ${key}`,()=>rejected({values:{[key]:value}}));
+ }
+ for(const name of moduleNames)await test(`본문 누락 시 전체 중단 ${name}`,()=>rejected({preset:Object.keys(cfg.presets).find(k=>cfg.presets[k].modules.includes(name))},{missing:[moduleDir+name]},/공통 본문/));
+ for(const value of ['','---\n제목: 중복\n---\n# 개요','# 개요\n<% 1+1 %>']){
+   await test(`잘못된 구성요소 거부 ${JSON.stringify(value)}`,()=>rejected({preset:'core'},{replace:{[moduleDir+moduleNames[0]]:value}},/일반 Markdown/));
+ }
+ await test('공통 원본 누락 시 전체 중단',()=>rejected({preset:'core'},{missing:[sourcePath]},/공통 원본/));
+ await test('공통 생성기 누락 안내',async()=>{const {tp}=mock();delete tp.user.render_frontmatter;await assert.rejects(stageRenderer(tp),/render_frontmatter/);});
+ await test('격리용 공통 sourcePath 재정의',async()=>{
+   const other='검증원본/00-yaml 속성탭.md';assert.equal((await generate('core',{}, {sourcePath:other},{sourcePath:other})).data['스키마버전'],'2.0.0');
+ });
+ await test('조합 중 본문 변경 거부',()=>rejected({preset:'core'},{afterFM:s=>s.files.set(moduleDir+moduleNames[0],'# 변경')},/공통 본문이 변경/));
+ await test('조합 중 대상 저장 내용 변경 거부',()=>rejected({preset:'core'},{afterFM:s=>{s.target='동시 입력';}},/대상 문서/));
+ await test('조합 중 대상 편집기 변경 거부',()=>rejected({preset:'core'},{afterFM:s=>{s.editor='동시 입력';}},/편집기/));
+ for(const preset of ['unknown','__proto__','constructor'])await test(`지원하지 않는 시작형 ${String(preset)}`,()=>rejected({preset},{},/지원하지 않는/));
+ await test('미정의 옵션 거부',()=>rejected({templatePath:'임의.md'},{},/알 수 없는/));
+ for(const [footerName,meta] of Object.entries(cfg.footers||{})){
+ const body=fs.readFileSync(path.join(vaultRoot,moduleDir,footerName),'utf8');
+ const buttonCode=body.match(/```dataviewjs\n([\s\S]*?)\n```/)[1];
+ function buttonHarness(fm){
+   const state={writes:0,file:null},button={},status={};
+   const dv={current:()=>({file:{path:'시험/표시 문서.md'}}),container:{createEl:()=>({createEl:tag=>tag==='button'?button:status})}};
+   const app={vault:{getAbstractFileByPath:p=>({path:p,extension:'md'})},fileManager:{processFrontMatter:async(file,fn)=>{const next={...fm};fn(next);state.writes++;state.file=file.path;Object.assign(fm,next);}}};
+   new Function('dv','app','console',buttonCode)(dv,app,{error:()=>{}});return{state,button,status};
+ }
+ await test('열람만으로 수정하지 않음 '+footerName,async()=>assert.equal(buttonHarness({}).state.writes,0));
+ await test('수정일 버튼은 표시 문서의 최종수정일만 변경 '+footerName,async()=>{
+   const fm={'제목':'시험','문서유형':meta.type,'세부유형':meta.subtype,'정본상태':'canon','최종수정일':'old','문서버전':'2.3','검토상태':'reviewed',draft:false},before={...fm};
+   const h=buttonHarness(fm);await h.button.onclick();assert.equal(h.state.file,'시험/표시 문서.md');assert.equal(h.state.writes,1);assert.notEqual(fm['최종수정일'],'old');
+   delete before['최종수정일'];const after={...fm};delete after['최종수정일'];assert.deepEqual(after,before);
+ });
+ await test('수정일 버튼은 다른 종류·템플릿에서 중단 '+footerName,async()=>{
+   for(const [type,subtype,title] of [['other',meta.subtype,'다른 문서'],[meta.type,'other','다른 문서'],[meta.type,meta.subtype,'<% tp.file.title %>']]){
+     const h=buttonHarness({'제목':title,'문서유형':type,'세부유형':subtype,'정본상태':'canon'});await h.button.onclick();assert.equal(h.state.writes,0);
+   }
+ });
+ }
+ for(const check of cfg.semantics||[]){
+   await test(check.name,async()=>{
+     const selected=check.presets||[cfg.presets.detailed?'detailed':'core'];
+     for(const preset of selected){const {out,data}=await generate(preset);
+       for(const token of check.tokens)assert(out.includes(token),token);
+       for(const token of check.absent||[])assert(!out.includes(token),token);
+       for(const [k,v] of Object.entries(check.metadata||{}))assert.deepEqual(data[k],v);
+     }
+   });
+ }
+ for(const [preset,config] of Object.entries(cfg.presets)){
+   await test('未使用 상세 장이 없어도 시작형 생성 '+preset,async()=>{
+     await generate(preset,{}, {missing:moduleNames.filter(n=>!config.modules.includes(n)).map(n=>moduleDir+n)});
+   });
+   if(config.extensions){
+     await test('확장 식별자 보존과 임의 필드 거부 '+preset,async()=>{
+       const extensions=Object.fromEntries(Object.entries(config.extensions).map(([k,v])=>[k,typeof v==='string'?v:Array.isArray(v)?['시험 항목']:'시험-ID']));
+       const {data}=await generate(preset,{}, {},{extensions});for(const [k,v] of Object.entries(extensions))assert.deepEqual(data[k],v);
+       await rejected({preset,extensions:{unknown:'x'}},{},/확장 필드/);
+     });
+   }
+ }
+ await test('중첩 선행 스키마를 실제 YAML 한 곳에서 보존',async()=>{
+   const prereq={hard:['G2-01-001'],soft:['G2-01-002']};
+   const {data}=await generate('gate',{'연속성':['B루트'],aliases:['/old-gate']},{},{prereq,extensions:{gate_id:'G2-01-003',gate_name:'개명 후 명칭',era:'2-01',tree_map:['3-2A → 공학·제조'],unlocks:['G2-02-001']}});
+   assert.deepEqual(data.prereq,prereq);assert.equal(data.gate_id,'G2-01-003');assert.equal(data.doc_type,'gate_node');
+   assert.deepEqual(data.aliases,['/old-gate']);assert.equal(data['기원상태'],'original');assert.equal(data.draft,true);
+ });
+ await test('기술 호환 분류를 임의 변경하지 못함',()=>rejected({preset:'gate',extensions:{doc_type:'other'}},{},/고정 호환/));
+ await test('잘못된 중첩 구조·중복·겹치는 선행 ID 거부',async()=>{
+   for(const prereq of [{hard:[],soft:[],other:[]},{hard:{x:1},soft:[]},{hard:[''],soft:[]},{hard:['a','a'],soft:[]},{hard:['a'],soft:['a']}])await rejected({preset:'gate',prereq});
+   await rejected({preset:'index',prereq:{hard:[],soft:[]}});
+ });
+ await test('신규 노드에 임의 ID·시대·성숙도·활성 상태 없음',async()=>{
+   const {data}=await generate('gate');for(const k of ['gate_id','era','period','tmc','status'])assert.equal(data[k],null);
+   assert.deepEqual(data.prereq,{hard:[],soft:[]});
+ });
+ const report={time:new Date().toISOString(),environment:engine?'Actual Templater 2.13.1 WASM parser + mock Vault/Editor/YAML API (PyYAML)':'Node.js mock Templater/Vault/Editor/YAML API (PyYAML)',parser_sha256:parserHash,pass:results.filter(x=>x.result==='PASS').length,fail:results.filter(x=>x.result==='FAIL').length,results};
+ fs.writeFileSync(path.join(__dirname,engine?'Templater_실제파서_검사.json':'모의검사.json'),JSON.stringify(report,null,2));
+ console.log(JSON.stringify({pass:report.pass,fail:report.fail,failures:results.filter(x=>x.result==='FAIL')},null,2));
+ if(report.fail)process.exitCode=1;
+})().catch(e=>{console.error(e);process.exitCode=1;});

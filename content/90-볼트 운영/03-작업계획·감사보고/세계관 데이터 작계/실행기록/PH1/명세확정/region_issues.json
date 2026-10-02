@@ -1,0 +1,86 @@
+{
+  "status": "결정대기 보존; 무단 정본 확정 없음",
+  "issues": [
+    {
+      "issue_id": "R-001",
+      "status": "결정대기",
+      "topic": "행성 urbanization 행",
+      "evidence": "11_행성_연간지표 F열의 실제 urbanization 행 24개; 직접값 없음",
+      "proposal": "R30.사회지표 단일 입력 원본으로 목적지 지정; 도시화 정의·분모·가중 방식 확인 후 계산",
+      "blocks": "urbanization 계산·채택",
+      "no_invention": "도시 인구/비율을 창작하지 않음"
+    },
+    {
+      "issue_id": "R-002",
+      "status": "결정대기",
+      "topic": "시설 수용량/생산량 혼합",
+      "evidence": "60 거점 시설 J열의 헤더가 수용량/생산량; 원자료 행 없음",
+      "proposal": "판별되면 설계 수용량은 R10.시설목록.design_capacity, 기간 실적은 R60.시설실적.value_numeric; 미판별 원문은 R10.시설측정미분류.raw_value",
+      "blocks": "해당 값 자동 계산·목적지 확정",
+      "no_invention": "빈 분야의 사실·기간·단위 생성 금지"
+    },
+    {
+      "issue_id": "R-003",
+      "status": "결정대기",
+      "topic": "원문 반경·표면적과 계산값 충돌",
+      "evidence": "10_행성_기본값 radius_as_written/equatorial_radius 및 surface_area/ellipsoid_area",
+      "proposal": "각 property_id·원문·산식을 별도 보존하고 adopted=false가 아닌 미채택/미결 상태 사용",
+      "blocks": "면적 기준 채택·이를 전제한 통계",
+      "no_invention": "계산값 자동 정본 승격 금지"
+    },
+    {
+      "issue_id": "R-004",
+      "status": "결정대기",
+      "topic": "자원 매장/생산 공용 단위",
+      "evidence": "51 자원 분포 H=매장량,J=생산량,K=단위; 입력 행 없음",
+      "proposal": "reserve_unit와 production_unit를 분리; 원문 단위는 shared_unit_raw에 보존. 값별 의미 확인 후만 변환",
+      "blocks": "단위·기간 불명 생산 통계",
+      "no_invention": "생산량을 매장량 또는 연간량으로 추정하지 않음"
+    },
+    {
+      "issue_id": "R-005",
+      "status": "결정대기",
+      "topic": "구형/확장 지역 사실의 동일성",
+      "evidence": "20 인구/12_지역_인구,40 경제 지역값/13_지역_경제,50 환경 지역값/14_지역_자연환경,10 정치 지역관계/15_지역_소속이력/NAT03",
+      "proposal": "대상·루트·기년·기간·정의·단위·범위·출처까지 맞는 후보만 연결; 서로 다른 후보 모두 보존",
+      "blocks": "중복 자동 병합·최종 채택",
+      "no_invention": "값 같음/동명만으로 병합 금지"
+    },
+    {
+      "issue_id": "R-006",
+      "status": "결정대기",
+      "topic": "상위 지역 미해결·지역 계층 충돌",
+      "evidence": "REG 지역 마스터 G/I 두 부모열과 02_지역_관계 파생식",
+      "proposal": "다대다 지역관계로 풀고 원문 부모 ID 유지; 누락 ID·자기참조·순환·집계 중첩 진단",
+      "blocks": "관련 완전 집계",
+      "no_invention": "누락 부모를 새 설정으로 생성하지 않음"
+    },
+    {
+      "issue_id": "R-007",
+      "status": "결정대기",
+      "topic": "세계관 날짜 미정밀·기년 대응",
+      "evidence": "기존 시작/종료/시점 자유문자열 및 연도형 열",
+      "proposal": "원문과 알려진 정밀도만 구조화; 미해석은 date_parse_status=미해석, 계산 제외",
+      "blocks": "미해석/교차 기년 날짜의 정렬·합산",
+      "no_invention": "DATE 함수·연도 비례변환·가상 월일 금지"
+    },
+    {
+      "issue_id": "R-008",
+      "status": "결정대기",
+      "topic": "문화·집단·종교 분포 분모/응답 방식",
+      "evidence": "문화·종교·언어·종족 분포 원문 스키마",
+      "proposal": "분류축별 표 유지, 분모·복수응답·상위종교 포함관계 확인 전 합100% 검사 보류",
+      "blocks": "무조건 합계·인구환산",
+      "no_invention": "집단 정의·구성비 보완 금지"
+    },
+    {
+      "issue_id": "R-009",
+      "status": "계약 조정 대기",
+      "topic": "행성 역법 값의 C00 단일화",
+      "evidence": "10_행성_기본값 civil_day/civil_year_days/year_correction/months_per_year/days_per_month",
+      "proposal": "C00 공통기준 개정 원문 후보와 대조; 동일 판본 확인 후 참조. R70은 물리 설명·legacy locator 보존",
+      "blocks": "미대조 판본의 채택",
+      "no_invention": "같은 숫자라는 이유만으로 서로 다른 기준개정 병합 금지"
+    }
+  ]
+}

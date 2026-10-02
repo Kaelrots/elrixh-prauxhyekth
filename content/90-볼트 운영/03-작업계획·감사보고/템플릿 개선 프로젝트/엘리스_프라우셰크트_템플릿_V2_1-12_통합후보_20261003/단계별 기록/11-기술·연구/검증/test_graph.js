@@ -1,0 +1,30 @@
+const fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const validate=require('../../../vault/90-볼트 운영/00-템플릿/유저 스크립트/validate_tech_graph.js');
+const node=(n,era='2-01')=>({gate_id:`G${era}-${String(n).padStart(3,'0')}`,era,status:'active'});
+const ns=[node(1),node(2),node(3)];
+const edge=(a=1,b=2,extra={})=>({edge_id:`E${a}-${b}`,status:'active',from_gate:ns[a-1].gate_id,to_gate:ns[b-1].gate_id,from_era:'2-01',to_era:'2-01',rel_type:'prereq_hard',valid_era:'2-01',weight:null,note:'근거 설명',source:'[[시험 근거]]',...extra});
+const results=[];
+function test(name,fn){try{fn();results.push({name,result:'PASS'});}catch(e){results.push({name,result:'FAIL',error:e.message});}}
+function has(data,code){assert(validate(data).errors.some(x=>x.code===code),code);}
+test('유효 DAG·선택 weight·입력 불변',()=>{const data={nodes:ns,edges:[edge(),edge(2,3)]},before=JSON.stringify(data);assert(validate(data).ok);assert.equal(JSON.stringify(data),before);});
+test('명칭 변경은 ID 관계에 영향 없음',()=>assert(validate({nodes:ns.map(n=>({...n,gate_name:'새 이름'})),edges:[edge()]}).ok));
+test('중복 노드 ID',()=>has({nodes:[...ns,ns[0]],edges:[]},'DUP_NODE'));
+test('미존재 노드',()=>has({nodes:[ns[0]],edges:[edge()]},'MISSING_NODE'));
+test('자기참조',()=>has({nodes:ns,edges:[edge(1,1)]},'SELF'));
+test('임의 관계 유형',()=>has({nodes:ns,edges:[edge(1,2,{rel_type:'invented'})]},'RELATION'));
+test('중복 관계 ID',()=>has({nodes:ns,edges:[edge(),edge(2,3,{edge_id:'E1-2'})]},'DUP_EDGE'));
+test('동일 활성 관계 중복',()=>has({nodes:ns,edges:[edge(),edge(1,2,{edge_id:'other'})]},'DUP_RELATION'));
+test('방향 없는 관계의 역방향 중복',()=>has({nodes:ns,edges:[edge(1,2,{rel_type:'synergy'}),edge(2,1,{rel_type:'synergy'})]},'DUP_RELATION'));
+test('잘못된 weight',()=>{for(const weight of [-1,1.1,NaN,Infinity,'0.5'])has({nodes:ns,edges:[edge(1,2,{weight})]},'WEIGHT');});
+test('양끝 weight',()=>{for(const weight of [0,1])assert(validate({nodes:ns,edges:[edge(1,2,{weight})]}).ok);});
+test('폐기 노드의 활성 관계',()=>has({nodes:ns.map((n,i)=>i? n:{...n,status:'deprecated'}),edges:[edge()]},'DEPRECATED_NODE'));
+test('폐기 관계는 활성 충돌에 포함 안 함',()=>assert(validate({nodes:ns,edges:[edge(),edge(1,2,{edge_id:'old',rel_type:'mutex',status:'deprecated'})]}).ok));
+test('직접·간접 mutex 선행 충돌',()=>{has({nodes:ns,edges:[edge(),edge(1,2,{edge_id:'m',rel_type:'mutex'})]},'MUTEX_PREREQ');has({nodes:ns,edges:[edge(),edge(2,3),edge(1,3,{edge_id:'m',rel_type:'mutex'})]},'MUTEX_PREREQ');});
+test('서로 다른 자연어 유효 시대는 검토 경고',()=>{const r=validate({nodes:ns,edges:[edge(),edge(1,2,{edge_id:'m',rel_type:'mutex',valid_era:'제2기 후반'})]});assert(r.ok);assert(r.warnings.some(x=>x.code==='MUTEX_PREREQ'));});
+test('선행 순환',()=>has({nodes:ns,edges:[edge(),edge(2,3),edge(3,1,{rel_type:'prereq_soft'})]},'PREREQ_CYCLE'));
+test('synergy 순환은 선행 순환이 아님',()=>assert(validate({nodes:ns,edges:[edge(1,2,{rel_type:'synergy'}),edge(2,3,{rel_type:'synergy'}),edge(3,1,{rel_type:'synergy'})]}).ok));
+test('교차시대 이유·근거 필수',()=>{const nodes=[ns[0],node(1,'2-02')];const e=edge(1,2,{to_gate:'G2-02-001',to_era:'2-02'});assert(validate({nodes,edges:[e]}).ok);for(const k of ['note','source'])has({nodes,edges:[{...e,[k]:''}]},'CROSS_EVIDENCE');});
+test('노드·엣지 시대 불일치',()=>{has({nodes:[{...ns[0],era:'2-02'}],edges:[]},'NODE_ERA');has({nodes:ns,edges:[edge(1,2,{to_era:'2-02'})]},'EDGE_ERA');});
+test('잘못된 입력과 상태',()=>{assert(!validate(null).ok);has({nodes:ns,edges:[edge(1,2,{status:null})]},'EDGE_STATUS');has({nodes:[{...ns[0],status:null}],edges:[]},'NODE_STATUS');});
+const report={pass:results.filter(x=>x.result==='PASS').length,fail:results.filter(x=>x.result==='FAIL').length,scope:'synthetic node/edge data; no live vault mutation or full-vault compatibility claim',results};
+fs.writeFileSync(path.join(__dirname,'기술관계_검사.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(report.fail)process.exitCode=1;

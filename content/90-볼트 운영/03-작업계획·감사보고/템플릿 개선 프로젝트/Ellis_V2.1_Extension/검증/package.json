@@ -1,0 +1,12 @@
+{
+  "name": "ellis-v21-package-validation",
+  "private": true,
+  "version": "2.1.0",
+  "scripts": {
+    "test": "node verify.cjs .."
+  },
+  "dependencies": {
+    "js-yaml": "4.1.0",
+    "markdown-it": "14.1.0"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-02 08:37:42 UTC",
+  "mode": "existing_ids_updated",
+  "checks": [
+    {
+      "name": "state",
+      "remote_bytes": 16520,
+      "local_bytes": 16520,
+      "sha256": "03b08fe7b1341f9e9a13e21bf31fad0ea94dbd377b9ea3f2e3220f92c96ad173",
+      "exact_equal": true
+    },
+    {
+      "name": "report",
+      "remote_bytes": 3632,
+      "local_bytes": 3632,
+      "sha256": "9ace2ab3f8ed9318f3317195daae8a6ec6c8487b5a17c6c8c4b54966c63f64c4",
+      "exact_equal": true
+    },
+    {
+      "name": "archive",
+      "remote_bytes": 10441078,
+      "local_bytes": 10441078,
+      "sha256": "cbda6da5efd6893a15d66e79d6778081fb9886e3cff7116bcc01098fc93358d2",
+      "exact_equal": true
+    }
+  ],
+  "files": [
+    {
+      "name": "state",
+      "id": "1n8F6nZLXMX1axeTz7Knt5WImzHU8YH5S"
+    },
+    {
+      "name": "report",
+      "id": "1zU_cgK1creOjo3DNUnUfgsKyNiF6IcmB"
+    },
+    {
+      "name": "archive",
+      "id": "1XEyZcAeb7ClWvO_jwhrY4HRkIx3hoOsI"
+    }
+  ],
+  "new_file_creation_count": 0,
+  "note": "체크포인트 업로드 후 다운로드 바이트 대조. 이 영수증은 ZIP 생성 뒤 별도 저장하며 ZIP 내부 자기참조 대상이 아님."
+}

@@ -1,0 +1,456 @@
+{
+  "spreadsheet_id": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+  "requests": [
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001008,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C20,'01_설정'!D20)"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001009,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C20,\"META_PUB_CODEBOOK_V2\")"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001003,
+          "startRowIndex": 3,
+          "endRowIndex": 5,
+          "startColumnIndex": 0,
+          "endColumnIndex": 4
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": ""
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!F4=\"\",\"\",'IN_지역목록'!F4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!M4=\"\",\"\",'IN_지역목록'!M4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!L4=\"\",\"\",'IN_지역목록'!L4))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": ""
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!F5=\"\",\"\",'IN_지역목록'!F5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!M5=\"\",\"\",'IN_지역목록'!M5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!L5=\"\",\"\",'IN_지역목록'!L5))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001004,
+          "startRowIndex": 3,
+          "endRowIndex": 5,
+          "startColumnIndex": 0,
+          "endColumnIndex": 14
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!A4=\"\",\"\",'IN_지역목록'!A4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!B4=\"\",\"\",'IN_지역목록'!B4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!C4=\"\",\"\",'IN_지역목록'!C4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!D4=\"\",\"\",'IN_지역목록'!D4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!E4=\"\",\"\",'IN_지역목록'!E4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!F4=\"\",\"\",'IN_지역목록'!F4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!G4=\"\",\"\",'IN_지역목록'!G4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!H4=\"\",\"\",'IN_지역목록'!H4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!I4=\"\",\"\",'IN_지역목록'!I4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!J4=\"\",\"\",'IN_지역목록'!J4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!K4=\"\",\"\",'IN_지역목록'!K4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!L4=\"\",\"\",'IN_지역목록'!L4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!M4=\"\",\"\",'IN_지역목록'!M4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('VIEW_지역목록_조회계산'!B4=\"\",\"\",IF('VIEW_지역목록_조회계산'!A4=\"\",\"\",'VIEW_지역목록_조회계산'!A4))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!A5=\"\",\"\",'IN_지역목록'!A5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!B5=\"\",\"\",'IN_지역목록'!B5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!C5=\"\",\"\",'IN_지역목록'!C5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!D5=\"\",\"\",'IN_지역목록'!D5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!E5=\"\",\"\",'IN_지역목록'!E5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!F5=\"\",\"\",'IN_지역목록'!F5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!G5=\"\",\"\",'IN_지역목록'!G5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!H5=\"\",\"\",'IN_지역목록'!H5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!I5=\"\",\"\",'IN_지역목록'!I5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!J5=\"\",\"\",'IN_지역목록'!J5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!K5=\"\",\"\",'IN_지역목록'!K5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!L5=\"\",\"\",'IN_지역목록'!L5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!M5=\"\",\"\",'IN_지역목록'!M5))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('VIEW_지역목록_조회계산'!B5=\"\",\"\",IF('VIEW_지역목록_조회계산'!A5=\"\",\"\",'VIEW_지역목록_조회계산'!A5))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001007,
+          "startRowIndex": 3,
+          "endRowIndex": 4,
+          "startColumnIndex": 0,
+          "endColumnIndex": 5
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "PUB_REGIONS_V2"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "='01_설정'!B6"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=COUNTIF('IN_지역목록'!$F$4:$F$13,\"?*\")"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=TEXTJOIN(\"|\",FALSE,'PUB_REGIONS'!A3:N3)"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "='01_설정'!B5"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 19,
+          "endRowIndex": 20,
+          "startColumnIndex": 5,
+          "endColumnIndex": 13
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_CODEBOOK'!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,'REF_CODEBOOK'!A3:S3))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_CODEBOOK'!A3),IF(N20=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F20<>E20,\"스키마 불일치\",\"연결확인\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_CODEBOOK'!A3),\"메타 연결실패\",IF('RMETA_CODEBOOK'!A3<>\"dataset_id\",\"메타 스키마 불일치\",'RMETA_CODEBOOK'!C4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",COUNTIF('REF_CODEBOOK'!$A$4:$A$13,\"?*\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(OR(NOT(ISNUMBER(H20)),NOT(ISNUMBER(I20))),\"미확인\",IF(H20=I20,\"일치\",\"불일치\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST.REV.1"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_CODEBOOK'!A3),\"미확인\",'RMETA_CODEBOOK'!B4)"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",IF(L20=K20,\"판본 일치\",\"갱신 대기\"))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001005,
+          "startRowIndex": 3,
+          "endRowIndex": 4,
+          "startColumnIndex": 0,
+          "endColumnIndex": 4
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "지역목록"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=COUNTIF('IN_지역목록'!$F$4:$F$13,\"?*\")"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(COUNTIF('IN_지역목록'!F14,\"?*\")>0,\"범위초과\",\"범위내\")"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=TEXTJOIN(\"|\",FALSE,'IN_지역목록'!A3:M3)"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001006,
+          "startRowIndex": 3,
+          "endRowIndex": 5,
+          "startColumnIndex": 0,
+          "endColumnIndex": 2
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "분류 코드"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "='IN_지역목록'!H4"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "C00 분류명"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF(COUNTIFS('REF_CODEBOOK'!$B$4:$B$13,'IN_지역목록'!H4)<>1,\"키 없음·중복\",INDEX('REF_CODEBOOK'!$C$4:$C$13,MATCH('IN_지역목록'!H4,'REF_CODEBOOK'!$B$4:$B$13,0))))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    }
+  ]
+}

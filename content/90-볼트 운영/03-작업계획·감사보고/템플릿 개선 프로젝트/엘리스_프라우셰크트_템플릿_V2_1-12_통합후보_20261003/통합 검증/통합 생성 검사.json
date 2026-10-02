@@ -1,0 +1,219 @@
+{
+  "time": "2026-10-02T15:23:08.090Z",
+  "environment": "Actual Templater 2.13.1 WASM + mock Vault/YAML, combined deployment tree",
+  "parser_sha256": "824bafbb3bd37bdb3811ae424a2d088d9629bd43b4ec4b04aa6ea284d8681cc2",
+  "pass": 30,
+  "fail": 0,
+  "results": [
+    {
+      "stage": 1,
+      "file": "90-볼트 운영/00-템플릿/04-인물 설정 템플릿 V2 빠른 시작.md",
+      "result": "PASS",
+      "lines": 84,
+      "sha256": "816edbb3c8bc9afaa4cb7160aa32061b2e862412c2db3d57a0385ce47b9df28e"
+    },
+    {
+      "stage": 1,
+      "file": "90-볼트 운영/00-템플릿/04-인물 설정 템플릿 V2 파일럿.md",
+      "result": "PASS",
+      "lines": 407,
+      "sha256": "5f5cac1a5fb982b57effa1976b109182399e2ddf92b808ac30249873088a3849"
+    },
+    {
+      "stage": 2,
+      "file": "90-볼트 운영/00-템플릿/06-01-지역 설정-대륙-전략지역권 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 271,
+      "sha256": "0ecab410c038d384d224f90d17844607f9803b26e1929bac87e580dd9878973b"
+    },
+    {
+      "stage": 2,
+      "file": "90-볼트 운영/00-템플릿/06-02-지역 설정-광역-권역-지역권 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 330,
+      "sha256": "0758764c5072b124fefd0151e2e79c5b7bba16fa00f3adc998da32d9ad9cb0d9"
+    },
+    {
+      "stage": 2,
+      "file": "90-볼트 운영/00-템플릿/06-지역 설정 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 176,
+      "sha256": "e1eb78282ec692611e06731f3bbb34a65d3293d9cdafaa8ad461b6cbb98eb4d7"
+    },
+    {
+      "stage": 3,
+      "file": "90-볼트 운영/00-템플릿/01-01-국가 설정 템플릿 V2 상세형.md",
+      "result": "PASS",
+      "lines": 539,
+      "sha256": "6c444550105f13e5994209baa08d583478b0fee83a6ed83890f002ace7a143c0"
+    },
+    {
+      "stage": 3,
+      "file": "90-볼트 운영/00-템플릿/01-01-국가 설정 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 206,
+      "sha256": "f09d43c1e0a84ca63e1470c6da664436f4248e250bf9b67d1bed8dda0c670207"
+    },
+    {
+      "stage": 4,
+      "file": "90-볼트 운영/00-템플릿/09-기관 설정 템플릿 V2 상세형.md",
+      "result": "PASS",
+      "lines": 381,
+      "sha256": "33075b912a1e439dcf58a590caa9eade7226f4f15c9ebeca4d4963340f16a8cd"
+    },
+    {
+      "stage": 4,
+      "file": "90-볼트 운영/00-템플릿/09-기관 설정 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 194,
+      "sha256": "4e250506fdb56dae7b6a0149d21dc442a7b8949b6c1fb6012b77093e3ee47b82"
+    },
+    {
+      "stage": 5,
+      "file": "90-볼트 운영/00-템플릿/08-국가 정책 템플릿 V2 상세형.md",
+      "result": "PASS",
+      "lines": 396,
+      "sha256": "5b18512e6441d21e3eff6948cf369757a4c61d9653db1eb28ba41c49642025ee"
+    },
+    {
+      "stage": 5,
+      "file": "90-볼트 운영/00-템플릿/08-국가 정책 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 197,
+      "sha256": "f2e2c224a86dcc0b669dbcc43da7771c684fcaf9186b46069fde82ee1ef318e5"
+    },
+    {
+      "stage": 6,
+      "file": "90-볼트 운영/00-템플릿/02-역사 설정 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 178,
+      "sha256": "a155cde029ad6fd4808c788ad7007313c29413bce499c64c72e838045304be18"
+    },
+    {
+      "stage": 6,
+      "file": "90-볼트 운영/00-템플릿/02-역사 설정 템플릿 V2 상세형.md",
+      "result": "PASS",
+      "lines": 238,
+      "sha256": "4bc54295b5777369afba91989ceb9e55d027c43cb7795df22f29b400b983acbe"
+    },
+    {
+      "stage": 6,
+      "file": "90-볼트 운영/00-템플릿/02-역사 설정 템플릿 V2 제1기 간략.md",
+      "result": "PASS",
+      "lines": 216,
+      "sha256": "895c9aeeecba4c7d446afa4bc53e9647eea8958237aa931abd2edeea5a83315e"
+    },
+    {
+      "stage": 7,
+      "file": "90-볼트 운영/00-템플릿/05-정치와 사상 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 161,
+      "sha256": "c2d713a50220f265334c2823f9eb5099f4d9f6255a9a33bb1fb85878f4558515"
+    },
+    {
+      "stage": 7,
+      "file": "90-볼트 운영/00-템플릿/05-정치와 사상 템플릿 V2 상세형.md",
+      "result": "PASS",
+      "lines": 236,
+      "sha256": "399fa1f0277e283dff6cf8c53b659016de0c5cdccd7e07bbd079fcc72d054b24"
+    },
+    {
+      "stage": 8,
+      "file": "90-볼트 운영/00-템플릿/03-종교 설정 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 166,
+      "sha256": "bdb14018a7ecb826bde5af2471163b966e1bf1199f1d313714e051cb926f2ead"
+    },
+    {
+      "stage": 8,
+      "file": "90-볼트 운영/00-템플릿/03-종교 설정 템플릿 V2 상세형.md",
+      "result": "PASS",
+      "lines": 309,
+      "sha256": "67931ab0325c642ff1f821a1c7fa82b24cdcb9d2915f85ebeb43976252763694"
+    },
+    {
+      "stage": 9,
+      "file": "90-볼트 운영/00-템플릿/엘리스 프라우셰크트 종족 설정 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 155,
+      "sha256": "f8dd753bbcb5a8f1e11f40bcac47f5d5de4db6fe2ff82a29b6a189c69cdeda7b"
+    },
+    {
+      "stage": 9,
+      "file": "90-볼트 운영/00-템플릿/엘리스 프라우셰크트 종족 설정 템플릿 V2 상세형.md",
+      "result": "PASS",
+      "lines": 264,
+      "sha256": "ad9266834ec7961d1829ddc6ce46505f0e50f5ea7dfe2ef1af5073b7e735476e"
+    },
+    {
+      "stage": 10,
+      "file": "90-볼트 운영/00-템플릿/11-자원 설정 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 173,
+      "sha256": "05da76cc90e6bdade35ab1d4196fe93920c524712fd72a222670d8c48885e74e"
+    },
+    {
+      "stage": 10,
+      "file": "90-볼트 운영/00-템플릿/11-자원 설정 템플릿 V2 상세형.md",
+      "result": "PASS",
+      "lines": 372,
+      "sha256": "80f665866ef83092dbaaf79cbebba07a8aa8e0ad60f8c17930cbbe063395d26b"
+    },
+    {
+      "stage": 11,
+      "file": "90-볼트 운영/00-템플릿/10-기술·연구 테크트리 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 194,
+      "sha256": "ccc274eb498b910521374e604e4dfc794aed115145d59dd65b48a5f9fda11bdf"
+    },
+    {
+      "stage": 11,
+      "file": "90-볼트 운영/00-템플릿/10_01_시대 인덱스 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 176,
+      "sha256": "8e8038298217cab935f443d295c02f2e877e36762500bbd5fb2e0ee2d2419cbc"
+    },
+    {
+      "stage": 11,
+      "file": "90-볼트 운영/00-템플릿/10_02_게이트 노드 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 212,
+      "sha256": "17093a0b3766a1e8433b46cde8c3dd97f4b9ebd83dc05dcb7ad6ae47de48ad8c"
+    },
+    {
+      "stage": 11,
+      "file": "90-볼트 운영/00-템플릿/10_03_엣지 레지스트리 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 191,
+      "sha256": "5a8c7cf0453a608cbd6c6810f24f17dd3e6f5a5cedeb34fbc8cb6e7ded1b6222"
+    },
+    {
+      "stage": 11,
+      "file": "90-볼트 운영/00-템플릿/10_04_상세 기술 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 196,
+      "sha256": "d6eb3b436bc9e798fcf4111d056fb50102bb4f47c1c3c8cd415bdaec15e6ef06"
+    },
+    {
+      "stage": 11,
+      "file": "90-볼트 운영/00-템플릿/10_04_상세 기술 템플릿 V2 확장형.md",
+      "result": "PASS",
+      "lines": 258,
+      "sha256": "e95e9e7675770e9a96e758ad33a20266bdf185be2804e922f1edaead3ecd9b89"
+    },
+    {
+      "stage": 12,
+      "file": "90-볼트 운영/00-템플릿/90-기타 문서 기본 템플릿 V2.md",
+      "result": "PASS",
+      "lines": 87,
+      "sha256": "4f3adf0b8e5fc0d9a79acb74511b681819fb11951b3038d0bc2523b25ee4722d"
+    },
+    {
+      "stage": 12,
+      "file": "90-볼트 운영/00-템플릿/80-특수 목적 템플릿/세계관 피드백 양식 V2.md",
+      "result": "PASS",
+      "lines": 122,
+      "sha256": "cd6109b6583337163e79a1776477d77de3481074ad79fca7504e7e8e853ec99e"
+    }
+  ]
+}

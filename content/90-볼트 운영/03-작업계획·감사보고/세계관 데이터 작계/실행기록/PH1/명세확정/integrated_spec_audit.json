@@ -1,0 +1,859 @@
+{
+  "status": "static_specification_audit_only",
+  "source_tab_count": 87,
+  "source_field_count": 1539,
+  "unique_source_field_count": 1539,
+  "missing_source_fields": 0,
+  "duplicate_source_fields": 0,
+  "unknown_source_fields": 0,
+  "logical_table_count": 231,
+  "logical_tables_by_file": {
+    "C00": 39,
+    "H90": 25,
+    "N10": 15,
+    "N20": 53,
+    "N30": 15,
+    "N40": 6,
+    "N50": 9,
+    "N60": 4,
+    "N70": 4,
+    "R10": 15,
+    "R20": 8,
+    "R30": 10,
+    "R40": 4,
+    "R50": 4,
+    "R60": 13,
+    "R70": 7
+  },
+  "specified_file_count": 16,
+  "canonical_redirected_destinations": 11,
+  "issue_count": 25,
+  "error_count": 0,
+  "warning_count": 0,
+  "operating_files_created": 0,
+  "migrated_records": 0,
+  "acceptance_tests_newly_passed": 0,
+  "error_details": [],
+  "warning_details": [],
+  "test_traceability": {
+    "T-001": {
+      "scenario": "16개 독립 운영 파일",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-002": {
+      "scenario": "V1 원본 무변경",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json"
+      ],
+      "status": "미실행"
+    },
+    "T-003": {
+      "scenario": "87개 탭 및 추가분 대응",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-004": {
+      "scenario": "모든 실제 열 대응",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "independent_ownership_and_row_admission_audit",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-005": {
+      "scenario": "입력값과 호환 수식 캐시 구별",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-006": {
+      "scenario": "불완전 입력행 보존",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-007": {
+      "scenario": "서식 전용행 제외",
+      "spec_parts": [
+        "independent_ownership_and_row_admission_audit"
+      ],
+      "status": "미실행"
+    },
+    "T-008": {
+      "scenario": "미작성 분야 구조",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-009": {
+      "scenario": "기존 고정 ID 유지",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "independent_ownership_and_row_admission_audit",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-010": {
+      "scenario": "재실행 중복 방지",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-011": {
+      "scenario": "동명이인 분리",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-012": {
+      "scenario": "ID 충돌 처리",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-013": {
+      "scenario": "다중 출처 보존",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "independent_ownership_and_row_admission_audit",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-014": {
+      "scenario": "같은 키의 서로 다른 후보값",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "independent_ownership_and_row_admission_audit",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-015": {
+      "scenario": "국가 표기 역할",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-016": {
+      "scenario": "48개월·30일 입력",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "independent_ownership_and_row_admission_audit",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-017": {
+      "scenario": "기년 0년",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-018": {
+      "scenario": "정확한 기간 경계",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-019": {
+      "scenario": "연도 단위 정밀도",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-020": {
+      "scenario": "종료 미상과 지속 중",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-021": {
+      "scenario": "A/B 루트 격리",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-022": {
+      "scenario": "구형/현행 기년 격리",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "independent_ownership_and_row_admission_audit",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-023": {
+      "scenario": "기년을 넘는 기간",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-024": {
+      "scenario": "432초 보정구간",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "independent_ownership_and_row_admission_audit"
+      ],
+      "status": "미실행"
+    },
+    "T-025": {
+      "scenario": "같은 해의 미상 순서",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-026": {
+      "scenario": "지역 ID 3종 표기",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-027": {
+      "scenario": "복수 상위지역",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-028": {
+      "scenario": "부모·자식 중복 집계",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-029": {
+      "scenario": "대상 ID 집합 검증",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-030": {
+      "scenario": "완전합계와 부분합",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-031": {
+      "scenario": "실제 0·미상·미정·해당없음",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-032": {
+      "scenario": "직접값과 합산값 차이",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-033": {
+      "scenario": "인구 정의 불일치",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-034": {
+      "scenario": "통치·주장 병존",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-035": {
+      "scenario": "부분 통치 자동 배분 방지",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-036": {
+      "scenario": "영토관계 단일 원본",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-037": {
+      "scenario": "성계·행성 상위 계층 보존",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-038": {
+      "scenario": "행성 물리 충돌 보존",
+      "spec_parts": [
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-039": {
+      "scenario": "자원 매장과 생산 분리",
+      "spec_parts": [
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-040": {
+      "scenario": "시설·노선 누락 방지",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-041": {
+      "scenario": "분모 일치",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-042": {
+      "scenario": "상위 종교·하위 종파",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-043": {
+      "scenario": "복수응답과 공식 단일분류",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-044": {
+      "scenario": "인구 가중평균",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-045": {
+      "scenario": "GDP 가격기준·통화",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-046": {
+      "scenario": "1인당 GDP",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-047": {
+      "scenario": "누락 연도와 성장률",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-048": {
+      "scenario": "전기 0과 성장률",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-049": {
+      "scenario": "퍼센트 입력",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-050": {
+      "scenario": "큰 수와 표시 정밀도",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-051": {
+      "scenario": "정기·보궐·재선거",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-052": {
+      "scenario": "대행에서 정식 승계",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-053": {
+      "scenario": "기관/직위/선거권자 구분",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-054": {
+      "scenario": "당선 의석과 보유의석",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-055": {
+      "scenario": "표종별 유효표 분모",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-056": {
+      "scenario": "직접/산출 선거율 대조",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-057": {
+      "scenario": "제도 개정판",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-058": {
+      "scenario": "상원 갱신 클래스",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-059": {
+      "scenario": "정당 의석 동수",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-060": {
+      "scenario": "합당·분당·선거구 계보",
+      "spec_parts": [
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-061": {
+      "scenario": "기관 개칭과 신설",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-062": {
+      "scenario": "친생·입양·법적관계",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-063": {
+      "scenario": "승계권·순위·지명 독립",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-064": {
+      "scenario": "박탈·포기·복권",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-065": {
+      "scenario": "황실신분과 황제재위",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-066": {
+      "scenario": "존재하지 않는 외부 term_id",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-067": {
+      "scenario": "황태자녀·황후 교체",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-068": {
+      "scenario": "V2 연결 원본 식별",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-069": {
+      "scenario": "순환 연결 검사",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-070": {
+      "scenario": "연결 허용/실패 표시",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-071": {
+      "scenario": "원본 변경 반영",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-072": {
+      "scenario": "제공표 헤더 변경",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-073": {
+      "scenario": "범위 초과·확장",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-074": {
+      "scenario": "원본 최종 차분",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation"
+      ],
+      "status": "미실행"
+    },
+    "T-075": {
+      "scenario": "복구 시험",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-076": {
+      "scenario": "시험 데이터 격리",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-077": {
+      "scenario": "초안/정본/보존 조회",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-078": {
+      "scenario": "검사대상0과 정상 구별",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-079": {
+      "scenario": "혼합 릴리스 탐지",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-080": {
+      "scenario": "자동 변동과 수동 사건 중복",
+      "spec_parts": [
+        "change_feed_contracts.json",
+        "common_hub",
+        "hub_dataset_bindings.json"
+      ],
+      "status": "미실행"
+    },
+    "T-081": {
+      "scenario": "코드북·드롭다운 동기화",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-082": {
+      "scenario": "공개·보호 설정",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-083": {
+      "scenario": "오래된 값·시각 표시",
+      "spec_parts": [
+        "common_hub",
+        "cross_domain_contract_extensions.json",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    },
+    "T-084": {
+      "scenario": "작업 동선·가독성",
+      "spec_parts": [
+        "common_hub",
+        "hub_dataset_bindings.json",
+        "nation",
+        "region"
+      ],
+      "status": "미실행"
+    }
+  },
+  "unreferenced_acceptance_tests": [],
+  "input_artifact_sha256": {
+    "region_function_spec.json": "1f4d3bfcd55b3bad0fe1b854425db6c6c7559da4276bc3c146b96b3a403afc18",
+    "region_issues.json": "48fc75e5590b6fe22302095f34a65f0685f4a8d9f9792414381d08d78702eb99",
+    "region_schema.json": "ae20fce1d83c189ac4b7d7b081430f07e5532ebcd2d13e4679b01eb0cd5b4cf7",
+    "nation_function_spec.json": "cc8ff9dc36f6a9ddeae503d1b1711a22e2e381d209f8d01d23e4cfa439807735",
+    "nation_issues.json": "772a5fd62f4dee3de59729b4d06926d28f580d972211fefd5ad3d8b03742712d",
+    "nation_schema.json": "df4d4efd4fab4690bd8554cdbabd8878888518960c2fa03a19569d212dbcad20",
+    "common_hub_function_spec.json": "0fd2cdc9de79e7c50fa567d52d0eb3533e3eb8e0890a41bbaf64a5cd9008e61b",
+    "common_hub_issues.json": "d9ea6144d5b24f16cfe746196fc1fbb88da0295317a2bc56ece14c94a5c7aca9",
+    "common_hub_schema.json": "a1bd9effbe3a1e547a6ccb9e19b3c509576e89ce4f4b5d364374512067758c0d"
+  },
+  "note": "정적 필드/명세 검사이며 실제 이관·V1 원본 보존 재시험·권한·재계산·온라인 인수시험을 증명하지 않음. 논리표 수는 생성할 탭 수가 아님."
+}

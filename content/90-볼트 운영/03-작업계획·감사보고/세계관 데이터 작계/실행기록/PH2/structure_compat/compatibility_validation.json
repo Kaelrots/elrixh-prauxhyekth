@@ -1,0 +1,102 @@
+{
+  "status": "독립 정적 검사 완료; 온라인 미실행",
+  "errors": [],
+  "native_type_counts": {
+    "minimal_add": 102,
+    "update_table": 102,
+    "UNSPECIFIED": 630,
+    "DOUBLE": 521,
+    "TEXT": 1574
+  },
+  "files": [
+    {
+      "file_code": "C00",
+      "chunks": 6,
+      "requests": 477
+    },
+    {
+      "file_code": "H90",
+      "chunks": 11,
+      "requests": 872
+    },
+    {
+      "file_code": "N10",
+      "chunks": 3,
+      "requests": 210
+    },
+    {
+      "file_code": "N20",
+      "chunks": 8,
+      "requests": 622
+    },
+    {
+      "file_code": "N30",
+      "chunks": 3,
+      "requests": 214
+    },
+    {
+      "file_code": "N40",
+      "chunks": 2,
+      "requests": 120
+    },
+    {
+      "file_code": "N50",
+      "chunks": 2,
+      "requests": 170
+    },
+    {
+      "file_code": "R10",
+      "chunks": 3,
+      "requests": 203
+    },
+    {
+      "file_code": "R20",
+      "chunks": 2,
+      "requests": 130
+    },
+    {
+      "file_code": "R30",
+      "chunks": 2,
+      "requests": 154
+    },
+    {
+      "file_code": "R40",
+      "chunks": 1,
+      "requests": 95
+    },
+    {
+      "file_code": "R50",
+      "chunks": 1,
+      "requests": 98
+    },
+    {
+      "file_code": "R60",
+      "chunks": 3,
+      "requests": 195
+    },
+    {
+      "file_code": "R70",
+      "chunks": 2,
+      "requests": 123
+    }
+  ],
+  "C00_resume": {
+    "skipped_sheet_count": 4,
+    "remaining_sheet_count": 37,
+    "request_count": 448,
+    "chunk_count": 6,
+    "max_chunk_requests": 93
+  },
+  "C00_observed_overrides": {
+    "기준개정이력": "1628412927",
+    "공통기준": "1770024121"
+  },
+  "C00_skipped_sheet_ids": [
+    1082241447,
+    1084974470,
+    1240558339,
+    1275369193
+  ],
+  "old_builder_archive_sha256": "c1d18fa10c5c40c5f1baeae4dff725791a0a2389cef029327b32b90b75bf1abe",
+  "executing_instruction": "C00은 resume_C00.json.chunks 사용, 다른13파일은 CODE.json.chunks 사용. request_groups는 재개필터 근거이며 별도 실행하지 않음."
+}

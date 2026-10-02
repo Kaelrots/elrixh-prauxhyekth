@@ -1,0 +1,2329 @@
+{
+  "spreadsheetId": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c/edit",
+  "properties": {
+    "title": "NAT-V1 · 실행시점 보존 · 2026-10-02",
+    "locale": "ko_KR",
+    "timeZone": "Asia/Seoul"
+  },
+  "sheets": [
+    {
+      "properties": {
+        "sheetId": 1611835517,
+        "title": "00_기준_메타",
+        "index": 0,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 12,
+          "frozenRowCount": 1
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230013,
+        "title": "00_코드북",
+        "index": 1,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 65,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 1312073106,
+        "title": "01_국가_기본정보",
+        "index": 2,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 18,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 1312073106,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 15,
+              "endColumnIndex": 18
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$P2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 1312073106,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 15,
+              "endColumnIndex": 18
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($P2=\"\",$Q2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 298446278,
+        "title": "02_국호_이력",
+        "index": 3,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 14,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 1317339757,
+        "title": "03_영토_이력",
+        "index": 4,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 17,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230000,
+        "title": "04_헌정국체_이력",
+        "index": 5,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 28,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230000,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 25,
+              "endColumnIndex": 28
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$Z2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230000,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 25,
+              "endColumnIndex": 28
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($Z2=\"\",$AA2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230001,
+        "title": "05_수도_이력",
+        "index": 6,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 25,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230001,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 22,
+              "endColumnIndex": 25
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$W2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230001,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 22,
+              "endColumnIndex": 25
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($W2=\"\",$X2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230002,
+        "title": "06_기관구조_이력",
+        "index": 7,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 32,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230002,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 29,
+              "endColumnIndex": 32
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$AD2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230002,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 29,
+              "endColumnIndex": 32
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($AD2=\"\",$AE2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230003,
+        "title": "07_선거구_계보",
+        "index": 8,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 17,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230003,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 14,
+              "endColumnIndex": 17
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$O2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230003,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 14,
+              "endColumnIndex": 17
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($O2=\"\",$P2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 1342670243,
+        "title": "10_인구_연간",
+        "index": 9,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 12,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 647378182,
+        "title": "11_경제_연간",
+        "index": 10,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 15,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 539113504,
+        "title": "12_경제_파생",
+        "index": 11,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 18,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 1715938314,
+        "title": "20_기관_마스터",
+        "index": 12,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 26,
+          "frozenRowCount": 1
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 1715938314,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 23,
+              "endColumnIndex": 26
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$X2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 1715938314,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 23,
+              "endColumnIndex": 26
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($X2=\"\",$Y2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 1810661783,
+        "title": "21_공직_임기",
+        "index": 13,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 37,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 1810661783,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 34,
+              "endColumnIndex": 37
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$AI2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 1810661783,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 34,
+              "endColumnIndex": 37
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($AI2=\"\",$AJ2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 868630103,
+        "title": "22_정당_마스터",
+        "index": 14,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 25,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 868630103,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 22,
+              "endColumnIndex": 25
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$W2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 868630103,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 22,
+              "endColumnIndex": 25
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($W2=\"\",$X2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 714439574,
+        "title": "23_선거_마스터",
+        "index": 15,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 43,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 1974746270,
+        "title": "24_선거_결과",
+        "index": 16,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 15,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 1329284020,
+        "title": "25_선거구_결과",
+        "index": 17,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 26,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 1329284020,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 23,
+              "endColumnIndex": 26
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$X2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 1329284020,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 23,
+              "endColumnIndex": 26
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($X2=\"\",$Y2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 900231026,
+        "title": "26_선거제도",
+        "index": 18,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 36,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 900231027,
+        "title": "27_정당_연간",
+        "index": 19,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 28,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 900231027,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 25,
+              "endColumnIndex": 28
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$Z2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 900231027,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 25,
+              "endColumnIndex": 28
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($Z2=\"\",$AA2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 900231028,
+        "title": "28_선거_부문",
+        "index": 20,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 24,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 900231029,
+        "title": "29_선거_계산",
+        "index": 21,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 28,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 233573434,
+        "title": "30_역사사건",
+        "index": 22,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 12,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230004,
+        "title": "31_인물_마스터",
+        "index": 23,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 22,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230004,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 19,
+              "endColumnIndex": 22
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$T2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230004,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 19,
+              "endColumnIndex": 22
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($T2=\"\",$U2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230005,
+        "title": "32_정당직책_마스터",
+        "index": 24,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 18,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230005,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 15,
+              "endColumnIndex": 18
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$P2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230005,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 15,
+              "endColumnIndex": 18
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($P2=\"\",$Q2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230006,
+        "title": "33_정당지도부_이력",
+        "index": 25,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 36,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230006,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 33,
+              "endColumnIndex": 36
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$AH2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230006,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 33,
+              "endColumnIndex": 36
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($AH2=\"\",$AI2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230007,
+        "title": "34_정당계파_마스터",
+        "index": 26,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 29,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230007,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 26,
+              "endColumnIndex": 29
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$AA2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230007,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 26,
+              "endColumnIndex": 29
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($AA2=\"\",$AB2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230008,
+        "title": "35_황실신분_이력",
+        "index": 27,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 32,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230008,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 29,
+              "endColumnIndex": 32
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$AD2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230008,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 29,
+              "endColumnIndex": 32
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($AD2=\"\",$AE2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230009,
+        "title": "36_친족관계_이력",
+        "index": 28,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 30,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230009,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 27,
+              "endColumnIndex": 30
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$AB2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230009,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 27,
+              "endColumnIndex": 30
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($AB2=\"\",$AC2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230010,
+        "title": "37_황위계승_이력",
+        "index": 29,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 37,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230010,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 34,
+              "endColumnIndex": 37
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$AI2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230010,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 34,
+              "endColumnIndex": 37
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($AI2=\"\",$AJ2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230011,
+        "title": "38_정당관계_이력",
+        "index": 30,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 18,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230011,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 15,
+              "endColumnIndex": 18
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$P2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230011,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 15,
+              "endColumnIndex": 18
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($P2=\"\",$Q2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 920230012,
+        "title": "39_선거구_마스터",
+        "index": 31,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 31,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230012,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 28,
+              "endColumnIndex": 31
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$AC2<>\"\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230012,
+              "startRowIndex": 1,
+              "endRowIndex": 501,
+              "startColumnIndex": 28,
+              "endColumnIndex": 31
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=AND($AC2=\"\",$AD2<>\"\")"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 1792442252,
+        "title": "40_행성대비_지표",
+        "index": 32,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 13,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 1795511654,
+        "title": "41_행성_연결",
+        "index": 33,
+        "sheetType": "GRID",
+        "hidden": true,
+        "gridProperties": {
+          "rowCount": 1003,
+          "columnCount": 51,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230014,
+        "title": "42_행성_기본속성_연결",
+        "index": 34,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 12,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230015,
+        "title": "43_지역_참조_연결",
+        "index": 35,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1003,
+          "columnCount": 15,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230016,
+        "title": "44_행성_연간지표_연결",
+        "index": 36,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1003,
+          "columnCount": 26,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 1455341768,
+        "title": "80_연도별_정치현황",
+        "index": 37,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 12,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 625749522,
+        "title": "81_연도별_선거현황",
+        "index": 38,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 12,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 302099382,
+        "title": "82_연도별_경제현황",
+        "index": 39,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 12,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 2076158902,
+        "title": "83_연방_통합연표",
+        "index": 40,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 22,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230017,
+        "title": "84_연도별_행정부",
+        "index": 41,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 6,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230018,
+        "title": "85_연도별_정당지도부",
+        "index": 42,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 9,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230019,
+        "title": "86_연도별_황실계승",
+        "index": 43,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1001,
+          "columnCount": 12,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230020,
+        "title": "87_시점별_황위계승",
+        "index": 44,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 510,
+          "columnCount": 13,
+          "frozenRowCount": 5,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230021,
+        "title": "88_친족관계_조회",
+        "index": 45,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1010,
+          "columnCount": 8,
+          "frozenRowCount": 5,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230022,
+        "title": "89_변동_연표",
+        "index": 46,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 16001,
+          "columnCount": 10,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 1916985706,
+        "title": "90_출처_레지스트리",
+        "index": 47,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 501,
+          "columnCount": 12,
+          "frozenRowCount": 1
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230023,
+        "title": "91_스키마_안내",
+        "index": 48,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 201,
+          "columnCount": 8,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      }
+    },
+    {
+      "properties": {
+        "sheetId": 920230024,
+        "title": "98_검증_요약",
+        "index": 49,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 201,
+          "columnCount": 8,
+          "frozenRowCount": 1,
+          "frozenColumnCount": 2
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 920230024,
+              "startRowIndex": 1,
+              "endRowIndex": 31,
+              "startColumnIndex": 0,
+              "endColumnIndex": 8
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$F2=\"오류\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 920230024,
+              "startRowIndex": 1,
+              "endRowIndex": 31,
+              "startColumnIndex": 0,
+              "endColumnIndex": 8
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$F2=\"경고\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "sheetId": 2010261323,
+        "title": "99_검증_상세",
+        "index": 50,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 15111,
+          "columnCount": 12,
+          "frozenRowCount": 1
+        }
+      },
+      "conditionalFormats": [
+        {
+          "ranges": [
+            {
+              "sheetId": 2010261323,
+              "startRowIndex": 1,
+              "endRowIndex": 15096,
+              "startColumnIndex": 0,
+              "endColumnIndex": 8
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$F2=\"오류\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 0.95686275,
+                "green": 0.8,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 0.95686275,
+                  "green": 0.8,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 2010261323,
+              "startRowIndex": 1,
+              "endRowIndex": 15096,
+              "startColumnIndex": 0,
+              "endColumnIndex": 8
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "CUSTOM_FORMULA",
+              "values": [
+                {
+                  "userEnteredValue": "=$F2=\"경고\""
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.9490196,
+                "blue": 0.8
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.9490196,
+                  "blue": 0.8
+                }
+              }
+            }
+          }
+        },
+        {
+          "ranges": [
+            {
+              "sheetId": 2010261323,
+              "startRowIndex": 1,
+              "endRowIndex": 15111,
+              "startColumnIndex": 3,
+              "endColumnIndex": 4
+            }
+          ],
+          "booleanRule": {
+            "condition": {
+              "type": "TEXT_CONTAINS",
+              "values": [
+                {
+                  "userEnteredValue": "확인"
+                }
+              ]
+            },
+            "format": {
+              "backgroundColor": {
+                "red": 1,
+                "green": 0.8980392,
+                "blue": 0.84705883
+              },
+              "textFormat": {
+                "bold": true
+              },
+              "backgroundColorStyle": {
+                "rgbColor": {
+                  "red": 1,
+                  "green": 0.8980392,
+                  "blue": 0.84705883
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

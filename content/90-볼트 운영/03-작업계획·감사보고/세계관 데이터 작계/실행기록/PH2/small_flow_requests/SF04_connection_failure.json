@@ -1,0 +1,50 @@
+{
+  "step_id": "SF04_connection_failure",
+  "run_id": "TEST-SF-20261002-01",
+  "result": "미실행",
+  "preconditions": [
+    "앞 단계 native 읽기 확인",
+    "정확한 TEST 대상 ID 검증"
+  ],
+  "writes": [
+    {
+      "spreadsheet_id": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "file_code": "TEST-H90",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71005001,
+              "startRowIndex": 19,
+              "endRowIndex": 20,
+              "startColumnIndex": 3,
+              "endColumnIndex": 4
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST_RANGE_DOES_NOT_EXIST"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "H90_VIEW_소형흐름_B4": "연결실패",
+    "H90_VIEW_소형흐름_B6": "연결실패",
+    "H90_REF_POPULATION_A3": "native #REF! with error details; numeric0 forbidden"
+  },
+  "readback": [
+    "H90:REF_POPULATION!A3:D5",
+    "H90:VIEW_소형흐름!A4:B6",
+    "H90:01_설정!A20:M20"
+  ]
+}

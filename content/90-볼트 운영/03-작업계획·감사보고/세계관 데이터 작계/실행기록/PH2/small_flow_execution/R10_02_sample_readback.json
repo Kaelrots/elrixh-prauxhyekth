@@ -1,0 +1,856 @@
+{
+  "checked_at": "2026-10-02T09:21:18.833Z",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8/edit",
+      "properties": {
+        "title": "TEST-R10 · 소형 연결시험 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 71001001,
+            "title": "01_설정",
+            "index": 1,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 19,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "PUB_CODEBOOK_V2",
+                      "userEnteredValue": {
+                        "stringValue": "PUB_CODEBOOK_V2"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PUB_CODEBOOK_V2"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-C00",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-C00"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-C00"
+                      }
+                    },
+                    {
+                      "formattedValue": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY",
+                      "userEnteredValue": {
+                        "stringValue": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY"
+                      }
+                    },
+                    {
+                      "formattedValue": "PUB_CODEBOOK_V2",
+                      "userEnteredValue": {
+                        "stringValue": "PUB_CODEBOOK_V2"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PUB_CODEBOOK_V2"
+                      }
+                    },
+                    {
+                      "formattedValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status",
+                      "userEnteredValue": {
+                        "stringValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_CODEBOOK!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_CODEBOOK!A3:S3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_CODEBOOK!A3),\"연결실패\",IF(F20<>E20,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "메타 연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_CODEBOOK!A3),\"메타 연결실패\",IF(RMETA_CODEBOOK!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_CODEBOOK!C4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "메타 연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",COUNTIF(REF_CODEBOOK!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H20)),NOT(ISNUMBER(I20))),\"미확인\",IF(H20=I20,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_CODEBOOK!A3),\"미확인\",RMETA_CODEBOOK!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",IF(L20=K20,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71001002,
+            "title": "IN_지역목록",
+            "index": 2,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "sort_order",
+                      "userEnteredValue": {
+                        "stringValue": "sort_order"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "sort_order"
+                      }
+                    },
+                    {
+                      "formattedValue": "name_ko",
+                      "userEnteredValue": {
+                        "stringValue": "name_ko"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "name_ko"
+                      }
+                    },
+                    {
+                      "formattedValue": "name_roman",
+                      "userEnteredValue": {
+                        "stringValue": "name_roman"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "name_roman"
+                      }
+                    },
+                    {
+                      "formattedValue": "name_elun",
+                      "userEnteredValue": {
+                        "stringValue": "name_elun"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "name_elun"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_level",
+                      "userEnteredValue": {
+                        "stringValue": "region_level"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_level"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_id",
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_grade",
+                      "userEnteredValue": {
+                        "stringValue": "region_grade"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_grade"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_class",
+                      "userEnteredValue": {
+                        "stringValue": "region_class"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_class"
+                      }
+                    },
+                    {
+                      "formattedValue": "hex_color",
+                      "userEnteredValue": {
+                        "stringValue": "hex_color"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "hex_color"
+                      }
+                    },
+                    {
+                      "formattedValue": "setting_status",
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_id",
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_snapshot_id",
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "legacy_locator",
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {},
+                    {
+                      "formattedValue": "시험 지역",
+                      "userEnteredValue": {
+                        "stringValue": "시험 지역"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시험 지역"
+                      }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                      "formattedValue": "TEST-REGION-001",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-REGION-001"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-001"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "TEST-REGION-CLASS",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-REGION-CLASS"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-CLASS"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "초안",
+                      "userEnteredValue": {
+                        "stringValue": "초안"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "초안"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71001004,
+            "title": "PUB_REGIONS",
+            "index": 4,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "sort_order",
+                      "userEnteredValue": {
+                        "stringValue": "sort_order"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "sort_order"
+                      }
+                    },
+                    {
+                      "formattedValue": "name_ko",
+                      "userEnteredValue": {
+                        "stringValue": "name_ko"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "name_ko"
+                      }
+                    },
+                    {
+                      "formattedValue": "name_roman",
+                      "userEnteredValue": {
+                        "stringValue": "name_roman"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "name_roman"
+                      }
+                    },
+                    {
+                      "formattedValue": "name_elun",
+                      "userEnteredValue": {
+                        "stringValue": "name_elun"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "name_elun"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_level",
+                      "userEnteredValue": {
+                        "stringValue": "region_level"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_level"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_id",
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_grade",
+                      "userEnteredValue": {
+                        "stringValue": "region_grade"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_grade"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_class",
+                      "userEnteredValue": {
+                        "stringValue": "region_class"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_class"
+                      }
+                    },
+                    {
+                      "formattedValue": "hex_color",
+                      "userEnteredValue": {
+                        "stringValue": "hex_color"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "hex_color"
+                      }
+                    },
+                    {
+                      "formattedValue": "setting_status",
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_id",
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_snapshot_id",
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "legacy_locator",
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      }
+                    },
+                    {
+                      "formattedValue": "color_chip",
+                      "userEnteredValue": {
+                        "stringValue": "color_chip"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "color_chip"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!A4=\"\",\"\",'IN_지역목록'!A4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "시험 지역",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!B4=\"\",\"\",'IN_지역목록'!B4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시험 지역"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!C4=\"\",\"\",'IN_지역목록'!C4))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!D4=\"\",\"\",'IN_지역목록'!D4))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!E4=\"\",\"\",'IN_지역목록'!E4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-REGION-001",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!F4=\"\",\"\",'IN_지역목록'!F4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-001"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!G4=\"\",\"\",'IN_지역목록'!G4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-REGION-CLASS",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!H4=\"\",\"\",'IN_지역목록'!H4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-CLASS"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!I4=\"\",\"\",'IN_지역목록'!I4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "초안",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!J4=\"\",\"\",'IN_지역목록'!J4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "초안"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!K4=\"\",\"\",'IN_지역목록'!K4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!L4=\"\",\"\",'IN_지역목록'!L4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F4=\"\",\"\",IF('IN_지역목록'!M4=\"\",\"\",'IN_지역목록'!M4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('VIEW_지역목록_조회계산'!B4=\"\",\"\",IF('VIEW_지역목록_조회계산'!A4=\"\",\"\",'VIEW_지역목록_조회계산'!A4))"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!A5=\"\",\"\",'IN_지역목록'!A5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!B5=\"\",\"\",'IN_지역목록'!B5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!C5=\"\",\"\",'IN_지역목록'!C5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!D5=\"\",\"\",'IN_지역목록'!D5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!E5=\"\",\"\",'IN_지역목록'!E5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!F5=\"\",\"\",'IN_지역목록'!F5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!G5=\"\",\"\",'IN_지역목록'!G5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!H5=\"\",\"\",'IN_지역목록'!H5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!I5=\"\",\"\",'IN_지역목록'!I5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!J5=\"\",\"\",'IN_지역목록'!J5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!K5=\"\",\"\",'IN_지역목록'!K5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!L5=\"\",\"\",'IN_지역목록'!L5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_지역목록'!F5=\"\",\"\",IF('IN_지역목록'!M5=\"\",\"\",'IN_지역목록'!M5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('VIEW_지역목록_조회계산'!B5=\"\",\"\",IF('VIEW_지역목록_조회계산'!A5=\"\",\"\",'VIEW_지역목록_조회계산'!A5))"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71001006,
+            "title": "VIEW_소형흐름",
+            "index": 6,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "항목",
+                      "userEnteredValue": {
+                        "stringValue": "항목"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목"
+                      }
+                    },
+                    {
+                      "formattedValue": "결과",
+                      "userEnteredValue": {
+                        "stringValue": "결과"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "결과"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "분류 코드",
+                      "userEnteredValue": {
+                        "stringValue": "분류 코드"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "분류 코드"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-REGION-CLASS",
+                      "userEnteredValue": {
+                        "formulaValue": "='IN_지역목록'!H4"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-CLASS"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "C00 분류명",
+                      "userEnteredValue": {
+                        "stringValue": "C00 분류명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "C00 분류명"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF(COUNTIFS(REF_CODEBOOK!$B$4:$B$13,'IN_지역목록'!H4)<>1,\"키 없음·중복\",INDEX(REF_CODEBOOK!$C$4:$C$13,MATCH('IN_지역목록'!H4,REF_CODEBOOK!$B$4:$B$13,0))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71001008,
+            "title": "REF_CODEBOOK",
+            "index": 8,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "#REF!",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C20,'01_설정'!D20)"
+                      },
+                      "effectiveValue": {
+                        "errorValue": {
+                          "type": "REF",
+                          "message": "Please use a desktop web browser to connect this sheet."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71001009,
+            "title": "RMETA_CODEBOOK",
+            "index": 9,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "#REF!",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C20,\"META_PUB_CODEBOOK_V2\")"
+                      },
+                      "effectiveValue": {
+                        "errorValue": {
+                          "type": "REF",
+                          "message": "Please use a desktop web browser to connect this sheet."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

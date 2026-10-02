@@ -1,0 +1,252 @@
+{
+  "step_id": "SF03_change",
+  "run_id": "TEST-SF-20261002-01",
+  "result": "미실행",
+  "preconditions": [
+    "앞 단계 native 읽기 확인",
+    "정확한 TEST 대상 ID 검증"
+  ],
+  "writes": [
+    {
+      "spreadsheet_id": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+      "file_code": "TEST-R20",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71002001,
+              "startRowIndex": 5,
+              "endRowIndex": 6,
+              "startColumnIndex": 1,
+              "endColumnIndex": 2
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71002002,
+              "startRowIndex": 3,
+              "endRowIndex": 4,
+              "startColumnIndex": 3,
+              "endColumnIndex": 4
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "numberValue": 200
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    },
+    {
+      "spreadsheet_id": "1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww",
+      "file_code": "TEST-N30",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71003001,
+              "startRowIndex": 5,
+              "endRowIndex": 6,
+              "startColumnIndex": 1,
+              "endColumnIndex": 2
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71003002,
+              "startRowIndex": 3,
+              "endRowIndex": 4,
+              "startColumnIndex": 1,
+              "endColumnIndex": 2
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "시험 인물 수정"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    },
+    {
+      "spreadsheet_id": "16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo",
+      "file_code": "TEST-N20",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71004001,
+              "startRowIndex": 5,
+              "endRowIndex": 6,
+              "startColumnIndex": 1,
+              "endColumnIndex": 2
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71004001,
+              "startRowIndex": 19,
+              "endRowIndex": 20,
+              "startColumnIndex": 10,
+              "endColumnIndex": 11
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    },
+    {
+      "spreadsheet_id": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "file_code": "TEST-H90",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71005001,
+              "startRowIndex": 19,
+              "endRowIndex": 20,
+              "startColumnIndex": 10,
+              "endColumnIndex": 11
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71005001,
+              "startRowIndex": 20,
+              "endRowIndex": 21,
+              "startColumnIndex": 10,
+              "endColumnIndex": 11
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71005001,
+              "startRowIndex": 21,
+              "endRowIndex": 22,
+              "startColumnIndex": 10,
+              "endColumnIndex": 11
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.2"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "H90_VIEW_소형흐름_B6": 200,
+    "H90_VIEW_소형흐름_B8": "시험 인물 수정",
+    "H90_VIEW_소형흐름_B10": "시험 인물 수정"
+  },
+  "readback": [
+    "H90:VIEW_소형흐름!A3:B11",
+    "N20:VIEW_OFFICE_TERM!A4:O4",
+    "all:01_설정!A19:M24"
+  ]
+}

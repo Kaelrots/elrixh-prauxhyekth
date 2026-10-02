@@ -1,0 +1,188 @@
+{
+  "schema_version": "PH1-RULES-1",
+  "status": "실행 규약 명세 · 운영 구현 및 온라인 시험 미실행",
+  "source_authority": {
+    "v1_ids": [
+      "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+      "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI"
+    ],
+    "v1_writes_allowed": false,
+    "baseline_exception_approved": false,
+    "baseline_diff_status": "미검증",
+    "new_backups_created_on_resume": 0
+  },
+  "id_policy": {
+    "existing_id": "문자열·대소문자·철자 유지. source namespace를 별도 열로 보존; 이름이나 정렬순서로 ID 재발급 금지",
+    "new_migration_record_id": "대상 record ID가 필요하면 legacy_locator를 키로 한 영속 대응 원장에 한 번 생성해 저장. 생성 방식과 namespace는 C00에 기록. 기존 entity ID를 대체하지 않음",
+    "cross_snapshot_reconciliation": "같은 원본 entity ID와 이전 대응을 먼저 확인. snapshot·행번호만으로 새 사실을 중복삽입하지 않음. 원문 불일치는 후보/충돌로 보존",
+    "legacy_locator_fields": [
+      "source_file_id",
+      "source_sheet_id",
+      "source_sheet_name",
+      "original_row",
+      "original_record_id",
+      "snapshot_id"
+    ],
+    "split_record": "한 legacy_locator→여러 target records 허용. 각각 분리된 사실/필드와 transform_rule을 기록",
+    "entity_collision": "동일 문자열이 다른 개체면 source_namespace+id를 보존하고 결정대기. 이름만으로 병합금지"
+  },
+  "value_policy": {
+    "raw_preservation": [
+      "raw_value",
+      "raw_type",
+      "raw_formula",
+      "raw_cached_result",
+      "raw_note",
+      "raw_hyperlink",
+      "source_locator"
+    ],
+    "separate_axes": [
+      "value_status",
+      "generation_method",
+      "setting_status",
+      "adoption_status",
+      "validation_status",
+      "route",
+      "edition"
+    ],
+    "empty": "원문 빈칸을 확정0으로 바꾸지 않음. source의 미정/미상/해당없음 표현 유지",
+    "zero": "직접 입력0은 값 존재. IF(value,...)로 결측 판정금지",
+    "formula_cache": "cache/spill/호환결과는 직접 입력사실로 승격하지 않음",
+    "large_numbers": "원문숫자문자열 유지. 정밀도한계 넘어갈 때 계산용 근사값과 정확도상태 분리",
+    "ratio": "0~1 저장, 원문 표기 보존. 숫자73.45의 임의 0.7345 변환금지; 원문 % 형식·단위 근거필요"
+  },
+  "temporal_policy": {
+    "calendar": "세계관용 구조화 날짜; Gregorian DATE 사용금지",
+    "components": [
+      "route",
+      "era",
+      "era_edition",
+      "year",
+      "month",
+      "day",
+      "precision",
+      "calendar_phase"
+    ],
+    "known_rules": {
+      "months_per_year": 48,
+      "days_per_month": 30,
+      "civil_days_per_year": 1440,
+      "civil_day_seconds": 86400,
+      "correction_seconds": 432,
+      "correction_boundary": "24월30일 종료~25월1일 시작",
+      "leap_year": false
+    },
+    "year_zero": "제3기0년 허용. 결측0과 구분",
+    "exact_interval": "[start,end)",
+    "year_only_end": "연간열람은 종료연도포함; 실제종료일 저장금지. 필터용경계는 조회경계로 표시",
+    "unknown_end": "무기한과 구분. 기존 기능의 기록된 시작연도만 표시",
+    "cross_era": "승인된 기년대응표 없으면 절대 비교 보류",
+    "uncertain_order": "정밀도 부족한 같은해 자료의 선후관계 임의확정금지",
+    "seconds": "일반입력에 초를 강제하지 않음. 보정구간을 쓸때만 calendar_phase/correction_second 명시"
+  },
+  "single_owners": {
+    "territorial_relation": "R50",
+    "person": "N30",
+    "public_office_term_including_emperor": "N20",
+    "region_identity": "R10",
+    "classification_standard_source": "C00",
+    "planet_regional_population": "R20",
+    "national_direct_population": "N40",
+    "regional_planet_economy": "R60",
+    "national_direct_economy": "N50"
+  },
+  "connection_contract_required": [
+    "dataset_id",
+    "owner_file_code",
+    "owner_spreadsheet_id",
+    "schema_version",
+    "release_id",
+    "source_revision",
+    "export_range",
+    "primary_key_fields",
+    "column_schema",
+    "record_count",
+    "coverage",
+    "route",
+    "era",
+    "status_policy",
+    "validation_status",
+    "checked_at"
+  ],
+  "connection_policy": {
+    "C00_imports": [],
+    "H90_consumed_by": [],
+    "forbidden_imports": [
+      {
+        "provider": "N20",
+        "consumer": "N30"
+      },
+      {
+        "provider": "H90",
+        "consumer": "any"
+      }
+    ],
+    "cross_reference": "외래ID 저장/하이퍼링크와 import 의존은 구분",
+    "single_fetch": "외부 dataset은 소비파일 REF탭 한 번 수신 후 재사용",
+    "headers": "기술열명을 검증하고 불일치는 계산차단. 고정열번호 사용시 schema signature 대조",
+    "failure_states": [
+      "권한 미허용",
+      "원본 미접근",
+      "범위 없음",
+      "스키마 불일치",
+      "갱신 대기",
+      "정상 확인",
+      "오래된 스냅샷"
+    ],
+    "forbidden_fallbacks": [
+      "IFERROR(외부참조,0)",
+      "연결실패를 빈문자열/자료없음으로 은폐"
+    ],
+    "refresh": "NOW변경은 수신성공 증거아님. 실제 re-read 검증시각과 source_revision 기록",
+    "v1_refs": "보존링크는허용; V2운영식의V1주소 금지"
+  },
+  "counting_policy": {
+    "separate_counts": [
+      "source_input_candidates",
+      "source_records_preserved",
+      "confirmed_same_facts_merged",
+      "split_target_records",
+      "unclassified_preservation",
+      "omitted_fields"
+    ],
+    "no_fact_count_from": [
+      "formula_cells",
+      "FALSE_defaults",
+      "help_or_validation_labels",
+      "import_spill_literals",
+      "cached_results"
+    ],
+    "no_zero_scope_pass": "검사대상0/자료없음은 정상실적통과와 구분"
+  },
+  "expansion_protocol": {
+    "status": "설계 · PH2/PH6 TEST 검증 필요",
+    "transaction_artifact": "확장 manifest에 기존/새 범위, 실제fileID,source_revision,rollback위치,검증상태 저장",
+    "steps": [
+      "TEST 사본에 현재/예상/확장규모 입력. 원본V1시험쓰기금지",
+      "관련 입력·계산·검증·PUB·consumer 범위를 한 manifest에 모두 기록",
+      "동시업데이트 중 상태를 H90/consumer에 표시; 서로다른 릴리스 계산차단",
+      "원본그리드/표/기본값/검증·계산과 제공범위를 확장하고 모든 consumer 수신범위를 갱신",
+      "경계바로뒤행 및 새마지막행을 읽어 값/검증/요약에 포함되는지 검사",
+      "실제원자료수와 제공record_count가 일치할때만 새용량·release를 정상확인",
+      "실패하면 신규입력차분보존 후 manifest 범위/소비계약 함께 복구"
+    ],
+    "overflow": "지원이 확인된 native table 자동확장 또는 명시 확장절차만 채택. 고정내보내기범위로 초과행을 조용히 누락하지 않음"
+  },
+  "test_policy": {
+    "acceptance_csv": "검증결과.csv",
+    "T_074_override": "실제 V1 시험쓰기 금지; TEST V1 복제본으로 변경·충돌 재현",
+    "operating_test_data": "TEST- IDs와 test_run_id는 전용사본에만 입력",
+    "local_static_checks": "84개 온라인인수시험과 별도집계. 설계검사통과를 구현통과로 올리지 않음"
+  },
+  "PH2_release_gate": [
+    "기준 첨부 XLSX 차분 확인 또는 사용자의 명시적 온라인 스냅샷 예외승인",
+    "PH1 전필드/기능 대응과 중복원본·순환 설계 감사",
+    "목적지 중복검색/실제생성ID와 V1불일치 검증",
+    "TEST 소형흐름 권한·변경반영·스키마·오류표시 시험 전 대량수식배포 금지"
+  ]
+}

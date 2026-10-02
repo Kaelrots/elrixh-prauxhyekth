@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-10-02 07:49:44 UTC",
+  "original_writes": 0,
+  "sources": [
+    {
+      "id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+      "metadata_equal": true,
+      "start_metadata": "REG-V1_drive_start.json",
+      "end_metadata": "REG-V1_drive_end.json",
+      "content_comparison": "canonical start/end worksheet comparison stored separately"
+    },
+    {
+      "id": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI",
+      "metadata_equal": true,
+      "start_metadata": "NAT-V1_drive_start.json",
+      "end_metadata": "NAT-V1_drive_end.json",
+      "content_comparison": "canonical start/end worksheet comparison stored separately"
+    }
+  ],
+  "native_probe_scope": [
+    {
+      "spreadsheet_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "scope": "V1 원본이 아닌 실행시점 백업 사본",
+      "sentinel": "__WORLD_DATA_V2_METADATA_PROBE_01a0fb83__",
+      "sentinel_in_export": 0,
+      "response": [
+        {
+          "findReplace": {}
+        }
+      ],
+      "note": "존재하지 않는 동일 문자열 findReplace metadata probe; V1 원본에는 batchUpdate 호출 없음",
+      "evidence": "REG-V1_backup_native_metadata.json"
+    },
+    {
+      "spreadsheet_id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+      "scope": "V1 원본이 아닌 실행시점 백업 사본",
+      "sentinel": "__WORLD_DATA_V2_METADATA_PROBE_01a0fb83__",
+      "sentinel_in_export": 0,
+      "response": [
+        {
+          "findReplace": {}
+        }
+      ],
+      "note": "존재하지 않는 동일 문자열 findReplace metadata probe; V1 원본에는 batchUpdate 호출 없음",
+      "evidence": "NAT-V1_backup_native_metadata.json"
+    }
+  ]
+}

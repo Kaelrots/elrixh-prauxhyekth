@@ -1,0 +1,670 @@
+{
+  "project_id": "WORLD-DATA-V2",
+  "plan_version": "1.0",
+  "execution_id": "WORLD-DATA-V2-20261002-01a0fb83",
+  "phase": "PH2",
+  "status": "PH2 기본 구조·기본 자료·소형시험 체크포인트 저장 · 사용자 종료 요청에 따라 중단",
+  "source_snapshot_ids": {
+    "REG-V1": {
+      "id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+      "title": "지역 상세 목록",
+      "mime_type": "application/vnd.google-apps.spreadsheet",
+      "size": null,
+      "url": "https://docs.google.com/spreadsheets/d/1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw/edit?usp=drivesdk",
+      "display_url": "https://docs.google.com/spreadsheets/d/1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw/edit?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": null,
+      "modified_time": "2026-09-23T03:16:10.511Z",
+      "parent_ids": [
+        "1LsdpyRrRWTgrnxB8H7nCEh9FVo9IApsO"
+      ],
+      "drive_id": null,
+      "current_user_can_share": true,
+      "has_augmented_permissions": null,
+      "shared": null,
+      "permissions": [
+        {
+          "type": "anyone",
+          "role": "writer",
+          "emailAddress": null,
+          "domain": null,
+          "displayName": null,
+          "allowFileDiscovery": false
+        },
+        {
+          "type": "user",
+          "role": "owner",
+          "emailAddress": "dbxh613@gmail.com",
+          "domain": null,
+          "displayName": "카엘",
+          "allowFileDiscovery": null
+        }
+      ],
+      "source_visibility_status": "permission_metadata_available",
+      "native_backup": {
+        "success": true,
+        "id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+        "title": "REG-V1 · 실행시점 보존 · 2026-10-02",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ/edit?usp=drivesdk",
+        "made_private": false
+      },
+      "xlsx_backup": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1ylY7ZKYDib0BZqmY8rNb1LoVPF9NHu9_",
+        "title": "REG-V1_online_2026-10-02.xlsx",
+        "file_name": "REG-V1_online_2026-10-02.xlsx",
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "url": "https://docs.google.com/spreadsheets/d/1ylY7ZKYDib0BZqmY8rNb1LoVPF9NHu9_/edit?usp=drivesdk&ouid=105181158144561550933&rtpof=true&sd=true",
+        "parent_id": "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1ylY7ZKYDib0BZqmY8rNb1LoVPF9NHu9_",
+          "title": "REG-V1_online_2026-10-02.xlsx",
+          "file_name": "REG-V1_online_2026-10-02.xlsx",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://docs.google.com/spreadsheets/d/1ylY7ZKYDib0BZqmY8rNb1LoVPF9NHu9_/edit?usp=drivesdk&ouid=105181158144561550933&rtpof=true&sd=true",
+          "parent_id": "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9"
+        }
+      },
+      "local_snapshot": "C:/구글 드라이브/세계관/90-볼트 운영/03-작업계획·감사보고/세계관 데이터 작계/실행기록/PH0/REG-V1_online.xlsx",
+      "snapshot_sha256": "1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+    },
+    "NAT-V1": {
+      "id": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI",
+      "title": "엘리시움 신성제국 연방 국가 데이터 (신규 입력용)",
+      "mime_type": "application/vnd.google-apps.spreadsheet",
+      "size": null,
+      "url": "https://docs.google.com/spreadsheets/d/1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI/edit?usp=drivesdk",
+      "display_url": "https://docs.google.com/spreadsheets/d/1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI/edit?usp=drivesdk",
+      "file_or_folder": "file",
+      "created_time": null,
+      "modified_time": "2026-09-23T09:30:49.966Z",
+      "parent_ids": [
+        "1n7D6aBKF_QtTnQoKpywJBagurXESGh4O"
+      ],
+      "drive_id": null,
+      "current_user_can_share": true,
+      "has_augmented_permissions": null,
+      "shared": null,
+      "permissions": [
+        {
+          "type": "anyone",
+          "role": "writer",
+          "emailAddress": null,
+          "domain": null,
+          "displayName": null,
+          "allowFileDiscovery": false
+        },
+        {
+          "type": "user",
+          "role": "owner",
+          "emailAddress": "dbxh613@gmail.com",
+          "domain": null,
+          "displayName": "카엘",
+          "allowFileDiscovery": null
+        }
+      ],
+      "source_visibility_status": "permission_metadata_available",
+      "native_backup": {
+        "success": true,
+        "id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+        "title": "NAT-V1 · 실행시점 보존 · 2026-10-02",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c/edit?usp=drivesdk",
+        "made_private": false
+      },
+      "xlsx_backup": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1-BgTMaGFFMKdu-mbVwuN9VyiHG5tXoJl",
+        "title": "NAT-V1_online_2026-10-02.xlsx",
+        "file_name": "NAT-V1_online_2026-10-02.xlsx",
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "url": "https://docs.google.com/spreadsheets/d/1-BgTMaGFFMKdu-mbVwuN9VyiHG5tXoJl/edit?usp=drivesdk&ouid=105181158144561550933&rtpof=true&sd=true",
+        "parent_id": "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9",
+        "structuredContent": {
+          "accepted_input": "file_uri",
+          "success": true,
+          "id": "1-BgTMaGFFMKdu-mbVwuN9VyiHG5tXoJl",
+          "title": "NAT-V1_online_2026-10-02.xlsx",
+          "file_name": "NAT-V1_online_2026-10-02.xlsx",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://docs.google.com/spreadsheets/d/1-BgTMaGFFMKdu-mbVwuN9VyiHG5tXoJl/edit?usp=drivesdk&ouid=105181158144561550933&rtpof=true&sd=true",
+          "parent_id": "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9"
+        }
+      },
+      "local_snapshot": "C:/구글 드라이브/세계관/90-볼트 운영/03-작업계획·감사보고/세계관 데이터 작계/실행기록/PH0/NAT-V1_online.xlsx",
+      "snapshot_sha256": "f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+    }
+  },
+  "source_modified_times": {
+    "REG-V1": "2026-09-23T03:16:10.511Z",
+    "NAT-V1": "2026-09-23T09:30:49.966Z"
+  },
+  "source_fingerprints": {
+    "REG-V1": {
+      "xlsx_sha256": "1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+      "scope": "실행시점 XLSX; 첨부본 동일성 의미 아님"
+    },
+    "NAT-V1": {
+      "xlsx_sha256": "f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1",
+      "scope": "실행시점 XLSX; 첨부본 동일성 의미 아님"
+    }
+  },
+  "folders": {
+    "ChatGPT": {
+      "id": "1-5JKn8_ead76q9Nf7zxGO6HW0wis_Jdd",
+      "url": "https://drive.google.com/drive/folders/1-5JKn8_ead76q9Nf7zxGO6HW0wis_Jdd"
+    },
+    "project": {
+      "success": true,
+      "id": "1VGwXPx59hEl0VGlMWitymxkesTsHVxyF",
+      "url": "https://drive.google.com/drive/folders/1VGwXPx59hEl0VGlMWitymxkesTsHVxyF",
+      "title": "세계관 데이터 V2",
+      "parent_id": "1-5JKn8_ead76q9Nf7zxGO6HW0wis_Jdd"
+    },
+    "90-V1 보존": {
+      "success": true,
+      "id": "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9",
+      "url": "https://drive.google.com/drive/folders/1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9",
+      "title": "90-V1 보존",
+      "parent_id": "1VGwXPx59hEl0VGlMWitymxkesTsHVxyF"
+    },
+    "00-공통·운영": {
+      "success": true,
+      "id": "1qbV5uDVbTFbmK9OtcLNXXtxbvbhjSn-Q",
+      "url": "https://drive.google.com/drive/folders/1qbV5uDVbTFbmK9OtcLNXXtxbvbhjSn-Q",
+      "title": "00-공통·운영",
+      "parent_id": "1VGwXPx59hEl0VGlMWitymxkesTsHVxyF"
+    },
+    "10-지역": {
+      "success": true,
+      "id": "1nYVOJWeJPVfCClaoR4xsN8Ru_R5SCJf0",
+      "url": "https://drive.google.com/drive/folders/1nYVOJWeJPVfCClaoR4xsN8Ru_R5SCJf0",
+      "title": "10-지역",
+      "parent_id": "1VGwXPx59hEl0VGlMWitymxkesTsHVxyF"
+    },
+    "20-엘리시움 연방": {
+      "success": true,
+      "id": "1lDlea-ccwUeQVrIzbl3evVla-EI5CJw_",
+      "url": "https://drive.google.com/drive/folders/1lDlea-ccwUeQVrIzbl3evVla-EI5CJw_",
+      "title": "20-엘리시움 연방",
+      "parent_id": "1VGwXPx59hEl0VGlMWitymxkesTsHVxyF"
+    },
+    "80-시험·검증": {
+      "success": true,
+      "id": "1GSFZRO6aC4aXyU54ivRkMaTRts0lYa1D",
+      "url": "https://drive.google.com/drive/folders/1GSFZRO6aC4aXyU54ivRkMaTRts0lYa1D",
+      "title": "80-시험·검증",
+      "parent_id": "1VGwXPx59hEl0VGlMWitymxkesTsHVxyF"
+    },
+    "99-실행기록": {
+      "success": true,
+      "id": "1-bKopCrg7nkDtAEJXlRMCWcs2JseOJCE",
+      "url": "https://drive.google.com/drive/folders/1-bKopCrg7nkDtAEJXlRMCWcs2JseOJCE",
+      "title": "99-실행기록",
+      "parent_id": "1VGwXPx59hEl0VGlMWitymxkesTsHVxyF"
+    }
+  },
+  "created_files": {
+    "C00": {
+      "file_code": "C00",
+      "source_backup_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 자료 이관·셀 대조 완료; 제공식·후속 기능·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+        "title": "C00 · 공통 기준·분류·출처 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "H90": {
+      "file_code": "H90",
+      "source_backup_id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1IwtNuUdGlHbRYIBcc-Rc-VbTrPz6Sr8ITbygCx3_ePs",
+        "title": "H90 · 통합 열람·검증 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1IwtNuUdGlHbRYIBcc-Rc-VbTrPz6Sr8ITbygCx3_ePs/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "N10": {
+      "file_code": "N10",
+      "source_backup_id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1JEpeH_q6Go0ADyCncW9vj8mkn96qg2QDViF9tyoDdgY",
+        "title": "N10 · 연방 — 기본정보·국가이력 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1JEpeH_q6Go0ADyCncW9vj8mkn96qg2QDViF9tyoDdgY/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "N20": {
+      "file_code": "N20",
+      "source_backup_id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1l1_oFuohj0krEWKUtVXglnWfckvCUbXNEeURKre6rxc",
+        "title": "N20 · 연방 — 정치·행정·선거 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1l1_oFuohj0krEWKUtVXglnWfckvCUbXNEeURKre6rxc/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "N30": {
+      "file_code": "N30",
+      "source_backup_id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "15aNd3EzVD0-EzShTZ0Hg1ff4shVvz9YNHfesezIjDfc",
+        "title": "N30 · 연방 — 인물·황실·계승 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/15aNd3EzVD0-EzShTZ0Hg1ff4shVvz9YNHfesezIjDfc/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "N40": {
+      "file_code": "N40",
+      "source_backup_id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1Gbw-GT10Kv3oKqaollUe5n9tfKh54d_DW7PaOBix2PU",
+        "title": "N40 · 연방 — 인구·사회 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1Gbw-GT10Kv3oKqaollUe5n9tfKh54d_DW7PaOBix2PU/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "N50": {
+      "file_code": "N50",
+      "source_backup_id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1Wrb-c63hlrVrJYbMQqLip3iFP9hlOaTsYX0lXhvrIZ0",
+        "title": "N50 · 연방 — 경제·재정 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1Wrb-c63hlrVrJYbMQqLip3iFP9hlOaTsYX0lXhvrIZ0/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "N60": {
+      "file_code": "N60",
+      "creation_route": "new_empty_domain_artifact_xlsx_import",
+      "build_status": "자료 없는 분야의 빈 구조·네이티브 표·범위 검증; 운영시험 미완료",
+      "result": {
+        "success": true,
+        "converted": true,
+        "fileId": "1hllCMZpWQwajPsVbcxDmreOL7hyNdjqQZ-9dyskZtyE",
+        "title": "N60 · 문화·언어 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1hllCMZpWQwajPsVbcxDmreOL7hyNdjqQZ-9dyskZtyE/edit?usp=drivesdk",
+        "spreadsheetId": "1hllCMZpWQwajPsVbcxDmreOL7hyNdjqQZ-9dyskZtyE",
+        "parentId": "1lDlea-ccwUeQVrIzbl3evVla-EI5CJw_",
+        "spreadsheet_url": "https://docs.google.com/spreadsheets/d/1hllCMZpWQwajPsVbcxDmreOL7hyNdjqQZ-9dyskZtyE",
+        "id": "1hllCMZpWQwajPsVbcxDmreOL7hyNdjqQZ-9dyskZtyE"
+      }
+    },
+    "N70": {
+      "file_code": "N70",
+      "creation_route": "new_empty_domain_artifact_xlsx_import",
+      "build_status": "자료 없는 분야의 빈 구조·네이티브 표·범위 검증; 운영시험 미완료",
+      "result": {
+        "success": true,
+        "converted": true,
+        "fileId": "1vTc4nWwOV0J2FLol5Ul6rpZC5JpY0vae_jZa9lygBT8",
+        "title": "N70 · 종교·교무 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1vTc4nWwOV0J2FLol5Ul6rpZC5JpY0vae_jZa9lygBT8/edit?usp=drivesdk",
+        "spreadsheetId": "1vTc4nWwOV0J2FLol5Ul6rpZC5JpY0vae_jZa9lygBT8",
+        "parentId": "1lDlea-ccwUeQVrIzbl3evVla-EI5CJw_",
+        "spreadsheet_url": "https://docs.google.com/spreadsheets/d/1vTc4nWwOV0J2FLol5Ul6rpZC5JpY0vae_jZa9lygBT8",
+        "id": "1vTc4nWwOV0J2FLol5Ul6rpZC5JpY0vae_jZa9lygBT8"
+      }
+    },
+    "R10": {
+      "file_code": "R10",
+      "source_backup_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 자료 이관·셀 대조 완료; 제공식·후속 기능·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs",
+        "title": "R10 · 지역 — 목록·공간체계 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "R20": {
+      "file_code": "R20",
+      "source_backup_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1YmKg_nwwwmlCtsUeHhlb31c9bwXtxzTBCg-qDmbHSmc",
+        "title": "R20 · 지역 — 인구 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1YmKg_nwwwmlCtsUeHhlb31c9bwXtxzTBCg-qDmbHSmc/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "R30": {
+      "file_code": "R30",
+      "source_backup_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4",
+        "title": "R30 · 지역 — 사회·문화 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "R40": {
+      "file_code": "R40",
+      "source_backup_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1cm6ZhqKYprOr481Wg85pIAPOPKlfCEHx1ZFMCVCeew8",
+        "title": "R40 · 지역 — 종교 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1cm6ZhqKYprOr481Wg85pIAPOPKlfCEHx1ZFMCVCeew8/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "R50": {
+      "file_code": "R50",
+      "source_backup_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "16X9ZEvbsXA8HvTx2uAIG1XnJo-ztJxkj_7iNONoruNg",
+        "title": "R50 · 지역 — 정치·소속 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/16X9ZEvbsXA8HvTx2uAIG1XnJo-ztJxkj_7iNONoruNg/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "R60": {
+      "file_code": "R60",
+      "source_backup_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1e-SwXsHJ6NyZ1iv_dJeKs-4TUYb2RXF-GUkfWcoDk-M",
+        "title": "R60 · 지역 — 경제·산업 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1e-SwXsHJ6NyZ1iv_dJeKs-4TUYb2RXF-GUkfWcoDk-M/edit?usp=drivesdk",
+        "made_private": false
+      }
+    },
+    "R70": {
+      "file_code": "R70",
+      "source_backup_id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "creation_route": "native_full_workbook_copy",
+      "build_status": "기본 구조 적용·헤더 검증; 기능 이관·운영시험 미완료",
+      "result": {
+        "success": true,
+        "id": "1dNen0b9il3myHy1-q0_rqVei0sC2uK9Fw3b78mgrd5g",
+        "title": "R70 · 행성·지역 — 자연환경·자원 · 세계관 데이터 V2",
+        "mimeType": "application/vnd.google-apps.spreadsheet",
+        "url": "https://docs.google.com/spreadsheets/d/1dNen0b9il3myHy1-q0_rqVei0sC2uK9Fw3b78mgrd5g/edit?usp=drivesdk",
+        "made_private": false
+      }
+    }
+  },
+  "planned_operating_file_count": 16,
+  "actual_operating_file_count": 16,
+  "migration_batch_ids": [],
+  "migrated_legacy_locators": [],
+  "completed_tasks": [
+    "지정 V1 ID 2개 온라인 메타데이터·권한·탭목록 조회",
+    "87탭 헤더 및 첫 8행 native CellData 보존",
+    "Google Sheets 원본 사본 2개 생성 및 재조회 확인",
+    "온라인 XLSX 2개 로컬 저장·SHA256 산출·Drive 업로드 및 재조회 확인",
+    "기존 실행상태 검색 및 지정 목적지 폴더 구조 준비",
+    "87탭·1,539개 관측 열 인벤토리 및 보존 경로 작성",
+    "55개 허용 연결 설계의 순환 0 확인(실제 구현 미검증)",
+    "18개 추가 native 범위 관측 보존",
+    "T-002 작업 전후 V1 무변경 검사 통과",
+    "재개 시 V1 두 ID·수정시각·권한·탭구조 및 백업4개 실재 확인",
+    "87탭·1539개 관측 열의 구체 목적지·변환·보존 대응 작성; 정적 누락/중복0",
+    "16분야 논리 스키마와 키·형·제공계약, H90 조회연결 명세 작성",
+    "행성 계산속성 누락, 당직임기 외래키 오인, 계산/조회 키열 누락 명세 수정",
+    "역법 후보를 C00 기준개정 단일 원본으로 통합; 미해결 설정은 후보 보존",
+    "55개 허용 연결의 정적 순환0 및 N20→N30/H90→하위파일 금지 확인",
+    "PH2 16개 실제 파일·233개 기본구조 탭 적용 및 14003개 기술 헤더 대조",
+    "C00/R10 746행 6313개 입력 셀 값·유효값·메모 일치 및 미기입 6782셀 보존",
+    "H90 실제 16개 파일 목차 제공; V1 쓰기0"
+  ],
+  "pending_tasks": [
+    "PH2 소형시험·최종 구조 감사 증거에 따른 단계 종료 판정",
+    "PH3~PH7 분야별 자료·수식·연결·H90 기능 이관과 84개 인수시험",
+    "구판 보존 탭의 운영식 의존 제거 확인",
+    "기준 첨부 XLSX 확보 시 역사적 셀차분 검증; 현재 미검증 예외 보존",
+    "별도 운영 전환 승인"
+  ],
+  "blocked_tasks": [
+    {
+      "id": "B-001",
+      "category": "자료 없음",
+      "description": "기준 첨부 XLSX 두 실물이 작업 폴더·볼트 파일검색·Drive 정확 MIME/제목 검색에 없음. 05 JSON에는 헤더/셀값이 없어 셀 단위 변경 차분을 입증할 수 없음.",
+      "scope": "첨부본과 현재 셀차분 증거; V2 기술 구축은 진행",
+      "next_action": "첨부 XLSX가 나중에 제공되면 당시 온라인 스냅샷과 셀차분 검증. 현재 후속 진행지시가 적용되었으며 재승인 질문 대상 아님.",
+      "status": "미검증 예외로 보존; 후속 진행지시 적용",
+      "historical_question": "기준 XLSX 제공 / 온라인 스냅샷 기준 예외승인 / PH1 명세까지만 진행 중 선택"
+    }
+  ],
+  "test_results": {
+    "passed": 2,
+    "failed": 0,
+    "not_run": 82,
+    "passed_ids": [
+      "T-001",
+      "T-002"
+    ],
+    "note": "84개 인수시험과 TEST 소형시험 SF01~06은 별도 집계. 범위가 다른 시험을 자동 통과 처리하지 않음."
+  },
+  "dependency_graph_version": "PH1-integrated-design-1",
+  "operating_transition": "미승인 · V1 계속 사용",
+  "last_checkpoint": "2026-10-02T18:54:10+09:00",
+  "safe_next_step": "실행상태와 16개 실제 ID·V1 수정 여부를 재확인. PH2 최종 감사와 소형시험 복구 증거를 먼저 읽고 단계 완료 기준을 판정한 뒤 PH3 지역 분야 자료·제공식 이관을 순서대로 진행. 이미 적용된 구조 49배치와 입력 20배치를 재실행하지 말 것. 구판 숨김 탭의 V1 주소·호환식은 보존용이며 V2 운영식으로 사용 금지. 실제 제공·소비 범위와 권한을 함께 검증.",
+  "v1_write_actions": 0,
+  "dependency_graph_path": "PH1/명세확정/dependency_registry.json",
+  "h90_url": "https://docs.google.com/spreadsheets/d/1IwtNuUdGlHbRYIBcc-Rc-VbTrPz6Sr8ITbygCx3_ePs/edit#gid=1100202602",
+  "field_inventory": {
+    "observed_columns": 1539,
+    "mapping_spec_rows": 1539,
+    "target_fields_assigned": 1539,
+    "missing_target_fields": 0,
+    "duplicate_source_fields": 0,
+    "migrated_records": 746,
+    "logical_tables": 231,
+    "status": "입력·계산·검증·조회·보존을 포함한 관측 열 대응. 실제 사업/세계관 사실 1539건이라는 뜻 아님."
+  },
+  "v1_unchanged_verification": {
+    "status": "확인",
+    "checked_at": "2026-10-02T16:53:59+09:00",
+    "checks": [
+      {
+        "source": "REG-V1",
+        "metadata_equal": true,
+        "sheet_metadata_equal": true,
+        "export_literal_and_formula_equal": true,
+        "formula_cache_changed_cells": 0
+      },
+      {
+        "source": "NAT-V1",
+        "metadata_equal": true,
+        "sheet_metadata_equal": true,
+        "export_literal_and_formula_equal": true,
+        "formula_cache_changed_cells": 0
+      }
+    ],
+    "evidence": "PH0/T-002_evidence.json"
+  },
+  "phase_status": {
+    "PH0": "실행 원본·백업 확인; 첨부 XLSX 셀차분 미검증 예외를 보존하고 후속 사용자 진행지시에 따라 조건부 진행",
+    "PH1": "1539필드 전수명세 및 109제공계약·단일원본·순환없는 설계 정적감사 완료",
+    "PH2": "16개 실제 파일 기본 구조 적용, 746행 이관, 14003개 헤더 대조 완료. 소형시험 결과·최종 감사 증거는 PH2에 저장. 전체 기능 구축 미완료.",
+    "PH3": "미착수",
+    "PH4": "미착수",
+    "PH5": "미착수",
+    "PH6": "84개 중 통과2/실패0/미실행82; 별도 소형시험 결과는 SF 증거에 기록",
+    "PH7": "미착수"
+  },
+  "cloud_state_reference": {
+    "accepted_input": "file_uri",
+    "success": true,
+    "id": "1n8F6nZLXMX1axeTz7Knt5WImzHU8YH5S",
+    "title": "실행상태.json",
+    "file_name": "실행상태.json",
+    "mime_type": "application/json",
+    "url": "https://drive.google.com/file/d/1n8F6nZLXMX1axeTz7Knt5WImzHU8YH5S/view?usp=drivesdk",
+    "parent_id": "1-bKopCrg7nkDtAEJXlRMCWcs2JseOJCE",
+    "structuredContent": {
+      "accepted_input": "file_uri",
+      "success": true,
+      "id": "1n8F6nZLXMX1axeTz7Knt5WImzHU8YH5S",
+      "title": "실행상태.json",
+      "file_name": "실행상태.json",
+      "mime_type": "application/json",
+      "url": "https://drive.google.com/file/d/1n8F6nZLXMX1axeTz7Knt5WImzHU8YH5S/view?usp=drivesdk",
+      "parent_id": "1-bKopCrg7nkDtAEJXlRMCWcs2JseOJCE"
+    }
+  },
+  "native_backup_probe_evidence": "PH0/v1_mutation_audit.json (사본에만 실시; 원본 아님)",
+  "resume_verification": {
+    "path": "재개01/resume_verification.json",
+    "end_path": "재개01/v1_resume_unchanged.json",
+    "new_backup_files": 0,
+    "new_operating_files": 0,
+    "existing_backup_ids_verified": 4,
+    "v1_write_actions": 0
+  },
+  "specification": {
+    "field_mapping": "PH1/명세확정/field_spec.csv",
+    "schema": "PH1/명세확정/schema_registry.json",
+    "provider_contracts": "PH1/명세확정/provider_registry.json",
+    "provider_contract_counts": {
+      "contracts": 109,
+      "external_providers": 107,
+      "H90_local_views": 2,
+      "static_errors": 0
+    },
+    "static_audit": "PH1/명세확정/integrated_spec_audit.json",
+    "ownership_audit": "PH1/명세확정/ownership_audit.json",
+    "decisions": "PH1/명세확정/decision_queue.json",
+    "small_flow_tests": "PH1/명세확정/small_flow_test_protocol.json",
+    "scope": "1539개 관측 필드 대응 명세. 16개 기본 구조 헤더 검증과 C00/R10 746행 실제 이관 완료; 전분야 행별 이관·운영식 검증은 미완료."
+  },
+  "approval_state": {
+    "baseline_snapshot_exception": "후속 진행지시 적용; 첨부본 차분 미검증 예외 유지 (PH2/authorization_and_gate.json)",
+    "operating_transition": "미승인",
+    "V1_mutation": "금지"
+  },
+  "current_checkpoint_file": "WORLD-DATA-V2_PH2_checkpoint.zip",
+  "test_files": {
+    "TEST-C00": {
+      "success": true,
+      "id": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY",
+      "title": "TEST-C00 · 소형 연결시험 · 세계관 데이터 V2",
+      "mimeType": "application/vnd.google-apps.spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY/edit?usp=drivesdk",
+      "made_private": false
+    },
+    "TEST-H90": {
+      "success": true,
+      "id": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "title": "TEST-H90 · 소형 연결시험 · 세계관 데이터 V2",
+      "mimeType": "application/vnd.google-apps.spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY/edit?usp=drivesdk",
+      "made_private": false
+    },
+    "TEST-N20": {
+      "success": true,
+      "id": "16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo",
+      "title": "TEST-N20 · 소형 연결시험 · 세계관 데이터 V2",
+      "mimeType": "application/vnd.google-apps.spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo/edit?usp=drivesdk",
+      "made_private": false
+    },
+    "TEST-N30": {
+      "success": true,
+      "id": "1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww",
+      "title": "TEST-N30 · 소형 연결시험 · 세계관 데이터 V2",
+      "mimeType": "application/vnd.google-apps.spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww/edit?usp=drivesdk",
+      "made_private": false
+    },
+    "TEST-R10": {
+      "success": true,
+      "id": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+      "title": "TEST-R10 · 소형 연결시험 · 세계관 데이터 V2",
+      "mimeType": "application/vnd.google-apps.spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8/edit?usp=drivesdk",
+      "made_private": false
+    },
+    "TEST-R20": {
+      "success": true,
+      "id": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+      "title": "TEST-R20 · 소형 연결시험 · 세계관 데이터 V2",
+      "mimeType": "application/vnd.google-apps.spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w/edit?usp=drivesdk",
+      "made_private": false
+    }
+  },
+  "test_summary": {
+    "통과": 2,
+    "실패": 0,
+    "미실행": 82
+  },
+  "operating_ready_count": 0,
+  "operating_transition_approved": false,
+  "stop_reason": "사용자 요청: 5분 내 저장·종료. 백그라운드 작업 없이 다음 지시에서 재개.",
+  "v1_current_metadata_evidence": "PH2/source_integrity_after.json",
+  "ph2_evidence": {
+    "headers": "PH2/manifest/native_read_verification.json",
+    "inputs": "PH2/input_execution/input_cell_verification.json",
+    "test_directory": "PH2/small_flow_execution",
+    "metadata_audit_directory": "PH2/manifest",
+    "decision_queue": "PH2/input_requests/pending.json",
+    "test_scope": "소형 TEST 파일 전용; 16개 운영 전체 시험 대체 아님"
+  },
+  "small_flow_test_summary": {
+    "api_passed_cases": 6,
+    "api_failed_cases": 0,
+    "api_incomplete_cases": 0,
+    "generated_at": "2026-10-02T09:53:40.267384+00:00",
+    "evidence": "PH2/small_flow_execution/execution_summary.json"
+  },
+  "current_scope_limit": "16개는 실제 생성된 운영 대상 파일 수. 구판 사본 탭 정리/기능이관/연결/검증이 남은 파일을 운영완료로 세지 않음."
+}

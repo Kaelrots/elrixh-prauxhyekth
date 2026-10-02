@@ -1,0 +1,25 @@
+{
+  "step_id": "SF01_SF02_initial",
+  "run_id": "TEST-SF-20261002-01",
+  "result": "미실행",
+  "preconditions": [
+    "앞 단계 native 읽기 확인",
+    "정확한 TEST 대상 ID 검증"
+  ],
+  "writes": [],
+  "expected": {
+    "H90_VIEW_소형흐름_B6": 100,
+    "H90_VIEW_소형흐름_B8": "시험 인물",
+    "H90_VIEW_소형흐름_B9": true,
+    "R10_VIEW_소형흐름_B5": "시험 지역분류",
+    "all_connection": "연결확인",
+    "all_count": "일치",
+    "all_revision": "판본 일치"
+  },
+  "readback": [
+    "H90:VIEW_소형흐름!A3:B11",
+    "R10:VIEW_소형흐름!A3:B5",
+    "all:01_설정!A19:M24",
+    "all:VALID_자료!A3:D7"
+  ]
+}

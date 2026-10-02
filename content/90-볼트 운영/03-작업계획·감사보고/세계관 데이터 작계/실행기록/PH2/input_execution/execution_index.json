@@ -1,0 +1,130 @@
+{
+  "status": "C00_R10_BASIC_LITERAL_MIGRATION_VERIFIED_CALCULATIONS_TESTS_PENDING",
+  "saved_at": "2026-10-02T09:52:04.522Z",
+  "scope": [
+    "C00",
+    "R10"
+  ],
+  "files": [
+    {
+      "code": "C00",
+      "spreadsheet_id": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+      "url": "https://docs.google.com/spreadsheets/d/1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs/edit#gid=1084974470",
+      "tables": 7,
+      "rows": 471,
+      "cells": 3581,
+      "legacy_copied_tabs_hidden": 36,
+      "pending_sheet_id": 1235509559,
+      "pending_visible_work_rows": 62
+    },
+    {
+      "code": "R10",
+      "spreadsheet_id": "1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs",
+      "url": "https://docs.google.com/spreadsheets/d/1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs/edit#gid=1981761392",
+      "tables": 2,
+      "rows": 275,
+      "cells": 2732,
+      "regions": 133,
+      "distinct_relations": 142,
+      "legacy_copied_tabs_hidden": 36
+    }
+  ],
+  "receipt_files": [
+    "001_C00.data.001.receipt.json",
+    "002_C00.data.002.receipt.json",
+    "003_C00.data.003.receipt.json",
+    "004_C00.data.004.receipt.json",
+    "005_C00.data.005.receipt.json",
+    "006_C00.data.006.receipt.json",
+    "007_C00.data.007.receipt.json",
+    "008_C00.data.008.receipt.json",
+    "009_C00.data.009.receipt.json",
+    "010_C00.data.010.receipt.json",
+    "011_C00.data.011.receipt.json",
+    "012_C00.data.012.receipt.json",
+    "013_C00.data.013.receipt.json",
+    "014_R10.data.001.receipt.json",
+    "015_R10.data.002.receipt.json",
+    "016_R10.data.003.receipt.json",
+    "017_R10.data.004.receipt.json",
+    "018_R10.data.005.receipt.json",
+    "019_R10.data.006.receipt.json",
+    "020_R10.data.007.receipt.json",
+    "021_C00_pending_sheet.receipt.json",
+    "022_C00_guide_visibility.receipt.json",
+    "023_R10_guide_visibility.receipt.json",
+    "024_C00_status_title.receipt.json",
+    "025_R10_status_title.receipt.json"
+  ],
+  "data_batch_outcomes": {
+    "planned": 20,
+    "applied": 20,
+    "unknown": 0,
+    "failed": 0,
+    "confirmation": "postwrite_C00.json and postwrite_R10.json verify all 6313 userEnteredValue/effectiveValue/note cells"
+  },
+  "verification_artifacts": [
+    "input_cell_verification.json",
+    "ui_pending_verification.json",
+    "status_title_verification.json"
+  ],
+  "counts": {
+    "input_rows": 746,
+    "input_cells": 6313,
+    "input_value_matches": 6313,
+    "effective_value_matches": 6313,
+    "note_matches": 6313,
+    "untouched_cells_preserved": 6782,
+    "technical_headers_preserved": 144,
+    "pending_header_and_data_cells_verified": 882,
+    "guide_status_cells_verified": 6,
+    "input_status_title_cells_verified": 9
+  },
+  "original_scope": {
+    "write_targets_only": [
+      "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+      "1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs"
+    ],
+    "v1_or_backup_writes": 0,
+    "other_14_workbook_writes": 0,
+    "original_change_fresh_read": "root's global V1 unchanged verification remains separate from target write allowlist evidence"
+  },
+  "preserved_pending": {
+    "standard_revision_collision_rows": 8,
+    "calendar_rows": 5,
+    "neutral_name": "C00 input blank; N10 owns nation name; REG raw name preserved in pending/lineage",
+    "missing_parent": "sec.1 -> gal.1 retained from original; no synthetic region"
+  },
+  "visual_review": {
+    "status": "BOUNDED_RENDER_REVIEW_NOT_FULL_WORKBOOK_VISUAL_COMPLETION",
+    "views_reviewed": [
+      "C00.09_운영결정대기",
+      "C00.IN_코드북",
+      "C00.IN_출처레지스트리",
+      "C00.IN_공통기준"
+    ],
+    "observations": [
+      "Google native tables and source values rendered; long definition/provenance strings remain clipped at existing widths.",
+      "9 stale input A1 labels corrected and native-read verified; pending sheet remains visible.",
+      "No broad reformat during user requested termination window."
+    ]
+  },
+  "final_metadata": [
+    "final_metadata_C00.json",
+    "final_metadata_R10.json"
+  ],
+  "metadata_limitation": "get_spreadsheet_metadata does not expose native tables/namedRanges; table_count=0 in returned filtered metadata does NOT imply actual zero tables. Native full-response evidence is separately held by root/plan_gates.",
+  "operational_status": {
+    "imports": "미완료",
+    "calculations": "미완료",
+    "operational_tests": "미실행",
+    "tests_automatically_marked_pass": 0,
+    "checklist_84_updated": false,
+    "technical_build_complete": false,
+    "operational_cutover": "대기"
+  },
+  "resume": {
+    "must_not_replay_completed_batches": true,
+    "next_safe_step": "Inspect root PH2 gate state; resume dependency and formula construction only after correct phase gates. Reuse technical_id_resume_ledger.json before next source snapshot."
+  }
+}

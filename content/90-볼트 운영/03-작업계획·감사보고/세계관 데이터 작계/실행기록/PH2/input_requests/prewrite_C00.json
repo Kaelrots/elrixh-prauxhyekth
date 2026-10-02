@@ -1,0 +1,1067 @@
+{
+  "checked_at": "2026-10-02 09:21:25 UTC",
+  "header_errors": [],
+  "nonempty_target_cells": [],
+  "response": {
+    "spreadsheetId": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs/edit",
+    "properties": {
+      "title": "C00 · 공통 기준·분류·출처 · 세계관 데이터 V2",
+      "locale": "ko_KR",
+      "timeZone": "Asia/Seoul"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 1240558339,
+          "title": "IN_기준개정이력",
+          "index": 38,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 253,
+            "columnCount": 27,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "standard_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "standard_id"
+                    },
+                    "note": "자료형: string"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "domain"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "domain"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "item_name"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "item_name"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "value_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "value_raw"
+                    },
+                    "note": "자료형: json_scalar"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "unit_format"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "unit_format"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "description"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "description"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_name"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_name"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "revision_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "revision_id"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "value_numeric"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "value_numeric"
+                    },
+                    "note": "자료형: decimal_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "value_text"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "value_text"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "is_adopted"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "is_adopted"
+                    },
+                    "note": "자료형: boolean_or_unknown"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "adoption_reason"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "adoption_reason"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "effective_scope"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "effective_scope"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "route"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "route"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "era"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "era"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "conflict_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "conflict_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "original_property_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "original_property_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "planet_scope_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "planet_scope_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "original_location"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "original_location"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "generation_method"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "generation_method"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "notes"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "notes"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_namespace"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_namespace"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "value_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "value_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      },
+      {
+        "properties": {
+          "sheetId": 1275369193,
+          "title": "IN_공통기준",
+          "index": 39,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 228,
+            "columnCount": 5,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "standard_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "standard_id"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "current_revision_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "current_revision_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      },
+      {
+        "properties": {
+          "sheetId": 1800416531,
+          "title": "IN_국가식별목록",
+          "index": 40,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 103,
+            "columnCount": 11,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "sort_order"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "sort_order"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "nation_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "nation_id"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "neutral_name"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "neutral_name"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_name"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_name"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "owner_file_code"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "owner_file_code"
+                    },
+                    "note": "자료형: string"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "country_type"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "country_type"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_namespace"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_namespace"
+                    },
+                    "note": "자료형: string_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      },
+      {
+        "properties": {
+          "sheetId": 1361086029,
+          "title": "IN_개체별칭",
+          "index": 41,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 103,
+            "columnCount": 11,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "alias_text"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "alias_text"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "alias_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "alias_id"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "entity_namespace"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "entity_namespace"
+                    },
+                    "note": "자료형: string"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "entity_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "entity_id"
+                    },
+                    "note": "자료형: string"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "language_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "language_raw"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "alias_role"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "alias_role"
+                    },
+                    "note": "자료형: string"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "edition_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "edition_raw"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      },
+      {
+        "properties": {
+          "sheetId": 1893847316,
+          "title": "IN_언어분류",
+          "index": 44,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 103,
+            "columnCount": 16,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "sort_order"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "sort_order"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "language_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "language_id"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "name_ko"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "name_ko"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "name_original"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "name_original"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "parent_language_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "parent_language_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "parent_name"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "parent_name"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "script_system"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "script_system"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "start_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "start_raw"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "end_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "end_raw"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "definition"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "definition"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_name"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_name"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_namespace"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_namespace"
+                    },
+                    "note": "자료형: string_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      },
+      {
+        "properties": {
+          "sheetId": 1003228581,
+          "title": "IN_출처레지스트리",
+          "index": 51,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 128,
+            "columnCount": 14,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_id"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_title"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_title"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_kind"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_kind"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "edition_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "edition_raw"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "original_location"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "original_location"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "url"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "url"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "canon_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "canon_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "modified_at_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "modified_at_raw"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "notes"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "notes"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "usage_scope"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "usage_scope"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_namespace"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_namespace"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      },
+      {
+        "properties": {
+          "sheetId": 1687803382,
+          "title": "IN_코드북",
+          "index": 62,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 378,
+            "columnCount": 11,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "group_code"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "group_code"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "stored_code"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "stored_code"
+                    },
+                    "note": "자료형: string / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "display_name"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "display_name"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "definition"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "definition"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "name_elun"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "name_elun"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "name_other"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "name_other"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "usage_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "usage_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "notes"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "notes"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: string_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: string_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      }
+    ]
+  }
+}

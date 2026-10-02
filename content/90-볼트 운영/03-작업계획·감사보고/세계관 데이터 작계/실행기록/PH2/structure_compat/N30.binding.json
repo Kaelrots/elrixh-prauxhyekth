@@ -1,0 +1,6054 @@
+{
+  "file_code": "N30",
+  "spreadsheet_id": "15aNd3EzVD0-EzShTZ0Hg1ff4shVvz9YNHfesezIjDfc",
+  "layout_version": "PH2.PHYSICAL.2",
+  "layout_sha256": "15bfbe163b3d00dc1a56632d2e31602a9897e263f8238e710c3bf93e3342c149",
+  "existing_sheet_ids_preserved": [
+    233573434,
+    298446278,
+    302099382,
+    539113504,
+    625749522,
+    647378182,
+    714439574,
+    868630103,
+    900231026,
+    900231027,
+    900231028,
+    900231029,
+    920230000,
+    920230001,
+    920230002,
+    920230003,
+    920230004,
+    920230005,
+    920230006,
+    920230007,
+    920230008,
+    920230009,
+    920230010,
+    920230011,
+    920230012,
+    920230013,
+    920230014,
+    920230015,
+    920230016,
+    920230017,
+    920230018,
+    920230019,
+    920230020,
+    920230021,
+    920230022,
+    920230023,
+    920230024,
+    1312073106,
+    1317339757,
+    1329284020,
+    1342670243,
+    1455341768,
+    1611835517,
+    1715938314,
+    1792442252,
+    1795511654,
+    1810661783,
+    1916985706,
+    1974746270,
+    2010261323,
+    2076158902
+  ],
+  "tabs": [
+    {
+      "layout_tab_title": "00_안내",
+      "actual_tab_title": "00_안내",
+      "planned_sheet_id": 1939027361,
+      "role": "GUIDE",
+      "row_count": 100,
+      "column_count": 12,
+      "blocks": []
+    },
+    {
+      "layout_tab_title": "01_설정",
+      "actual_tab_title": "01_설정",
+      "planned_sheet_id": 1698719979,
+      "role": "CONFIG",
+      "row_count": 100,
+      "column_count": 20,
+      "blocks": []
+    },
+    {
+      "layout_tab_title": "IN_인물",
+      "actual_tab_title": "IN_인물",
+      "planned_sheet_id": 1238893580,
+      "role": "IN",
+      "row_count": 103,
+      "column_count": 29,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "IN",
+          "logical_table_id": "IN_PERSON",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "person_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_N30_02434af51be4",
+          "actual_named_range": "T_N30_02434af51be4",
+          "native_table_name": "V2T_N30_44054d949626663f",
+          "native_table_id": "1088626977",
+          "grid_range": {
+            "sheetId": 1238893580,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 29
+          },
+          "bounded_range": "'IN_인물'!A3:AC53",
+          "data_range": "'IN_인물'!A4:AC53",
+          "field_columns": [
+            {
+              "field_id": "person_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "name_ko",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "name_elun",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "name_other",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "birth_era",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "birth_year",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "birth_month",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "birth_day",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "death_era",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "death_year",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "death_month",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "death_day",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "person_classification_raw",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "person_description_raw",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "인물 상태",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "note",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "birth_precision",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "death_precision",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 29,
+              "column_letter": "AC"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "IN_황실신분",
+      "actual_tab_title": "IN_황실신분",
+      "planned_sheet_id": 1030652436,
+      "role": "IN",
+      "row_count": 103,
+      "column_count": 36,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "IN",
+          "logical_table_id": "IN_ROYAL_STATUS",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "royal_status_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_N30_d3f584040bce",
+          "actual_named_range": "T_N30_d3f584040bce",
+          "native_table_name": "V2T_N30_57accea86b113a4c",
+          "native_table_id": "1702556001",
+          "grid_range": {
+            "sheetId": 1030652436,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 36
+          },
+          "bounded_range": "'IN_황실신분'!A3:AJ53",
+          "data_range": "'IN_황실신분'!A4:AJ53",
+          "field_columns": [
+            {
+              "field_id": "royal_status_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "nation_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "route",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "era",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "person_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "황실 신분 코드",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "표시 신분",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "name_elun",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "name_other",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "시작 사유",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "종료 사유",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "related_emperor_person_id",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "related_term_id",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "note",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 36,
+              "column_letter": "AJ"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "IN_친족관계",
+      "actual_tab_title": "IN_친족관계",
+      "planned_sheet_id": 1150415925,
+      "role": "IN",
+      "row_count": 103,
+      "column_count": 33,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "IN",
+          "logical_table_id": "IN_KINSHIP",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "relation_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_N30_9f417c345cb5",
+          "actual_named_range": "T_N30_9f417c345cb5",
+          "native_table_name": "V2T_N30_3190a13fa570e18e",
+          "native_table_id": "1468582309",
+          "grid_range": {
+            "sheetId": 1150415925,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 33
+          },
+          "bounded_range": "'IN_친족관계'!A3:AG53",
+          "data_range": "'IN_친족관계'!A4:AG53",
+          "field_columns": [
+            {
+              "field_id": "relation_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "nation_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "route",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "era",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "subject_person_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "object_person_id",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "관계 종류",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "친생·입양 구분",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "법적 상태",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "근거·변경 사유",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "note",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 33,
+              "column_letter": "AG"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "IN_계승",
+      "actual_tab_title": "IN_계승",
+      "planned_sheet_id": 1475839882,
+      "role": "IN",
+      "row_count": 103,
+      "column_count": 39,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "IN",
+          "logical_table_id": "IN_SUCCESSION",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "succession_record_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_N30_5146fa61433b",
+          "actual_named_range": "T_N30_5146fa61433b",
+          "native_table_name": "V2T_N30_1f11b48674185a4a",
+          "native_table_id": "1770958402",
+          "grid_range": {
+            "sheetId": 1475839882,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 39
+          },
+          "bounded_range": "'IN_계승'!A3:AM53",
+          "data_range": "'IN_계승'!A4:AM53",
+          "field_columns": [
+            {
+              "field_id": "succession_record_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "nation_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "route",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "era",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "person_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "emperor_person_id",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "승계권 상태",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "승계순위",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "승계 지명 상태",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "지명 유형",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "황태자·황태녀 여부",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "법적 근거",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "특별 절차·예외 근거",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "지정·박탈·포기·복권 사유",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "event_id",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "emperor_term_id",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "note",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 39,
+              "column_letter": "AM"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "VIEW_조회01",
+      "actual_tab_title": "VIEW_조회01",
+      "planned_sheet_id": 1942878867,
+      "role": "VIEW",
+      "row_count": 342,
+      "column_count": 19,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "CALC_ROYAL_STATUS",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "royal_status_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_N30_7dc33d2c6491",
+          "actual_named_range": "T_N30_7dc33d2c6491",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1942878867,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 11
+          },
+          "bounded_range": "'VIEW_조회01'!A3:K53",
+          "data_range": "'VIEW_조회01'!A4:K53",
+          "field_columns": [
+            {
+              "field_id": "person_name",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "query_end_year",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "query_start_order",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "query_end_order",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "표시명_자동",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "royal_status_id",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 11,
+              "column_letter": "K"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "CALC_KINSHIP",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "relation_id"
+          ],
+          "technical_header_row": 60,
+          "display_header_row": 59,
+          "data_start_row": 61,
+          "data_end_row": 110,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 111,
+          "layout_named_range": "T_N30_85bafb057e10",
+          "actual_named_range": "T_N30_85bafb057e10",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1942878867,
+            "startRowIndex": 59,
+            "endRowIndex": 110,
+            "startColumnIndex": 0,
+            "endColumnIndex": 12
+          },
+          "bounded_range": "'VIEW_조회01'!A60:L110",
+          "data_range": "'VIEW_조회01'!A61:L110",
+          "field_columns": [
+            {
+              "field_id": "기준 인물명_자동",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "상대 인물명_자동",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "역관계_자동",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "query_end_year",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "query_start_order",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "query_end_order",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "relation_id",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 12,
+              "column_letter": "L"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "CALC_SUCCESSION",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "succession_record_id"
+          ],
+          "technical_header_row": 117,
+          "display_header_row": 116,
+          "data_start_row": 118,
+          "data_end_row": 167,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 168,
+          "layout_named_range": "T_N30_a309a41b06bf",
+          "actual_named_range": "T_N30_a309a41b06bf",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1942878867,
+            "startRowIndex": 116,
+            "endRowIndex": 167,
+            "startColumnIndex": 0,
+            "endColumnIndex": 13
+          },
+          "bounded_range": "'VIEW_조회01'!A117:M167",
+          "data_range": "'VIEW_조회01'!A118:M167",
+          "field_columns": [
+            {
+              "field_id": "person_name",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "기준 황제명_자동",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "query_end_year",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "query_start_order",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "query_end_order",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "순위 정렬값",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "표시명_자동",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "succession_record_id",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 13,
+              "column_letter": "M"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "VIEW_ROYAL_ANNUAL",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "query_key"
+          ],
+          "technical_header_row": 174,
+          "display_header_row": 173,
+          "data_start_row": 175,
+          "data_end_row": 224,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 225,
+          "layout_named_range": "T_N30_f5d6347f8597",
+          "actual_named_range": "T_N30_f5d6347f8597",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1942878867,
+            "startRowIndex": 173,
+            "endRowIndex": 224,
+            "startColumnIndex": 0,
+            "endColumnIndex": 15
+          },
+          "bounded_range": "'VIEW_조회01'!A174:O224",
+          "data_range": "'VIEW_조회01'!A175:O224",
+          "field_columns": [
+            {
+              "field_id": "era",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "year",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "황후",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "황태자·황태녀",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "황자·황녀",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "황실 구성원",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "제1순위 승계권자",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "승계 지명자",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "승계권·순위 전체",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "query_key",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 15,
+              "column_letter": "O"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "VIEW_SUCCESSION_AT_DATE",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "query_key"
+          ],
+          "technical_header_row": 231,
+          "display_header_row": 230,
+          "data_start_row": 232,
+          "data_end_row": 281,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 282,
+          "layout_named_range": "T_N30_98d5b6c666e6",
+          "actual_named_range": "T_N30_98d5b6c666e6",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1942878867,
+            "startRowIndex": 230,
+            "endRowIndex": 281,
+            "startColumnIndex": 0,
+            "endColumnIndex": 19
+          },
+          "bounded_range": "'VIEW_조회01'!A231:S281",
+          "data_range": "'VIEW_조회01'!A232:S281",
+          "field_columns": [
+            {
+              "field_id": "순위",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "person_name",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "person_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "승계권 상태",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "승계 지명",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "황태자·황태녀",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "기준 황제",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "효력 시작연도",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "효력 종료연도",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "법적 근거",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "succession_record_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "note",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "query_key",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 19,
+              "column_letter": "S"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "VIEW_KINSHIP_AT_DATE",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "query_key"
+          ],
+          "technical_header_row": 288,
+          "display_header_row": 287,
+          "data_start_row": 289,
+          "data_end_row": 338,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 339,
+          "layout_named_range": "T_N30_1e014d0d2476",
+          "actual_named_range": "T_N30_1e014d0d2476",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1942878867,
+            "startRowIndex": 287,
+            "endRowIndex": 338,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "bounded_range": "'VIEW_조회01'!A288:N338",
+          "data_range": "'VIEW_조회01'!A289:N338",
+          "field_columns": [
+            {
+              "field_id": "relation_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "선택 인물 기준 관계",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "친생·입양",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "object_person_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "상대 인물명",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "법적 상태",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "note",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "query_key",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 14,
+              "column_letter": "N"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "CHECK_검증01",
+      "actual_tab_title": "CHECK_검증01",
+      "planned_sheet_id": 1596589227,
+      "role": "CHECK",
+      "row_count": 485,
+      "column_count": 38,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "CHECK",
+          "logical_table_id": "CHECK_PERSON",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "person_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_N30_2254ec504f57",
+          "actual_named_range": "T_N30_2254ec504f57",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1596589227,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 8
+          },
+          "bounded_range": "'CHECK_검증01'!A3:H53",
+          "data_range": "'CHECK_검증01'!A4:H53",
+          "field_columns": [
+            {
+              "field_id": "error_messages",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "warning_messages",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "person_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 8,
+              "column_letter": "H"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "CHECK",
+          "logical_table_id": "CHECK_ROYAL_STATUS",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "royal_status_id"
+          ],
+          "technical_header_row": 60,
+          "display_header_row": 59,
+          "data_start_row": 61,
+          "data_end_row": 110,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 111,
+          "layout_named_range": "T_N30_f994f871beb7",
+          "actual_named_range": "T_N30_f994f871beb7",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1596589227,
+            "startRowIndex": 59,
+            "endRowIndex": 110,
+            "startColumnIndex": 0,
+            "endColumnIndex": 8
+          },
+          "bounded_range": "'CHECK_검증01'!A60:H110",
+          "data_range": "'CHECK_검증01'!A61:H110",
+          "field_columns": [
+            {
+              "field_id": "error_messages",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "warning_messages",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "royal_status_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 8,
+              "column_letter": "H"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "CHECK",
+          "logical_table_id": "CHECK_KINSHIP",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "relation_id"
+          ],
+          "technical_header_row": 117,
+          "display_header_row": 116,
+          "data_start_row": 118,
+          "data_end_row": 167,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 168,
+          "layout_named_range": "T_N30_0a21db6b76d2",
+          "actual_named_range": "T_N30_0a21db6b76d2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1596589227,
+            "startRowIndex": 116,
+            "endRowIndex": 167,
+            "startColumnIndex": 0,
+            "endColumnIndex": 8
+          },
+          "bounded_range": "'CHECK_검증01'!A117:H167",
+          "data_range": "'CHECK_검증01'!A118:H167",
+          "field_columns": [
+            {
+              "field_id": "error_messages",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "warning_messages",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "relation_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 8,
+              "column_letter": "H"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "CHECK",
+          "logical_table_id": "CHECK_SUCCESSION",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "succession_record_id"
+          ],
+          "technical_header_row": 174,
+          "display_header_row": 173,
+          "data_start_row": 175,
+          "data_end_row": 224,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 225,
+          "layout_named_range": "T_N30_5d94ce751c99",
+          "actual_named_range": "T_N30_5d94ce751c99",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1596589227,
+            "startRowIndex": 173,
+            "endRowIndex": 224,
+            "startColumnIndex": 0,
+            "endColumnIndex": 8
+          },
+          "bounded_range": "'CHECK_검증01'!A174:H224",
+          "data_range": "'CHECK_검증01'!A175:H224",
+          "field_columns": [
+            {
+              "field_id": "error_messages",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "warning_messages",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "succession_record_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 8,
+              "column_letter": "H"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "CHECK",
+          "logical_table_id": "CHECK_RESULTS",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "technical_header_row": 231,
+          "display_header_row": 230,
+          "data_start_row": 232,
+          "data_end_row": 481,
+          "data_capacity": 250,
+          "overflow_sentinel_row": 482,
+          "layout_named_range": "T_N30_9ce03ec84ad2",
+          "actual_named_range": "T_N30_9ce03ec84ad2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1596589227,
+            "startRowIndex": 230,
+            "endRowIndex": 481,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          },
+          "bounded_range": "'CHECK_검증01'!A231:AL481",
+          "data_range": "'CHECK_검증01'!A232:AL481",
+          "field_columns": [
+            {
+              "field_id": "owner_file_code",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "run_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "check_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "result_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "subject_kind",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "source_table",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "source_field",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_range",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "source_record_link",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "subject_count",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "actual",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "expected",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "value_type",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "comparison_rule",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "status",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "execution_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "severity",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "issue_kind",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "message",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "started_at",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "evidence",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "source_schema_version",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "dependency_status",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "dependency_dataset_ids",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "route",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "era",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "scope_json",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "test_ids",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "is_test_data",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "test_run_id",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "delegated_check_owner",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "correlation_id",
+              "column_index": 38,
+              "column_letter": "AL"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "PUB_제공01",
+      "actual_tab_title": "PUB_제공01",
+      "planned_sheet_id": 1200772768,
+      "role": "PUB",
+      "row_count": 342,
+      "column_count": 49,
+      "blocks": [
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_KINSHIP_V2",
+          "primary_key_fields": [
+            "relation_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "PUB_KINSHIP_V2",
+          "actual_named_range": "PUB_KINSHIP_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1200772768,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 42
+          },
+          "bounded_range": "'PUB_제공01'!A3:AP53",
+          "data_range": "'PUB_제공01'!A4:AP53",
+          "field_columns": [
+            {
+              "field_id": "relation_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "nation_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "route",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "era",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "subject_person_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "object_person_id",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "관계 종류",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "친생·입양 구분",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "법적 상태",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "근거·변경 사유",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "note",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "기준 인물명_자동",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "상대 인물명_자동",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "역관계_자동",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "query_end_year",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "query_start_order",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "query_end_order",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 42,
+              "column_letter": "AP"
+            }
+          ],
+          "source_tables": [
+            "IN_KINSHIP",
+            "CALC_KINSHIP"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A3:AP53",
+          "export_named_range": "PUB_KINSHIP_V2",
+          "export_column_ids": [
+            "relation_id",
+            "nation_id",
+            "route",
+            "era",
+            "subject_person_id",
+            "object_person_id",
+            "관계 종류",
+            "친생·입양 구분",
+            "start_year",
+            "start_month",
+            "start_day",
+            "end_year",
+            "end_month",
+            "end_day",
+            "end_status",
+            "법적 상태",
+            "근거·변경 사유",
+            "setting_status",
+            "source_id",
+            "source_locator",
+            "note",
+            "legacy_locator",
+            "source_snapshot_id",
+            "schema_version",
+            "release_id",
+            "value_status",
+            "generation_method",
+            "adoption_status",
+            "start_era",
+            "start_precision",
+            "end_era",
+            "end_precision",
+            "calendar_revision",
+            "기준 인물명_자동",
+            "상대 인물명_자동",
+            "역관계_자동",
+            "query_end_year",
+            "query_start_order",
+            "query_end_order",
+            "source_record_id",
+            "validation_status",
+            "connection_status"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_KINSHIP_AT_DATE_V2",
+          "primary_key_fields": [
+            "query_key"
+          ],
+          "technical_header_row": 60,
+          "display_header_row": 59,
+          "data_start_row": 61,
+          "data_end_row": 110,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 111,
+          "layout_named_range": "PUB_KINSHIP_AT_DATE_V2",
+          "actual_named_range": "PUB_KINSHIP_AT_DATE_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1200772768,
+            "startRowIndex": 59,
+            "endRowIndex": 110,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          },
+          "bounded_range": "'PUB_제공01'!A60:P110",
+          "data_range": "'PUB_제공01'!A61:P110",
+          "field_columns": [
+            {
+              "field_id": "relation_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "선택 인물 기준 관계",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "친생·입양",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "object_person_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "상대 인물명",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "법적 상태",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "note",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "query_key",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 16,
+              "column_letter": "P"
+            }
+          ],
+          "source_tables": [
+            "VIEW_KINSHIP_AT_DATE"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A60:P110",
+          "export_named_range": "PUB_KINSHIP_AT_DATE_V2",
+          "export_column_ids": [
+            "relation_id",
+            "선택 인물 기준 관계",
+            "친생·입양",
+            "object_person_id",
+            "상대 인물명",
+            "법적 상태",
+            "setting_status",
+            "note",
+            "query_key",
+            "source_record_id",
+            "validation_status",
+            "connection_status",
+            "schema_version",
+            "release_id",
+            "source_id",
+            "source_locator"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_PERSON_V2",
+          "primary_key_fields": [
+            "person_id"
+          ],
+          "technical_header_row": 117,
+          "display_header_row": 116,
+          "data_start_row": 118,
+          "data_end_row": 167,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 168,
+          "layout_named_range": "PUB_PERSON_V2",
+          "actual_named_range": "PUB_PERSON_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1200772768,
+            "startRowIndex": 116,
+            "endRowIndex": 167,
+            "startColumnIndex": 0,
+            "endColumnIndex": 31
+          },
+          "bounded_range": "'PUB_제공01'!A117:AE167",
+          "data_range": "'PUB_제공01'!A118:AE167",
+          "field_columns": [
+            {
+              "field_id": "person_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "name_ko",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "name_elun",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "name_other",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "birth_era",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "birth_year",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "birth_month",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "birth_day",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "death_era",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "death_year",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "death_month",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "death_day",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "person_classification_raw",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "person_description_raw",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "인물 상태",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "note",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "birth_precision",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "death_precision",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 31,
+              "column_letter": "AE"
+            }
+          ],
+          "source_tables": [
+            "IN_PERSON"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A117:AE167",
+          "export_named_range": "PUB_PERSON_V2",
+          "export_column_ids": [
+            "person_id",
+            "name_ko",
+            "name_elun",
+            "name_other",
+            "birth_era",
+            "birth_year",
+            "birth_month",
+            "birth_day",
+            "death_era",
+            "death_year",
+            "death_month",
+            "death_day",
+            "person_classification_raw",
+            "person_description_raw",
+            "인물 상태",
+            "setting_status",
+            "source_id",
+            "source_locator",
+            "note",
+            "legacy_locator",
+            "source_snapshot_id",
+            "schema_version",
+            "release_id",
+            "value_status",
+            "generation_method",
+            "adoption_status",
+            "birth_precision",
+            "death_precision",
+            "calendar_revision",
+            "validation_status",
+            "connection_status"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_ROYAL_ANNUAL_V2",
+          "primary_key_fields": [
+            "query_key"
+          ],
+          "technical_header_row": 174,
+          "display_header_row": 173,
+          "data_start_row": 175,
+          "data_end_row": 224,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 225,
+          "layout_named_range": "PUB_ROYAL_ANNUAL_V2",
+          "actual_named_range": "PUB_ROYAL_ANNUAL_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1200772768,
+            "startRowIndex": 173,
+            "endRowIndex": 224,
+            "startColumnIndex": 0,
+            "endColumnIndex": 17
+          },
+          "bounded_range": "'PUB_제공01'!A174:Q224",
+          "data_range": "'PUB_제공01'!A175:Q224",
+          "field_columns": [
+            {
+              "field_id": "era",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "year",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "황후",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "황태자·황태녀",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "황자·황녀",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "황실 구성원",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "제1순위 승계권자",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "승계 지명자",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "승계권·순위 전체",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "query_key",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 17,
+              "column_letter": "Q"
+            }
+          ],
+          "source_tables": [
+            "VIEW_ROYAL_ANNUAL"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A174:Q224",
+          "export_named_range": "PUB_ROYAL_ANNUAL_V2",
+          "export_column_ids": [
+            "era",
+            "year",
+            "황후",
+            "황태자·황태녀",
+            "황자·황녀",
+            "황실 구성원",
+            "제1순위 승계권자",
+            "승계 지명자",
+            "승계권·순위 전체",
+            "query_key",
+            "source_record_id",
+            "validation_status",
+            "connection_status",
+            "schema_version",
+            "release_id",
+            "source_id",
+            "source_locator"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_ROYAL_STATUS_V2",
+          "primary_key_fields": [
+            "royal_status_id"
+          ],
+          "technical_header_row": 231,
+          "display_header_row": 230,
+          "data_start_row": 232,
+          "data_end_row": 281,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 282,
+          "layout_named_range": "PUB_ROYAL_STATUS_V2",
+          "actual_named_range": "PUB_ROYAL_STATUS_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1200772768,
+            "startRowIndex": 230,
+            "endRowIndex": 281,
+            "startColumnIndex": 0,
+            "endColumnIndex": 44
+          },
+          "bounded_range": "'PUB_제공01'!A231:AR281",
+          "data_range": "'PUB_제공01'!A232:AR281",
+          "field_columns": [
+            {
+              "field_id": "royal_status_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "nation_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "route",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "era",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "person_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "황실 신분 코드",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "표시 신분",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "name_elun",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "name_other",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "시작 사유",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "종료 사유",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "related_emperor_person_id",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "related_term_id",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "note",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "person_name",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "query_end_year",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "query_start_order",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "query_end_order",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "표시명_자동",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 42,
+              "column_letter": "AP"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 43,
+              "column_letter": "AQ"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 44,
+              "column_letter": "AR"
+            }
+          ],
+          "source_tables": [
+            "IN_ROYAL_STATUS",
+            "CALC_ROYAL_STATUS"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A231:AR281",
+          "export_named_range": "PUB_ROYAL_STATUS_V2",
+          "export_column_ids": [
+            "royal_status_id",
+            "nation_id",
+            "route",
+            "era",
+            "person_id",
+            "황실 신분 코드",
+            "표시 신분",
+            "name_elun",
+            "name_other",
+            "start_year",
+            "start_month",
+            "start_day",
+            "end_year",
+            "end_month",
+            "end_day",
+            "end_status",
+            "시작 사유",
+            "종료 사유",
+            "related_emperor_person_id",
+            "related_term_id",
+            "setting_status",
+            "source_id",
+            "source_locator",
+            "note",
+            "legacy_locator",
+            "source_snapshot_id",
+            "schema_version",
+            "release_id",
+            "value_status",
+            "generation_method",
+            "adoption_status",
+            "start_era",
+            "start_precision",
+            "end_era",
+            "end_precision",
+            "calendar_revision",
+            "person_name",
+            "query_end_year",
+            "query_start_order",
+            "query_end_order",
+            "표시명_자동",
+            "source_record_id",
+            "validation_status",
+            "connection_status"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_SUCCESSION_V2",
+          "primary_key_fields": [
+            "succession_record_id"
+          ],
+          "technical_header_row": 288,
+          "display_header_row": 287,
+          "data_start_row": 289,
+          "data_end_row": 338,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 339,
+          "layout_named_range": "PUB_SUCCESSION_V2",
+          "actual_named_range": "PUB_SUCCESSION_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1200772768,
+            "startRowIndex": 287,
+            "endRowIndex": 338,
+            "startColumnIndex": 0,
+            "endColumnIndex": 49
+          },
+          "bounded_range": "'PUB_제공01'!A288:AW338",
+          "data_range": "'PUB_제공01'!A289:AW338",
+          "field_columns": [
+            {
+              "field_id": "succession_record_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "nation_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "route",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "era",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "person_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "emperor_person_id",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "승계권 상태",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "승계순위",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "승계 지명 상태",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "지명 유형",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "황태자·황태녀 여부",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "법적 근거",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "특별 절차·예외 근거",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "지정·박탈·포기·복권 사유",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "event_id",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "emperor_term_id",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "note",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "person_name",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "기준 황제명_자동",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "query_end_year",
+              "column_index": 42,
+              "column_letter": "AP"
+            },
+            {
+              "field_id": "query_start_order",
+              "column_index": 43,
+              "column_letter": "AQ"
+            },
+            {
+              "field_id": "query_end_order",
+              "column_index": 44,
+              "column_letter": "AR"
+            },
+            {
+              "field_id": "순위 정렬값",
+              "column_index": 45,
+              "column_letter": "AS"
+            },
+            {
+              "field_id": "표시명_자동",
+              "column_index": 46,
+              "column_letter": "AT"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 47,
+              "column_letter": "AU"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 48,
+              "column_letter": "AV"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 49,
+              "column_letter": "AW"
+            }
+          ],
+          "source_tables": [
+            "IN_SUCCESSION",
+            "CALC_SUCCESSION"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A288:AW338",
+          "export_named_range": "PUB_SUCCESSION_V2",
+          "export_column_ids": [
+            "succession_record_id",
+            "nation_id",
+            "route",
+            "era",
+            "person_id",
+            "emperor_person_id",
+            "start_year",
+            "start_month",
+            "start_day",
+            "end_year",
+            "end_month",
+            "end_day",
+            "end_status",
+            "승계권 상태",
+            "승계순위",
+            "승계 지명 상태",
+            "지명 유형",
+            "황태자·황태녀 여부",
+            "법적 근거",
+            "특별 절차·예외 근거",
+            "지정·박탈·포기·복권 사유",
+            "event_id",
+            "emperor_term_id",
+            "setting_status",
+            "source_id",
+            "source_locator",
+            "note",
+            "legacy_locator",
+            "source_snapshot_id",
+            "schema_version",
+            "release_id",
+            "value_status",
+            "generation_method",
+            "adoption_status",
+            "start_era",
+            "start_precision",
+            "end_era",
+            "end_precision",
+            "calendar_revision",
+            "person_name",
+            "기준 황제명_자동",
+            "query_end_year",
+            "query_start_order",
+            "query_end_order",
+            "순위 정렬값",
+            "표시명_자동",
+            "source_record_id",
+            "validation_status",
+            "connection_status"
+          ]
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "PUB_제공02",
+      "actual_tab_title": "PUB_제공02",
+      "planned_sheet_id": 1084951077,
+      "role": "PUB",
+      "row_count": 371,
+      "column_count": 40,
+      "blocks": [
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_SUCCESSION_AT_DATE_V2",
+          "primary_key_fields": [
+            "query_key"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "PUB_SUCCESSION_AT_DATE_V2",
+          "actual_named_range": "PUB_SUCCESSION_AT_DATE_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1084951077,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 21
+          },
+          "bounded_range": "'PUB_제공02'!A3:U53",
+          "data_range": "'PUB_제공02'!A4:U53",
+          "field_columns": [
+            {
+              "field_id": "순위",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "person_name",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "person_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "승계권 상태",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "승계 지명",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "황태자·황태녀",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "기준 황제",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "효력 시작연도",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "효력 종료연도",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "법적 근거",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "succession_record_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "note",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "query_key",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "connection_status",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 21,
+              "column_letter": "U"
+            }
+          ],
+          "source_tables": [
+            "VIEW_SUCCESSION_AT_DATE"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공02'!A3:U53",
+          "export_named_range": "PUB_SUCCESSION_AT_DATE_V2",
+          "export_column_ids": [
+            "순위",
+            "person_name",
+            "person_id",
+            "승계권 상태",
+            "승계 지명",
+            "황태자·황태녀",
+            "기준 황제",
+            "효력 시작연도",
+            "효력 종료연도",
+            "법적 근거",
+            "setting_status",
+            "succession_record_id",
+            "note",
+            "query_key",
+            "source_record_id",
+            "validation_status",
+            "connection_status",
+            "schema_version",
+            "release_id",
+            "source_id",
+            "source_locator"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_N30_CHECK_RESULTS_V2",
+          "primary_key_fields": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "technical_header_row": 60,
+          "display_header_row": 59,
+          "data_start_row": 61,
+          "data_end_row": 310,
+          "data_capacity": 250,
+          "overflow_sentinel_row": 311,
+          "layout_named_range": "PUB_N30_CHECK_RESULTS_V2",
+          "actual_named_range": "PUB_N30_CHECK_RESULTS_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1084951077,
+            "startRowIndex": 59,
+            "endRowIndex": 310,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          },
+          "bounded_range": "'PUB_제공02'!A60:AL310",
+          "data_range": "'PUB_제공02'!A61:AL310",
+          "field_columns": [
+            {
+              "field_id": "owner_file_code",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "run_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "check_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "result_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "subject_kind",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "source_table",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "source_field",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_range",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "source_record_link",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "subject_count",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "actual",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "expected",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "value_type",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "comparison_rule",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "status",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "execution_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "severity",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "issue_kind",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "message",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "started_at",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "evidence",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "source_schema_version",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "dependency_status",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "dependency_dataset_ids",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "route",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "era",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "scope_json",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "test_ids",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "is_test_data",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "test_run_id",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "delegated_check_owner",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "correlation_id",
+              "column_index": 38,
+              "column_letter": "AL"
+            }
+          ],
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공02'!A60:AL310",
+          "export_named_range": "PUB_N30_CHECK_RESULTS_V2",
+          "export_column_ids": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id",
+            "record_id",
+            "subject_kind",
+            "source_table",
+            "source_field",
+            "source_range",
+            "source_record_link",
+            "subject_count",
+            "actual",
+            "expected",
+            "value_type",
+            "unit",
+            "comparison_rule",
+            "status",
+            "execution_status",
+            "severity",
+            "issue_kind",
+            "message",
+            "checked_at",
+            "started_at",
+            "evidence",
+            "source_revision",
+            "schema_version",
+            "source_schema_version",
+            "release_id",
+            "dependency_status",
+            "dependency_dataset_ids",
+            "route",
+            "era",
+            "scope_json",
+            "test_ids",
+            "is_test_data",
+            "test_run_id",
+            "delegated_check_owner",
+            "correlation_id"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_N30_CHANGE_FEED_V2",
+          "primary_key_fields": [
+            "feed_id"
+          ],
+          "technical_header_row": 317,
+          "display_header_row": 316,
+          "data_start_row": 318,
+          "data_end_row": 367,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 368,
+          "layout_named_range": "PUB_N30_CHANGE_FEED_V2",
+          "actual_named_range": "PUB_N30_CHANGE_FEED_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1084951077,
+            "startRowIndex": 316,
+            "endRowIndex": 367,
+            "startColumnIndex": 0,
+            "endColumnIndex": 40
+          },
+          "bounded_range": "'PUB_제공02'!A317:AN367",
+          "data_range": "'PUB_제공02'!A318:AN367",
+          "field_columns": [
+            {
+              "field_id": "feed_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "source_file_code",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "source_dataset_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "source_table_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "source_record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "feed_kind",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "change_kind",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "temporal_kind",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_boundary",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "nation_id",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "region_id",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "person_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "subject_refs_json",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "route",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "era",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "year",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "month",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "day",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "date_precision",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "date_raw",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "date_resolution_status",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "display_date_text",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "display_change_text",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "boundary_semantics",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "adoption_status",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "source_locator",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "source_record_url",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "duplicate_group_id",
+              "column_index": 40,
+              "column_letter": "AN"
+            }
+          ],
+          "source_tables": [
+            "IN_ROYAL_STATUS",
+            "IN_KINSHIP",
+            "IN_SUCCESSION"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공02'!A317:AN367",
+          "export_named_range": "PUB_N30_CHANGE_FEED_V2",
+          "export_column_ids": [
+            "feed_id",
+            "source_file_code",
+            "source_dataset_id",
+            "source_table_id",
+            "source_record_id",
+            "feed_kind",
+            "change_kind",
+            "temporal_kind",
+            "source_boundary",
+            "nation_id",
+            "region_id",
+            "person_id",
+            "subject_refs_json",
+            "route",
+            "calendar_revision",
+            "era",
+            "year",
+            "month",
+            "day",
+            "date_precision",
+            "date_raw",
+            "date_resolution_status",
+            "end_status",
+            "display_date_text",
+            "display_change_text",
+            "boundary_semantics",
+            "setting_status",
+            "adoption_status",
+            "generation_method",
+            "validation_status",
+            "source_id",
+            "source_locator",
+            "legacy_locator",
+            "source_record_url",
+            "source_snapshot_id",
+            "schema_version",
+            "release_id",
+            "source_revision",
+            "checked_at",
+            "duplicate_group_id"
+          ]
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "REF_참조01",
+      "actual_tab_title": "REF_참조01",
+      "planned_sheet_id": 1894492355,
+      "role": "REF",
+      "row_count": 860,
+      "column_count": 46,
+      "blocks": [
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_CALENDAR_V2",
+          "primary_key_fields": [
+            "record_kind",
+            "record_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 328,
+          "data_capacity": 325,
+          "overflow_sentinel_row": 329,
+          "layout_named_range": "REF_PUB_CALENDAR_V2",
+          "actual_named_range": "REF_PUB_CALENDAR_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1894492355,
+            "startRowIndex": 2,
+            "endRowIndex": 328,
+            "startColumnIndex": 0,
+            "endColumnIndex": 46
+          },
+          "bounded_range": "'REF_참조01'!A3:AT328",
+          "data_range": "'REF_참조01'!A4:AT328",
+          "field_columns": [
+            {
+              "field_id": "record_kind",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "calendar_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "calendar_revision_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "calendar_name",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "months_per_year",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "days_per_month",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "days_per_year",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "civil_day_seconds",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "correction_seconds",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "correction_after_month",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "correction_after_day",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "correction_is_date",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "source_standard_revision_ids",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "calendar_rule_raw",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "era_mapping_id",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "from_era",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "from_year",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "to_era",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "to_year",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "mapping_type",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "approval_status",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "era_edition",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "legacy_era_description",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "current_era_description",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "policy_id",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "policy_revision_id",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "policy_name",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "policy_raw",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "annual_boundary_rule_raw",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "unknown_end_rule_raw",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "exact_boundary_rule_raw",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "annual_point_difference_raw",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "source_namespace",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "owner_file_code",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "owner_spreadsheet_id",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 42,
+              "column_letter": "AP"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 43,
+              "column_letter": "AQ"
+            },
+            {
+              "field_id": "record_count",
+              "column_index": 44,
+              "column_letter": "AR"
+            },
+            {
+              "field_id": "coverage",
+              "column_index": 45,
+              "column_letter": "AS"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 46,
+              "column_letter": "AT"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "C00",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_CODEBOOK_V2",
+          "primary_key_fields": [
+            "group_code",
+            "stored_code"
+          ],
+          "technical_header_row": 335,
+          "display_header_row": 334,
+          "data_start_row": 336,
+          "data_end_row": 660,
+          "data_capacity": 325,
+          "overflow_sentinel_row": 661,
+          "layout_named_range": "REF_PUB_CODEBOOK_V2",
+          "actual_named_range": "REF_PUB_CODEBOOK_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1894492355,
+            "startRowIndex": 334,
+            "endRowIndex": 660,
+            "startColumnIndex": 0,
+            "endColumnIndex": 19
+          },
+          "bounded_range": "'REF_참조01'!A335:S660",
+          "data_range": "'REF_참조01'!A336:S660",
+          "field_columns": [
+            {
+              "field_id": "group_code",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "stored_code",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "display_name",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "definition",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "name_elun",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "name_other",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "usage_status",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "owner_file_code",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "owner_spreadsheet_id",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "record_count",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "coverage",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 19,
+              "column_letter": "S"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "C00",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_MANUAL_EVENTS_V2",
+          "primary_key_fields": [
+            "event_id",
+            "event_target_id"
+          ],
+          "technical_header_row": 667,
+          "display_header_row": 666,
+          "data_start_row": 668,
+          "data_end_row": 717,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 718,
+          "layout_named_range": "REF_PUB_MANUAL_EVENTS_V2",
+          "actual_named_range": "REF_PUB_MANUAL_EVENTS_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1894492355,
+            "startRowIndex": 666,
+            "endRowIndex": 717,
+            "startColumnIndex": 0,
+            "endColumnIndex": 40
+          },
+          "bounded_range": "'REF_참조01'!A667:AN717",
+          "data_range": "'REF_참조01'!A668:AN717",
+          "field_columns": [
+            {
+              "field_id": "event_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "event_title",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "event_type",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "description",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "route",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "date_precision",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "start_raw",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "end_raw",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "source_namespace",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "event_target_id",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "entity_namespace",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "entity_id",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "relation_role",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "era",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "year",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "month",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "day",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "owner_file_code",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "owner_spreadsheet_id",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "record_count",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "coverage",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 40,
+              "column_letter": "AN"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "C00",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_NATIONS_V2",
+          "primary_key_fields": [
+            "nation_id"
+          ],
+          "technical_header_row": 724,
+          "display_header_row": 723,
+          "data_start_row": 725,
+          "data_end_row": 774,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 775,
+          "layout_named_range": "REF_PUB_NATIONS_V2",
+          "actual_named_range": "REF_PUB_NATIONS_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1894492355,
+            "startRowIndex": 723,
+            "endRowIndex": 774,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          },
+          "bounded_range": "'REF_참조01'!A724:P774",
+          "data_range": "'REF_참조01'!A725:P774",
+          "field_columns": [
+            {
+              "field_id": "nation_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "neutral_name",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "sort_order",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "owner_file_code",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "source_namespace",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "owner_spreadsheet_id",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "record_count",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "coverage",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 16,
+              "column_letter": "P"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "C00",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_SOURCES_V2",
+          "primary_key_fields": [
+            "source_namespace",
+            "source_id"
+          ],
+          "technical_header_row": 781,
+          "display_header_row": 780,
+          "data_start_row": 782,
+          "data_end_row": 856,
+          "data_capacity": 75,
+          "overflow_sentinel_row": 857,
+          "layout_named_range": "REF_PUB_SOURCES_V2",
+          "actual_named_range": "REF_PUB_SOURCES_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1894492355,
+            "startRowIndex": 780,
+            "endRowIndex": 856,
+            "startColumnIndex": 0,
+            "endColumnIndex": 22
+          },
+          "bounded_range": "'REF_참조01'!A781:V856",
+          "data_range": "'REF_참조01'!A782:V856",
+          "field_columns": [
+            {
+              "field_id": "source_namespace",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "source_title",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "source_kind",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "edition_raw",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "url",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "canon_status",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "modified_at_raw",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "usage_scope",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "owner_file_code",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "owner_spreadsheet_id",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "record_count",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "coverage",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 22,
+              "column_letter": "V"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "C00",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    }
+  ],
+  "planned_not_observed": true,
+  "formula_or_business_data_written": false,
+  "initial_metadata_path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\initial_native_N30.json",
+  "initial_metadata_sha256": "574eb393c1ca30fabcecf7d055c780be4a3fd86f223f4891358cd6eecd1923ab",
+  "cells": {
+    "existing": 1016992,
+    "new": 113397,
+    "planned_total": 1130389,
+    "limit": 10000000,
+    "below_limit": true
+  },
+  "type_audit": [
+    {
+      "logical_table_id": "IN_PERSON",
+      "native_table_name": "V2T_N30_44054d949626663f",
+      "planned_table_id": "1088626977",
+      "columns": [
+        {
+          "field_id": "person_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "name_ko",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "name_elun",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "name_other",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "birth_era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "birth_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "birth_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "birth_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "death_era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "death_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "death_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "death_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "person_classification_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "person_description_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "인물 상태",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "setting_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_locator",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "note",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_locator",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_snapshot_id",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "schema_version",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "release_id",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_status",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "generation_method",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "adoption_status",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "birth_precision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "death_precision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "calendar_revision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        }
+      ]
+    },
+    {
+      "logical_table_id": "IN_ROYAL_STATUS",
+      "native_table_name": "V2T_N30_57accea86b113a4c",
+      "planned_table_id": "1702556001",
+      "columns": [
+        {
+          "field_id": "royal_status_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "nation_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "route",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "person_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "황실 신분 코드",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "표시 신분",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "name_elun",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "name_other",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "시작 사유",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "종료 사유",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "related_emperor_person_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "related_term_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "setting_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_locator",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "note",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_locator",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_snapshot_id",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "schema_version",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "release_id",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_status",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "generation_method",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "adoption_status",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_era",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_precision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_era",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_precision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "calendar_revision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        }
+      ]
+    },
+    {
+      "logical_table_id": "IN_KINSHIP",
+      "native_table_name": "V2T_N30_3190a13fa570e18e",
+      "planned_table_id": "1468582309",
+      "columns": [
+        {
+          "field_id": "relation_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "nation_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "route",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "subject_person_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "object_person_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "관계 종류",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "친생·입양 구분",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "법적 상태",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "근거·변경 사유",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "setting_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_locator",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "note",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_locator",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_snapshot_id",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "schema_version",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "release_id",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_status",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "generation_method",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "adoption_status",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_era",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_precision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_era",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_precision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "calendar_revision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        }
+      ]
+    },
+    {
+      "logical_table_id": "IN_SUCCESSION",
+      "native_table_name": "V2T_N30_1f11b48674185a4a",
+      "planned_table_id": "1770958402",
+      "columns": [
+        {
+          "field_id": "succession_record_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "nation_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "route",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "person_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "emperor_person_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "승계권 상태",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "승계순위",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "승계 지명 상태",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "지명 유형",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "황태자·황태녀 여부",
+          "declared_type": "boolean_nullable",
+          "native_column_type": null,
+          "reason": "명세는 불린형이나 빈 native BOOLEAN 열의 기본 FALSE 생성을 막기 위해 형식 강제 생략; 명세는 헤더 note 보존"
+        },
+        {
+          "field_id": "법적 근거",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "특별 절차·예외 근거",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "지정·박탈·포기·복권 사유",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "event_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "emperor_term_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "setting_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_id",
+          "declared_type": "text_id",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_locator",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "note",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_locator",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_snapshot_id",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "schema_version",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "release_id",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_status",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "generation_method",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "adoption_status",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_era",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_precision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_era",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_precision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "calendar_revision",
+          "declared_type": "text",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        }
+      ]
+    }
+  ],
+  "native_template_collision_basis": {
+    "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\native_template_NAT.json",
+    "sha256": "fb1add615a5e6540942a2c2d1b5cac493b507b84f538f126dbe40a417a0fa3d8",
+    "ancestry_sheet_id_match": true,
+    "observed_native_table_count": 28,
+    "observed_native_table_names": [
+      "DB_04",
+      "DB_05",
+      "DB_06",
+      "DB_07",
+      "DB_31",
+      "DB_32",
+      "DB_33",
+      "DB_34",
+      "DB_35",
+      "DB_36",
+      "DB_37",
+      "DB_38",
+      "DB_39",
+      "Input_900231026",
+      "Input_900231027",
+      "Input_900231028",
+      "N_1312073106",
+      "N_1317339757",
+      "N_1329284020",
+      "N_1342670243",
+      "N_1715938314",
+      "N_1810661783",
+      "N_1974746270",
+      "N_233573434",
+      "N_298446278",
+      "N_647378182",
+      "N_714439574",
+      "N_868630103"
+    ],
+    "observed_named_ranges_count": 0,
+    "note": "복사 계보의 native 표 이름과 대조. 적용 직전 목적지 metadata 재확인은 별도."
+  }
+}

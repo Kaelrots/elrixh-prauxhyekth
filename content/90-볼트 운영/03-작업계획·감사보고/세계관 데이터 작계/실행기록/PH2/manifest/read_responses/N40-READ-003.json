@@ -1,0 +1,197 @@
+{
+  "call_id": "N40-READ-003",
+  "checked_at": "2026-10-02 09:37:03 UTC",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1Gbw-GT10Kv3oKqaollUe5n9tfKh54d_DW7PaOBix2PU",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Gbw-GT10Kv3oKqaollUe5n9tfKh54d_DW7PaOBix2PU/edit",
+      "properties": {
+        "title": "N40 · 연방 — 인구·사회 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 1760773997,
+            "title": "REF_참조01",
+            "index": 59,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 803,
+              "columnCount": 46
+            }
+          },
+          "data": [
+            {
+              "startRow": 798
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1381363267,
+            "title": "ARCHIVE_보존01",
+            "index": 60,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 100,
+              "columnCount": 7,
+              "frozenRowCount": 3
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "1열"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "1열"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "레코드 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "레코드 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · source_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · source_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · connection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · connection_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "스키마 판본"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "스키마 판본"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "제공 판본"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "제공 판본"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_population_extra_column_L"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_population_extra_column_L"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      },
+                      "note": "자료형: text_id / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_record_id"
+                      },
+                      "note": "자료형: text_id"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "note": "자료형: text"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "connection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "connection_status"
+                      },
+                      "note": "자료형: text"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "schema_version"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "schema_version"
+                      },
+                      "note": "자료형: text"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "release_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "release_id"
+                      },
+                      "note": "자료형: text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 52
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

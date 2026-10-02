@@ -1,0 +1,500 @@
+{
+  "status": "조건부 정적 적합 · 원본단일화 설계 감사; 온라인 통과 아님",
+  "scope": "세 분야 schema 및 integrated static audit를 읽어 입력원본 소유권·같은사실 이중입력 위험과 T-007 행허용 규칙만 점검",
+  "checked_date": "2026-10-02",
+  "checks": [
+    {
+      "check_id": "OWN-01",
+      "name": "지역·국가 영토 단일 원본",
+      "status": "정적 적합",
+      "evidence": {
+        "input_tables": [
+          {
+            "file_code": "R50",
+            "table_id": "지역국가관계",
+            "role": "input",
+            "primary_key": [
+              "relation_id"
+            ]
+          }
+        ],
+        "source_sheets": [
+          "REG 10 정치 지역관계",
+          "REG 15_지역_소속이력",
+          "NAT 03_영토_이력"
+        ],
+        "provider": "PUB_REGION_NATION_RELATIONS_V2"
+      },
+      "ownership_rule": "세 원본은 R50 지역국가관계로 합류. 국가 목록은 조회만. 통치·법적 영유·주장은 관계종류가 다른 사실로 유지.",
+      "related_test_ids": [
+        "T-036",
+        "T-034",
+        "T-035"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "온라인 입력·보호·재계산·동일사실 중복 시험은 PH2 이후 필요"
+      ]
+    },
+    {
+      "check_id": "OWN-02",
+      "name": "인물 기본정보 단일 원본",
+      "status": "정적 적합",
+      "evidence": {
+        "input_tables": [
+          {
+            "file_code": "N30",
+            "table_id": "IN_PERSON",
+            "role": "input",
+            "primary_key": [
+              "person_id"
+            ]
+          }
+        ],
+        "consumer": "N20 person_id는 N30 PERSON 제공자료 참조",
+        "identity_registry_note": "C00 네임스페이스·존재검사용 ID 목록은 인물 기본정보 입력표가 아님"
+      },
+      "ownership_rule": "이름·동명이인은 N30 person_id로 구별하며 N20 후보·공직자·당직자는 인물 기본정보를 재입력하지 않음.",
+      "related_test_ids": [
+        "T-009",
+        "T-011"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "온라인 입력·보호·재계산·동일사실 중복 시험은 PH2 이후 필요"
+      ]
+    },
+    {
+      "check_id": "OWN-03",
+      "name": "황제 포함 공직 임기 단일 원본",
+      "status": "정적 적합",
+      "evidence": {
+        "office_term_input": {
+          "file_code": "N20",
+          "table_id": "IN_OFFICE_TERM",
+          "role": "input",
+          "primary_key": [
+            "term_id"
+          ]
+        },
+        "royal_status": {
+          "file_code": "N30",
+          "table_id": "IN_ROYAL_STATUS",
+          "role": "input",
+          "primary_key": [
+            "royal_status_id"
+          ]
+        },
+        "succession": {
+          "file_code": "N30",
+          "table_id": "IN_SUCCESSION",
+          "role": "input",
+          "primary_key": [
+            "succession_record_id"
+          ]
+        },
+        "religious_affairs": {
+          "file_code": "N70",
+          "table_id": "IN_RELIGIOUS_AFFAIRS_HISTORY",
+          "role": "input",
+          "primary_key": [
+            "affairs_record_id"
+          ]
+        },
+        "cross_references": [
+          {
+            "field_id": "related_term_id",
+            "display_name": "관련 term_id",
+            "data_type": "text_id",
+            "source_field_ids": [
+              "NAT-V1:920230008:T"
+            ],
+            "rules": "공란을 임의값으로 대체하지 않음; 원문 setting_status 보존; 식별자 원문 대소문자·접두어 보존; 비어 있지 않은 참조만 존재/namespace 검사",
+            "foreign_key": "H90에서 N20.OFFICE_TERM.term_id 존재·기간 검사; N30 import 금지",
+            "type": "text_id",
+            "required": false,
+            "required_policy": "기존 공란은 보존; 의미에 따른 조건부 필수는 function_rules에서 검사."
+          },
+          {
+            "field_id": "emperor_term_id",
+            "display_name": "기준 황제 term_id",
+            "data_type": "text_id",
+            "source_field_ids": [
+              "NAT-V1:920230010:W"
+            ],
+            "rules": "공란을 임의값으로 대체하지 않음; 원문 setting_status 보존; 식별자 원문 대소문자·접두어 보존; 비어 있지 않은 참조만 존재/namespace 검사",
+            "foreign_key": "H90에서 N20.OFFICE_TERM.term_id 존재·기간 검사; N30 import 금지",
+            "type": "text_id",
+            "required": false,
+            "required_policy": "기존 공란은 보존; 의미에 따른 조건부 필수는 function_rules에서 검사."
+          },
+          {
+            "field_id": "political_term_id",
+            "display_name": "political_term_id",
+            "data_type": "text_id",
+            "source_field_ids": [],
+            "rules": "N-EMPTY,N-ID,N-STATE,N-OBSERVATION,N-TIME",
+            "foreign_key": "H90에서 N20.OFFICE.office_id / N20.OFFICE_TERM.term_id 교차검증. N70은 값/하이퍼링크만 보존하고 N20 import 금지.",
+            "type": "text_id",
+            "required": false,
+            "required_policy": "기존 공란은 보존; 의미에 따른 조건부 필수는 function_rules에서 검사."
+          }
+        ],
+        "party_role_term": "N20 IN_PARTY_ROLE_TERM은 별도 당직 사실이며 party_role_term_id를 공직 term_id로 대체하지 않음"
+      },
+      "ownership_rule": "공직 재위는 N20. N30은 신분·친족·계승, N70은 교무 관계만 원본. term 참조 존재·기간 검증은 H90; N30→N20 import 금지.",
+      "related_test_ids": [
+        "T-065",
+        "T-066",
+        "T-053"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "온라인 입력·보호·재계산·동일사실 중복 시험은 PH2 이후 필요"
+      ]
+    },
+    {
+      "check_id": "OWN-04",
+      "name": "C00 수동 사건과 H90 자동 변동 분리",
+      "status": "정적 적합",
+      "evidence": {
+        "manual_source": {
+          "file_code": "C00",
+          "table_id": "수동사건",
+          "role": "input",
+          "primary_key": [
+            "event_id"
+          ]
+        },
+        "generated_view": {
+          "file_code": "H90",
+          "table_id": "통합변동연표",
+          "role": "derived",
+          "primary_key": [
+            "feed_item_id"
+          ]
+        },
+        "manual_description": "수동 원문 사건; 자동 변동 피드 되쓰기 금지",
+        "feed_fields": [
+          "source_record_id",
+          "feed_kind",
+          "owner_file_code",
+          "duplicate_group_id"
+        ]
+      },
+      "ownership_rule": "H90은 원본별 변동과 수동사건을 feed_kind로 결합하는 파생뷰. 같은 사건의 표시 중복은 duplicate_group_id로 표시하고 C00에 되쓰기하지 않음.",
+      "related_test_ids": [
+        "T-080"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "온라인 입력·보호·재계산·동일사실 중복 시험은 PH2 이후 필요"
+      ]
+    },
+    {
+      "check_id": "OWN-05",
+      "name": "기간 없는 기본값과 기간 이력",
+      "status": "조건부 정적 적합",
+      "evidence": {
+        "default": {
+          "file_code": "N10",
+          "table_id": "IN_NATION_UNDATED_DEFAULT",
+          "role": "input",
+          "primary_key": [
+            "nation_id"
+          ]
+        },
+        "dated": [
+          {
+            "file_code": "N10",
+            "table_id": "IN_CAPITAL_HISTORY",
+            "role": "input",
+            "primary_key": [
+              "capital_record_id"
+            ]
+          },
+          {
+            "file_code": "N10",
+            "table_id": "IN_CONSTITUTION_HISTORY",
+            "role": "input",
+            "primary_key": [
+              "constitution_record_id"
+            ]
+          }
+        ],
+        "semantic_rule_source": "nation_function_spec.json 국가 기본값과 이력: 미기간 원문 기본값 보존, 같은 사실의 새 수동입력 금지, 과거 모든 연도 적용 금지"
+      },
+      "ownership_rule": "미기간 수도/체제는 알려진 기간 이력과 자동동일화하지 않는다. 기간 대응이 확정되는 경우 기존 기본값을 별도 현행 입력원본으로 계속 운영하지 않고 원문 근거/보존 연결로 전환해야 함.",
+      "related_test_ids": [
+        "T-013",
+        "T-014",
+        "T-019"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "동일사실 기간대응이 확정될 때 default↔dated locator 연결 및 중복 활성 입력 차단을 구현",
+        "미기간 기본값이 모든 과거연도 fallback이 되지 않는 시험"
+      ]
+    },
+    {
+      "check_id": "OWN-06",
+      "name": "구형·확장 지역 입력 합류",
+      "status": "조건부 정적 적합",
+      "evidence": {
+        "single_input_tables": [
+          "R20.인구관측",
+          "R60.경제관측",
+          "R70.환경관측",
+          "R50.지역국가관계"
+        ],
+        "rules": "One table per fact type; annual presentation and labels are read-only derivatives. R50 owns territory, R10 owns regions/facilities, R20 population, R60 production, R70 reserves."
+      },
+      "ownership_rule": "구형과 확장 탭을 서로 다른 운영 입력표로 만들지 않음. 다만 같은 키·숫자가 아니라 기간·판본·루트·정의·단위·출처까지 대조하여 같은 사실 후보를 연결.",
+      "related_test_ids": [
+        "T-010",
+        "T-013",
+        "T-014"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "실제 행 후보 대조·이관은 미실행",
+        "같은사실 후보와 상충 관측을 구분하는 locator 대응/채택 검사 필요"
+      ]
+    },
+    {
+      "check_id": "OWN-07",
+      "name": "자원 및 시설 설계와 실적 소유권",
+      "status": "정적 적합",
+      "evidence": {
+        "owners": {
+          "reserve": "R70.자원분포",
+          "resource_production": "R60.자원생산",
+          "facility": "R10.시설목록",
+          "transport": "R10.교통노선",
+          "facility_actual": "R60.시설실적",
+          "unknown_measure": "R10.시설측정미분류"
+        }
+      },
+      "ownership_rule": "매장과 생산, 설계용량과 기간 실적은 다른 사실. 공유 ID·근거만 전달하며 혼합 필드는 의미 판별 전 계산 제외.",
+      "related_test_ids": [
+        "T-039",
+        "T-040"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "온라인 입력·보호·재계산·동일사실 중복 시험은 PH2 이후 필요"
+      ]
+    },
+    {
+      "check_id": "OWN-08",
+      "name": "직접 관측과 계산·조회 역할 구분",
+      "status": "정적 적합",
+      "evidence": {
+        "region_provider_count": 24,
+        "source_rules": "Blank numeric cell remains blank; confirmed zero is numeric 0 plus value status. Unparseable or overprecision original retained verbatim. Never fill IFERROR result with 0.",
+        "example_direct": "R20.행성인구관측.direct_value",
+        "example_calculated": "R20.행성인구계산.calculated_value/selected_value"
+      },
+      "ownership_rule": "계산·채택·조회 결과는 수동 입력원본이 아님. 직접0은 유효한 사실이고 미입력을 계산0으로 채우지 않음.",
+      "related_test_ids": [
+        "T-031",
+        "T-032",
+        "T-045"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "온라인 입력·보호·재계산·동일사실 중복 시험은 PH2 이후 필요"
+      ]
+    },
+    {
+      "check_id": "OWN-09",
+      "name": "역법 후보와 C00 운영 기준 단일화",
+      "status": "조건부 정적 적합",
+      "evidence": {
+        "integration_contract": {
+          "contract_id": "REG-C00-CALENDAR-CANDIDATE",
+          "status": "병합 적용 규칙 명시 · 원문 이관/채택 미실행",
+          "upstream_spec": "region_schema.json / region_field_spec.csv",
+          "upstream_target": "C00.공통기준_개정후보",
+          "canonical_target": "C00.기준개정이력",
+          "temporary_table_rule": "공통기준_개정후보는 이관 배치의 준비 이름이다. 독립 운영 입력표로 만들지 않고 아래 대응으로 기준개정이력에 기록한 후 역법표는 채택 근거가 있는 개정에서 파생한다.",
+          "field_map": {
+            "record_id": "revision_id",
+            "planet_scope_id": "planet_scope_id",
+            "property_id": "original_property_id",
+            "property_name": "item_name",
+            "value_numeric": "value_numeric",
+            "value_text": "value_text",
+            "unit": "unit_format",
+            "generation_method": "generation_method",
+            "setting_status": "setting_status",
+            "source_id": "source_id",
+            "original_location": "original_location",
+            "notes": "notes",
+            "legacy_locator": "legacy_locator",
+            "source_snapshot_id": "source_snapshot_id"
+          },
+          "property_to_calendar_field": {
+            "civil_day": "civil_day_seconds",
+            "civil_year_days": "days_per_year",
+            "year_correction": "correction_seconds",
+            "months_per_year": "months_per_year",
+            "days_per_month": "days_per_month"
+          },
+          "standard_id_rule": "original_property_id를 삭제/개명하지 않는다. C00 기존 standard_id와 의미가 일치하는지 대조한 연결표를 작성하고 둘의 기존 ID를 모두 보존한다. std.calendar.day/year_length 등과 같은 말이라는 이유로 원문 후보를 덮어쓰지 않는다.",
+          "unit_rule": "원문 단위와 수치를 함께 보존. civil_day->seconds 등은 원문 단위가 확인되고 환산식이 명시된 경우만 적용. 단위 미확정이면 정규 수치 채택 보류.",
+          "candidate_adoption": "역법의 동일 필드를 별도 수동 입력하지 않는다. 채택된 revision_id 집합에서 계산·조회하는 단일 운영 정의로 제공하고 근거 없는 값은 채우지 않음.",
+          "remaining_review": [
+            "역법 5개 원문 수치/단위·기존 기준개정과 행별 대응",
+            "원문 src와 revision 연결",
+            "명세 병합 시 region targets_json의 준비 이름을 canonical 대상/field map으로 해석"
+          ],
+          "test_ids": [
+            "T-004",
+            "T-009",
+            "T-013",
+            "T-014",
+            "T-016",
+            "T-022",
+            "T-024"
+          ]
+        },
+        "calendar_table": {
+          "file_code": "C00",
+          "table_id": "역법",
+          "role": "derived_from_adopted_revisions",
+          "primary_key": [
+            "calendar_id",
+            "calendar_revision_id"
+          ]
+        },
+        "calendar_single_input_rule": "기준개정이력에서 채택된 역법 개정으로 파생. 역법표 별도 수동 값 입력 금지."
+      },
+      "ownership_rule": "C00 공통기준_개정후보는 이관 준비 이름만 허용. root 통합 시 기준개정이력으로 대응하고 별도 운영 입력표 생성 금지. 역법표는 채택된 개정에서 파생.",
+      "related_test_ids": [
+        "T-004",
+        "T-013",
+        "T-014",
+        "T-024"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "root가 임시 후보표의 canonical 대응/제거 적용 중; 통합 산출물과 실제 생성 목록에서 재확인",
+        "원문 속성 5개와 기존 standard revision 행별 대조·채택 미실행",
+        "역법 fields.roles에 input 표시가 남아 있어도 table_role=derived_from_adopted_revisions와 single_input_rule을 구현 시 우선 적용"
+      ]
+    },
+    {
+      "check_id": "OWN-10",
+      "name": "국가 공통 식별과 공식 표기 역할",
+      "status": "정적 적합",
+      "evidence": {
+        "neutral_id_source": "C00.국가식별목록",
+        "official_name_source": "N10.IN_NATION/IN_NATION_NAME_HISTORY"
+      },
+      "ownership_rule": "C00는 ID와 중립 목록명, N10는 공식 기본명·시점 국호. 같은 문자열이어도 역할이 다르며 목록명 변경으로 역사 국호를 덮어쓰지 않음.",
+      "related_test_ids": [
+        "T-015"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "온라인 입력·보호·재계산·동일사실 중복 시험은 PH2 이후 필요"
+      ]
+    },
+    {
+      "check_id": "ROW-007",
+      "name": "서식 전용행·기본 FALSE·빈 수식과 실제0 구별",
+      "status": "정적 규칙 존재 · 실행 미검증",
+      "evidence": {
+        "checklist_scenario": "03_검증_체크리스트.csv T-007 서식 전용행 제외",
+        "nation_row_admission": [
+          "기존 고정 ID 또는 실질 직접입력값이 있는 행만 후보. ID 없는 FALSE 기본행/수식전용행/서식행은 사실 0건. ID 없는 실질값은 고정 이관ID+결정대기로 보존."
+        ],
+        "region_validation_scope": "Duplicate candidates not automatically deleted. All nonempty literal records, formula-only templates and defaults separated. Old statuses/results do not become V2 tests.",
+        "region_zero_rule": "Blank numeric cell remains blank; confirmed zero is numeric 0 plus value status. Unparseable or overprecision original retained verbatim. Never fill IFERROR result with 0.",
+        "classification_evidence": "PH1 sheet_inventory.json은 literal_input_candidate_with_id / formula_only_not_input_fact / default_false 분류를 별도 기록"
+      },
+      "ownership_rule": "기본 FALSE·빈문자 수식·서식전용행은 실제 관측행으로 이관하지 않는다. 직접 입력한 숫자0은 보존한다. ID 없는 실질값은 불완전행으로 보존하며 삭제하지 않는다.",
+      "related_test_ids": [
+        "T-007"
+      ],
+      "runtime_status": "미실행",
+      "remaining": [
+        "TEST 사본에서 기본 FALSE만 있는 행/빈문자 수식행/서식행/직접 숫자0 행/ID 없는 직접0 행을 함께 넣어 실제 이관 및 제공행수 비교",
+        "표의 필수키·출처·값상태 검증과 행허용을 분리; ID만 있거나 숫자가 없는 행을 수치 실적으로 세지 않는지 확인"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OWN-C01",
+      "severity": "조건부",
+      "check_id": "OWN-09",
+      "summary": "역법 임시 후보표 canonical 대응이 실제 생성/쓰기 계획에도 적용돼야 함",
+      "disposition": "root integration_contracts 적용 중; 별도 운영 입력원본으로 세지 않음"
+    },
+    {
+      "finding_id": "OWN-C02",
+      "severity": "조건부",
+      "check_id": "OWN-05",
+      "summary": "미기간 기본값과 dated history의 동일성이 나중에 확정되면 두 현행 입력값으로 남길 가능성",
+      "disposition": "같은사실로 확인된 기본값을 보존/근거 연결로 전환하고 유일 입력처를 이력표로 유지하는 구현 검사 필요"
+    },
+    {
+      "finding_id": "OWN-C03",
+      "severity": "미실행",
+      "check_id": "OWN-06",
+      "summary": "설계상 합류는 확인했지만 실제 중복후보·상이판본 행의 대조/이관은 수행되지 않음",
+      "disposition": "후속 이관 배치에서 legacy_locator와 fact candidate mapping으로 검증"
+    },
+    {
+      "finding_id": "ROW-C07",
+      "severity": "미실행",
+      "check_id": "ROW-007",
+      "summary": "T-007 규칙은 있으나 실제0·기본FALSE·빈수식 시험이 아직 없음",
+      "disposition": "T-007 실행상태를 미실행으로 유지"
+    }
+  ],
+  "test_ids": [
+    "T-007"
+  ],
+  "ownership_related_test_ids": [
+    "T-036",
+    "T-065",
+    "T-066",
+    "T-080"
+  ],
+  "runtime_status": "미실행",
+  "online_acceptance_passes_claimed": 0,
+  "source_rows_migrated": 0,
+  "integrated_audit_snapshot": {
+    "status": "static_specification_audit_only",
+    "source_tab_count": 87,
+    "source_field_count": 1539,
+    "missing_source_fields": 0,
+    "duplicate_source_fields": 0,
+    "error_count": 0,
+    "warning_count": 0
+  },
+  "input_sha256": {
+    "integrated_spec_audit.json": "53f34822211b6b1085fed2e56454295a766dc9d9331ecb8eb79dffd277afadc0",
+    "common_hub_schema.json": "a1bd9effbe3a1e547a6ccb9e19b3c509576e89ce4f4b5d364374512067758c0d",
+    "region_schema.json": "ae20fce1d83c189ac4b7d7b081430f07e5532ebcd2d13e4679b01eb0cd5b4cf7",
+    "nation_schema.json": "df4d4efd4fab4690bd8554cdbabd8878888518960c2fa03a19569d212dbcad20",
+    "nation_function_spec.json": "cc8ff9dc36f6a9ddeae503d1b1711a22e2e381d209f8d01d23e4cfa439807735",
+    "common_hub_function_spec.json": "0fd2cdc9de79e7c50fa567d52d0eb3533e3eb8e0890a41bbaf64a5cd9008e61b"
+  },
+  "method": "표 role/table_role와 입력 소유 파일, 키, source대응, 참조 및 function semantic contract를 대조. 필드명 중복만으로 같은사실 중복이라고 판단하지 않음. 원자료나 온라인 파일에 쓰지 않음.",
+  "limitations": [
+    "정적 명세의 무모순성은 실제 데이터 중복없음·권한·재계산·시험 통과를 증명하지 않음",
+    "계산·조회·기록보존 표는 입력원본 수로 세지 않음",
+    "C00 역법 임시 후보의 실제 제거/대응은 root 통합 결과와 생성 단계에서 확인해야 함"
+  ],
+  "summary": {
+    "checks": 11,
+    "static_conforming": 7,
+    "conditional_static_conforming": 3,
+    "rule_present_runtime_unverified": 1,
+    "findings": 4
+  }
+}

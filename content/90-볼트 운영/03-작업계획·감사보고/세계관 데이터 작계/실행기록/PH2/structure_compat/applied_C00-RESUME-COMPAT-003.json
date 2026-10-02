@@ -1,0 +1,1251 @@
+{
+  "chunk_id": "C00-RESUME-COMPAT-003",
+  "spreadsheet_id": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+  "checked_at": "2026-10-02 09:15:38 UTC",
+  "success": true,
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+      "replies": [
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1859561242,
+              "title": "IN_범위레지스트리",
+              "index": 58,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 503,
+                "columnCount": 16,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "737904127",
+              "name": "T_C00_97ef92d4efd5",
+              "range": {
+                "sheetId": 1859561242,
+                "startRowIndex": 2,
+                "endRowIndex": 453,
+                "startColumnIndex": 0,
+                "endColumnIndex": 16
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1873399256",
+              "name": "V2T_C00_9d87e80a3bd18125",
+              "range": {
+                "sheetId": 1859561242,
+                "startRowIndex": 2,
+                "endRowIndex": 453,
+                "startColumnIndex": 0,
+                "endColumnIndex": 16
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "legacy_input_capacity"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "legacy_capacity_description"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "legacy_validation_capacity"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "dataset_id"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "actual_row_count"
+                },
+                {
+                  "columnIndex": 5,
+                  "columnName": "input_end_row"
+                },
+                {
+                  "columnIndex": 6,
+                  "columnName": "calculation_end_row"
+                },
+                {
+                  "columnIndex": 7,
+                  "columnName": "validation_end_row"
+                },
+                {
+                  "columnIndex": 8,
+                  "columnName": "export_end_row"
+                },
+                {
+                  "columnIndex": 9,
+                  "columnName": "consumer_ranges"
+                },
+                {
+                  "columnIndex": 10,
+                  "columnName": "growth_step"
+                },
+                {
+                  "columnIndex": 11,
+                  "columnName": "warning_threshold"
+                },
+                {
+                  "columnIndex": 12,
+                  "columnName": "expansion_procedure_id"
+                },
+                {
+                  "columnIndex": 13,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 14,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 15,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 493334031,
+              "range": {
+                "sheetId": 1859561242,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 16
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        },
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1910026633,
+              "title": "IN_계산적합조건",
+              "index": 59,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 178,
+                "columnCount": 5,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "1601866252",
+              "name": "T_C00_f5b43f16a53a",
+              "range": {
+                "sheetId": 1910026633,
+                "startRowIndex": 2,
+                "endRowIndex": 128,
+                "startColumnIndex": 0,
+                "endColumnIndex": 5
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1437999860",
+              "name": "V2T_C00_4e19acf209e4e8ff",
+              "range": {
+                "sheetId": 1910026633,
+                "startRowIndex": 2,
+                "endRowIndex": 128,
+                "startColumnIndex": 0,
+                "endColumnIndex": 5
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "definition_match_rule_raw"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "compatibility_rule_id"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 1833175553,
+              "range": {
+                "sheetId": 1910026633,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 5
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        },
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1510018651,
+              "title": "IN_표기정책",
+              "index": 60,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 178,
+                "columnCount": 6,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "1791870885",
+              "name": "T_C00_af747451dea9",
+              "range": {
+                "sheetId": 1510018651,
+                "startRowIndex": 2,
+                "endRowIndex": 128,
+                "startColumnIndex": 0,
+                "endColumnIndex": 6
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1053072410",
+              "name": "V2T_C00_e5bc9a99d8fb016b",
+              "range": {
+                "sheetId": 1510018651,
+                "startRowIndex": 2,
+                "endRowIndex": 128,
+                "startColumnIndex": 0,
+                "endColumnIndex": 6
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "language_order_raw"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "color_rule_raw"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "presentation_rule_id"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 5,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 2046134353,
+              "range": {
+                "sheetId": 1510018651,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 6
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        },
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1163765884,
+              "title": "IN_드롭다운배포",
+              "index": 61,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 178,
+                "columnCount": 14,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "539011886",
+              "name": "T_C00_ede521b9e597",
+              "range": {
+                "sheetId": 1163765884,
+                "startRowIndex": 2,
+                "endRowIndex": 128,
+                "startColumnIndex": 0,
+                "endColumnIndex": 14
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1541759208",
+              "name": "V2T_C00_f65f99dc4dc78946",
+              "range": {
+                "sheetId": 1163765884,
+                "startRowIndex": 2,
+                "endRowIndex": 128,
+                "startColumnIndex": 0,
+                "endColumnIndex": 14
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "legacy_sync_note"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "distribution_id"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "group_code"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "consumer_file_code"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "consumer_table"
+                },
+                {
+                  "columnIndex": 5,
+                  "columnName": "consumer_field"
+                },
+                {
+                  "columnIndex": 6,
+                  "columnName": "native_table_column_id"
+                },
+                {
+                  "columnIndex": 7,
+                  "columnName": "validation_range"
+                },
+                {
+                  "columnIndex": 8,
+                  "columnName": "distribution_revision"
+                },
+                {
+                  "columnIndex": 9,
+                  "columnName": "last_checked_at"
+                },
+                {
+                  "columnIndex": 10,
+                  "columnName": "sync_status"
+                },
+                {
+                  "columnIndex": 11,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 12,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 13,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 1117583331,
+              "range": {
+                "sheetId": 1163765884,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 14
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        },
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1687803382,
+              "title": "IN_코드북",
+              "index": 62,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 378,
+                "columnCount": 11,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "1142775905",
+              "name": "T_C00_5549c8d19e13",
+              "range": {
+                "sheetId": 1687803382,
+                "startRowIndex": 2,
+                "endRowIndex": 328,
+                "startColumnIndex": 0,
+                "endColumnIndex": 11
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1146934341",
+              "name": "V2T_C00_ca6064c64d0902eb",
+              "range": {
+                "sheetId": 1687803382,
+                "startRowIndex": 2,
+                "endRowIndex": 328,
+                "startColumnIndex": 0,
+                "endColumnIndex": 11
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "group_code"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "stored_code"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "display_name"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "definition"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "name_elun"
+                },
+                {
+                  "columnIndex": 5,
+                  "columnName": "name_other"
+                },
+                {
+                  "columnIndex": 6,
+                  "columnName": "usage_status"
+                },
+                {
+                  "columnIndex": 7,
+                  "columnName": "notes"
+                },
+                {
+                  "columnIndex": 8,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 9,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 10,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 817028983,
+              "range": {
+                "sheetId": 1687803382,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 11
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        },
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1047060123,
+              "title": "IN_출처별칭",
+              "index": 63,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 103,
+                "columnCount": 9,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "864646097",
+              "name": "T_C00_1c2e57f20fd2",
+              "range": {
+                "sheetId": 1047060123,
+                "startRowIndex": 2,
+                "endRowIndex": 53,
+                "startColumnIndex": 0,
+                "endColumnIndex": 9
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1324013757",
+              "name": "V2T_C00_0bbc165cbc8c9734",
+              "range": {
+                "sheetId": 1047060123,
+                "startRowIndex": 2,
+                "endRowIndex": 53,
+                "startColumnIndex": 0,
+                "endColumnIndex": 9
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "source_alias_id"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "original_namespace"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "original_source_id"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "canonical_namespace"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "canonical_source_id"
+                },
+                {
+                  "columnIndex": 5,
+                  "columnName": "merge_basis"
+                },
+                {
+                  "columnIndex": 6,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 7,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 8,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 1051318805,
+              "range": {
+                "sheetId": 1047060123,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 9
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        },
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1576422099,
+              "title": "IN_루트정의",
+              "index": 64,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 103,
+                "columnCount": 4,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "121607279",
+              "name": "T_C00_c8509bf87c4b",
+              "range": {
+                "sheetId": 1576422099,
+                "startRowIndex": 2,
+                "endRowIndex": 53,
+                "startColumnIndex": 0,
+                "endColumnIndex": 4
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1387085616",
+              "name": "V2T_C00_9051ab3f81774bfd",
+              "range": {
+                "sheetId": 1576422099,
+                "startRowIndex": 2,
+                "endRowIndex": 53,
+                "startColumnIndex": 0,
+                "endColumnIndex": 4
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "route_id"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 1384863090,
+              "range": {
+                "sheetId": 1576422099,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 4
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        },
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1738838720,
+              "title": "IN_파일레지스트리",
+              "index": 65,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 103,
+                "columnCount": 12,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "1639176093",
+              "name": "T_C00_49657dda1cc5",
+              "range": {
+                "sheetId": 1738838720,
+                "startRowIndex": 2,
+                "endRowIndex": 53,
+                "startColumnIndex": 0,
+                "endColumnIndex": 12
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1940028707",
+              "name": "V2T_C00_2a176570050933a5",
+              "range": {
+                "sheetId": 1738838720,
+                "startRowIndex": 2,
+                "endRowIndex": 53,
+                "startColumnIndex": 0,
+                "endColumnIndex": 12
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "file_code"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "spreadsheet_id"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "title"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "parent_id"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "data_version"
+                },
+                {
+                  "columnIndex": 5,
+                  "columnName": "schema_version"
+                },
+                {
+                  "columnIndex": 6,
+                  "columnName": "release_id"
+                },
+                {
+                  "columnIndex": 7,
+                  "columnName": "owner_scope"
+                },
+                {
+                  "columnIndex": 8,
+                  "columnName": "creation_status"
+                },
+                {
+                  "columnIndex": 9,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 10,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 11,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 1130510269,
+              "range": {
+                "sheetId": 1738838720,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 12
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        },
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1795510692,
+              "title": "IN_데이터셋레지스트리",
+              "index": 66,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 228,
+                "columnCount": 19,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "680780425",
+              "name": "T_C00_dcf1af41309d",
+              "range": {
+                "sheetId": 1795510692,
+                "startRowIndex": 2,
+                "endRowIndex": 178,
+                "startColumnIndex": 0,
+                "endColumnIndex": 19
+              }
+            }
+          }
+        },
+        {
+          "addTable": {
+            "table": {
+              "tableId": "1266933038",
+              "name": "V2T_C00_5fce0ebdc666bb2c",
+              "range": {
+                "sheetId": 1795510692,
+                "startRowIndex": 2,
+                "endRowIndex": 178,
+                "startColumnIndex": 0,
+                "endColumnIndex": 19
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "dataset_id"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "owner_file_code"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "owner_spreadsheet_id"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "schema_version"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "release_id"
+                },
+                {
+                  "columnIndex": 5,
+                  "columnName": "source_revision"
+                },
+                {
+                  "columnIndex": 6,
+                  "columnName": "export_range"
+                },
+                {
+                  "columnIndex": 7,
+                  "columnName": "primary_key_fields"
+                },
+                {
+                  "columnIndex": 8,
+                  "columnName": "column_schema"
+                },
+                {
+                  "columnIndex": 9,
+                  "columnName": "record_count"
+                },
+                {
+                  "columnIndex": 10,
+                  "columnName": "coverage"
+                },
+                {
+                  "columnIndex": 11,
+                  "columnName": "route_policy"
+                },
+                {
+                  "columnIndex": 12,
+                  "columnName": "era_policy"
+                },
+                {
+                  "columnIndex": 13,
+                  "columnName": "status_policy"
+                },
+                {
+                  "columnIndex": 14,
+                  "columnName": "validation_status"
+                },
+                {
+                  "columnIndex": 15,
+                  "columnName": "checked_at"
+                },
+                {
+                  "columnIndex": 16,
+                  "columnName": "legacy_locator"
+                },
+                {
+                  "columnIndex": 17,
+                  "columnName": "source_snapshot_id"
+                },
+                {
+                  "columnIndex": 18,
+                  "columnName": "setting_status"
+                }
+              ]
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addProtectedRange": {
+            "protectedRange": {
+              "protectedRangeId": 1121152572,
+              "range": {
+                "sheetId": 1795510692,
+                "startRowIndex": 0,
+                "endRowIndex": 3,
+                "startColumnIndex": 0,
+                "endColumnIndex": 19
+              },
+              "description": "V2 기술/표시 헤더 · 변경 시 제공/소비 스키마 동시 갱신",
+              "warningOnly": true,
+              "requestingUserCanEdit": true,
+              "editors": {}
+            }
+          }
+        }
+      ],
+      "updatedSpreadsheet": null
+    },
+    "isError": false
+  }
+}

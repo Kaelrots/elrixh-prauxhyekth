@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>마법·에너지 용어 사전</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="마법·에너지 용어 사전"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="마법·에너지 용어 사전"/><meta name="twitter:description" content="마법·에너지 용어 사전 복원 마법 문서의 원문을 보존하면서 07에서 확정한 에너지 계통과 재사용 가능한 전문 개념을 연결하는 색인이다. 근거는 07 최종감사통과 마스터이다."/><meta property="og:description" content="마법·에너지 용어 사전 복원 마법 문서의 원문을 보존하면서 07에서 확정한 에너지 계통과 재사용 가능한 전문 개념을 연결하는 색인이다. 근거는 07 최종감사통과 마스터이다."/><meta property="og:image:alt" content="마법·에너지 용어 사전 복원 마법 문서의 원문을 보존하면서 07에서 확정한 에너지 계통과 재사용 가능한 전문 개념을 연결하는 색인이다. 근거는 07 최종감사통과 마스터이다."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/00-세계관-공통설정/04-능력·마법·에너지/마법·에너지-용어-사전"/><meta property="twitter:url" content="https://kaelrots.github.io/00-세계관-공통설정/04-능력·마법·에너지/마법·에너지-용어-사전"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="마법·에너지 용어 사전 복원 마법 문서의 원문을 보존하면서 07에서 확정한 에너지 계통과 재사용 가능한 전문 개념을 연결하는 색인이다. 근거는 07 최종감사통과 마스터이다."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiQzpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법·에너지-용어-사전"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-34" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-34" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-22" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-22" class="mobile-toc-dialog" aria-labelledby="toc-22-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-22-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#마법에너지-용어-사전" data-for="마법에너지-용어-사전">마법·에너지 용어 사전</a></li><li class="depth-1"><a href="#에너지-계통" data-for="에너지-계통">에너지 계통</a></li><li class="depth-1"><a href="#위상력" data-for="위상력">위상력</a></li><li class="depth-1"><a href="#마력" data-for="마력">마력</a></li><li class="depth-1"><a href="#신성력" data-for="신성력">신성력</a></li><li class="depth-1"><a href="#생명력" data-for="생명력">생명력</a></li><li class="depth-1"><a href="#마나" data-for="마나">마나</a></li><li class="depth-1"><a href="#마력-회로" data-for="마력-회로">마력 회로</a></li><li class="depth-1"><a href="#마나-회로" data-for="마나-회로">마나 회로</a></li><li class="depth-1"><a href="#재사용-가능한-전문-개념" data-for="재사용-가능한-전문-개념">재사용 가능한 전문 개념</a></li><li class="depth-1"><a href="#속성-친화력" data-for="속성-친화력">속성 친화력</a></li><li class="depth-1"><a href="#속성-전도율" data-for="속성-전도율">속성 전도율</a></li><li class="depth-1"><a href="#마력-역류" data-for="마력-역류">마력 역류</a></li><li class="depth-1"><a href="#마법어" data-for="마법어">마법어</a></li><li class="depth-1"><a href="#심의" data-for="심의">심의</a></li><li class="depth-1"><a href="#영창-단계" data-for="영창-단계">영창 단계</a></li><li class="depth-1"><a href="#무영창" data-for="무영창">무영창</a></li><li class="depth-1"><a href="#성급" data-for="성급">성급</a></li><li class="depth-1"><a href="#벡터-마법" data-for="벡터-마법">벡터 마법</a></li><li class="depth-1"><a href="#다중속성-영창" data-for="다중속성-영창">다중속성 영창</a></li><li class="depth-1"><a href="#검토대기" data-for="검토대기">검토대기</a></li><li class="depth-1"><a href="#창성급" data-for="창성급">창성급</a></li><li class="depth-1"><a href="#원문분야-연결" data-for="원문분야-연결">원문·분야 연결</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-34"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-34" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../00-세계관-공통설정/">00 세계관 공통설정</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../00-세계관-공통설정/04-능력·마법·에너지/">04 능력·마법·에너지</a></div></nav><h1 class="article-title">마법·에너지 용어 사전</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-02T05:36:17.771Z">2026년 10월 02일</time><span>18 분 소요</span></p></div></div><article class="popover-hint"><h1 id="마법에너지-용어-사전">마법·에너지 용어 사전<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마법에너지-용어-사전" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>복원 마법 문서의 원문을 보존하면서 07에서 확정한 에너지 계통과 재사용 가능한 전문 개념을 연결하는 색인이다.</p>
+<p>근거는 <a href="../../90-볼트-운영/03-작업계획·감사보고/통합-용어집-개편/세계관_통합_용어집_확장_결정_마스터_07_최종감사통과_2026-10-01" class="internal alias" data-slug="90-볼트-운영/03-작업계획·감사보고/통합-용어집-개편/세계관_통합_용어집_확장_결정_마스터_07_최종감사통과_2026-10-01">07 최종감사통과 마스터</a>이다. 통합의 대표 정의는 <a href="../../00-세계관-공통설정/00-세계관-통합-용어집_확정개념반영" class="internal alias" data-slug="00-세계관-공통설정/00-세계관-통합-용어집_확정개념반영">00-세계관 통합 용어집_확정개념반영</a>에서 읽고, 이 문서는 전문어의 관계와 원문 위치를 연결한다. 각 항목의 정본상태·적용범위를 우선하며 원문의 미검토 수치·사회정책·복원 내용을 함께 승인한 것으로 읽지 않는다.</p>
+<h2 id="에너지-계통">에너지 계통<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#에너지-계통" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>위상력 → 발현·변환된 마력 계열(속성 마력·신성력·생명력·기타) → 생체에서 정형·안정화된 마나. 이는 단순한 물리량 합산식이 아니다.</p>
+<h2 id="위상력">위상력<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#위상력" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>여러 이능적 힘의 성립과 변환에 관여하는 근원적 에너지이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 마력, 위상공학</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#07-결정에-따른-현행-개념과-복원-범위" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">07 결정에 따른 현행 개념과 복원 범위</a> · 결정 근거: D04-1, D04-2</li>
+<li>주의사항·HOLD: 일반 생명체는 적합한 마력 계열로 변환·정형하여 운용한다. 특수 장치·기술·고위 존재·예외적 구조에 의한 직접 관측·저장·변환·조작·작용 가능성이 일반적인 안전 운용을 뜻하지 않는다.</li>
+</ul>
+<h2 id="마력">마력<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마력" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>위상력으로부터 발현·변환되어 실제 마법적·이능적 작용에 이용되는 여러 힘을 넓게 묶는 총칭이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: 속성 마력, 신성력, 생명력, 기타 계열</li>
+<li>관련개념: 위상력, 마나, 마력 회로</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#07-결정에-따른-현행-개념과-복원-범위" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">07 결정에 따른 현행 개념과 복원 범위</a> · 결정 근거: D04-1</li>
+<li>주의사항·HOLD: 마나와 동의어가 아니며 계열별 물리량의 단순 합으로 정의하지 않는다.</li>
+</ul>
+<h2 id="신성력">신성력<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#신성력" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>신적·초월적 존재의 영향과 결부된 구조적 특성을 지닌 마력 계열이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: 마력 · 하위개념: —</li>
+<li>관련개념: 신성 회로, 영혼 각인, 혈통 각인</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#07-결정에-따른-현행-개념과-복원-범위" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">07 결정에 따른 현행 개념과 복원 범위</a> · 결정 근거: D04-3</li>
+<li>주의사항·HOLD: 매번 직접적인 신의 공급·축복이 필수는 아니다. 각인·수행·의례·회로·인공 재현·유산·환경 등으로 계승 가능하며 절대 무역류는 HOLD.</li>
+</ul>
+<h2 id="생명력">생명력<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#생명력" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>생명의 생성·유지·성장·변화·쇠퇴·소멸 등 생명현상 자체에 직접 작용하는 특수 마력 계열이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: 마력 · 하위개념: —</li>
+<li>관련개념: 생명 속성</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#07-결정에-따른-현행-개념과-복원-범위" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">07 결정에 따른 현행 개념과 복원 범위</a> · 결정 근거: D04-5</li>
+<li>주의사항·HOLD: 체력·활력 및 효과 분류인 생명 속성과 구별한다. 자연계/흑마법계는 에너지의 본질적 이분법이 아니라 운용·윤리·학파 분류로 재검토한다.</li>
+</ul>
+<h2 id="마나">마나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>마력이 생명체의 영혼·육체·생체 회로를 거쳐 해당 개체가 사용할 수 있도록 정형·안정화된 상태이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: 마력의 생체 정형 상태 · 하위개념: —</li>
+<li>관련개념: 마나 회로, 영혼, 육체</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#07-결정에-따른-현행-개념과-복원-범위" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">07 결정에 따른 현행 개념과 복원 범위</a> · 결정 근거: D04-4</li>
+<li>주의사항·HOLD: 총 접근량·보유량·회로 처리량·순간 출력·회복속도의 구체 측정체계는 미확정.</li>
+</ul>
+<h2 id="마력-회로">마력 회로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마력-회로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>마력을 수용·전달·변환·제어하는 회로구조의 상위개념이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: 생체 마력 회로(마나 회로), 인공·기계·마학적 회로</li>
+<li>관련개념: 마력, 마나</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#07-결정에-따른-현행-개념과-복원-범위" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">07 결정에 따른 현행 개념과 복원 범위</a> · 결정 근거: P1-07</li>
+<li>주의사항·HOLD: 마나 회로와 동의어로 합치지 않는다.</li>
+</ul>
+<h2 id="마나-회로">마나 회로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마나-회로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>생명체 내부에서 마력을 개체가 사용할 마나로 정형·순환시키고 영혼–육체 결합에도 관여하는 생체 마력 회로이다.</p>
+<ul>
+<li>별칭·구칭·축약: 생체 마력 회로</li>
+<li>상위개념: 마력 회로 · 하위개념: —</li>
+<li>관련개념: 마나, 신체결합고리, 영혼 안착</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#07-결정에-따른-현행-개념과-복원-범위" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">07 결정에 따른 현행 개념과 복원 범위</a> · <a href="../../00-세계관-공통설정/03-존재·종족/신인류#유전-및-영혼-메커니즘-3층-세습-모델" class="internal alias" data-slug="00-세계관-공통설정/03-존재·종족/신인류">유전 및 영혼 메커니즘 (3층 세습 모델)</a> · 결정 근거: P1-07, P1-04</li>
+<li>주의사항·HOLD: 모든 대상의 선천적 보유 여부와 잠재/활성 기준은 미확정. 신체결합고리의 핵심 구현요소 중 하나이지 전체와 동일하지 않다.</li>
+</ul>
+<h2 id="재사용-가능한-전문-개념">재사용 가능한 전문 개념<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#재사용-가능한-전문-개념" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>복원 원문의 아래 개념은 07이 채택한 최소 의미로 연결한다. 특정 영창 학파의 용례를 모든 초상현상의 보편 법칙으로 확대하지 않는다.</p>
+<h2 id="속성-친화력">속성 친화력<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#속성-친화력" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>특정 마력 계열에 대한 적합성·안정성·성취 상한과 관련된 특성이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 속성 전도율, 마력 역류</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#속성-마력-및-속성-친화력-그리고-속성-전도율에-대해서" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">속성 마력 및 속성 친화력 그리고 속성 전도율에 대해서</a> · 결정 근거: D04-M03, V.3.3</li>
+<li>주의사항·HOLD: 전도율과의 보편적 반비례 및 수치화는 HOLD.</li>
+</ul>
+<h2 id="속성-전도율">속성 전도율<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#속성-전도율" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>마나·마력의 전달·변환·운용 효율과 관계된 변수이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 속성 친화력, 마력 회로</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#속성-마력-및-속성-친화력-그리고-속성-전도율에-대해서" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">속성 마력 및 속성 친화력 그리고 속성 전도율에 대해서</a> · 결정 근거: D04-M04, V.3.3</li>
+<li>주의사항·HOLD: 인공회로·마학장치까지의 적용범위, 친화력과의 보편 반비례 및 수치화는 HOLD.</li>
+</ul>
+<h2 id="마력-역류">마력 역류<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마력-역류" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>실패한 마법·차원간섭이 시전자에게 돌려주는 반작용으로, 영창 방해·연산 실패 등이 원인이 될 수 있다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 영창 단계, 속성 친화력, 속성 전도율</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#마력-역류에-대해서" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">마력 역류에 대해서</a> · 결정 근거: D04-M07, V.3.3</li>
+<li>주의사항·HOLD: 신성계 마법의 절대 무역류 및 피해량의 정확한 함수·수치는 HOLD.</li>
+</ul>
+<h2 id="마법어">마법어<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마법어" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>복원 마법학의 영창 체계에서 의미·의도와 심의를 담아 작용을 구성하는 언어적 수단이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 심의, 영창 단계, 무영창</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#마법어에-대한-설명" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">‘마법어’에 대한 설명</a> · 결정 근거: D04-M02, V.3.3</li>
+<li>주의사항·HOLD: 모든 마법의 필수조건인지, 언어학적 음운·문법·방언체계는 HOLD. 복원 용례를 언어학 정본으로 자동 승격하지 않는다.</li>
+</ul>
+<h2 id="심의">심의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#심의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>영창과 마법 운용에서 시전자가 의미를 이해하고 작용에 담는 마음과 의도이다.</p>
+<ul>
+<li>별칭·구칭·축약: 심의(心意)</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 마법어, 연산, 영창 단계</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#마법어에-대한-설명" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">‘마법어’에 대한 설명</a> · 결정 근거: D04-M02, V.3.3</li>
+<li>주의사항·HOLD: 모든 장치형·자연발생 초상현상의 보편 필수조건으로 확정하지 않는다.</li>
+</ul>
+<h2 id="영창-단계">영창 단계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#영창-단계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>기존 영창 체계에서 의미·의도·연산을 시동어→속성 발현어→형태어→발동어로 구성하는 단계이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 마법어, 심의, 벡터 마법, 무영창</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#평성-속성-마법의-발현-과정" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">평성 속성 마법의 발현 과정</a> · 결정 근거: D04-M08, V.3.3</li>
+<li>주의사항·HOLD: 성급별 정확한 주문표·소모량 및 모든 마법에 대한 보편 적용은 HOLD.</li>
+</ul>
+<h2 id="무영창">무영창<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#무영창" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>기존 영창 체계에서 앞선 영창 과정을 생략하고 발동어만으로 시전하는 용례이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 영창 단계, 마법어</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#평성-속성-마법의-발현-과정" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">평성 속성 마법의 발현 과정</a> · 결정 근거: D04-M08, V.3.3</li>
+<li>주의사항·HOLD: 추가 마력 소비율의 과거 수치는 승계하지 않는다.</li>
+</ul>
+<h2 id="성급">성급<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#성급" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>마법 운용능력·복잡도·처리능력과 관련된 분류이다.</p>
+<ul>
+<li>별칭·구칭·축약: star-class</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 격, 존재 위상, 위격, 창성급</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/03-존재·종족/초월자#초월의-조건과-경계" class="internal alias" data-slug="00-세계관-공통설정/03-존재·종족/초월자">초월의 조건과 경계</a> · 결정 근거: D06-8, V.3.3</li>
+<li>주의사항·HOLD: 초월과 자동 등치하지 않는다. 성급별 정확한 주문·수치 체계는 HOLD.</li>
+</ul>
+<h2 id="벡터-마법">벡터 마법<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#벡터-마법" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>기존 영창 체계에서 형태어 대신 변경할 벡터값을 계산하여 작용을 구성하는 마법 기법이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 영창 단계, 연산, 창성급</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#평성-속성-마법의-발현-과정" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">평성 속성 마법의 발현 과정</a> · 결정 근거: D04-M08, V.3.3</li>
+<li>주의사항·HOLD: 정확한 성급별 해금조건·주문표·소모량은 HOLD.</li>
+</ul>
+<h2 id="다중속성-영창">다중속성 영창<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#다중속성-영창" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>복수의 속성 마법을 한 영창에서 발현하는 기법이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: — · 하위개념: —</li>
+<li>관련개념: 영창 단계, 속성 친화력</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 확정(07) · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#다중속성-영창에-대해서" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">다중속성 영창에 대해서</a> · 결정 근거: V.3.3</li>
+<li>주의사항·HOLD: 친속성·무관계·반속성 조합의 정확한 비율과 절대 제한은 이번에 확정하지 않는다.</li>
+</ul>
+<h2 id="검토대기">검토대기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#검토대기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h2 id="창성급">창성급<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#창성급" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>복원 원문이 벡터 마법의 활용과 연결하여 사용한 성급 명칭이다.</p>
+<ul>
+<li>별칭·구칭·축약: —</li>
+<li>상위개념: 성급 · 하위개념: —</li>
+<li>관련개념: 벡터 마법</li>
+<li>적용범위: 마법·에너지 계통 · 정본상태: 복원 용례 보존·HOLD · 정사/비정사: 공통 설정</li>
+<li>상세 원문: <a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정#창성급" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">창성급</a> · 결정 근거: V.3.3, VI.1</li>
+<li>주의사항·HOLD: 정확한 분류위계·수치·주문표·벡터 마법 해금조건을 복원 기록만으로 확정하지 않는다.</li>
+</ul>
+<p><font style="font-weight:bold;">마법 자체의 최종 포괄정의</font>는 HOLD이다. 의례·장치형 작용·자연발생 현상을 모두 포함하는지 확정하지 않는다. 친화력·전도율 반비례, 다중속성 비율, 무영창 소비율, 신성계 절대 무역류, 성급별 주문표·정확한 수치도 HOLD이다.</p>
+<h2 id="원문분야-연결">원문·분야 연결<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원문분야-연결" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">마법 기본설정</a> — 복원 경고와 원래 수치·주문표를 보존한 경위 자료</li>
+<li><a href="../../00-세계관-공통설정/03-존재·종족/존재·영혼·신인류-용어-사전#신체결합고리" class="internal alias" data-slug="00-세계관-공통설정/03-존재·종족/존재·영혼·신인류-용어-사전">신체결합고리</a> — 회로와 인터페이스의 구별</li>
+<li><a href="../../00-세계관-공통설정/03-존재·종족/초월·신적-존재-용어-사전#초월-각성" class="internal alias" data-slug="00-세계관-공통설정/03-존재·종족/초월·신적-존재-용어-사전">초월 각성</a> — 성급과 존재 위상 전환의 구별</li>
+<li><a href="../../00-세계관-공통설정/01-우주론·차원/차원-구분-용어-정의" class="internal alias" data-slug="00-세계관-공통설정/01-우주론·차원/차원-구분-용어-정의">차원 구분 용어 정의</a> — 혼돈계와 과거 비표준명 전이계</li>
+</ul></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-11"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-11"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-23" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-23" class="toc-content"><li class="depth-0"><a href="#마법에너지-용어-사전" data-for="마법에너지-용어-사전">마법·에너지 용어 사전</a></li><li class="depth-1"><a href="#에너지-계통" data-for="에너지-계통">에너지 계통</a></li><li class="depth-1"><a href="#위상력" data-for="위상력">위상력</a></li><li class="depth-1"><a href="#마력" data-for="마력">마력</a></li><li class="depth-1"><a href="#신성력" data-for="신성력">신성력</a></li><li class="depth-1"><a href="#생명력" data-for="생명력">생명력</a></li><li class="depth-1"><a href="#마나" data-for="마나">마나</a></li><li class="depth-1"><a href="#마력-회로" data-for="마력-회로">마력 회로</a></li><li class="depth-1"><a href="#마나-회로" data-for="마나-회로">마나 회로</a></li><li class="depth-1"><a href="#재사용-가능한-전문-개념" data-for="재사용-가능한-전문-개념">재사용 가능한 전문 개념</a></li><li class="depth-1"><a href="#속성-친화력" data-for="속성-친화력">속성 친화력</a></li><li class="depth-1"><a href="#속성-전도율" data-for="속성-전도율">속성 전도율</a></li><li class="depth-1"><a href="#마력-역류" data-for="마력-역류">마력 역류</a></li><li class="depth-1"><a href="#마법어" data-for="마법어">마법어</a></li><li class="depth-1"><a href="#심의" data-for="심의">심의</a></li><li class="depth-1"><a href="#영창-단계" data-for="영창-단계">영창 단계</a></li><li class="depth-1"><a href="#무영창" data-for="무영창">무영창</a></li><li class="depth-1"><a href="#성급" data-for="성급">성급</a></li><li class="depth-1"><a href="#벡터-마법" data-for="벡터-마법">벡터 마법</a></li><li class="depth-1"><a href="#다중속성-영창" data-for="다중속성-영창">다중속성 영창</a></li><li class="depth-1"><a href="#검토대기" data-for="검토대기">검토대기</a></li><li class="depth-1"><a href="#창성급" data-for="창성급">창성급</a></li><li class="depth-1"><a href="#원문분야-연결" data-for="원문분야-연결">원문·분야 연결</a></li></ul></div><div class="backlinks"><button type="button" class="backlinks-header" aria-expanded="true" aria-controls="backlinks-panel-11"><h3>백링크</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="backlinks-content" id="backlinks-panel-11"><ul id="list-1" class="overflow"><li><a href="../../00-세계관-공통설정/00-세계관-통합-용어집_확정개념반영" class="internal">00-세계관 통합 용어집_확정개념반영</a></li><li><a href="../../00-세계관-공통설정/03-존재·종족/신인류" class="internal">신인류</a></li><li><a href="../../00-세계관-공통설정/03-존재·종족/존재·영혼·신인류-용어-사전" class="internal">존재·영혼·신인류 용어 사전</a></li><li><a href="../../00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정" class="internal">마법 기본설정</a></li><li><a href="../../00-세계관-공통설정/" class="internal">index</a></li><li><a href="../../01-신계-차원/02-라리셴베르크/07-경제·산업·자원/자원/자원-개요-모음" class="internal">자원 개요 모음</a></li><li><a href="../../90-볼트-운영/01-수정기록/수정-기록-모음" class="internal">수정 기록 모음</a></li><li><a href="../../90-볼트-운영/03-작업계획·감사보고/통합-용어집-개편/Work_실제반영_완료보고서_통합용어집_2026-10-01" class="internal">Work_실제반영_완료보고서_통합용어집_2026-10-01</a></li><li class="overflow-end"></li></ul></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

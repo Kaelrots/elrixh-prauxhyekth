@@ -1,0 +1,30 @@
+provinces = "provinces.png"
+topology = "heightmap.heightmap"
+rivers = "rivers.png"
+adjacencies = "adjacencies.csv"
+wrap_x = yes
+
+sea_starts = {
+	# 초대륙 지중해
+		xC696EF x8326DA xD1B0D0 x6A6719 x2528AC x80C0E9
+	# 세나스-뤼아셰 지중해
+		xFAF7B7 x72D304 x6CBEA6
+	# 세나스 동부 해역
+		x1419B2 xF13C82 x64BDEA x079CCC xFA1CF1 x03A14A x7E79F2 x7070CE x1370EF x024366
+	# 세나스-라이칸 지중해
+		x66DFE5 x62BCE9 x6ABADB
+	# 라이오니온-대한 근해
+		x609FC8 x56C4E7 x47B5EC x4C9BF0
+	# 해양
+		x87F9F5 xB0C6E5 x64BDEA x85BDCA xA4CDF6 x8FACF1 x92C4F0 x99B1D9 x7A84AF x6AA8E5 x7CC9F9 x86A0EE x96B3F4 x667CFB x6770A8 x92DCEA x7EA0BE x96C6EC x80C3D6 x6D9092 x7AB5BE x8BE5D1 x819EDC x6E98D0 x78BEDA x0BF3E7 x0622F9
+	# 임시 해양
+}
+
+lakes = {
+	#초대륙 호수
+		x85D094 x5E45A2 x42BF58 xA23C02 x801F39 xFAF7B6 xFAF7B6 xC415EC x9473DC xD340C7 xB90B6E x428195 x29E6D1 x22B3CD x4BA786 x50B842 xAAF84E
+	#시류엔데르
+		x5D019B
+	#스카이니엔 나르탄투 호수
+		xB9CCF8 x768460 xA95EF8 x987095 x739F6B x872ADA x252789 x545186
+}

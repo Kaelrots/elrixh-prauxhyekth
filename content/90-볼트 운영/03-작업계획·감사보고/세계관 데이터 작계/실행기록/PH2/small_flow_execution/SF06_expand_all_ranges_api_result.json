@@ -1,0 +1,34 @@
+{
+  "api_validation": "passed",
+  "ui_evidence": "pending root",
+  "batch_id": "TEST-SF06-EXPAND-001",
+  "actual": {
+    "input_id": "TEST-POP-011",
+    "input_value": 50,
+    "calc_id": "TEST-POP-011",
+    "calc_region_name": "시험 지역",
+    "validation_count": 2,
+    "validation_overflow": "범위내",
+    "published_id": "TEST-POP-011",
+    "published_value": 50,
+    "consumed_id": "TEST-POP-011",
+    "consumed_value": 50,
+    "population": 250,
+    "match_count": 2,
+    "provider_count": 2,
+    "consumer_count": 2,
+    "revision": "TEST.REV.6",
+    "source_locator": "TEST-SF-20261002-01|boundary_row=14"
+  },
+  "write_completed_at": {
+    "R20": 1790934451195,
+    "H90": 1790934458033
+  },
+  "observed_at": "2026-10-02T09:47:40.918Z",
+  "elapsed_ms": 15976,
+  "propagation_upper_bound_ms": {
+    "R20": 9723,
+    "H90": 2885
+  },
+  "test_suite_84_status": "unchanged"
+}

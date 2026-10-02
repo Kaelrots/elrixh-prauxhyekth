@@ -1,0 +1,5739 @@
+{
+  "created_at": "2026-10-02T08:57:33.507Z",
+  "layout_version": "PH2.PHYSICAL.2",
+  "layout_path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\physical_layout.json",
+  "layout_sha256": "15bfbe163b3d00dc1a56632d2e31602a9897e263f8238e710c3bf93e3342c149",
+  "method": "@oai/artifact-tool",
+  "online_actions_performed": false,
+  "native_validation_status": "미실행",
+  "world_fact_rows": 0,
+  "marker_expected_output_count": 2,
+  "style": "Google native white/light gray; Korean-first",
+  "files": [
+    {
+      "file_code": "N60",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\N60.xlsx",
+      "sheets": [
+        {
+          "title": "00_안내",
+          "role": "GUIDE",
+          "planned_rows": 100,
+          "planned_columns": 12,
+          "blocks": [],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_00_안내_overview.png",
+              "range": "A1:B17"
+            }
+          ],
+          "guide_rows": 12
+        },
+        {
+          "title": "01_설정",
+          "role": "CONFIG",
+          "planned_rows": 100,
+          "planned_columns": 20,
+          "blocks": [],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_01_설정_overview.png",
+              "range": "A1:C14"
+            }
+          ]
+        },
+        {
+          "title": "IN_국가문화관계",
+          "role": "IN",
+          "planned_rows": 103,
+          "planned_columns": 30,
+          "blocks": [
+            {
+              "id": "IN_NATION_CULTURE_RELATION",
+              "role": "IN",
+              "header_range": "'IN_국가문화관계'!A3:AD3",
+              "display_header_range": "'IN_국가문화관계'!A2:AD2",
+              "data_range": "'IN_국가문화관계'!A4:AD53",
+              "bounded_range": "'IN_국가문화관계'!A3:AD53",
+              "named_range": "T_N60_5751afe463f4",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "relation_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "relation_id",
+                  "label_ko": "관계 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "culture_id",
+                  "label_ko": "문화 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "relation_type",
+                  "label_ko": "관계 유형",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "scope_definition",
+                  "label_ko": "적용 범위",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_IN_국가문화관계_block1.png",
+              "range": "A1:H5"
+            }
+          ]
+        },
+        {
+          "title": "IN_언어지위",
+          "role": "IN",
+          "planned_rows": 103,
+          "planned_columns": 31,
+          "blocks": [
+            {
+              "id": "IN_LANGUAGE_STATUS_HISTORY",
+              "role": "IN",
+              "header_range": "'IN_언어지위'!A3:AE3",
+              "display_header_range": "'IN_언어지위'!A2:AE2",
+              "data_range": "'IN_언어지위'!A4:AE53",
+              "bounded_range": "'IN_언어지위'!A3:AE53",
+              "named_range": "T_N60_6ae6f6b9bfb5",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "language_status_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "language_status_id",
+                  "label_ko": "언어 지위 이력 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "language_id",
+                  "label_ko": "언어 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "language_status_code",
+                  "label_ko": "언어 지위 코드",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_or_practice",
+                  "label_ko": "법정·관행 구분",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "scope_definition",
+                  "label_ko": "적용 범위",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_IN_언어지위_block1.png",
+              "range": "A1:H5"
+            }
+          ]
+        },
+        {
+          "title": "IN_문화기관",
+          "role": "IN",
+          "planned_rows": 103,
+          "planned_columns": 32,
+          "blocks": [
+            {
+              "id": "IN_CULTURAL_INSTITUTION_HISTORY",
+              "role": "IN",
+              "header_range": "'IN_문화기관'!A3:AF3",
+              "display_header_range": "'IN_문화기관'!A2:AF2",
+              "data_range": "'IN_문화기관'!A4:AF53",
+              "bounded_range": "'IN_문화기관'!A3:AF53",
+              "named_range": "T_N60_0402adb9f74a",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "cultural_institution_record_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "cultural_institution_record_id",
+                  "label_ko": "문화제도 이력 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "institution_or_policy_name_raw",
+                  "label_ko": "기관·정책명 원문",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "culture_id",
+                  "label_ko": "문화 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "language_id",
+                  "label_ko": "언어 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "heritage_reference",
+                  "label_ko": "문화유산 참조",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "scope_definition",
+                  "label_ko": "적용 범위",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_IN_문화기관_block1.png",
+              "range": "A1:H5"
+            }
+          ]
+        },
+        {
+          "title": "CHECK_검증01",
+          "role": "CHECK",
+          "planned_rows": 257,
+          "planned_columns": 38,
+          "blocks": [
+            {
+              "id": "CHECK_RESULTS",
+              "role": "CHECK",
+              "header_range": "'CHECK_검증01'!A3:AL3",
+              "display_header_range": "'CHECK_검증01'!A2:AL2",
+              "data_range": "'CHECK_검증01'!A4:AL253",
+              "bounded_range": "'CHECK_검증01'!A3:AL253",
+              "named_range": "T_N60_9ce03ec84ad2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "owner_file_code",
+                "run_id",
+                "check_id",
+                "result_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "run_id",
+                  "label_ko": "검사 실행 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "check_id",
+                  "label_ko": "검사 정의 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "result_id",
+                  "label_ko": "검사 결과 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "record_id",
+                  "label_ko": "원자료 레코드 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "subject_kind",
+                  "label_ko": "검사 대상 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_table",
+                  "label_ko": "원자료 논리표",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_field",
+                  "label_ko": "원자료 필드",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_range",
+                  "label_ko": "실제 검사 범위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_record_link",
+                  "label_ko": "원자료 이동 링크",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "subject_count",
+                  "label_ko": "검사 대상 수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "actual",
+                  "label_ko": "실제 관측값",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "expected",
+                  "label_ko": "사전 기대값",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "value_type",
+                  "label_ko": "관측값 자료형",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "unit",
+                  "label_ko": "단위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "comparison_rule",
+                  "label_ko": "판정 규칙",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "status",
+                  "label_ko": "판정 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "execution_status",
+                  "label_ko": "실행 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "severity",
+                  "label_ko": "중요도",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "issue_kind",
+                  "label_ko": "문제 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "message",
+                  "label_ko": "결과 설명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "실제 확인 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "started_at",
+                  "label_ko": "실행 시작 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "evidence",
+                  "label_ko": "검사 증거",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원자료 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "검사결과 스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_schema_version",
+                  "label_ko": "원자료 스키마 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "릴리스 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "dependency_status",
+                  "label_ko": "선행 연결 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "dependency_dataset_ids",
+                  "label_ko": "선행 데이터셋 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "era",
+                  "label_ko": "기년",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "scope_json",
+                  "label_ko": "검사 범위 정의",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "test_ids",
+                  "label_ko": "인수시험 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "is_test_data",
+                  "label_ko": "시험 자료 여부",
+                  "required": true,
+                  "type": "boolean"
+                },
+                {
+                  "field_id": "test_run_id",
+                  "label_ko": "TEST 실행 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "delegated_check_owner",
+                  "label_ko": "위임 검사 파일",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "correlation_id",
+                  "label_ko": "상호 참조 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_CHECK_검증01_block1.png",
+              "range": "A1:H5"
+            }
+          ]
+        },
+        {
+          "title": "PUB_제공01",
+          "role": "PUB",
+          "planned_rows": 428,
+          "planned_columns": 38,
+          "blocks": [
+            {
+              "id": "PUB_CULTURAL_INSTITUTION_HISTORY_V2",
+              "role": "PUB",
+              "header_range": "'PUB_제공01'!A3:AH3",
+              "display_header_range": "'PUB_제공01'!A2:AH2",
+              "data_range": "'PUB_제공01'!A4:AH53",
+              "bounded_range": "'PUB_제공01'!A3:AH53",
+              "named_range": "PUB_CULTURAL_INSTITUTION_HISTORY_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "cultural_institution_record_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "cultural_institution_record_id",
+                  "label_ko": "문화제도 이력 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "institution_or_policy_name_raw",
+                  "label_ko": "기관·정책명 원문",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "culture_id",
+                  "label_ko": "문화 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "language_id",
+                  "label_ko": "언어 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "heritage_reference",
+                  "label_ko": "문화유산 참조",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "scope_definition",
+                  "label_ko": "적용 범위",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "connection_status",
+                  "label_ko": "연결 상태",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_LANGUAGE_STATUS_HISTORY_V2",
+              "role": "PUB",
+              "header_range": "'PUB_제공01'!A60:AG60",
+              "display_header_range": "'PUB_제공01'!A59:AG59",
+              "data_range": "'PUB_제공01'!A61:AG110",
+              "bounded_range": "'PUB_제공01'!A60:AG110",
+              "named_range": "PUB_LANGUAGE_STATUS_HISTORY_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "language_status_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "language_status_id",
+                  "label_ko": "언어 지위 이력 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "language_id",
+                  "label_ko": "언어 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "language_status_code",
+                  "label_ko": "언어 지위 코드",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_or_practice",
+                  "label_ko": "법정·관행 구분",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "scope_definition",
+                  "label_ko": "적용 범위",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "connection_status",
+                  "label_ko": "연결 상태",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_NATION_CULTURE_RELATION_V2",
+              "role": "PUB",
+              "header_range": "'PUB_제공01'!A117:AF117",
+              "display_header_range": "'PUB_제공01'!A116:AF116",
+              "data_range": "'PUB_제공01'!A118:AF167",
+              "bounded_range": "'PUB_제공01'!A117:AF167",
+              "named_range": "PUB_NATION_CULTURE_RELATION_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "relation_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "relation_id",
+                  "label_ko": "관계 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "culture_id",
+                  "label_ko": "문화 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "relation_type",
+                  "label_ko": "관계 유형",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "scope_definition",
+                  "label_ko": "적용 범위",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "connection_status",
+                  "label_ko": "연결 상태",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_N60_CHECK_RESULTS_V2",
+              "role": "PUB",
+              "header_range": "'PUB_제공01'!A174:AL174",
+              "display_header_range": "'PUB_제공01'!A173:AL173",
+              "data_range": "'PUB_제공01'!A175:AL424",
+              "bounded_range": "'PUB_제공01'!A174:AL424",
+              "named_range": "PUB_N60_CHECK_RESULTS_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "owner_file_code",
+                "run_id",
+                "check_id",
+                "result_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "run_id",
+                  "label_ko": "검사 실행 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "check_id",
+                  "label_ko": "검사 정의 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "result_id",
+                  "label_ko": "검사 결과 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "record_id",
+                  "label_ko": "원자료 레코드 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "subject_kind",
+                  "label_ko": "검사 대상 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_table",
+                  "label_ko": "원자료 논리표",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_field",
+                  "label_ko": "원자료 필드",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_range",
+                  "label_ko": "실제 검사 범위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_record_link",
+                  "label_ko": "원자료 이동 링크",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "subject_count",
+                  "label_ko": "검사 대상 수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "actual",
+                  "label_ko": "실제 관측값",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "expected",
+                  "label_ko": "사전 기대값",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "value_type",
+                  "label_ko": "관측값 자료형",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "unit",
+                  "label_ko": "단위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "comparison_rule",
+                  "label_ko": "판정 규칙",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "status",
+                  "label_ko": "판정 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "execution_status",
+                  "label_ko": "실행 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "severity",
+                  "label_ko": "중요도",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "issue_kind",
+                  "label_ko": "문제 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "message",
+                  "label_ko": "결과 설명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "실제 확인 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "started_at",
+                  "label_ko": "실행 시작 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "evidence",
+                  "label_ko": "검사 증거",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원자료 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "검사결과 스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_schema_version",
+                  "label_ko": "원자료 스키마 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "릴리스 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "dependency_status",
+                  "label_ko": "선행 연결 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "dependency_dataset_ids",
+                  "label_ko": "선행 데이터셋 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "era",
+                  "label_ko": "기년",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "scope_json",
+                  "label_ko": "검사 범위 정의",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "test_ids",
+                  "label_ko": "인수시험 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "is_test_data",
+                  "label_ko": "시험 자료 여부",
+                  "required": true,
+                  "type": "boolean"
+                },
+                {
+                  "field_id": "test_run_id",
+                  "label_ko": "TEST 실행 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "delegated_check_owner",
+                  "label_ko": "위임 검사 파일",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "correlation_id",
+                  "label_ko": "상호 참조 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_PUB_제공01_block1.png",
+              "range": "A1:H5"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_PUB_제공01_block2.png",
+              "range": "A58:H62"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_PUB_제공01_block3.png",
+              "range": "A115:H119"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_PUB_제공01_block4.png",
+              "range": "A172:H176"
+            }
+          ]
+        },
+        {
+          "title": "REF_참조01",
+          "role": "REF",
+          "planned_rows": 803,
+          "planned_columns": 46,
+          "blocks": [
+            {
+              "id": "PUB_CALENDAR_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A3:AT3",
+              "display_header_range": "'REF_참조01'!A2:AT2",
+              "data_range": "'REF_참조01'!A4:AT328",
+              "bounded_range": "'REF_참조01'!A3:AT328",
+              "named_range": "REF_PUB_CALENDAR_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "record_kind",
+                "record_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "record_kind",
+                  "label_ko": "기록 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "record_id",
+                  "label_ko": "레코드 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "calendar_id",
+                  "label_ko": "역법 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "calendar_revision_id",
+                  "label_ko": "역법 판본 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "calendar_name",
+                  "label_ko": "역법명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "months_per_year",
+                  "label_ko": "연간 월수",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "days_per_month",
+                  "label_ko": "월별 일수",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "days_per_year",
+                  "label_ko": "연간 일수",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "civil_day_seconds",
+                  "label_ko": "민간일 길이(초)",
+                  "required": false,
+                  "type": "decimal"
+                },
+                {
+                  "field_id": "correction_seconds",
+                  "label_ko": "보정 길이(초)",
+                  "required": false,
+                  "type": "decimal"
+                },
+                {
+                  "field_id": "correction_after_month",
+                  "label_ko": "보정 기준 월",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "correction_after_day",
+                  "label_ko": "보정 기준 일",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "correction_is_date",
+                  "label_ko": "보정일 날짜 여부",
+                  "required": false,
+                  "type": "boolean"
+                },
+                {
+                  "field_id": "source_standard_revision_ids",
+                  "label_ko": "출처 표준 판본 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "calendar_rule_raw",
+                  "label_ko": "역법 규칙 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "era_mapping_id",
+                  "label_ko": "기년 대응 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "from_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "from_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "to_era",
+                  "label_ko": "대상 기년",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "to_year",
+                  "label_ko": "대상 연도",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "mapping_type",
+                  "label_ko": "대응 유형",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "approval_status",
+                  "label_ko": "승인 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "era_edition",
+                  "label_ko": "기년 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "legacy_era_description",
+                  "label_ko": "기존 기년 설명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "current_era_description",
+                  "label_ko": "현 기년 설명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "policy_id",
+                  "label_ko": "정책 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "policy_revision_id",
+                  "label_ko": "정책 판본 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "policy_name",
+                  "label_ko": "정책명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "policy_raw",
+                  "label_ko": "정책 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "annual_boundary_rule_raw",
+                  "label_ko": "연간 경계 규칙 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "unknown_end_rule_raw",
+                  "label_ko": "종료 미상 규칙 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "exact_boundary_rule_raw",
+                  "label_ko": "정확한 경계 규칙 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "annual_point_difference_raw",
+                  "label_ko": "연간 시점 차이 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_namespace",
+                  "label_ko": "출처 구분",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "owner_spreadsheet_id",
+                  "label_ko": "소유 파일 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원본 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "검사 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "record_count",
+                  "label_ko": "자료 건수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "coverage",
+                  "label_ko": "포괄 범위",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "string"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_CODEBOOK_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A335:S335",
+              "display_header_range": "'REF_참조01'!A334:S334",
+              "data_range": "'REF_참조01'!A336:S660",
+              "bounded_range": "'REF_참조01'!A335:S660",
+              "named_range": "REF_PUB_CODEBOOK_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "group_code",
+                "stored_code"
+              ],
+              "columns": [
+                {
+                  "field_id": "group_code",
+                  "label_ko": "코드 그룹",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "stored_code",
+                  "label_ko": "저장 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "display_name",
+                  "label_ko": "표시명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "definition",
+                  "label_ko": "정의",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "name_elun",
+                  "label_ko": "엘룬 이름",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "name_other",
+                  "label_ko": "기타 명칭",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "usage_status",
+                  "label_ko": "사용 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "notes",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "owner_spreadsheet_id",
+                  "label_ko": "소유 파일 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원본 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "검사 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "record_count",
+                  "label_ko": "자료 건수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "coverage",
+                  "label_ko": "포괄 범위",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_NATIONS_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A667:P667",
+              "display_header_range": "'REF_참조01'!A666:P666",
+              "data_range": "'REF_참조01'!A668:P717",
+              "bounded_range": "'REF_참조01'!A667:P717",
+              "named_range": "REF_PUB_NATIONS_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "nation_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "neutral_name",
+                  "label_ko": "중립 명칭",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "sort_order",
+                  "label_ko": "정렬 순서",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_namespace",
+                  "label_ko": "출처 구분",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "owner_spreadsheet_id",
+                  "label_ko": "소유 파일 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원본 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "검사 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "record_count",
+                  "label_ko": "자료 건수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "coverage",
+                  "label_ko": "포괄 범위",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "string"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_SOURCES_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A724:V724",
+              "display_header_range": "'REF_참조01'!A723:V723",
+              "data_range": "'REF_참조01'!A725:V799",
+              "bounded_range": "'REF_참조01'!A724:V799",
+              "named_range": "REF_PUB_SOURCES_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "source_namespace",
+                "source_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "source_namespace",
+                  "label_ko": "출처 구분",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_title",
+                  "label_ko": "출처 제목",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_kind",
+                  "label_ko": "출처 종류",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "edition_raw",
+                  "label_ko": "판본 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "original_location",
+                  "label_ko": "원문 위치",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "url",
+                  "label_ko": "주소",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "canon_status",
+                  "label_ko": "정본 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "modified_at_raw",
+                  "label_ko": "수정 시각 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "usage_scope",
+                  "label_ko": "사용 범위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "notes",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "owner_spreadsheet_id",
+                  "label_ko": "소유 파일 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원본 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "검사 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "record_count",
+                  "label_ko": "자료 건수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "coverage",
+                  "label_ko": "포괄 범위",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_REF_참조01_block1.png",
+              "range": "A1:H5"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_REF_참조01_block2.png",
+              "range": "A333:H337"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_REF_참조01_block3.png",
+              "range": "A665:H669"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N60_REF_참조01_block4.png",
+              "range": "A722:H726"
+            }
+          ]
+        }
+      ],
+      "world_fact_rows": 0,
+      "formula_count": 0,
+      "export_status": "saved",
+      "formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+      "sha256": "5b45fe66d4c7b7777cf8c7f96e9c733d30389682d20df6a0d7ce8af73b8ede4f",
+      "byte_size": 188627
+    },
+    {
+      "file_code": "N70",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\N70.xlsx",
+      "sheets": [
+        {
+          "title": "00_안내",
+          "role": "GUIDE",
+          "planned_rows": 100,
+          "planned_columns": 12,
+          "blocks": [],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_00_안내_overview.png",
+              "range": "A1:B17"
+            }
+          ],
+          "guide_rows": 12
+        },
+        {
+          "title": "01_설정",
+          "role": "CONFIG",
+          "planned_rows": 100,
+          "planned_columns": 20,
+          "blocks": [],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_01_설정_overview.png",
+              "range": "A1:C14"
+            }
+          ]
+        },
+        {
+          "title": "IN_국가종교관계",
+          "role": "IN",
+          "planned_rows": 103,
+          "planned_columns": 32,
+          "blocks": [
+            {
+              "id": "IN_NATION_RELIGION_RELATION",
+              "role": "IN",
+              "header_range": "'IN_국가종교관계'!A3:AF3",
+              "display_header_range": "'IN_국가종교관계'!A2:AF2",
+              "data_range": "'IN_국가종교관계'!A4:AF53",
+              "bounded_range": "'IN_국가종교관계'!A3:AF53",
+              "named_range": "T_N70_3b0cdeaddc65",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "relation_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "relation_id",
+                  "label_ko": "관계 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "religion_id",
+                  "label_ko": "종교 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "denomination_id",
+                  "label_ko": "교단 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "legal_status_code",
+                  "label_ko": "법적 지위 코드",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "relation_type",
+                  "label_ko": "관계 유형",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "scope_definition",
+                  "label_ko": "적용 범위",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_IN_국가종교관계_block1.png",
+              "range": "A1:H5"
+            }
+          ]
+        },
+        {
+          "title": "IN_종교조직",
+          "role": "IN",
+          "planned_rows": 103,
+          "planned_columns": 35,
+          "blocks": [
+            {
+              "id": "IN_RELIGIOUS_ORGANIZATION",
+              "role": "IN",
+              "header_range": "'IN_종교조직'!A3:AI3",
+              "display_header_range": "'IN_종교조직'!A2:AI2",
+              "data_range": "'IN_종교조직'!A4:AI53",
+              "bounded_range": "'IN_종교조직'!A3:AI53",
+              "named_range": "T_N70_1a1b6c7b8ee7",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "religious_org_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "religious_org_id",
+                  "label_ko": "종교조직 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "religion_id",
+                  "label_ko": "종교 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "denomination_id",
+                  "label_ko": "교단 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "name_ko",
+                  "label_ko": "한글 이름",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "name_elun",
+                  "label_ko": "엘룬 이름",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "name_other",
+                  "label_ko": "기타 명칭",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_entity_kind",
+                  "label_ko": "법인 유형",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "parent_religious_org_id",
+                  "label_ko": "상위 종교조직 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "headquarters_region_id",
+                  "label_ko": "본부 지역 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_IN_종교조직_block1.png",
+              "range": "A1:H5"
+            }
+          ]
+        },
+        {
+          "title": "IN_종무이력",
+          "role": "IN",
+          "planned_rows": 103,
+          "planned_columns": 33,
+          "blocks": [
+            {
+              "id": "IN_RELIGIOUS_AFFAIRS_HISTORY",
+              "role": "IN",
+              "header_range": "'IN_종무이력'!A3:AG3",
+              "display_header_range": "'IN_종무이력'!A2:AG2",
+              "data_range": "'IN_종무이력'!A4:AG53",
+              "bounded_range": "'IN_종무이력'!A3:AG53",
+              "named_range": "T_N70_43895dad2aa3",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "affairs_record_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "affairs_record_id",
+                  "label_ko": "교무 이력 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "religious_org_id",
+                  "label_ko": "종교조직 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "person_id",
+                  "label_ko": "인물 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "affairs_role_name_raw",
+                  "label_ko": "교무 역할명 원문",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "affairs_relation_type",
+                  "label_ko": "교무 관계 유형",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "political_office_id",
+                  "label_ko": "연관 공직 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "political_term_id",
+                  "label_ko": "연관 공직 임기 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_IN_종무이력_block1.png",
+              "range": "A1:H5"
+            }
+          ]
+        },
+        {
+          "title": "CHECK_검증01",
+          "role": "CHECK",
+          "planned_rows": 257,
+          "planned_columns": 38,
+          "blocks": [
+            {
+              "id": "CHECK_RESULTS",
+              "role": "CHECK",
+              "header_range": "'CHECK_검증01'!A3:AL3",
+              "display_header_range": "'CHECK_검증01'!A2:AL2",
+              "data_range": "'CHECK_검증01'!A4:AL253",
+              "bounded_range": "'CHECK_검증01'!A3:AL253",
+              "named_range": "T_N70_9ce03ec84ad2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "owner_file_code",
+                "run_id",
+                "check_id",
+                "result_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "run_id",
+                  "label_ko": "검사 실행 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "check_id",
+                  "label_ko": "검사 정의 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "result_id",
+                  "label_ko": "검사 결과 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "record_id",
+                  "label_ko": "원자료 레코드 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "subject_kind",
+                  "label_ko": "검사 대상 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_table",
+                  "label_ko": "원자료 논리표",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_field",
+                  "label_ko": "원자료 필드",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_range",
+                  "label_ko": "실제 검사 범위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_record_link",
+                  "label_ko": "원자료 이동 링크",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "subject_count",
+                  "label_ko": "검사 대상 수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "actual",
+                  "label_ko": "실제 관측값",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "expected",
+                  "label_ko": "사전 기대값",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "value_type",
+                  "label_ko": "관측값 자료형",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "unit",
+                  "label_ko": "단위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "comparison_rule",
+                  "label_ko": "판정 규칙",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "status",
+                  "label_ko": "판정 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "execution_status",
+                  "label_ko": "실행 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "severity",
+                  "label_ko": "중요도",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "issue_kind",
+                  "label_ko": "문제 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "message",
+                  "label_ko": "결과 설명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "실제 확인 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "started_at",
+                  "label_ko": "실행 시작 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "evidence",
+                  "label_ko": "검사 증거",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원자료 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "검사결과 스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_schema_version",
+                  "label_ko": "원자료 스키마 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "릴리스 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "dependency_status",
+                  "label_ko": "선행 연결 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "dependency_dataset_ids",
+                  "label_ko": "선행 데이터셋 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "era",
+                  "label_ko": "기년",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "scope_json",
+                  "label_ko": "검사 범위 정의",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "test_ids",
+                  "label_ko": "인수시험 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "is_test_data",
+                  "label_ko": "시험 자료 여부",
+                  "required": true,
+                  "type": "boolean"
+                },
+                {
+                  "field_id": "test_run_id",
+                  "label_ko": "TEST 실행 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "delegated_check_owner",
+                  "label_ko": "위임 검사 파일",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "correlation_id",
+                  "label_ko": "상호 참조 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_CHECK_검증01_block1.png",
+              "range": "A1:H5"
+            }
+          ]
+        },
+        {
+          "title": "PUB_제공01",
+          "role": "PUB",
+          "planned_rows": 428,
+          "planned_columns": 38,
+          "blocks": [
+            {
+              "id": "PUB_NATION_RELIGION_RELATION_V2",
+              "role": "PUB",
+              "header_range": "'PUB_제공01'!A3:AH3",
+              "display_header_range": "'PUB_제공01'!A2:AH2",
+              "data_range": "'PUB_제공01'!A4:AH53",
+              "bounded_range": "'PUB_제공01'!A3:AH53",
+              "named_range": "PUB_NATION_RELIGION_RELATION_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "relation_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "relation_id",
+                  "label_ko": "관계 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "religion_id",
+                  "label_ko": "종교 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "denomination_id",
+                  "label_ko": "교단 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "legal_status_code",
+                  "label_ko": "법적 지위 코드",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "relation_type",
+                  "label_ko": "관계 유형",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "scope_definition",
+                  "label_ko": "적용 범위",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "connection_status",
+                  "label_ko": "연결 상태",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_RELIGIOUS_AFFAIRS_HISTORY_V2",
+              "role": "PUB",
+              "header_range": "'PUB_제공01'!A60:AI60",
+              "display_header_range": "'PUB_제공01'!A59:AI59",
+              "data_range": "'PUB_제공01'!A61:AI110",
+              "bounded_range": "'PUB_제공01'!A60:AI110",
+              "named_range": "PUB_RELIGIOUS_AFFAIRS_HISTORY_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "affairs_record_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "affairs_record_id",
+                  "label_ko": "교무 이력 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "religious_org_id",
+                  "label_ko": "종교조직 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "person_id",
+                  "label_ko": "인물 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "affairs_role_name_raw",
+                  "label_ko": "교무 역할명 원문",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "affairs_relation_type",
+                  "label_ko": "교무 관계 유형",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "political_office_id",
+                  "label_ko": "연관 공직 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "political_term_id",
+                  "label_ko": "연관 공직 임기 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "connection_status",
+                  "label_ko": "연결 상태",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_RELIGIOUS_ORGANIZATION_V2",
+              "role": "PUB",
+              "header_range": "'PUB_제공01'!A117:AK117",
+              "display_header_range": "'PUB_제공01'!A116:AK116",
+              "data_range": "'PUB_제공01'!A118:AK167",
+              "bounded_range": "'PUB_제공01'!A117:AK167",
+              "named_range": "PUB_RELIGIOUS_ORGANIZATION_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "religious_org_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "religious_org_id",
+                  "label_ko": "종교조직 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "religion_id",
+                  "label_ko": "종교 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "denomination_id",
+                  "label_ko": "교단 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "name_ko",
+                  "label_ko": "한글 이름",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "name_elun",
+                  "label_ko": "엘룬 이름",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "name_other",
+                  "label_ko": "기타 명칭",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legal_entity_kind",
+                  "label_ko": "법인 유형",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "parent_religious_org_id",
+                  "label_ko": "상위 종교조직 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "headquarters_region_id",
+                  "label_ko": "본부 지역 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "legal_basis",
+                  "label_ko": "법적 근거",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "start_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_month",
+                  "label_ko": "시작 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_day",
+                  "label_ko": "시작 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "start_precision",
+                  "label_ko": "시작 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_era",
+                  "label_ko": "종료 기년",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_year",
+                  "label_ko": "종료 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_month",
+                  "label_ko": "종료 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_day",
+                  "label_ko": "종료 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "end_precision",
+                  "label_ko": "종료 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "end_status",
+                  "label_ko": "종료 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "connection_status",
+                  "label_ko": "연결 상태",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_N70_CHECK_RESULTS_V2",
+              "role": "PUB",
+              "header_range": "'PUB_제공01'!A174:AL174",
+              "display_header_range": "'PUB_제공01'!A173:AL173",
+              "data_range": "'PUB_제공01'!A175:AL424",
+              "bounded_range": "'PUB_제공01'!A174:AL424",
+              "named_range": "PUB_N70_CHECK_RESULTS_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "owner_file_code",
+                "run_id",
+                "check_id",
+                "result_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "run_id",
+                  "label_ko": "검사 실행 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "check_id",
+                  "label_ko": "검사 정의 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "result_id",
+                  "label_ko": "검사 결과 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "record_id",
+                  "label_ko": "원자료 레코드 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "subject_kind",
+                  "label_ko": "검사 대상 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_table",
+                  "label_ko": "원자료 논리표",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_field",
+                  "label_ko": "원자료 필드",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_range",
+                  "label_ko": "실제 검사 범위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_record_link",
+                  "label_ko": "원자료 이동 링크",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "subject_count",
+                  "label_ko": "검사 대상 수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "actual",
+                  "label_ko": "실제 관측값",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "expected",
+                  "label_ko": "사전 기대값",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "value_type",
+                  "label_ko": "관측값 자료형",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "unit",
+                  "label_ko": "단위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "comparison_rule",
+                  "label_ko": "판정 규칙",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "status",
+                  "label_ko": "판정 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "execution_status",
+                  "label_ko": "실행 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "severity",
+                  "label_ko": "중요도",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "issue_kind",
+                  "label_ko": "문제 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "message",
+                  "label_ko": "결과 설명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "실제 확인 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "started_at",
+                  "label_ko": "실행 시작 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "evidence",
+                  "label_ko": "검사 증거",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원자료 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "검사결과 스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_schema_version",
+                  "label_ko": "원자료 스키마 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "릴리스 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "dependency_status",
+                  "label_ko": "선행 연결 상태",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "dependency_dataset_ids",
+                  "label_ko": "선행 데이터셋 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "route",
+                  "label_ko": "루트",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "era",
+                  "label_ko": "기년",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "scope_json",
+                  "label_ko": "검사 범위 정의",
+                  "required": false,
+                  "type": "json_nullable"
+                },
+                {
+                  "field_id": "test_ids",
+                  "label_ko": "인수시험 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "is_test_data",
+                  "label_ko": "시험 자료 여부",
+                  "required": true,
+                  "type": "boolean"
+                },
+                {
+                  "field_id": "test_run_id",
+                  "label_ko": "TEST 실행 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "delegated_check_owner",
+                  "label_ko": "위임 검사 파일",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "correlation_id",
+                  "label_ko": "상호 참조 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_PUB_제공01_block1.png",
+              "range": "A1:H5"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_PUB_제공01_block2.png",
+              "range": "A58:H62"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_PUB_제공01_block3.png",
+              "range": "A115:H119"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_PUB_제공01_block4.png",
+              "range": "A172:H176"
+            }
+          ]
+        },
+        {
+          "title": "REF_참조01",
+          "role": "REF",
+          "planned_rows": 860,
+          "planned_columns": 46,
+          "blocks": [
+            {
+              "id": "PUB_CALENDAR_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A3:AT3",
+              "display_header_range": "'REF_참조01'!A2:AT2",
+              "data_range": "'REF_참조01'!A4:AT328",
+              "bounded_range": "'REF_참조01'!A3:AT328",
+              "named_range": "REF_PUB_CALENDAR_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "record_kind",
+                "record_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "record_kind",
+                  "label_ko": "기록 종류",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "record_id",
+                  "label_ko": "레코드 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "calendar_id",
+                  "label_ko": "역법 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "calendar_revision_id",
+                  "label_ko": "역법 판본 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "calendar_name",
+                  "label_ko": "역법명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "months_per_year",
+                  "label_ko": "연간 월수",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "days_per_month",
+                  "label_ko": "월별 일수",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "days_per_year",
+                  "label_ko": "연간 일수",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "civil_day_seconds",
+                  "label_ko": "민간일 길이(초)",
+                  "required": false,
+                  "type": "decimal"
+                },
+                {
+                  "field_id": "correction_seconds",
+                  "label_ko": "보정 길이(초)",
+                  "required": false,
+                  "type": "decimal"
+                },
+                {
+                  "field_id": "correction_after_month",
+                  "label_ko": "보정 기준 월",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "correction_after_day",
+                  "label_ko": "보정 기준 일",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "correction_is_date",
+                  "label_ko": "보정일 날짜 여부",
+                  "required": false,
+                  "type": "boolean"
+                },
+                {
+                  "field_id": "source_standard_revision_ids",
+                  "label_ko": "출처 표준 판본 ID",
+                  "required": false,
+                  "type": "string_array"
+                },
+                {
+                  "field_id": "calendar_rule_raw",
+                  "label_ko": "역법 규칙 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "era_mapping_id",
+                  "label_ko": "기년 대응 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "from_era",
+                  "label_ko": "시작 기년",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "from_year",
+                  "label_ko": "시작 연도",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "to_era",
+                  "label_ko": "대상 기년",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "to_year",
+                  "label_ko": "대상 연도",
+                  "required": false,
+                  "type": "integer"
+                },
+                {
+                  "field_id": "mapping_type",
+                  "label_ko": "대응 유형",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "approval_status",
+                  "label_ko": "승인 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "era_edition",
+                  "label_ko": "기년 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "legacy_era_description",
+                  "label_ko": "기존 기년 설명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "current_era_description",
+                  "label_ko": "현 기년 설명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "policy_id",
+                  "label_ko": "정책 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "policy_revision_id",
+                  "label_ko": "정책 판본 ID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "policy_name",
+                  "label_ko": "정책명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "policy_raw",
+                  "label_ko": "정책 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "annual_boundary_rule_raw",
+                  "label_ko": "연간 경계 규칙 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "unknown_end_rule_raw",
+                  "label_ko": "종료 미상 규칙 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "exact_boundary_rule_raw",
+                  "label_ko": "정확한 경계 규칙 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "annual_point_difference_raw",
+                  "label_ko": "연간 시점 차이 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_namespace",
+                  "label_ko": "출처 구분",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "owner_spreadsheet_id",
+                  "label_ko": "소유 파일 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원본 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "검사 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "record_count",
+                  "label_ko": "자료 건수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "coverage",
+                  "label_ko": "포괄 범위",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "string"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_CODEBOOK_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A335:S335",
+              "display_header_range": "'REF_참조01'!A334:S334",
+              "data_range": "'REF_참조01'!A336:S660",
+              "bounded_range": "'REF_참조01'!A335:S660",
+              "named_range": "REF_PUB_CODEBOOK_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "group_code",
+                "stored_code"
+              ],
+              "columns": [
+                {
+                  "field_id": "group_code",
+                  "label_ko": "코드 그룹",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "stored_code",
+                  "label_ko": "저장 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "display_name",
+                  "label_ko": "표시명",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "definition",
+                  "label_ko": "정의",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "name_elun",
+                  "label_ko": "엘룬 이름",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "name_other",
+                  "label_ko": "기타 명칭",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "usage_status",
+                  "label_ko": "사용 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "notes",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "owner_spreadsheet_id",
+                  "label_ko": "소유 파일 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원본 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "검사 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "record_count",
+                  "label_ko": "자료 건수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "coverage",
+                  "label_ko": "포괄 범위",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_NATIONS_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A667:P667",
+              "display_header_range": "'REF_참조01'!A666:P666",
+              "data_range": "'REF_참조01'!A668:P717",
+              "bounded_range": "'REF_참조01'!A667:P717",
+              "named_range": "REF_PUB_NATIONS_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "nation_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "nation_id",
+                  "label_ko": "국가 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "neutral_name",
+                  "label_ko": "중립 명칭",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "sort_order",
+                  "label_ko": "정렬 순서",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_namespace",
+                  "label_ko": "출처 구분",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "owner_spreadsheet_id",
+                  "label_ko": "소유 파일 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원본 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "검사 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "record_count",
+                  "label_ko": "자료 건수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "coverage",
+                  "label_ko": "포괄 범위",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "string"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_PERSON_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A724:AE724",
+              "display_header_range": "'REF_참조01'!A723:AE723",
+              "data_range": "'REF_참조01'!A725:AE774",
+              "bounded_range": "'REF_참조01'!A724:AE774",
+              "named_range": "REF_PUB_PERSON_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "person_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "person_id",
+                  "label_ko": "인물 ID",
+                  "required": true,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "name_ko",
+                  "label_ko": "한글 이름",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "name_elun",
+                  "label_ko": "엘룬 이름",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "name_other",
+                  "label_ko": "기타 명칭",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "birth_era",
+                  "label_ko": "출생 기년",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "birth_year",
+                  "label_ko": "출생 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "birth_month",
+                  "label_ko": "출생 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "birth_day",
+                  "label_ko": "출생 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "death_era",
+                  "label_ko": "사망 기년",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "death_year",
+                  "label_ko": "사망 연도",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "death_month",
+                  "label_ko": "사망 월",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "death_day",
+                  "label_ko": "사망 일",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "person_classification_raw",
+                  "label_ko": "인물 분류 원문",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "person_description_raw",
+                  "label_ko": "인물 설명 원문",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "인물 상태",
+                  "label_ko": "인물 상태",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": false,
+                  "type": "text_id"
+                },
+                {
+                  "field_id": "source_locator",
+                  "label_ko": "출처 내 위치",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "note",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "text_nullable"
+                },
+                {
+                  "field_id": "legacy_locator",
+                  "label_ko": "원본 위치",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "source_snapshot_id",
+                  "label_ko": "원본 스냅샷 ID",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "generation_method",
+                  "label_ko": "생성 방식",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "adoption_status",
+                  "label_ko": "채택 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "birth_precision",
+                  "label_ko": "출생일 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "death_precision",
+                  "label_ko": "사망일 정밀도",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "calendar_revision",
+                  "label_ko": "역법 판본",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "text"
+                },
+                {
+                  "field_id": "connection_status",
+                  "label_ko": "연결 상태",
+                  "required": false,
+                  "type": "text"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            },
+            {
+              "id": "PUB_SOURCES_V2",
+              "role": "REF",
+              "header_range": "'REF_참조01'!A781:V781",
+              "display_header_range": "'REF_참조01'!A780:V780",
+              "data_range": "'REF_참조01'!A782:V856",
+              "bounded_range": "'REF_참조01'!A781:V856",
+              "named_range": "REF_PUB_SOURCES_V2",
+              "named_range_status": "native 생성 대기",
+              "primary_key_fields": [
+                "source_namespace",
+                "source_id"
+              ],
+              "columns": [
+                {
+                  "field_id": "source_namespace",
+                  "label_ko": "출처 구분",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_id",
+                  "label_ko": "출처 ID",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "source_title",
+                  "label_ko": "출처 제목",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_kind",
+                  "label_ko": "출처 종류",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "edition_raw",
+                  "label_ko": "판본 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "original_location",
+                  "label_ko": "원문 위치",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "url",
+                  "label_ko": "주소",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "canon_status",
+                  "label_ko": "정본 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "modified_at_raw",
+                  "label_ko": "수정 시각 원문",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "usage_scope",
+                  "label_ko": "사용 범위",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "notes",
+                  "label_ko": "비고",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "owner_file_code",
+                  "label_ko": "소유 파일 코드",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "owner_spreadsheet_id",
+                  "label_ko": "소유 파일 ID",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "schema_version",
+                  "label_ko": "스키마 판본",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "field_id": "release_id",
+                  "label_ko": "제공 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "source_revision",
+                  "label_ko": "원본 판본",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "validation_status",
+                  "label_ko": "검증 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "checked_at",
+                  "label_ko": "검사 시각",
+                  "required": false,
+                  "type": "string_nullable"
+                },
+                {
+                  "field_id": "record_count",
+                  "label_ko": "자료 건수",
+                  "required": false,
+                  "type": "integer_nullable"
+                },
+                {
+                  "field_id": "coverage",
+                  "label_ko": "포괄 범위",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "value_status",
+                  "label_ko": "값 상태",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "field_id": "setting_status",
+                  "label_ko": "설정 상태",
+                  "required": false,
+                  "type": "string_nullable"
+                }
+              ],
+              "actual_data_rows": 0,
+              "formula_state": "미배치"
+            }
+          ],
+          "previews": [
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_REF_참조01_block1.png",
+              "range": "A1:H5"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_REF_참조01_block2.png",
+              "range": "A333:H337"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_REF_참조01_block3.png",
+              "range": "A665:H669"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_REF_참조01_block4.png",
+              "range": "A722:H726"
+            },
+            {
+              "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\previews\\N70_REF_참조01_block5.png",
+              "range": "A779:H783"
+            }
+          ]
+        }
+      ],
+      "world_fact_rows": 0,
+      "formula_count": 0,
+      "export_status": "saved",
+      "formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+      "sha256": "3909d882ff20e111858bab9d7da61a65e912751aaab7bef7ef205aa9c4a95eed",
+      "byte_size": 197376
+    }
+  ],
+  "label_translations": {
+    "relation_id": "관계 ID",
+    "culture_id": "문화 ID",
+    "relation_type": "관계 유형",
+    "scope_definition": "적용 범위",
+    "legal_basis": "법적 근거",
+    "language_status_id": "언어 지위 이력 ID",
+    "language_id": "언어 ID",
+    "language_status_code": "언어 지위 코드",
+    "legal_or_practice": "법정·관행 구분",
+    "cultural_institution_record_id": "문화제도 이력 ID",
+    "institution_or_policy_name_raw": "기관·정책명 원문",
+    "heritage_reference": "문화유산 참조",
+    "value_status": "값 상태",
+    "source_locator": "출처 내 위치",
+    "start_year": "시작 연도",
+    "start_month": "시작 월",
+    "start_day": "시작 일",
+    "end_year": "종료 연도",
+    "end_month": "종료 월",
+    "end_day": "종료 일",
+    "end_status": "종료 상태",
+    "religion_id": "종교 ID",
+    "denomination_id": "교단 ID",
+    "legal_status_code": "법적 지위 코드",
+    "religious_org_id": "종교조직 ID",
+    "name_other": "기타 명칭",
+    "legal_entity_kind": "법인 유형",
+    "parent_religious_org_id": "상위 종교조직 ID",
+    "headquarters_region_id": "본부 지역 ID",
+    "affairs_record_id": "교무 이력 ID",
+    "affairs_role_name_raw": "교무 역할명 원문",
+    "affairs_relation_type": "교무 관계 유형",
+    "political_office_id": "연관 공직 ID",
+    "political_term_id": "연관 공직 임기 ID",
+    "validation_status": "검증 상태",
+    "record_count": "자료 건수",
+    "connection_status": "연결 상태",
+    "approval_status": "승인 상태",
+    "annual_boundary_rule_raw": "연간 경계 규칙 원문",
+    "annual_point_difference_raw": "연간 시점 차이 원문",
+    "calendar_id": "역법 ID",
+    "calendar_name": "역법명",
+    "calendar_revision_id": "역법 판본 ID",
+    "calendar_rule_raw": "역법 규칙 원문",
+    "canon_status": "정본 상태",
+    "civil_day_seconds": "민간일 길이(초)",
+    "correction_after_day": "보정 기준 일",
+    "correction_after_month": "보정 기준 월",
+    "correction_is_date": "보정일 날짜 여부",
+    "correction_seconds": "보정 길이(초)",
+    "current_era_description": "현 기년 설명",
+    "days_per_month": "월별 일수",
+    "days_per_year": "연간 일수",
+    "definition": "정의",
+    "display_name": "표시명",
+    "edition_raw": "판본 원문",
+    "era_edition": "기년 판본",
+    "era_mapping_id": "기년 대응 ID",
+    "exact_boundary_rule_raw": "정확한 경계 규칙 원문",
+    "from_era": "시작 기년",
+    "from_year": "시작 연도",
+    "group_code": "코드 그룹",
+    "legacy_era_description": "기존 기년 설명",
+    "mapping_type": "대응 유형",
+    "modified_at_raw": "수정 시각 원문",
+    "months_per_year": "연간 월수",
+    "neutral_name": "중립 명칭",
+    "original_location": "원문 위치",
+    "owner_spreadsheet_id": "소유 파일 ID",
+    "policy_id": "정책 ID",
+    "policy_name": "정책명",
+    "policy_raw": "정책 원문",
+    "policy_revision_id": "정책 판본 ID",
+    "record_kind": "기록 종류",
+    "source_kind": "출처 종류",
+    "source_namespace": "출처 구분",
+    "source_standard_revision_ids": "출처 표준 판본 ID",
+    "source_title": "출처 제목",
+    "stored_code": "저장 코드",
+    "to_era": "대상 기년",
+    "to_year": "대상 연도",
+    "unknown_end_rule_raw": "종료 미상 규칙 원문",
+    "url": "주소",
+    "usage_scope": "사용 범위",
+    "usage_status": "사용 상태",
+    "birth_day": "출생 일",
+    "birth_era": "출생 기년",
+    "birth_month": "출생 월",
+    "birth_precision": "출생일 정밀도",
+    "birth_year": "출생 연도",
+    "death_day": "사망 일",
+    "death_era": "사망 기년",
+    "death_month": "사망 월",
+    "death_precision": "사망일 정밀도",
+    "death_year": "사망 연도",
+    "person_classification_raw": "인물 분류 원문",
+    "person_description_raw": "인물 설명 원문"
+  },
+  "pending_native_actions": [
+    "Google Sheets import",
+    "실제 격자 크기 적용",
+    "이름범위 생성",
+    "입력·제공·참조·검사 보호 적용",
+    "빈 표는 실제 입력 발생 후 native table 전환",
+    "코드·기간 검증 규칙",
+    "연결·재계산·회귀 시험"
+  ],
+  "no_operating_formulas": true,
+  "notes": [
+    "예약 범위는 입력 가능 용량이며 실제 자료가 아니다.",
+    "입력·제공·검사·참조의 데이터 영역은 모두 빈칸이다.",
+    "검사 결과 표가 비어 있는 것은 통과 판정이 아니다."
+  ],
+  "local_verification": {
+    "scope": "local XLSX structure/content only",
+    "native_tests": "미실행",
+    "files": [
+      {
+        "file_code": "N60",
+        "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\N60.xlsx",
+        "sheet_count": 8,
+        "technical_headers_checked": 371,
+        "world_fact_rows": 0,
+        "data_nonblank_cells": 0,
+        "formula_count": 0,
+        "error_cell_count": 0,
+        "frozen_sheets": 6,
+        "sheets": [
+          {
+            "title": "00_안내",
+            "header_count": 0,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "01_설정",
+            "header_count": 0,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "IN_국가문화관계",
+            "header_count": 30,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "IN_언어지위",
+            "header_count": 31,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "IN_문화기관",
+            "header_count": 32,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "CHECK_검증01",
+            "header_count": 38,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "PUB_제공01",
+            "header_count": 137,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "REF_참조01",
+            "header_count": 103,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          }
+        ],
+        "sha256": "5b45fe66d4c7b7777cf8c7f96e9c733d30389682d20df6a0d7ce8af73b8ede4f",
+        "result": "pass"
+      },
+      {
+        "file_code": "N70",
+        "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\outputs\\01a0fba0-1c53-7c51-9911-969855ad4f16\\N70.xlsx",
+        "sheet_count": 8,
+        "technical_headers_checked": 416,
+        "world_fact_rows": 0,
+        "data_nonblank_cells": 0,
+        "formula_count": 0,
+        "error_cell_count": 0,
+        "frozen_sheets": 6,
+        "sheets": [
+          {
+            "title": "00_안내",
+            "header_count": 0,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "01_설정",
+            "header_count": 0,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "IN_국가종교관계",
+            "header_count": 32,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "IN_종교조직",
+            "header_count": 35,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "IN_종무이력",
+            "header_count": 33,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "CHECK_검증01",
+            "header_count": 38,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "PUB_제공01",
+            "header_count": 144,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          },
+          {
+            "title": "REF_참조01",
+            "header_count": 134,
+            "data_nonblank_cells": 0,
+            "visual_review": "reviewed"
+          }
+        ],
+        "sha256": "3909d882ff20e111858bab9d7da61a65e912751aaab7bef7ef205aa9c4a95eed",
+        "result": "pass"
+      }
+    ],
+    "errors": []
+  },
+  "visual_review": {
+    "sheets_reviewed": 16,
+    "preview_files_created": 29,
+    "result": "pass",
+    "scope": "all sheet opening views; every block header preview generated",
+    "notes": "White/light gray; Korean labels readable; data bodies blank. Long technical field IDs wrap without loss."
+  },
+  "build_process": {
+    "observed_exit_code": 1,
+    "stderr": "none captured",
+    "all_requested_exports_saved": true,
+    "metadata_written": true,
+    "independent_saved_xlsx_zip_xml_verification": "pass",
+    "note": "Process exit anomaly retained; export validity is confirmed separately by ZIP/XML checks, not inferred from process exit."
+  }
+}

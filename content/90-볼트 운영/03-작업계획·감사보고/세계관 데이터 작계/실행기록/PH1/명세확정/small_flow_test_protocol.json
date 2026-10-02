@@ -1,0 +1,195 @@
+{
+  "schema_version": "PH2-SMALL-FLOW-1",
+  "status": "시험 절차 명세 · 사본 생성/온라인 실행 미실행",
+  "scope": "C00→R10→R20→H90 및 N30→N20→H90. 합성 TEST값은 전용사본만 사용",
+  "entry_gate": [
+    "PH0 차분 또는 명시적 예외승인 기록",
+    "PH1 전수명세 감사",
+    "운영16파일의 실제ID 및 TEST 사본ID를 구분해 레지스트리 저장"
+  ],
+  "test_run_id": "실제 실행시 생성하여 고정저장",
+  "test_file_codes": [
+    "TEST-C00",
+    "TEST-R10",
+    "TEST-R20",
+    "TEST-N30",
+    "TEST-N20",
+    "TEST-H90"
+  ],
+  "cases": [
+    {
+      "case_id": "SF-01",
+      "purpose": "공통 분류→지역→인구→통합 흐름",
+      "fixtures": [
+        {
+          "owner": "TEST-C00",
+          "fact": "분류",
+          "id": "TEST-REGION-CLASS",
+          "label": "시험 지역분류"
+        },
+        {
+          "owner": "TEST-R10",
+          "fact": "지역",
+          "id": "TEST-REGION-001",
+          "label": "시험 지역",
+          "class_id": "TEST-REGION-CLASS"
+        },
+        {
+          "owner": "TEST-R20",
+          "fact": "동일조건 인구",
+          "record_id": "TEST-POP-001",
+          "region_id": "TEST-REGION-001",
+          "value": 100,
+          "value_status_requirement": "값 존재를 뜻하는 실제 V2 코드북 코드를 사용; 이 명세에서 신규 코드 창작하지 않음",
+          "route": "TEST-A",
+          "era": "TEST-ERA",
+          "year": 100
+        }
+      ],
+      "expected": [
+        "각consumer는실제providerID의PUB표를참조",
+        "H90의시험인구100과source locator일치",
+        "source record count와수신count일치",
+        "permission/source schema 상태정상확인"
+      ],
+      "test_ids": [
+        "T-009",
+        "T-068",
+        "T-070"
+      ]
+    },
+    {
+      "case_id": "SF-02",
+      "purpose": "인물→공직임기→통합 흐름",
+      "fixtures": [
+        {
+          "owner": "TEST-N30",
+          "fact": "인물",
+          "id": "TEST-PERSON-001",
+          "name": "시험 인물"
+        },
+        {
+          "owner": "TEST-N20",
+          "fact": "기관/직위",
+          "id": "TEST-OFFICE-001",
+          "name": "시험 공직"
+        },
+        {
+          "owner": "TEST-N20",
+          "fact": "공직임기",
+          "id": "TEST-TERM-001",
+          "person_id": "TEST-PERSON-001",
+          "office_id": "TEST-OFFICE-001",
+          "start": [
+            100,
+            1,
+            1
+          ],
+          "end": [
+            101,
+            1,
+            1
+          ],
+          "route": "TEST-A",
+          "era": "TEST-ERA"
+        }
+      ],
+      "expected": [
+        "N20인물명은N30을참조",
+        "N30에N20임기import없음",
+        "H90정확시점100년1월1일포함,101년1월1일제외"
+      ],
+      "test_ids": [
+        "T-018",
+        "T-069"
+      ]
+    },
+    {
+      "case_id": "SF-03",
+      "purpose": "원본변경 반영",
+      "change": "TEST-R20의100을200으로,TEST-N30인물명을'시험 인물 수정'으로 변경",
+      "expected": [
+        "consumer의200/수정이름실제readback",
+        "변경전후source revision·checked_at 기록",
+        "지연중은갱신대기;NOW만으로수신성공간주금지"
+      ],
+      "test_ids": [
+        "T-071",
+        "T-083"
+      ]
+    },
+    {
+      "case_id": "SF-04",
+      "purpose": "정상0/자료없음/연결실패 구별",
+      "changes": [
+        "TEST 인구를실제0으로변경",
+        "TEST 인구원자료행을TEST백업후비움",
+        "TEST consumer 연결설정에서존재하지않는범위로설정"
+      ],
+      "expected": [
+        "0은확정수치0",
+        "데이터0행은자료없음",
+        "잘못된범위는연결실패/범위없음;0이나자료없음으로표시금지",
+        "복구주소는검증된TEST provider실제ID만"
+      ],
+      "test_ids": [
+        "T-031",
+        "T-070",
+        "T-078"
+      ]
+    },
+    {
+      "case_id": "SF-05",
+      "purpose": "헤더 drift/복구",
+      "changes": [
+        "TEST PUB 필수헤더1개를임시변경",
+        "원래헤더복원"
+      ],
+      "expected": [
+        "schema signature불일치탐지·계산차단",
+        "복원후실제readback에서정상",
+        "원래주소와schema문자열evidence저장"
+      ],
+      "test_ids": [
+        "T-072"
+      ]
+    },
+    {
+      "case_id": "SF-06",
+      "purpose": "범위경계 확장",
+      "changes": [
+        "TEST입력현재capacity바로뒤행을추가",
+        "execution_rules확장protocol의5범위동시갱신"
+      ],
+      "expected": [
+        "갱신전초과/미포함경고",
+        "갱신후입력·계산·검증·제공·소비모두새행포함",
+        "원본문자/상태/ID역추적가능"
+      ],
+      "test_ids": [
+        "T-073"
+      ]
+    }
+  ],
+  "evidence_schema": [
+    "case_id",
+    "test_run_id",
+    "provider_actual_id",
+    "consumer_actual_id",
+    "sheet_id",
+    "input_range",
+    "formula_range",
+    "expected",
+    "actual",
+    "permission_state",
+    "source_revision_before",
+    "source_revision_after",
+    "checked_at",
+    "elapsed_seconds",
+    "result",
+    "evidence_location"
+  ],
+  "pass_rule": "모든기대결과를native Sheets에서readback하고잘못된입력의오류표시까지확인한경우에만case통과",
+  "promotion_rule": "이6case는84시험전체대체가아님. 겹치는시험도전체기대범위를확인한경우만T번호통과로기록",
+  "cleanup": "TEST자료는운영파일에입력하지않음. 시험사본은80-시험·검증에증거와보존; 임의삭제하지않음"
+}

@@ -1,0 +1,585 @@
+{
+  "spreadsheet_id": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+  "requests": [
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005008,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C20,'01_설정'!D20)"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005009,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C20,\"META_PUB_POPULATION_V2\")"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005010,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C21,'01_설정'!D21)"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005011,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C21,\"META_PUB_PERSON_V2\")"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005012,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C22,'01_설정'!D22)"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005013,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C22,\"META_PUB_OFFICE_TERM_V2\")"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005014,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C23,'01_설정'!D23)"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005015,
+          "startRowIndex": 2,
+          "endRowIndex": 3,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IMPORTRANGE('01_설정'!C23,\"META_PUB_CODEBOOK_V2\")"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005001,
+          "startRowIndex": 19,
+          "endRowIndex": 20,
+          "startColumnIndex": 5,
+          "endColumnIndex": 13
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_POPULATION'!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,'REF_POPULATION'!A3:AZ3))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_POPULATION'!A3),IF(N20=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F20<>E20,\"스키마 불일치\",\"연결확인\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_POPULATION'!A3),\"메타 연결실패\",IF('RMETA_POPULATION'!A3<>\"dataset_id\",\"메타 스키마 불일치\",'RMETA_POPULATION'!C4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",COUNTIF('REF_POPULATION'!$N$4:$N$13,\"?*\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(OR(NOT(ISNUMBER(H20)),NOT(ISNUMBER(I20))),\"미확인\",IF(H20=I20,\"일치\",\"불일치\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST.REV.1"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_POPULATION'!A3),\"미확인\",'RMETA_POPULATION'!B4)"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",IF(L20=K20,\"판본 일치\",\"갱신 대기\"))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005001,
+          "startRowIndex": 20,
+          "endRowIndex": 21,
+          "startColumnIndex": 5,
+          "endColumnIndex": 13
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_PERSON'!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,'REF_PERSON'!A3:AE3))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_PERSON'!A3),IF(N21=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F21<>E21,\"스키마 불일치\",\"연결확인\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_PERSON'!A3),\"메타 연결실패\",IF('RMETA_PERSON'!A3<>\"dataset_id\",\"메타 스키마 불일치\",'RMETA_PERSON'!C4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G21<>\"연결확인\",\"미확인\",COUNTIF('REF_PERSON'!$A$4:$A$13,\"?*\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(OR(NOT(ISNUMBER(H21)),NOT(ISNUMBER(I21))),\"미확인\",IF(H21=I21,\"일치\",\"불일치\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST.REV.1"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_PERSON'!A3),\"미확인\",'RMETA_PERSON'!B4)"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G21<>\"연결확인\",\"미확인\",IF(L21=K21,\"판본 일치\",\"갱신 대기\"))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005001,
+          "startRowIndex": 21,
+          "endRowIndex": 22,
+          "startColumnIndex": 5,
+          "endColumnIndex": 13
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_OFFICE_TERM'!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,'REF_OFFICE_TERM'!A3:AW3))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_OFFICE_TERM'!A3),IF(N22=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F22<>E22,\"스키마 불일치\",\"연결확인\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_OFFICE_TERM'!A3),\"메타 연결실패\",IF('RMETA_OFFICE_TERM'!A3<>\"dataset_id\",\"메타 스키마 불일치\",'RMETA_OFFICE_TERM'!C4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G22<>\"연결확인\",\"미확인\",COUNTIF('REF_OFFICE_TERM'!$A$4:$A$13,\"?*\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(OR(NOT(ISNUMBER(H22)),NOT(ISNUMBER(I22))),\"미확인\",IF(H22=I22,\"일치\",\"불일치\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST.REV.1"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_OFFICE_TERM'!A3),\"미확인\",'RMETA_OFFICE_TERM'!B4)"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G22<>\"연결확인\",\"미확인\",IF(L22=K22,\"판본 일치\",\"갱신 대기\"))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005001,
+          "startRowIndex": 22,
+          "endRowIndex": 23,
+          "startColumnIndex": 5,
+          "endColumnIndex": 13
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_CODEBOOK'!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,'REF_CODEBOOK'!A3:S3))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_CODEBOOK'!A3),IF(N23=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F23<>E23,\"스키마 불일치\",\"연결확인\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_CODEBOOK'!A3),\"메타 연결실패\",IF('RMETA_CODEBOOK'!A3<>\"dataset_id\",\"메타 스키마 불일치\",'RMETA_CODEBOOK'!C4))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G23<>\"연결확인\",\"미확인\",COUNTIF('REF_CODEBOOK'!$A$4:$A$13,\"?*\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(OR(NOT(ISNUMBER(H23)),NOT(ISNUMBER(I23))),\"미확인\",IF(H23=I23,\"일치\",\"불일치\"))"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "stringValue": "TEST.REV.1"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('RMETA_CODEBOOK'!A3),\"미확인\",'RMETA_CODEBOOK'!B4)"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(G23<>\"연결확인\",\"미확인\",IF(L23=K23,\"판본 일치\",\"갱신 대기\"))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005006,
+          "startRowIndex": 3,
+          "endRowIndex": 4,
+          "startColumnIndex": 0,
+          "endColumnIndex": 4
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "조회조건"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=COUNTIF('CONFIG_조회조건'!$L$4:$L$13,\"?*\")"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(COUNTIF('CONFIG_조회조건'!L14,\"?*\")>0,\"범위초과\",\"범위내\")"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=TEXTJOIN(\"|\",FALSE,'CONFIG_조회조건'!A3:Q3)"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71005007,
+          "startRowIndex": 3,
+          "endRowIndex": 11,
+          "startColumnIndex": 0,
+          "endColumnIndex": 2
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "인구 자료 상태"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF('01_설정'!J20<>\"일치\",\"건수 불일치\",IF('01_설정'!M20<>\"판본 일치\",\"갱신 대기\",IF('01_설정'!G23<>\"연결확인\",'01_설정'!G23,IF(NOT(COUNTIFS('REF_CODEBOOK'!$A$4:$A$13,\"value_status\",'REF_CODEBOOK'!$B$4:$B$13,\"값 있음\")=1),\"값상태 코드 없음·중복\",IF(COUNTIFS('REF_POPULATION'!$P$4:$P$13,'CONFIG_조회조건'!A4,'REF_POPULATION'!$Q$4:$Q$13,'CONFIG_조회조건'!B4,'REF_POPULATION'!$R$4:$R$13,'CONFIG_조회조건'!E4,'REF_POPULATION'!$A$4:$A$13,'CONFIG_조회조건'!N4)=0,\"자료없음\",IF(COUNTIFS('REF_POPULATION'!$P$4:$P$13,'CONFIG_조회조건'!A4,'REF_POPULATION'!$Q$4:$Q$13,'CONFIG_조회조건'!B4,'REF_POPULATION'!$R$4:$R$13,'CONFIG_조회조건'!E4,'REF_POPULATION'!$A$4:$A$13,'CONFIG_조회조건'!N4,'REF_POPULATION'!$C$4:$C$13,\"값 있음\")<>COUNTIFS('REF_POPULATION'!$P$4:$P$13,'CONFIG_조회조건'!A4,'REF_POPULATION'!$Q$4:$Q$13,'CONFIG_조회조건'!B4,'REF_POPULATION'!$R$4:$R$13,'CONFIG_조회조건'!E4,'REF_POPULATION'!$A$4:$A$13,'CONFIG_조회조건'!N4),\"값상태 확인 필요\",\"자료 있음\")))))))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "동일조건 자료 건수"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",\"미확인\",COUNTIFS('REF_POPULATION'!$P$4:$P$13,'CONFIG_조회조건'!A4,'REF_POPULATION'!$Q$4:$Q$13,'CONFIG_조회조건'!B4,'REF_POPULATION'!$R$4:$R$13,'CONFIG_조회조건'!E4,'REF_POPULATION'!$A$4:$A$13,'CONFIG_조회조건'!N4))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "동일조건 인구"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(B4<>\"자료 있음\",B4,IF((IF(AND('REF_POPULATION'!P4='CONFIG_조회조건'!A4,'REF_POPULATION'!Q4='CONFIG_조회조건'!B4,'REF_POPULATION'!R4='CONFIG_조회조건'!E4,'REF_POPULATION'!A4='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D4)),1,0)+IF(AND('REF_POPULATION'!P5='CONFIG_조회조건'!A4,'REF_POPULATION'!Q5='CONFIG_조회조건'!B4,'REF_POPULATION'!R5='CONFIG_조회조건'!E4,'REF_POPULATION'!A5='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D5)),1,0)+IF(AND('REF_POPULATION'!P6='CONFIG_조회조건'!A4,'REF_POPULATION'!Q6='CONFIG_조회조건'!B4,'REF_POPULATION'!R6='CONFIG_조회조건'!E4,'REF_POPULATION'!A6='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D6)),1,0)+IF(AND('REF_POPULATION'!P7='CONFIG_조회조건'!A4,'REF_POPULATION'!Q7='CONFIG_조회조건'!B4,'REF_POPULATION'!R7='CONFIG_조회조건'!E4,'REF_POPULATION'!A7='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D7)),1,0)+IF(AND('REF_POPULATION'!P8='CONFIG_조회조건'!A4,'REF_POPULATION'!Q8='CONFIG_조회조건'!B4,'REF_POPULATION'!R8='CONFIG_조회조건'!E4,'REF_POPULATION'!A8='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D8)),1,0)+IF(AND('REF_POPULATION'!P9='CONFIG_조회조건'!A4,'REF_POPULATION'!Q9='CONFIG_조회조건'!B4,'REF_POPULATION'!R9='CONFIG_조회조건'!E4,'REF_POPULATION'!A9='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D9)),1,0)+IF(AND('REF_POPULATION'!P10='CONFIG_조회조건'!A4,'REF_POPULATION'!Q10='CONFIG_조회조건'!B4,'REF_POPULATION'!R10='CONFIG_조회조건'!E4,'REF_POPULATION'!A10='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D10)),1,0)+IF(AND('REF_POPULATION'!P11='CONFIG_조회조건'!A4,'REF_POPULATION'!Q11='CONFIG_조회조건'!B4,'REF_POPULATION'!R11='CONFIG_조회조건'!E4,'REF_POPULATION'!A11='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D11)),1,0)+IF(AND('REF_POPULATION'!P12='CONFIG_조회조건'!A4,'REF_POPULATION'!Q12='CONFIG_조회조건'!B4,'REF_POPULATION'!R12='CONFIG_조회조건'!E4,'REF_POPULATION'!A12='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D12)),1,0)+IF(AND('REF_POPULATION'!P13='CONFIG_조회조건'!A4,'REF_POPULATION'!Q13='CONFIG_조회조건'!B4,'REF_POPULATION'!R13='CONFIG_조회조건'!E4,'REF_POPULATION'!A13='CONFIG_조회조건'!N4,ISNUMBER('REF_POPULATION'!D13)),1,0))<>B5,\"수치 없음\",SUMIFS('REF_POPULATION'!$D$4:$D$13,'REF_POPULATION'!$P$4:$P$13,'CONFIG_조회조건'!A4,'REF_POPULATION'!$Q$4:$Q$13,'CONFIG_조회조건'!B4,'REF_POPULATION'!$R$4:$R$13,'CONFIG_조회조건'!E4,'REF_POPULATION'!$A$4:$A$13,'CONFIG_조회조건'!N4)))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "인구 원본 위치"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF(COUNTIFS('REF_POPULATION'!$N$4:$N$13,\"TEST-POP-001\")<>1,\"키 없음·중복\",INDEX('REF_POPULATION'!$AM$4:$AM$13,MATCH(\"TEST-POP-001\",'REF_POPULATION'!$N$4:$N$13,0))))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "N20 임기에서 읽은 인물명"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('01_설정'!G22<>\"연결확인\",'01_설정'!G22,IF(COUNTIFS('REF_OFFICE_TERM'!$A$4:$A$13,\"TEST-TERM-001\")<>1,\"키 없음·중복\",INDEX('REF_OFFICE_TERM'!$AL$4:$AL$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0))))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "조회 시점 재직 여부"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('01_설정'!G22<>\"연결확인\",'01_설정'!G22,IF(COUNTIFS('REF_OFFICE_TERM'!$A$4:$A$13,\"TEST-TERM-001\")<>1,\"키 없음·중복\",IF(AND(ISNUMBER(INDEX('REF_OFFICE_TERM'!$AO$4:$AO$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0))),ISNUMBER(INDEX('REF_OFFICE_TERM'!$AP$4:$AP$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0)))),AND(INDEX('REF_OFFICE_TERM'!$C$4:$C$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0))='CONFIG_조회조건'!A4,INDEX('REF_OFFICE_TERM'!$D$4:$D$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0))='CONFIG_조회조건'!B4,'CONFIG_조회조건'!F4*10000+'CONFIG_조회조건'!G4*100+'CONFIG_조회조건'!H4>=INDEX('REF_OFFICE_TERM'!$AO$4:$AO$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0)),'CONFIG_조회조건'!F4*10000+'CONFIG_조회조건'!G4*100+'CONFIG_조회조건'!H4<INDEX('REF_OFFICE_TERM'!$AP$4:$AP$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0))),\"정밀도 부족\")))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "N30 직접 인물명"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF('01_설정'!G21<>\"연결확인\",'01_설정'!G21,IF(COUNTIFS('REF_PERSON'!$A$4:$A$13,\"TEST-PERSON-001\")<>1,\"키 없음·중복\",INDEX('REF_PERSON'!$B$4:$B$13,MATCH(\"TEST-PERSON-001\",'REF_PERSON'!$A$4:$A$13,0))))"
+                }
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "이름 일치"
+                }
+              },
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(OR('01_설정'!G22<>\"연결확인\",'01_설정'!G21<>\"연결확인\"),\"연결 미확인\",IF(OR(COUNTIFS('REF_OFFICE_TERM'!$A$4:$A$13,\"TEST-TERM-001\")<>1,COUNTIFS('REF_PERSON'!$A$4:$A$13,\"TEST-PERSON-001\")<>1),\"키 없음·중복\",IF(INDEX('REF_OFFICE_TERM'!$AW$4:$AW$13,MATCH(\"TEST-TERM-001\",'REF_OFFICE_TERM'!$A$4:$A$13,0))<>\"연결확인\",\"상위 연결 미확인\",IF(OR(B8=\"\",B10=\"\"),\"이름 없음\",B8=B10))))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    }
+  ]
+}

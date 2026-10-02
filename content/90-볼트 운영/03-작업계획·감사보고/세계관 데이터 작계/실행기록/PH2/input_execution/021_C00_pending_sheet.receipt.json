@@ -1,0 +1,133 @@
+{
+  "executed_at": "2026-10-02T09:38:58.562Z",
+  "request_file": "C:/구글 드라이브/세계관/90-볼트 운영/03-작업계획·감사보고/세계관 데이터 작계/실행기록/PH2/input_requests/C00.pending_sheet.optional.json",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+      "replies": [
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1235509559,
+              "title": "09_운영결정대기",
+              "index": 77,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 102,
+                "columnCount": 14,
+                "frozenRowCount": 3
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {
+          "addTable": {
+            "table": {
+              "tableId": "177074261",
+              "name": "V2_WORK_PENDING_PH2_C00",
+              "range": {
+                "sheetId": 1235509559,
+                "startRowIndex": 2,
+                "endRowIndex": 65,
+                "startColumnIndex": 0,
+                "endColumnIndex": 14
+              },
+              "rowsProperties": {
+                "headerColorStyle": {
+                  "rgbColor": {
+                    "red": 0.20784314,
+                    "green": 0.40784314,
+                    "blue": 0.32941177
+                  }
+                },
+                "firstBandColorStyle": {
+                  "rgbColor": {
+                    "red": 1,
+                    "green": 1,
+                    "blue": 1
+                  }
+                },
+                "secondBandColorStyle": {
+                  "rgbColor": {
+                    "red": 0.9647059,
+                    "green": 0.972549,
+                    "blue": 0.9764706
+                  }
+                }
+              },
+              "columnProperties": [
+                {
+                  "columnName": "대기 ID"
+                },
+                {
+                  "columnIndex": 1,
+                  "columnName": "분야"
+                },
+                {
+                  "columnIndex": 2,
+                  "columnName": "논리표"
+                },
+                {
+                  "columnIndex": 3,
+                  "columnName": "구분"
+                },
+                {
+                  "columnIndex": 4,
+                  "columnName": "원문 항목"
+                },
+                {
+                  "columnIndex": 5,
+                  "columnName": "원문 설정 상태"
+                },
+                {
+                  "columnIndex": 6,
+                  "columnName": "원문 값(JSON)"
+                },
+                {
+                  "columnIndex": 7,
+                  "columnName": "대기 사유"
+                },
+                {
+                  "columnIndex": 8,
+                  "columnName": "작업 상태"
+                },
+                {
+                  "columnIndex": 9,
+                  "columnName": "운영 입력 제외"
+                },
+                {
+                  "columnIndex": 10,
+                  "columnName": "원본 위치"
+                },
+                {
+                  "columnIndex": 11,
+                  "columnName": "계보 파일"
+                },
+                {
+                  "columnIndex": 12,
+                  "columnName": "계보 위치"
+                },
+                {
+                  "columnIndex": 13,
+                  "columnName": "다음 조치"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "updatedSpreadsheet": null
+    },
+    "isError": false
+  },
+  "readback_status": "PENDING"
+}

@@ -1,0 +1,67 @@
+{
+  "pass": 15,
+  "fail": 0,
+  "environment": "Actual Templater 2.13.1 WASM parser + mock prompts/Vault/YAML; Dataview button harness, no GUI test",
+  "results": [
+    {
+      "name": "편집 앵커는 실제 파서에서 시각 문법·날짜만 삽입",
+      "result": "PASS"
+    },
+    {
+      "name": "시각 조각 실제 삽입·정렬·br·인용부호 left",
+      "result": "PASS"
+    },
+    {
+      "name": "시각 조각 중간 입력 취소 left",
+      "result": "PASS"
+    },
+    {
+      "name": "시각 조각 실제 삽입·정렬·br·인용부호 right",
+      "result": "PASS"
+    },
+    {
+      "name": "시각 조각 중간 입력 취소 right",
+      "result": "PASS"
+    },
+    {
+      "name": "배지의 빈 값·중복·취소 처리",
+      "result": "PASS"
+    },
+    {
+      "name": "복원문서는 출처 안내만 삽입",
+      "result": "PASS"
+    },
+    {
+      "name": "신규 original 문서에는 복원 안내 없음",
+      "result": "PASS"
+    },
+    {
+      "name": "V1 복원여부 호환값 사용",
+      "result": "PASS"
+    },
+    {
+      "name": "복원 상태 충돌 시 삽입 중단",
+      "result": "PASS"
+    },
+    {
+      "name": "복원 안내 중복 삽입 방지·BOM·CRLF",
+      "result": "PASS"
+    },
+    {
+      "name": "수정일 버튼 열람은 무변경",
+      "result": "PASS"
+    },
+    {
+      "name": "활성 탭이 달라도 표시 문서의 수정일만 갱신",
+      "result": "PASS"
+    },
+    {
+      "name": "V1·템플릿·잘못된 상태 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "00-템플릿 경로에서는 갱신 거부",
+      "result": "PASS"
+    }
+  ]
+}

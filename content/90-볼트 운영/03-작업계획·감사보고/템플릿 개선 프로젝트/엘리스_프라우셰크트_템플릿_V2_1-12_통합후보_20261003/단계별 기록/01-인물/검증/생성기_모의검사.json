@@ -1,0 +1,292 @@
+{
+  "time": "2026-10-02T11:18:01.552Z",
+  "environment": "Node.js mock + PyYAML; no real Obsidian/Templater/Quartz",
+  "pass": 71,
+  "fail": 0,
+  "results": [
+    {
+      "name": "신규 인물: 원본 기본값과 호출부 병합",
+      "result": "PASS"
+    },
+    {
+      "name": "미사용 선택필드는 생략, 명시된 기준시점 null은 유지",
+      "result": "PASS"
+    },
+    {
+      "name": "연속성·개념관계·공개주소·별칭 선택값 전달",
+      "result": "PASS"
+    },
+    {
+      "name": "원본에서 원창작→복원으로 지정하면 호환값 true",
+      "result": "PASS"
+    },
+    {
+      "name": "기원 불명은 null, false/original로 추정하지 않음",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 master 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 concept 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 entity 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 reference 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 index 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 report 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 template 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 archive 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 event 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 period 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 rule 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "문서유형 ledger 보존·허용",
+      "result": "PASS"
+    },
+    {
+      "name": "미정의 유형 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "정본 자동승격 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "신규 즉시 공개값 주입 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "생성일 기본값 재정의 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "스키마 버전 숫자만 변경하는 호출 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "출처와 original 모순 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "확장 공통키 충돌 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "기술 고유 ID/doc_type/전용 속성 유지",
+      "result": "PASS"
+    },
+    {
+      "name": "명칭 태그의 공백을 자동수선하지 않고 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "잘못된 목록 자료형 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "종래 키를 신규 출력에 재도입하면 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "임의 물리경로 필드 생성 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "필수 템플릿명 누락 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "원본 미발견 시 fallback 없이 중단",
+      "result": "PASS"
+    },
+    {
+      "name": "원본에 본문이 섞이면 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "중복 YAML 키 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "기존 공개문서의 상태·날짜·주소를 건드리지 않음",
+      "result": "PASS"
+    },
+    {
+      "name": "프론트매터만 있는 기존문서도 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "공통 원본 자체 실행 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "다른 활성문서를 대상으로 삼지 않음",
+      "result": "PASS"
+    },
+    {
+      "name": "생성 도중 원본 변경 감지",
+      "result": "PASS"
+    },
+    {
+      "name": "생성 도중 대상 변경 감지",
+      "result": "PASS"
+    },
+    {
+      "name": "B루트 경로에서 연속성 누락 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "B루트 명시 시 생성 가능",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화: \"이름: 부제\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화: \"\\\"따옴표\\\" 인물\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화: \"위키 [[표현]]\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화: \"# 주석처럼 보이는 제목\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화: \"줄\\n바꿈\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화: \"백슬래시\\\\기록\"",
+      "result": "PASS"
+    },
+    {
+      "name": "단일원본 변경이 호출부 변경 없이 출력에 반영",
+      "result": "PASS"
+    },
+    {
+      "name": "격리시험 sourcePath 원본 하나로 작동",
+      "result": "PASS"
+    },
+    {
+      "name": "실제 배포된 호출부 실행: 04-인물 설정 템플릿 V2 파일럿.md",
+      "result": "PASS"
+    },
+    {
+      "name": "실제 배포된 호출부 실행: 04-인물 설정 템플릿 V2 빠른 시작.md",
+      "result": "PASS"
+    },
+    {
+      "name": "공백뿐인 필수값 거부: 세부유형",
+      "result": "PASS"
+    },
+    {
+      "name": "공백뿐인 필수값 거부: 작성자",
+      "result": "PASS"
+    },
+    {
+      "name": "공백뿐인 필수값 거부: 사용된 템플릿",
+      "result": "PASS"
+    },
+    {
+      "name": "공백뿐인 필수값 거부: 템플릿 버전",
+      "result": "PASS"
+    },
+    {
+      "name": "공백뿐인 제목 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "저장 전 대상 편집기 본문 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "저장 전 대상 편집기 YAML 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "생성 중 저장 전 편집기 변경 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "다른 활성 편집기는 검사 대상이 아님",
+      "result": "PASS"
+    },
+    {
+      "name": "공백과 BOM만 있는 새 노트 허용",
+      "result": "PASS"
+    },
+    {
+      "name": "대상 편집기 API 미확인 시 중단",
+      "result": "PASS"
+    },
+    {
+      "name": "생성기 누락 안내: 04-인물 설정 템플릿 V2 파일럿.md",
+      "result": "PASS"
+    },
+    {
+      "name": "호출부 오류 시 부분 YAML 반환 안 함: 04-인물 설정 템플릿 V2 파일럿.md",
+      "result": "PASS"
+    },
+    {
+      "name": "완전한 생성 문서: 04-인물 설정 템플릿 V2 파일럿.md",
+      "result": "PASS"
+    },
+    {
+      "name": "생성기 누락 안내: 04-인물 설정 템플릿 V2 빠른 시작.md",
+      "result": "PASS"
+    },
+    {
+      "name": "호출부 오류 시 부분 YAML 반환 안 함: 04-인물 설정 템플릿 V2 빠른 시작.md",
+      "result": "PASS"
+    },
+    {
+      "name": "완전한 생성 문서: 04-인물 설정 템플릿 V2 빠른 시작.md",
+      "result": "PASS"
+    },
+    {
+      "name": "수정일 버튼: 열람만으로 변경 없음",
+      "result": "PASS"
+    },
+    {
+      "name": "수정일 버튼: 클릭하면 표시 문서의 수정일만 변경",
+      "result": "PASS"
+    },
+    {
+      "name": "수정일 버튼: 다른 유형 및 템플릿 원본 거부",
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-10-02T09:22:34.150Z",
+  "spreadsheet_id": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+  "requests": [
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 18,
+          "endRowIndex": 19,
+          "startColumnIndex": 13,
+          "endColumnIndex": 14
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "권한 관측"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 19,
+          "endRowIndex": 20,
+          "startColumnIndex": 13,
+          "endColumnIndex": 14
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "stringValue": "승인 대기"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    },
+    {
+      "updateCells": {
+        "range": {
+          "sheetId": 71001001,
+          "startRowIndex": 19,
+          "endRowIndex": 20,
+          "startColumnIndex": 6,
+          "endColumnIndex": 7
+        },
+        "rows": [
+          {
+            "values": [
+              {
+                "userEnteredValue": {
+                  "formulaValue": "=IF(ISERROR('REF_CODEBOOK'!A3),IF(N20=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F20<>E20,\"스키마 불일치\",\"연결확인\"))"
+                }
+              }
+            ]
+          }
+        ],
+        "fields": "userEnteredValue"
+      }
+    }
+  ],
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+      "replies": [
+        {},
+        {},
+        {}
+      ],
+      "updatedSpreadsheet": null
+    },
+    "isError": false
+  }
+}

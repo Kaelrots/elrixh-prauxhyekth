@@ -1,0 +1,111 @@
+{
+  "checked_at": "2026-10-02T18:55:00+09:00",
+  "status": "클라우드 업로드 성공 및 ID·크기·수정시각 재조회 확인",
+  "byte_hash_equality": "미실행; metadata 도구가 md5Checksum을 반환하지 않음",
+  "uploads": [
+    {
+      "key": "state",
+      "upload": {
+        "success": true,
+        "accepted_input": "file_uri",
+        "id": "1n8F6nZLXMX1axeTz7Knt5WImzHU8YH5S",
+        "title": "실행상태.json",
+        "mime_type": "application/json",
+        "url": "https://drive.google.com/file/d/1n8F6nZLXMX1axeTz7Knt5WImzHU8YH5S/view?usp=drivesdk",
+        "parent_ids": [
+          "1-bKopCrg7nkDtAEJXlRMCWcs2JseOJCE"
+        ],
+        "modified_time": "2026-10-02T09:54:35.341Z",
+        "size": "32683"
+      },
+      "readback": {
+        "id": "1n8F6nZLXMX1axeTz7Knt5WImzHU8YH5S",
+        "title": "실행상태.json",
+        "mime_type": null,
+        "size": "32683",
+        "url": null,
+        "file_or_folder": null,
+        "created_time": null,
+        "modified_time": "2026-10-02T09:54:35.341Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "key": "report",
+      "upload": {
+        "success": true,
+        "accepted_input": "file_uri",
+        "id": "1zU_cgK1creOjo3DNUnUfgsKyNiF6IcmB",
+        "title": "PH0_진행보고_2026-10-02.txt",
+        "mime_type": "text/plain",
+        "url": "https://drive.google.com/file/d/1zU_cgK1creOjo3DNUnUfgsKyNiF6IcmB/view?usp=drivesdk",
+        "parent_ids": [
+          "1-bKopCrg7nkDtAEJXlRMCWcs2JseOJCE"
+        ],
+        "modified_time": "2026-10-02T09:54:42.295Z",
+        "size": "6500"
+      },
+      "readback": {
+        "id": "1zU_cgK1creOjo3DNUnUfgsKyNiF6IcmB",
+        "title": "PH0_진행보고_2026-10-02.txt",
+        "mime_type": null,
+        "size": "6500",
+        "url": null,
+        "file_or_folder": null,
+        "created_time": null,
+        "modified_time": "2026-10-02T09:54:42.295Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "key": "archive",
+      "upload": {
+        "success": true,
+        "accepted_input": "file_uri",
+        "id": "1XEyZcAeb7ClWvO_jwhrY4HRkIx3hoOsI",
+        "title": "PH0_PH1_체크포인트_2026-10-02.zip",
+        "mime_type": "application/zip",
+        "url": "https://drive.google.com/file/d/1XEyZcAeb7ClWvO_jwhrY4HRkIx3hoOsI/view?usp=drivesdk",
+        "parent_ids": [
+          "1-bKopCrg7nkDtAEJXlRMCWcs2JseOJCE"
+        ],
+        "modified_time": "2026-10-02T09:54:52.522Z",
+        "size": "16512044"
+      },
+      "readback": {
+        "id": "1XEyZcAeb7ClWvO_jwhrY4HRkIx3hoOsI",
+        "title": "PH0_PH1_체크포인트_2026-10-02.zip",
+        "mime_type": null,
+        "size": "16512044",
+        "url": null,
+        "file_or_folder": null,
+        "created_time": null,
+        "modified_time": "2026-10-02T09:54:52.522Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    }
+  ],
+  "notes": [
+    "TEST 최종복구 API 증거는 업로드 ZIP에 포함됨",
+    "소형시험 실행요약의 24단계 상태 정정본은 ZIP 생성 뒤 로컬에 저장됨. 다음 재개 시 로컬 실행요약과 영수증을 우선 확인하고 클라우드 묶음 갱신.",
+    "사용자 종료 요청에 따라 모든 편집 및 하위 작업 종료"
+  ]
+}

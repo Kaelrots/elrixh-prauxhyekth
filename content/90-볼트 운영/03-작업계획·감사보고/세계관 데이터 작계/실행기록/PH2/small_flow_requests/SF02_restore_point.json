@@ -1,0 +1,46 @@
+{
+  "step_id": "SF02_restore_point",
+  "run_id": "TEST-SF-20261002-01",
+  "result": "미실행",
+  "preconditions": [
+    "앞 단계 native 읽기 확인",
+    "정확한 TEST 대상 ID 검증"
+  ],
+  "writes": [
+    {
+      "spreadsheet_id": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "file_code": "TEST-H90",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71005002,
+              "startRowIndex": 3,
+              "endRowIndex": 4,
+              "startColumnIndex": 5,
+              "endColumnIndex": 6
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "numberValue": 100
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "H90_VIEW_소형흐름_B9": true
+  },
+  "readback": [
+    "H90:VIEW_소형흐름!A9:B9"
+  ]
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "identifier": "state_trait_the_great_river",
+    "name_english": null,
+    "name_korean": "운하 규모의 강",
+    "name_key_derived": "State Trait The Great River",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "운하 규모의 강"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 1,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/river.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "state_infrastructure_add",
+            "operator": "=",
+            "value": 250,
+            "line": 5
+          },
+          {
+            "key": "state_tax_capacity_add",
+            "operator": "=",
+            "value": 500,
+            "line": 6
+          },
+          {
+            "key": "state_construction_mult",
+            "operator": "=",
+            "value": 0.2,
+            "line": 7
+          },
+          {
+            "key": "state_infrastructure_mult",
+            "operator": "=",
+            "value": 0.2,
+            "line": 8
+          },
+          {
+            "key": "state_tax_capacity_mult",
+            "operator": "=",
+            "value": 0.4,
+            "line": 9
+          },
+          {
+            "key": "building_output_electricity_mult",
+            "operator": "=",
+            "value": 0.1,
+            "line": 10
+          }
+        ]
+      }
+    }
+  },
+  {
+    "identifier": "state_trait_remained_infrastructure",
+    "name_english": null,
+    "name_korean": "대전이 이전의 온전한 기반시설",
+    "name_key_derived": "State Trait Remained Infrastructure",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "대전이 이전의 온전한 기반시설"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 14,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/natural_harbors.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "state_infrastructure_add",
+            "operator": "=",
+            "value": 120,
+            "line": 18
+          },
+          {
+            "key": "state_tax_capacity_add",
+            "operator": "=",
+            "value": 150,
+            "line": 19
+          },
+          {
+            "key": "state_infrastructure_mult",
+            "operator": "=",
+            "value": 0.5,
+            "line": 20
+          },
+          {
+            "key": "state_tax_capacity_mult",
+            "operator": "=",
+            "value": 0.5,
+            "line": 21
+          }
+        ]
+      }
+    }
+  },
+  {
+    "identifier": "state_trait_great_black_soil",
+    "name_english": null,
+    "name_korean": "위대한 흑토 지대",
+    "name_key_derived": "State Trait Great Black Soil",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "위대한 흑토 지대"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 25,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/good_soils.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "building_group_bg_agriculture_throughput_mult",
+            "operator": "=",
+            "value": 0.8,
+            "line": 29
+          },
+          {
+            "key": "building_group_bg_plantations_throughput_mult",
+            "operator": "=",
+            "value": 0.8,
+            "line": 30
+          },
+          {
+            "key": "building_group_bg_ranching_throughput_mult",
+            "operator": "=",
+            "value": 0.5,
+            "line": 31
+          }
+        ]
+      }
+    }
+  },
+  {
+    "identifier": "state_trait_blue_forest",
+    "name_english": null,
+    "name_korean": "푸르른 삼림",
+    "name_key_derived": "State Trait Blue Forest",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "푸르른 삼림"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 35,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/resources_lumber.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "building_group_bg_logging_throughput_mult",
+            "operator": "=",
+            "value": 0.8,
+            "line": 39
+          }
+        ]
+      }
+    }
+  },
+  {
+    "identifier": "state_trait_the_center_of_industry",
+    "name_english": null,
+    "name_korean": "산업의 중심지",
+    "name_key_derived": "State Trait The Center Of Industry",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "산업의 중심지"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 43,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/turquoise.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "building_group_bg_manufacturing_throughput_mult",
+            "operator": "=",
+            "value": 0.75,
+            "line": 47
+          }
+        ]
+      }
+    }
+  },
+  {
+    "identifier": "state_trait_the_great_palace",
+    "name_english": null,
+    "name_korean": "제도권 황성 지역",
+    "name_key_derived": "State Trait The Great Palace",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "제도권 황성 지역"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 51,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/natural_harbors.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "building_group_bg_service_throughput_mult",
+            "operator": "=",
+            "value": 0.25,
+            "line": 55
+          },
+          {
+            "key": "state_infrastructure_add",
+            "operator": "=",
+            "value": 1350,
+            "line": 56
+          },
+          {
+            "key": "state_tax_capacity_add",
+            "operator": "=",
+            "value": 1500,
+            "line": 57
+          },
+          {
+            "key": "state_construction_mult",
+            "operator": "=",
+            "value": 0.75,
+            "line": 58
+          },
+          {
+            "key": "state_infrastructure_mult",
+            "operator": "=",
+            "value": 1.2,
+            "line": 59
+          },
+          {
+            "key": "state_tax_capacity_mult",
+            "operator": "=",
+            "value": 1.5,
+            "line": 60
+          },
+          {
+            "key": "building_output_electricity_mult",
+            "operator": "=",
+            "value": 0.45,
+            "line": 61
+          }
+        ]
+      }
+    }
+  },
+  {
+    "identifier": "state_trait_grand_mountain",
+    "name_english": null,
+    "name_korean": "전설의 산",
+    "name_key_derived": "State Trait Grand Mountain",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "전설의 산"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 65,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/mountain.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "building_group_bg_mining_throughput_mult",
+            "operator": "=",
+            "value": 0.5,
+            "line": 69
+          },
+          {
+            "key": "building_group_bg_oil_extraction_throughput_mult",
+            "operator": "=",
+            "value": 0.2,
+            "line": 70
+          }
+        ]
+      }
+    }
+  },
+  {
+    "identifier": "state_trait_earth_mankind_arrival_location",
+    "name_english": null,
+    "name_korean": "구지구 전이자 도착지",
+    "name_key_derived": "State Trait Earth Mankind Arrival Location",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "구지구 전이자 도착지"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 75,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/good_soils.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "state_migration_pull_mult",
+            "operator": "=",
+            "value": 1.45,
+            "line": 79
+          }
+        ]
+      }
+    }
+  },
+  {
+    "identifier": "state_good_place_for_mankind",
+    "name_english": null,
+    "name_korean": "사람 살기 좋은 곳",
+    "name_key_derived": "State Good Place For Mankind",
+    "name_key_derived_is_official": false,
+    "localized_names": {
+      "korean": "사람 살기 좋은 곳"
+    },
+    "source_file": "common/state_traits/00_ELX_state_traits.txt",
+    "source_line": 83,
+    "color_raw": null,
+    "raw_fields": {
+      "icon": "gfx/interface/icons/state_trait_icons/good_soils.dds",
+      "modifier": {
+        "assignments": [
+          {
+            "key": "state_birth_rate_mult",
+            "operator": "=",
+            "value": 0.33,
+            "line": 87
+          }
+        ]
+      }
+    }
+  }
+]

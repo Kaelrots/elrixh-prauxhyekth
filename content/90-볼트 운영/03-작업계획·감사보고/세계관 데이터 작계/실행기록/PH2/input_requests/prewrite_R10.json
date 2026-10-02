@@ -1,0 +1,513 @@
+{
+  "checked_at": "2026-10-02 09:21:26 UTC",
+  "header_errors": [],
+  "nonempty_target_cells": [],
+  "response": {
+    "spreadsheetId": "1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs/edit",
+    "properties": {
+      "title": "R10 · 지역 — 목록·공간체계 · 세계관 데이터 V2",
+      "locale": "ko_KR",
+      "timeZone": "Asia/Seoul"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 1419560957,
+          "title": "IN_지역목록",
+          "index": 38,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 253,
+            "columnCount": 13,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "sort_order"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "sort_order"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "name_ko"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "name_ko"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "name_roman"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "name_roman"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "name_elun"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "name_elun"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "region_level"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "region_level"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "region_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "region_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "region_grade"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "region_grade"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "region_class"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "region_class"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "hex_color"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "hex_color"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: C00_code_nullable; unknown original retained"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: text_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      },
+      {
+        "properties": {
+          "sheetId": 1539694861,
+          "title": "IN_지역관계",
+          "index": 39,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 253,
+            "columnCount": 36,
+            "frozenRowCount": 3,
+            "frozenColumnCount": 1
+          }
+        },
+        "data": [
+          {
+            "startRow": 2,
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "parent_region_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "parent_region_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "relation_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "relation_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved / 필수키 또는 필수 필드"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_relation_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_relation_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "child_region_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "child_region_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "relation_type"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "relation_type"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "relation_source_slot"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "relation_source_slot"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "route"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "route"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "calendar_revision"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "calendar_revision"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "era"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "era"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "year"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "year"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "month"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "month"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "day"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "day"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "date_precision"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "date_precision"
+                    },
+                    "note": "자료형: C00_code_nullable; unknown original retained"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "time_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "time_raw"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "start_era"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "start_era"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "start_year"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "start_year"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "start_month"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "start_month"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "start_day"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "start_day"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "start_precision"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "start_precision"
+                    },
+                    "note": "자료형: C00_code_nullable; unknown original retained"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "start_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "start_raw"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "end_era"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "end_era"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "end_year"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "end_year"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "end_month"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "end_month"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "end_day"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "end_day"
+                    },
+                    "note": "자료형: integer_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "end_precision"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "end_precision"
+                    },
+                    "note": "자료형: C00_code_nullable; unknown original retained"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "end_raw"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "end_raw"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "end_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "end_status"
+                    },
+                    "note": "자료형: C00_code_nullable; unknown original retained"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "record_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "record_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_locator"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "legacy_record_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "legacy_record_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "original_location"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "original_location"
+                    },
+                    "note": "자료형: text_nullable"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "source_snapshot_id"
+                    },
+                    "note": "자료형: text_identifier; case preserved"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "setting_status"
+                    },
+                    "note": "자료형: C00_code_nullable; unknown original retained"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "validation_status"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "validation_status"
+                    },
+                    "note": "자료형: C00_code_nullable; unknown original retained"
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "notes"
+                    },
+                    "effectiveValue": {
+                      "stringValue": "notes"
+                    },
+                    "note": "자료형: text_nullable"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "startRow": 3
+          }
+        ]
+      }
+    ]
+  }
+}

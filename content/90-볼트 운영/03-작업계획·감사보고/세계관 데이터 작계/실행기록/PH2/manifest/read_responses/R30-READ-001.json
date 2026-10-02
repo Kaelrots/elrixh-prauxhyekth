@@ -1,0 +1,4456 @@
+{
+  "call_id": "R30-READ-001",
+  "checked_at": "2026-10-02 09:33:21 UTC",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit",
+      "properties": {
+        "title": "R30 · 지역 — 사회·문화 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 1632270447,
+            "title": "00_안내",
+            "index": 0,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 100,
+              "columnCount": 12
+            }
+          },
+          "data": [
+            {
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "R30 · 세계관 데이터 V2"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "R30 · 세계관 데이터 V2"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "구조 구축 중 · 운영 전환 대기"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "구조 구축 중 · 운영 전환 대기"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "현재 범위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "현재 범위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "새 V2 표·헤더·제공 범위 구조만 준비. 이관·수식·검증은 미실행."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "새 V2 표·헤더·제공 범위 구조만 준비. 이관·수식·검증은 미실행."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 보존"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 보존"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기존 V1 원본과 이 파일에 복사된 구판 탭을 구별합니다. 구판 탭은 이번 추가 요청에서 변경하지 않습니다."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기존 V1 원본과 이 파일에 복사된 구판 탭을 구별합니다. 구판 탭은 이번 추가 요청에서 변경하지 않습니다."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기술·표시 헤더"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기술·표시 헤더"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "한글 표시행 아래의 기술 헤더 한 행이 입력 표와 제공 범위의 기준입니다."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "한글 표시행 아래의 기술 헤더 한 행이 입력 표와 제공 범위의 기준입니다."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "표의 빈 행"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "표의 빈 행"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "여유 입력 공간입니다. 자료없음·미실행·연결실패를 확정하는 결과가 아닙니다."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "여유 입력 공간입니다. 자료없음·미실행·연결실패를 확정하는 결과가 아닙니다."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "상태 구별"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "상태 구별"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "0·자료없음·초안·부분합·오류·권한 문제·미실행은 각각 기록합니다."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "0·자료없음·초안·부분합·오류·권한 문제·미실행은 각각 기록합니다."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "확장"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "확장"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "입력·계산·검증·제공·소비 5개 범위를 함께 갱신하고 경계행을 시험합니다."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "입력·계산·검증·제공·소비 5개 범위를 함께 갱신하고 경계행을 시험합니다."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "확인할 표시명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "확인할 표시명"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "‘항목 · 원문’ 표시는 한글 의미 검토가 남은 필드이며 정본 설정을 새로 만든 것이 아닙니다."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "‘항목 · 원문’ 표시는 한글 의미 검토가 남은 필드이며 정본 설정을 새로 만든 것이 아닙니다."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "파일 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "파일 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "배치 기준"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "배치 기준"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "PH2.PHYSICAL.2 / 15bfbe163b3d00dc1a56632d2e31602a9897e263f8238e710c3bf93e3342c149"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PH2.PHYSICAL.2 / 15bfbe163b3d00dc1a56632d2e31602a9897e263f8238e710c3bf93e3342c149"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "역할"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "역할"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "새 V2 탭"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "새 V2 탭"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "GUIDE"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "GUIDE"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "00_안내"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "00_안내"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1632270447"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "CONFIG"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "CONFIG"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "01_설정"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "01_설정"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1397828369"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "IN"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "IN"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "IN_문화분포"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "IN_문화분포"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1618619459"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "IN"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "IN"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "IN_언어분포"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "IN_언어분포"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1156000028"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "IN"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "IN"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "IN_집단분포"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "IN_집단분포"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1715157138"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "IN"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "IN"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "IN_사회지표"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "IN_사회지표"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1233389478"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "VIEW"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "VIEW"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "VIEW_조회01"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "VIEW_조회01"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1121865993"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "CHECK"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "CHECK"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "CHECK_검증01"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "CHECK_검증01"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1688273768"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "PUB"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PUB"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "PUB_제공01"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PUB_제공01"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1053555225"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "REF"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "REF"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "REF_참조01"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "REF_참조01"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1822045893"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "ARCHIVE"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "ARCHIVE"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "ARCHIVE_보존01"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "ARCHIVE_보존01"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://docs.google.com/spreadsheets/d/1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4/edit#gid=1278079629"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1397828369,
+            "title": "01_설정",
+            "index": 37,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 100,
+              "columnCount": 20
+            }
+          },
+          "data": [
+            {
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정/상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정/상태"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "구조 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "구조 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "구조 요청 준비 · 온라인 검증 미실행"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "구조 요청 준비 · 온라인 검증 미실행"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "연결 설정"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결 설정"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "실제 V2 제공 파일 ID/범위 검증 후 배치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "실제 V2 제공 파일 ID/범위 검증 후 배치"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1618619459,
+            "title": "IN_문화분포",
+            "index": 38,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 103,
+              "columnCount": 48,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "지역 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "지역 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시점"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시점"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "문화 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "문화 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "단위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "단위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "분모"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "분모"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "자료 범위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "자료 범위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "비고"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "비고"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · survey_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · survey_basis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · multiple_response"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · multiple_response"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · classification_axis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · classification_axis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · denominator_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · denominator_definition"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · denominator_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · denominator_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "루트"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "루트"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "역법 판본"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "역법 판본"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "연도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "월"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "월"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "일"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · date_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · date_precision"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시작 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시작 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_month"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_day"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시작 정밀도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시작 정밀도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "종료 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "종료 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_month"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_day"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "종료 정밀도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "종료 정밀도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "레코드 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "레코드 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · legacy_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · legacy_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · original_location"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "문자값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "문자값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "생성 방식"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "생성 방식"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_basis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · selection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · selection_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · selection_reason"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · selection_reason"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "culture_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "culture_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "note": "자료형: decimal_nullable; exact original in value_raw"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "unit"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "unit"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "notes"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "notes"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "survey_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "survey_basis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "multiple_response"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "multiple_response"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "classification_axis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "classification_axis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator_definition"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator_record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "route"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "route"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "calendar_revision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "calendar_revision"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "date_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "date_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "original_location"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_text"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_text"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "generation_method"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "generation_method"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_status"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_reason"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_reason"
+                      },
+                      "note": "자료형: text_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 52
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1156000028,
+            "title": "IN_언어분포",
+            "index": 39,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 103,
+              "columnCount": 48,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "지역 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "지역 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시점"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시점"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "조사 기준"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "조사 기준"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "언어 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "언어 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "단위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "단위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "분모"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "분모"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "자료 범위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "자료 범위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "비고"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "비고"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · multiple_response"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · multiple_response"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · classification_axis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · classification_axis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · denominator_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · denominator_definition"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · denominator_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · denominator_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "루트"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "루트"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "역법 판본"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "역법 판본"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "연도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "월"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "월"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "일"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · date_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · date_precision"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시작 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시작 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_month"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_day"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시작 정밀도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시작 정밀도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "종료 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "종료 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_month"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_day"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "종료 정밀도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "종료 정밀도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "레코드 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "레코드 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · legacy_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · legacy_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · original_location"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "문자값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "문자값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "생성 방식"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "생성 방식"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_basis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · selection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · selection_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · selection_reason"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · selection_reason"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "survey_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "survey_basis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "language_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "language_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "note": "자료형: decimal_nullable; exact original in value_raw"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "unit"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "unit"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "notes"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "notes"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "multiple_response"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "multiple_response"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "classification_axis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "classification_axis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator_definition"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator_record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "route"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "route"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "calendar_revision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "calendar_revision"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "date_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "date_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "original_location"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_text"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_text"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "generation_method"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "generation_method"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_status"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_reason"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_reason"
+                      },
+                      "note": "자료형: text_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 52
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1715157138,
+            "title": "IN_집단분포",
+            "index": 40,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 103,
+              "columnCount": 49,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "지역 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "지역 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시점"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시점"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "집단 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "집단 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "단위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "단위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "분모"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "분모"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "자료 범위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "자료 범위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "비고"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "비고"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · survey_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · survey_basis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · multiple_response"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · multiple_response"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · classification_axis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · classification_axis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · classification_revision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · classification_revision"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · denominator_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · denominator_definition"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · denominator_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · denominator_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "루트"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "루트"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "역법 판본"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "역법 판본"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "연도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "월"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "월"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "일"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · date_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · date_precision"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시작 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시작 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_month"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_day"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시작 정밀도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시작 정밀도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "종료 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "종료 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_month"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_day"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "종료 정밀도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "종료 정밀도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "레코드 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "레코드 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · legacy_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · legacy_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · original_location"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "문자값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "문자값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "생성 방식"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "생성 방식"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_basis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · selection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · selection_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · selection_reason"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · selection_reason"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "group_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "group_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "note": "자료형: decimal_nullable; exact original in value_raw"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "unit"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "unit"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "notes"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "notes"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "survey_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "survey_basis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "multiple_response"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "multiple_response"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "classification_axis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "classification_axis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "classification_revision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "classification_revision"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator_definition"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator_record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "route"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "route"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "calendar_revision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "calendar_revision"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "date_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "date_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "original_location"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_text"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_text"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "generation_method"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "generation_method"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_status"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_reason"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_reason"
+                      },
+                      "note": "자료형: text_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 52
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1233389478,
+            "title": "IN_사회지표",
+            "index": 41,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 103,
+              "columnCount": 51,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · scope_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · scope_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "루트"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "루트"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "연도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "지표 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "지표 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "단위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "단위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기준통화"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기준통화"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기준가격 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기준가격 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "기준가격 연도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "기준가격 연도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "직접설정값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "직접설정값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "산출방식"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "산출방식"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "집계 층위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "집계 층위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "비고"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "비고"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "지역 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "지역 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · denominator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · denominator"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · denominator_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · denominator_definition"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · population_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · population_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · urban_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · urban_definition"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "역법 판본"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "역법 판본"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "월"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "월"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "일"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · date_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · date_precision"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · time_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · time_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시작 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시작 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_month"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_day"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "시작 정밀도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시작 정밀도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · start_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · start_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "종료 기년"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "종료 기년"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_month"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_day"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "종료 정밀도"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "종료 정밀도"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · end_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · end_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "레코드 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "레코드 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · legacy_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · legacy_record_id"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · original_location"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · validation_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "문자값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "문자값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · data_scope"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · data_scope"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · value_basis"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · selection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · selection_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · selection_reason"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · selection_reason"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "planet_scope_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "planet_scope_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "route"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "route"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "metric_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "metric_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "unit"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "unit"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "currency"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "currency"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "price_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "price_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "price_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "price_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "note": "자료형: decimal_nullable; exact original in value_raw"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "generation_method"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "generation_method"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "aggregation_level"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "aggregation_level"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "notes"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "notes"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "denominator_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "denominator_definition"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "population_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "population_record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "urban_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "urban_definition"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "calendar_revision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "calendar_revision"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "date_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "date_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "start_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "start_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_era"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_year"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_month"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_month"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_day"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_day"
+                      },
+                      "note": "자료형: integer_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_precision"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_precision"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "end_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "end_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "original_location"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "validation_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_raw"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_text"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_text"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_status"
+                      },
+                      "note": "자료형: C00_code_nullable; unknown original retained"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_status"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_reason"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_reason"
+                      },
+                      "note": "자료형: text_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 52
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1121865993,
+            "title": "VIEW_조회01",
+            "index": 42,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 228,
+              "columnCount": 11
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "지역명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "지역명"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "문화명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "문화명"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처명"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "레코드 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "레코드 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "region_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_name"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "culture_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "culture_name"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_name"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 52
+            },
+            {
+              "startRow": 58,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "지역명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "지역명"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "언어명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "언어명"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처명"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "레코드 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "레코드 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "region_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_name"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "language_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "language_name"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_name"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: text_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: text_identifier; case preserved"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 60
+            },
+            {
+              "startRow": 109
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

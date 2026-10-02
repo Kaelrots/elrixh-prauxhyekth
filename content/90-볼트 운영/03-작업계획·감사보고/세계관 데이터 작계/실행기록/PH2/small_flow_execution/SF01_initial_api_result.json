@@ -1,0 +1,52 @@
+{
+  "step": "SF01_SF02_initial",
+  "api_validation": "passed",
+  "ui_evidence": "root 확인 및 연결 대기",
+  "test_suite_84_status": "unchanged",
+  "checked_at": "2026-10-02T09:35:08.936Z",
+  "actual": {
+    "population": 100,
+    "record_count": 1,
+    "person_name_via_N20": "시험 인물",
+    "person_name_direct_N30": "시험 인물",
+    "point_start_included": true,
+    "region_class_label": "시험 지역분류",
+    "source_locator": "TEST-SF-20261002-01"
+  },
+  "connections": {
+    "R10_C00": [
+      2,
+      2
+    ],
+    "R20_C00": [
+      2,
+      2
+    ],
+    "R20_R10": [
+      1,
+      1
+    ],
+    "N20_N30": [
+      1,
+      1
+    ],
+    "H90_R20": [
+      1,
+      1
+    ],
+    "H90_N30": [
+      1,
+      1
+    ],
+    "H90_N20": [
+      1,
+      1
+    ],
+    "H90_C00": [
+      2,
+      2
+    ]
+  },
+  "source_revision": "TEST.REV.1",
+  "source": "*_baseline_full_readback.json"
+}

@@ -1,0 +1,651 @@
+﻿STATE_SHINSEOUL = {
+    id = 800
+    provinces = { "x85896E" "x85DD9B" "x88EC95" "x89A2C9" "x9087E0" "x95D2BE" "x9B04C2" "x9D9BA3" "xA4BD86" "xA6EDC1" "xA8F8A8" "xAD7CFA" "xAF3DF7" "xBC6BA1" "xBE7ADF" "xC0CBE8" "xC5ED70" "xD58597" "xD6CA7F" "xD8A9E4" "xE6887E" "xF0CB87" "xF1C86D" "xF49B8A" "xF5AFC0" "xFA2CF8" "xFBAF65" "xFE49BB" }
+    traits = { state_trait_the_great_river state_trait_remained_infrastructure state_trait_grand_mountain state_trait_great_black_soil state_trait_the_center_of_industry state_good_place_for_mankind state_trait_earth_mankind_arrival_location }
+    city = "xEB858E"
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 1795
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_tobacco_plantations" "bg_silk_plantations" "bg_dye_plantations" "bg_cotton_plantations" }
+    capped_resources = {
+        bg_logging = 385
+        bg_fishing = 224
+        bg_coal_mining = 175
+        bg_iron_mining = 211
+        bg_whaling = 75
+        bg_oil_extraction = 13
+        bg_gold_mining = 7
+    }
+}
+
+STATE_CHEONGJIN = {
+    id = 801
+    provinces = { "x66BEA4" "x686FA2" "x691C8E" "x69BAA4" "x6AADC7" "x6C95BA" "x6E54E7" "x6EB3DE" "x6FE89F" "x70DF64" "x7198DF" "x723685" "x77D198" "x787CC9" "x79DE9A" "x79F26E" "x7CE184" "x807884" "x8403A1" "x9C75EA" "x9D9BE5" "x9EAA92" "x9F6B91" "xA175B3" "xA378CA" "xA44BD1" "xA45DBF" "xA6B2DC" "xA8E072" "xA99E74" "xAC63BD" "xAEE1D0" "xAF45E5" "xB09691" "xB0D6FC" "xB37AB7" "xB4A2A6" "xBB71F0" "xBC6FEF" "xC29991" "xC2ED88" "xC492F2" "xC68E9C" "xD0D8F7" "xD2A993" "xD3F8E7" "xD525B4" "xD6A6E2" "xD764E1" "xDBADAB" "xDE4DEA" "xDEB689" "xDEC6D8" "xE3B2CD" "xE3FCF3" "xE6C6EA" "xE8E988" "xE96B78" "xEA3DF1" "xEBBEDA" "xED10F6" "xEF7FF7" "xEF89F9" "xF18375" "xF2CC69" "xF2DCBD" "xF699F2" "xF76A6E" "xF993EF" "xFACBF9" "xFD779B" "xFEEE98" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 274
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_silk_plantations" "bg_cotton_plantations" }
+    capped_resources = {
+        bg_logging = 37
+        bg_coal_mining = 54
+        bg_fishing = 36
+        bg_whaling = 14
+    }
+}
+
+STATE_GAIHN = {
+    id = 802
+    provinces = { "x67B073" "x6D81A7" "x6E06B3" "x70A0D2" "x719485" "x73A3A2" "x8FB7C6" "x938FBB" "x9967C9" "xA3D3A9" "xBF5F84" "xC6E5A5" "xCB86F7" "xCF6666" "xD09886" "xD5B672" "xD75988" "xE8D7FC" "xE8F2D1" "xEFA6B7" "xEFEBB9" "xF19074" "xF63AC5" "xFA8E6A" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 105
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_logging = 38
+        bg_coal_mining = 27
+        bg_fishing = 13
+        bg_whaling = 7
+    }
+}
+
+STATE_BUWON = {
+    id = 803
+    provinces = { "x74FEC5" "x7B797E" "x7F6ABE" "x867ADE" "x8C72AE" "x9291F2" "xA7E0CD" "xABAF99" "xC30E6D" "xC86BF6" "xD65064" "xDE6974" "xE5CEFD" "xE94FFB" "xF17BB7" "xF4A082" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 174
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_tea_plantations" "bg_tobacco_plantations" "bg_silk_plantations" "bg_cotton_plantations" }
+    capped_resources = {
+        bg_logging = 17
+        bg_fishing = 24
+        bg_whaling = 17
+    }
+}
+
+STATE_NAMREUNG = {
+    id = 804
+    provinces = { "x74A6EF" "x7AC68C" "x8580DE" "x89B7EB" "x8A887F" "x8EC5C8" "x90F5E0" "x9768F2" "x9CA56B" "x9CC87F" "x9D7C87" "x9EB8D3" "xA080A6" "xA6BA74" "xA87FD2" "xA9CCD7" "xAAAF85" "xAB8564" "xB0A9D9" "xB964FB" "xBFA5E2" "xCE2FB6" "xD166E3" "xD2A29E" "xD6E7EF" "xE29572" "xE79A81" "xF9AB85" "xF9B2A3" "xFD77D3" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 89
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_logging = 17
+        bg_coal_mining = 28
+        bg_iron_mining = 54
+        bg_lead_mining = 27
+    }
+}
+
+STATE_SUREUNG = {
+    id = 805
+    provinces = { "x67D2A0" "x705277" "x736EFD" "x8C6BB9" "x95BC6F" "x9CBE67" "x9DEE8C" "xA4D0D4" "xBA7BEB" "xBA8B8B" "xBC8766" "xBF8B66" "xC04EAD" "xCB74AB" "xD884D0" "xDA827D" "xE8347E" "xEA69AB" "xEA8AF1" "xF5F875" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 84
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_logging = 54
+        bg_coal_mining = 38
+        bg_iron_mining = 44
+        bg_sulfur_mining = 29
+    }
+}
+
+STATE_HWANGAHN = {
+    id = 806
+    provinces = { "x78B97D" "x7FDD70" "x82F7C4" "x9367D4" "xA0AFA9" "xA36CDC" "xA7DA99" "xA9867A" "xAA6EC3" "xAB7EDA" "xB4FB70" "xB53871" "xB5A1B5" "xB6C2FD" "xC38678" "xC7D49F" "xCBFC7C" "xCFEAF6" "xD554FC" "xDCCA94" "xE99DEA" "xEBA4BC" "xF055D9" "xF50476" "xFABAD0" "xFC7AB4" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 177
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 114
+        bg_lead_mining = 28
+        bg_fishing = 17
+        bg_whaling = 4
+        bg_logging = 38
+    }
+}
+
+STATE_PYEONGJEON = {
+    id = 807
+    provinces = { "x6574B1" "x668180" "x6A4D7C" "x6A63DA" "x6BE1E8" "x70B9E2" "x7C828B" "x7DF1A2" "x807BAA" "x82DCF9" "x8577A2" "x88CCBF" "x8CA069" "x8DAD9C" "x91A1B4" "x91C1A6" "x930D80" "x9368F5" "x9375B3" "x9439FA" "x94C88C" "x996AF0" "x9DF0AB" "xA48CB8" "xA8BE99" "xAAE7EA" "xABA187" "xABEFCC" "xAF8887" "xAFA567" "xAFC0D8" "xB47DB0" "xB8E89B" "xBE816C" "xBE97FA" "xC2F7BA" "xC5C6F4" "xC727B5" "xCA667D" "xCAB4B7" "xD413F8" "xD8DB64" "xDB1F96" "xDF7199" "xE07B92" "xE086F2" "xE1A89C" "xE5EDEB" "xE6BCBB" "xE7CBFE" "xE849D1" "xE87ACF" "xE89FEB" "xEDB572" "xEDFCF4" "xEF7A67" "xEFACFE" "xFA82E2" "xFB159E" "xFCDDAA" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 215
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_coal_mining = 34
+        bg_sulfur_mining = 17
+        bg_oil_extraction = 9
+        bg_fishing = 19
+        bg_logging = 33
+    }
+}
+
+STATE_HAMSEON = {
+    id = 808
+    provinces = { "x6A0B77" "x6BA26C" "x6CA87E" "x6CC0B2" "x6EEAD4" "x718F7F" "x74A0EE" "x7D7F91" "x7EC5C1" "x7FC7A0" "x7FD475" "x809BC1" "x83D670" "x868EDB" "x875E6C" "x8BD890" "x8CED65" "x8DFEC9" "x8EDEE9" "x94C2E3" "x989987" "x9A85AA" "x9D807C" "x9EF4B8" "xA0D1AF" "xA195ED" "xA1E8CD" "xA3AF8A" "xA3CF64" "xA6CAC5" "xAA6F83" "xAAFE70" "xACECCA" "xACF879" "xB15EDE" "xB198B6" "xB3CDF1" "xB4C8A5" "xBD777C" "xBD9ACF" "xBF7581" "xC0AAFA" "xC1F27C" "xC5B6C8" "xC8717B" "xD02F6D" "xD5FBB9" "xDA917F" "xDDF796" "xE1BD7A" "xE59AAF" "xEE8E6F" "xF2B0A7" "xF39F8E" "xFAF7B6" "xFD29C3" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 158
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_logging = 77
+        bg_gold_mining = 6
+        bg_coal_mining = 79
+        bg_iron_mining = 104
+    }
+}
+
+STATE_ULREUNG = {
+    id = 809
+    provinces = { "x6C5BF1" "x7BBEE2" "x931B76" "x9629A8" "x97B2EC" "xA18FBF" "xE2A1E0" }
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 43
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" }
+    capped_resources = {
+        bg_logging = 13
+        bg_whaling = 27
+        bg_fishing = 55
+    }
+}
+
+STATE_NAMDANMAN = {
+    id = 810
+    provinces = { "x8EEEDB" "x903BAC" "xA893DB" "xD8DBE1" "xDBA49F" "xDFA1A2" "xE5B8D0" "xEF4495" "xF920A8" }
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 46
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_sugar_plantations" }
+    capped_resources = {
+        bg_logging = 57
+        bg_fishing = 34
+        bg_whaling = 7
+    }
+}
+
+STATE_BUKDANMAN = {
+    id = 811
+    provinces = { "x68BFD6" "x6FC679" "x8089F4" "xDC9D91" "xE56887" "xECCDE8" "xEE92F8" "xF2B2F7" "xFB35E0" }
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 52
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_logging = 45
+        bg_whaling = 8
+        bg_fishing = 33
+    }
+}
+
+STATE_JEJU = {
+    id = 812
+    provinces = { "x6CBEA5" "x75966B" "x78B7FE" "x8BEDEC" "x947AFA" "x96AC74" "x97F7B4" "x9F9186" "xA9F5C0" "xB5C8E3" "xBC5A6E" "xBDA07F" "xC6D2C2" "xC6E3DD" "xC9FEE7" "xCCFCA9" "xD2ABA3" "xD3D2C2" "xD5ADD2" "xD7359C" "xD799A6" "xDF5498" "xDFF4B7" "xEB95D1" "xF4758F" }
+    traits = { state_trait_the_great_river }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_sugar_plantations" "bg_banana_plantations" }
+    capped_resources = {
+        bg_logging = 3
+        bg_rubber = 127
+        bg_fishing = 44
+        bg_whaling = 27
+    }
+}
+
+STATE_BUKWON = {
+    id = 813
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_NAYEON = {
+    id = 814
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_IMUH = {
+    id = 815
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_HWANGJU = {
+    id = 816
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_PYEONGSEO_GUNDO = {
+    id = 817
+    provinces = { "x76F998" "x77FEAF" "x7FDE94" "x84E0CF" "x8981EB" "xAEE774" "xAFE894" "xB7D872" "xBBCDE4" "xE6BCB5" "xEAA4B1" "xEDBC9E" "xFE80D7" "xFEAB6D" }
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_JINOH_GUNDO = {
+    id = 818
+    provinces = { "x6583C0" "x680CE9" "x6CD0BE" "x70BAC8" "x77F2E0" "x83E46E" "x896680" "x8EDAC5" "x8F7C85" "x9B69DC" "xA2857F" "xACF7F0" "xB889F9" "xBBF8D1" "xBD16A6" "xBF2CCA" "xC18976" "xC5AF72" "xCB80EE" "xD7B7C9" "xE98990" "xEAF567" "xEDCABD" "xF0E2BD" }
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_SUDRAH = {
+    id = 819
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_MANTRAH = {
+    id = 820
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_AINDHRAH = {
+    id = 821
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_JUNGARH = {
+    id = 822
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_RIVHTARH = {
+    id = 823
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_JEONGJU = {
+    id = 824
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_AMHWAN = {
+    id = 825
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_SUJEON = {
+    id = 826
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_GWANBUK = {
+    id = 827
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_GWANSEO = {
+    id = 828
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_BUKGYE = {
+    id = 829
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_JINJEON = {
+    id = 830
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_SEOGYEONG = {
+    id = 831
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_ANJODO = {
+    id = 832
+    provinces = { "x81D06A" "xC31FEA" "xCEC4CA" "xEA51E6" }
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_IHJODO = {
+    id = 833
+    provinces = { "x7DF1A9" "x9466A6" "xA64AF9" "xAA9AE4" "xB2DDC8" "xB2F6AC" "xB6C066" "xB972C0" "xBEC47D" "xCBBEC4" "xCC7B7F" "xCD8C90" "xD1F4CF" "xD361FC" "xD8FDFE" "xE9EDDF" "xF276ED" "xF28B81" "xF7F1AB" }
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_YIEODO = {
+    id = 834
+    provinces = { "x677DB2" "x7AF4A2" "x7E76CA" "x7E79D4" "x8EA2B3" "xB2F6B9" "xB3ECD2" "xC610CC" "xD65BD7" "xDE67D8" "xE2ED71" "xF356FC" "xF6D5DE" "xF9D484" }
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}
+
+STATE_GWANJUNG = {
+    id = 835
+    provinces = {}
+    traits = {}
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = ""
+    subsistence_building = "building_subsistence_farms"
+    arable_land = 10
+    arable_resources = {}
+    capped_resources = {
+
+    }
+}

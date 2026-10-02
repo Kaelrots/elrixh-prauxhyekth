@@ -1,0 +1,455 @@
+{
+  "summary": {
+    "status": "READY_FOR_ROOT_LIVE_PREFLIGHT_ONLY",
+    "candidate_files": [
+      "C00",
+      "R10"
+    ],
+    "candidate_tables": 9,
+    "candidate_rows": 746,
+    "candidate_cells": 6313,
+    "request_files": 20,
+    "request_count": 209,
+    "fixed_ids_reused": 749,
+    "new_data_ids_allocated": 0,
+    "pending_worklog_rows": 62,
+    "pending_standard_collision_rows": 8,
+    "pending_calendar_rows": 5,
+    "online_writes": 0,
+    "runtime_status": "미실행"
+  },
+  "source_hashes": {
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json": "b033a96cf2bbf414cf2301ecbf13a98ccf69b6f5b9a30205f35b80b45eafaac1",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_requests\\C00.binding.json": "ad348a0f5dcf0ae658cf03d4ee26a4c4effd10b3ed3803339ee8fce5b984a11c",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_requests\\R10.binding.json": "4fad6717aa50d4089b4bbe13c5ed6cfaac4eaa5f18525ed39b42c46c97241b4c"
+  },
+  "source_candidates_unchanged": true,
+  "request_index": [
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.001.json",
+      "sha256": "ec2c84af5a25df35de643ac92798f0d78c6d36f4ec38adca7340048e9ed38248",
+      "logical_table_keys": [
+        "C00.코드북"
+      ],
+      "request_count": 11,
+      "cell_count": 434,
+      "payload_bytes": 314954,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.002.json",
+      "sha256": "c0c4c06e3908bd7504e2c0e7e367024cbaabe88e95aacbbeeb2d6351d56224ba",
+      "logical_table_keys": [
+        "C00.코드북"
+      ],
+      "request_count": 11,
+      "cell_count": 428,
+      "payload_bytes": 316059,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.003.json",
+      "sha256": "71dee9bafc2546d299d8aebd849fecaf9688a3149a4736914a53a0baf9d6ea5e",
+      "logical_table_keys": [
+        "C00.코드북"
+      ],
+      "request_count": 11,
+      "cell_count": 400,
+      "payload_bytes": 298903,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.004.json",
+      "sha256": "c4a810665a4a9dc8042d25dd33088b18a727986a4c4612e6ae0f351f3b8adb66",
+      "logical_table_keys": [
+        "C00.코드북"
+      ],
+      "request_count": 9,
+      "cell_count": 354,
+      "payload_bytes": 292265,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.005.json",
+      "sha256": "703208afea31632d9b2fd704120ab6155d55206cbc9111a31ece932f5c845070",
+      "logical_table_keys": [
+        "C00.코드북"
+      ],
+      "request_count": 2,
+      "cell_count": 74,
+      "payload_bytes": 58794,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.006.json",
+      "sha256": "16194969267036e0e96511d10c14cacd0852d4691eeda360ae3033f2a61ff2cd",
+      "logical_table_keys": [
+        "C00.출처레지스트리"
+      ],
+      "request_count": 15,
+      "cell_count": 342,
+      "payload_bytes": 265496,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.007.json",
+      "sha256": "490cfcd05539bb7ec05cc109276a72de6fde4907a9bea4872759524b8ca7b69c",
+      "logical_table_keys": [
+        "C00.공통기준"
+      ],
+      "request_count": 9,
+      "cell_count": 303,
+      "payload_bytes": 241306,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.008.json",
+      "sha256": "177154f91f8b7dfc8acdd3e1ba5bf2f83ae2ed7609cd58ceb84e4976f914c079",
+      "logical_table_keys": [
+        "C00.국가식별목록"
+      ],
+      "request_count": 5,
+      "cell_count": 5,
+      "payload_bytes": 5652,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.009.json",
+      "sha256": "f60f764db0337b491ad7ece2aa892e7700c74dd8edd93a1ccd955e511d69e35e",
+      "logical_table_keys": [
+        "C00.기준개정이력"
+      ],
+      "request_count": 13,
+      "cell_count": 428,
+      "payload_bytes": 322694,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.010.json",
+      "sha256": "0b0fef6bcd7061765617f9bac378664e639cd09cb3a48ea8386962dbe54695f7",
+      "logical_table_keys": [
+        "C00.기준개정이력"
+      ],
+      "request_count": 14,
+      "cell_count": 425,
+      "payload_bytes": 326868,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.011.json",
+      "sha256": "273ab824fe967edd0b288c112cbe26e5b510252824d274931da0c5c2a84db1be",
+      "logical_table_keys": [
+        "C00.기준개정이력"
+      ],
+      "request_count": 10,
+      "cell_count": 308,
+      "payload_bytes": 244830,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.012.json",
+      "sha256": "a789bb78c54742a35f19cd2c61ded77a424999d7b0963cf2b4c11687bd6d42ce",
+      "logical_table_keys": [
+        "C00.언어분류"
+      ],
+      "request_count": 13,
+      "cell_count": 74,
+      "payload_bytes": 58971,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "C00",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.data.013.json",
+      "sha256": "0d10339e282b7a0d78bd800158663b23220fb1f29aa6cea7b10106b942d4a7a2",
+      "logical_table_keys": [
+        "C00.개체별칭"
+      ],
+      "request_count": 6,
+      "cell_count": 6,
+      "payload_bytes": 6708,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "R10",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\R10.data.001.json",
+      "sha256": "0870e1cc3568b8458d1516bf9f706224ed0b59f1d0c7799938fd1430eefe713c",
+      "logical_table_keys": [
+        "R10.지역목록"
+      ],
+      "request_count": 13,
+      "cell_count": 439,
+      "payload_bytes": 319156,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "R10",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\R10.data.002.json",
+      "sha256": "710940087eeecbcc539c2eaf6d2633d6f96e70f9ecb50c3eac5c4f9f52aaae4d",
+      "logical_table_keys": [
+        "R10.지역목록"
+      ],
+      "request_count": 13,
+      "cell_count": 439,
+      "payload_bytes": 320782,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "R10",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\R10.data.003.json",
+      "sha256": "e11fd68683a39d8a36919d35640fd159e0aa3d3c5cb88f96d6dcb564d5fd2b77",
+      "logical_table_keys": [
+        "R10.지역목록"
+      ],
+      "request_count": 14,
+      "cell_count": 452,
+      "payload_bytes": 330081,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "R10",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\R10.data.004.json",
+      "sha256": "27615736c22ff75de4d752059d99d89c2c1d987581f280ea56cf6f6de4986044",
+      "logical_table_keys": [
+        "R10.지역목록"
+      ],
+      "request_count": 8,
+      "cell_count": 266,
+      "payload_bytes": 220107,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "R10",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\R10.data.005.json",
+      "sha256": "7d6569845dcc6aaab799f7e510fa8db182b79c370e62c2b2901e35caebce0faa",
+      "logical_table_keys": [
+        "R10.지역관계"
+      ],
+      "request_count": 12,
+      "cell_count": 426,
+      "payload_bytes": 315641,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "R10",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\R10.data.006.json",
+      "sha256": "25e1f265f63f5b42a994399f7a1b0051c0ca062887632e0b9ccd393915cec593",
+      "logical_table_keys": [
+        "R10.지역관계"
+      ],
+      "request_count": 12,
+      "cell_count": 426,
+      "payload_bytes": 311280,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    },
+    {
+      "file_code": "R10",
+      "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\R10.data.007.json",
+      "sha256": "38ceef0827e9ab6ae6ac511fac74576cecbaea3e35bebeca5139552b43326315",
+      "logical_table_keys": [
+        "R10.지역관계"
+      ],
+      "request_count": 8,
+      "cell_count": 284,
+      "payload_bytes": 238480,
+      "status": "PREPARED_NOT_SENT",
+      "preconditions": [
+        "Live sheetId/title/technical header order exact match",
+        "Live written cells empty or same exact literal/note; no foreign formula/chip",
+        "Native table covers every candidate row and column",
+        "Resume PK/source ledger checked; do not append an existing record"
+      ]
+    }
+  ],
+  "table_write_counts": {
+    "C00.코드북": {
+      "rows": 234,
+      "cells": 1690,
+      "null_cells_excluded": 884
+    },
+    "C00.출처레지스트리": {
+      "rows": 29,
+      "cells": 342,
+      "null_cells_excluded": 64
+    },
+    "C00.공통기준": {
+      "rows": 101,
+      "cells": 303,
+      "null_cells_excluded": 202
+    },
+    "C00.국가식별목록": {
+      "rows": 1,
+      "cells": 5,
+      "null_cells_excluded": 6
+    },
+    "C00.기준개정이력": {
+      "rows": 97,
+      "cells": 1161,
+      "null_cells_excluded": 1458
+    },
+    "C00.언어분류": {
+      "rows": 8,
+      "cells": 74,
+      "null_cells_excluded": 54
+    },
+    "C00.개체별칭": {
+      "rows": 1,
+      "cells": 6,
+      "null_cells_excluded": 5
+    },
+    "R10.지역목록": {
+      "rows": 133,
+      "cells": 1596,
+      "null_cells_excluded": 133
+    },
+    "R10.지역관계": {
+      "rows": 142,
+      "cells": 1136,
+      "null_cells_excluded": 3976
+    }
+  },
+  "live_preflight_fields": [
+    "userEnteredValue",
+    "effectiveValue",
+    "note",
+    "dataValidation",
+    "chipRuns",
+    "userEnteredFormat"
+  ],
+  "header_manifest_files": [
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.readback_manifest.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\R10.readback_manifest.json"
+  ],
+  "comparison_manifest_rule": "For every expected cell compare userEnteredValue and effectiveValue including union type, plus SHA-256(note). Count exact PKs/rows. Compare all unwritten-mask cells with prewrite snapshot. Recalculation/function tests remain separate and unexecuted.",
+  "resume_ledger": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\technical_id_resume_ledger.json",
+  "pending_json": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\pending.json",
+  "pending_csv": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\pending.csv",
+  "optional_pending_sheet_request": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\C00.pending_sheet.optional.json",
+  "scope": "PH2 C00/R10 only. N10/N20/R70 candidate rows remain deferred, no original V1 ID is an output target.",
+  "chunk_resume_rule": "Record success plus exact readback for each request file. Before rerun compare live cell/PK state; do not blindly replay or append."
+}

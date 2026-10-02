@@ -1,0 +1,162 @@
+{
+  "project": "세계관 데이터 V2",
+  "schema_version": "draft-1",
+  "created_at": "2026-10-02T16:42:33+09:00",
+  "status": "결정대기 초안 · 지도기준 2항목 온라인 관측 연결 · 정본 채택 없음",
+  "items": [
+    {
+      "decision_id": "DQ-001",
+      "subject": "공통 지도기준의 초기 검토/후속 초안",
+      "source_hint": "std.map.projection; std.map.wrap_x; std.map.wrap_y; std.map.scale",
+      "owner_file_codes": "C00",
+      "basis_type": "계획서 지시 + 실행시점 온라인 원문 관측",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": true,
+      "legacy_locators": [
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 39,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 40,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 41,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 42,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 87,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 89,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 90,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 92,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        }
+      ],
+      "safe_preservation_rule": "기준 ID와 개정 ID를 분리하고 원문·판본·채택 상태 보존",
+      "setting_decision_status": "결정 대기 · 원문 보존",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    },
+    {
+      "decision_id": "DQ-002",
+      "subject": "축 기준 항목명과 값의 의미 불일치",
+      "source_hint": "std.map.crs.axis",
+      "owner_file_codes": "C00",
+      "basis_type": "계획서 지시 + 실행시점 온라인 원문 관측",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": true,
+      "legacy_locators": [
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 86,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        }
+      ],
+      "safe_preservation_rule": "원문을 임의 치환하지 않고 의미 검토 대상으로 남김",
+      "setting_decision_status": "결정 대기 · 원문 보존",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    },
+    {
+      "decision_id": "DQ-003",
+      "subject": "행성 원문 반경/지름환산 반경/표면적 대조",
+      "source_hint": "10_행성_기본값",
+      "owner_file_codes": "R70",
+      "basis_type": "계획서의 첨부본 관측 및 보존 지시",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": false,
+      "legacy_locators": [],
+      "safe_preservation_rule": "직접 원문과 계산값을 보존하고 채택 미결정이면 자동 정본 승격 금지",
+      "setting_decision_status": "결정 대기 후보",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    },
+    {
+      "decision_id": "DQ-004",
+      "subject": "국가 외국어 이름의 역할·판본 차이",
+      "source_hint": "지역 국가목록 / 국가 기본정보",
+      "owner_file_codes": "C00;N10",
+      "basis_type": "계획서의 첨부본 관측 및 보존 지시",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": false,
+      "legacy_locators": [],
+      "safe_preservation_rule": "공식 표기·중립 목록명·원문 별칭·구판의 역할을 보존하고 최신값 자동선택 금지",
+      "setting_decision_status": "결정 대기 후보",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    },
+    {
+      "decision_id": "DQ-005",
+      "subject": "종족·인적 분류의 후보 정의/분류체계 충돌",
+      "source_hint": "공통 분류사전",
+      "owner_file_codes": "C00;R30",
+      "basis_type": "계획서의 첨부본 관측 및 보존 지시",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": false,
+      "legacy_locators": [],
+      "safe_preservation_rule": "정의·판본·설정 상태와 충돌 연결을 보존하고 확정으로 일괄 변경하지 않음",
+      "setting_decision_status": "결정 대기 후보",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    }
+  ],
+  "technical_limitations_separate_from_setting_decisions": [
+    {
+      "issue_id": "PH0-BASELINE-001",
+      "issue_type": "증거 자료 없음",
+      "subject": "기준 첨부 XLSX 원파일 부재",
+      "observed_fact": "현재 온라인 내보내기와 05 구조 JSON은 존재하나 기준 XLSX 원파일은 검색에서 발견되지 않음(부모 작업 보고)",
+      "effect": "첨부본 대비 셀값·전체 수식 차분 미검증. SHA 차이만으로 내용 변경 판단 금지.",
+      "setting_decision": false
+    }
+  ]
+}

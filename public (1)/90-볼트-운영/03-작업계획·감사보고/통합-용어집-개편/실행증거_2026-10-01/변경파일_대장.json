@@ -1,0 +1,963 @@
+{
+  "created_at": "2026-10-01T17:57:59.123909+09:00",
+  "authority": "사용자 지정 07 마스터 > 07 감사보고서 > 실행지시문·작업계획서",
+  "status": "PASS WITH HOLD",
+  "scope": "세계관 볼트 설정·색인 28파일; Publish/Web 제외",
+  "git_head": "2ac3fe8a477198e618c4ec23cb5d8bcb06daa01c",
+  "counts": {
+    "modified": 22,
+    "added": 6,
+    "moved": 0,
+    "deleted": 0,
+    "baseline_unchanged": 606
+  },
+  "records": [
+    {
+      "id": "F01",
+      "path": "00-세계관 공통설정/00-세계관 통합 용어집.md",
+      "previous_path": "00-세계관 공통설정/00-세계관 통합 용어집.md",
+      "current_path": "00-세계관 공통설정/00-세계관 통합 용어집.md",
+      "action": "modify",
+      "drive_id": "1YtRTqax5KWfQAJk8z466P4R1VxrCyvPJ",
+      "drive_url": "https://drive.google.com/file/d/1YtRTqax5KWfQAJk8z466P4R1VxrCyvPJ/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "index"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "index"
+      },
+      "reason": "이전 진입점의 낡은 정의를 현행 반영본 섹션 임베드로 연결, 경로·heading 유지",
+      "decisions": [
+        "V.6",
+        "VIII.3"
+      ],
+      "before_sha256": "78cdfce77fd261cc8035e97b3241f10b9db8a682ff03334abaa9ddf8813e40b7",
+      "after_sha256": "947e102a9be9ca967bd8729ef823b55dc31ea7e9e26d4a5db5729f8eb97ac4a4",
+      "after_sha256_lf": "947e102a9be9ca967bd8729ef823b55dc31ea7e9e26d4a5db5729f8eb97ac4a4",
+      "bytes": 1109,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F02",
+      "path": "00-세계관 공통설정/00-세계관 통합 용어집_확정개념반영.md",
+      "previous_path": "00-세계관 공통설정/00-세계관 통합 용어집_확정개념반영.md",
+      "current_path": "00-세계관 공통설정/00-세계관 통합 용어집_확정개념반영.md",
+      "action": "modify",
+      "drive_id": "1lhhios3A2pXJnUiYwO_sRDHLap_BGd8b",
+      "drive_url": "https://drive.google.com/file/d/1lhhios3A2pXJnUiYwO_sRDHLap_BGd8b/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "index"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "index"
+      },
+      "reason": "28개 기존 표제 유지·8개 정의 갱신·29개 대표어 추가·HOLD/별칭/전문색인 연결",
+      "decisions": [
+        "D01-D06",
+        "P0-01-P0-21",
+        "4-A-4-D",
+        "V",
+        "VI",
+        "VIII"
+      ],
+      "before_sha256": "7cd44ac717e10d305d8d4dc57eee10218ea7984322958e2ac614d33fc76e5196",
+      "after_sha256": "3a6d34e6b9fcd12c5ceab88c8e43593502df101500e6f26995985a5da868f75d",
+      "after_sha256_lf": "3a6d34e6b9fcd12c5ceab88c8e43593502df101500e6f26995985a5da868f75d",
+      "bytes": 32119,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F03",
+      "path": "00-세계관 공통설정/01-우주론·차원/차원 구분 용어 정의.md",
+      "previous_path": "00-세계관 공통설정/01-우주론·차원/차원 구분 용어 정의.md",
+      "current_path": "00-세계관 공통설정/01-우주론·차원/차원 구분 용어 정의.md",
+      "action": "modify",
+      "drive_id": "11goLXq1TQBp2qnJ7cbTesXi1gQJp4rUb",
+      "drive_url": "https://drive.google.com/file/d/11goLXq1TQBp2qnJ7cbTesXi1gQJp4rUb/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "07 D05 차원 명칭·인과관계 및 천체 링크 정합화",
+      "decisions": [
+        "D05-1",
+        "D05-2",
+        "D05-3",
+        "D05-4",
+        "D05 §9.5"
+      ],
+      "before_sha256": "2ab3519b460ed84572d0d559160011bab3da87c31ffd811b910680d5bbecef97",
+      "after_sha256": "a56302e7e210e0265fc77c8adf387fac429733eac1e866bab6a2775c0624f808",
+      "after_sha256_lf": "a56302e7e210e0265fc77c8adf387fac429733eac1e866bab6a2775c0624f808",
+      "bytes": 4239,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F04",
+      "path": "00-세계관 공통설정/01-우주론·차원/차원류.md",
+      "previous_path": "00-세계관 공통설정/01-우주론·차원/차원류.md",
+      "current_path": "00-세계관 공통설정/01-우주론·차원/차원류.md",
+      "action": "modify",
+      "drive_id": "1qOhuHISyGifBTxi8oYwGPbRNkZoiENuJ",
+      "drive_url": "https://drive.google.com/file/d/1qOhuHISyGifBTxi8oYwGPbRNkZoiENuJ/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "concept"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "concept"
+      },
+      "reason": "07 차원류 포함관계·발생시점·전이지형 및 HOLD 정합화",
+      "decisions": [
+        "4-A",
+        "4-B",
+        "P0-09",
+        "P0-10",
+        "P1-09",
+        "P1-10",
+        "P1-11",
+        "V-3.4"
+      ],
+      "before_sha256": "cec26f65c703be59d96db9295c61b8d1674e792dca4007bd67d5947e69c14168",
+      "after_sha256": "1f0d43b219d790f1f302060aa07dfb5cd5c6926bd25bcafbe433069f51091f87",
+      "after_sha256_lf": "1f0d43b219d790f1f302060aa07dfb5cd5c6926bd25bcafbe433069f51091f87",
+      "bytes": 12744,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F05",
+      "path": "00-세계관 공통설정/01-우주론·차원/차원학·차원재난 용어 사전.md",
+      "previous_path": null,
+      "current_path": "00-세계관 공통설정/01-우주론·차원/차원학·차원재난 용어 사전.md",
+      "action": "add",
+      "drive_id": "1l4mWSiSYeQ2Q737RfB5Zi_8wZtg428Yd",
+      "drive_url": "https://drive.google.com/file/d/1l4mWSiSYeQ2Q737RfB5Zi_8wZtg428Yd/view?usp=drivesdk",
+      "metadata_before": null,
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "차원·재난 두 폴더를 잇는 동등 전문색인 부재; 확정 8개와 검토대기 분리",
+      "decisions": [
+        "D05",
+        "P0-09",
+        "P0-10",
+        "P1-09",
+        "P1-10",
+        "P1-11",
+        "4-A",
+        "4-B",
+        "V-3.4"
+      ],
+      "before_sha256": null,
+      "after_sha256": "461d0c6e7f401ba7b103133c4dfd6a62a051df14ad9ca2be189d4970deb06472",
+      "after_sha256_lf": "461d0c6e7f401ba7b103133c4dfd6a62a051df14ad9ca2be189d4970deb06472",
+      "bytes": 6604,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F06",
+      "path": "00-세계관 공통설정/02-대전이·차원재난/대전이.md",
+      "previous_path": "00-세계관 공통설정/02-대전이·차원재난/대전이.md",
+      "current_path": "00-세계관 공통설정/02-대전이·차원재난/대전이.md",
+      "action": "modify",
+      "drive_id": "1aLQOgZ4q-x64zPWQzjjAI-MmrShfwJJV",
+      "drive_url": "https://drive.google.com/file/d/1aLQOgZ4q-x64zPWQzjjAI-MmrShfwJJV/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "concept"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "concept"
+      },
+      "reason": "07 차원류 포함관계·발생시점·전이지형 및 HOLD 정합화",
+      "decisions": [
+        "4-A",
+        "4-B",
+        "P0-09",
+        "P0-10",
+        "P1-09",
+        "P1-10",
+        "P1-11",
+        "V-3.4"
+      ],
+      "before_sha256": "8d16ff717c482b20f03b2b0a617e7fa5bcb5c5631790610065fac74714d545d8",
+      "after_sha256": "664c3a0f1172993b8154154ba16c0d219bbd3952296c4fa37d230e7a1f78116e",
+      "after_sha256_lf": "664c3a0f1172993b8154154ba16c0d219bbd3952296c4fa37d230e7a1f78116e",
+      "bytes": 20650,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F07",
+      "path": "00-세계관 공통설정/03-존재·종족/신인류.md",
+      "previous_path": "00-세계관 공통설정/03-존재·종족/신인류.md",
+      "current_path": "00-세계관 공통설정/03-존재·종족/신인류.md",
+      "action": "modify",
+      "drive_id": "1A_odIxrx46p-j33njR8PtQ5eCBiy1RV6",
+      "drive_url": "https://drive.google.com/file/d/1A_odIxrx46p-j33njR8PtQ5eCBiy1RV6/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "concept"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "concept"
+      },
+      "reason": "영혼·계승·각성·회로·에너지 정의 정합화, 구식 헌정 분리, 성급 자동 등치 제거",
+      "decisions": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D06-8",
+        "P1-01-P1-07",
+        "IV.1",
+        "V.3.1"
+      ],
+      "before_sha256": "469f5c3df8636e593a17269be5a24e62afb699ba0542230f735c80032c1360ca",
+      "after_sha256": "e523346e65e63e71d8ff947f8c7ce7e9704c035bbe22c65a71b7ac0d7d2a229c",
+      "after_sha256_lf": "e523346e65e63e71d8ff947f8c7ce7e9704c035bbe22c65a71b7ac0d7d2a229c",
+      "bytes": 29836,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F08",
+      "path": "00-세계관 공통설정/03-존재·종족/존재·영혼·신인류 용어 사전.md",
+      "previous_path": null,
+      "current_path": "00-세계관 공통설정/03-존재·종족/존재·영혼·신인류 용어 사전.md",
+      "action": "add",
+      "drive_id": "17XP6pO_qW-CtlFR5S86kDTtmYJ4YauKp",
+      "drive_url": "https://drive.google.com/file/d/17XP6pO_qW-CtlFR5S86kDTtmYJ4YauKp/view?usp=drivesdk",
+      "metadata_before": null,
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "기존 존재 폴더에 동일 역할 색인 없이 신인류·초월자 원문만 존재하므로 승인된 전문어의 관계·원문 연결 신설",
+      "decisions": [
+        "D01-D03",
+        "P1-01-P1-07",
+        "V.3.1"
+      ],
+      "before_sha256": null,
+      "after_sha256": "cdcb46b3473418f4246632e0faeccc2805f337564d8cc7796daca5e27b07eedd",
+      "after_sha256_lf": "cdcb46b3473418f4246632e0faeccc2805f337564d8cc7796daca5e27b07eedd",
+      "bytes": 15429,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F09",
+      "path": "00-세계관 공통설정/03-존재·종족/초월·신적 존재 용어 사전.md",
+      "previous_path": null,
+      "current_path": "00-세계관 공통설정/03-존재·종족/초월·신적 존재 용어 사전.md",
+      "action": "add",
+      "drive_id": "1taAx5haA-aa0YXjigSvZzNpB8mSZV4Af",
+      "drive_url": "https://drive.google.com/file/d/1taAx5haA-aa0YXjigSvZzNpB8mSZV4Af/view?usp=drivesdk",
+      "metadata_before": null,
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "기존 초월자 서사문서와 복원 교리 사이에 공통 전문색인이 없어 신설",
+      "decisions": [
+        "D03-5-D03-6",
+        "D06",
+        "V.3.2",
+        "VIII.1"
+      ],
+      "before_sha256": null,
+      "after_sha256": "7a080ac983590f9e7bc6d47d9bbb2a769963f35dfeeb5e728f32b355d6ec483e",
+      "after_sha256_lf": "7a080ac983590f9e7bc6d47d9bbb2a769963f35dfeeb5e728f32b355d6ec483e",
+      "bytes": 9901,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F10",
+      "path": "00-세계관 공통설정/03-존재·종족/초월자.md",
+      "previous_path": "00-세계관 공통설정/03-존재·종족/초월자.md",
+      "current_path": "00-세계관 공통설정/03-존재·종족/초월자.md",
+      "action": "modify",
+      "drive_id": "1kXJ2VFjgC0rcpJbBVeGjQbQeuZ1Bk6gr",
+      "drive_url": "https://drive.google.com/file/d/1kXJ2VFjgC0rcpJbBVeGjQbQeuZ1Bk6gr/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "concept"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "concept"
+      },
+      "reason": "인간 초월자·승천·신 경계, 후보/준초월자/선지자 구별, 교리모형과 객관적 존재론 분리",
+      "decisions": [
+        "D03-5",
+        "D03-6",
+        "D06",
+        "V.3.2"
+      ],
+      "before_sha256": "d5fe29116190b1ba64dca59445512ca72a989833b46659762efbe2e7bc5f39c9",
+      "after_sha256": "e7f9c5f4a54e48382b3f2cc5ee5a8176a5754917f6041c4c761d72c92966c69e",
+      "after_sha256_lf": "e7f9c5f4a54e48382b3f2cc5ee5a8176a5754917f6041c4c761d72c92966c69e",
+      "bytes": 61904,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F11",
+      "path": "00-세계관 공통설정/04-능력·마법·에너지/마법 기본설정.md",
+      "previous_path": "00-세계관 공통설정/04-능력·마법·에너지/마법 기본설정.md",
+      "current_path": "00-세계관 공통설정/04-능력·마법·에너지/마법 기본설정.md",
+      "action": "modify",
+      "drive_id": "1MzNlCbU4AUCs_bZO2ufZOfZmPFvOf1bs",
+      "drive_url": "https://drive.google.com/file/d/1MzNlCbU4AUCs_bZO2ufZOfZmPFvOf1bs/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "concept"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "concept"
+      },
+      "reason": "복원 원문과 수치를 유지하면서 07 현대 정의 및 HOLD 우선 해석을 별도 절로 추가",
+      "decisions": [
+        "D04",
+        "D05",
+        "D06-8",
+        "P1-07",
+        "V.3.3",
+        "VI.1"
+      ],
+      "before_sha256": "07fbddf12823272af50c3d119a1af71040d62b96fce241a1aa3bd9c6e2e6a71c",
+      "after_sha256": "04296ed2e3dd0643d778662f0caf37909780998e5060dbd24f06bcc7b97280e8",
+      "after_sha256_lf": "04296ed2e3dd0643d778662f0caf37909780998e5060dbd24f06bcc7b97280e8",
+      "bytes": 21222,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F12",
+      "path": "00-세계관 공통설정/04-능력·마법·에너지/마법·에너지 용어 사전.md",
+      "previous_path": null,
+      "current_path": "00-세계관 공통설정/04-능력·마법·에너지/마법·에너지 용어 사전.md",
+      "action": "add",
+      "drive_id": "1Kjyf6wR6nUChlDgP8tBsAF_hQdNTkBXN",
+      "drive_url": "https://drive.google.com/file/d/1Kjyf6wR6nUChlDgP8tBsAF_hQdNTkBXN/view?usp=drivesdk",
+      "metadata_before": null,
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "기존 능력 폴더에는 복원 마법 원문만 있어 현대 확정 정의와 복원 HOLD를 구별하는 색인 신설",
+      "decisions": [
+        "D04",
+        "D05",
+        "D06-8",
+        "P1-07",
+        "V.3.3",
+        "VI.1"
+      ],
+      "before_sha256": null,
+      "after_sha256": "77c2b9d12a64dabd03a309a326f32ff0dd587aaf524728f9103dd8ea5122e69e",
+      "after_sha256_lf": "77c2b9d12a64dabd03a309a326f32ff0dd587aaf524728f9103dd8ea5122e69e",
+      "bytes": 13154,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F13",
+      "path": "00-세계관 공통설정/index.md",
+      "previous_path": "00-세계관 공통설정/index.md",
+      "current_path": "00-세계관 공통설정/index.md",
+      "action": "modify",
+      "drive_id": "1FYiGXOSoWdcIc7rblWXxzekrmlGCQxVg",
+      "drive_url": "https://drive.google.com/file/d/1FYiGXOSoWdcIc7rblWXxzekrmlGCQxVg/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "index"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "index"
+      },
+      "reason": "현행 용어집 및 5개 전문사전 진입점 연결, 해결된 충돌 상태 갱신",
+      "decisions": [
+        "V",
+        "D06"
+      ],
+      "before_sha256": "91ce21a1f1607a0464ee66aef6a091395771a87b550a70b189ea6a3b5e182ef7",
+      "after_sha256": "e2a8965953eba0b44223da04a59238f99716c8b2a5f1111b487dd09c7153813f",
+      "after_sha256_lf": "e2a8965953eba0b44223da04a59238f99716c8b2a5f1111b487dd09c7153813f",
+      "bytes": 3594,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F14",
+      "path": "01-신계 차원/01-천체·우주지리/03-류아블론츠 성계/류아블론츠 성계 정보 설정.md",
+      "previous_path": "01-신계 차원/01-천체·우주지리/03-류아블론츠 성계/류아블론츠 성계 정보 설정.md",
+      "current_path": "01-신계 차원/01-천체·우주지리/03-류아블론츠 성계/류아블론츠 성계 정보 설정.md",
+      "action": "modify",
+      "drive_id": "1Xf0upYkMqrGL9InCK7QGW8htDzE3hVUv",
+      "drive_url": "https://drive.google.com/file/d/1Xf0upYkMqrGL9InCK7QGW8htDzE3hVUv/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "entity"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "entity"
+      },
+      "reason": "07 P1-08 자연형·인공형 원리 반영, 하위구역·수치 HOLD 명시",
+      "decisions": [
+        "P1-08",
+        "V-3.5",
+        "VI-3"
+      ],
+      "before_sha256": "7d9eb891830874940085154a728fb2537466531f5e1fef96be2be37dc468eb4a",
+      "after_sha256": "44364a44b4845154b42997d61530008a08ba859d69b9f0fc541397fd235dafab",
+      "after_sha256_lf": "44364a44b4845154b42997d61530008a08ba859d69b9f0fc541397fd235dafab",
+      "bytes": 16133,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F15",
+      "path": "01-신계 차원/01-천체·우주지리/천체·특수물리 용어 사전.md",
+      "previous_path": null,
+      "current_path": "01-신계 차원/01-천체·우주지리/천체·특수물리 용어 사전.md",
+      "action": "add",
+      "drive_id": "1p8NeJpwp0hCSp8pHz20Scnq804Tj0VvF",
+      "drive_url": "https://drive.google.com/file/d/1p8NeJpwp0hCSp8pHz20Scnq804Tj0VvF/view?usp=drivesdk",
+      "metadata_before": null,
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "성계별 원문만 존재하여 특수물리 원리와 HOLD 수치를 분리하는 전문색인 신설",
+      "decisions": [
+        "P0-11",
+        "P0-12",
+        "P0-13",
+        "P0-14",
+        "P1-08",
+        "V-3.5"
+      ],
+      "before_sha256": null,
+      "after_sha256": "b6978e12e993503ce09e29bf9eaacf9e71226ea120dceb8ec5e28740ddaec8e8",
+      "after_sha256_lf": "b6978e12e993503ce09e29bf9eaacf9e71226ea120dceb8ec5e28740ddaec8e8",
+      "bytes": 4674,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F16",
+      "path": "01-신계 차원/02-라리셴베르크/01-지리·지역/지역 층위 체계 및 용어 정의.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/01-지리·지역/지역 층위 체계 및 용어 정의.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/01-지리·지역/지역 층위 체계 및 용어 정의.md",
+      "action": "modify",
+      "drive_id": "1C7JC4rle0f8na_-kCFNVd956NfOsqSqA",
+      "drive_url": "https://drive.google.com/file/d/1C7JC4rle0f8na_-kCFNVd956NfOsqSqA/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "07 지역 5층위와 법정 행정구역 구별 명시",
+      "decisions": [
+        "P0-15",
+        "V-3.6"
+      ],
+      "before_sha256": "3fc9d3cf39516e2a78890958afe45870d5e9da0e036e0fbb66e16f220d366b5d",
+      "after_sha256": "65e1d48365dc7b7b26c678688fe97658d549557913319d9d1bef27e378542496",
+      "after_sha256_lf": "65e1d48365dc7b7b26c678688fe97658d549557913319d9d1bef27e378542496",
+      "bytes": 4584,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F17",
+      "path": "01-신계 차원/02-라리셴베르크/02-역사·시대/라리셴베르크의 시대 구분.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/02-역사·시대/라리셴베르크의 시대 구분.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/02-역사·시대/라리셴베르크의 시대 구분.md",
+      "action": "modify",
+      "drive_id": "1CYva6BFwJLfRNEShoLlTLehwidejlKnt",
+      "drive_url": "https://drive.google.com/file/d/1CYva6BFwJLfRNEShoLlTLehwidejlKnt/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "07 역사 범위·정사분기·신앙 효과 정합화",
+      "decisions": [
+        "D06",
+        "4-C",
+        "4-D",
+        "IV-7",
+        "P0-16"
+      ],
+      "before_sha256": "2f4417f77d9e41417517f633a570b317a51c43e9a558a7026dcd9269f70f383d",
+      "after_sha256": "3870cb14a12de6279a1e556146ff07a7d0f87bf8884f8f8345b41b71eef70bc7",
+      "after_sha256_lf": "3870cb14a12de6279a1e556146ff07a7d0f87bf8884f8f8345b41b71eef70bc7",
+      "bytes": 53362,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F18",
+      "path": "01-신계 차원/02-라리셴베르크/02-역사·시대/시대 세부 설정/신화 시대.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/02-역사·시대/시대 세부 설정/신화 시대.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/02-역사·시대/시대 세부 설정/신화 시대.md",
+      "action": "modify",
+      "drive_id": "1KwzwUW38F15sXqyZXKlaGy7yklHGOLwF",
+      "drive_url": "https://drive.google.com/file/d/1KwzwUW38F15sXqyZXKlaGy7yklHGOLwF/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "07 D06 초월자·신 경계와 신앙 효과 정합화",
+      "decisions": [
+        "D06"
+      ],
+      "before_sha256": "1f9e8fbcbf4d2db841fd060bd15092a9972595eeae78a790a4984ba83966fd27",
+      "after_sha256": "0e973c4c0a4dd81e00f1ba3a952e64a0cf5055f7e5ababdfc7ae529ad3f35ba8",
+      "after_sha256_lf": "0e973c4c0a4dd81e00f1ba3a952e64a0cf5055f7e5ababdfc7ae529ad3f35ba8",
+      "bytes": 6625,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F19",
+      "path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/90-개정작업·검증자료/제2차 초안/엘리시움 연방 헌법_제2차 초안 최종본_교정본.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/90-개정작업·검증자료/제2차 초안/엘리시움 연방 헌법_제2차 초안 최종본_교정본.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/90-개정작업·검증자료/제2차 초안/엘리시움 연방 헌법_제2차 초안 최종본_교정본.md",
+      "action": "modify",
+      "drive_id": "1KEXXvsE_2pDrAdiStrjp-JWBCx24L7uh",
+      "drive_url": "https://drive.google.com/file/d/1KEXXvsE_2pDrAdiStrjp-JWBCx24L7uh/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "고위능력자 정의의 차원인정 오탈자 교정만 시행",
+      "decisions": [
+        "P1-15",
+        "IV.6"
+      ],
+      "before_sha256": "b146507d9ec0799fa056840a7c4d4f950ce8287db269635f842e920228b24bd4",
+      "after_sha256": "a0755f59884ef6f607dfa1b79318ecd742787422b75929d72c1e9e179ed9d5d8",
+      "after_sha256_lf": "a0755f59884ef6f607dfa1b79318ecd742787422b75929d72c1e9e179ed9d5d8",
+      "bytes": 961837,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F20",
+      "path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/90-개정작업·검증자료/제2차 초안/엘리시움 연방 헌법_제2차 초안 최종본_교정본_풋노트반영.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/90-개정작업·검증자료/제2차 초안/엘리시움 연방 헌법_제2차 초안 최종본_교정본_풋노트반영.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/90-개정작업·검증자료/제2차 초안/엘리시움 연방 헌법_제2차 초안 최종본_교정본_풋노트반영.md",
+      "action": "modify",
+      "drive_id": "1S1_wzlP_mNPceowhSqk7WsJjI4_Cec1b",
+      "drive_url": "https://drive.google.com/file/d/1S1_wzlP_mNPceowhSqk7WsJjI4_Cec1b/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "고위능력자 정의의 차원인정 오탈자 교정; D06 초월자 풋노트 경계·교리모형 분리",
+      "decisions": [
+        "P1-15",
+        "IV.6",
+        "D06-1",
+        "D06-6"
+      ],
+      "before_sha256": "a242823ae81e7945d7251e5432e7b7947bb5798a00ba3027b14d4763f1c485ad",
+      "after_sha256": "9308e03d6f78025db9946608ef131aab9f4c1079dcc2361caaa9f67069fa81e3",
+      "after_sha256_lf": "9308e03d6f78025db9946608ef131aab9f4c1079dcc2361caaa9f67069fa81e3",
+      "bytes": 966560,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F21",
+      "path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/엘리시움 연방 헌법.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/엘리시움 연방 헌법.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/엘리시움 연방 헌법.md",
+      "action": "modify",
+      "drive_id": "15fihbJUkPwMxEKj8ZsgSvJdmMC1aCpLn",
+      "drive_url": "https://drive.google.com/file/d/15fihbJUkPwMxEKj8ZsgSvJdmMC1aCpLn/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "reference"
+      },
+      "reason": "고위능력자 정의의 차원인정 오탈자 교정만 시행",
+      "decisions": [
+        "P1-15",
+        "IV.6"
+      ],
+      "before_sha256": "faa7106a94c6e0bde287cdc4059e7aa0b40fd34d61b8f4485a62bbc0deb4750d",
+      "after_sha256": "a286463c7ce231ec7fd20bad6684d17e3115f85cd997932008908208609103dd",
+      "after_sha256_lf": "a286463c7ce231ec7fd20bad6684d17e3115f85cd997932008908208609103dd",
+      "bytes": 664956,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F22",
+      "path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/02-법률·법제/90-법제지침·참조/연방 법제 용어·약어집.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/02-법률·법제/90-법제지침·참조/연방 법제 용어·약어집.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/02-법률·법제/90-법제지침·참조/연방 법제 용어·약어집.md",
+      "action": "modify",
+      "drive_id": "1jgsgqjt5kgwXv-Msd0wORknEgOF2Hdmd",
+      "drive_url": "https://drive.google.com/file/d/1jgsgqjt5kgwXv-Msd0wORknEgOF2Hdmd/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": null,
+        "복원여부": null,
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": null,
+        "복원여부": null,
+        "문서유형": "reference"
+      },
+      "reason": "기존 법제 약어집 확장; 운영약어 원문·출처 보존",
+      "decisions": [
+        "P0-18",
+        "P0-19",
+        "P0-20",
+        "P0-21",
+        "P1-12",
+        "P1-13",
+        "P1-14",
+        "P1-15",
+        "P1-16",
+        "P1-17",
+        "P1-18",
+        "P1-19",
+        "P1-20",
+        "P1-21",
+        "V.3.9",
+        "V.3.11"
+      ],
+      "before_sha256": "37982d1b4dfe2a70eea1a8a0bdf2bfd3243d94892177c9b1c67d1798d558863d",
+      "after_sha256": "10a18cbbd16a7d0bb0a0b89e0f1d26422bd085f113c8bf2a8a3f7743596b3e8a",
+      "after_sha256_lf": "10a18cbbd16a7d0bb0a0b89e0f1d26422bd085f113c8bf2a8a3f7743596b3e8a",
+      "bytes": 42199,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F23",
+      "path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/선지자-능력주의.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/선지자-능력주의.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/선지자-능력주의.md",
+      "action": "modify",
+      "drive_id": "1c6f27yB-oFFQRnuFRTzRSm2BlOnDaLe8",
+      "drive_url": "https://drive.google.com/file/d/1c6f27yB-oFFQRnuFRTzRSm2BlOnDaLe8/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "reference"
+      },
+      "reason": "복원 인용과 07의 현행 교리 해석 분리",
+      "decisions": [
+        "D06-1",
+        "D06-3",
+        "D06-6",
+        "D06-7",
+        "VIII.1"
+      ],
+      "before_sha256": "7e8f152e3229ecce6784e4f7665a0eab77f10269b616812b2dfb02442189d71d",
+      "after_sha256": "c2780f77bfb51a3bf562d3b2e2d237967ac92ebff0afe7b675caf5077912a985",
+      "after_sha256_lf": "c2780f77bfb51a3bf562d3b2e2d237967ac92ebff0afe7b675caf5077912a985",
+      "bytes": 1564,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F24",
+      "path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/신-초월신론.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/신-초월신론.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/신-초월신론.md",
+      "action": "modify",
+      "drive_id": "1kgHWcB7Nkh49lYCjAHAD3h4R7h47nIJO",
+      "drive_url": "https://drive.google.com/file/d/1kgHWcB7Nkh49lYCjAHAD3h4R7h47nIJO/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "reference"
+      },
+      "reason": "복원 인용과 07의 현행 교리 해석 분리",
+      "decisions": [
+        "D06-1",
+        "D06-3",
+        "D06-6",
+        "D06-7",
+        "VIII.1"
+      ],
+      "before_sha256": "1f038e3dbcc9f7719edc0217e0cb44c52fd4a4789bd311fc893a085ca2c9f817",
+      "after_sha256": "5f96c6b391d1e39cbe558f67ee259815849b1cfeaf8c3b6ee06c435304a18bc0",
+      "after_sha256_lf": "5f96c6b391d1e39cbe558f67ee259815849b1cfeaf8c3b6ee06c435304a18bc0",
+      "bytes": 1530,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F25",
+      "path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/신적 존재-초월자.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/신적 존재-초월자.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/2-신앙 교리/신적 존재-초월자.md",
+      "action": "modify",
+      "drive_id": "1RdRFJpzbankCuq3GqusH-hAM_dRlAaJr",
+      "drive_url": "https://drive.google.com/file/d/1RdRFJpzbankCuq3GqusH-hAM_dRlAaJr/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "restored",
+        "복원여부": "true",
+        "문서유형": "reference"
+      },
+      "reason": "복원 인용과 07의 현행 교리 해석 분리",
+      "decisions": [
+        "D06-1",
+        "D06-3",
+        "D06-6",
+        "D06-7",
+        "VIII.1"
+      ],
+      "before_sha256": "e8ccb76d6b72cc770d3ffc38ba54cbee6016da532f4d664c0ed08a1fb53469dc",
+      "after_sha256": "a23b88b2447da78fc4199fc0dd32c1a8a421a4632963c2d5aaad83ae36ce2ed1",
+      "after_sha256_lf": "a23b88b2447da78fc4199fc0dd32c1a8a421a4632963c2d5aaad83ae36ce2ed1",
+      "bytes": 1618,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F26",
+      "path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (상세 레퍼런스 완결판).md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (상세 레퍼런스 완결판).md",
+      "current_path": "01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (상세 레퍼런스 완결판).md",
+      "action": "modify",
+      "drive_id": "1CuoT46P_FBPPFd5FF8xQvgVl84LQl91v",
+      "drive_url": "https://drive.google.com/file/d/1CuoT46P_FBPPFd5FF8xQvgVl84LQl91v/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": null,
+        "복원여부": null,
+        "문서유형": "reference"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": null,
+        "복원여부": null,
+        "문서유형": "reference"
+      },
+      "reason": "활성 교리 선택자에서 신의 부정 및 비인간 경로 보편화 방지",
+      "decisions": [
+        "D06-6",
+        "D06-7",
+        "VIII.1"
+      ],
+      "before_sha256": "dc8ce3346d1808fc6613e7319229bc8ef45c077faaf3a029bb4f08835e9c93f5",
+      "after_sha256": "ec975d522377bef727e42262a2cb02df976cd3e33d9e05b7debf49c8139a57e7",
+      "after_sha256_lf": "ec975d522377bef727e42262a2cb02df976cd3e33d9e05b7debf49c8139a57e7",
+      "bytes": 36168,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F27",
+      "path": "01-신계 차원/02-라리셴베르크/06-언어·문자/엘루닉어/index.md",
+      "previous_path": null,
+      "current_path": "01-신계 차원/02-라리셴베르크/06-언어·문자/엘루닉어/index.md",
+      "action": "add",
+      "drive_id": "1wLwJ4Yobc-BODOcXcKYPhZvcx-WptR7o",
+      "drive_url": "https://drive.google.com/file/d/1wLwJ4Yobc-BODOcXcKYPhZvcx-WptR7o/view?usp=drivesdk",
+      "metadata_before": null,
+      "metadata_after": {
+        "정본상태": "canon",
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "index"
+      },
+      "reason": "기존 폴더 index 부재; 언어·문자 두 정의와 미작성/사료/폰트 구현자료 연결",
+      "decisions": [
+        "P0-17",
+        "V-3.8"
+      ],
+      "before_sha256": null,
+      "after_sha256": "86a210196d0079581361c690b6186d7a0b0dad8134c427b605c2030eff0c0ccf",
+      "after_sha256_lf": "86a210196d0079581361c690b6186d7a0b0dad8134c427b605c2030eff0c0ccf",
+      "bytes": 2030,
+      "drive_readback_match": true
+    },
+    {
+      "id": "F28",
+      "path": "01-신계 차원/02-라리셴베르크/07-경제·산업·자원/자원/자원 개요 모음.md",
+      "previous_path": "01-신계 차원/02-라리셴베르크/07-경제·산업·자원/자원/자원 개요 모음.md",
+      "current_path": "01-신계 차원/02-라리셴베르크/07-경제·산업·자원/자원/자원 개요 모음.md",
+      "action": "modify",
+      "drive_id": "1OuAN94Kioub9DzMx9quJ4m7B2lB9B9G2",
+      "drive_url": "https://drive.google.com/file/d/1OuAN94Kioub9DzMx9quJ4m7B2lB9B9G2/view?usp=drivesdk",
+      "metadata_before": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "entity"
+      },
+      "metadata_after": {
+        "정본상태": null,
+        "기원상태": "original",
+        "복원여부": "false",
+        "문서유형": "entity"
+      },
+      "reason": "기존 자원 색인 재사용·에너지 상위개념 연결·후반 가칭/외부참고/등급 HOLD 명시",
+      "decisions": [
+        "V.3.10",
+        "VI.7",
+        "D04"
+      ],
+      "before_sha256": "acb9606aaf38e21ede026a8094b787107e7c251ca85ffee2e1485a2e6b53f560",
+      "after_sha256": "b6be6736738f661557449e5f33521be7a3ff28ea7d4cb0b36b14bea0e3446ef2",
+      "after_sha256_lf": "b6be6736738f661557449e5f33521be7a3ff28ea7d4cb0b36b14bea0e3446ef2",
+      "bytes": 14978,
+      "drive_readback_match": true
+    }
+  ],
+  "phase_hashes_superseded": [
+    {
+      "path": "00-세계관 공통설정/00-세계관 통합 용어집_확정개념반영.md",
+      "phase_hash": "0c38ac208f79c5aba62bf8a0acb4324ffaafb6bf1c5ac175975b386863422a85",
+      "final_hash": "3a6d34e6b9fcd12c5ceab88c8e43593502df101500e6f26995985a5da868f75d",
+      "reason": "담당 단계 이후 최종 QA 보완; 이 종합 대장과 Drive 재독출 값이 최종값"
+    }
+  ],
+  "sources": [
+    {
+      "path": "90-볼트 운영/03-작업계획·감사보고/통합 용어집 개편/Work_실행지시문_통합용어집_정본반영_2026-10-01.md",
+      "sha256": "3044d2572ec797f1fc8b6fa007aec7e1258abe06cdd9a35f532a33d013c0da26",
+      "unchanged": true
+    },
+    {
+      "path": "90-볼트 운영/03-작업계획·감사보고/통합 용어집 개편/Work_작업계획서_통합용어집_정본반영_2026-10-01.md",
+      "sha256": "be5e0ddf737e84963e152db104182e6b860f7a1ca810f5a7fb8e45f1dd787cf7",
+      "unchanged": true
+    },
+    {
+      "path": "90-볼트 운영/03-작업계획·감사보고/통합 용어집 개편/세계관_통합_용어집_최종_정합성_감사보고서_07_2026-10-01.md",
+      "sha256": "6eebf979ae4cab4a8dde93cd343e161e5172665688b98e6b0a5f6dbdaf0fdbc4",
+      "unchanged": true
+    },
+    {
+      "path": "90-볼트 운영/03-작업계획·감사보고/통합 용어집 개편/세계관_통합_용어집_확장_결정_마스터_07_최종감사통과_2026-10-01.md",
+      "sha256": "15f7f47bb26f5c8b1d6805048a202005ab42040f7735cb1b9938cc1e271e1df7",
+      "unchanged": true
+    }
+  ]
+}

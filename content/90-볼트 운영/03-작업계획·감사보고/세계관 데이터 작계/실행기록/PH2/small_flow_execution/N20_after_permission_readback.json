@@ -1,0 +1,463 @@
+{
+  "checked_at": "2026-10-02T09:30:16.792Z",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo/edit",
+      "properties": {
+        "title": "TEST-N20 · 소형 연결시험 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 71004001,
+            "title": "01_설정",
+            "index": 1,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 19,
+              "startColumn": 5,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "person_id|name_ko|name_elun|name_other|birth_era|birth_year|birth_month|birth_day|death_era|death_year|death_month|death_day|person_classification_raw|person_description_raw|인물 상태|setting_status|source_id|source_locator|note|legacy_locator|source_snapshot_id|schema_version|release_id|value_status|generation_method|adoption_status|birth_precision|death_precision|calendar_revision|validation_status|connection_status",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_PERSON!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_PERSON!A3:AE3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "person_id|name_ko|name_elun|name_other|birth_era|birth_year|birth_month|birth_day|death_era|death_year|death_month|death_day|person_classification_raw|person_description_raw|인물 상태|setting_status|source_id|source_locator|note|legacy_locator|source_snapshot_id|schema_version|release_id|value_status|generation_method|adoption_status|birth_precision|death_precision|calendar_revision|validation_status|connection_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_PERSON!A3),IF(N20=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F20<>E20,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_PERSON!A3),\"메타 연결실패\",IF(RMETA_PERSON!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_PERSON!C4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",COUNTIF(REF_PERSON!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H20)),NOT(ISNUMBER(I20))),\"미확인\",IF(H20=I20,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_PERSON!A3),\"미확인\",RMETA_PERSON!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "판본 일치",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",IF(L20=K20,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "판본 일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "승인 대기",
+                      "userEnteredValue": {
+                        "stringValue": "승인 대기"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "승인 대기"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71004004,
+            "title": "VIEW_OFFICE_TERM",
+            "index": 4,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 3,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "시험 인물",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF(COUNTIFS(REF_PERSON!$A$4:$A$13,IN_OFFICE_TERM!F4)<>1,\"키 없음·중복\",INDEX(REF_PERSON!$B$4:$B$13,MATCH(IN_OFFICE_TERM!F4,REF_PERSON!$A$4:$A$13,0)))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시험 인물"
+                      }
+                    },
+                    {
+                      "formattedValue": "101",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF(IN_OFFICE_TERM!H4=\"\",\"\",IN_OFFICE_TERM!H4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 101
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "1000101",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF(AND(ISNUMBER(IN_OFFICE_TERM!G4),ISNUMBER(IN_OFFICE_TERM!S4),ISNUMBER(IN_OFFICE_TERM!T4)),IN_OFFICE_TERM!G4*10000+IN_OFFICE_TERM!S4*100+IN_OFFICE_TERM!T4,\"정밀도 부족\"))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1000101
+                      }
+                    },
+                    {
+                      "formattedValue": "1010101",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF(AND(ISNUMBER(IN_OFFICE_TERM!H4),ISNUMBER(IN_OFFICE_TERM!U4),ISNUMBER(IN_OFFICE_TERM!V4)),IN_OFFICE_TERM!H4*10000+IN_OFFICE_TERM!U4*100+IN_OFFICE_TERM!V4,\"정밀도 부족\"))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 1010101
+                      }
+                    },
+                    {
+                      "formattedValue": "시험 공직",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF(COUNTIFS(IN_OFFICE!$A$4:$A$13,IN_OFFICE_TERM!E4)<>1,\"키 없음·중복\",INDEX(IN_OFFICE!$B$4:$B$13,MATCH(IN_OFFICE_TERM!E4,IN_OFFICE!$A$4:$A$13,0))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시험 공직"
+                      }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                      "formattedValue": "TEST-TERM-001",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF(IN_OFFICE_TERM!A4=\"\",\"\",IN_OFFICE_TERM!A4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-TERM-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-TERM-001",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF(IN_OFFICE_TERM!A4=\"\",\"\",IN_OFFICE_TERM!A4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-TERM-001"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "연결확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",'01_설정'!G20)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "PH2-SMALL-FLOW-1",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF(IN_OFFICE_TERM!AA4=\"\",\"\",IN_OFFICE_TERM!AA4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PH2-SMALL-FLOW-1"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A4=\"\",\"\",IF(IN_OFFICE_TERM!AB4=\"\",\"\",IN_OFFICE_TERM!AB4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF(COUNTIFS(REF_PERSON!$A$4:$A$13,IN_OFFICE_TERM!F5)<>1,\"키 없음·중복\",INDEX(REF_PERSON!$B$4:$B$13,MATCH(IN_OFFICE_TERM!F5,REF_PERSON!$A$4:$A$13,0)))))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF(IN_OFFICE_TERM!H5=\"\",\"\",IN_OFFICE_TERM!H5))"
+                      }
+                    },
+                    {},
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF(AND(ISNUMBER(IN_OFFICE_TERM!G5),ISNUMBER(IN_OFFICE_TERM!S5),ISNUMBER(IN_OFFICE_TERM!T5)),IN_OFFICE_TERM!G5*10000+IN_OFFICE_TERM!S5*100+IN_OFFICE_TERM!T5,\"정밀도 부족\"))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF(AND(ISNUMBER(IN_OFFICE_TERM!H5),ISNUMBER(IN_OFFICE_TERM!U5),ISNUMBER(IN_OFFICE_TERM!V5)),IN_OFFICE_TERM!H5*10000+IN_OFFICE_TERM!U5*100+IN_OFFICE_TERM!V5,\"정밀도 부족\"))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF(COUNTIFS(IN_OFFICE!$A$4:$A$13,IN_OFFICE_TERM!E5)<>1,\"키 없음·중복\",INDEX(IN_OFFICE!$B$4:$B$13,MATCH(IN_OFFICE_TERM!E5,IN_OFFICE!$A$4:$A$13,0))))"
+                      }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF(IN_OFFICE_TERM!A5=\"\",\"\",IN_OFFICE_TERM!A5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF(IN_OFFICE_TERM!A5=\"\",\"\",IN_OFFICE_TERM!A5))"
+                      }
+                    },
+                    {},
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",'01_설정'!G20)"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF(IN_OFFICE_TERM!AA5=\"\",\"\",IN_OFFICE_TERM!AA5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_OFFICE_TERM!A5=\"\",\"\",IF(IN_OFFICE_TERM!AB5=\"\",\"\",IN_OFFICE_TERM!AB5))"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71004011,
+            "title": "REF_PERSON",
+            "index": 11,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "person_id",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C20,'01_설정'!D20)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "person_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "name_ko",
+                      "effectiveValue": {
+                        "stringValue": "name_ko"
+                      }
+                    },
+                    {
+                      "formattedValue": "name_elun",
+                      "effectiveValue": {
+                        "stringValue": "name_elun"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "TEST-PERSON-001",
+                      "effectiveValue": {
+                        "stringValue": "TEST-PERSON-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "시험 인물",
+                      "effectiveValue": {
+                        "stringValue": "시험 인물"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71004012,
+            "title": "RMETA_PERSON",
+            "index": 12,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "dataset_id",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C20,\"META_PUB_PERSON_V2\")"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "dataset_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_revision",
+                      "effectiveValue": {
+                        "stringValue": "source_revision"
+                      }
+                    },
+                    {
+                      "formattedValue": "record_count",
+                      "effectiveValue": {
+                        "stringValue": "record_count"
+                      }
+                    },
+                    {
+                      "formattedValue": "schema_signature",
+                      "effectiveValue": {
+                        "stringValue": "schema_signature"
+                      }
+                    },
+                    {
+                      "formattedValue": "run_id",
+                      "effectiveValue": {
+                        "stringValue": "run_id"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "PUB_PERSON_V2",
+                      "effectiveValue": {
+                        "stringValue": "PUB_PERSON_V2"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "1",
+                      "effectiveValue": {
+                        "numberValue": 1
+                      }
+                    },
+                    {
+                      "formattedValue": "person_id|name_ko|name_elun|name_other|birth_era|birth_year|birth_month|birth_day|death_era|death_year|death_month|death_day|person_classification_raw|person_description_raw|인물 상태|setting_status|source_id|source_locator|note|legacy_locator|source_snapshot_id|schema_version|release_id|value_status|generation_method|adoption_status|birth_precision|death_precision|calendar_revision|validation_status|connection_status",
+                      "effectiveValue": {
+                        "stringValue": "person_id|name_ko|name_elun|name_other|birth_era|birth_year|birth_month|birth_day|death_era|death_year|death_month|death_day|person_classification_raw|person_description_raw|인물 상태|setting_status|source_id|source_locator|note|legacy_locator|source_snapshot_id|schema_version|release_id|value_status|generation_method|adoption_status|birth_precision|death_precision|calendar_revision|validation_status|connection_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

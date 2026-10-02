@@ -1,0 +1,394 @@
+{
+  "generated_at": "2026-10-02T09:31:18.594295+00:00",
+  "run_id": "TEST-SF-20261002-01",
+  "status": "요청 생성 · 온라인 미실행",
+  "allowlisted_test_ids": {
+    "C00": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY",
+    "R10": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+    "R20": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+    "N30": "1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww",
+    "N20": "16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo",
+    "H90": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY"
+  },
+  "operating_file_ids_excluded": true,
+  "source_layout_sha256": "15bfbe163b3d00dc1a56632d2e31602a9897e263f8238e710c3bf93e3342c149",
+  "initial_inventory_sha256": {
+    "C00": "7f6c7a464acbf12a2fab61d687c6a405e6710e65f3079c4d658bb54e3583eab7",
+    "R10": "b85e5b43cc05c1c268a9a5c7de8f507f707f3d5e7a332653b6cd74af218055b1",
+    "R20": "43ec2fdc92d0ebd51f5c687ee20d5997c70c91f418a009a6203e40b64276300d",
+    "N30": "647659b104e97c5a1984f314f4eb216057540dd12aa6363eca4f618108bd92a3",
+    "N20": "f0d66410242e45208070811c7ad2a7f04dc56968866d81c2187954bef8f0486f",
+    "H90": "e1a634fd0e8662957da2e748575d3cd4e387c4ba3fddf117c3a8b805c36afed6"
+  },
+  "source_value_status_evidence": {
+    "source_field_id": "REG-V1:456698286:D",
+    "source_sheet_name": "20 인구",
+    "source_column": "D",
+    "options_raw": [
+      "값 있음",
+      "추정",
+      "미정",
+      "미상",
+      "해당 없음"
+    ],
+    "validation_raw": {
+      "condition": {
+        "type": "ONE_OF_LIST",
+        "values": [
+          {
+            "userEnteredValue": "값 있음"
+          },
+          {
+            "userEnteredValue": "추정"
+          },
+          {
+            "userEnteredValue": "미정"
+          },
+          {
+            "userEnteredValue": "미상"
+          },
+          {
+            "userEnteredValue": "해당 없음"
+          }
+        ]
+      },
+      "strict": true,
+      "showCustomUi": true
+    },
+    "observed_native_cells": [
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8"
+    ],
+    "classification": "source_validation_configuration_not_codebook_fact",
+    "adoption_status": "미채택",
+    "destination_field_contracts": [
+      {
+        "file_code": "R20",
+        "table": "인구관측",
+        "field": "value_status",
+        "role": "input",
+        "row_condition": "all source records",
+        "rule": "all source records",
+        "data_type": "C00_code_nullable; unknown original retained",
+        "reference": ""
+      }
+    ]
+  },
+  "value_status_adoption": "TEST 코드북에만 원문 옵션 사용. 운영 V2 코드북 확정 아님.",
+  "files": {
+    "C00": {
+      "spreadsheet_id": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY",
+      "url": "https://docs.google.com/spreadsheets/d/1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71000000,
+        "01_설정": 71000001,
+        "IN_기준개정이력": 71000002,
+        "IN_공통기준": 71000003,
+        "IN_코드북": 71000004,
+        "PUB_STANDARDS": 71000005,
+        "PUB_CODEBOOK": 71000006,
+        "VALID_자료": 71000007,
+        "VIEW_소형흐름": 71000008,
+        "META_STANDARDS": 71000009,
+        "META_CODEBOOK": 71000010
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\C00_00_structure.json",
+          "requests": 22,
+          "status": "미실행"
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\C00_01_headers_config_fixtures.json",
+          "requests": 61,
+          "status": "미실행"
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\C00_02_sample_formulas.json",
+          "requests": 7,
+          "status": "미실행"
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\C00_03_fill_capacity.json",
+          "requests": 2,
+          "status": "미실행"
+        }
+      }
+    },
+    "R10": {
+      "spreadsheet_id": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+      "url": "https://docs.google.com/spreadsheets/d/1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71001000,
+        "01_설정": 71001001,
+        "IN_지역목록": 71001002,
+        "VIEW_지역목록_조회계산": 71001003,
+        "PUB_REGIONS": 71001004,
+        "VALID_자료": 71001005,
+        "VIEW_소형흐름": 71001006,
+        "META_REGIONS": 71001007,
+        "REF_CODEBOOK": 71001008,
+        "RMETA_CODEBOOK": 71001009
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R10_00_structure.json",
+          "requests": 21,
+          "status": "미실행"
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R10_01_headers_config_fixtures.json",
+          "requests": 51,
+          "status": "미실행"
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R10_02_sample_formulas.json",
+          "requests": 8,
+          "status": "미실행"
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R10_03_fill_capacity.json",
+          "requests": 2,
+          "status": "미실행"
+        }
+      }
+    },
+    "R20": {
+      "spreadsheet_id": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+      "url": "https://docs.google.com/spreadsheets/d/1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71002000,
+        "01_설정": 71002001,
+        "IN_인구관측": 71002002,
+        "VIEW_인구관측_조회계산": 71002003,
+        "PUB_POPULATION": 71002004,
+        "VALID_자료": 71002005,
+        "VIEW_소형흐름": 71002006,
+        "META_POPULATION": 71002007,
+        "REF_CODEBOOK": 71002008,
+        "RMETA_CODEBOOK": 71002009,
+        "REF_REGIONS": 71002010,
+        "RMETA_REGIONS": 71002011
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R20_00_structure.json",
+          "requests": 23,
+          "status": "미실행"
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R20_01_headers_config_fixtures.json",
+          "requests": 61,
+          "status": "미실행"
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R20_02_sample_formulas.json",
+          "requests": 10,
+          "status": "미실행"
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R20_03_fill_capacity.json",
+          "requests": 2,
+          "status": "미실행"
+        }
+      }
+    },
+    "N30": {
+      "spreadsheet_id": "1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww",
+      "url": "https://docs.google.com/spreadsheets/d/1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71003000,
+        "01_설정": 71003001,
+        "IN_PERSON": 71003002,
+        "PUB_PERSON": 71003003,
+        "VALID_자료": 71003004,
+        "VIEW_소형흐름": 71003005,
+        "META_PERSON": 71003006
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N30_00_structure.json",
+          "requests": 18,
+          "status": "미실행"
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N30_01_headers_config_fixtures.json",
+          "requests": 35,
+          "status": "미실행"
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N30_02_sample_formulas.json",
+          "requests": 3,
+          "status": "미실행"
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N30_03_fill_capacity.json",
+          "requests": 1,
+          "status": "미실행"
+        }
+      }
+    },
+    "N20": {
+      "spreadsheet_id": "16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo",
+      "url": "https://docs.google.com/spreadsheets/d/16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71004000,
+        "01_설정": 71004001,
+        "IN_OFFICE": 71004002,
+        "IN_OFFICE_TERM": 71004003,
+        "VIEW_OFFICE_TERM": 71004004,
+        "PUB_OFFICE": 71004005,
+        "PUB_OFFICE_TERM": 71004006,
+        "VALID_자료": 71004007,
+        "VIEW_소형흐름": 71004008,
+        "META_OFFICE": 71004009,
+        "META_OFFICE_TERM": 71004010,
+        "REF_PERSON": 71004011,
+        "RMETA_PERSON": 71004012
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N20_00_structure.json",
+          "requests": 24,
+          "status": "미실행"
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N20_01_headers_config_fixtures.json",
+          "requests": 69,
+          "status": "미실행"
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N20_02_sample_formulas.json",
+          "requests": 10,
+          "status": "미실행"
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N20_03_fill_capacity.json",
+          "requests": 3,
+          "status": "미실행"
+        }
+      }
+    },
+    "H90": {
+      "spreadsheet_id": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "url": "https://docs.google.com/spreadsheets/d/1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71005000,
+        "01_설정": 71005001,
+        "CONFIG_조회조건": 71005002,
+        "VIEW_황제재위결합": 71005003,
+        "CHECK_검사결과": 71005004,
+        "CHECK_연결상태": 71005005,
+        "VALID_자료": 71005006,
+        "VIEW_소형흐름": 71005007,
+        "REF_POPULATION": 71005008,
+        "RMETA_POPULATION": 71005009,
+        "REF_PERSON": 71005010,
+        "RMETA_PERSON": 71005011,
+        "REF_OFFICE_TERM": 71005012,
+        "RMETA_OFFICE_TERM": 71005013,
+        "REF_CODEBOOK": 71005014,
+        "RMETA_CODEBOOK": 71005015
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\H90_00_structure.json",
+          "requests": 27,
+          "status": "미실행"
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\H90_01_headers_config_fixtures.json",
+          "requests": 82,
+          "status": "미실행"
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\H90_02_sample_formulas.json",
+          "requests": 14,
+          "status": "미실행"
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\H90_03_fill_capacity.json",
+          "requests": 0,
+          "status": "미실행"
+        }
+      }
+    }
+  },
+  "edges": [
+    {
+      "provider": "TEST-C00",
+      "consumer": "TEST-R10",
+      "dataset_id": "PUB_CODEBOOK_V2"
+    },
+    {
+      "provider": "TEST-C00",
+      "consumer": "TEST-R20",
+      "dataset_id": "PUB_CODEBOOK_V2"
+    },
+    {
+      "provider": "TEST-R10",
+      "consumer": "TEST-R20",
+      "dataset_id": "PUB_REGIONS_V2"
+    },
+    {
+      "provider": "TEST-N30",
+      "consumer": "TEST-N20",
+      "dataset_id": "PUB_PERSON_V2"
+    },
+    {
+      "provider": "TEST-R20",
+      "consumer": "TEST-H90",
+      "dataset_id": "PUB_POPULATION_V2"
+    },
+    {
+      "provider": "TEST-N30",
+      "consumer": "TEST-H90",
+      "dataset_id": "PUB_PERSON_V2"
+    },
+    {
+      "provider": "TEST-N20",
+      "consumer": "TEST-H90",
+      "dataset_id": "PUB_OFFICE_TERM_V2"
+    },
+    {
+      "provider": "TEST-C00",
+      "consumer": "TEST-H90",
+      "dataset_id": "PUB_CODEBOOK_V2"
+    }
+  ],
+  "all_case_results": "미실행",
+  "preflight_required": [
+    "실행 직전 실제 파일 ID·title TEST-prefix·sheet IDs가 저장된 inventory와 같은지 읽기",
+    "구조요청은 최초 1회만. 적용후 재실행 금지; 실제 metadata에서 진행상태 판정",
+    "기존 8탭 삭제는 각 test_initial ID에만 적용. 운영·V1·다른 파일 대상 금지",
+    "원자료 변경·비우기 전 get_cells로 백업. 이전 값을 복원할 수 있어야 함.",
+    "02 첫행 결과·권한·원오류 검증 후에만 03 용량 수식 확장",
+    "전수 native readback+UI 전에는 통과 판정 금지"
+  ],
+  "formula_notes": [
+    "year*10000+month*100+day는 TEST-ERA에서만 정렬키. 날짜serial·일수환산 아님.",
+    "날짜정보 부족은 정밀도 부족. 열린 끝을 임의 infinity로 만들지 않음.",
+    "CHECK 표는 운영 계산의 원본이 아니다. 수신가드는 01_설정/REF에서 직접 관측.",
+    "원본 판본은 명시적 변경 묶음으로 갱신. NOW 값으로 수신성공을 주장하지 않음."
+  ],
+  "case_step_files": [
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF01_SF02_initial.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF02_end_exclusive.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF02_restore_point.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF03_change.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF04_numeric_zero.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF04_empty.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF04_connection_failure.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF04_restore.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF05_header_drift.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF05_restore.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF06_append_boundary.json",
+    "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\SF06_expand_all_ranges.json"
+  ],
+  "test_result_rule": "실제 결과/권한/원본판본/읽기시각/경과시간/API및UI증거를 모두 기록하기 전에는 미실행 유지. 수식문자열 정적검사는 case 통과 아님."
+}

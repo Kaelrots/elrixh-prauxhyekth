@@ -1,0 +1,412 @@
+{
+  "step_id": "SF_final_restore",
+  "status": "요청 생성 · 미실행",
+  "scope": "TEST 6파일 중 변경된4파일만",
+  "expected": {
+    "population": 100,
+    "population_records": 1,
+    "person_name": "시험 인물",
+    "point_active": true,
+    "boundary_source_row14_empty": true,
+    "capacity": 11
+  },
+  "retained": "검증된확장capacity11/named range 끝14는유지. 합성추가자료행14만제거.",
+  "writes": [
+    {
+      "file_code": "TEST-R20",
+      "spreadsheet_id": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71002002,
+              "startRowIndex": 3,
+              "endRowIndex": 4,
+              "startColumnIndex": 0,
+              "endColumnIndex": 48
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-REGION-001"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-ERA 100"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "값 있음"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "numberValue": 100
+                    }
+                  },
+                  {},
+                  {},
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "SF-01 동일조건 인구"
+                    }
+                  },
+                  {},
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "초안"
+                    }
+                  },
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "합성 기술 시험값. 운영 파일에 이관 금지."
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-POP-001"
+                    }
+                  },
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-A"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-ERA"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "numberValue": 100
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "boolValue": true
+                    }
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-SF-20261002-01"
+                    }
+                  },
+                  {},
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-SF-20261002-01"
+                    }
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71002002,
+              "startRowIndex": 13,
+              "endRowIndex": 14,
+              "startColumnIndex": 0,
+              "endColumnIndex": 48
+            },
+            "rows": [
+              {
+                "values": [
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71002001,
+              "startRowIndex": 5,
+              "endRowIndex": 6,
+              "startColumnIndex": 1,
+              "endColumnIndex": 2
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.7"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    },
+    {
+      "file_code": "TEST-N30",
+      "spreadsheet_id": "1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71003002,
+              "startRowIndex": 3,
+              "endRowIndex": 4,
+              "startColumnIndex": 1,
+              "endColumnIndex": 2
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "시험 인물"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71003001,
+              "startRowIndex": 5,
+              "endRowIndex": 6,
+              "startColumnIndex": 1,
+              "endColumnIndex": 2
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.3"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    },
+    {
+      "file_code": "TEST-N20",
+      "spreadsheet_id": "16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71004001,
+              "startRowIndex": 5,
+              "endRowIndex": 6,
+              "startColumnIndex": 1,
+              "endColumnIndex": 2
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.3"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71004001,
+              "startRowIndex": 19,
+              "endRowIndex": 20,
+              "startColumnIndex": 10,
+              "endColumnIndex": 11
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.3"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    },
+    {
+      "file_code": "TEST-H90",
+      "spreadsheet_id": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71005001,
+              "startRowIndex": 19,
+              "endRowIndex": 20,
+              "startColumnIndex": 10,
+              "endColumnIndex": 11
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.7"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71005001,
+              "startRowIndex": 20,
+              "endRowIndex": 21,
+              "startColumnIndex": 10,
+              "endColumnIndex": 11
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.3"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        },
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71005001,
+              "startRowIndex": 21,
+              "endRowIndex": 22,
+              "startColumnIndex": 10,
+              "endColumnIndex": 11
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST.REV.3"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    }
+  ]
+}

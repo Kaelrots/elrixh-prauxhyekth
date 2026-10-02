@@ -1,0 +1,61 @@
+{
+  "analysis_status": "전수 관측 완료 · 필드 대응 초안 · PH1 완료 아님",
+  "counts": {
+    "tabs": 87,
+    "fields": 1539,
+    "literal_cells": 77435,
+    "formula_cells": 517088,
+    "false_cells": 4498,
+    "nonempty_formula_caches": 15851,
+    "header_or_query_controls": 96,
+    "literal_input_candidate_with_id": 311,
+    "formula_only_not_input_fact": 103762,
+    "ordering_only_review_not_fact": 9,
+    "literal_input_candidate_without_id_review": 315,
+    "derived_or_configuration_literal_review": 19465,
+    "default_false_only_not_fact": 3990,
+    "empty_literal_review": 866
+  },
+  "formula_pattern_count": 10889,
+  "field_mapping_rows": 1539,
+  "target_fields_decided": 0,
+  "migration_completed": 0,
+  "observed_tabs_missing_mapping": 0,
+  "limitations": [
+    "숫자 값은 XLSX XML 원문 숫자 문자열로 보존하여 부동소수점 변환하지 않음",
+    "수식 캐시는 입력 사실이 아니며 online 재계산 검증 증거가 아님",
+    "수식 패턴은 진단용 정규식 근사 군집이며 실행식으로 사용 금지",
+    "FALSE 단독 행은 원문을 보존하되 실제 사실 건수에서 제외; 참인 행과 비FALSE 불완전행은 별도 후보",
+    "행 분류는 인벤토리 초안이며 의미 판정·중복 병합·정본 채택을 수행하지 않음",
+    "네이티브 note/validation은 PH0에 확보된 헤더 및 bounded 실제 입력 후보 관측 범위; XLSX의 notes/validation은 전체 XML 관측",
+    "헤더 없는 spill/import 열과 특수 조회행은 원문 보존 후 검토 필요"
+  ],
+  "remaining_gates": [
+    "각 실제 필드의 V2 운영 target_table/target_field 결정 및 원문보존 처리 승인 규칙",
+    "불완전 입력행 및 기본값·도움목록·설정행 의미 분류",
+    "병합·분리·중복 후보 레코드 원본별 대조",
+    "수식·조회·검증의 V2 기능 대응 및 온라인 시험",
+    "드롭다운 칩·권한·완전 네이티브 요소의 온라인 범위 점검"
+  ],
+  "outputs": [
+    "sheet_inventory.json",
+    "actual_field_mapping_draft.csv",
+    "source_row_inventory.csv",
+    "literal_cells.csv",
+    "formula_nonempty_cache_observations.csv",
+    "formula_patterns_and_dependencies.json",
+    "headers_notes_links_validations.json",
+    "bounded_native_reads.json",
+    "canonical_start_fingerprints.json"
+  ],
+  "local_inventory_integrity_checks": {
+    "tab_count_matches_mapping": true,
+    "field_rows_match_count": true,
+    "formula_patterns_cover_every_formula": true,
+    "sheet_literal_totals_match": true,
+    "all_sheet_titles_have_mapping": true,
+    "migration_completed_is_zero": true,
+    "target_fields_decided_is_zero": true
+  },
+  "not_project_acceptance_test_results": true
+}

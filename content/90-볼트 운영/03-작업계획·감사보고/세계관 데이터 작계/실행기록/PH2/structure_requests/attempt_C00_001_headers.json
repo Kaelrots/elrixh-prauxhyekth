@@ -1,0 +1,72 @@
+{
+  "request_indexes": [
+    6,
+    15
+  ],
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+      "replies": [
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1082241447,
+              "title": "01_설정",
+              "index": 37,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 100,
+                "columnCount": 20
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {
+          "addSheet": {
+            "properties": {
+              "sheetId": 1240558339,
+              "title": "IN_기준개정이력",
+              "index": 38,
+              "sheetType": "GRID",
+              "gridProperties": {
+                "rowCount": 253,
+                "columnCount": 27,
+                "frozenRowCount": 3,
+                "frozenColumnCount": 1
+              }
+            }
+          }
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "addNamedRange": {
+            "namedRange": {
+              "namedRangeId": "480019440",
+              "name": "T_C00_6ecd6e8188f7",
+              "range": {
+                "sheetId": 1240558339,
+                "startRowIndex": 2,
+                "endRowIndex": 203,
+                "startColumnIndex": 0,
+                "endColumnIndex": 27
+              }
+            }
+          }
+        }
+      ],
+      "updatedSpreadsheet": null
+    },
+    "isError": false
+  }
+}

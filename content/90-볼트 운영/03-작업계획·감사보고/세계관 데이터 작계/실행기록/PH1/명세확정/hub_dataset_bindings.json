@@ -1,0 +1,3775 @@
+{
+  "project": "세계관 데이터 V2",
+  "status": "PH1 제공 명칭 대응 명세 · 실제 온라인 시험 미실행",
+  "binding_source": "common_hub_function_spec.json functions[].required_datasets",
+  "registry_sources": [
+    "common_hub_schema.json export_contracts",
+    "region_schema.json providers",
+    "nation_schema.json provider_contracts",
+    "change_feed_contracts.json contracts",
+    "cross_domain_contract_extensions.json provider_contracts"
+  ],
+  "bindings": [
+    {
+      "function_id": "C-01",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.기준개정이력",
+      "provider_bindings": [],
+      "local_tables": [
+        "기준개정이력"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-009",
+        "T-010",
+        "T-012",
+        "T-013",
+        "T-014"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-01",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.설정출처대응",
+      "provider_bindings": [],
+      "local_tables": [
+        "설정출처대응"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-009",
+        "T-010",
+        "T-012",
+        "T-013",
+        "T-014"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-02",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.문화분류",
+      "provider_bindings": [],
+      "local_tables": [
+        "문화분류"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-014",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-049"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-02",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.종교분류",
+      "provider_bindings": [],
+      "local_tables": [
+        "종교분류"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-014",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-049"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-02",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.언어분류",
+      "provider_bindings": [],
+      "local_tables": [
+        "언어분류"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-014",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-049"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-02",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.집단분류",
+      "provider_bindings": [],
+      "local_tables": [
+        "집단분류"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-014",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-049"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-02",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.자원분류",
+      "provider_bindings": [],
+      "local_tables": [
+        "자원분류"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-014",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-049"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-02",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.특성사전",
+      "provider_bindings": [],
+      "local_tables": [
+        "특성사전"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-014",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-049"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-02",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.지표사전",
+      "provider_bindings": [],
+      "local_tables": [
+        "지표사전"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-014",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-049"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-03",
+      "consumer_file_code": "C00",
+      "requested_dataset": "REG 90 출처",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-010",
+        "T-012",
+        "T-013"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음."
+    },
+    {
+      "function_id": "C-03",
+      "consumer_file_code": "C00",
+      "requested_dataset": "NAT 90_출처_레지스트리",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-010",
+        "T-012",
+        "T-013"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음."
+    },
+    {
+      "function_id": "C-04",
+      "consumer_file_code": "C00",
+      "requested_dataset": "REG 02 국가 마스터",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-015",
+        "T-036"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음."
+    },
+    {
+      "function_id": "C-04",
+      "consumer_file_code": "C00",
+      "requested_dataset": "N10.국가기본",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-015",
+        "T-036"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음.",
+      "comparison_reference_providers": [
+        {
+          "owner": "N10",
+          "provider_id": "PUB_NATION_V2",
+          "source_tables": [
+            "IN_NATION",
+            "CALC_NATION"
+          ],
+          "primary_key": [
+            "nation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_V2",
+          "table_id": "PUB_NATION_V2",
+          "owner_file_code": "N10"
+        }
+      ]
+    },
+    {
+      "function_id": "C-04",
+      "consumer_file_code": "C00",
+      "requested_dataset": "N10.국호이력",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-004",
+        "T-009",
+        "T-015",
+        "T-036"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음.",
+      "comparison_reference_providers": [
+        {
+          "owner": "N10",
+          "provider_id": "PUB_NATION_NAME_HISTORY_V2",
+          "source_tables": [
+            "IN_NATION_NAME_HISTORY",
+            "CALC_NATION_NAME_HISTORY"
+          ],
+          "primary_key": [
+            "name_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_NAME_HISTORY_V2",
+          "table_id": "PUB_NATION_NAME_HISTORY_V2",
+          "owner_file_code": "N10"
+        }
+      ]
+    },
+    {
+      "function_id": "C-05",
+      "consumer_file_code": "C00",
+      "requested_dataset": "REG 11 역사 사건",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-009",
+        "T-013",
+        "T-016",
+        "T-017",
+        "T-021",
+        "T-025",
+        "T-080"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음."
+    },
+    {
+      "function_id": "C-05",
+      "consumer_file_code": "C00",
+      "requested_dataset": "NAT 30_역사사건",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-009",
+        "T-013",
+        "T-016",
+        "T-017",
+        "T-021",
+        "T-025",
+        "T-080"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음."
+    },
+    {
+      "function_id": "C-06",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.코드북",
+      "provider_bindings": [],
+      "local_tables": [
+        "코드북"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-072",
+        "T-073",
+        "T-081",
+        "T-082"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-07",
+      "consumer_file_code": "C00",
+      "requested_dataset": "C00.기준개정이력",
+      "provider_bindings": [],
+      "local_tables": [
+        "기준개정이력"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-016",
+        "T-017",
+        "T-018",
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-022",
+        "T-023",
+        "T-024",
+        "T-025"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "동일 C00 내부 읽기. 외부 import 간선 없음."
+    },
+    {
+      "function_id": "C-07",
+      "consumer_file_code": "C00",
+      "requested_dataset": "REG/NAT 00_기준_메타",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-016",
+        "T-017",
+        "T-018",
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-022",
+        "T-023",
+        "T-024",
+        "T-025"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음."
+    },
+    {
+      "function_id": "C-07",
+      "consumer_file_code": "C00",
+      "requested_dataset": "R70 행성기본값의 역법 필드",
+      "provider_bindings": [],
+      "local_tables": [],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-016",
+        "T-017",
+        "T-018",
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-022",
+        "T-023",
+        "T-024",
+        "T-025"
+      ],
+      "binding_kind": "migration_snapshot_comparison_only",
+      "note": "PH0 보존 스냅샷/이관 명세 대조에만 사용. C00의 운영 외부 import로 구현하지 않음.",
+      "comparison_reference_providers": [
+        {
+          "owner": "R70",
+          "provider_id": "PUB_PLANET_PROPERTIES_V2",
+          "source_tables": [
+            "행성기본값",
+            "행성기본값_계산"
+          ],
+          "primary_key": [
+            "property_revision_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_PROPERTIES_V2",
+          "table_id": "PUB_PLANET_PROPERTIES_V2",
+          "owner_file_code": "R70"
+        }
+      ]
+    },
+    {
+      "function_id": "H-01",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.시간정책",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_CALENDAR_V2",
+          "source_tables": [
+            "역법",
+            "기년대응",
+            "시간정책"
+          ],
+          "primary_key": [
+            "record_kind",
+            "record_id"
+          ],
+          "source_artifact": "common_hub_schema.json",
+          "dataset_id": "PUB_CALENDAR_V2",
+          "table_id": "PUB_CALENDAR_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-023",
+        "T-025",
+        "T-067",
+        "T-077",
+        "T-078"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-01",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.루트정의",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_ROUTES_V2",
+          "source_tables": [
+            "루트정의"
+          ],
+          "primary_key": [
+            "route_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_ROUTES_V2",
+          "table_id": "PUB_ROUTES_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-023",
+        "T-025",
+        "T-067",
+        "T-077",
+        "T-078"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "추가된 C00 제공계약의 실제 source_tables를 대조하여 연결. 온라인 수신은 미실행."
+    },
+    {
+      "function_id": "H-01",
+      "consumer_file_code": "H90",
+      "requested_dataset": "H90.조회조건",
+      "provider_bindings": [],
+      "local_tables": [
+        "조회조건"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-023",
+        "T-025",
+        "T-067",
+        "T-077",
+        "T-078"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "H90 자기수신/IMPORTRANGE 금지. 로컬 조회조건 또는 파생 결과 읽기."
+    },
+    {
+      "function_id": "H-01",
+      "consumer_file_code": "H90",
+      "requested_dataset": "H90.상태필터정의",
+      "provider_bindings": [],
+      "local_tables": [
+        "상태필터정의"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-023",
+        "T-025",
+        "T-067",
+        "T-077",
+        "T-078"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "H90 자기수신/IMPORTRANGE 금지. 로컬 조회조건 또는 파생 결과 읽기."
+    },
+    {
+      "function_id": "H-02",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.데이터셋레지스트리",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_DATASET_REGISTRY_V2",
+          "source_tables": [
+            "데이터셋레지스트리"
+          ],
+          "primary_key": [
+            "dataset_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_DATASET_REGISTRY_V2",
+          "table_id": "PUB_DATASET_REGISTRY_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-005",
+        "T-068",
+        "T-069",
+        "T-070",
+        "T-071",
+        "T-072",
+        "T-079",
+        "T-083"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "추가된 C00 제공계약의 실제 source_tables를 대조하여 연결. 온라인 수신은 미실행."
+    },
+    {
+      "function_id": "H-02",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R10.PUB_REGIONS_V2",
+      "provider_bindings": [
+        {
+          "owner": "R10",
+          "provider_id": "PUB_REGIONS_V2",
+          "source_tables": [
+            "지역목록",
+            "지역목록_조회계산"
+          ],
+          "primary_key": [
+            "region_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGIONS_V2",
+          "table_id": "PUB_REGIONS_V2",
+          "owner_file_code": "R10"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-005",
+        "T-068",
+        "T-069",
+        "T-070",
+        "T-071",
+        "T-072",
+        "T-079",
+        "T-083"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-02",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R70.PUB_PLANET_PROPERTIES_V2",
+      "provider_bindings": [
+        {
+          "owner": "R70",
+          "provider_id": "PUB_PLANET_PROPERTIES_V2",
+          "source_tables": [
+            "행성기본값",
+            "행성기본값_계산"
+          ],
+          "primary_key": [
+            "property_revision_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_PROPERTIES_V2",
+          "table_id": "PUB_PLANET_PROPERTIES_V2",
+          "owner_file_code": "R70"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-005",
+        "T-068",
+        "T-069",
+        "T-070",
+        "T-071",
+        "T-072",
+        "T-079",
+        "T-083"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-02",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R20.PUB_PLANET_POP_V2",
+      "provider_bindings": [
+        {
+          "owner": "R20",
+          "provider_id": "PUB_PLANET_POPULATION_V2",
+          "source_tables": [
+            "행성인구관측",
+            "행성인구계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_POPULATION_V2",
+          "table_id": "PUB_PLANET_POPULATION_V2",
+          "owner_file_code": "R20"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-005",
+        "T-068",
+        "T-069",
+        "T-070",
+        "T-071",
+        "T-072",
+        "T-079",
+        "T-083"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행.",
+      "alias_rule": "짧은 계획서 명칭을 실제 선언된 POPULATION/ECONOMY 제공 ID로 정정. 별도 중복 제공표 생성 금지."
+    },
+    {
+      "function_id": "H-02",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R60.PUB_PLANET_ECON_V2",
+      "provider_bindings": [
+        {
+          "owner": "R60",
+          "provider_id": "PUB_PLANET_ECONOMY_V2",
+          "source_tables": [
+            "행성경제관측",
+            "행성경제계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_ECONOMY_V2",
+          "table_id": "PUB_PLANET_ECONOMY_V2",
+          "owner_file_code": "R60"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-005",
+        "T-068",
+        "T-069",
+        "T-070",
+        "T-071",
+        "T-072",
+        "T-079",
+        "T-083"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행.",
+      "alias_rule": "짧은 계획서 명칭을 실제 선언된 POPULATION/ECONOMY 제공 ID로 정정. 별도 중복 제공표 생성 금지."
+    },
+    {
+      "function_id": "H-03",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.PUB_MANUAL_EVENTS_V2",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_MANUAL_EVENTS_V2",
+          "source_tables": [
+            "수동사건",
+            "사건대상관계"
+          ],
+          "primary_key": [
+            "event_id",
+            "event_target_id"
+          ],
+          "source_artifact": "common_hub_schema.json",
+          "dataset_id": "PUB_MANUAL_EVENTS_V2",
+          "table_id": "PUB_MANUAL_EVENTS_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-025",
+        "T-051",
+        "T-061",
+        "T-067",
+        "T-080"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-03",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N10.국호·수도·헌정 feed",
+      "provider_bindings": [
+        {
+          "owner": "N10",
+          "provider_id": "PUB_N10_CHANGE_FEED_V2",
+          "source_tables": [
+            "IN_NATION_NAME_HISTORY",
+            "IN_CAPITAL_HISTORY",
+            "IN_CONSTITUTION_HISTORY"
+          ],
+          "primary_key": [
+            "feed_id"
+          ],
+          "source_artifact": "change_feed_contracts.json",
+          "dataset_id": "PUB_N10_CHANGE_FEED_V2",
+          "table_id": "PUB_N10_CHANGE_FEED_V2",
+          "owner_file_code": "N10"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-025",
+        "T-051",
+        "T-061",
+        "T-067",
+        "T-080"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "change_feed_contracts.json의 소유분야 경계/순간사건 typed 투영계약에 결합. 실제행·운영수신·온라인시험은 미실행."
+    },
+    {
+      "function_id": "H-03",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N20.공직·선거·정당·기관 feed",
+      "provider_bindings": [
+        {
+          "owner": "N20",
+          "provider_id": "PUB_N20_CHANGE_FEED_V2",
+          "source_tables": [
+            "IN_OFFICE_TERM",
+            "IN_INSTITUTION_HISTORY",
+            "IN_PARTY_ROLE_TERM",
+            "IN_PARTY",
+            "IN_PARTY_FACTION",
+            "IN_ELECTION",
+            "IN_PARTY_RELATION",
+            "IN_DISTRICT_RELATION"
+          ],
+          "primary_key": [
+            "feed_id"
+          ],
+          "source_artifact": "change_feed_contracts.json",
+          "dataset_id": "PUB_N20_CHANGE_FEED_V2",
+          "table_id": "PUB_N20_CHANGE_FEED_V2",
+          "owner_file_code": "N20"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-025",
+        "T-051",
+        "T-061",
+        "T-067",
+        "T-080"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "change_feed_contracts.json의 소유분야 경계/순간사건 typed 투영계약에 결합. 실제행·운영수신·온라인시험은 미실행."
+    },
+    {
+      "function_id": "H-03",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N30.황실·친족·승계 feed",
+      "provider_bindings": [
+        {
+          "owner": "N30",
+          "provider_id": "PUB_N30_CHANGE_FEED_V2",
+          "source_tables": [
+            "IN_ROYAL_STATUS",
+            "IN_KINSHIP",
+            "IN_SUCCESSION"
+          ],
+          "primary_key": [
+            "feed_id"
+          ],
+          "source_artifact": "change_feed_contracts.json",
+          "dataset_id": "PUB_N30_CHANGE_FEED_V2",
+          "table_id": "PUB_N30_CHANGE_FEED_V2",
+          "owner_file_code": "N30"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-025",
+        "T-051",
+        "T-061",
+        "T-067",
+        "T-080"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "change_feed_contracts.json의 소유분야 경계/순간사건 typed 투영계약에 결합. 실제행·운영수신·온라인시험은 미실행."
+    },
+    {
+      "function_id": "H-03",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N40.국가인구 제공",
+      "provider_bindings": [
+        {
+          "owner": "N40",
+          "provider_id": "PUB_NATION_POPULATION_V2",
+          "source_tables": [
+            "IN_NATION_POPULATION",
+            "CALC_NATION_POPULATION"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_POPULATION_V2",
+          "table_id": "PUB_NATION_POPULATION_V2",
+          "owner_file_code": "N40"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-025",
+        "T-051",
+        "T-061",
+        "T-067",
+        "T-080"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-03",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N50.국가경제 제공",
+      "provider_bindings": [
+        {
+          "owner": "N50",
+          "provider_id": "PUB_NATION_ECONOMY_V2",
+          "source_tables": [
+            "IN_NATION_ECONOMY",
+            "CALC_NATION_ECONOMY"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_ECONOMY_V2",
+          "table_id": "PUB_NATION_ECONOMY_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_ECONOMY_DERIVED_V2",
+          "source_tables": [
+            "CALC_ECONOMY_DERIVED"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ECONOMY_DERIVED_V2",
+          "table_id": "PUB_ECONOMY_DERIVED_V2",
+          "owner_file_code": "N50"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-025",
+        "T-051",
+        "T-061",
+        "T-067",
+        "T-080"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-03",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R50.영토변동 feed",
+      "provider_bindings": [
+        {
+          "owner": "R50",
+          "provider_id": "PUB_R50_CHANGE_FEED_V2",
+          "source_tables": [
+            "지역국가관계"
+          ],
+          "primary_key": [
+            "feed_id"
+          ],
+          "source_artifact": "change_feed_contracts.json",
+          "dataset_id": "PUB_R50_CHANGE_FEED_V2",
+          "table_id": "PUB_R50_CHANGE_FEED_V2",
+          "owner_file_code": "R50"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-025",
+        "T-051",
+        "T-061",
+        "T-067",
+        "T-080"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "change_feed_contracts.json의 소유분야 경계/순간사건 typed 투영계약에 결합. 실제행·운영수신·온라인시험은 미실행."
+    },
+    {
+      "function_id": "H-04",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R10.지역목록·관계·시설·노선",
+      "provider_bindings": [
+        {
+          "owner": "R10",
+          "provider_id": "PUB_REGIONS_V2",
+          "source_tables": [
+            "지역목록",
+            "지역목록_조회계산"
+          ],
+          "primary_key": [
+            "region_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGIONS_V2",
+          "table_id": "PUB_REGIONS_V2",
+          "owner_file_code": "R10"
+        },
+        {
+          "owner": "R10",
+          "provider_id": "PUB_REGION_RELATIONS_V2",
+          "source_tables": [
+            "지역관계",
+            "지역관계_조회계산"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGION_RELATIONS_V2",
+          "table_id": "PUB_REGION_RELATIONS_V2",
+          "owner_file_code": "R10"
+        },
+        {
+          "owner": "R10",
+          "provider_id": "PUB_FACILITIES_V2",
+          "source_tables": [
+            "시설목록",
+            "시설목록_조회계산"
+          ],
+          "primary_key": [
+            "facility_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_FACILITIES_V2",
+          "table_id": "PUB_FACILITIES_V2",
+          "owner_file_code": "R10"
+        },
+        {
+          "owner": "R10",
+          "provider_id": "PUB_TRANSPORT_V2",
+          "source_tables": [
+            "교통노선",
+            "교통노선_조회계산"
+          ],
+          "primary_key": [
+            "transport_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_TRANSPORT_V2",
+          "table_id": "PUB_TRANSPORT_V2",
+          "owner_file_code": "R10"
+        },
+        {
+          "owner": "R10",
+          "provider_id": "PUB_REGION_TRAITS_V2",
+          "source_tables": [
+            "지역특성관계",
+            "지역특성관계_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGION_TRAITS_V2",
+          "table_id": "PUB_REGION_TRAITS_V2",
+          "owner_file_code": "R10"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-008",
+        "T-026",
+        "T-027",
+        "T-028",
+        "T-034",
+        "T-035",
+        "T-036",
+        "T-037",
+        "T-040",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-04",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R20.인구관측",
+      "provider_bindings": [
+        {
+          "owner": "R20",
+          "provider_id": "PUB_POPULATION_V2",
+          "source_tables": [
+            "인구관측",
+            "인구관측_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_POPULATION_V2",
+          "table_id": "PUB_POPULATION_V2",
+          "owner_file_code": "R20"
+        },
+        {
+          "owner": "R20",
+          "provider_id": "PUB_POPULATION_CHANGES_V2",
+          "source_tables": [
+            "인구변동",
+            "인구변동_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_POPULATION_CHANGES_V2",
+          "table_id": "PUB_POPULATION_CHANGES_V2",
+          "owner_file_code": "R20"
+        },
+        {
+          "owner": "R20",
+          "provider_id": "PUB_PLANET_POPULATION_V2",
+          "source_tables": [
+            "행성인구관측",
+            "행성인구계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_POPULATION_V2",
+          "table_id": "PUB_PLANET_POPULATION_V2",
+          "owner_file_code": "R20"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-008",
+        "T-026",
+        "T-027",
+        "T-028",
+        "T-034",
+        "T-035",
+        "T-036",
+        "T-037",
+        "T-040",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-04",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R30.사회문화",
+      "provider_bindings": [
+        {
+          "owner": "R30",
+          "provider_id": "PUB_CULTURE_DISTRIBUTION_V2",
+          "source_tables": [
+            "문화분포",
+            "문화분포_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_CULTURE_DISTRIBUTION_V2",
+          "table_id": "PUB_CULTURE_DISTRIBUTION_V2",
+          "owner_file_code": "R30"
+        },
+        {
+          "owner": "R30",
+          "provider_id": "PUB_LANGUAGE_DISTRIBUTION_V2",
+          "source_tables": [
+            "언어분포",
+            "언어분포_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_LANGUAGE_DISTRIBUTION_V2",
+          "table_id": "PUB_LANGUAGE_DISTRIBUTION_V2",
+          "owner_file_code": "R30"
+        },
+        {
+          "owner": "R30",
+          "provider_id": "PUB_GROUP_DISTRIBUTION_V2",
+          "source_tables": [
+            "집단분포",
+            "집단분포_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_GROUP_DISTRIBUTION_V2",
+          "table_id": "PUB_GROUP_DISTRIBUTION_V2",
+          "owner_file_code": "R30"
+        },
+        {
+          "owner": "R30",
+          "provider_id": "PUB_REGIONAL_SOCIAL_V2",
+          "source_tables": [
+            "사회지표",
+            "사회지표계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGIONAL_SOCIAL_V2",
+          "table_id": "PUB_REGIONAL_SOCIAL_V2",
+          "owner_file_code": "R30"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-008",
+        "T-026",
+        "T-027",
+        "T-028",
+        "T-034",
+        "T-035",
+        "T-036",
+        "T-037",
+        "T-040",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-04",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R40.종교분포",
+      "provider_bindings": [
+        {
+          "owner": "R40",
+          "provider_id": "PUB_RELIGION_DISTRIBUTION_V2",
+          "source_tables": [
+            "종교분포",
+            "종교분포_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_RELIGION_DISTRIBUTION_V2",
+          "table_id": "PUB_RELIGION_DISTRIBUTION_V2",
+          "owner_file_code": "R40"
+        },
+        {
+          "owner": "R40",
+          "provider_id": "PUB_RELIGION_FACILITIES_V2",
+          "source_tables": [
+            "종교시설관계"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_RELIGION_FACILITIES_V2",
+          "table_id": "PUB_RELIGION_FACILITIES_V2",
+          "owner_file_code": "R40"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-008",
+        "T-026",
+        "T-027",
+        "T-028",
+        "T-034",
+        "T-035",
+        "T-036",
+        "T-037",
+        "T-040",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-04",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R50.지역국가관계",
+      "provider_bindings": [
+        {
+          "owner": "R50",
+          "provider_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "source_tables": [
+            "지역국가관계",
+            "지역국가관계_조회계산"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "table_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "owner_file_code": "R50"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-008",
+        "T-026",
+        "T-027",
+        "T-028",
+        "T-034",
+        "T-035",
+        "T-036",
+        "T-037",
+        "T-040",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-04",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R60.경제산업",
+      "provider_bindings": [
+        {
+          "owner": "R60",
+          "provider_id": "PUB_REGIONAL_ECONOMY_V2",
+          "source_tables": [
+            "경제관측",
+            "경제관측_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGIONAL_ECONOMY_V2",
+          "table_id": "PUB_REGIONAL_ECONOMY_V2",
+          "owner_file_code": "R60"
+        },
+        {
+          "owner": "R60",
+          "provider_id": "PUB_PLANET_ECONOMY_V2",
+          "source_tables": [
+            "행성경제관측",
+            "행성경제계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_ECONOMY_V2",
+          "table_id": "PUB_PLANET_ECONOMY_V2",
+          "owner_file_code": "R60"
+        },
+        {
+          "owner": "R60",
+          "provider_id": "PUB_RESOURCE_PRODUCTION_V2",
+          "source_tables": [
+            "자원생산",
+            "자원생산_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_RESOURCE_PRODUCTION_V2",
+          "table_id": "PUB_RESOURCE_PRODUCTION_V2",
+          "owner_file_code": "R60"
+        },
+        {
+          "owner": "R60",
+          "provider_id": "PUB_INDUSTRY_V2",
+          "source_tables": [
+            "산업활동",
+            "산업활동_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_INDUSTRY_V2",
+          "table_id": "PUB_INDUSTRY_V2",
+          "owner_file_code": "R60"
+        },
+        {
+          "owner": "R60",
+          "provider_id": "PUB_TRADE_V2",
+          "source_tables": [
+            "지역간교역",
+            "지역간교역_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_TRADE_V2",
+          "table_id": "PUB_TRADE_V2",
+          "owner_file_code": "R60"
+        },
+        {
+          "owner": "R60",
+          "provider_id": "PUB_FACILITY_ACTUALS_V2",
+          "source_tables": [
+            "시설실적"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_FACILITY_ACTUALS_V2",
+          "table_id": "PUB_FACILITY_ACTUALS_V2",
+          "owner_file_code": "R60"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-008",
+        "T-026",
+        "T-027",
+        "T-028",
+        "T-034",
+        "T-035",
+        "T-036",
+        "T-037",
+        "T-040",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-04",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R70.환경자원",
+      "provider_bindings": [
+        {
+          "owner": "R70",
+          "provider_id": "PUB_PLANET_PROPERTIES_V2",
+          "source_tables": [
+            "행성기본값",
+            "행성기본값_계산"
+          ],
+          "primary_key": [
+            "property_revision_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_PROPERTIES_V2",
+          "table_id": "PUB_PLANET_PROPERTIES_V2",
+          "owner_file_code": "R70"
+        },
+        {
+          "owner": "R70",
+          "provider_id": "PUB_ENVIRONMENT_V2",
+          "source_tables": [
+            "환경관측",
+            "환경관측_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_ENVIRONMENT_V2",
+          "table_id": "PUB_ENVIRONMENT_V2",
+          "owner_file_code": "R70"
+        },
+        {
+          "owner": "R70",
+          "provider_id": "PUB_RESOURCE_RESERVES_V2",
+          "source_tables": [
+            "자원분포",
+            "자원분포_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_RESOURCE_RESERVES_V2",
+          "table_id": "PUB_RESOURCE_RESERVES_V2",
+          "owner_file_code": "R70"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-008",
+        "T-026",
+        "T-027",
+        "T-028",
+        "T-034",
+        "T-035",
+        "T-036",
+        "T-037",
+        "T-040",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-04",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N10~N70 분야 제공표",
+      "provider_bindings": [
+        {
+          "owner": "N10",
+          "provider_id": "PUB_CAPITAL_HISTORY_V2",
+          "source_tables": [
+            "IN_CAPITAL_HISTORY",
+            "CALC_CAPITAL_HISTORY"
+          ],
+          "primary_key": [
+            "capital_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_CAPITAL_HISTORY_V2",
+          "table_id": "PUB_CAPITAL_HISTORY_V2",
+          "owner_file_code": "N10"
+        },
+        {
+          "owner": "N10",
+          "provider_id": "PUB_CONSTITUTION_HISTORY_V2",
+          "source_tables": [
+            "IN_CONSTITUTION_HISTORY",
+            "CALC_CONSTITUTION_HISTORY"
+          ],
+          "primary_key": [
+            "constitution_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_CONSTITUTION_HISTORY_V2",
+          "table_id": "PUB_CONSTITUTION_HISTORY_V2",
+          "owner_file_code": "N10"
+        },
+        {
+          "owner": "N10",
+          "provider_id": "PUB_NATION_V2",
+          "source_tables": [
+            "IN_NATION",
+            "CALC_NATION"
+          ],
+          "primary_key": [
+            "nation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_V2",
+          "table_id": "PUB_NATION_V2",
+          "owner_file_code": "N10"
+        },
+        {
+          "owner": "N10",
+          "provider_id": "PUB_NATION_NAME_HISTORY_V2",
+          "source_tables": [
+            "IN_NATION_NAME_HISTORY",
+            "CALC_NATION_NAME_HISTORY"
+          ],
+          "primary_key": [
+            "name_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_NAME_HISTORY_V2",
+          "table_id": "PUB_NATION_NAME_HISTORY_V2",
+          "owner_file_code": "N10"
+        },
+        {
+          "owner": "N10",
+          "provider_id": "PUB_NATION_UNDATED_DEFAULT_V2",
+          "source_tables": [
+            "IN_NATION_UNDATED_DEFAULT"
+          ],
+          "primary_key": [
+            "nation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_UNDATED_DEFAULT_V2",
+          "table_id": "PUB_NATION_UNDATED_DEFAULT_V2",
+          "owner_file_code": "N10"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_ADMINISTRATION_ANNUAL_V2",
+          "source_tables": [
+            "VIEW_ADMINISTRATION_ANNUAL"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ADMINISTRATION_ANNUAL_V2",
+          "table_id": "PUB_ADMINISTRATION_ANNUAL_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_DISTRICT_V2",
+          "source_tables": [
+            "IN_DISTRICT",
+            "CALC_DISTRICT"
+          ],
+          "primary_key": [
+            "district_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_DISTRICT_V2",
+          "table_id": "PUB_DISTRICT_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_DISTRICT_RELATION_V2",
+          "source_tables": [
+            "IN_DISTRICT_RELATION"
+          ],
+          "primary_key": [
+            "district_relation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_DISTRICT_RELATION_V2",
+          "table_id": "PUB_DISTRICT_RELATION_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_DISTRICT_RESULT_V2",
+          "source_tables": [
+            "IN_DISTRICT_RESULT",
+            "CALC_DISTRICT_RESULT"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_DISTRICT_RESULT_V2",
+          "table_id": "PUB_DISTRICT_RESULT_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_ELECTION_V2",
+          "source_tables": [
+            "IN_ELECTION",
+            "CALC_ELECTION"
+          ],
+          "primary_key": [
+            "election_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ELECTION_V2",
+          "table_id": "PUB_ELECTION_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_ELECTION_ANNUAL_V2",
+          "source_tables": [
+            "VIEW_ELECTION_ANNUAL"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ELECTION_ANNUAL_V2",
+          "table_id": "PUB_ELECTION_ANNUAL_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_ELECTION_COMPONENT_V2",
+          "source_tables": [
+            "IN_ELECTION_COMPONENT",
+            "CALC_ELECTION_COMPONENT"
+          ],
+          "primary_key": [
+            "component_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ELECTION_COMPONENT_V2",
+          "table_id": "PUB_ELECTION_COMPONENT_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_ELECTION_DERIVED_V2",
+          "source_tables": [
+            "CALC_ELECTION_DERIVED"
+          ],
+          "primary_key": [
+            "result_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ELECTION_DERIVED_V2",
+          "table_id": "PUB_ELECTION_DERIVED_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_ELECTION_RESULT_V2",
+          "source_tables": [
+            "IN_ELECTION_RESULT",
+            "CALC_ELECTION_RESULT"
+          ],
+          "primary_key": [
+            "result_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ELECTION_RESULT_V2",
+          "table_id": "PUB_ELECTION_RESULT_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_ELECTION_SYSTEM_V2",
+          "source_tables": [
+            "IN_ELECTION_SYSTEM",
+            "CALC_ELECTION_SYSTEM"
+          ],
+          "primary_key": [
+            "system_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ELECTION_SYSTEM_V2",
+          "table_id": "PUB_ELECTION_SYSTEM_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_FACTION_RELATION_V2",
+          "source_tables": [
+            "IN_FACTION_RELATION"
+          ],
+          "primary_key": [
+            "faction_relation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_FACTION_RELATION_V2",
+          "table_id": "PUB_FACTION_RELATION_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_INSTITUTION_HISTORY_V2",
+          "source_tables": [
+            "IN_INSTITUTION_HISTORY",
+            "CALC_INSTITUTION_HISTORY"
+          ],
+          "primary_key": [
+            "institution_history_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_INSTITUTION_HISTORY_V2",
+          "table_id": "PUB_INSTITUTION_HISTORY_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_LEADERSHIP_ANNUAL_V2",
+          "source_tables": [
+            "VIEW_LEADERSHIP_ANNUAL"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_LEADERSHIP_ANNUAL_V2",
+          "table_id": "PUB_LEADERSHIP_ANNUAL_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_OFFICE_V2",
+          "source_tables": [
+            "IN_OFFICE"
+          ],
+          "primary_key": [
+            "office_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_OFFICE_V2",
+          "table_id": "PUB_OFFICE_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_OFFICE_RELATION_V2",
+          "source_tables": [
+            "IN_OFFICE_RELATION"
+          ],
+          "primary_key": [
+            "office_relation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_OFFICE_RELATION_V2",
+          "table_id": "PUB_OFFICE_RELATION_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_OFFICE_TERM_V2",
+          "source_tables": [
+            "IN_OFFICE_TERM",
+            "CALC_OFFICE_TERM"
+          ],
+          "primary_key": [
+            "term_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_OFFICE_TERM_V2",
+          "table_id": "PUB_OFFICE_TERM_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_PARTY_V2",
+          "source_tables": [
+            "IN_PARTY",
+            "CALC_PARTY"
+          ],
+          "primary_key": [
+            "party_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PARTY_V2",
+          "table_id": "PUB_PARTY_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_PARTY_ANNUAL_V2",
+          "source_tables": [
+            "IN_PARTY_ANNUAL",
+            "CALC_PARTY_ANNUAL"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PARTY_ANNUAL_V2",
+          "table_id": "PUB_PARTY_ANNUAL_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_PARTY_FACTION_V2",
+          "source_tables": [
+            "IN_PARTY_FACTION",
+            "CALC_PARTY_FACTION"
+          ],
+          "primary_key": [
+            "faction_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PARTY_FACTION_V2",
+          "table_id": "PUB_PARTY_FACTION_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_PARTY_RELATION_V2",
+          "source_tables": [
+            "IN_PARTY_RELATION"
+          ],
+          "primary_key": [
+            "party_relation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PARTY_RELATION_V2",
+          "table_id": "PUB_PARTY_RELATION_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_PARTY_ROLE_V2",
+          "source_tables": [
+            "IN_PARTY_ROLE"
+          ],
+          "primary_key": [
+            "party_role_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PARTY_ROLE_V2",
+          "table_id": "PUB_PARTY_ROLE_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_PARTY_ROLE_TERM_V2",
+          "source_tables": [
+            "IN_PARTY_ROLE_TERM",
+            "CALC_PARTY_ROLE_TERM"
+          ],
+          "primary_key": [
+            "party_role_term_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PARTY_ROLE_TERM_V2",
+          "table_id": "PUB_PARTY_ROLE_TERM_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_POLITICS_ANNUAL_V2",
+          "source_tables": [
+            "VIEW_POLITICS_ANNUAL"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_POLITICS_ANNUAL_V2",
+          "table_id": "PUB_POLITICS_ANNUAL_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_KINSHIP_V2",
+          "source_tables": [
+            "IN_KINSHIP",
+            "CALC_KINSHIP"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_KINSHIP_V2",
+          "table_id": "PUB_KINSHIP_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_KINSHIP_AT_DATE_V2",
+          "source_tables": [
+            "VIEW_KINSHIP_AT_DATE"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_KINSHIP_AT_DATE_V2",
+          "table_id": "PUB_KINSHIP_AT_DATE_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_PERSON_V2",
+          "source_tables": [
+            "IN_PERSON"
+          ],
+          "primary_key": [
+            "person_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PERSON_V2",
+          "table_id": "PUB_PERSON_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_ROYAL_ANNUAL_V2",
+          "source_tables": [
+            "VIEW_ROYAL_ANNUAL"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ROYAL_ANNUAL_V2",
+          "table_id": "PUB_ROYAL_ANNUAL_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_ROYAL_STATUS_V2",
+          "source_tables": [
+            "IN_ROYAL_STATUS",
+            "CALC_ROYAL_STATUS"
+          ],
+          "primary_key": [
+            "royal_status_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ROYAL_STATUS_V2",
+          "table_id": "PUB_ROYAL_STATUS_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_SUCCESSION_V2",
+          "source_tables": [
+            "IN_SUCCESSION",
+            "CALC_SUCCESSION"
+          ],
+          "primary_key": [
+            "succession_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_SUCCESSION_V2",
+          "table_id": "PUB_SUCCESSION_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_SUCCESSION_AT_DATE_V2",
+          "source_tables": [
+            "VIEW_SUCCESSION_AT_DATE"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_SUCCESSION_AT_DATE_V2",
+          "table_id": "PUB_SUCCESSION_AT_DATE_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N40",
+          "provider_id": "PUB_NATION_POPULATION_V2",
+          "source_tables": [
+            "IN_NATION_POPULATION",
+            "CALC_NATION_POPULATION"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_POPULATION_V2",
+          "table_id": "PUB_NATION_POPULATION_V2",
+          "owner_file_code": "N40"
+        },
+        {
+          "owner": "N40",
+          "provider_id": "PUB_NATION_POPULATION_COMPOSITION_V2",
+          "source_tables": [
+            "IN_NATION_POPULATION_COMPOSITION"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_POPULATION_COMPOSITION_V2",
+          "table_id": "PUB_NATION_POPULATION_COMPOSITION_V2",
+          "owner_file_code": "N40"
+        },
+        {
+          "owner": "N40",
+          "provider_id": "PUB_NATION_SOCIAL_METRIC_V2",
+          "source_tables": [
+            "IN_NATION_SOCIAL_METRIC"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_SOCIAL_METRIC_V2",
+          "table_id": "PUB_NATION_SOCIAL_METRIC_V2",
+          "owner_file_code": "N40"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_ECONOMY_ANNUAL_V2",
+          "source_tables": [
+            "VIEW_ECONOMY_ANNUAL"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ECONOMY_ANNUAL_V2",
+          "table_id": "PUB_ECONOMY_ANNUAL_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_ECONOMY_DERIVED_V2",
+          "source_tables": [
+            "CALC_ECONOMY_DERIVED"
+          ],
+          "primary_key": [
+            "query_key"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ECONOMY_DERIVED_V2",
+          "table_id": "PUB_ECONOMY_DERIVED_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_NATION_ECONOMY_V2",
+          "source_tables": [
+            "IN_NATION_ECONOMY",
+            "CALC_NATION_ECONOMY"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_ECONOMY_V2",
+          "table_id": "PUB_NATION_ECONOMY_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_NATION_EMPLOYMENT_METRIC_V2",
+          "source_tables": [
+            "IN_NATION_EMPLOYMENT_METRIC"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_EMPLOYMENT_METRIC_V2",
+          "table_id": "PUB_NATION_EMPLOYMENT_METRIC_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_NATION_FISCAL_METRIC_V2",
+          "source_tables": [
+            "IN_NATION_FISCAL_METRIC"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_FISCAL_METRIC_V2",
+          "table_id": "PUB_NATION_FISCAL_METRIC_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_NATION_PRICE_METRIC_V2",
+          "source_tables": [
+            "IN_NATION_PRICE_METRIC"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_PRICE_METRIC_V2",
+          "table_id": "PUB_NATION_PRICE_METRIC_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_NATION_TRADE_METRIC_V2",
+          "source_tables": [
+            "IN_NATION_TRADE_METRIC"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_TRADE_METRIC_V2",
+          "table_id": "PUB_NATION_TRADE_METRIC_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N60",
+          "provider_id": "PUB_CULTURAL_INSTITUTION_HISTORY_V2",
+          "source_tables": [
+            "IN_CULTURAL_INSTITUTION_HISTORY"
+          ],
+          "primary_key": [
+            "cultural_institution_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_CULTURAL_INSTITUTION_HISTORY_V2",
+          "table_id": "PUB_CULTURAL_INSTITUTION_HISTORY_V2",
+          "owner_file_code": "N60"
+        },
+        {
+          "owner": "N60",
+          "provider_id": "PUB_LANGUAGE_STATUS_HISTORY_V2",
+          "source_tables": [
+            "IN_LANGUAGE_STATUS_HISTORY"
+          ],
+          "primary_key": [
+            "language_status_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_LANGUAGE_STATUS_HISTORY_V2",
+          "table_id": "PUB_LANGUAGE_STATUS_HISTORY_V2",
+          "owner_file_code": "N60"
+        },
+        {
+          "owner": "N60",
+          "provider_id": "PUB_NATION_CULTURE_RELATION_V2",
+          "source_tables": [
+            "IN_NATION_CULTURE_RELATION"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_CULTURE_RELATION_V2",
+          "table_id": "PUB_NATION_CULTURE_RELATION_V2",
+          "owner_file_code": "N60"
+        },
+        {
+          "owner": "N70",
+          "provider_id": "PUB_NATION_RELIGION_RELATION_V2",
+          "source_tables": [
+            "IN_NATION_RELIGION_RELATION"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_RELIGION_RELATION_V2",
+          "table_id": "PUB_NATION_RELIGION_RELATION_V2",
+          "owner_file_code": "N70"
+        },
+        {
+          "owner": "N70",
+          "provider_id": "PUB_RELIGIOUS_AFFAIRS_HISTORY_V2",
+          "source_tables": [
+            "IN_RELIGIOUS_AFFAIRS_HISTORY"
+          ],
+          "primary_key": [
+            "affairs_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_RELIGIOUS_AFFAIRS_HISTORY_V2",
+          "table_id": "PUB_RELIGIOUS_AFFAIRS_HISTORY_V2",
+          "owner_file_code": "N70"
+        },
+        {
+          "owner": "N70",
+          "provider_id": "PUB_RELIGIOUS_ORGANIZATION_V2",
+          "source_tables": [
+            "IN_RELIGIOUS_ORGANIZATION"
+          ],
+          "primary_key": [
+            "religious_org_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_RELIGIOUS_ORGANIZATION_V2",
+          "table_id": "PUB_RELIGIOUS_ORGANIZATION_V2",
+          "owner_file_code": "N70"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-008",
+        "T-026",
+        "T-027",
+        "T-028",
+        "T-034",
+        "T-035",
+        "T-036",
+        "T-037",
+        "T-040",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-05",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N40.국가인구",
+      "provider_bindings": [
+        {
+          "owner": "N40",
+          "provider_id": "PUB_NATION_POPULATION_V2",
+          "source_tables": [
+            "IN_NATION_POPULATION",
+            "CALC_NATION_POPULATION"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_POPULATION_V2",
+          "table_id": "PUB_NATION_POPULATION_V2",
+          "owner_file_code": "N40"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-027",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-032",
+        "T-033",
+        "T-035",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-044",
+        "T-045",
+        "T-046",
+        "T-047",
+        "T-048",
+        "T-050"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-05",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R20.행성인구",
+      "provider_bindings": [
+        {
+          "owner": "R20",
+          "provider_id": "PUB_PLANET_POPULATION_V2",
+          "source_tables": [
+            "행성인구관측",
+            "행성인구계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_POPULATION_V2",
+          "table_id": "PUB_PLANET_POPULATION_V2",
+          "owner_file_code": "R20"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-027",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-032",
+        "T-033",
+        "T-035",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-044",
+        "T-045",
+        "T-046",
+        "T-047",
+        "T-048",
+        "T-050"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-05",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N50.국가경제",
+      "provider_bindings": [
+        {
+          "owner": "N50",
+          "provider_id": "PUB_NATION_ECONOMY_V2",
+          "source_tables": [
+            "IN_NATION_ECONOMY",
+            "CALC_NATION_ECONOMY"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_ECONOMY_V2",
+          "table_id": "PUB_NATION_ECONOMY_V2",
+          "owner_file_code": "N50"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-027",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-032",
+        "T-033",
+        "T-035",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-044",
+        "T-045",
+        "T-046",
+        "T-047",
+        "T-048",
+        "T-050"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-05",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R60.행성경제",
+      "provider_bindings": [
+        {
+          "owner": "R60",
+          "provider_id": "PUB_PLANET_ECONOMY_V2",
+          "source_tables": [
+            "행성경제관측",
+            "행성경제계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_ECONOMY_V2",
+          "table_id": "PUB_PLANET_ECONOMY_V2",
+          "owner_file_code": "R60"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-027",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-032",
+        "T-033",
+        "T-035",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-044",
+        "T-045",
+        "T-046",
+        "T-047",
+        "T-048",
+        "T-050"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-05",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R50.통치범위",
+      "provider_bindings": [
+        {
+          "owner": "R50",
+          "provider_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "source_tables": [
+            "지역국가관계",
+            "지역국가관계_조회계산"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "table_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "owner_file_code": "R50"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-027",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-032",
+        "T-033",
+        "T-035",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-044",
+        "T-045",
+        "T-046",
+        "T-047",
+        "T-048",
+        "T-050"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-05",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R70.행성물성",
+      "provider_bindings": [
+        {
+          "owner": "R70",
+          "provider_id": "PUB_PLANET_PROPERTIES_V2",
+          "source_tables": [
+            "행성기본값",
+            "행성기본값_계산"
+          ],
+          "primary_key": [
+            "property_revision_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_PROPERTIES_V2",
+          "table_id": "PUB_PLANET_PROPERTIES_V2",
+          "owner_file_code": "R70"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-027",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-032",
+        "T-033",
+        "T-035",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-044",
+        "T-045",
+        "T-046",
+        "T-047",
+        "T-048",
+        "T-050"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-05",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.지표사전",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_METRICS_V2",
+          "source_tables": [
+            "지표사전"
+          ],
+          "primary_key": [
+            "metric_id"
+          ],
+          "source_artifact": "common_hub_schema.json",
+          "dataset_id": "PUB_METRICS_V2",
+          "table_id": "PUB_METRICS_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-027",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-032",
+        "T-033",
+        "T-035",
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-044",
+        "T-045",
+        "T-046",
+        "T-047",
+        "T-048",
+        "T-050"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-06",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.사건대상관계",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_MANUAL_EVENTS_V2",
+          "source_tables": [
+            "수동사건",
+            "사건대상관계"
+          ],
+          "primary_key": [
+            "event_id",
+            "event_target_id"
+          ],
+          "source_artifact": "common_hub_schema.json",
+          "dataset_id": "PUB_MANUAL_EVENTS_V2",
+          "table_id": "PUB_MANUAL_EVENTS_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-011",
+        "T-018",
+        "T-021",
+        "T-023",
+        "T-029",
+        "T-034",
+        "T-036",
+        "T-065",
+        "T-066",
+        "T-069",
+        "T-070"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-06",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N20.공직임기",
+      "provider_bindings": [
+        {
+          "owner": "N20",
+          "provider_id": "PUB_OFFICE_TERM_V2",
+          "source_tables": [
+            "IN_OFFICE_TERM",
+            "CALC_OFFICE_TERM"
+          ],
+          "primary_key": [
+            "term_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_OFFICE_TERM_V2",
+          "table_id": "PUB_OFFICE_TERM_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_OFFICE_V2",
+          "source_tables": [
+            "IN_OFFICE"
+          ],
+          "primary_key": [
+            "office_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_OFFICE_V2",
+          "table_id": "PUB_OFFICE_V2",
+          "owner_file_code": "N20"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-011",
+        "T-018",
+        "T-021",
+        "T-023",
+        "T-029",
+        "T-034",
+        "T-036",
+        "T-065",
+        "T-066",
+        "T-069",
+        "T-070"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-06",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N30.인물·황실·승계",
+      "provider_bindings": [
+        {
+          "owner": "N30",
+          "provider_id": "PUB_PERSON_V2",
+          "source_tables": [
+            "IN_PERSON"
+          ],
+          "primary_key": [
+            "person_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PERSON_V2",
+          "table_id": "PUB_PERSON_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_ROYAL_STATUS_V2",
+          "source_tables": [
+            "IN_ROYAL_STATUS",
+            "CALC_ROYAL_STATUS"
+          ],
+          "primary_key": [
+            "royal_status_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ROYAL_STATUS_V2",
+          "table_id": "PUB_ROYAL_STATUS_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_SUCCESSION_V2",
+          "source_tables": [
+            "IN_SUCCESSION",
+            "CALC_SUCCESSION"
+          ],
+          "primary_key": [
+            "succession_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_SUCCESSION_V2",
+          "table_id": "PUB_SUCCESSION_V2",
+          "owner_file_code": "N30"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-011",
+        "T-018",
+        "T-021",
+        "T-023",
+        "T-029",
+        "T-034",
+        "T-036",
+        "T-065",
+        "T-066",
+        "T-069",
+        "T-070"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-06",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R10.지역",
+      "provider_bindings": [
+        {
+          "owner": "R10",
+          "provider_id": "PUB_REGIONS_V2",
+          "source_tables": [
+            "지역목록",
+            "지역목록_조회계산"
+          ],
+          "primary_key": [
+            "region_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGIONS_V2",
+          "table_id": "PUB_REGIONS_V2",
+          "owner_file_code": "R10"
+        },
+        {
+          "owner": "R10",
+          "provider_id": "PUB_REGION_RELATIONS_V2",
+          "source_tables": [
+            "지역관계",
+            "지역관계_조회계산"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGION_RELATIONS_V2",
+          "table_id": "PUB_REGION_RELATIONS_V2",
+          "owner_file_code": "R10"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-011",
+        "T-018",
+        "T-021",
+        "T-023",
+        "T-029",
+        "T-034",
+        "T-036",
+        "T-065",
+        "T-066",
+        "T-069",
+        "T-070"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-06",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R50.지역국가관계",
+      "provider_bindings": [
+        {
+          "owner": "R50",
+          "provider_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "source_tables": [
+            "지역국가관계",
+            "지역국가관계_조회계산"
+          ],
+          "primary_key": [
+            "relation_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "table_id": "PUB_REGION_NATION_RELATIONS_V2",
+          "owner_file_code": "R50"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-011",
+        "T-018",
+        "T-021",
+        "T-023",
+        "T-029",
+        "T-034",
+        "T-036",
+        "T-065",
+        "T-066",
+        "T-069",
+        "T-070"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-06",
+      "consumer_file_code": "H90",
+      "requested_dataset": "R20/N40 인구 범위",
+      "provider_bindings": [
+        {
+          "owner": "R20",
+          "provider_id": "PUB_POPULATION_V2",
+          "source_tables": [
+            "인구관측",
+            "인구관측_조회계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_POPULATION_V2",
+          "table_id": "PUB_POPULATION_V2",
+          "owner_file_code": "R20"
+        },
+        {
+          "owner": "R20",
+          "provider_id": "PUB_PLANET_POPULATION_V2",
+          "source_tables": [
+            "행성인구관측",
+            "행성인구계산"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "region_schema.json",
+          "dataset_id": "PUB_PLANET_POPULATION_V2",
+          "table_id": "PUB_PLANET_POPULATION_V2",
+          "owner_file_code": "R20"
+        },
+        {
+          "owner": "N40",
+          "provider_id": "PUB_NATION_POPULATION_V2",
+          "source_tables": [
+            "IN_NATION_POPULATION",
+            "CALC_NATION_POPULATION"
+          ],
+          "primary_key": [
+            "record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_NATION_POPULATION_V2",
+          "table_id": "PUB_NATION_POPULATION_V2",
+          "owner_file_code": "N40"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-011",
+        "T-018",
+        "T-021",
+        "T-023",
+        "T-029",
+        "T-034",
+        "T-036",
+        "T-065",
+        "T-066",
+        "T-069",
+        "T-070"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-07",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N20.공직임기",
+      "provider_bindings": [
+        {
+          "owner": "N20",
+          "provider_id": "PUB_OFFICE_TERM_V2",
+          "source_tables": [
+            "IN_OFFICE_TERM",
+            "CALC_OFFICE_TERM"
+          ],
+          "primary_key": [
+            "term_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_OFFICE_TERM_V2",
+          "table_id": "PUB_OFFICE_TERM_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_OFFICE_V2",
+          "source_tables": [
+            "IN_OFFICE"
+          ],
+          "primary_key": [
+            "office_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_OFFICE_V2",
+          "table_id": "PUB_OFFICE_V2",
+          "owner_file_code": "N20"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-018",
+        "T-020",
+        "T-021",
+        "T-062",
+        "T-063",
+        "T-064",
+        "T-065",
+        "T-066",
+        "T-067"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-07",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N30.황실신분",
+      "provider_bindings": [
+        {
+          "owner": "N30",
+          "provider_id": "PUB_ROYAL_STATUS_V2",
+          "source_tables": [
+            "IN_ROYAL_STATUS",
+            "CALC_ROYAL_STATUS"
+          ],
+          "primary_key": [
+            "royal_status_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_ROYAL_STATUS_V2",
+          "table_id": "PUB_ROYAL_STATUS_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_PERSON_V2",
+          "source_tables": [
+            "IN_PERSON"
+          ],
+          "primary_key": [
+            "person_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_PERSON_V2",
+          "table_id": "PUB_PERSON_V2",
+          "owner_file_code": "N30"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-018",
+        "T-020",
+        "T-021",
+        "T-062",
+        "T-063",
+        "T-064",
+        "T-065",
+        "T-066",
+        "T-067"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-07",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N30.황위계승",
+      "provider_bindings": [
+        {
+          "owner": "N30",
+          "provider_id": "PUB_SUCCESSION_V2",
+          "source_tables": [
+            "IN_SUCCESSION",
+            "CALC_SUCCESSION"
+          ],
+          "primary_key": [
+            "succession_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_SUCCESSION_V2",
+          "table_id": "PUB_SUCCESSION_V2",
+          "owner_file_code": "N30"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-018",
+        "T-020",
+        "T-021",
+        "T-062",
+        "T-063",
+        "T-064",
+        "T-065",
+        "T-066",
+        "T-067"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-07",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N10.수도이력",
+      "provider_bindings": [
+        {
+          "owner": "N10",
+          "provider_id": "PUB_CAPITAL_HISTORY_V2",
+          "source_tables": [
+            "IN_CAPITAL_HISTORY",
+            "CALC_CAPITAL_HISTORY"
+          ],
+          "primary_key": [
+            "capital_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_CAPITAL_HISTORY_V2",
+          "table_id": "PUB_CAPITAL_HISTORY_V2",
+          "owner_file_code": "N10"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-018",
+        "T-020",
+        "T-021",
+        "T-062",
+        "T-063",
+        "T-064",
+        "T-065",
+        "T-066",
+        "T-067"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-07",
+      "consumer_file_code": "H90",
+      "requested_dataset": "N10.헌정국체이력",
+      "provider_bindings": [
+        {
+          "owner": "N10",
+          "provider_id": "PUB_CONSTITUTION_HISTORY_V2",
+          "source_tables": [
+            "IN_CONSTITUTION_HISTORY",
+            "CALC_CONSTITUTION_HISTORY"
+          ],
+          "primary_key": [
+            "constitution_record_id"
+          ],
+          "source_artifact": "nation_schema.json",
+          "dataset_id": "PUB_CONSTITUTION_HISTORY_V2",
+          "table_id": "PUB_CONSTITUTION_HISTORY_V2",
+          "owner_file_code": "N10"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-018",
+        "T-020",
+        "T-021",
+        "T-062",
+        "T-063",
+        "T-064",
+        "T-065",
+        "T-066",
+        "T-067"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "설계상 제공 ID만 확인. 실제 Google 파일ID/범위/권한/수신/재계산은 미실행."
+    },
+    {
+      "function_id": "H-08",
+      "consumer_file_code": "H90",
+      "requested_dataset": "각 소유분야 검증제공",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_C00_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_C00_CHECK_RESULTS_V2",
+          "table_id": "PUB_C00_CHECK_RESULTS_V2",
+          "owner_file_code": "C00"
+        },
+        {
+          "owner": "R10",
+          "provider_id": "PUB_R10_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_R10_CHECK_RESULTS_V2",
+          "table_id": "PUB_R10_CHECK_RESULTS_V2",
+          "owner_file_code": "R10"
+        },
+        {
+          "owner": "R20",
+          "provider_id": "PUB_R20_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_R20_CHECK_RESULTS_V2",
+          "table_id": "PUB_R20_CHECK_RESULTS_V2",
+          "owner_file_code": "R20"
+        },
+        {
+          "owner": "R30",
+          "provider_id": "PUB_R30_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_R30_CHECK_RESULTS_V2",
+          "table_id": "PUB_R30_CHECK_RESULTS_V2",
+          "owner_file_code": "R30"
+        },
+        {
+          "owner": "R40",
+          "provider_id": "PUB_R40_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_R40_CHECK_RESULTS_V2",
+          "table_id": "PUB_R40_CHECK_RESULTS_V2",
+          "owner_file_code": "R40"
+        },
+        {
+          "owner": "R50",
+          "provider_id": "PUB_R50_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_R50_CHECK_RESULTS_V2",
+          "table_id": "PUB_R50_CHECK_RESULTS_V2",
+          "owner_file_code": "R50"
+        },
+        {
+          "owner": "R60",
+          "provider_id": "PUB_R60_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_R60_CHECK_RESULTS_V2",
+          "table_id": "PUB_R60_CHECK_RESULTS_V2",
+          "owner_file_code": "R60"
+        },
+        {
+          "owner": "R70",
+          "provider_id": "PUB_R70_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_R70_CHECK_RESULTS_V2",
+          "table_id": "PUB_R70_CHECK_RESULTS_V2",
+          "owner_file_code": "R70"
+        },
+        {
+          "owner": "N10",
+          "provider_id": "PUB_N10_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_N10_CHECK_RESULTS_V2",
+          "table_id": "PUB_N10_CHECK_RESULTS_V2",
+          "owner_file_code": "N10"
+        },
+        {
+          "owner": "N20",
+          "provider_id": "PUB_N20_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_N20_CHECK_RESULTS_V2",
+          "table_id": "PUB_N20_CHECK_RESULTS_V2",
+          "owner_file_code": "N20"
+        },
+        {
+          "owner": "N30",
+          "provider_id": "PUB_N30_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_N30_CHECK_RESULTS_V2",
+          "table_id": "PUB_N30_CHECK_RESULTS_V2",
+          "owner_file_code": "N30"
+        },
+        {
+          "owner": "N40",
+          "provider_id": "PUB_N40_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_N40_CHECK_RESULTS_V2",
+          "table_id": "PUB_N40_CHECK_RESULTS_V2",
+          "owner_file_code": "N40"
+        },
+        {
+          "owner": "N50",
+          "provider_id": "PUB_N50_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_N50_CHECK_RESULTS_V2",
+          "table_id": "PUB_N50_CHECK_RESULTS_V2",
+          "owner_file_code": "N50"
+        },
+        {
+          "owner": "N60",
+          "provider_id": "PUB_N60_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_N60_CHECK_RESULTS_V2",
+          "table_id": "PUB_N60_CHECK_RESULTS_V2",
+          "owner_file_code": "N60"
+        },
+        {
+          "owner": "N70",
+          "provider_id": "PUB_N70_CHECK_RESULTS_V2",
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "primary_key": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_N70_CHECK_RESULTS_V2",
+          "table_id": "PUB_N70_CHECK_RESULTS_V2",
+          "owner_file_code": "N70"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-002",
+        "T-005",
+        "T-066",
+        "T-070",
+        "T-073",
+        "T-076",
+        "T-078",
+        "T-079"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "15개 분야별 typed CHECK_RESULTS 제공계약에 연결. run_id/check_id/subject_count/actual/expected/evidence 등 상세 실행결과 스키마를 사용. 실제 실행결과는 0건 생성, 운영시험 미실행."
+    },
+    {
+      "function_id": "H-08",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.데이터셋레지스트리",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_DATASET_REGISTRY_V2",
+          "source_tables": [
+            "데이터셋레지스트리"
+          ],
+          "primary_key": [
+            "dataset_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_DATASET_REGISTRY_V2",
+          "table_id": "PUB_DATASET_REGISTRY_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-002",
+        "T-005",
+        "T-066",
+        "T-070",
+        "T-073",
+        "T-076",
+        "T-078",
+        "T-079"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "추가된 C00 제공계약의 실제 source_tables를 대조하여 연결. 온라인 수신은 미실행."
+    },
+    {
+      "function_id": "H-08",
+      "consumer_file_code": "H90",
+      "requested_dataset": "H90.교차참조오류",
+      "provider_bindings": [],
+      "local_tables": [
+        "교차참조오류"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-002",
+        "T-005",
+        "T-066",
+        "T-070",
+        "T-073",
+        "T-076",
+        "T-078",
+        "T-079"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "H90 자기수신/IMPORTRANGE 금지. 로컬 조회조건 또는 파생 결과 읽기."
+    },
+    {
+      "function_id": "H-09",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.파일레지스트리",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_FILE_REGISTRY_V2",
+          "source_tables": [
+            "파일레지스트리"
+          ],
+          "primary_key": [
+            "file_code"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_FILE_REGISTRY_V2",
+          "table_id": "PUB_FILE_REGISTRY_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-001",
+        "T-002",
+        "T-010",
+        "T-068",
+        "T-073",
+        "T-074",
+        "T-075",
+        "T-076",
+        "T-082",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "추가된 C00 제공계약의 실제 source_tables를 대조하여 연결. 온라인 수신은 미실행."
+    },
+    {
+      "function_id": "H-09",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.범위레지스트리",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_RANGE_REGISTRY_V2",
+          "source_tables": [
+            "범위레지스트리"
+          ],
+          "primary_key": [
+            "dataset_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_RANGE_REGISTRY_V2",
+          "table_id": "PUB_RANGE_REGISTRY_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-001",
+        "T-002",
+        "T-010",
+        "T-068",
+        "T-073",
+        "T-074",
+        "T-075",
+        "T-076",
+        "T-082",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "추가된 C00 제공계약의 실제 source_tables를 대조하여 연결. 온라인 수신은 미실행."
+    },
+    {
+      "function_id": "H-09",
+      "consumer_file_code": "H90",
+      "requested_dataset": "C00.이관레코드관계",
+      "provider_bindings": [
+        {
+          "owner": "C00",
+          "provider_id": "PUB_MIGRATION_LINKS_V2",
+          "source_tables": [
+            "이관레코드관계"
+          ],
+          "primary_key": [
+            "migration_link_id"
+          ],
+          "source_artifact": "cross_domain_contract_extensions.json",
+          "dataset_id": "PUB_MIGRATION_LINKS_V2",
+          "table_id": "PUB_MIGRATION_LINKS_V2",
+          "owner_file_code": "C00"
+        }
+      ],
+      "local_tables": [],
+      "operation_import_edge": true,
+      "status": "미실행",
+      "test_ids": [
+        "T-001",
+        "T-002",
+        "T-010",
+        "T-068",
+        "T-073",
+        "T-074",
+        "T-075",
+        "T-076",
+        "T-082",
+        "T-084"
+      ],
+      "binding_kind": "existing_declared_provider_contract",
+      "note": "추가된 C00 제공계약의 실제 source_tables를 대조하여 연결. 온라인 수신은 미실행."
+    },
+    {
+      "function_id": "H-09",
+      "consumer_file_code": "H90",
+      "requested_dataset": "H90.결정대기",
+      "provider_bindings": [],
+      "local_tables": [
+        "결정대기"
+      ],
+      "operation_import_edge": false,
+      "status": "미실행",
+      "test_ids": [
+        "T-001",
+        "T-002",
+        "T-010",
+        "T-068",
+        "T-073",
+        "T-074",
+        "T-075",
+        "T-076",
+        "T-082",
+        "T-084"
+      ],
+      "binding_kind": "same_file_local",
+      "note": "H90 자기수신/IMPORTRANGE 금지. 로컬 조회조건 또는 파생 결과 읽기."
+    }
+  ],
+  "operating_provider_to_consumer_edges": [
+    {
+      "provider": "C00",
+      "consumer": "H90"
+    },
+    {
+      "provider": "N10",
+      "consumer": "H90"
+    },
+    {
+      "provider": "N20",
+      "consumer": "H90"
+    },
+    {
+      "provider": "N30",
+      "consumer": "H90"
+    },
+    {
+      "provider": "N40",
+      "consumer": "H90"
+    },
+    {
+      "provider": "N50",
+      "consumer": "H90"
+    },
+    {
+      "provider": "N60",
+      "consumer": "H90"
+    },
+    {
+      "provider": "N70",
+      "consumer": "H90"
+    },
+    {
+      "provider": "R10",
+      "consumer": "H90"
+    },
+    {
+      "provider": "R20",
+      "consumer": "H90"
+    },
+    {
+      "provider": "R30",
+      "consumer": "H90"
+    },
+    {
+      "provider": "R40",
+      "consumer": "H90"
+    },
+    {
+      "provider": "R50",
+      "consumer": "H90"
+    },
+    {
+      "provider": "R60",
+      "consumer": "H90"
+    },
+    {
+      "provider": "R70",
+      "consumer": "H90"
+    }
+  ],
+  "rules": [
+    "C00 외부 operating import 0",
+    "H90 자기수신 0",
+    "H90를 소비하는 운영파일 0",
+    "명세 제공ID 존재는 실제 파일·범위·권한·재계산 성공 증거가 아님"
+  ],
+  "summary": {
+    "requested_dependencies": 69,
+    "binding_kind_counts": {
+      "same_file_local": 15,
+      "migration_snapshot_comparison_only": 9,
+      "existing_declared_provider_contract": 45
+    },
+    "operating_edge_count": 15,
+    "unresolved_reference_strings": 0,
+    "online_tests_passed": 0,
+    "runtime_status": "미실행",
+    "missing_contracts_are_not_passes": true,
+    "missing_declared_contract_count": 0
+  },
+  "remaining_contract_gates": []
+}

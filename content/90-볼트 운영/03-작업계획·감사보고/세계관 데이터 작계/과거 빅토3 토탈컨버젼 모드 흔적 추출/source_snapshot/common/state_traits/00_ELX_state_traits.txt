@@ -1,0 +1,89 @@
+state_trait_the_great_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+
+	modifier = {
+		state_infrastructure_add = 250
+		state_tax_capacity_add = 500
+		state_construction_mult = 0.2
+		state_infrastructure_mult = 0.2
+		state_tax_capacity_mult = 0.4
+		building_output_electricity_mult = 0.1
+	}
+}
+
+state_trait_remained_infrastructure = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+
+	modifier = {
+		state_infrastructure_add = 120
+		state_tax_capacity_add = 150
+		state_infrastructure_mult = 0.5
+		state_tax_capacity_mult = 0.5
+	}
+}
+
+state_trait_great_black_soil = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_group_bg_agriculture_throughput_mult = 0.8
+		building_group_bg_plantations_throughput_mult = 0.8
+		building_group_bg_ranching_throughput_mult = 0.5
+	}
+}
+
+state_trait_blue_forest = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+
+	modifier = {
+		building_group_bg_logging_throughput_mult = 0.8
+	}
+}
+
+state_trait_the_center_of_industry = {
+	icon = "gfx/interface/icons/state_trait_icons/turquoise.dds"
+
+	modifier = {
+		building_group_bg_manufacturing_throughput_mult = 0.75
+	}
+}
+
+state_trait_the_great_palace = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+
+	modifier = {
+		building_group_bg_service_throughput_mult = 0.25
+		state_infrastructure_add = 1350
+		state_tax_capacity_add = 1500
+		state_construction_mult = 0.75
+		state_infrastructure_mult = 1.2
+		state_tax_capacity_mult = 1.5
+		building_output_electricity_mult = 0.45
+	}
+}
+
+state_trait_grand_mountain = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+
+	modifier = {
+		building_group_bg_mining_throughput_mult = 0.5
+		building_group_bg_oil_extraction_throughput_mult = 0.2
+	}
+
+}
+
+state_trait_earth_mankind_arrival_location = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		state_migration_pull_mult = 1.45
+	}
+}
+
+state_good_place_for_mankind = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		state_birth_rate_mult = 0.33
+	}
+}

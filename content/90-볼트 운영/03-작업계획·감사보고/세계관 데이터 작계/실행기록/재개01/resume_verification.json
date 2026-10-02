@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-10-02 08:04:03 UTC",
+  "scope": "재개 시 보관된 실제 ID와 원본 수정상태 확인",
+  "sources": [
+    {
+      "code": "REG-V1",
+      "id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+      "modified_time": "2026-09-23T03:16:10.511Z",
+      "modified_time_unchanged": true,
+      "title_unchanged": true,
+      "parent_ids_unchanged": true,
+      "permissions_unchanged": true,
+      "sheet_count": 36
+    },
+    {
+      "code": "NAT-V1",
+      "id": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI",
+      "modified_time": "2026-09-23T09:30:49.966Z",
+      "modified_time_unchanged": true,
+      "title_unchanged": true,
+      "parent_ids_unchanged": true,
+      "permissions_unchanged": true,
+      "sheet_count": 51
+    }
+  ],
+  "backups": [
+    {
+      "code": "REG-V1",
+      "type": "native_backup",
+      "id": "17FNrUusUiqOIBf-v-oCFNkd4NJyT2XhFdfipm5PLqNQ",
+      "exists": true,
+      "parent_ids": [
+        "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9"
+      ]
+    },
+    {
+      "code": "REG-V1",
+      "type": "xlsx_backup",
+      "id": "1ylY7ZKYDib0BZqmY8rNb1LoVPF9NHu9_",
+      "exists": true,
+      "parent_ids": [
+        "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9"
+      ]
+    },
+    {
+      "code": "NAT-V1",
+      "type": "native_backup",
+      "id": "1KSllss7DTq_BvP-4opxPPU39G34kk9nq5kN_F0vGq4c",
+      "exists": true,
+      "parent_ids": [
+        "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9"
+      ]
+    },
+    {
+      "code": "NAT-V1",
+      "type": "xlsx_backup",
+      "id": "1-BgTMaGFFMKdu-mbVwuN9VyiHG5tXoJl",
+      "exists": true,
+      "parent_ids": [
+        "1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9"
+      ]
+    }
+  ],
+  "operating_files_count": 0,
+  "duplicate_creation_actions": 0,
+  "baseline_search": {
+    "local_current_folder_found": false,
+    "drive_current_search_found": false,
+    "scope": "제공작업폴더 및 Drive native Excel MIME/지역상세·엘리시움 제목, local Downloads 관련 파일명",
+    "remaining": "기준 첨부 XLSX 제공 또는 온라인 스냅샷 예외승인 응답 대기"
+  },
+  "native_content_full_reread": false,
+  "reason": "원본 수정시각·탭구조 변동이 없어서 검증된 기존 스냅샷을 재사용; 내용전수재검증을 이번에 재실행했다고 보고하지 않음"
+}

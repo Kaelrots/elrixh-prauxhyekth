@@ -1,0 +1,1276 @@
+{
+  "checked_at": "2026-10-02T09:23:33.633Z",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w/edit",
+      "properties": {
+        "title": "TEST-R20 · 소형 연결시험 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 71002001,
+            "title": "01_설정",
+            "index": 1,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 19,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "PUB_CODEBOOK_V2",
+                      "userEnteredValue": {
+                        "stringValue": "PUB_CODEBOOK_V2"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PUB_CODEBOOK_V2"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-C00",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-C00"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-C00"
+                      }
+                    },
+                    {
+                      "formattedValue": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY",
+                      "userEnteredValue": {
+                        "stringValue": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY"
+                      }
+                    },
+                    {
+                      "formattedValue": "PUB_CODEBOOK_V2",
+                      "userEnteredValue": {
+                        "stringValue": "PUB_CODEBOOK_V2"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PUB_CODEBOOK_V2"
+                      }
+                    },
+                    {
+                      "formattedValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status",
+                      "userEnteredValue": {
+                        "stringValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "group_code|stored_code|display_name|definition|name_elun|name_other|usage_status|notes|owner_file_code|owner_spreadsheet_id|schema_version|release_id|source_revision|validation_status|checked_at|record_count|coverage|value_status|setting_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_CODEBOOK!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_CODEBOOK!A3:S3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_CODEBOOK!A3),IF(N20=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F20<>E20,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "메타 연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_CODEBOOK!A3),\"메타 연결실패\",IF(RMETA_CODEBOOK!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_CODEBOOK!C4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "메타 연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",COUNTIF(REF_CODEBOOK!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H20)),NOT(ISNUMBER(I20))),\"미확인\",IF(H20=I20,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_CODEBOOK!A3),\"미확인\",RMETA_CODEBOOK!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",IF(L20=K20,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "stringValue": "미확인"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "PUB_REGIONS_V2",
+                      "userEnteredValue": {
+                        "stringValue": "PUB_REGIONS_V2"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PUB_REGIONS_V2"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-R10",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-R10"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-R10"
+                      }
+                    },
+                    {
+                      "formattedValue": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+                      "userEnteredValue": {
+                        "stringValue": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8"
+                      }
+                    },
+                    {
+                      "formattedValue": "PUB_REGIONS_V2",
+                      "userEnteredValue": {
+                        "stringValue": "PUB_REGIONS_V2"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "PUB_REGIONS_V2"
+                      }
+                    },
+                    {
+                      "formattedValue": "sort_order|name_ko|name_roman|name_elun|region_level|region_id|region_grade|region_class|hex_color|setting_status|source_id|source_snapshot_id|legacy_locator|color_chip",
+                      "userEnteredValue": {
+                        "stringValue": "sort_order|name_ko|name_roman|name_elun|region_level|region_id|region_grade|region_class|hex_color|setting_status|source_id|source_snapshot_id|legacy_locator|color_chip"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "sort_order|name_ko|name_roman|name_elun|region_level|region_id|region_grade|region_class|hex_color|setting_status|source_id|source_snapshot_id|legacy_locator|color_chip"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_REGIONS!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_REGIONS!A3:N3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_REGIONS!A3),IF(N21=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F21<>E21,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "메타 연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_REGIONS!A3),\"메타 연결실패\",IF(RMETA_REGIONS!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_REGIONS!C4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "메타 연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G21<>\"연결확인\",\"미확인\",COUNTIF(REF_REGIONS!$F$4:$F$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H21)),NOT(ISNUMBER(I21))),\"미확인\",IF(H21=I21,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_REGIONS!A3),\"미확인\",RMETA_REGIONS!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G21<>\"연결확인\",\"미확인\",IF(L21=K21,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "stringValue": "미확인"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71002002,
+            "title": "IN_인구관측",
+            "index": 2,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "region_id",
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "time_raw",
+                      "userEnteredValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "time_raw"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_status",
+                      "userEnteredValue": {
+                        "stringValue": "value_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_numeric",
+                      "userEnteredValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_numeric"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_min",
+                      "userEnteredValue": {
+                        "stringValue": "value_min"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_min"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_max",
+                      "userEnteredValue": {
+                        "stringValue": "value_max"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_max"
+                      }
+                    },
+                    {
+                      "formattedValue": "unit",
+                      "userEnteredValue": {
+                        "stringValue": "unit"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "unit"
+                      }
+                    },
+                    {
+                      "formattedValue": "population_definition",
+                      "userEnteredValue": {
+                        "stringValue": "population_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "population_definition"
+                      }
+                    },
+                    {
+                      "formattedValue": "data_scope",
+                      "userEnteredValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "data_scope"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_basis",
+                      "userEnteredValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_basis"
+                      }
+                    },
+                    {
+                      "formattedValue": "setting_status",
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_id",
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "notes",
+                      "userEnteredValue": {
+                        "stringValue": "notes"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "notes"
+                      }
+                    },
+                    {
+                      "formattedValue": "record_id",
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "planet_scope_id",
+                      "userEnteredValue": {
+                        "stringValue": "planet_scope_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "planet_scope_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "route",
+                      "userEnteredValue": {
+                        "stringValue": "route"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "route"
+                      }
+                    },
+                    {
+                      "formattedValue": "era",
+                      "userEnteredValue": {
+                        "stringValue": "era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era"
+                      }
+                    },
+                    {
+                      "formattedValue": "year",
+                      "userEnteredValue": {
+                        "stringValue": "year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "year"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "TEST-REGION-001",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-REGION-001"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-ERA 100",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-ERA 100"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-ERA 100"
+                      }
+                    },
+                    {
+                      "formattedValue": "값 있음",
+                      "userEnteredValue": {
+                        "stringValue": "값 있음"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값 있음"
+                      }
+                    },
+                    {
+                      "formattedValue": "100",
+                      "userEnteredValue": {
+                        "numberValue": 100
+                      },
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                      "formattedValue": "SF-01 동일조건 인구",
+                      "userEnteredValue": {
+                        "stringValue": "SF-01 동일조건 인구"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "SF-01 동일조건 인구"
+                      }
+                    },
+                    {},
+                    {},
+                    {
+                      "formattedValue": "초안",
+                      "userEnteredValue": {
+                        "stringValue": "초안"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "초안"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "합성 기술 시험값. 운영 파일에 이관 금지.",
+                      "userEnteredValue": {
+                        "stringValue": "합성 기술 시험값. 운영 파일에 이관 금지."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "합성 기술 시험값. 운영 파일에 이관 금지."
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-POP-001",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-POP-001"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-POP-001"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "TEST-A",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-A"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-A"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-ERA",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-ERA"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-ERA"
+                      }
+                    },
+                    {
+                      "formattedValue": "100",
+                      "userEnteredValue": {
+                        "numberValue": 100
+                      },
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71002003,
+            "title": "VIEW_인구관측_조회계산",
+            "index": 3,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "region_name",
+                      "userEnteredValue": {
+                        "stringValue": "region_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_name"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_name",
+                      "userEnteredValue": {
+                        "stringValue": "source_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_name"
+                      }
+                    },
+                    {
+                      "formattedValue": "region_level",
+                      "userEnteredValue": {
+                        "stringValue": "region_level"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_level"
+                      }
+                    },
+                    {
+                      "formattedValue": "observation_key",
+                      "userEnteredValue": {
+                        "stringValue": "observation_key"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "observation_key"
+                      }
+                    },
+                    {
+                      "formattedValue": "record_id",
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "legacy_locator",
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_snapshot_id",
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('01_설정'!G21<>\"연결확인\",'01_설정'!G21,IF(COUNTIFS(REF_REGIONS!$F$4:$F$13,'IN_인구관측'!A4)<>1,\"키 없음·중복\",INDEX(REF_REGIONS!$B$4:$B$13,MATCH('IN_인구관측'!A4,REF_REGIONS!$F$4:$F$13,0)))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {},
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('01_설정'!G21<>\"연결확인\",'01_설정'!G21,IF(COUNTIFS(REF_REGIONS!$F$4:$F$13,'IN_인구관측'!A4)<>1,\"키 없음·중복\",INDEX(REF_REGIONS!$E$4:$E$13,MATCH('IN_인구관측'!A4,REF_REGIONS!$F$4:$F$13,0)))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-A|TEST-ERA|100|TEST-REGION-001",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",'IN_인구관측'!P4&\"|\"&'IN_인구관측'!Q4&\"|\"&'IN_인구관측'!R4&\"|\"&'IN_인구관측'!A4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-A|TEST-ERA|100|TEST-REGION-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-POP-001",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!N4=\"\",\"\",'IN_인구관측'!N4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-POP-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!AM4=\"\",\"\",'IN_인구관측'!AM4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-SF-20261002-01",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!AP4=\"\",\"\",'IN_인구관측'!AP4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-SF-20261002-01"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('01_설정'!G21<>\"연결확인\",'01_설정'!G21,IF(COUNTIFS(REF_REGIONS!$F$4:$F$13,'IN_인구관측'!A5)<>1,\"키 없음·중복\",INDEX(REF_REGIONS!$B$4:$B$13,MATCH('IN_인구관측'!A5,REF_REGIONS!$F$4:$F$13,0)))))"
+                      }
+                    },
+                    {},
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('01_설정'!G21<>\"연결확인\",'01_설정'!G21,IF(COUNTIFS(REF_REGIONS!$F$4:$F$13,'IN_인구관측'!A5)<>1,\"키 없음·중복\",INDEX(REF_REGIONS!$E$4:$E$13,MATCH('IN_인구관측'!A5,REF_REGIONS!$F$4:$F$13,0)))))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",'IN_인구관측'!P5&\"|\"&'IN_인구관측'!Q5&\"|\"&'IN_인구관측'!R5&\"|\"&'IN_인구관측'!A5)"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!N5=\"\",\"\",'IN_인구관측'!N5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!AM5=\"\",\"\",'IN_인구관측'!AM5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!AP5=\"\",\"\",'IN_인구관측'!AP5))"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71002004,
+            "title": "PUB_POPULATION",
+            "index": 4,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "region_id",
+                      "userEnteredValue": {
+                        "stringValue": "region_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "region_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "time_raw",
+                      "userEnteredValue": {
+                        "stringValue": "time_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "time_raw"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_status",
+                      "userEnteredValue": {
+                        "stringValue": "value_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_numeric",
+                      "userEnteredValue": {
+                        "stringValue": "value_numeric"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_numeric"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_min",
+                      "userEnteredValue": {
+                        "stringValue": "value_min"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_min"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_max",
+                      "userEnteredValue": {
+                        "stringValue": "value_max"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_max"
+                      }
+                    },
+                    {
+                      "formattedValue": "unit",
+                      "userEnteredValue": {
+                        "stringValue": "unit"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "unit"
+                      }
+                    },
+                    {
+                      "formattedValue": "population_definition",
+                      "userEnteredValue": {
+                        "stringValue": "population_definition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "population_definition"
+                      }
+                    },
+                    {
+                      "formattedValue": "data_scope",
+                      "userEnteredValue": {
+                        "stringValue": "data_scope"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "data_scope"
+                      }
+                    },
+                    {
+                      "formattedValue": "value_basis",
+                      "userEnteredValue": {
+                        "stringValue": "value_basis"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "value_basis"
+                      }
+                    },
+                    {
+                      "formattedValue": "setting_status",
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      }
+                    },
+                    {
+                      "formattedValue": "source_id",
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "notes",
+                      "userEnteredValue": {
+                        "stringValue": "notes"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "notes"
+                      }
+                    },
+                    {
+                      "formattedValue": "record_id",
+                      "userEnteredValue": {
+                        "stringValue": "record_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "record_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "planet_scope_id",
+                      "userEnteredValue": {
+                        "stringValue": "planet_scope_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "planet_scope_id"
+                      }
+                    },
+                    {
+                      "formattedValue": "route",
+                      "userEnteredValue": {
+                        "stringValue": "route"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "route"
+                      }
+                    },
+                    {
+                      "formattedValue": "era",
+                      "userEnteredValue": {
+                        "stringValue": "era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era"
+                      }
+                    },
+                    {
+                      "formattedValue": "year",
+                      "userEnteredValue": {
+                        "stringValue": "year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "year"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "TEST-REGION-001",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!A4=\"\",\"\",'IN_인구관측'!A4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-REGION-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-ERA 100",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!B4=\"\",\"\",'IN_인구관측'!B4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-ERA 100"
+                      }
+                    },
+                    {
+                      "formattedValue": "값 있음",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!C4=\"\",\"\",'IN_인구관측'!C4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값 있음"
+                      }
+                    },
+                    {
+                      "formattedValue": "100",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!D4=\"\",\"\",'IN_인구관측'!D4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!E4=\"\",\"\",'IN_인구관측'!E4))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!F4=\"\",\"\",'IN_인구관측'!F4))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!G4=\"\",\"\",'IN_인구관측'!G4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "SF-01 동일조건 인구",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!H4=\"\",\"\",'IN_인구관측'!H4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "SF-01 동일조건 인구"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!I4=\"\",\"\",'IN_인구관측'!I4))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!J4=\"\",\"\",'IN_인구관측'!J4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "초안",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!K4=\"\",\"\",'IN_인구관측'!K4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "초안"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!L4=\"\",\"\",'IN_인구관측'!L4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "합성 기술 시험값. 운영 파일에 이관 금지.",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!M4=\"\",\"\",'IN_인구관측'!M4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "합성 기술 시험값. 운영 파일에 이관 금지."
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-POP-001",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!N4=\"\",\"\",'IN_인구관측'!N4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-POP-001"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!O4=\"\",\"\",'IN_인구관측'!O4))"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-A",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!P4=\"\",\"\",'IN_인구관측'!P4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-A"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST-ERA",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!Q4=\"\",\"\",'IN_인구관측'!Q4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-ERA"
+                      }
+                    },
+                    {
+                      "formattedValue": "100",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N4=\"\",\"\",IF('IN_인구관측'!R4=\"\",\"\",'IN_인구관측'!R4))"
+                      },
+                      "effectiveValue": {
+                        "numberValue": 100
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!A5=\"\",\"\",'IN_인구관측'!A5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!B5=\"\",\"\",'IN_인구관측'!B5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!C5=\"\",\"\",'IN_인구관측'!C5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!D5=\"\",\"\",'IN_인구관측'!D5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!E5=\"\",\"\",'IN_인구관측'!E5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!F5=\"\",\"\",'IN_인구관측'!F5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!G5=\"\",\"\",'IN_인구관측'!G5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!H5=\"\",\"\",'IN_인구관측'!H5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!I5=\"\",\"\",'IN_인구관측'!I5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!J5=\"\",\"\",'IN_인구관측'!J5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!K5=\"\",\"\",'IN_인구관측'!K5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!L5=\"\",\"\",'IN_인구관측'!L5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!M5=\"\",\"\",'IN_인구관측'!M5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!N5=\"\",\"\",'IN_인구관측'!N5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!O5=\"\",\"\",'IN_인구관측'!O5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!P5=\"\",\"\",'IN_인구관측'!P5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!Q5=\"\",\"\",'IN_인구관측'!Q5))"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('IN_인구관측'!N5=\"\",\"\",IF('IN_인구관측'!R5=\"\",\"\",'IN_인구관측'!R5))"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71002008,
+            "title": "REF_CODEBOOK",
+            "index": 8,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "#REF!",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C20,'01_설정'!D20)"
+                      },
+                      "effectiveValue": {
+                        "errorValue": {
+                          "type": "REF",
+                          "message": "Please use a desktop web browser to connect this sheet."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71002010,
+            "title": "REF_REGIONS",
+            "index": 10,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "#REF!",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C21,'01_설정'!D21)"
+                      },
+                      "effectiveValue": {
+                        "errorValue": {
+                          "type": "REF",
+                          "message": "Please use a desktop web browser to connect this sheet."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

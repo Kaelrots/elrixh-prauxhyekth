@@ -1,0 +1,453 @@
+[
+  {
+    "kind": "missing_assignment_value",
+    "entity": "",
+    "detail": "capital_province =",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 66
+  },
+  {
+    "kind": "missing_assignment_value",
+    "entity": "",
+    "detail": "capital_province =",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 72
+  },
+  {
+    "kind": "missing_assignment_value",
+    "entity": "",
+    "detail": "capital_province =",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 78
+  },
+  {
+    "kind": "missing_assignment_value",
+    "entity": "",
+    "detail": "capital_province =",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 84
+  },
+  {
+    "kind": "localization_unparsed_line",
+    "entity": "",
+    "detail": " Czehn_ Zailrits:0 \"쳰 자일리츠\"",
+    "source_file": "localization/korean/NWR_names_l_korean.yml",
+    "line": 174
+  },
+  {
+    "kind": "duplicate_localization_key",
+    "entity": "STATE_GWANBUK",
+    "detail": {
+      "language": "korean",
+      "values": [
+        "관북",
+        "관북"
+      ],
+      "sources": [
+        "localization/korean/map/states_l_korean.yml:377",
+        "localization/korean/map/states_l_korean.yml:545"
+      ]
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "hub_outside_declared_state",
+    "entity": "STATE_RARHELIYA",
+    "detail": {
+      "hub": "city",
+      "hex": "A1B9E5"
+    },
+    "source_file": "map_data/state_regions/00_middle_senaxh.txt",
+    "line": 1
+  },
+  {
+    "kind": "hub_outside_declared_state",
+    "entity": "STATE_RARHELIYA",
+    "detail": {
+      "hub": "farm",
+      "hex": "6FB165"
+    },
+    "source_file": "map_data/state_regions/00_middle_senaxh.txt",
+    "line": 1
+  },
+  {
+    "kind": "hub_outside_declared_state",
+    "entity": "STATE_RARHELIYA",
+    "detail": {
+      "hub": "mine",
+      "hex": "A28086"
+    },
+    "source_file": "map_data/state_regions/00_middle_senaxh.txt",
+    "line": 1
+  },
+  {
+    "kind": "hub_outside_declared_state",
+    "entity": "STATE_RARHELIYA",
+    "detail": {
+      "hub": "wood",
+      "hex": "E27E69"
+    },
+    "source_file": "map_data/state_regions/00_middle_senaxh.txt",
+    "line": 1
+  },
+  {
+    "kind": "duplicate_state_field",
+    "entity": "STATE_AKANPACZATANIAH",
+    "detail": {
+      "fields": [
+        "provinces"
+      ],
+      "policy": "all province blocks unioned; other scalar fields use last; raw AST preserves every occurrence"
+    },
+    "source_file": "map_data/state_regions/02_east_south_senaxh.txt",
+    "line": 264
+  },
+  {
+    "kind": "hub_outside_declared_state",
+    "entity": "STATE_SHINSEOUL",
+    "detail": {
+      "hub": "city",
+      "hex": "EB858E"
+    },
+    "source_file": "map_data/state_regions/07_raionion_korea.txt",
+    "line": 1
+  },
+  {
+    "kind": "duplicate_state_key",
+    "entity": "STATE_GWANBUK",
+    "detail": [
+      "STATE_GWANBUK@map_data/state_regions/03_south_senaxh.txt:201",
+      "STATE_GWANBUK@map_data/state_regions/07_raionion_korea.txt:500"
+    ],
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "duplicate_state_key",
+    "entity": "STATE_AINTOVOLRA",
+    "detail": [
+      "STATE_AINTOVOLRA@map_data/state_regions/21_xhiryuenderh.txt:1565",
+      "STATE_AINTOVOLRA@map_data/state_regions/21_xhiryuenderh.txt:1735"
+    ],
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "duplicate_state_id",
+    "entity": "2638",
+    "detail": [
+      "STATE_INEHSPANTEZIAH@map_data/state_regions/23_skainien.txt:1599",
+      "STATE_UNTFUNVERKH@map_data/state_regions/25_grapurth.txt:647"
+    ],
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "duplicate_state_within_region",
+    "entity": "region_seivranth_strategic_region",
+    "detail": {
+      "state_key": "STATE_EKKELRIYUEM",
+      "occurrences": 2
+    },
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 11
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "1A8BBC",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "1F56E0",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "206E89",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "44D17B",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "656DB2",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "6FB165",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "73AFE9",
+    "detail": {
+      "state_keys": [
+        "STATE_RIESELRANTO"
+      ],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "76B6D4",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "7FADC8",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "8E9488",
+    "detail": {
+      "state_keys": [
+        "STATE_VADANTANTH"
+      ],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "9473DC",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": true
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "99BF9C",
+    "detail": {
+      "state_keys": [
+        "STATE_AIVELRENNERANTH"
+      ],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "A1B9E5",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "A28086",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "C68D75",
+    "detail": {
+      "state_keys": [
+        "STATE_NIDOTORAXHEMAHN"
+      ],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "D7A58A",
+    "detail": {
+      "state_keys": [
+        "STATE_AIVELRENNERANTH"
+      ],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "E27E69",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "EB858E",
+    "detail": {
+      "state_keys": [],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "F1C5A3",
+    "detail": {
+      "state_keys": [
+        "STATE_RIESELRANTO"
+      ],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "referenced_hex_missing_from_map",
+    "entity": "F8B788",
+    "detail": {
+      "state_keys": [
+        "STATE_AILRUUENTH"
+      ],
+      "sea_start": false,
+      "lake": false
+    },
+    "source_file": null,
+    "line": null
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_seivranth_strategic_region",
+    "detail": "6FB165",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 11
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_kauats_strategic_region",
+    "detail": "44D17B",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 17
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_north_senaxh_low_land_strategic_region",
+    "detail": "1A8BBC",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 23
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_karotaniah_strategic_region",
+    "detail": "76B6D4",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 29
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_kastalriya_strategic_region",
+    "detail": "1F56E0",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 35
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_naiheldaroniah_strategic_region",
+    "detail": "206E89",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 41
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_hyaryet_strategic_region",
+    "detail": "656DB2",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 47
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_granblruts_strategic_region",
+    "detail": "7FADC8",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 53
+  },
+  {
+    "kind": "region_capital_outside_declared_region",
+    "entity": "region_korean_peninsula_strategic_region",
+    "detail": "EB858E",
+    "source_file": "common/strategic_regions/traiah_continent_strategic_regions.txt",
+    "line": 59
+  }
+]

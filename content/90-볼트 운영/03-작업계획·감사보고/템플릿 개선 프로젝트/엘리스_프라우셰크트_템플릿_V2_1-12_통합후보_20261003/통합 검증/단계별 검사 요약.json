@@ -1,0 +1,254 @@
+[
+  {
+    "stage": 1,
+    "key": "person",
+    "label": "인물",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 71,
+        "fail": 0
+      },
+      "기존51건_재검증.json": {
+        "pass": 51,
+        "fail": 0
+      },
+      "생성기_모의검사.json": {
+        "pass": 71,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 31,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 2,
+    "key": "region",
+    "label": "지역",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 58,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 61,
+        "fail": 0
+      },
+      "지역_모의검사.json": {
+        "pass": 58,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 3,
+    "key": "nation",
+    "label": "국가",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 61,
+        "fail": 0
+      },
+      "국가_모의검사.json": {
+        "pass": 61,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 78,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 4,
+    "key": "institution",
+    "label": "기관",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 63,
+        "fail": 0
+      },
+      "기관_모의검사.json": {
+        "pass": 63,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 77,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 5,
+    "key": "policy",
+    "label": "정책",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 63,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 79,
+        "fail": 0
+      },
+      "정책_모의검사.json": {
+        "pass": 63,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 6,
+    "key": "history",
+    "label": "역사",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 64,
+        "fail": 0
+      },
+      "모의검사.json": {
+        "pass": 64,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 70,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 7,
+    "key": "ideology",
+    "label": "정치·사상",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 57,
+        "fail": 0
+      },
+      "모의검사.json": {
+        "pass": 57,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 49,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 8,
+    "key": "religion",
+    "label": "종교",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 60,
+        "fail": 0
+      },
+      "모의검사.json": {
+        "pass": 60,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 64,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 9,
+    "key": "species",
+    "label": "종족",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 59,
+        "fail": 0
+      },
+      "모의검사.json": {
+        "pass": 59,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 41,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 10,
+    "key": "resource",
+    "label": "자원",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 63,
+        "fail": 0
+      },
+      "모의검사.json": {
+        "pass": 63,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 61,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 11,
+    "key": "technology",
+    "label": "기술·연구",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 112,
+        "fail": 0
+      },
+      "기술관계_검사.json": {
+        "pass": 20,
+        "fail": 0
+      },
+      "모의검사.json": {
+        "pass": 112,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 175,
+        "fail": 0
+      }
+    }
+  },
+  {
+    "stage": 12,
+    "key": "misc",
+    "label": "기타·특수 목적",
+    "status": "STAGED_VALIDATED_NOT_PROMOTED",
+    "reports": {
+      "Templater_실제파서_검사.json": {
+        "pass": 53,
+        "fail": 0
+      },
+      "모의검사.json": {
+        "pass": 53,
+        "fail": 0
+      },
+      "운영조각_검사.json": {
+        "pass": 15,
+        "fail": 0
+      },
+      "정적검증.json": {
+        "pass": 70,
+        "fail": 0
+      }
+    }
+  }
+]

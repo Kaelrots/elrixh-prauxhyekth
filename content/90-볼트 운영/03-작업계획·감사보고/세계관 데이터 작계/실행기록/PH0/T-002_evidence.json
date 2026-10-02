@@ -1,0 +1,35 @@
+{
+  "test_id": "T-002",
+  "status": "통과",
+  "checked_at": "2026-10-02T16:53:59+09:00",
+  "scope": "이번 WORK 구간의 V1 무변경 검사. 첨부 시점과 현재 차분 및 V2 완성 검증을 의미하지 않음.",
+  "v1_write_actions": 0,
+  "checks": [
+    {
+      "source": "REG-V1",
+      "metadata_equal": true,
+      "sheet_metadata_equal": true,
+      "export_literal_and_formula_equal": true,
+      "formula_cache_changed_cells": 0
+    },
+    {
+      "source": "NAT-V1",
+      "metadata_equal": true,
+      "sheet_metadata_equal": true,
+      "export_literal_and_formula_equal": true,
+      "formula_cache_changed_cells": 0
+    }
+  ],
+  "evidence": [
+    "v1_mutation_audit.json",
+    "REG-V1_drive_start.json",
+    "REG-V1_drive_end.json",
+    "NAT-V1_drive_start.json",
+    "NAT-V1_drive_end.json",
+    "REG-V1_sheets_start.json",
+    "REG-V1_sheets_end.json",
+    "NAT-V1_sheets_start.json",
+    "NAT-V1_sheets_end.json",
+    "../PH1/canonical_start_end_comparison.json"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-02T17:34:40+09:00",
+  "v1_write_actions": 0,
+  "metadata_checks": [
+    {
+      "source": "REG-V1",
+      "metadata_equal": true,
+      "fields": {
+        "id": true,
+        "title": true,
+        "modified_time": true,
+        "parent_ids": true,
+        "permissions": true
+      },
+      "end_evidence": "재개01/REG_drive_end.json"
+    },
+    {
+      "source": "NAT-V1",
+      "metadata_equal": true,
+      "fields": {
+        "id": true,
+        "title": true,
+        "modified_time": true,
+        "parent_ids": true,
+        "permissions": true
+      },
+      "end_evidence": "재개01/NAT_drive_end.json"
+    }
+  ],
+  "sheet_metadata_rechecked_at_resume": true,
+  "full_content_reexport_this_resume": false,
+  "previous_full_content_check": "PH0/T-002_evidence.json; PH1/canonical_start_end_comparison.json",
+  "scope": "이번 재개는 읽기·로컬명세작성·감사파일 갱신. 원본 수정시각/제목/부모/권한은 전후 동일. 이전 전체 셀검사를 이번에 다시 수행했다고 주장하지 않음."
+}

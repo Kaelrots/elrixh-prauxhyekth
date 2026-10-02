@@ -1,0 +1,752 @@
+{
+  "checked_at": "2026-10-02T09:29:27.751Z",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY/edit",
+      "properties": {
+        "title": "TEST-H90 · 소형 연결시험 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 71005001,
+            "title": "01_설정",
+            "index": 1,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 19,
+              "startColumn": 5,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_POPULATION!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_POPULATION!A3:AZ3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_POPULATION!A3),IF(N20=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F20<>E20,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "메타 연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_POPULATION!A3),\"메타 연결실패\",IF(RMETA_POPULATION!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_POPULATION!C4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "메타 연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",COUNTIF(REF_POPULATION!$N$4:$N$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H20)),NOT(ISNUMBER(I20))),\"미확인\",IF(H20=I20,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_POPULATION!A3),\"미확인\",RMETA_POPULATION!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G20<>\"연결확인\",\"미확인\",IF(L20=K20,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "stringValue": "미확인"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_PERSON!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_PERSON!A3:AE3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_PERSON!A3),IF(N21=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F21<>E21,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "메타 연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_PERSON!A3),\"메타 연결실패\",IF(RMETA_PERSON!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_PERSON!C4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "메타 연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G21<>\"연결확인\",\"미확인\",COUNTIF(REF_PERSON!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H21)),NOT(ISNUMBER(I21))),\"미확인\",IF(H21=I21,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_PERSON!A3),\"미확인\",RMETA_PERSON!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G21<>\"연결확인\",\"미확인\",IF(L21=K21,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "stringValue": "미확인"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_OFFICE_TERM!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_OFFICE_TERM!A3:AW3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_OFFICE_TERM!A3),IF(N22=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F22<>E22,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "메타 연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_OFFICE_TERM!A3),\"메타 연결실패\",IF(RMETA_OFFICE_TERM!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_OFFICE_TERM!C4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "메타 연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G22<>\"연결확인\",\"미확인\",COUNTIF(REF_OFFICE_TERM!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H22)),NOT(ISNUMBER(I22))),\"미확인\",IF(H22=I22,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_OFFICE_TERM!A3),\"미확인\",RMETA_OFFICE_TERM!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G22<>\"연결확인\",\"미확인\",IF(L22=K22,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "stringValue": "미확인"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_CODEBOOK!A3),\"연결실패\",TEXTJOIN(\"|\",FALSE,REF_CODEBOOK!A3:S3))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(REF_CODEBOOK!A3),IF(N23=\"승인 대기\",\"연결 승인 대기\",\"연결실패\"),IF(F23<>E23,\"스키마 불일치\",\"연결확인\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "메타 연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_CODEBOOK!A3),\"메타 연결실패\",IF(RMETA_CODEBOOK!A3<>\"dataset_id\",\"메타 스키마 불일치\",RMETA_CODEBOOK!C4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "메타 연결실패"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G23<>\"연결확인\",\"미확인\",COUNTIF(REF_CODEBOOK!$A$4:$A$13,\"?*\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(NOT(ISNUMBER(H23)),NOT(ISNUMBER(I23))),\"미확인\",IF(H23=I23,\"일치\",\"불일치\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "TEST.REV.1",
+                      "userEnteredValue": {
+                        "stringValue": "TEST.REV.1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST.REV.1"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(ISERROR(RMETA_CODEBOOK!A3),\"미확인\",RMETA_CODEBOOK!B4)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(G23<>\"연결확인\",\"미확인\",IF(L23=K23,\"판본 일치\",\"갱신 대기\"))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "stringValue": "미확인"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71005007,
+            "title": "VIEW_소형흐름",
+            "index": 7,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "항목",
+                      "userEnteredValue": {
+                        "stringValue": "항목"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목"
+                      }
+                    },
+                    {
+                      "formattedValue": "결과",
+                      "userEnteredValue": {
+                        "stringValue": "결과"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "결과"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "인구 자료 상태",
+                      "userEnteredValue": {
+                        "stringValue": "인구 자료 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "인구 자료 상태"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF('01_설정'!J20<>\"일치\",\"건수 불일치\",IF('01_설정'!M20<>\"판본 일치\",\"갱신 대기\",IF('01_설정'!G23<>\"연결확인\",'01_설정'!G23,IF(NOT(COUNTIFS(REF_CODEBOOK!$A$4:$A$13,\"value_status\",REF_CODEBOOK!$B$4:$B$13,\"값 있음\")=1),\"값상태 코드 없음·중복\",IF(COUNTIFS(REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4)=0,\"자료없음\",IF(COUNTIFS(REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4,REF_POPULATION!$C$4:$C$13,\"값 있음\")<>COUNTIFS(REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4),\"값상태 확인 필요\",\"자료 있음\")))))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "동일조건 자료 건수",
+                      "userEnteredValue": {
+                        "stringValue": "동일조건 자료 건수"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "동일조건 자료 건수"
+                      }
+                    },
+                    {
+                      "formattedValue": "미확인",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",\"미확인\",COUNTIFS(REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "미확인"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "동일조건 인구",
+                      "userEnteredValue": {
+                        "stringValue": "동일조건 인구"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "동일조건 인구"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(B4<>\"자료 있음\",B4,IF((IF(AND(REF_POPULATION!P4='CONFIG_조회조건'!A4,REF_POPULATION!Q4='CONFIG_조회조건'!B4,REF_POPULATION!R4='CONFIG_조회조건'!E4,REF_POPULATION!A4='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D4)),1,0)+IF(AND(REF_POPULATION!P5='CONFIG_조회조건'!A4,REF_POPULATION!Q5='CONFIG_조회조건'!B4,REF_POPULATION!R5='CONFIG_조회조건'!E4,REF_POPULATION!A5='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D5)),1,0)+IF(AND(REF_POPULATION!P6='CONFIG_조회조건'!A4,REF_POPULATION!Q6='CONFIG_조회조건'!B4,REF_POPULATION!R6='CONFIG_조회조건'!E4,REF_POPULATION!A6='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D6)),1,0)+IF(AND(REF_POPULATION!P7='CONFIG_조회조건'!A4,REF_POPULATION!Q7='CONFIG_조회조건'!B4,REF_POPULATION!R7='CONFIG_조회조건'!E4,REF_POPULATION!A7='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D7)),1,0)+IF(AND(REF_POPULATION!P8='CONFIG_조회조건'!A4,REF_POPULATION!Q8='CONFIG_조회조건'!B4,REF_POPULATION!R8='CONFIG_조회조건'!E4,REF_POPULATION!A8='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D8)),1,0)+IF(AND(REF_POPULATION!P9='CONFIG_조회조건'!A4,REF_POPULATION!Q9='CONFIG_조회조건'!B4,REF_POPULATION!R9='CONFIG_조회조건'!E4,REF_POPULATION!A9='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D9)),1,0)+IF(AND(REF_POPULATION!P10='CONFIG_조회조건'!A4,REF_POPULATION!Q10='CONFIG_조회조건'!B4,REF_POPULATION!R10='CONFIG_조회조건'!E4,REF_POPULATION!A10='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D10)),1,0)+IF(AND(REF_POPULATION!P11='CONFIG_조회조건'!A4,REF_POPULATION!Q11='CONFIG_조회조건'!B4,REF_POPULATION!R11='CONFIG_조회조건'!E4,REF_POPULATION!A11='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D11)),1,0)+IF(AND(REF_POPULATION!P12='CONFIG_조회조건'!A4,REF_POPULATION!Q12='CONFIG_조회조건'!B4,REF_POPULATION!R12='CONFIG_조회조건'!E4,REF_POPULATION!A12='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D12)),1,0)+IF(AND(REF_POPULATION!P13='CONFIG_조회조건'!A4,REF_POPULATION!Q13='CONFIG_조회조건'!B4,REF_POPULATION!R13='CONFIG_조회조건'!E4,REF_POPULATION!A13='CONFIG_조회조건'!N4,ISNUMBER(REF_POPULATION!D13)),1,0))<>B5,\"수치 없음\",SUMIFS(REF_POPULATION!$D$4:$D$13,REF_POPULATION!$P$4:$P$13,'CONFIG_조회조건'!A4,REF_POPULATION!$Q$4:$Q$13,'CONFIG_조회조건'!B4,REF_POPULATION!$R$4:$R$13,'CONFIG_조회조건'!E4,REF_POPULATION!$A$4:$A$13,'CONFIG_조회조건'!N4)))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "인구 원본 위치",
+                      "userEnteredValue": {
+                        "stringValue": "인구 원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "인구 원본 위치"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G20<>\"연결확인\",'01_설정'!G20,IF(COUNTIFS(REF_POPULATION!$N$4:$N$13,\"TEST-POP-001\")<>1,\"키 없음·중복\",INDEX(REF_POPULATION!$AM$4:$AM$13,MATCH(\"TEST-POP-001\",REF_POPULATION!$N$4:$N$13,0))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "N20 임기에서 읽은 인물명",
+                      "userEnteredValue": {
+                        "stringValue": "N20 임기에서 읽은 인물명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "N20 임기에서 읽은 인물명"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G22<>\"연결확인\",'01_설정'!G22,IF(COUNTIFS(REF_OFFICE_TERM!$A$4:$A$13,\"TEST-TERM-001\")<>1,\"키 없음·중복\",INDEX(REF_OFFICE_TERM!$AL$4:$AL$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "조회 시점 재직 여부",
+                      "userEnteredValue": {
+                        "stringValue": "조회 시점 재직 여부"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "조회 시점 재직 여부"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G22<>\"연결확인\",'01_설정'!G22,IF(COUNTIFS(REF_OFFICE_TERM!$A$4:$A$13,\"TEST-TERM-001\")<>1,\"키 없음·중복\",IF(AND(ISNUMBER(INDEX(REF_OFFICE_TERM!$AO$4:$AO$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))),ISNUMBER(INDEX(REF_OFFICE_TERM!$AP$4:$AP$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0)))),AND(INDEX(REF_OFFICE_TERM!$C$4:$C$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))='CONFIG_조회조건'!A4,INDEX(REF_OFFICE_TERM!$D$4:$D$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))='CONFIG_조회조건'!B4,'CONFIG_조회조건'!F4*10000+'CONFIG_조회조건'!G4*100+'CONFIG_조회조건'!H4>=INDEX(REF_OFFICE_TERM!$AO$4:$AO$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0)),'CONFIG_조회조건'!F4*10000+'CONFIG_조회조건'!G4*100+'CONFIG_조회조건'!H4<INDEX(REF_OFFICE_TERM!$AP$4:$AP$13,MATCH(\"TEST-TERM-001\",REF_OFFICE_TERM!$A$4:$A$13,0))),\"정밀도 부족\")))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "N30 직접 인물명",
+                      "userEnteredValue": {
+                        "stringValue": "N30 직접 인물명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "N30 직접 인물명"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF('01_설정'!G21<>\"연결확인\",'01_설정'!G21,IF(COUNTIFS(REF_PERSON!$A$4:$A$13,\"TEST-PERSON-001\")<>1,\"키 없음·중복\",INDEX(REF_PERSON!$B$4:$B$13,MATCH(\"TEST-PERSON-001\",REF_PERSON!$A$4:$A$13,0))))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "formattedValue": "이름 일치",
+                      "userEnteredValue": {
+                        "stringValue": "이름 일치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "이름 일치"
+                      }
+                    },
+                    {
+                      "formattedValue": "연결실패",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(OR(B8=\"연결실패\",B10=\"연결실패\"),\"연결실패\",B8=B10)"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "연결실패"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71005008,
+            "title": "REF_POPULATION",
+            "index": 8,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "#REF!",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C20,'01_설정'!D20)"
+                      },
+                      "effectiveValue": {
+                        "errorValue": {
+                          "type": "REF",
+                          "message": "Please use a desktop web browser to connect this sheet."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71005010,
+            "title": "REF_PERSON",
+            "index": 10,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "#REF!",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C21,'01_설정'!D21)"
+                      },
+                      "effectiveValue": {
+                        "errorValue": {
+                          "type": "REF",
+                          "message": "Please use a desktop web browser to connect this sheet."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71005012,
+            "title": "REF_OFFICE_TERM",
+            "index": 12,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "#REF!",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C22,'01_설정'!D22)"
+                      },
+                      "effectiveValue": {
+                        "errorValue": {
+                          "type": "REF",
+                          "message": "Please use a desktop web browser to connect this sheet."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71005014,
+            "title": "REF_CODEBOOK",
+            "index": 14,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 2,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "#REF!",
+                      "userEnteredValue": {
+                        "formulaValue": "=IMPORTRANGE('01_설정'!C23,'01_설정'!D23)"
+                      },
+                      "effectiveValue": {
+                        "errorValue": {
+                          "type": "REF",
+                          "message": "Please use a desktop web browser to connect this sheet."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

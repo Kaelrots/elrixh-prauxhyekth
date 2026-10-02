@@ -1,0 +1,613 @@
+﻿####### EXAMPLE #######
+
+#examplish={ #Culture name will be used until localisation is provided.
+#	color= rgb{ 83 175 237 } #Colour of the culture under the culture lens.
+#	religion = examplian #Default religion for pops of this culture.
+#	traits = { example_heritage examplian } #Discrimination traits defined in common\discrimination_traits
+#	male_common_first_names = {
+#		Albert Alexander Aeneas Andrew Aaron Alton Atlee Asa Ambrose Abner Alvin August Abraham Abel Abijah Alonzo Ansel Amos Absalom
+#		Benjamin Bartholomew Byron Benedict Barnabas Bildad
+#		Charles Cyrus Chester Cassius Calvin Cornelius Conrad Caleb Cephas Clarence Colcord
+#		Daniel David Dwight
+#		Ezekiel Enoch Elihu Edward Eugene_2 Eustace Edwin Elam Ezra Ebenezer Elijah Emory Ephraim Erasmus Elton Erastus
+#		Franklin Francis Frederick
+#		Grenville George Gregory Grover Gabriel Gorham Gordon
+#		Henry Hannibal Hugh Horatio Horace Hiram Harold Hazen Hector
+#		Isaac Isaiah Irving Ichabod
+#		Joshua Joseph John James Jacob Jesse Joel Jeremiah Jeffrey Judah Jonas Jedediah Jonathan Josiah
+#		Kermit Kenner
+#		Lemuel Lysander Lawrence Lewis Lorenzo Leland Levi Leonard_2 Lucius
+#		Micah Marcellus Mark Michael Millard Matthew Matthias Montgomery Maxwell Milton 
+#		Nicholas Noah Nathaniel Newton Nelson
+#		Obadiah Othniel Oswald Orson Orville Oscar Otis Oliver Orrin Owen Ormsby
+#		Peter Paul Patrick Philip Phineas Philemon Purley Palmetus Philetus
+#		Quentin Quincy
+#		Rutherford Richard Robert Rufus Roger
+#		Stephen Silas Samuel Seth Simon Sidney Sylvester Shubael
+#		Thomas Theodore_2 Thaddeus
+#		Ulysses Upton
+#		Victor Valentine_2
+#		William Walter Winfield Wesley Wilbur Wendell
+#		Zebulon Zachary Zalmon Zadok
+#		
+#	}
+#	female_common_first_names = {
+#		Amanda Anna Alice Adaline Adelaide Augusta Antoinette Alida Addie Ariel Ada Agnes Agatha Almira Arlevia Azubah
+#		Catharine Charlotte Clara Cynthia Charity Cordelia Cornelia
+#		Delia Deborah Delima
+#		Elizabeth Evelina Emily Esther Eliza Ellen Eunice Emma Estelle Eudora Eleanor Ella Eleura Elnora Edith Ethel Ethelinda Euphemia Eva Elida
+#		Frances Florence Faith Florena
+#		Gertrude Geraldine Grace Graceanna Glathia
+#		Hannah Henriette Helen Harriette Hephzibah Huldah
+#		Isabella Ida
+#		Jane Julia Judith Josephine
+#		Lucy Louisa Lavilla Lydia Lilian Lucretia Luetta Leonora
+#		Mabel Mary Mildred Melissa Minerva Martha Matilda Marjorie Malvina Mahala
+#		Nancy Nellie
+#		Olive
+#		Phoebe Pamela Puella
+#		Roxana Ruth Rebecca Rosa Rachel
+#		Susannah Satronia Sylvia
+#		Ursula
+#		Winifred
+#		Yda
+#		Zara Zeruviah
+#	}
+#	noble_last_names = {
+#		Adams Appleton
+#		Boylston Bradlee
+#		Cabot Choate Chaffee Crowninshield Cushing
+#		Dana Delano Dudley
+#		Emerson Endicott Emmet
+#		Forbes
+#		Gillett Goelet Glazier
+#		Hallowell Holmes
+#		Lodge Lowell
+#		Minot McKune McCallum
+#		Norcross
+#		Otis
+#		Peabody Putnam
+#		Quincy
+#		Roosevelt
+#		Saltonstall Sears Sedgwick Schuyler
+#		Tarbox Thayer Thorndike
+#		Wigglesworth Winthrop Winslow
+#	}
+#	common_last_names = {
+#		Arthur Abbot Abercrombie Allen Andrews Ayres Armstrong Agassiz Akerman Aldrich Atherton Alger
+#		Brown Buchanan Buford Black Baldwin Butler Blair Bogy Bryan Blaine Barker Belknap Bell Bennett Barnum Boyle Briggs Buckingham Burling Burnside Brinsmade Brodhead Ballou Brushwiller Blinn Beeman Boyce Berger Burleigh Blodgett Bitgood
+#		Cooper Carpenter Clay Cass Chamberlain Clark Colfax Cleveland Clarkson Chandler Cortelyou Claflin Cameron Campbell Coffey Carr Catlin Casey Cobb Coburn Cook Cox Craig Crittenden Crocker Custer Chetwood Cambreleng Coffinberry Childs Croman Coyle Culver Conk Corbin Crouch Claggett
+#		Daniels Dayton Dumont Douglas Depre Davies Dana Doolittle Doubleday Dyer Dunn Draper Dodge Doty Dornblaser Dewel Dussean
+#		Everett English Eaton Egan Elliott Ewing
+#		Fillmore Floyd Frelinghuysen Fairbanks Fess Fletcher Fairchild Farnsworth Fraser Foster Fry Fuller French Fowler Fiske Fitts Foss Fesler Faxon Fifield
+#		Grant Green Garrison Granger Greeley Garfield Garcelon Gilbert Gibbs Griffin Gurney Goldsborough Glascock Grannis Grinstead Gould Goldrick Goodwin Grimes Gooding
+#		Halleck Hall Hancock Harrison Hendricks Hobart Hanna Hitchcock Hooker Hackleman Harris Hawkins Hawley Heckman Humphreys Hunt Hunter Hayes Hollingsworth Hammatt Hoag Hammerslough Hodgeman Hutling Hammer Hagaman Holden Heffernan Huldy Hamblen Herrick Hurlbutt Hazeltine
+#		Ingalls Irion Isbell
+#		Johnson Jewell Jackson Jones Judkins
+#		King Kern Kearny Kelley Kane Kilpatrick Kiddoo Keyes Kimball Kinnard Kirk Kennon Knowlton Kneeland Kittredge
+#		Lightner Logan Lacey Lane Leggett Lightburn Littlejohn Lockwood Lytle Long Lasaliere Livermore Leavitt Loverin
+#		McClellan Merritt Miller Marsh Mansfield Manson Martindale McArthur McCall McClernand McIntosh McPherson Meade Meigs Meredith Miles Morris Morton Murray McKinley McKeon McLaren McMahon Macomber Mattingly Meloon Meacham
+#		Norris Nagle Naglee Negley Neill Nickerson Noyes Nugen Newkirk Napire Nowlin Niquette Nudd
+#		Oglesby Orme Osborn Owen Olds Oglevee Ochiltree
+#		Pierce Peterson Prince Pendleton Pershing Parker Pomerene Payne Pingree Palmer Parsons Pearson Peck Pennypacker Pile Porter Potter Prentiss Price Phillips Prindle Philbrick Penhallow Pettengill
+#		Quay Quinby
+#		Reid Rosewater Ransom Rawlins Ramsay Reynolds Rice Richardson Ricketts Ripley Ross Russell Raiser Rafferty Rix
+#		Sherman Sheridan Stanton Stanford Stevens Stevenson Sewall Sabin Sinclair Sanborn Scammon Saxton Sedgwick Seward Shackelford Shepard Shields Sickles Slocum Stannard Sturgis Sykes Stanley Shepley Schenck Shinn Semple Sadler Suddaby Seaver Seitz Snodgrass Sissons Stolworthy
+#		Troucey Thompson Tilden Turner Taylor Todd Thruston Torbert Totten Tuttle Turchin Tyndale Tallmadge Thatcher Tubbs Thorndike Truesdale Tandy
+#		Ullman
+#		Vanderveer Van_Buren Viele Vandever Vincent Vogdes Vogel
+#		Whitman Webster Woodward Wheeler Weaver Wood Ward Willcox Wad Wadsworth Walker Wallace Washburn Webb Weber Weed Wells West Wheaton Whipple Winkler Woodbury Woodbridge Whittlesey Wingate Walley Wenk Whitcomb Wibird
+#		Young
+#		Zook
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#		Benjamin
+#		Charles
+#		Franklin
+#		George
+#		Henry Hamilton
+#		James Jefferson
+#		Thomas
+#		William Washington
+#	}
+#	female_regal_first_names = {
+#		Caroline
+#		Flora
+#		Georgia
+#		Martha Mary
+#		Virginia
+#	}
+#
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
+
+#####################
+
+ilrenxhiel = {
+	color = { 83 247 252 }
+	religion = ruvelrinion
+	traits = { ilrenxhiel_culture_group elrunik_heritage }
+	male_common_first_names={
+		Elrakaxh Elriots Ellirits Esrits Aikhrith Asvents Sheirits Hailrenits Hailrets Dyurevits Erkaxh Erkats Thiarth Kaelrots
+		#엘라카스 엘리오츠 엘리리츠 에스리츠 아이크리트 아스벤츠 셰이리츠 하일레니츠 하일레츠 듀레비츠 에르카스 에르카츠 티아르트 카엘로츠
+		Zehin Vhelraits Perth Edelren Zehint Elrions Yerkh Kersterh Zerphyts Melreont Zexherits Mertets Enserth Dernel Reien Xhemiel Kevenits
+		#제인 벨라이츠 페르트 에델렌 제인트 엘리온스 예르크 케르스테르 제르피츠 멜레온트 제셰리츠 메르테츠 엔세르트 데르넬 레이엔 셰미엘 케베니츠
+		Deyrits Rekehn Kerta Herzent Endrits Henriats Nikelrits Kevern Eriandh Zeits Eiot Ein Ertah Tserth Reits Merth Erh Erfarth Vernen Ereth
+		#데이리츠 레켄 케르타 헤르젠트 엔드리츠 헨리아츠 니켈레츠 케베른 에리안드 제이츠 에이어트 에인 에르타 체르트 레이츠 메르트 에르 에르파르트 베르넨 에르에트
+		Dernets Zerts Perh Kerth Termets Reveht Erzehn Krenoth Hyuelrth Renhreth Pernant Strevyun Zernents Retseanth Merakh Mekhts Skerth Derkent Dekrats
+		#데르네츠 제르츠 페르 케르트 테르메츠 레베트 에르젠 크레노트 휴엘르트 레느레트 페르난트 스트레뷴 제르넨츠 레체안트 메아르크 메크츠 스케르트 데르켄트 데크라츠 
+		Kerxh Hehent Rexherh KErnetn Reherh Sterth Kentrth Kerniah Ervets Kernexh Relriots Eridien Terneph Tairets Roryanits Pertekh Heriont Erehen Yuelrth
+		#케르스 헤엔트 레세르 케르네튼 레에르 스테르트 켄트르트 케르니아 에르베츠 케르네스 렐리오츠 에르디엔 테르네프 타이레츠 로랴니츠 페르테크 헤리언트 에르엔 유엘르트
+		Yuarth Kerhtenh Perhkenth Kerhikh Zeisth Merten Zestancz Herhats Kerkents Kernits Sterts Kerhern Nerats Zephrits Hernarts Riement Phreth Merxherh
+		#유아르트 케르테느 페르켄트 케르이크 제이스트 메르텐 제르탄츠 헤르아츠 케르켄츠 케르니츠 스테르츠 케르헤른 네르아츠 제프리츠 헤르나르츠 리에멘트 프레트 메르셰르 
+		#셰일리아 레우아츠 제셰르 케르나츠 베르네스 네르베츠 헤일런 에어렌츠 게르네온 메르벤드 에르엔츠 다엘리츠 쟈에르츠 다에르트 하르에트 알리오스 페르베른 메르케르 
+		#케르이트 레드넨 제레나트 프레스츠 쥬에르트 졔일란트 헤이레스 유베르 셰이르츠 렌타르트 페르테르크 케른트 뷰레트 크레프르트 메르케트 틸리아츠 엘리어스 피에르트 
+		#에르넨트 겔리아츠 토에르츠 네르단트 에르크 아르헤츠 레베르난트 제르메르트 레이루츠 이안 레네트 게르튼 데르크 뮤엘르트 에르크 베르나츠 슈에르트 루페르트 디아르트 
+		#필리츠 로에르스 컬리언트 데이런트 제스텐트 제크라트 엘리아트 사일르메트 뮤크게른 쥬베르트 자이르트 에르트카츠 케르스페트 넬리아츠 뮤르트 트레베츠 트레베츠 렌드리아스 
+		#아드리안츠 데르멘트 브레니아츠 브렌트 엔브로츠 벤리츠 케르비츠 에레니안츠 빈세리아츠 엔카리아스 그렌츠 네르카 메일르츠 메르텐츠 렌타르츠 레지나르트 헤르베르트 웰리스리츠 
+		#나이첼린 알리산테르 도멜리니츠 브레틀렌츠 디크진 데르자츠 제일리츠 일리아츠 나이체르 메르케르 데크라츠 엔트라츠 벤츠 카이르츠 체르스턴츠 에르비아 에르멜리 슈페르트 제세르크 
+		#에리아스 스케르츠 엔다에르 데이르츠 이벨리트 피엘리온 안디아르츠 메르아츠 메키리츠 엘리제르트 에인츠 다에르츠 메르아르트 에리니츠 루데이아 그레이츠 에이베르츠 헤르니트 헤리아트 
+		#케이트레츠 제르메르트 메디에르트 케이트 엘리아츠 아크렌트 세르아트 메르사트 아우리츠 메르사트 에디라츠 셰르나츠 아멜리니츠 아네르 케르니엔트 헤일리니아 세르비츠 데르츠 헤일리츠 
+		#릴리아츠 크리스타베츠 셰리츠 세르센트 케이데르츠 케르덴니아 다프넬리아 다이안츠 데르니츠 데르네르스 케르세트 페이엔스 제르네스 비프레트 게르테츠 그렌트로츠 데르네츠 헨라르트 제르네트 
+		#그리에츠 제르안트 마이리츠 크리스테르 트리셰르 힐레르츠 클레아르트 다니엘르츠 비엔르츠 스테파르츠 제르네츠 베르나트 프렌샤르트 로벨리츠 로셀리츠 웨일리츠 테리아츠 티팔리오츠 에르베니아 
+		#케르메닌 메르넨스 켄스테르츠 제르니아츠 페르니츠 메르리츠 제르디츠 베르니츠 에이리츠 아스리아트 아크리아 로트니아 릴레니아츠 디스베르츠 아크리아트 아이리츠 필레피르트 프라실리츠 렌디츠 
+		#메르샤트 메릴리츠 메르시메츠 마엘리츠 멜라니츠 데르네츠 베르켈린 에셰르츠 데르시츠 제니페르트 메르아르츠 셰이젠트 메케르츠 페트리셴 레브카츠 베크테라 데프라 레베른 페르나츠 로아리스 
+		#이벨리츠 제크리츠 제인세르츠 에르벤츠 니케르츠 세르프 베르티미츠 페르트 에르케스츠 데뮤테르 세르케츠 베케르트 레뮤안트 이케리츠 미하르트 베르셀리 파베르츠 퓨아르츠 니케쳰 발리츠 
+		#베르티슬레츠 레오니츠 메케르츠 유아르트 에르켄 안트레츠 켄스텐츠 볘츠슬레츠 알르센트르 스테니슬레츠 에넬테르 메르세르프 에르톈츠 베크르 세르티세르프 에리아 예르세르파란트 라테미르 
+		#케렐리티프 레프라츠 메르틴츠 레트미츠 예이르츠 아이르츠 엘일리츠 에르카츠 에르사츠 타테르츠 스베르츠 나드레츠 예일로츠 에르난트 게르나츠 메르피츠 스레르츠 아넬리츠 세르펠르츠 
+		#에르난츠 메르나츠 데르야크 에르스타츠 베르나츠 페르난츠 레트미르츠 엘리니츠 케트라츠 에르마츠 크세니츠 엘라이츠 나스데츠 발레니츠 알리얀트 칼레니츠 케르타츠 류벨리츠 라트미르츠 
+		#네르티츠 베르니츠 나델리오츠 티엘리츠 셰르니아 메르나츠 베르헨트 에트린 헤일리히 페르디히츠 페르츠 헤르스 게르체린 에렌셸르 헤르멜리츠 웰리언츠 베르넨츠 겔르트 베르판츠 헤르스트
+		#메르페르트 안드레츠 스레트르 프레츠 옐리츠 에리아츠 하이리츠 제르케츠 유에르트 유엘리츠 율리아츠 엘리안츠 루드헤트 레그아크 메르탄츠 테르마츠 스테르펜 클레니츠 엔스레츠 에르메츠 
+		#헤르넨스 케르티츠 헬리아르트 게르테츠 셀비르츠 메르닌스 하이디츠 안제리츠 페르페츠 제른트 메르세츠 페르세츠 유에르트 엔트안츠 미셰리츠 에르안츠 메르크 졔르니츠 메르니츠 제이크 
+		#세르만 에르비츠 제일리츠 레버츠 제르츠 안트레츠 레이먼츠 게스텐츠 체르츠 티에리츠 가이르츠 메르티유 데니아츠 티베르츠 루크니츠 데브니트 세비스텐트 에르체르 에닌스크 아이네츠 
+		#메르넨츠 카메르트 클레니츠 라이리츠 베로니카 소페르트 엘레나츠 다엘리츠 세르젠트 메르니츠 베르나츠 메르데츠 아제리츠 셀리안 제세페츠 페르니트 빌레이트 제르네트 히레에츠 히카르츠 
+		#타켈리츠 체르벤트 르네르트 미네르타 세르티유 유우리츠 세르타츠 유엘라니츠 타케리츠 류아르트 하울리츠 유셀리츠 코세이츠 유세르츠 치엘리트 히로니트 유아시트 미츠엘트 케이스트 사페르츠
+		#쥬에리츠 하리오츠 메르엔 레이츠 제르페트 제르판트 쥬에르트 페아트르 세르니트 루체르트 에프펜츠 에일라츠 데탈르츠 프란시츠 파엘리츠 에리아츠 크레니츠 루케리아츠 테르제르 에르메츠 
+		#펜세츠 제르펜츠 베르케츠 메르나크 페라리츠 렐리나츠 제르게츠 세프레츠 제일란트 베르마트 테프라츠 켄니엘른 페트레냐 가프레냐 테레스 베르켄츠 테이세라 베르세라 베카스네아 에네카 
+		#테라인츠 에크페르크 페운디스 카페리츠 네카리츠 페리니츠 테라스넨 베크라츠 메르케츠
+	}
+	female_common_first_names = {
+		Zehin
+	}
+	noble_last_names = {
+		Dih_Ryuvlroczeah Dih_Ekthyvanah Dih_Hailreiyuem Dih_Kaelriniah Dih_Ekkelrinverk Dih_Akrenxhiah Dih_Karota
+		#"디 류블로쳬아" "디 엑티바나" "디 하일레이움" "디 카엘리니아" "디 엑켈린베르크" "디 아크렌시아" "디 카로타"
+	}
+	common_last_names={
+		Rehn_Graviroxh Rehn_Dyugarth Rehn_Grafilroxh Rehn_Dilreninsk Rehn_Diarnoth
+		#"렌 그라비로스" "렌 듀가르트" "렌 그라필로스" "렌 딜레닌스크" "렌 디아르노트"
+		Rehn_Aalrith Rehn_Diariots Rehn_Ainkrath Rehn_Diarth Rehn_Artits Rehn_Airiots Rehn_Asiarith
+		#"렌 아알리트" "렌 디아리오츠" "렌 아인크라트" "렌 디아르트" " 렌 아르티츠" "렌 아이리오츠" "렌 아시아리트"
+		Rehn_Servinia Rehn_Arkatia Rehn_Yastrkh Rehn_Seivranth Rehn_Dearhrits
+		#"렌 세르비니아" "렌 아르카티아" "렌 야스트르크" "렌 세이브란트" "렌 데아르리츠"
+		Xhehn_Serats Xhehn_Diarth Xhehn_Ariarth Xhehn_Idariots Xhehn_Dialriots Xhehn_Saivhrits Xhehn_Zeriatits Xhehn_Phrats
+		#"셴 세르아츠" "셴 디아르트" "셴 아리아르트" "셴 이다리오츠" "셴 디알리오츠" "셴 사이브리트" "셴 제리아티츠" "셴 프라츠" 
+		Xhehn_Servinath Cehn_Idaorth Cehn_Akhriath Cehn_Hailrits Cehn_Dialrioth Cehn_Zeilriniah Cehn_Arhdionts
+		#"셴 세르비나트" "셴 이다오르트" "셴 아크리아트" "셴 하일리츠" "셴 디알리오트" "셴 제일리니아" "셴 아르디온츠" 
+		Cehn_Akhration Cehn_Dealriots Cehn_Pershilrah Cehn_Daialrioth Cehn_Servianth Cehn_Dikhrits Cehn_Heiverth
+		#"셴 아크라티온" "셴 데알리오츠" "셴 페르실라" "셴 다이알리오트" "셴 세르비안트" "셴 디크리츠" "셴 헤이베르트" 
+		Cehn_Czerninth Cehn_Akhranth Cehn_Railranth Cehn_Dialriots Cehn_Yuurits Cehn_Czerphiah Cehn_Zernianth Cehn_Katarhxhith
+		#"셴 체르닌트" "셴 아크란트" "셴 라일란트" "셴 디알리오츠" "셴 유우리츠" "셴 체르피아" "셴 제르니안트" "셴 카타르시트"
+		Czehn_Zernith Czehn_Vernian Czehn_Verniath Czehn_Vruneth Czehn_Vyuerits Czehn_Zernianth Czehn_Zyuelrith Czehn_Zerniah
+		#"쳰 제르니트" "쳰 베르니안" "쳰 베르니아트" "쳰 브루네트" "쳰 뷰에리츠" "쳰 제르니안트" "쳰 쥬엘리트" "쳰 제르니아" 
+		Czehn_ Zailrits Czehn_Dyuelrohn Czehn_Dyuelriniah Czehn_Derhakith Czehn_Zerkoph Czehn_Gersenth Czehn_Germeth Czehn_Renhmeth
+		#"쳰 자일리츠" "쳰 듀엘론" "쳰 듀엘리니아" "쳰 데르아키트" "쳰 제르코프" "쳰 게르센트" "쳰 게르메트" "쳰 레느메트" 
+
+		#"쳰 다르아르트" "쳰 디아피로츠" "쳰 사이페르트" "쳰 사일리티니아" "쳰 사이리나츠" "쳰 슈엘리츠" "쳰 셸리오츠" "쳰 세이크로츠" 
+		#"쳰 메르멘트" "쳰 뮤올리시아" "쳰 뮤에르트" "쳰 멜리니아" "쳰 나일리차" "쳰 나일리아" "쳰 네르아츠" "쳰 아크라티츠" "쳰 라이론트" 
+		#"쳰 아일리츠" "쳰 라이니트" "쳰 카이스타로츠" "쳰 카엔로타" "쳰 카스타르츠" "쳰 테브리츠" "쳰 테이브리아" "쳰 튜알로트" "쳰 츠레프니아" 
+		#"쳰 프로니츠" "쳰 프렌시아" "쳰 프렐리츠" "쳰 프레아니츠" "켄 베르닌츠" "켄 디아프리트" "켄 아르프트" "켄 아리프리아" "켄 엑켈리니아" 
+		#"켄 디아크로츠" "켄 셀리브리트" "켄 아리아르츠" "켄 트라이아" "켄 세르피트" "켄 디아르트" "켄 아크시움" "켄 체페르트" "켄 디아프리트" 
+		#"켄 슈루츠" "켄 세르피르트" "켄 디크리트" "켄 퓨리트" "켄 젤리오니아" "켄 세르비니아" "르 아르키트" "르 세르비츠" "르 페르스트" "르 케르츠" 
+		#"르 게르넨트" "르 메르케르" "르 헤르트" "르 에르렌트" "르 에르스틴" "르 에스터" "르 베크로프트" "셰 퓨레트" "셰 아네르트" "셰 베르네츠" 
+		#"셰 베르닌" "셰 제키츠" "셰 로벤트" "셰 베트라츠" "셰 게르페츠" "쳬 헤르트" "쳬 베르넨리아" "쳬 네엘리츠" "쳬 프라이츠" "쳬 휴엘르츠" 
+		#"쳬 메르피츠" "쳬 메크레트" "쳬 아페레티아" "쳬 케인츠" "쳬 게르네츠" "쳬 페르니츠" "쳬 게르네츠 " "쳬 페르렌트" "쳬 헤이르츠" "츠 게르멘스크" "츠 세르빈스크" "츠 디올리오츠"
+	}
+	ethnicities = {
+		1 = ilrenxhiel
+	}
+	graphics = european
+}	
+
+aspelriel = {
+	color = { 174 183 133 }
+	religion = kerhynishy
+	traits = { ilrenxhiel_culture_group elrunik_heritage }
+	male_common_first_names={
+		Elrakaxh Elriots Ellirits Esrits Aikhrith Asvents Sheirits Hailrenits Hailrets Dyurevits Erkaxh Erkats Thiarth Kaelrots
+		#엘라카스 엘리오츠 엘리리츠 에스리츠 아이크리트 아스벤츠 셰이리츠 하일레니츠 하일레츠 듀레비츠 에르카스 에르카츠 티아르트 카엘로츠
+		Zehin Vhelraits Perth Edelren Zehint Elrions Yerkh Kersterh Zerphyts Melreont Zexherits Mertets Enserth Dernel Reien Xhemiel Kevenits
+		#제인 벨라이츠 페르트 에델렌 제인트 엘리온스 예르크 케르스테르 제르피츠 멜레온트 제셰리츠 메르테츠 엔세르트 데르넬 레이엔 셰미엘 케베니츠
+		Deyrits Rekehn Kerta Herzent Endrits Henriats Nikelrits Kevern Eriandh Zeits Eiot Ein Ertah Tserth Reits Merth Erh Erfarth Vernen Ereth
+		#데이리츠 레켄 케르타 헤르젠트 엔드리츠 헨리아츠 니켈레츠 케베른 에리안드 제이츠 에이어트 에인 에르타 체르트 레이츠 메르트 에르 에르파르트 베르넨 에르에트
+		Dernets Zerts Perh Kerth Termets Reveht Erzehn Krenoth Hyuelrth Renhreth Pernant Strevyun Zernents Retseanth Merakh Mekhts Skerth Derkent Dekrats
+		#데르네츠 제르츠 페르 케르트 테르메츠 레베트 에르젠 크레노트 휴엘르트 레느레트 페르난트 스트레뷴 제르넨츠 레체안트 메아르크 메크츠 스케르트 데르켄트 데크라츠 
+		Kerxh Hehent Rexherh KErnetn Reherh Sterth Kentrth Kerniah Ervets Kernexh Relriots Eridien Terneph Tairets Roryanits Pertekh Heriont Erehen Yuelrth
+		#케르스 헤엔트 레세르 케르네튼 레에르 스테르트 켄트르트 케르니아 에르베츠 케르네스 렐리오츠 에르디엔 테르네프 타이레츠 로랴니츠 페르테크 헤리언트 에르엔 유엘르트
+		#유아르트 케르테느 페르켄트 케르이크 제이스트 메르텐 제르탄츠 헤르아츠 케르켄츠 케르니츠 스테르츠 케르헤른 네르아츠 제프리츠 헤르나르츠 리에먼트 프레트 메르셰르 
+		#셰일리아 레우아츠 제셰르 케르나츠 베르네스 네르베츠 헤일런 에어렌츠 게르네온 메르벤드 에르엔츠 다엘리츠 쟈에르츠 다에르트 하르에트 알리오스 페르베른 메르케르 
+		#케르이트 레드넨 제레나트 프레스츠 쥬에르트 졔일란트 헤이레스 유베르 셰이르츠 렌타르트 페르테르크 케른트 뷰레트 크레프르트 메르케트 틸리아츠 엘리어스 피에르트 
+		#에르넨트 겔리아츠 토에르츠 네르단트 에르크 아르헤츠 레베르난트 제르메르트 레이루츠 이안 레네트 게르튼 데르크 뮤엘르트 에르크 베르나츠 슈에르트 루페르트 디아르트 
+		#필리츠 로에르스 컬리언트 데이런트 제스텐트 제크라트 엘리아트 사일르메트 뮤크게른 쥬베르트 자이르트 에르트카츠 케르스페트 넬리아츠 뮤르트 트레베츠 트레베츠 렌드리아스 
+		#아드리안츠 데르멘트 브레니아츠 브렌트 엔브로츠 벤리츠 케르비츠 에레니안츠 빈세리아츠 엔카리아스 그렌츠 네르카 메일르츠 메르텐츠 렌타르츠 레지나르트 헤르베르트 웰리스리츠 
+		#나이첼린 알리산테르 도멜리니츠 브레틀렌츠 디크진 데르자츠 제일리츠 일리아츠 나이체르 메르케르 데크라츠 엔트라츠 벤츠 카이르츠 체르스턴츠 에르비아 에르멜리 슈페르트 제세르크 
+		#에리아스 스케르츠 엔다에르 데이르츠 이벨리트 피엘리온 안디아르츠 메르아츠 메키리츠 엘리제르트 에인츠 다에르츠 메르아르트 에리니츠 루데이아 그레이츠 에이베르츠 헤르니트 헤리아트 
+		#케이트레츠 제르메르트 메디에르트 케이트 엘리아츠 아크렌트 세르아트 메르사트 아우리츠 메르사트 에디라츠 셰르나츠 아멜리니츠 아네르 케르니엔트 헤일리니아 세르비츠 데르츠 헤일리츠 
+		#릴리아츠 크리스타베츠 셰리츠 세르센트 케이데르츠 케르덴니아 다프넬리아 다이안츠 데르니츠 데르네르스 케르세트 페이엔스 제르네스 비프레트 게르테츠 그렌트로츠 데르네츠 헨라르트 제르네트 
+		#그리에츠 제르안트 마이리츠 크리스테르 트리셰르 힐레르츠 클레아르트 다니엘르츠 비엔르츠 스테파르츠 제르네츠 베르나트 프렌샤르트 로벨리츠 로셀리츠 웨일리츠 테리아츠 티팔리오츠 에르베니아 
+		#케르메닌 메르넨스 켄스테르츠 제르니아츠 페르니츠 메르리츠 제르디츠 베르니츠 에이리츠 아스리아트 아크리아 로트니아 릴레니아츠 디스베르츠 아크리아트 아이리츠 필레피르트 프라실리츠 렌디츠 
+		#메르샤트 메릴리츠 메르시메츠 마엘리츠 멜라니츠 데르네츠 베르켈린 에셰르츠 데르시츠 제니페르트 메르아르츠 셰이젠트 메케르츠 페트리셴 레브카츠 베크테라 데프라 레베른 페르나츠 로아리스 
+		#이벨리츠 제크리츠 제인세르츠 에르벤츠 니케르츠 세르프 베르티미츠 페르트 에르케스츠 데뮤테르 세르케츠 베케르트 레뮤안트 이케리츠 미하르트 베르셀리 파베르츠 퓨아르츠 니케쳰 발리츠 
+		#베르티슬레츠 레오니츠 메케르츠 유아르트 에르켄 안트레츠 켄스텐츠 볘츠슬레츠 알르센트르 스테니슬레츠 에넬테르 메르세르프 에르톈츠 베크르 세르티세르프 에리아 예르세르파란트 라테미르 
+		#케렐리티프 레프라츠 메르틴츠 레트미츠 예이르츠 아이르츠 엘일리츠 에르카츠 에르사츠 타테르츠 스베르츠 나드레츠 예일로츠 에르난트 게르나츠 메르피츠 스레르츠 아넬리츠 세르펠르츠 
+		#에르난츠 메르나츠 데르야크 에르스타츠 베르나츠 페르난츠 레트미르츠 엘리니츠 케트라츠 에르마츠 크세니츠 엘라이츠 나스데츠 발레니츠 알리얀트 칼레니츠 케르타츠 류벨리츠 라트미르츠 
+		#네르티츠 베르니츠 나델리오츠 티엘리츠 셰르니아 메르나츠 베르헨트 에트린 헤일리히 페르디히츠 페르츠 헤르스 게르체린 에렌셸르 헤르멜리츠 웰리언츠 베르넨츠 겔르트 베르판츠 헤르스트
+		#메르페르트 안드레츠 스레트르 프레츠 옐리츠 에리아츠 하이리츠 제르케츠 유에르트 유엘리츠 율리아츠 엘리안츠 루드헤트 레그아크 메르탄츠 테르마츠 스테르펜 클레니츠 엔스레츠 에르메츠 
+		#헤르넨스 케르티츠 헬리아르트 게르테츠 셀비르츠 메르닌스 하이디츠 안제리츠 페르페츠 제른트 메르세츠 페르세츠 유에르트 엔트안츠 미셰리츠 에르안츠 메르크 졔르니츠 메르니츠 제이크 
+		#세르만 에르비츠 제일리츠 레버츠 제르츠 안트레츠 레이먼츠 게스텐츠 체르츠 티에리츠 가이르츠 메르티유 데니아츠 티베르츠 루크니츠 데브니트 세비스텐트 에르체르 에닌스크 아이네츠 
+		#메르넨츠 카메르트 클레니츠 라이리츠 베로니카 소페르트 엘레나츠 다엘리츠 세르젠트 메르니츠 베르나츠 메르데츠 아제리츠 셀리안 제세페츠 페르니트 빌레이트 제르네트 히레에츠 히카르츠 
+		#타켈리츠 체르벤트 르네르트 미네르타 세르티유 유우리츠 세르타츠 유엘라니츠 타케리츠 류아르트 하울리츠 유셀리츠 코세이츠 유세르츠 치엘리트 히로니트 유아시트 미츠엘트 케이스트 사페르츠
+		#쥬에리츠 하리오츠 메르엔 레이츠 제르페트 제르판트 쥬에르트 페아트르 세르니트 루체르트 에프펜츠 에일라츠 데탈르츠 프란시츠 파엘리츠 에리아츠 크레니츠 루케리아츠 테르제르 에르메츠 
+		#펜세츠 제르펜츠 베르케츠 메르나크 페라리츠 렐리나츠 제르게츠 세프레츠 제일란트 베르마트 테프라츠 켄니엘른 페트레냐 가프레냐 테레스 베르켄츠 테이세라 베르세라 베카스네아 에네카 
+		#테라인츠 에크페르크 페운디스 카페리츠 네카리츠 페리니츠 테라스넨 베크라츠 메르케츠
+	}
+	female_common_first_names = {
+		Zehin
+	}
+	noble_last_names = {
+		Dih_Ryuvlroczeah Dih_Ekthyvanah Dih_Hailreiyuem Dih_Kaelriniah Dih_Ekkelrinverk Dih_Akrenxhiah Dih_Karota
+		#"디 류블로쳬아" "디 엑티바나" "디 하일레이움" "디 카엘리니아" "디 엑켈린베르크" "디 아크렌시아" "디 카로타"
+	}
+	common_last_names={
+		Rehn_Graviroxh Rehn_Dyugarth Rehn_Grafilroxh Rehn_Dilreninsk Rehn_Diarnoth
+		#"렌 그라비로스" "렌 듀가르트" "렌 그라필로스" "렌 딜레닌스크" "렌 디아르노트"
+		Rehn_Aalrith Rehn_Diariots Rehn_Ainkrath Rehn_Diarth Rehn_Artits Rehn_Airiots Rehn_Asiarith
+		#"렌 아알리트" "렌 디아리오츠" "렌 아인크라트" "렌 디아르트" " 렌 아르티츠" "렌 아이리오츠" "렌 아시아리트"
+		Rehn_Servinia Rehn_Arkatia Rehn_Yastrkh Rehn_Seivranth Rehn_Dearhrits
+		#"렌 세르비니아" "렌 아르카티아" "렌 야스트르크" "렌 세이브란트" "렌 데아르리츠"
+		Xhehn_Serats Xhehn_Diarth Xhehn_Ariarth Xhehn_Idariots Xhehn_Dialriots Xhehn_Saivhrits Xhehn_Zeriatits Xhehn_Phrats
+		#"셴 세르아츠" "셴 디아르트" "셴 아리아르트" "셴 이다리오츠" "셴 디알리오츠" "셴 사이브리트" "셴 제리아티츠" "셴 프라츠" 
+		#"셴 세르비나트" "셴 이다오르트" "셴 아크리아트" "셴 하일리츠" "셴 디알리오트" "셴 제일리니아" "셴 아르디온츠" 
+		#"셴 아크라티온" "셴 데알리오츠" "셴 페르실라" "셴 다이알리오트" "셴 세르비안트" "셴 디크리츠" "셴 헤이베르트" 
+		#"셴 체르닌트" "셴 아크란트" "셴 라일란트" "셴 디알리오츠" "셴 유우리츠" "셴 체르피아" "셴 제르니안트" "셴 카타르시트" 
+		#"쳰 제르니트" "쳰 베르니안" "쳰 베르니아트" "쳰 브루네트" "쳰 뷰에리츠" "쳰 제르니안트" "쳰 쥬엘리트" "쳰 제르니아" 
+		#"쳰 자일리츠" "쳰 듀엘론" "쳰 듀엘리니아" "쳰 데르아키트" "쳰 제르코프" "쳰 게르센트" "쳰 게르메트" "쳰 레느메트" 
+		#"쳰 다르아르트" "쳰 디아피로츠" "쳰 사이페르트" "쳰 사일리티니아" "쳰 사이리나츠" "쳰 슈엘리츠" "쳰 셸리오츠" "쳰 세이크로츠" 
+		#"쳰 메르멘트" "쳰 뮤올리시아" "쳰 뮤에르트" "쳰 멜리니아" "쳰 나일리차" "쳰 나일리아" "쳰 네르아츠" "쳰 아크라티츠" "쳰 라이론트" 
+		#"쳰 아일리츠" "쳰 라이니트" "쳰 카이스타로츠" "쳰 카엔로타" "쳰 카스타르츠" "쳰 테브리츠" "쳰 테이브리아" "쳰 튜알로트" "쳰 츠레프니아" 
+		#"쳰 프로니츠" "쳰 프렌시아" "쳰 프렐리츠" "쳰 프레아니츠" "켄 베르닌츠" "켄 디아프리트" "켄 아르프트" "켄 아리프리아" "켄 엑켈리니아" 
+		#"켄 디아크로츠" "켄 셀리브리트" "켄 아리아르츠" "켄 트라이아" "켄 세르피트" "켄 디아르트" "켄 아크시움" "켄 체페르트" "켄 디아프리트" 
+		#"켄 슈루츠" "켄 세르피르트" "켄 디크리트" "켄 퓨리트" "켄 젤리오니아" "켄 세르비니아" "르 아르키트" "르 세르비츠" "르 페르스트" "르 케르츠" 
+		#"르 게르넨트" "르 메르케르" "르 헤르트" "르 에르렌트" "르 에르스틴" "르 에스터" "르 베크로프트" "셰 퓨레트" "셰 아네르트" "셰 베르네츠" 
+		#"셰 베르닌" "셰 제키츠" "셰 로벤트" "셰 베트라츠" "셰 게르페츠" "쳬 헤르트" "쳬 베르넨리아" "쳬 네엘리츠" "쳬 프라이츠" "쳬 휴엘르츠" 
+		#"쳬 메르피츠" "쳬 메크레트" "쳬 아페레티아" "쳬 케인츠" "쳬 게르네츠" "쳬 페르니츠" "쳬 게르네츠 " "쳬 페르렌트" "쳬 헤이르츠" "츠 게르멘스크" "츠 세르빈스크" "츠 디올리오츠"
+	}
+	ethnicities = {
+		1 = ilrenxhiel
+	}
+	graphics = european
+}	
+
+griaziel = {
+	color = { 77 78 178 }
+	religion = kerhynishy
+	traits = { ilrenxhiel_culture_group elrunik_heritage }
+	male_common_first_names={
+		Elrakaxh Elriots Ellirits Esrits Aikhrith Asvents Sheirits Hailrenits Hailrets Dyurevits Erkaxh Erkats Thiarth Kaelrots
+		#엘라카스 엘리오츠 엘리리츠 에스리츠 아이크리트 아스벤츠 셰이리츠 하일레니츠 하일레츠 듀레비츠 에르카스 에르카츠 티아르트 카엘로츠
+		Zehin Vhelraits Perth Edelren Zehint Elrions Yerkh Kersterh Zerphyts Melreont Zexherits Mertets Enserth Dernel Reien Xhemiel Kevenits
+		#제인 벨라이츠 페르트 에델렌 제인트 엘리온스 예르크 케르스테르 제르피츠 멜레온트 제셰리츠 메르테츠 엔세르트 데르넬 레이엔 셰미엘 케베니츠
+		Deyrits Rekehn Kerta Herzent Endrits Henriats Nikelrits Kevern Eriandh Zeits Eiot Ein Ertah Tserth Reits Merth Erh Erfarth Vernen Ereth
+		#데이리츠 레켄 케르타 헤르젠트 엔드리츠 헨리아츠 니켈레츠 케베른 에리안드 제이츠 에이어트 에인 에르타 체르트 레이츠 메르트 에르 에르파르트 베르넨 에르에트
+		Dernets Zerts Perh Kerth Termets Reveht Erzehn Krenoth Hyuelrth Renhreth Pernant Strevyun Zernents Retseanth Merakh Mekhts Skerth Derkent Dekrats
+		#데르네츠 제르츠 페르 케르트 테르메츠 레베트 에르젠 크레노트 휴엘르트 레느레트 페르난트 스트레뷴 제르넨츠 레체안트 메아르크 메크츠 스케르트 데르켄트 데크라츠 
+		Kerxh Hehent Rexherh KErnetn Reherh Sterth Kentrth Kerniah Ervets Kernexh Relriots Eridien Terneph Tairets Roryanits Pertekh Heriont Erehen Yuelrth
+		#케르스 헤엔트 레세르 케르네튼 레에르 스테르트 켄트르트 케르니아 에르베츠 케르네스 렐리오츠 에르디엔 테르네프 타이레츠 로랴니츠 페르테크 헤리언트 에르엔 유엘르트
+		#유아르트 케르테느 페르켄트 케르이크 제이스트 메르텐 제르탄츠 헤르아츠 케르켄츠 케르니츠 스테르츠 케르헤른 네르아츠 제프리츠 헤르나르츠 리에먼트 프레트 메르셰르 
+		#셰일리아 레우아츠 제셰르 케르나츠 베르네스 네르베츠 헤일런 에어렌츠 게르네온 메르벤드 에르엔츠 다엘리츠 쟈에르츠 다에르트 하르에트 알리오스 페르베른 메르케르 
+		#케르이트 레드넨 제레나트 프레스츠 쥬에르트 졔일란트 헤이레스 유베르 셰이르츠 렌타르트 페르테르크 케른트 뷰레트 크레프르트 메르케트 틸리아츠 엘리어스 피에르트 
+		#에르넨트 겔리아츠 토에르츠 네르단트 에르크 아르헤츠 레베르난트 제르메르트 레이루츠 이안 레네트 게르튼 데르크 뮤엘르트 에르크 베르나츠 슈에르트 루페르트 디아르트 
+		#필리츠 로에르스 컬리언트 데이런트 제스텐트 제크라트 엘리아트 사일르메트 뮤크게른 쥬베르트 자이르트 에르트카츠 케르스페트 넬리아츠 뮤르트 트레베츠 트레베츠 렌드리아스 
+		#아드리안츠 데르멘트 브레니아츠 브렌트 엔브로츠 벤리츠 케르비츠 에레니안츠 빈세리아츠 엔카리아스 그렌츠 네르카 메일르츠 메르텐츠 렌타르츠 레지나르트 헤르베르트 웰리스리츠 
+		#나이첼린 알리산테르 도멜리니츠 브레틀렌츠 디크진 데르자츠 제일리츠 일리아츠 나이체르 메르케르 데크라츠 엔트라츠 벤츠 카이르츠 체르스턴츠 에르비아 에르멜리 슈페르트 제세르크 
+		#에리아스 스케르츠 엔다에르 데이르츠 이벨리트 피엘리온 안디아르츠 메르아츠 메키리츠 엘리제르트 에인츠 다에르츠 메르아르트 에리니츠 루데이아 그레이츠 에이베르츠 헤르니트 헤리아트 
+		#케이트레츠 제르메르트 메디에르트 케이트 엘리아츠 아크렌트 세르아트 메르사트 아우리츠 메르사트 에디라츠 셰르나츠 아멜리니츠 아네르 케르니엔트 헤일리니아 세르비츠 데르츠 헤일리츠 
+		#릴리아츠 크리스타베츠 셰리츠 세르센트 케이데르츠 케르덴니아 다프넬리아 다이안츠 데르니츠 데르네르스 케르세트 페이엔스 제르네스 비프레트 게르테츠 그렌트로츠 데르네츠 헨라르트 제르네트 
+		#그리에츠 제르안트 마이리츠 크리스테르 트리셰르 힐레르츠 클레아르트 다니엘르츠 비엔르츠 스테파르츠 제르네츠 베르나트 프렌샤르트 로벨리츠 로셀리츠 웨일리츠 테리아츠 티팔리오츠 에르베니아 
+		#케르메닌 메르넨스 켄스테르츠 제르니아츠 페르니츠 메르리츠 제르디츠 베르니츠 에이리츠 아스리아트 아크리아 로트니아 릴레니아츠 디스베르츠 아크리아트 아이리츠 필레피르트 프라실리츠 렌디츠 
+		#메르샤트 메릴리츠 메르시메츠 마엘리츠 멜라니츠 데르네츠 베르켈린 에셰르츠 데르시츠 제니페르트 메르아르츠 셰이젠트 메케르츠 페트리셴 레브카츠 베크테라 데프라 레베른 페르나츠 로아리스 
+		#이벨리츠 제크리츠 제인세르츠 에르벤츠 니케르츠 세르프 베르티미츠 페르트 에르케스츠 데뮤테르 세르케츠 베케르트 레뮤안트 이케리츠 미하르트 베르셀리 파베르츠 퓨아르츠 니케쳰 발리츠 
+		#베르티슬레츠 레오니츠 메케르츠 유아르트 에르켄 안트레츠 켄스텐츠 볘츠슬레츠 알르센트르 스테니슬레츠 에넬테르 메르세르프 에르톈츠 베크르 세르티세르프 에리아 예르세르파란트 라테미르 
+		#케렐리티프 레프라츠 메르틴츠 레트미츠 예이르츠 아이르츠 엘일리츠 에르카츠 에르사츠 타테르츠 스베르츠 나드레츠 예일로츠 에르난트 게르나츠 메르피츠 스레르츠 아넬리츠 세르펠르츠 
+		#에르난츠 메르나츠 데르야크 에르스타츠 베르나츠 페르난츠 레트미르츠 엘리니츠 케트라츠 에르마츠 크세니츠 엘라이츠 나스데츠 발레니츠 알리얀트 칼레니츠 케르타츠 류벨리츠 라트미르츠 
+		#네르티츠 베르니츠 나델리오츠 티엘리츠 셰르니아 메르나츠 베르헨트 에트린 헤일리히 페르디히츠 페르츠 헤르스 게르체린 에렌셸르 헤르멜리츠 웰리언츠 베르넨츠 겔르트 베르판츠 헤르스트
+		#메르페르트 안드레츠 스레트르 프레츠 옐리츠 에리아츠 하이리츠 제르케츠 유에르트 유엘리츠 율리아츠 엘리안츠 루드헤트 레그아크 메르탄츠 테르마츠 스테르펜 클레니츠 엔스레츠 에르메츠 
+		#헤르넨스 케르티츠 헬리아르트 게르테츠 셀비르츠 메르닌스 하이디츠 안제리츠 페르페츠 제른트 메르세츠 페르세츠 유에르트 엔트안츠 미셰리츠 에르안츠 메르크 졔르니츠 메르니츠 제이크 
+		#세르만 에르비츠 제일리츠 레버츠 제르츠 안트레츠 레이먼츠 게스텐츠 체르츠 티에리츠 가이르츠 메르티유 데니아츠 티베르츠 루크니츠 데브니트 세비스텐트 에르체르 에닌스크 아이네츠 
+		#메르넨츠 카메르트 클레니츠 라이리츠 베로니카 소페르트 엘레나츠 다엘리츠 세르젠트 메르니츠 베르나츠 메르데츠 아제리츠 셀리안 제세페츠 페르니트 빌레이트 제르네트 히레에츠 히카르츠 
+		#타켈리츠 체르벤트 르네르트 미네르타 세르티유 유우리츠 세르타츠 유엘라니츠 타케리츠 류아르트 하울리츠 유셀리츠 코세이츠 유세르츠 치엘리트 히로니트 유아시트 미츠엘트 케이스트 사페르츠
+		#쥬에리츠 하리오츠 메르엔 레이츠 제르페트 제르판트 쥬에르트 페아트르 세르니트 루체르트 에프펜츠 에일라츠 데탈르츠 프란시츠 파엘리츠 에리아츠 크레니츠 루케리아츠 테르제르 에르메츠 
+		#펜세츠 제르펜츠 베르케츠 메르나크 페라리츠 렐리나츠 제르게츠 세프레츠 제일란트 베르마트 테프라츠 켄니엘른 페트레냐 가프레냐 테레스 베르켄츠 테이세라 베르세라 베카스네아 에네카 
+		#테라인츠 에크페르크 페운디스 카페리츠 네카리츠 페리니츠 테라스넨 베크라츠 메르케츠
+	}
+	female_common_first_names = {
+		Zehin
+	}
+	noble_last_names = {
+		Dih_Ryuvlroczeah Dih_Ekthyvanah Dih_Hailreiyuem Dih_Kaelriniah Dih_Ekkelrinverk Dih_Akrenxhiah Dih_Karota
+		#"디 류블로쳬아" "디 엑티바나" "디 하일레이움" "디 카엘리니아" "디 엑켈린베르크" "디 아크렌시아" "디 카로타"
+	}
+	common_last_names={
+		Rehn_Graviroxh Rehn_Dyugarth Rehn_Grafilroxh Rehn_Dilreninsk Rehn_Diarnoth
+		#"렌 그라비로스" "렌 듀가르트" "렌 그라필로스" "렌 딜레닌스크" "렌 디아르노트"
+		Rehn_Aalrith Rehn_Diariots Rehn_Ainkrath Rehn_Diarth Rehn_Artits Rehn_Airiots Rehn_Asiarith
+		#"렌 아알리트" "렌 디아리오츠" "렌 아인크라트" "렌 디아르트" " 렌 아르티츠" "렌 아이리오츠" "렌 아시아리트"
+		Rehn_Servinia Rehn_Arkatia Rehn_Yastrkh Rehn_Seivranth Rehn_Dearhrits
+		#"렌 세르비니아" "렌 아르카티아" "렌 야스트르크" "렌 세이브란트" "렌 데아르리츠"
+		Xhehn_Serats Xhehn_Diarth Xhehn_Ariarth Xhehn_Idariots Xhehn_Dialriots Xhehn_Saivhrits Xhehn_Zeriatits Xhehn_Phrats
+		#"셴 세르아츠" "셴 디아르트" "셴 아리아르트" "셴 이다리오츠" "셴 디알리오츠" "셴 사이브리트" "셴 제리아티츠" "셴 프라츠" 
+		#"셴 세르비나트" "셴 이다오르트" "셴 아크리아트" "셴 하일리츠" "셴 디알리오트" "셴 제일리니아" "셴 아르디온츠" 
+		#"셴 아크라티온" "셴 데알리오츠" "셴 페르실라" "셴 다이알리오트" "셴 세르비안트" "셴 디크리츠" "셴 헤이베르트" 
+		#"셴 체르닌트" "셴 아크란트" "셴 라일란트" "셴 디알리오츠" "셴 유우리츠" "셴 체르피아" "셴 제르니안트" "셴 카타르시트" 
+		#"쳰 제르니트" "쳰 베르니안" "쳰 베르니아트" "쳰 브루네트" "쳰 뷰에리츠" "쳰 제르니안트" "쳰 쥬엘리트" "쳰 제르니아" 
+		#"쳰 자일리츠" "쳰 듀엘론" "쳰 듀엘리니아" "쳰 데르아키트" "쳰 제르코프" "쳰 게르센트" "쳰 게르메트" "쳰 레느메트" 
+		#"쳰 다르아르트" "쳰 디아피로츠" "쳰 사이페르트" "쳰 사일리티니아" "쳰 사이리나츠" "쳰 슈엘리츠" "쳰 셸리오츠" "쳰 세이크로츠" 
+		#"쳰 메르멘트" "쳰 뮤올리시아" "쳰 뮤에르트" "쳰 멜리니아" "쳰 나일리차" "쳰 나일리아" "쳰 네르아츠" "쳰 아크라티츠" "쳰 라이론트" 
+		#"쳰 아일리츠" "쳰 라이니트" "쳰 카이스타로츠" "쳰 카엔로타" "쳰 카스타르츠" "쳰 테브리츠" "쳰 테이브리아" "쳰 튜알로트" "쳰 츠레프니아" 
+		#"쳰 프로니츠" "쳰 프렌시아" "쳰 프렐리츠" "쳰 프레아니츠" "켄 베르닌츠" "켄 디아프리트" "켄 아르프트" "켄 아리프리아" "켄 엑켈리니아" 
+		#"켄 디아크로츠" "켄 셀리브리트" "켄 아리아르츠" "켄 트라이아" "켄 세르피트" "켄 디아르트" "켄 아크시움" "켄 체페르트" "켄 디아프리트" 
+		#"켄 슈루츠" "켄 세르피르트" "켄 디크리트" "켄 퓨리트" "켄 젤리오니아" "켄 세르비니아" "르 아르키트" "르 세르비츠" "르 페르스트" "르 케르츠" 
+		#"르 게르넨트" "르 메르케르" "르 헤르트" "르 에르렌트" "르 에르스틴" "르 에스터" "르 베크로프트" "셰 퓨레트" "셰 아네르트" "셰 베르네츠" 
+		#"셰 베르닌" "셰 제키츠" "셰 로벤트" "셰 베트라츠" "셰 게르페츠" "쳬 헤르트" "쳬 베르넨리아" "쳬 네엘리츠" "쳬 프라이츠" "쳬 휴엘르츠" 
+		#"쳬 메르피츠" "쳬 메크레트" "쳬 아페레티아" "쳬 케인츠" "쳬 게르네츠" "쳬 페르니츠" "쳬 게르네츠 " "쳬 페르렌트" "쳬 헤이르츠" "츠 게르멘스크" "츠 세르빈스크" "츠 디올리오츠"
+	}
+	ethnicities = {
+		1 = ilrenxhiel
+	}
+	graphics = european
+}	
+
+grazunta = {
+	color = { 46 89 112 }
+	religion = ruvelrinion
+	traits = { ilrenxhiel_culture_group elrunik_heritage }
+	male_common_first_names={
+		Elrakaxh Elriots Ellirits Esrits Aikhrith Asvents Sheirits Hailrenits Hailrets Dyurevits Erkaxh Erkats Thiarth Kaelrots
+		#엘라카스 엘리오츠 엘리리츠 에스리츠 아이크리트 아스벤츠 셰이리츠 하일레니츠 하일레츠 듀레비츠 에르카스 에르카츠 티아르트 카엘로츠
+		Zehin Vhelraits Perth Edelren Zehint Elrions Yerkh Kersterh Zerphyts Melreont Zexherits Mertets Enserth Dernel Reien Xhemiel Kevenits
+		#제인 벨라이츠 페르트 에델렌 제인트 엘리온스 예르크 케르스테르 제르피츠 멜레온트 제셰리츠 메르테츠 엔세르트 데르넬 레이엔 셰미엘 케베니츠
+		Deyrits Rekehn Kerta Herzent Endrits Henriats Nikelrits Kevern Eriandh Zeits Eiot Ein Ertah Tserth Reits Merth Erh Erfarth Vernen Ereth
+		#데이리츠 레켄 케르타 헤르젠트 엔드리츠 헨리아츠 니켈레츠 케베른 에리안드 제이츠 에이어트 에인 에르타 체르트 레이츠 메르트 에르 에르파르트 베르넨 에르에트
+		Dernets Zerts Perh Kerth Termets Reveht Erzehn Krenoth Hyuelrth Renhreth Pernant Strevyun Zernents Retseanth Merakh Mekhts Skerth Derkent Dekrats
+		#데르네츠 제르츠 페르 케르트 테르메츠 레베트 에르젠 크레노트 휴엘르트 레느레트 페르난트 스트레뷴 제르넨츠 레체안트 메아르크 메크츠 스케르트 데르켄트 데크라츠 
+		Kerxh Hehent Rexherh KErnetn Reherh Sterth Kentrth Kerniah Ervets Kernexh Relriots Eridien Terneph Tairets Roryanits Pertekh Heriont Erehen Yuelrth
+		#케르스 헤엔트 레세르 케르네튼 레에르 스테르트 켄트르트 케르니아 에르베츠 케르네스 렐리오츠 에르디엔 테르네프 타이레츠 로랴니츠 페르테크 헤리언트 에르엔 유엘르트
+		#유아르트 케르테느 페르켄트 케르이크 제이스트 메르텐 제르탄츠 헤르아츠 케르켄츠 케르니츠 스테르츠 케르헤른 네르아츠 제프리츠 헤르나르츠 리에먼트 프레트 메르셰르 
+		#셰일리아 레우아츠 제셰르 케르나츠 베르네스 네르베츠 헤일런 에어렌츠 게르네온 메르벤드 에르엔츠 다엘리츠 쟈에르츠 다에르트 하르에트 알리오스 페르베른 메르케르 
+		#케르이트 레드넨 제레나트 프레스츠 쥬에르트 졔일란트 헤이레스 유베르 셰이르츠 렌타르트 페르테르크 케른트 뷰레트 크레프르트 메르케트 틸리아츠 엘리어스 피에르트 
+		#에르넨트 겔리아츠 토에르츠 네르단트 에르크 아르헤츠 레베르난트 제르메르트 레이루츠 이안 레네트 게르튼 데르크 뮤엘르트 에르크 베르나츠 슈에르트 루페르트 디아르트 
+		#필리츠 로에르스 컬리언트 데이런트 제스텐트 제크라트 엘리아트 사일르메트 뮤크게른 쥬베르트 자이르트 에르트카츠 케르스페트 넬리아츠 뮤르트 트레베츠 트레베츠 렌드리아스 
+		#아드리안츠 데르멘트 브레니아츠 브렌트 엔브로츠 벤리츠 케르비츠 에레니안츠 빈세리아츠 엔카리아스 그렌츠 네르카 메일르츠 메르텐츠 렌타르츠 레지나르트 헤르베르트 웰리스리츠 
+		#나이첼린 알리산테르 도멜리니츠 브레틀렌츠 디크진 데르자츠 제일리츠 일리아츠 나이체르 메르케르 데크라츠 엔트라츠 벤츠 카이르츠 체르스턴츠 에르비아 에르멜리 슈페르트 제세르크 
+		#에리아스 스케르츠 엔다에르 데이르츠 이벨리트 피엘리온 안디아르츠 메르아츠 메키리츠 엘리제르트 에인츠 다에르츠 메르아르트 에리니츠 루데이아 그레이츠 에이베르츠 헤르니트 헤리아트 
+		#케이트레츠 제르메르트 메디에르트 케이트 엘리아츠 아크렌트 세르아트 메르사트 아우리츠 메르사트 에디라츠 셰르나츠 아멜리니츠 아네르 케르니엔트 헤일리니아 세르비츠 데르츠 헤일리츠 
+		#릴리아츠 크리스타베츠 셰리츠 세르센트 케이데르츠 케르덴니아 다프넬리아 다이안츠 데르니츠 데르네르스 케르세트 페이엔스 제르네스 비프레트 게르테츠 그렌트로츠 데르네츠 헨라르트 제르네트 
+		#그리에츠 제르안트 마이리츠 크리스테르 트리셰르 힐레르츠 클레아르트 다니엘르츠 비엔르츠 스테파르츠 제르네츠 베르나트 프렌샤르트 로벨리츠 로셀리츠 웨일리츠 테리아츠 티팔리오츠 에르베니아 
+		#케르메닌 메르넨스 켄스테르츠 제르니아츠 페르니츠 메르리츠 제르디츠 베르니츠 에이리츠 아스리아트 아크리아 로트니아 릴레니아츠 디스베르츠 아크리아트 아이리츠 필레피르트 프라실리츠 렌디츠 
+		#메르샤트 메릴리츠 메르시메츠 마엘리츠 멜라니츠 데르네츠 베르켈린 에셰르츠 데르시츠 제니페르트 메르아르츠 셰이젠트 메케르츠 페트리셴 레브카츠 베크테라 데프라 레베른 페르나츠 로아리스 
+		#이벨리츠 제크리츠 제인세르츠 에르벤츠 니케르츠 세르프 베르티미츠 페르트 에르케스츠 데뮤테르 세르케츠 베케르트 레뮤안트 이케리츠 미하르트 베르셀리 파베르츠 퓨아르츠 니케쳰 발리츠 
+		#베르티슬레츠 레오니츠 메케르츠 유아르트 에르켄 안트레츠 켄스텐츠 볘츠슬레츠 알르센트르 스테니슬레츠 에넬테르 메르세르프 에르톈츠 베크르 세르티세르프 에리아 예르세르파란트 라테미르 
+		#케렐리티프 레프라츠 메르틴츠 레트미츠 예이르츠 아이르츠 엘일리츠 에르카츠 에르사츠 타테르츠 스베르츠 나드레츠 예일로츠 에르난트 게르나츠 메르피츠 스레르츠 아넬리츠 세르펠르츠 
+		#에르난츠 메르나츠 데르야크 에르스타츠 베르나츠 페르난츠 레트미르츠 엘리니츠 케트라츠 에르마츠 크세니츠 엘라이츠 나스데츠 발레니츠 알리얀트 칼레니츠 케르타츠 류벨리츠 라트미르츠 
+		#네르티츠 베르니츠 나델리오츠 티엘리츠 셰르니아 메르나츠 베르헨트 에트린 헤일리히 페르디히츠 페르츠 헤르스 게르체린 에렌셸르 헤르멜리츠 웰리언츠 베르넨츠 겔르트 베르판츠 헤르스트
+		#메르페르트 안드레츠 스레트르 프레츠 옐리츠 에리아츠 하이리츠 제르케츠 유에르트 유엘리츠 율리아츠 엘리안츠 루드헤트 레그아크 메르탄츠 테르마츠 스테르펜 클레니츠 엔스레츠 에르메츠 
+		#헤르넨스 케르티츠 헬리아르트 게르테츠 셀비르츠 메르닌스 하이디츠 안제리츠 페르페츠 제른트 메르세츠 페르세츠 유에르트 엔트안츠 미셰리츠 에르안츠 메르크 졔르니츠 메르니츠 제이크 
+		#세르만 에르비츠 제일리츠 레버츠 제르츠 안트레츠 레이먼츠 게스텐츠 체르츠 티에리츠 가이르츠 메르티유 데니아츠 티베르츠 루크니츠 데브니트 세비스텐트 에르체르 에닌스크 아이네츠 
+		#메르넨츠 카메르트 클레니츠 라이리츠 베로니카 소페르트 엘레나츠 다엘리츠 세르젠트 메르니츠 베르나츠 메르데츠 아제리츠 셀리안 제세페츠 페르니트 빌레이트 제르네트 히레에츠 히카르츠 
+		#타켈리츠 체르벤트 르네르트 미네르타 세르티유 유우리츠 세르타츠 유엘라니츠 타케리츠 류아르트 하울리츠 유셀리츠 코세이츠 유세르츠 치엘리트 히로니트 유아시트 미츠엘트 케이스트 사페르츠
+		#쥬에리츠 하리오츠 메르엔 레이츠 제르페트 제르판트 쥬에르트 페아트르 세르니트 루체르트 에프펜츠 에일라츠 데탈르츠 프란시츠 파엘리츠 에리아츠 크레니츠 루케리아츠 테르제르 에르메츠 
+		#펜세츠 제르펜츠 베르케츠 메르나크 페라리츠 렐리나츠 제르게츠 세프레츠 제일란트 베르마트 테프라츠 켄니엘른 페트레냐 가프레냐 테레스 베르켄츠 테이세라 베르세라 베카스네아 에네카 
+		#테라인츠 에크페르크 페운디스 카페리츠 네카리츠 페리니츠 테라스넨 베크라츠 메르케츠
+	}
+	female_common_first_names = {
+		Zehin
+	}
+	noble_last_names = {
+		Dih_Ryuvlroczeah Dih_Ekthyvanah Dih_Hailreiyuem Dih_Kaelriniah Dih_Ekkelrinverk Dih_Akrenxhiah Dih_Karota
+		#"디 류블로쳬아" "디 엑티바나" "디 하일레이움" "디 카엘리니아" "디 엑켈린베르크" "디 아크렌시아" "디 카로타"
+	}
+	common_last_names={
+		Rehn_Graviroxh Rehn_Dyugarth Rehn_Grafilroxh Rehn_Dilreninsk Rehn_Diarnoth
+		#"렌 그라비로스" "렌 듀가르트" "렌 그라필로스" "렌 딜레닌스크" "렌 디아르노트"
+		Rehn_Aalrith Rehn_Diariots Rehn_Ainkrath Rehn_Diarth Rehn_Artits Rehn_Airiots Rehn_Asiarith
+		#"렌 아알리트" "렌 디아리오츠" "렌 아인크라트" "렌 디아르트" " 렌 아르티츠" "렌 아이리오츠" "렌 아시아리트"
+		Rehn_Servinia Rehn_Arkatia Rehn_Yastrkh Rehn_Seivranth Rehn_Dearhrits
+		#"렌 세르비니아" "렌 아르카티아" "렌 야스트르크" "렌 세이브란트" "렌 데아르리츠"
+		Xhehn_Serats Xhehn_Diarth Xhehn_Ariarth Xhehn_Idariots Xhehn_Dialriots Xhehn_Saivhrits Xhehn_Zeriatits Xhehn_Phrats
+		#"셴 세르아츠" "셴 디아르트" "셴 아리아르트" "셴 이다리오츠" "셴 디알리오츠" "셴 사이브리트" "셴 제리아티츠" "셴 프라츠" 
+		#"셴 세르비나트" "셴 이다오르트" "셴 아크리아트" "셴 하일리츠" "셴 디알리오트" "셴 제일리니아" "셴 아르디온츠" 
+		#"셴 아크라티온" "셴 데알리오츠" "셴 페르실라" "셴 다이알리오트" "셴 세르비안트" "셴 디크리츠" "셴 헤이베르트" 
+		#"셴 체르닌트" "셴 아크란트" "셴 라일란트" "셴 디알리오츠" "셴 유우리츠" "셴 체르피아" "셴 제르니안트" "셴 카타르시트" 
+		#"쳰 제르니트" "쳰 베르니안" "쳰 베르니아트" "쳰 브루네트" "쳰 뷰에리츠" "쳰 제르니안트" "쳰 쥬엘리트" "쳰 제르니아" 
+		#"쳰 자일리츠" "쳰 듀엘론" "쳰 듀엘리니아" "쳰 데르아키트" "쳰 제르코프" "쳰 게르센트" "쳰 게르메트" "쳰 레느메트" 
+		#"쳰 다르아르트" "쳰 디아피로츠" "쳰 사이페르트" "쳰 사일리티니아" "쳰 사이리나츠" "쳰 슈엘리츠" "쳰 셸리오츠" "쳰 세이크로츠" 
+		#"쳰 메르멘트" "쳰 뮤올리시아" "쳰 뮤에르트" "쳰 멜리니아" "쳰 나일리차" "쳰 나일리아" "쳰 네르아츠" "쳰 아크라티츠" "쳰 라이론트" 
+		#"쳰 아일리츠" "쳰 라이니트" "쳰 카이스타로츠" "쳰 카엔로타" "쳰 카스타르츠" "쳰 테브리츠" "쳰 테이브리아" "쳰 튜알로트" "쳰 츠레프니아" 
+		#"쳰 프로니츠" "쳰 프렌시아" "쳰 프렐리츠" "쳰 프레아니츠" "켄 베르닌츠" "켄 디아프리트" "켄 아르프트" "켄 아리프리아" "켄 엑켈리니아" 
+		#"켄 디아크로츠" "켄 셀리브리트" "켄 아리아르츠" "켄 트라이아" "켄 세르피트" "켄 디아르트" "켄 아크시움" "켄 체페르트" "켄 디아프리트" 
+		#"켄 슈루츠" "켄 세르피르트" "켄 디크리트" "켄 퓨리트" "켄 젤리오니아" "켄 세르비니아" "르 아르키트" "르 세르비츠" "르 페르스트" "르 케르츠" 
+		#"르 게르넨트" "르 메르케르" "르 헤르트" "르 에르렌트" "르 에르스틴" "르 에스터" "르 베크로프트" "셰 퓨레트" "셰 아네르트" "셰 베르네츠" 
+		#"셰 베르닌" "셰 제키츠" "셰 로벤트" "셰 베트라츠" "셰 게르페츠" "쳬 헤르트" "쳬 베르넨리아" "쳬 네엘리츠" "쳬 프라이츠" "쳬 휴엘르츠" 
+		#"쳬 메르피츠" "쳬 메크레트" "쳬 아페레티아" "쳬 케인츠" "쳬 게르네츠" "쳬 페르니츠" "쳬 게르네츠 " "쳬 페르렌트" "쳬 헤이르츠" "츠 게르멘스크" "츠 세르빈스크" "츠 디올리오츠"
+	}
+	ethnicities = {
+		1 = ilrenxhiel
+	}
+	graphics = european
+}	
+
+dyuelroniel = {
+	color = { 169 40 51 }
+	religion = ruvelrinion
+	traits = { ilrenxhiel_culture_group elrunik_heritage }
+	male_common_first_names={
+		Elrakaxh Elriots Ellirits Esrits Aikhrith Asvents Sheirits Hailrenits Hailrets Dyurevits Erkaxh Erkats Thiarth Kaelrots
+		#엘라카스 엘리오츠 엘리리츠 에스리츠 아이크리트 아스벤츠 셰이리츠 하일레니츠 하일레츠 듀레비츠 에르카스 에르카츠 티아르트 카엘로츠
+		Zehin Vhelraits Perth Edelren Zehint Elrions Yerkh Kersterh Zerphyts Melreont Zexherits Mertets Enserth Dernel Reien Xhemiel Kevenits
+		#제인 벨라이츠 페르트 에델렌 제인트 엘리온스 예르크 케르스테르 제르피츠 멜레온트 제셰리츠 메르테츠 엔세르트 데르넬 레이엔 셰미엘 케베니츠
+		Deyrits Rekehn Kerta Herzent Endrits Henriats Nikelrits Kevern Eriandh Zeits Eiot Ein Ertah Tserth Reits Merth Erh Erfarth Vernen Ereth
+		#데이리츠 레켄 케르타 헤르젠트 엔드리츠 헨리아츠 니켈레츠 케베른 에리안드 제이츠 에이어트 에인 에르타 체르트 레이츠 메르트 에르 에르파르트 베르넨 에르에트
+		Dernets Zerts Perh Kerth Termets Reveht Erzehn Krenoth Hyuelrth Renhreth Pernant Strevyun Zernents Retseanth Merakh Mekhts Skerth Derkent Dekrats
+		#데르네츠 제르츠 페르 케르트 테르메츠 레베트 에르젠 크레노트 휴엘르트 레느레트 페르난트 스트레뷴 제르넨츠 레체안트 메아르크 메크츠 스케르트 데르켄트 데크라츠 
+		Kerxh Hehent Rexherh KErnetn Reherh Sterth Kentrth Kerniah Ervets Kernexh Relriots Eridien Terneph Tairets Roryanits Pertekh Heriont Erehen Yuelrth
+		#케르스 헤엔트 레세르 케르네튼 레에르 스테르트 켄트르트 케르니아 에르베츠 케르네스 렐리오츠 에르디엔 테르네프 타이레츠 로랴니츠 페르테크 헤리언트 에르엔 유엘르트
+		#유아르트 케르테느 페르켄트 케르이크 제이스트 메르텐 제르탄츠 헤르아츠 케르켄츠 케르니츠 스테르츠 케르헤른 네르아츠 제프리츠 헤르나르츠 리에먼트 프레트 메르셰르 
+		#셰일리아 레우아츠 제셰르 케르나츠 베르네스 네르베츠 헤일런 에어렌츠 게르네온 메르벤드 에르엔츠 다엘리츠 쟈에르츠 다에르트 하르에트 알리오스 페르베른 메르케르 
+		#케르이트 레드넨 제레나트 프레스츠 쥬에르트 졔일란트 헤이레스 유베르 셰이르츠 렌타르트 페르테르크 케른트 뷰레트 크레프르트 메르케트 틸리아츠 엘리어스 피에르트 
+		#에르넨트 겔리아츠 토에르츠 네르단트 에르크 아르헤츠 레베르난트 제르메르트 레이루츠 이안 레네트 게르튼 데르크 뮤엘르트 에르크 베르나츠 슈에르트 루페르트 디아르트 
+		#필리츠 로에르스 컬리언트 데이런트 제스텐트 제크라트 엘리아트 사일르메트 뮤크게른 쥬베르트 자이르트 에르트카츠 케르스페트 넬리아츠 뮤르트 트레베츠 트레베츠 렌드리아스 
+		#아드리안츠 데르멘트 브레니아츠 브렌트 엔브로츠 벤리츠 케르비츠 에레니안츠 빈세리아츠 엔카리아스 그렌츠 네르카 메일르츠 메르텐츠 렌타르츠 레지나르트 헤르베르트 웰리스리츠 
+		#나이첼린 알리산테르 도멜리니츠 브레틀렌츠 디크진 데르자츠 제일리츠 일리아츠 나이체르 메르케르 데크라츠 엔트라츠 벤츠 카이르츠 체르스턴츠 에르비아 에르멜리 슈페르트 제세르크 
+		#에리아스 스케르츠 엔다에르 데이르츠 이벨리트 피엘리온 안디아르츠 메르아츠 메키리츠 엘리제르트 에인츠 다에르츠 메르아르트 에리니츠 루데이아 그레이츠 에이베르츠 헤르니트 헤리아트 
+		#케이트레츠 제르메르트 메디에르트 케이트 엘리아츠 아크렌트 세르아트 메르사트 아우리츠 메르사트 에디라츠 셰르나츠 아멜리니츠 아네르 케르니엔트 헤일리니아 세르비츠 데르츠 헤일리츠 
+		#릴리아츠 크리스타베츠 셰리츠 세르센트 케이데르츠 케르덴니아 다프넬리아 다이안츠 데르니츠 데르네르스 케르세트 페이엔스 제르네스 비프레트 게르테츠 그렌트로츠 데르네츠 헨라르트 제르네트 
+		#그리에츠 제르안트 마이리츠 크리스테르 트리셰르 힐레르츠 클레아르트 다니엘르츠 비엔르츠 스테파르츠 제르네츠 베르나트 프렌샤르트 로벨리츠 로셀리츠 웨일리츠 테리아츠 티팔리오츠 에르베니아 
+		#케르메닌 메르넨스 켄스테르츠 제르니아츠 페르니츠 메르리츠 제르디츠 베르니츠 에이리츠 아스리아트 아크리아 로트니아 릴레니아츠 디스베르츠 아크리아트 아이리츠 필레피르트 프라실리츠 렌디츠 
+		#메르샤트 메릴리츠 메르시메츠 마엘리츠 멜라니츠 데르네츠 베르켈린 에셰르츠 데르시츠 제니페르트 메르아르츠 셰이젠트 메케르츠 페트리셴 레브카츠 베크테라 데프라 레베른 페르나츠 로아리스 
+		#이벨리츠 제크리츠 제인세르츠 에르벤츠 니케르츠 세르프 베르티미츠 페르트 에르케스츠 데뮤테르 세르케츠 베케르트 레뮤안트 이케리츠 미하르트 베르셀리 파베르츠 퓨아르츠 니케쳰 발리츠 
+		#베르티슬레츠 레오니츠 메케르츠 유아르트 에르켄 안트레츠 켄스텐츠 볘츠슬레츠 알르센트르 스테니슬레츠 에넬테르 메르세르프 에르톈츠 베크르 세르티세르프 에리아 예르세르파란트 라테미르 
+		#케렐리티프 레프라츠 메르틴츠 레트미츠 예이르츠 아이르츠 엘일리츠 에르카츠 에르사츠 타테르츠 스베르츠 나드레츠 예일로츠 에르난트 게르나츠 메르피츠 스레르츠 아넬리츠 세르펠르츠 
+		#에르난츠 메르나츠 데르야크 에르스타츠 베르나츠 페르난츠 레트미르츠 엘리니츠 케트라츠 에르마츠 크세니츠 엘라이츠 나스데츠 발레니츠 알리얀트 칼레니츠 케르타츠 류벨리츠 라트미르츠 
+		#네르티츠 베르니츠 나델리오츠 티엘리츠 셰르니아 메르나츠 베르헨트 에트린 헤일리히 페르디히츠 페르츠 헤르스 게르체린 에렌셸르 헤르멜리츠 웰리언츠 베르넨츠 겔르트 베르판츠 헤르스트
+		#메르페르트 안드레츠 스레트르 프레츠 옐리츠 에리아츠 하이리츠 제르케츠 유에르트 유엘리츠 율리아츠 엘리안츠 루드헤트 레그아크 메르탄츠 테르마츠 스테르펜 클레니츠 엔스레츠 에르메츠 
+		#헤르넨스 케르티츠 헬리아르트 게르테츠 셀비르츠 메르닌스 하이디츠 안제리츠 페르페츠 제른트 메르세츠 페르세츠 유에르트 엔트안츠 미셰리츠 에르안츠 메르크 졔르니츠 메르니츠 제이크 
+		#세르만 에르비츠 제일리츠 레버츠 제르츠 안트레츠 레이먼츠 게스텐츠 체르츠 티에리츠 가이르츠 메르티유 데니아츠 티베르츠 루크니츠 데브니트 세비스텐트 에르체르 에닌스크 아이네츠 
+		#메르넨츠 카메르트 클레니츠 라이리츠 베로니카 소페르트 엘레나츠 다엘리츠 세르젠트 메르니츠 베르나츠 메르데츠 아제리츠 셀리안 제세페츠 페르니트 빌레이트 제르네트 히레에츠 히카르츠 
+		#타켈리츠 체르벤트 르네르트 미네르타 세르티유 유우리츠 세르타츠 유엘라니츠 타케리츠 류아르트 하울리츠 유셀리츠 코세이츠 유세르츠 치엘리트 히로니트 유아시트 미츠엘트 케이스트 사페르츠
+		#쥬에리츠 하리오츠 메르엔 레이츠 제르페트 제르판트 쥬에르트 페아트르 세르니트 루체르트 에프펜츠 에일라츠 데탈르츠 프란시츠 파엘리츠 에리아츠 크레니츠 루케리아츠 테르제르 에르메츠 
+		#펜세츠 제르펜츠 베르케츠 메르나크 페라리츠 렐리나츠 제르게츠 세프레츠 제일란트 베르마트 테프라츠 켄니엘른 페트레냐 가프레냐 테레스 베르켄츠 테이세라 베르세라 베카스네아 에네카 
+		#테라인츠 에크페르크 페운디스 카페리츠 네카리츠 페리니츠 테라스넨 베크라츠 메르케츠
+	}
+	female_common_first_names = {
+		Zehin
+	}
+	noble_last_names = {
+		Dih_Ryuvlroczeah Dih_Ekthyvanah Dih_Hailreiyuem Dih_Kaelriniah Dih_Ekkelrinverk Dih_Akrenxhiah Dih_Karota
+		#"디 류블로쳬아" "디 엑티바나" "디 하일레이움" "디 카엘리니아" "디 엑켈린베르크" "디 아크렌시아" "디 카로타"
+	}
+	common_last_names={
+		Rehn_Graviroxh Rehn_Dyugarth Rehn_Grafilroxh Rehn_Dilreninsk Rehn_Diarnoth
+		#"렌 그라비로스" "렌 듀가르트" "렌 그라필로스" "렌 딜레닌스크" "렌 디아르노트"
+		Rehn_Aalrith Rehn_Diariots Rehn_Ainkrath Rehn_Diarth Rehn_Artits Rehn_Airiots Rehn_Asiarith
+		#"렌 아알리트" "렌 디아리오츠" "렌 아인크라트" "렌 디아르트" " 렌 아르티츠" "렌 아이리오츠" "렌 아시아리트"
+		Rehn_Servinia Rehn_Arkatia Rehn_Yastrkh Rehn_Seivranth Rehn_Dearhrits
+		#"렌 세르비니아" "렌 아르카티아" "렌 야스트르크" "렌 세이브란트" "렌 데아르리츠"
+		Xhehn_Serats Xhehn_Diarth Xhehn_Ariarth Xhehn_Idariots Xhehn_Dialriots Xhehn_Saivhrits Xhehn_Zeriatits Xhehn_Phrats
+		#"셴 세르아츠" "셴 디아르트" "셴 아리아르트" "셴 이다리오츠" "셴 디알리오츠" "셴 사이브리트" "셴 제리아티츠" "셴 프라츠" 
+		#"셴 세르비나트" "셴 이다오르트" "셴 아크리아트" "셴 하일리츠" "셴 디알리오트" "셴 제일리니아" "셴 아르디온츠" 
+		#"셴 아크라티온" "셴 데알리오츠" "셴 페르실라" "셴 다이알리오트" "셴 세르비안트" "셴 디크리츠" "셴 헤이베르트" 
+		#"셴 체르닌트" "셴 아크란트" "셴 라일란트" "셴 디알리오츠" "셴 유우리츠" "셴 체르피아" "셴 제르니안트" "셴 카타르시트" 
+		#"쳰 제르니트" "쳰 베르니안" "쳰 베르니아트" "쳰 브루네트" "쳰 뷰에리츠" "쳰 제르니안트" "쳰 쥬엘리트" "쳰 제르니아" 
+		#"쳰 자일리츠" "쳰 듀엘론" "쳰 듀엘리니아" "쳰 데르아키트" "쳰 제르코프" "쳰 게르센트" "쳰 게르메트" "쳰 레느메트" 
+		#"쳰 다르아르트" "쳰 디아피로츠" "쳰 사이페르트" "쳰 사일리티니아" "쳰 사이리나츠" "쳰 슈엘리츠" "쳰 셸리오츠" "쳰 세이크로츠" 
+		#"쳰 메르멘트" "쳰 뮤올리시아" "쳰 뮤에르트" "쳰 멜리니아" "쳰 나일리차" "쳰 나일리아" "쳰 네르아츠" "쳰 아크라티츠" "쳰 라이론트" 
+		#"쳰 아일리츠" "쳰 라이니트" "쳰 카이스타로츠" "쳰 카엔로타" "쳰 카스타르츠" "쳰 테브리츠" "쳰 테이브리아" "쳰 튜알로트" "쳰 츠레프니아" 
+		#"쳰 프로니츠" "쳰 프렌시아" "쳰 프렐리츠" "쳰 프레아니츠" "켄 베르닌츠" "켄 디아프리트" "켄 아르프트" "켄 아리프리아" "켄 엑켈리니아" 
+		#"켄 디아크로츠" "켄 셀리브리트" "켄 아리아르츠" "켄 트라이아" "켄 세르피트" "켄 디아르트" "켄 아크시움" "켄 체페르트" "켄 디아프리트" 
+		#"켄 슈루츠" "켄 세르피르트" "켄 디크리트" "켄 퓨리트" "켄 젤리오니아" "켄 세르비니아" "르 아르키트" "르 세르비츠" "르 페르스트" "르 케르츠" 
+		#"르 게르넨트" "르 메르케르" "르 헤르트" "르 에르렌트" "르 에르스틴" "르 에스터" "르 베크로프트" "셰 퓨레트" "셰 아네르트" "셰 베르네츠" 
+		#"셰 베르닌" "셰 제키츠" "셰 로벤트" "셰 베트라츠" "셰 게르페츠" "쳬 헤르트" "쳬 베르넨리아" "쳬 네엘리츠" "쳬 프라이츠" "쳬 휴엘르츠" 
+		#"쳬 메르피츠" "쳬 메크레트" "쳬 아페레티아" "쳬 케인츠" "쳬 게르네츠" "쳬 페르니츠" "쳬 게르네츠 " "쳬 페르렌트" "쳬 헤이르츠" "츠 게르멘스크" "츠 세르빈스크" "츠 디올리오츠"
+	}
+	ethnicities = {
+		1 = ilrenxhiel
+	}
+	graphics = european
+}	
+
+korean={
+	color= hsv{ 0.17 0.41 0.34 }
+	religion = ruvelrinion
+	traits = { korean_language elrunik_heritage }
+	male_common_first_names={
+		Bak Bong-haek
+		Chwa-chin
+		Gu
+		Han Heong-gyo Hong
+		Jeong Jo
+		Kwon
+		Mung-geun
+		Ok
+		Sang-ok Sang-yong Sim
+		Yi Yun
+	}
+	female_common_first_names = {
+		Bingheogak
+		Hwahyeop
+		Jeongildang
+		Seonhui Sinjeong Sunghee
+		Yeongsuhap Yunjidang
+	}
+	male_noble_first_names = {
+		Bang-bo Byung-guk Byung-hak Byung-si
+		Choi-ung
+		Don-in Du-seon
+		Ha-eung Hong-jip Hunggun
+		Gyu-ho
+		In-young
+		Jeong-hui Jin Jo-sun Jung-yang Jwa-geun
+		Kyung-jae
+		Sang-hwang Sun-mok Sun-taek
+		Won-yong
+		Yong-sun Yu-won
+	}
+	male_regal_first_names = {
+		Byeon
+		Cheok
+		Geum Gong
+		Hui Hwan
+		Myeong-bok
+		San
+	}
+	female_regal_first_names = {
+		Ja-yeong Jeungsun
+		Hyoyu
+		Ok-jeong
+	}
+
+	noble_last_names = {
+		Bak
+		Chang Choe 
+		Gang Gim Gwon
+		Han Hong
+		Jo
+		Kim Ko
+		Min Moon
+		Na Namgung
+		Park
+		Shin Seong Seok Song
+		Won
+		Yi
+	}
+	common_last_names={
+		Bo
+		Ch_ok Chung
+		Guk Gyu
+		Haung Hu Hwan Hyong
+		Im
+		Jip
+		Mok
+		Seo Seon
+		Shinjong Si Sun
+		Taek
+		Yong
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = asian
+}

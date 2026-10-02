@@ -1,0 +1,150 @@
+{
+  "step_id": "SF06_append_boundary",
+  "run_id": "TEST-SF-20261002-01",
+  "result": "미실행",
+  "preconditions": [
+    "앞 단계 native 읽기 확인",
+    "정확한 TEST 대상 ID 검증"
+  ],
+  "writes": [
+    {
+      "spreadsheet_id": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+      "file_code": "TEST-R20",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71002002,
+              "startRowIndex": 13,
+              "endRowIndex": 14,
+              "startColumnIndex": 0,
+              "endColumnIndex": 48
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-REGION-001"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-ERA 100"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "값 있음"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "numberValue": 50
+                    }
+                  },
+                  {},
+                  {},
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "SF-01 동일조건 인구"
+                    }
+                  },
+                  {},
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "초안"
+                    }
+                  },
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "합성 기술 시험값. 운영 파일에 이관 금지."
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-POP-011"
+                    }
+                  },
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-A"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-ERA"
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "numberValue": 100
+                    }
+                  },
+                  {
+                    "userEnteredValue": {
+                      "boolValue": true
+                    }
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-SF-20261002-01|boundary_row=14"
+                    }
+                  },
+                  {},
+                  {},
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST-SF-20261002-01"
+                    }
+                  },
+                  {},
+                  {},
+                  {},
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "R20_VALID_자료_C4": "범위초과",
+    "H90_VIEW_소형흐름_B6": 200,
+    "provider_count": 1,
+    "boundary_not_yet_included": true
+  },
+  "readback": [
+    "R20:IN_인구관측!A14:AV14",
+    "R20:VALID_자료!A4:D4",
+    "H90:VIEW_소형흐름!A4:B6"
+  ]
+}

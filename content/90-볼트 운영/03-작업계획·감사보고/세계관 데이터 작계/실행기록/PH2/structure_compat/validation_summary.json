@@ -1,0 +1,586 @@
+{
+  "status": "로컬 구조 요청 생성·정적 검증 완료; 온라인 API 수락/생성/시험 미실행",
+  "source": {
+    "physical_layout": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\physical_layout.json",
+    "sha256": "15bfbe163b3d00dc1a56632d2e31602a9897e263f8238e710c3bf93e3342c149"
+  },
+  "api_reference_sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets/request#AddTableRequest",
+    "https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets/sheets#TableColumnProperties",
+    "https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets/sheets#ColumnType"
+  ],
+  "excluded_file_codes": [
+    "N60",
+    "N70"
+  ],
+  "files": [
+    {
+      "file_code": "C00",
+      "spreadsheet_id": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+      "new_sheet_count": 41,
+      "legacy_sheet_count": 36,
+      "new_native_table_count": 33,
+      "new_named_range_count": 53,
+      "request_count": 477,
+      "chunk_count": 6,
+      "max_chunk_requests": 99,
+      "type_counts": {
+        "UNSPECIFIED": 389,
+        "DOUBLE": 26
+      },
+      "cells": {
+        "existing": 1310545,
+        "new": 268327,
+        "planned_total": 1578872,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "R10",
+      "spreadsheet_id": "1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs",
+      "new_sheet_count": 14,
+      "legacy_sheet_count": 36,
+      "new_native_table_count": 8,
+      "new_named_range_count": 25,
+      "request_count": 203,
+      "chunk_count": 3,
+      "max_chunk_requests": 86,
+      "type_counts": {
+        "UNSPECIFIED": 38,
+        "DOUBLE": 49,
+        "TEXT": 133
+      },
+      "cells": {
+        "existing": 1310545,
+        "new": 152348,
+        "planned_total": 1462893,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "R20",
+      "spreadsheet_id": "1YmKg_nwwwmlCtsUeHhlb31c9bwXtxzTBCg-qDmbHSmc",
+      "new_sheet_count": 9,
+      "legacy_sheet_count": 36,
+      "new_native_table_count": 4,
+      "new_named_range_count": 16,
+      "request_count": 130,
+      "chunk_count": 2,
+      "max_chunk_requests": 76,
+      "type_counts": {
+        "UNSPECIFIED": 28,
+        "TEXT": 83,
+        "DOUBLE": 39
+      },
+      "cells": {
+        "existing": 1310545,
+        "new": 107402,
+        "planned_total": 1417947,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "R30",
+      "spreadsheet_id": "1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4",
+      "new_sheet_count": 11,
+      "legacy_sheet_count": 36,
+      "new_native_table_count": 4,
+      "new_named_range_count": 19,
+      "request_count": 154,
+      "chunk_count": 2,
+      "max_chunk_requests": 85,
+      "type_counts": {
+        "TEXT": 123,
+        "UNSPECIFIED": 32,
+        "DOUBLE": 41
+      },
+      "cells": {
+        "existing": 1310545,
+        "new": 116565,
+        "planned_total": 1427110,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "R40",
+      "spreadsheet_id": "1cm6ZhqKYprOr481Wg85pIAPOPKlfCEHx1ZFMCVCeew8",
+      "new_sheet_count": 8,
+      "legacy_sheet_count": 36,
+      "new_native_table_count": 2,
+      "new_named_range_count": 11,
+      "request_count": 95,
+      "chunk_count": 1,
+      "max_chunk_requests": 95,
+      "type_counts": {
+        "TEXT": 50,
+        "UNSPECIFIED": 14,
+        "DOUBLE": 19
+      },
+      "cells": {
+        "existing": 1310545,
+        "new": 93295,
+        "planned_total": 1403840,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "R50",
+      "spreadsheet_id": "16X9ZEvbsXA8HvTx2uAIG1XnJo-ztJxkj_7iNONoruNg",
+      "new_sheet_count": 7,
+      "legacy_sheet_count": 36,
+      "new_native_table_count": 2,
+      "new_named_range_count": 12,
+      "request_count": 98,
+      "chunk_count": 1,
+      "max_chunk_requests": 98,
+      "type_counts": {
+        "UNSPECIFIED": 10,
+        "TEXT": 24,
+        "DOUBLE": 10
+      },
+      "cells": {
+        "existing": 1310545,
+        "new": 90205,
+        "planned_total": 1400750,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "R60",
+      "spreadsheet_id": "1e-SwXsHJ6NyZ1iv_dJeKs-4TUYb2RXF-GUkfWcoDk-M",
+      "new_sheet_count": 14,
+      "legacy_sheet_count": 36,
+      "new_native_table_count": 6,
+      "new_named_range_count": 24,
+      "request_count": 195,
+      "chunk_count": 3,
+      "max_chunk_requests": 90,
+      "type_counts": {
+        "TEXT": 165,
+        "UNSPECIFIED": 49,
+        "DOUBLE": 68
+      },
+      "cells": {
+        "existing": 1310545,
+        "new": 127037,
+        "planned_total": 1437582,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "R70",
+      "spreadsheet_id": "1dNen0b9il3myHy1-q0_rqVei0sC2uK9Fw3b78mgrd5g",
+      "new_sheet_count": 9,
+      "legacy_sheet_count": 36,
+      "new_native_table_count": 3,
+      "new_named_range_count": 15,
+      "request_count": 123,
+      "chunk_count": 2,
+      "max_chunk_requests": 96,
+      "type_counts": {
+        "TEXT": 78,
+        "UNSPECIFIED": 21,
+        "DOUBLE": 22
+      },
+      "cells": {
+        "existing": 1310545,
+        "new": 105567,
+        "planned_total": 1416112,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "N10",
+      "spreadsheet_id": "1JEpeH_q6Go0ADyCncW9vj8mkn96qg2QDViF9tyoDdgY",
+      "new_sheet_count": 13,
+      "legacy_sheet_count": 51,
+      "new_native_table_count": 6,
+      "new_named_range_count": 27,
+      "request_count": 210,
+      "chunk_count": 3,
+      "max_chunk_requests": 93,
+      "type_counts": {
+        "UNSPECIFIED": 3,
+        "TEXT": 113,
+        "DOUBLE": 24
+      },
+      "cells": {
+        "existing": 1016992,
+        "new": 117285,
+        "planned_total": 1134277,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "N20",
+      "spreadsheet_id": "1l1_oFuohj0krEWKUtVXglnWfckvCUbXNEeURKre6rxc",
+      "new_sheet_count": 32,
+      "legacy_sheet_count": 51,
+      "new_native_table_count": 19,
+      "new_named_range_count": 84,
+      "request_count": 622,
+      "chunk_count": 8,
+      "max_chunk_requests": 96,
+      "type_counts": {
+        "UNSPECIFIED": 20,
+        "TEXT": 472,
+        "DOUBLE": 125
+      },
+      "cells": {
+        "existing": 1016992,
+        "new": 257619,
+        "planned_total": 1274611,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "N30",
+      "spreadsheet_id": "15aNd3EzVD0-EzShTZ0Hg1ff4shVvz9YNHfesezIjDfc",
+      "new_sheet_count": 11,
+      "legacy_sheet_count": 51,
+      "new_native_table_count": 4,
+      "new_named_range_count": 29,
+      "request_count": 214,
+      "chunk_count": 3,
+      "max_chunk_requests": 93,
+      "type_counts": {
+        "TEXT": 111,
+        "DOUBLE": 25,
+        "UNSPECIFIED": 1
+      },
+      "cells": {
+        "existing": 1016992,
+        "new": 113397,
+        "planned_total": 1130389,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "N40",
+      "spreadsheet_id": "1Gbw-GT10Kv3oKqaollUe5n9tfKh54d_DW7PaOBix2PU",
+      "new_sheet_count": 10,
+      "legacy_sheet_count": 51,
+      "new_native_table_count": 3,
+      "new_named_range_count": 14,
+      "request_count": 120,
+      "chunk_count": 2,
+      "max_chunk_requests": 84,
+      "type_counts": {
+        "TEXT": 83,
+        "DOUBLE": 25,
+        "UNSPECIFIED": 1
+      },
+      "cells": {
+        "existing": 1016992,
+        "new": 80079,
+        "planned_total": 1097071,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "N50",
+      "spreadsheet_id": "1Wrb-c63hlrVrJYbMQqLip3iFP9hlOaTsYX0lXhvrIZ0",
+      "new_sheet_count": 12,
+      "legacy_sheet_count": 51,
+      "new_native_table_count": 5,
+      "new_named_range_count": 21,
+      "request_count": 170,
+      "chunk_count": 2,
+      "max_chunk_requests": 89,
+      "type_counts": {
+        "TEXT": 139,
+        "DOUBLE": 41
+      },
+      "cells": {
+        "existing": 1016992,
+        "new": 99870,
+        "planned_total": 1116862,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    },
+    {
+      "file_code": "H90",
+      "spreadsheet_id": "1IwtNuUdGlHbRYIBcc-Rc-VbTrPz6Sr8ITbygCx3_ePs",
+      "new_sheet_count": 26,
+      "legacy_sheet_count": 51,
+      "new_native_table_count": 3,
+      "new_named_range_count": 131,
+      "request_count": 872,
+      "chunk_count": 11,
+      "max_chunk_requests": 93,
+      "type_counts": {
+        "UNSPECIFIED": 24,
+        "DOUBLE": 7
+      },
+      "cells": {
+        "existing": 1016992,
+        "new": 561766,
+        "planned_total": 1578758,
+        "limit": 10000000,
+        "below_limit": true
+      },
+      "static_preflight": {
+        "errors": [],
+        "formula_writes": 0,
+        "business_data_value_writes": 0,
+        "legacy_target_writes": 0,
+        "allowed_request_types": [
+          "addNamedRange",
+          "addProtectedRange",
+          "addSheet",
+          "addTable",
+          "repeatCell",
+          "updateCells",
+          "updateDimensionProperties",
+          "updateTable"
+        ]
+      }
+    }
+  ],
+  "C00_resume": {
+    "skipped_sheet_count": 4,
+    "remaining_sheet_count": 37,
+    "request_count": 448,
+    "chunk_count": 6,
+    "max_chunk_requests": 93
+  },
+  "totals": {
+    "file_count": 14,
+    "new_sheets": 217,
+    "new_native_tables": 102,
+    "new_named_ranges": 481,
+    "requests": 3683,
+    "chunks": 49,
+    "max_chunk_requests": 99,
+    "max_target_cells_including_legacy": 1578872,
+    "static_errors": 0,
+    "formula_writes": 0,
+    "business_data_writes": 0,
+    "legacy_target_writes": 0
+  },
+  "legacy_cleanup": {
+    "status": "이번 요청에서 제외",
+    "plan": "복사된 구판의 native table/validation/수식/서식 보존 검증 후 별도 목록으로 정리 여부 결정; deleteSheet/deleteDimension/rename 요청 없음"
+  }
+}

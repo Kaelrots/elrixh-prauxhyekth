@@ -1,0 +1,3859 @@
+{
+  "file_code": "R70",
+  "spreadsheet_id": "1dNen0b9il3myHy1-q0_rqVei0sC2uK9Fw3b78mgrd5g",
+  "layout_version": "PH2.PHYSICAL.2",
+  "layout_sha256": "15bfbe163b3d00dc1a56632d2e31602a9897e263f8238e710c3bf93e3342c149",
+  "existing_sheet_ids_preserved": [
+    20957297,
+    91414319,
+    107402225,
+    130412256,
+    204899797,
+    242559508,
+    310772620,
+    413334864,
+    453108903,
+    456698286,
+    545095279,
+    552935386,
+    608402244,
+    861639760,
+    891214331,
+    900230000,
+    900230001,
+    900230002,
+    900230003,
+    900230004,
+    900230005,
+    900230006,
+    900230007,
+    900230008,
+    986639480,
+    1161488954,
+    1185232972,
+    1215027434,
+    1273735161,
+    1577841913,
+    1659135409,
+    1681007841,
+    1685371830,
+    1832485931,
+    1994704254,
+    2060259922
+  ],
+  "tabs": [
+    {
+      "layout_tab_title": "00_안내",
+      "actual_tab_title": "00_안내",
+      "planned_sheet_id": 1865035273,
+      "role": "GUIDE",
+      "row_count": 100,
+      "column_count": 12,
+      "blocks": []
+    },
+    {
+      "layout_tab_title": "01_설정",
+      "actual_tab_title": "01_설정",
+      "planned_sheet_id": 1180813968,
+      "role": "CONFIG",
+      "row_count": 100,
+      "column_count": 20,
+      "blocks": []
+    },
+    {
+      "layout_tab_title": "IN_환경관측",
+      "actual_tab_title": "IN_환경관측",
+      "planned_sheet_id": 1173316898,
+      "role": "IN",
+      "row_count": 103,
+      "column_count": 46,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "IN",
+          "logical_table_id": "환경관측",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "record_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_R70_e9a7001625a4",
+          "actual_named_range": "T_R70_e9a7001625a4",
+          "native_table_name": "V2T_R70_a9c8510894a5ef52",
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1173316898,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 46
+          },
+          "bounded_range": "'IN_환경관측'!A3:AT53",
+          "data_range": "'IN_환경관측'!A4:AT53",
+          "field_columns": [
+            {
+              "field_id": "region_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "property_raw",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "value_raw",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "statistic_basis",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "start_raw",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "end_raw",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "planet_scope_id",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "environment_type",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "value_numeric",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "value_text",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "route",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "era",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "property_id",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "year",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "month",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "day",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "date_precision",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "time_raw",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "legacy_record_id",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 42,
+              "column_letter": "AP"
+            },
+            {
+              "field_id": "data_scope",
+              "column_index": 43,
+              "column_letter": "AQ"
+            },
+            {
+              "field_id": "value_basis",
+              "column_index": 44,
+              "column_letter": "AR"
+            },
+            {
+              "field_id": "selection_status",
+              "column_index": 45,
+              "column_letter": "AS"
+            },
+            {
+              "field_id": "selection_reason",
+              "column_index": 46,
+              "column_letter": "AT"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "IN_자원분포",
+      "actual_tab_title": "IN_자원분포",
+      "planned_sheet_id": 1807554611,
+      "role": "IN",
+      "row_count": 103,
+      "column_count": 49,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "IN",
+          "logical_table_id": "자원분포",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "record_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_R70_a2be2e62984d",
+          "actual_named_range": "T_R70_a2be2e62984d",
+          "native_table_name": "V2T_R70_934910c830c799e0",
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1807554611,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 49
+          },
+          "bounded_range": "'IN_자원분포'!A3:AW53",
+          "data_range": "'IN_자원분포'!A4:AW53",
+          "field_columns": [
+            {
+              "field_id": "region_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "resource_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "time_raw",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "existence_status",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "reserve_quantity",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "quality_raw",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "shared_unit_raw",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "availability_raw",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "reserve_unit",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "reserve_definition",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "route",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "era",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "year",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "month",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "day",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "date_precision",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "start_raw",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "end_raw",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "legacy_record_id",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "value_raw",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "value_numeric",
+              "column_index": 42,
+              "column_letter": "AP"
+            },
+            {
+              "field_id": "value_text",
+              "column_index": 43,
+              "column_letter": "AQ"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 44,
+              "column_letter": "AR"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 45,
+              "column_letter": "AS"
+            },
+            {
+              "field_id": "data_scope",
+              "column_index": 46,
+              "column_letter": "AT"
+            },
+            {
+              "field_id": "value_basis",
+              "column_index": 47,
+              "column_letter": "AU"
+            },
+            {
+              "field_id": "selection_status",
+              "column_index": 48,
+              "column_letter": "AV"
+            },
+            {
+              "field_id": "selection_reason",
+              "column_index": 49,
+              "column_letter": "AW"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "IN_행성기본값",
+      "actual_tab_title": "IN_행성기본값",
+      "planned_sheet_id": 1858918494,
+      "role": "IN",
+      "row_count": 128,
+      "column_count": 26,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "IN",
+          "logical_table_id": "행성기본값",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "property_revision_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 78,
+          "data_capacity": 75,
+          "overflow_sentinel_row": 79,
+          "layout_named_range": "T_R70_0dec81757ed2",
+          "actual_named_range": "T_R70_0dec81757ed2",
+          "native_table_name": "V2T_R70_c16f0bcb2d05e148",
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1858918494,
+            "startRowIndex": 2,
+            "endRowIndex": 78,
+            "startColumnIndex": 0,
+            "endColumnIndex": 26
+          },
+          "bounded_range": "'IN_행성기본값'!A3:Z78",
+          "data_range": "'IN_행성기본값'!A4:Z78",
+          "field_columns": [
+            {
+              "field_id": "planet_scope_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "property_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "property_name",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "value_numeric",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "value_text",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "property_revision_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "calculation_method",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "selection_status",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "selection_reason",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "comparison_record_id",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "standard_revision_id",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "legacy_record_id",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "value_raw",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "data_scope",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "value_basis",
+              "column_index": 26,
+              "column_letter": "Z"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "VIEW_조회01",
+      "actual_tab_title": "VIEW_조회01",
+      "planned_sheet_id": 1651834969,
+      "role": "VIEW",
+      "row_count": 196,
+      "column_count": 14,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "환경관측_조회계산",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "record_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 53,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 54,
+          "layout_named_range": "T_R70_e2cf6642033d",
+          "actual_named_range": "T_R70_e2cf6642033d",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1651834969,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 5
+          },
+          "bounded_range": "'VIEW_조회01'!A3:E53",
+          "data_range": "'VIEW_조회01'!A4:E53",
+          "field_columns": [
+            {
+              "field_id": "region_name",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "source_name",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 5,
+              "column_letter": "E"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "자원분포_조회계산",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "record_id"
+          ],
+          "technical_header_row": 60,
+          "display_header_row": 59,
+          "data_start_row": 61,
+          "data_end_row": 110,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 111,
+          "layout_named_range": "T_R70_ca8d14233117",
+          "actual_named_range": "T_R70_ca8d14233117",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1651834969,
+            "startRowIndex": 59,
+            "endRowIndex": 110,
+            "startColumnIndex": 0,
+            "endColumnIndex": 6
+          },
+          "bounded_range": "'VIEW_조회01'!A60:F110",
+          "data_range": "'VIEW_조회01'!A61:F110",
+          "field_columns": [
+            {
+              "field_id": "region_name",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "resource_name",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "source_name",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 6,
+              "column_letter": "F"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "logical_table",
+          "role": "VIEW",
+          "logical_table_id": "행성기본값_계산",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "property_revision_id"
+          ],
+          "technical_header_row": 117,
+          "display_header_row": 116,
+          "data_start_row": 118,
+          "data_end_row": 192,
+          "data_capacity": 75,
+          "overflow_sentinel_row": 193,
+          "layout_named_range": "T_R70_cfcdd56d2785",
+          "actual_named_range": "T_R70_cfcdd56d2785",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1651834969,
+            "startRowIndex": 116,
+            "endRowIndex": 192,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "bounded_range": "'VIEW_조회01'!A117:N192",
+          "data_range": "'VIEW_조회01'!A118:N192",
+          "field_columns": [
+            {
+              "field_id": "planet_scope_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "property_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "property_name",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "calculated_value",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "value_text",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "property_revision_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 14,
+              "column_letter": "N"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "CHECK_검증01",
+      "actual_tab_title": "CHECK_검증01",
+      "planned_sheet_id": 1198615571,
+      "role": "CHECK",
+      "row_count": 257,
+      "column_count": 38,
+      "blocks": [
+        {
+          "kind": "logical_table",
+          "role": "CHECK",
+          "logical_table_id": "CHECK_RESULTS",
+          "dataset_id": null,
+          "primary_key_fields": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 253,
+          "data_capacity": 250,
+          "overflow_sentinel_row": 254,
+          "layout_named_range": "T_R70_9ce03ec84ad2",
+          "actual_named_range": "T_R70_9ce03ec84ad2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1198615571,
+            "startRowIndex": 2,
+            "endRowIndex": 253,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          },
+          "bounded_range": "'CHECK_검증01'!A3:AL253",
+          "data_range": "'CHECK_검증01'!A4:AL253",
+          "field_columns": [
+            {
+              "field_id": "owner_file_code",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "run_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "check_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "result_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "subject_kind",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "source_table",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "source_field",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_range",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "source_record_link",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "subject_count",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "actual",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "expected",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "value_type",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "comparison_rule",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "status",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "execution_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "severity",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "issue_kind",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "message",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "started_at",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "evidence",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "source_schema_version",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "dependency_status",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "dependency_dataset_ids",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "route",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "era",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "scope_json",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "test_ids",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "is_test_data",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "test_run_id",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "delegated_check_owner",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "correlation_id",
+              "column_index": 38,
+              "column_letter": "AL"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "PUB_제공01",
+      "actual_tab_title": "PUB_제공01",
+      "planned_sheet_id": 1583216035,
+      "role": "PUB",
+      "row_count": 478,
+      "column_count": 52,
+      "blocks": [
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_PLANET_PROPERTIES_V2",
+          "primary_key_fields": [
+            "property_revision_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 103,
+          "data_capacity": 100,
+          "overflow_sentinel_row": 104,
+          "layout_named_range": "PUB_PLANET_PROPERTIES_V2",
+          "actual_named_range": "PUB_PLANET_PROPERTIES_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1583216035,
+            "startRowIndex": 2,
+            "endRowIndex": 103,
+            "startColumnIndex": 0,
+            "endColumnIndex": 28
+          },
+          "bounded_range": "'PUB_제공01'!A3:AB103",
+          "data_range": "'PUB_제공01'!A4:AB103",
+          "field_columns": [
+            {
+              "field_id": "planet_scope_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "property_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "property_name",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "value_numeric",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "value_text",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "property_revision_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "calculation_method",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "selection_status",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "selection_reason",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "comparison_record_id",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "standard_revision_id",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "legacy_record_id",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "value_raw",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "data_scope",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "value_basis",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "calculated_value",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "source_record_kind",
+              "column_index": 28,
+              "column_letter": "AB"
+            }
+          ],
+          "source_tables": [
+            "행성기본값",
+            "행성기본값_계산"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A3:AB103",
+          "export_named_range": "PUB_PLANET_PROPERTIES_V2",
+          "export_column_ids": [
+            "planet_scope_id",
+            "property_id",
+            "property_name",
+            "value_numeric",
+            "value_text",
+            "unit",
+            "generation_method",
+            "setting_status",
+            "source_id",
+            "original_location",
+            "notes",
+            "property_revision_id",
+            "calculation_method",
+            "selection_status",
+            "selection_reason",
+            "comparison_record_id",
+            "standard_revision_id",
+            "record_id",
+            "legacy_locator",
+            "legacy_record_id",
+            "source_snapshot_id",
+            "validation_status",
+            "value_raw",
+            "value_status",
+            "data_scope",
+            "value_basis",
+            "calculated_value",
+            "source_record_kind"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_ENVIRONMENT_V2",
+          "primary_key_fields": [
+            "record_id"
+          ],
+          "technical_header_row": 110,
+          "display_header_row": 109,
+          "data_start_row": 111,
+          "data_end_row": 160,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 161,
+          "layout_named_range": "PUB_ENVIRONMENT_V2",
+          "actual_named_range": "PUB_ENVIRONMENT_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1583216035,
+            "startRowIndex": 109,
+            "endRowIndex": 160,
+            "startColumnIndex": 0,
+            "endColumnIndex": 48
+          },
+          "bounded_range": "'PUB_제공01'!A110:AV160",
+          "data_range": "'PUB_제공01'!A111:AV160",
+          "field_columns": [
+            {
+              "field_id": "region_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "property_raw",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "value_raw",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "statistic_basis",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "start_raw",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "end_raw",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "planet_scope_id",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "environment_type",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "value_numeric",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "value_text",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "route",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "era",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "property_id",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "year",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "month",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "day",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "date_precision",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "time_raw",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "legacy_record_id",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 42,
+              "column_letter": "AP"
+            },
+            {
+              "field_id": "data_scope",
+              "column_index": 43,
+              "column_letter": "AQ"
+            },
+            {
+              "field_id": "value_basis",
+              "column_index": 44,
+              "column_letter": "AR"
+            },
+            {
+              "field_id": "selection_status",
+              "column_index": 45,
+              "column_letter": "AS"
+            },
+            {
+              "field_id": "selection_reason",
+              "column_index": 46,
+              "column_letter": "AT"
+            },
+            {
+              "field_id": "region_name",
+              "column_index": 47,
+              "column_letter": "AU"
+            },
+            {
+              "field_id": "source_name",
+              "column_index": 48,
+              "column_letter": "AV"
+            }
+          ],
+          "source_tables": [
+            "환경관측",
+            "환경관측_조회계산"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A110:AV160",
+          "export_named_range": "PUB_ENVIRONMENT_V2",
+          "export_column_ids": [
+            "region_id",
+            "property_raw",
+            "value_status",
+            "value_raw",
+            "unit",
+            "statistic_basis",
+            "start_raw",
+            "end_raw",
+            "setting_status",
+            "source_id",
+            "notes",
+            "record_id",
+            "planet_scope_id",
+            "environment_type",
+            "value_numeric",
+            "value_text",
+            "route",
+            "era",
+            "start_year",
+            "end_year",
+            "property_id",
+            "calendar_revision",
+            "year",
+            "month",
+            "day",
+            "date_precision",
+            "time_raw",
+            "start_era",
+            "start_month",
+            "start_day",
+            "start_precision",
+            "end_era",
+            "end_month",
+            "end_day",
+            "end_precision",
+            "end_status",
+            "legacy_locator",
+            "legacy_record_id",
+            "original_location",
+            "source_snapshot_id",
+            "validation_status",
+            "generation_method",
+            "data_scope",
+            "value_basis",
+            "selection_status",
+            "selection_reason",
+            "region_name",
+            "source_name"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_RESOURCE_RESERVES_V2",
+          "primary_key_fields": [
+            "record_id"
+          ],
+          "technical_header_row": 167,
+          "display_header_row": 166,
+          "data_start_row": 168,
+          "data_end_row": 217,
+          "data_capacity": 50,
+          "overflow_sentinel_row": 218,
+          "layout_named_range": "PUB_RESOURCE_RESERVES_V2",
+          "actual_named_range": "PUB_RESOURCE_RESERVES_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1583216035,
+            "startRowIndex": 166,
+            "endRowIndex": 217,
+            "startColumnIndex": 0,
+            "endColumnIndex": 52
+          },
+          "bounded_range": "'PUB_제공01'!A167:AZ217",
+          "data_range": "'PUB_제공01'!A168:AZ217",
+          "field_columns": [
+            {
+              "field_id": "region_id",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "resource_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "time_raw",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "existence_status",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "reserve_quantity",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "quality_raw",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "shared_unit_raw",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "availability_raw",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "reserve_unit",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "reserve_definition",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "route",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "calendar_revision",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "era",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "year",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "month",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "day",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "date_precision",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "start_era",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "start_year",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "start_month",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "start_day",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "start_precision",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "start_raw",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "end_era",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "end_year",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "end_month",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "end_day",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "end_precision",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "end_raw",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "end_status",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "legacy_record_id",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "value_raw",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "value_numeric",
+              "column_index": 42,
+              "column_letter": "AP"
+            },
+            {
+              "field_id": "value_text",
+              "column_index": 43,
+              "column_letter": "AQ"
+            },
+            {
+              "field_id": "generation_method",
+              "column_index": 44,
+              "column_letter": "AR"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 45,
+              "column_letter": "AS"
+            },
+            {
+              "field_id": "data_scope",
+              "column_index": 46,
+              "column_letter": "AT"
+            },
+            {
+              "field_id": "value_basis",
+              "column_index": 47,
+              "column_letter": "AU"
+            },
+            {
+              "field_id": "selection_status",
+              "column_index": 48,
+              "column_letter": "AV"
+            },
+            {
+              "field_id": "selection_reason",
+              "column_index": 49,
+              "column_letter": "AW"
+            },
+            {
+              "field_id": "region_name",
+              "column_index": 50,
+              "column_letter": "AX"
+            },
+            {
+              "field_id": "resource_name",
+              "column_index": 51,
+              "column_letter": "AY"
+            },
+            {
+              "field_id": "source_name",
+              "column_index": 52,
+              "column_letter": "AZ"
+            }
+          ],
+          "source_tables": [
+            "자원분포",
+            "자원분포_조회계산"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A167:AZ217",
+          "export_named_range": "PUB_RESOURCE_RESERVES_V2",
+          "export_column_ids": [
+            "region_id",
+            "resource_id",
+            "time_raw",
+            "value_status",
+            "existence_status",
+            "reserve_quantity",
+            "quality_raw",
+            "shared_unit_raw",
+            "availability_raw",
+            "setting_status",
+            "source_id",
+            "notes",
+            "reserve_unit",
+            "reserve_definition",
+            "route",
+            "calendar_revision",
+            "era",
+            "year",
+            "month",
+            "day",
+            "date_precision",
+            "start_era",
+            "start_year",
+            "start_month",
+            "start_day",
+            "start_precision",
+            "start_raw",
+            "end_era",
+            "end_year",
+            "end_month",
+            "end_day",
+            "end_precision",
+            "end_raw",
+            "end_status",
+            "record_id",
+            "legacy_locator",
+            "legacy_record_id",
+            "original_location",
+            "source_snapshot_id",
+            "validation_status",
+            "value_raw",
+            "value_numeric",
+            "value_text",
+            "generation_method",
+            "unit",
+            "data_scope",
+            "value_basis",
+            "selection_status",
+            "selection_reason",
+            "region_name",
+            "resource_name",
+            "source_name"
+          ]
+        },
+        {
+          "kind": "provider",
+          "role": "PUB",
+          "logical_table_id": null,
+          "dataset_id": "PUB_R70_CHECK_RESULTS_V2",
+          "primary_key_fields": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id"
+          ],
+          "technical_header_row": 224,
+          "display_header_row": 223,
+          "data_start_row": 225,
+          "data_end_row": 474,
+          "data_capacity": 250,
+          "overflow_sentinel_row": 475,
+          "layout_named_range": "PUB_R70_CHECK_RESULTS_V2",
+          "actual_named_range": "PUB_R70_CHECK_RESULTS_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1583216035,
+            "startRowIndex": 223,
+            "endRowIndex": 474,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          },
+          "bounded_range": "'PUB_제공01'!A224:AL474",
+          "data_range": "'PUB_제공01'!A225:AL474",
+          "field_columns": [
+            {
+              "field_id": "owner_file_code",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "run_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "check_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "result_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "subject_kind",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "source_table",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "source_field",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "source_range",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "source_record_link",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "subject_count",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "actual",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "expected",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "value_type",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "unit",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "comparison_rule",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "status",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "execution_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "severity",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "issue_kind",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "message",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "started_at",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "evidence",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "source_schema_version",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "dependency_status",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "dependency_dataset_ids",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "route",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "era",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "scope_json",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "test_ids",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "is_test_data",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "test_run_id",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "delegated_check_owner",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "correlation_id",
+              "column_index": 38,
+              "column_letter": "AL"
+            }
+          ],
+          "source_tables": [
+            "CHECK_RESULTS"
+          ],
+          "provider_file_code": null,
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지",
+          "export_range": "'PUB_제공01'!A224:AL474",
+          "export_named_range": "PUB_R70_CHECK_RESULTS_V2",
+          "export_column_ids": [
+            "owner_file_code",
+            "run_id",
+            "check_id",
+            "result_id",
+            "record_id",
+            "subject_kind",
+            "source_table",
+            "source_field",
+            "source_range",
+            "source_record_link",
+            "subject_count",
+            "actual",
+            "expected",
+            "value_type",
+            "unit",
+            "comparison_rule",
+            "status",
+            "execution_status",
+            "severity",
+            "issue_kind",
+            "message",
+            "checked_at",
+            "started_at",
+            "evidence",
+            "source_revision",
+            "schema_version",
+            "source_schema_version",
+            "release_id",
+            "dependency_status",
+            "dependency_dataset_ids",
+            "route",
+            "era",
+            "scope_json",
+            "test_ids",
+            "is_test_data",
+            "test_run_id",
+            "delegated_check_owner",
+            "correlation_id"
+          ]
+        }
+      ]
+    },
+    {
+      "layout_tab_title": "REF_참조01",
+      "actual_tab_title": "REF_참조01",
+      "planned_sheet_id": 1425455707,
+      "role": "REF",
+      "row_count": 1128,
+      "column_count": 46,
+      "blocks": [
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_CALENDAR_V2",
+          "primary_key_fields": [
+            "record_kind",
+            "record_id"
+          ],
+          "technical_header_row": 3,
+          "display_header_row": 2,
+          "data_start_row": 4,
+          "data_end_row": 328,
+          "data_capacity": 325,
+          "overflow_sentinel_row": 329,
+          "layout_named_range": "REF_PUB_CALENDAR_V2",
+          "actual_named_range": "REF_PUB_CALENDAR_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1425455707,
+            "startRowIndex": 2,
+            "endRowIndex": 328,
+            "startColumnIndex": 0,
+            "endColumnIndex": 46
+          },
+          "bounded_range": "'REF_참조01'!A3:AT328",
+          "data_range": "'REF_참조01'!A4:AT328",
+          "field_columns": [
+            {
+              "field_id": "record_kind",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "record_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "calendar_id",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "calendar_revision_id",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "calendar_name",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "months_per_year",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "days_per_month",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "days_per_year",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "civil_day_seconds",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "correction_seconds",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "correction_after_month",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "correction_after_day",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "correction_is_date",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "source_standard_revision_ids",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "calendar_rule_raw",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "era_mapping_id",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "from_era",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "from_year",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "to_era",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "to_year",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "mapping_type",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "approval_status",
+              "column_index": 22,
+              "column_letter": "V"
+            },
+            {
+              "field_id": "era_edition",
+              "column_index": 23,
+              "column_letter": "W"
+            },
+            {
+              "field_id": "legacy_era_description",
+              "column_index": 24,
+              "column_letter": "X"
+            },
+            {
+              "field_id": "current_era_description",
+              "column_index": 25,
+              "column_letter": "Y"
+            },
+            {
+              "field_id": "policy_id",
+              "column_index": 26,
+              "column_letter": "Z"
+            },
+            {
+              "field_id": "policy_revision_id",
+              "column_index": 27,
+              "column_letter": "AA"
+            },
+            {
+              "field_id": "policy_name",
+              "column_index": 28,
+              "column_letter": "AB"
+            },
+            {
+              "field_id": "policy_raw",
+              "column_index": 29,
+              "column_letter": "AC"
+            },
+            {
+              "field_id": "annual_boundary_rule_raw",
+              "column_index": 30,
+              "column_letter": "AD"
+            },
+            {
+              "field_id": "unknown_end_rule_raw",
+              "column_index": 31,
+              "column_letter": "AE"
+            },
+            {
+              "field_id": "exact_boundary_rule_raw",
+              "column_index": 32,
+              "column_letter": "AF"
+            },
+            {
+              "field_id": "annual_point_difference_raw",
+              "column_index": 33,
+              "column_letter": "AG"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 34,
+              "column_letter": "AH"
+            },
+            {
+              "field_id": "source_namespace",
+              "column_index": 35,
+              "column_letter": "AI"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 36,
+              "column_letter": "AJ"
+            },
+            {
+              "field_id": "owner_file_code",
+              "column_index": 37,
+              "column_letter": "AK"
+            },
+            {
+              "field_id": "owner_spreadsheet_id",
+              "column_index": 38,
+              "column_letter": "AL"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 39,
+              "column_letter": "AM"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 40,
+              "column_letter": "AN"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 41,
+              "column_letter": "AO"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 42,
+              "column_letter": "AP"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 43,
+              "column_letter": "AQ"
+            },
+            {
+              "field_id": "record_count",
+              "column_index": 44,
+              "column_letter": "AR"
+            },
+            {
+              "field_id": "coverage",
+              "column_index": 45,
+              "column_letter": "AS"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 46,
+              "column_letter": "AT"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "C00",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_CODEBOOK_V2",
+          "primary_key_fields": [
+            "group_code",
+            "stored_code"
+          ],
+          "technical_header_row": 335,
+          "display_header_row": 334,
+          "data_start_row": 336,
+          "data_end_row": 660,
+          "data_capacity": 325,
+          "overflow_sentinel_row": 661,
+          "layout_named_range": "REF_PUB_CODEBOOK_V2",
+          "actual_named_range": "REF_PUB_CODEBOOK_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1425455707,
+            "startRowIndex": 334,
+            "endRowIndex": 660,
+            "startColumnIndex": 0,
+            "endColumnIndex": 19
+          },
+          "bounded_range": "'REF_참조01'!A335:S660",
+          "data_range": "'REF_참조01'!A336:S660",
+          "field_columns": [
+            {
+              "field_id": "group_code",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "stored_code",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "display_name",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "definition",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "name_elun",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "name_other",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "usage_status",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "owner_file_code",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "owner_spreadsheet_id",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "record_count",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "coverage",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 19,
+              "column_letter": "S"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "C00",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_REGIONS_V2",
+          "primary_key_fields": [
+            "region_id"
+          ],
+          "technical_header_row": 667,
+          "display_header_row": 666,
+          "data_start_row": 668,
+          "data_end_row": 1042,
+          "data_capacity": 375,
+          "overflow_sentinel_row": 1043,
+          "layout_named_range": "REF_PUB_REGIONS_V2",
+          "actual_named_range": "REF_PUB_REGIONS_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1425455707,
+            "startRowIndex": 666,
+            "endRowIndex": 1042,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "bounded_range": "'REF_참조01'!A667:N1042",
+          "data_range": "'REF_참조01'!A668:N1042",
+          "field_columns": [
+            {
+              "field_id": "sort_order",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "name_ko",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "name_roman",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "name_elun",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "region_level",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "region_id",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "region_grade",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "region_class",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "hex_color",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "source_snapshot_id",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "legacy_locator",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "color_chip",
+              "column_index": 14,
+              "column_letter": "N"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "R10",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        },
+        {
+          "kind": "consumer_reference",
+          "role": "REF",
+          "logical_table_id": null,
+          "dataset_id": "PUB_SOURCES_V2",
+          "primary_key_fields": [
+            "source_namespace",
+            "source_id"
+          ],
+          "technical_header_row": 1049,
+          "display_header_row": 1048,
+          "data_start_row": 1050,
+          "data_end_row": 1124,
+          "data_capacity": 75,
+          "overflow_sentinel_row": 1125,
+          "layout_named_range": "REF_PUB_SOURCES_V2",
+          "actual_named_range": "REF_PUB_SOURCES_V2",
+          "native_table_name": null,
+          "native_table_id": null,
+          "grid_range": {
+            "sheetId": 1425455707,
+            "startRowIndex": 1048,
+            "endRowIndex": 1124,
+            "startColumnIndex": 0,
+            "endColumnIndex": 22
+          },
+          "bounded_range": "'REF_참조01'!A1049:V1124",
+          "data_range": "'REF_참조01'!A1050:V1124",
+          "field_columns": [
+            {
+              "field_id": "source_namespace",
+              "column_index": 1,
+              "column_letter": "A"
+            },
+            {
+              "field_id": "source_id",
+              "column_index": 2,
+              "column_letter": "B"
+            },
+            {
+              "field_id": "source_title",
+              "column_index": 3,
+              "column_letter": "C"
+            },
+            {
+              "field_id": "source_kind",
+              "column_index": 4,
+              "column_letter": "D"
+            },
+            {
+              "field_id": "edition_raw",
+              "column_index": 5,
+              "column_letter": "E"
+            },
+            {
+              "field_id": "original_location",
+              "column_index": 6,
+              "column_letter": "F"
+            },
+            {
+              "field_id": "url",
+              "column_index": 7,
+              "column_letter": "G"
+            },
+            {
+              "field_id": "canon_status",
+              "column_index": 8,
+              "column_letter": "H"
+            },
+            {
+              "field_id": "modified_at_raw",
+              "column_index": 9,
+              "column_letter": "I"
+            },
+            {
+              "field_id": "usage_scope",
+              "column_index": 10,
+              "column_letter": "J"
+            },
+            {
+              "field_id": "notes",
+              "column_index": 11,
+              "column_letter": "K"
+            },
+            {
+              "field_id": "owner_file_code",
+              "column_index": 12,
+              "column_letter": "L"
+            },
+            {
+              "field_id": "owner_spreadsheet_id",
+              "column_index": 13,
+              "column_letter": "M"
+            },
+            {
+              "field_id": "schema_version",
+              "column_index": 14,
+              "column_letter": "N"
+            },
+            {
+              "field_id": "release_id",
+              "column_index": 15,
+              "column_letter": "O"
+            },
+            {
+              "field_id": "source_revision",
+              "column_index": 16,
+              "column_letter": "P"
+            },
+            {
+              "field_id": "validation_status",
+              "column_index": 17,
+              "column_letter": "Q"
+            },
+            {
+              "field_id": "checked_at",
+              "column_index": 18,
+              "column_letter": "R"
+            },
+            {
+              "field_id": "record_count",
+              "column_index": 19,
+              "column_letter": "S"
+            },
+            {
+              "field_id": "coverage",
+              "column_index": 20,
+              "column_letter": "T"
+            },
+            {
+              "field_id": "value_status",
+              "column_index": 21,
+              "column_letter": "U"
+            },
+            {
+              "field_id": "setting_status",
+              "column_index": 22,
+              "column_letter": "V"
+            }
+          ],
+          "source_tables": [],
+          "provider_file_code": "C00",
+          "binding_status": "예정; 요청 성공/readback 전 실제 생성으로 간주 금지"
+        }
+      ]
+    }
+  ],
+  "planned_not_observed": true,
+  "formula_or_business_data_written": false,
+  "initial_metadata_path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\initial_native_R70.json",
+  "initial_metadata_sha256": "84ad61d73b500e6b291fe4a4b1e76775ca22cdc65165814b0451e3fbe7aa648f",
+  "cells": {
+    "existing": 1310545,
+    "new": 105567,
+    "planned_total": 1416112,
+    "limit": 10000000,
+    "below_limit": true
+  },
+  "type_audit": [
+    {
+      "logical_table_id": "환경관측",
+      "native_table_name": "V2T_R70_a9c8510894a5ef52",
+      "columns": [
+        {
+          "field_id": "region_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "property_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "value_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "unit",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "statistic_basis",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "setting_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "source_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "notes",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "record_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "planet_scope_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "environment_type",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_numeric",
+          "declared_type": "decimal_nullable; exact original in value_raw",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "value_text",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "route",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "property_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "calendar_revision",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "date_precision",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "time_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_precision",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "end_era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_precision",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "end_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "legacy_locator",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_record_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "original_location",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_snapshot_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "validation_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "generation_method",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "data_scope",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_basis",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "selection_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "selection_reason",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        }
+      ]
+    },
+    {
+      "logical_table_id": "자원분포",
+      "native_table_name": "V2T_R70_934910c830c799e0",
+      "columns": [
+        {
+          "field_id": "region_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "resource_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "time_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "existence_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "reserve_quantity",
+          "declared_type": "decimal_nullable; exact original in value_raw",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "quality_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "shared_unit_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "availability_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "setting_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "source_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "notes",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "reserve_unit",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "reserve_definition",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "route",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "calendar_revision",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "date_precision",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "start_era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "start_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "start_precision",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "start_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_era",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_year",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_month",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_day",
+          "declared_type": "integer_nullable",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "end_precision",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "end_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "end_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "record_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_locator",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_record_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "original_location",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_snapshot_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "validation_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "value_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_numeric",
+          "declared_type": "decimal_nullable; exact original in value_raw",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "value_text",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "generation_method",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "unit",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "data_scope",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_basis",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "selection_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "selection_reason",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        }
+      ]
+    },
+    {
+      "logical_table_id": "행성기본값",
+      "native_table_name": "V2T_R70_c16f0bcb2d05e148",
+      "columns": [
+        {
+          "field_id": "planet_scope_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "property_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "property_name",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_numeric",
+          "declared_type": "decimal_nullable; exact original in value_raw",
+          "native_column_type": "DOUBLE",
+          "reason": "명세에 명시된 수치형; 원문 필드는 별도 보존"
+        },
+        {
+          "field_id": "value_text",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "unit",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "generation_method",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "setting_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "source_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "original_location",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "notes",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "property_revision_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "calculation_method",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "selection_status",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "selection_reason",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "comparison_record_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "standard_revision_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "record_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_locator",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "legacy_record_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "source_snapshot_id",
+          "declared_type": "text_identifier; case preserved",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "validation_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "value_raw",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_status",
+          "declared_type": "C00_code_nullable; unknown original retained",
+          "native_column_type": null,
+          "reason": "혼합값/미확정 형식 가능성 때문에 columnType 생략; 임의 변환하지 않음"
+        },
+        {
+          "field_id": "data_scope",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        },
+        {
+          "field_id": "value_basis",
+          "declared_type": "text_nullable",
+          "native_column_type": "TEXT",
+          "reason": "명세에 명시된 문자형; ID 원문과 대소문자 보존"
+        }
+      ]
+    }
+  ],
+  "native_template_collision_basis": {
+    "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\native_template_REG.json",
+    "sha256": "35f352a5452d62ec39cd1e86077408e6efa1a07d6b8e43a0bf2c4d36bfc95cfb",
+    "ancestry_sheet_id_match": true,
+    "observed_native_table_count": 6,
+    "observed_native_table_names": [
+      "P_900230002",
+      "P_900230003",
+      "P_900230004",
+      "P_900230005",
+      "P_900230006",
+      "P_900230007"
+    ],
+    "observed_named_ranges_count": 0,
+    "note": "복사 계보의 native 표 이름과 대조. 적용 직전 목적지 metadata 재확인은 별도."
+  }
+}

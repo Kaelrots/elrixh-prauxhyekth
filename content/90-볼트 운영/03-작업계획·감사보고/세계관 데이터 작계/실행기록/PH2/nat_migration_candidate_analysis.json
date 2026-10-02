@@ -1,0 +1,1187 @@
+{
+  "project": "세계관 데이터 V2",
+  "source_snapshot_file": "PH0/NAT-V1_online.xlsx",
+  "source_snapshot_sha256": "f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1",
+  "source_inventory_sha256_match": true,
+  "source_file_id": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI",
+  "extraction_is_live_source_read": false,
+  "online_actions": 0,
+  "facts_written_online": 0,
+  "phase_claim": "로컬 이관 후보 추출; PH2/운영 이관 완료 아님",
+  "summary": {
+    "seed_record_count": 248,
+    "record_counts_by_table": {
+      "C00.코드북": 234,
+      "N10.IN_NATION": 1,
+      "N20.IN_OFFICE": 10,
+      "C00.출처레지스트리": 3
+    },
+    "N30_actual_person_records": 0,
+    "N20_actual_office_records": 10,
+    "N10_actual_nation_records": 1,
+    "C00_codebook_records": 234,
+    "C00_source_records": 3,
+    "metadata_source_rows": 62,
+    "pending_metadata_input_fragments": 37,
+    "raw_seed_cell_assignments": 1323,
+    "xml_checked_literal_cells": 1323,
+    "default_false_retained_inside_actual_records": 8,
+    "duplicate_candidate_keys": 0,
+    "missing_existing_primary_keys": 0,
+    "online_tests_passed": 0
+  },
+  "exclusion_counts": {
+    "header_or_query_controls_rows": 59,
+    "formula_only_rows": 22159,
+    "default_false_only_rows": 1990,
+    "non_input_or_other_shard_rows": 16198
+  },
+  "per_sheet": [
+    {
+      "source_sheet_name": "00_기준_메타",
+      "source_sheet_id": 1611835517,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_without_id_review": 62
+      },
+      "declared_input_field_count": 1,
+      "seed_records": 0,
+      "status": "metadata_fragments_pending_reconciliation",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "00_코드북",
+      "source_sheet_id": 920230013,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_without_id_review": 234
+      },
+      "declared_input_field_count": 8,
+      "seed_records": 234,
+      "status": "seeds_extracted",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "01_국가_기본정보",
+      "source_sheet_id": 1312073106,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_with_id": 1,
+        "formula_only_not_input_fact": 499
+      },
+      "declared_input_field_count": 14,
+      "seed_records": 1,
+      "status": "seeds_extracted",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "02_국호_이력",
+      "source_sheet_id": 298446278,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 13,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "03_영토_이력",
+      "source_sheet_id": 1317339757,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "default_false_only_not_fact": 500
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "04_헌정국체_이력",
+      "source_sheet_id": 920230000,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 22,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "05_수도_이력",
+      "source_sheet_id": 920230001,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 18,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "06_기관구조_이력",
+      "source_sheet_id": 920230002,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 26,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "07_선거구_계보",
+      "source_sheet_id": 920230003,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 14,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "10_인구_연간",
+      "source_sheet_id": 1342670243,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 10,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "11_경제_연간",
+      "source_sheet_id": 647378182,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 14,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "12_경제_파생",
+      "source_sheet_id": 539113504,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "20_기관_마스터",
+      "source_sheet_id": 1715938314,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_with_id": 10,
+        "default_false_only_not_fact": 490
+      },
+      "declared_input_field_count": 23,
+      "seed_records": 10,
+      "status": "seeds_extracted",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "21_공직_임기",
+      "source_sheet_id": 1810661783,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 24,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "22_정당_마스터",
+      "source_sheet_id": 868630103,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 21,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "23_선거_마스터",
+      "source_sheet_id": 714439574,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 29,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "24_선거_결과",
+      "source_sheet_id": 1974746270,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 14,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "25_선거구_결과",
+      "source_sheet_id": 1329284020,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "default_false_only_not_fact": 500
+      },
+      "declared_input_field_count": 19,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "26_선거제도",
+      "source_sheet_id": 900231026,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 34,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "27_정당_연간",
+      "source_sheet_id": 900231027,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 18,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "28_선거_부문",
+      "source_sheet_id": 900231028,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 18,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "29_선거_계산",
+      "source_sheet_id": 900231029,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "30_역사사건",
+      "source_sheet_id": 233573434,
+      "classified_rows": {
+        "header_or_query_controls": 1
+      },
+      "declared_input_field_count": 12,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "31_인물_마스터",
+      "source_sheet_id": 920230004,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 19,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "32_정당직책_마스터",
+      "source_sheet_id": 920230005,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "default_false_only_not_fact": 500
+      },
+      "declared_input_field_count": 15,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "33_정당지도부_이력",
+      "source_sheet_id": 920230006,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 24,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "34_정당계파_마스터",
+      "source_sheet_id": 920230007,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 23,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "35_황실신분_이력",
+      "source_sheet_id": 920230008,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 24,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "36_친족관계_이력",
+      "source_sheet_id": 920230009,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 21,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "37_황위계승_이력",
+      "source_sheet_id": 920230010,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 27,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "38_정당관계_이력",
+      "source_sheet_id": 920230011,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 15,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "39_선거구_마스터",
+      "source_sheet_id": 920230012,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 500
+      },
+      "declared_input_field_count": 25,
+      "seed_records": 0,
+      "status": "no_actual_input_records_in_snapshot",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "40_행성대비_지표",
+      "source_sheet_id": 1792442252,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "41_행성_연결",
+      "source_sheet_id": 1795511654,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "derived_or_configuration_literal_review": 134,
+        "empty_literal_review": 866
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "42_행성_기본속성_연결",
+      "source_sheet_id": 920230014,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 24
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "43_지역_참조_연결",
+      "source_sheet_id": 920230015,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 133
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "44_행성_연간지표_연결",
+      "source_sheet_id": 920230016,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "80_연도별_정치현황",
+      "source_sheet_id": 1455341768,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "81_연도별_선거현황",
+      "source_sheet_id": 625749522,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "82_연도별_경제현황",
+      "source_sheet_id": 302099382,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "83_연방_통합연표",
+      "source_sheet_id": 2076158902,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "84_연도별_행정부",
+      "source_sheet_id": 920230017,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "85_연도별_정당지도부",
+      "source_sheet_id": 920230018,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "86_연도별_황실계승",
+      "source_sheet_id": 920230019,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "87_시점별_황위계승",
+      "source_sheet_id": 920230020,
+      "classified_rows": {
+        "header_or_query_controls": 5,
+        "formula_only_not_input_fact": 1
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "88_친족관계_조회",
+      "source_sheet_id": 920230021,
+      "classified_rows": {
+        "header_or_query_controls": 5,
+        "formula_only_not_input_fact": 1
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "89_변동_연표",
+      "source_sheet_id": 920230022,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "90_출처_레지스트리",
+      "source_sheet_id": 1916985706,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_with_id": 3
+      },
+      "declared_input_field_count": 8,
+      "seed_records": 3,
+      "status": "seeds_extracted",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "91_스키마_안내",
+      "source_sheet_id": 920230023,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "derived_or_configuration_literal_review": 72
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "98_검증_요약",
+      "source_sheet_id": 920230024,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "derived_or_configuration_literal_review": 31
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    },
+    {
+      "source_sheet_name": "99_검증_상세",
+      "source_sheet_id": 2010261323,
+      "classified_rows": {
+        "header_or_query_controls": 1,
+        "derived_or_configuration_literal_review": 15095
+      },
+      "declared_input_field_count": 0,
+      "seed_records": 0,
+      "status": "derived_archive_or_other_shard",
+      "default_false_and_formula_rows_are_not_facts": true
+    }
+  ],
+  "decisions": [
+    {
+      "issue_id": "NAT-SEED-001",
+      "scope": "00_기준_메타",
+      "status": "이관판단 대기",
+      "action": "REG/NAT의 공통 기준·정책 필드를 대조하고 동일사실은 하나의 C00 원본으로 유지. 각 메타 sourcekey/값/설명/selector는 metadata_source_rows에 보존. 기술PK는 계획된 영속원장에서 발급 전 활성 입력행 생성 금지."
+    },
+    {
+      "issue_id": "NAT-SEED-002",
+      "scope": "N20.IN_OFFICE",
+      "status": "원문 공란 유지",
+      "action": "미입력 nation_id/route/era/엔티티 종류 및 정원은 자동 채우지 않음. source_role 종류와 설명은 그대로 보존. 역할별 검증 중 적용불명은 미확인으로 표시."
+    },
+    {
+      "issue_id": "NAT-SEED-003",
+      "scope": "C00.출처레지스트리",
+      "status": "namespace 보존 후보",
+      "action": "source_namespace=NAT-V1로 기존 source_id 3개 유지. 다른 원본의 출처 ID와 URL/판본 비교 전 자동 병합하지 않음. SRC-FORMAT는 서식근거이며 역사실적근거로 확대하지 않음."
+    },
+    {
+      "issue_id": "NAT-SEED-004",
+      "scope": "C00.코드북",
+      "status": "원문값 보존·활성목록 채택 검증 대기",
+      "action": "A:H의 실제 행만 코드 원본으로 추출. J:BB 보조목록은 파생 목록이라 이중 입력하지 않음. 사용상태를 정본상태로 변환하지 않음."
+    }
+  ],
+  "id_ledger_plan": {
+    "status": "계획만; ID 실제 발급/기존 ID 교체 없음",
+    "namespace_seed": "5c70e50a-3e4f-5f2a-a791-d57e1a8e1aa3",
+    "technical_id_candidates": [
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=2|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-7cd14428-4434-55ca-8578-834c95d94455",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=3|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-ee7ae689-82af-58a3-8bf9-5f40001e982e",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=4|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-a2819c71-9410-5b75-8b6e-d923ec5b24f4",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=5|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-bedf4ef5-3624-5737-a3d3-1a7b01eff289",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=6|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-937767e9-4dfd-56be-9550-5b668eb3d366",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=7|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-506f550a-2aef-54a5-85dd-1b3e87a0032e",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=8|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-949c6d3a-9466-5cdf-8988-64646c0be198",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=9|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-fdd91468-afc9-5be3-bacd-6cfd1c811cbf",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=10|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-ad5a0381-c1fc-5ac3-96f9-ba821a4373f8",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=11|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-02f6453a-aa16-5709-ad68-a5074f279ab8",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=12|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-cc442b26-81e0-5e8e-ba53-69943d0f3049",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=13|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-beb6bff4-d04e-5d6e-a959-0d7105830c4b",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=14|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-d87bb637-6fbf-58f8-a3fb-41d667a9220d",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=15|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-d6801355-697c-5e56-b106-641d635b9c45",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=16|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-a6e45896-f259-5e70-b952-e20745e2a99d",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=17|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-a8df87b6-87c3-5dc6-b624-6d8346c7ffaf",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=18|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-3a7b8db4-7640-5fdd-9196-35c418cb6ef8",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=19|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-3973e8f6-4bc7-52a8-90ea-44748777f19e",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=20|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-846eaad5-ecbe-5c38-bf06-7519e17af86c",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=21|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-e9616632-4244-5314-ab3d-6cb0daf9808c",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=22|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-a73cc57d-2b9a-59e9-b0c6-307c9644fd43",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=23|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-13a7075d-d191-5669-b85c-1179c8c73e56",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=24|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-7f236f87-f1d9-54ec-8ee7-bf8c1d024a50",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=25|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-e55afb73-46d9-5a6a-a242-cc0ae7a0f335",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=26|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-3368d31b-e35a-53c6-8598-4f06c66b27bf",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=27|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-7d66ec27-520a-50b6-b3a1-0989e102d514",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=28|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-5f31621c-e1bb-55c5-a6d7-2cb09dbe47ca",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=29|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-e3e53c39-d116-5d35-8a2a-de02b32802cc",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=30|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-eee7e767-3802-55cc-a9a8-d263bf7e389d",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=31|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-36349026-6a7a-5868-a19e-cf33fffdc86e",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=32|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-d5448b38-e01b-51bc-bb11-3008cbabf6ee",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=33|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-a00a3f35-36ee-5bd9-9f4f-4d11550d4db7",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=34|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-ee8f2f04-37f7-5473-9714-34b792d1b265",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=35|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-249e6a54-a940-56ad-8ba1-aa18378c83a4",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=36|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-3816616c-e03f-5053-8676-1da8a9010721",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=37|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-c95710ce-d4ad-5adb-a759-d6e625c30c04",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=38|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-57b20393-7484-5293-bb7f-384e8e869edd",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=39|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-fc59dc92-7bf2-53a7-a9eb-10266e3eb201",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=40|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-953b03eb-7dd0-5aed-8d26-fb15b3e58339",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=41|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-3fe0cf19-5e20-52e7-bbbb-35e875bb14b1",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=42|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-261c3449-b3cd-5e76-a8fc-466db8604031",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=43|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-8ce7341b-2d8a-55a2-9955-4f46da8dd491",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=44|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-e7cbd8b6-0e05-53ab-82e7-cf0e9f88450a",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=45|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-940011c6-5656-5504-9e37-2007cd2613bd",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=46|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-51773c3a-71f9-5b83-aef8-9592ffaab070",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=47|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-39406797-66d8-5594-becb-880df002e515",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=48|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-6031e2ca-8b9e-5d88-9950-db7c801b36c2",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=49|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-11df138e-07bf-5614-9179-b6a78d8018b3",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=50|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-177aabbe-368a-5f47-9aad-7dfa71650bbf",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=51|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-51c2da84-4032-5b3c-89ef-41018d3498fe",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=52|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-b6b199b0-37f1-54e1-93df-8d2777a5e07e",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=53|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-040cf290-a062-5293-94c3-b64267233641",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=54|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-c24f5980-2a1a-50fb-b065-310bcf34eb43",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=55|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-c682651d-e801-5b1e-9db6-9f57f94aaf09",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=56|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-18ab1874-2799-5c1e-8a25-0e3f73d3af20",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=57|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-d515ef4b-0f9f-545b-8e0a-c9a738bc7f71",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=58|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-04c3c379-a097-5551-9b88-f933ae31e45c",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=59|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-44e6e89b-626e-5ebd-80c6-1079c327201a",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=60|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-296db091-b4d7-51df-a099-aa21e7fd0338",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=61|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-b9dc6cb9-ead9-5cdb-9c77-df02db49a422",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=62|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-ddb20fdf-6434-59aa-ab33-be171bd82f3b",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      },
+      {
+        "allocation_key": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=63|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1|C00.설정출처대응.metadata_mapping_id",
+        "proposed_id": "nat-meta-4ed2345a-399b-578e-b2c6-522f17c83581",
+        "id_kind": "technical_migration_mapping",
+        "status": "proposed_not_allocated",
+        "existing_entity_id_replaced": false,
+        "action": "공통 영속ID 원장 중복조회 후 같은 allocation_key 재사용; 원장에 고정 저장한 다음에만 발급 처리"
+      }
+    ],
+    "rule": "전역 공통 ledger의 allocation_key 존재 여부를 먼저 확인. 이미 발급되었으면 저장된 ID를 사용. locator의 원문 snapshot을 보존하고 동일 기록의 후속 snapshot 승계는 별도 source_record_match로 대응."
+  },
+  "missing_data_policy": "빈 N30/N40/N50 등은 스키마만 존재. 시험·가상 자료를 운영 후보로 넣지 않음.",
+  "source_ownership_boundary": "NAT03 영토는 R50 대응 담당; 현재 default_false-only 500행으로 실질 자료 0. REG 출처/기준은 다른 산출물과 합쳐 정합성 비교 필요.",
+  "snapshot_recheck_gate": "실제 온라인 쓰기 전 root의 실행시점 원본 변경 검증/PH0 게이트를 확인. 이 스크립트는 저장된 스냅샷 해시만 검증."
+}

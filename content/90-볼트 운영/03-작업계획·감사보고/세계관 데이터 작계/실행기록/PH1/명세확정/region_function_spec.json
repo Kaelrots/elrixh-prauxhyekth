@@ -1,0 +1,907 @@
+{
+  "status": "설계 명세; 미구현·미시험",
+  "functions": [
+    {
+      "function_id": "R-F01",
+      "owner_file_code": "R10",
+      "name": "지역관계 전환·계층 조회",
+      "source_sheets": [
+        "01-지역 마스터",
+        "02_지역_관계"
+      ],
+      "source_pattern_ids": [
+        "edf5c5466ca269b613a0",
+        "5c383ac6e5d9dd99ece4",
+        "6293f3d006da6259630b",
+        "a5e9f54e58eb0acda7f0",
+        "f86acd6f145389eed442",
+        "2e630f42e14e5f4f31b0",
+        "a9eea8fc971f73438688",
+        "65ac893cdee1e22b7059",
+        "7245f95f88b8955298ad",
+        "f7155cee522a8ed1f398",
+        "80103dfa047426534023",
+        "3533b8489bec5145e2d3"
+      ],
+      "algorithm": "원래 G/I 부모열을 연결행으로 펼치고 같은 부모/원열의 파생관계와 대조. 고정 관계 ID는 locator registry로 재사용. 자기참조/미등록 부모/순환 진단, 복수 상위 허용.",
+      "test_ids": [
+        "T-004",
+        "T-005",
+        "T-009",
+        "T-010",
+        "T-027",
+        "T-028",
+        "T-037"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-004",
+          "scenario": "모든 실제 열 대응"
+        },
+        {
+          "test_id": "T-005",
+          "scenario": "입력값과 호환 수식 캐시 구별"
+        },
+        {
+          "test_id": "T-009",
+          "scenario": "기존 고정 ID 유지"
+        },
+        {
+          "test_id": "T-010",
+          "scenario": "재실행 중복 방지"
+        },
+        {
+          "test_id": "T-027",
+          "scenario": "복수 상위지역"
+        },
+        {
+          "test_id": "T-028",
+          "scenario": "부모·자식 중복 집계"
+        },
+        {
+          "test_id": "T-037",
+          "scenario": "성계·행성 상위 계층 보존"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    },
+    {
+      "function_id": "R-F02",
+      "owner_file_code": "R10",
+      "name": "지역·시설·노선·특성 조회",
+      "source_sheets": [
+        "01-지역 마스터",
+        "60 거점 시설",
+        "61 교통망",
+        "70 지역 특성"
+      ],
+      "source_pattern_ids": [
+        "edf5c5466ca269b613a0",
+        "5c383ac6e5d9dd99ece4",
+        "6293f3d006da6259630b",
+        "a5e9f54e58eb0acda7f0",
+        "54697e77685fd0fb24b5",
+        "234fdb56336b058b2abd",
+        "ce5fa57f946c7ac641e8",
+        "ba2cdf58f8169b59944e",
+        "50ae9acb0f6e1474220a",
+        "fb7f13db4f01eac295ad",
+        "8516f1a39334db430e41",
+        "1561c1b3432bb67a44e1"
+      ],
+      "algorithm": "표시명은 ID 조회; HEX는 문자열+색 미리보기. 설계용량과 실제 생산/수송은 분리. 기간 파싱 실패는 미해석으로 남기고 입력 사실은 보존.",
+      "test_ids": [
+        "T-026",
+        "T-040",
+        "T-077",
+        "T-084"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-026",
+          "scenario": "지역 ID 3종 표기"
+        },
+        {
+          "test_id": "T-040",
+          "scenario": "시설·노선 누락 방지"
+        },
+        {
+          "test_id": "T-077",
+          "scenario": "초안/정본/보존 조회"
+        },
+        {
+          "test_id": "T-084",
+          "scenario": "작업 동선·가독성"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    },
+    {
+      "function_id": "R-F03",
+      "owner_file_code": "R20",
+      "name": "지역/행성 인구 집계·채택",
+      "source_sheets": [
+        "20 인구",
+        "12_지역_인구",
+        "11_행성_연간지표"
+      ],
+      "source_pattern_ids": [
+        "fb114aee1a67d6ec3c44",
+        "6e1ef33a3ffbdfee3a14",
+        "2d729f9ff173e218e68e",
+        "ee8d3a6a42c89870e768",
+        "a3f6ae43857d94a790dd",
+        "edc5ddb26f8ac45fac9e",
+        "877f933c8da0f0e60e30",
+        "a086068e7b6f4de09d8c",
+        "02d2eb73ac4d50c56e76",
+        "2d5e740df90e21d85e0d",
+        "eaca6da90582dc99920b",
+        "d4082f6bffebbb727199",
+        "eba98983a1b522f2adb9",
+        "4c220b9022c50dd13f74",
+        "383fb328270525a16391",
+        "0d2e9aad53a600742473",
+        "a977619a9dc4c85f547d",
+        "be08576ecc2bb5e0da8f",
+        "fa952c53b65d8f21c835",
+        "2109f70800ad38385475",
+        "06e65a9fbebd6d00419a",
+        "6b5f7b52b59e97f5cc76",
+        "97518ee254027587f709",
+        "2afe28d5367e2f85209b",
+        "ed72ec3d74a12ac8c8aa",
+        "54372ea7d422ad53a32c"
+      ],
+      "algorithm": "동일 루트/기년/시점/정의/종족범위/단위의 채택 관측에서 비중첩 고유 지역 집합을 합산. 대상 ID집합과 정확히 일치할 때 완전합 후보. 부분합은 결측 대상과 표시. 직접0은 유효; 직접 우선·완전합 선택과 근거는 별도.",
+      "test_ids": [
+        "T-014",
+        "T-027",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-032",
+        "T-033",
+        "T-050"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-014",
+          "scenario": "같은 키의 서로 다른 후보값"
+        },
+        {
+          "test_id": "T-027",
+          "scenario": "복수 상위지역"
+        },
+        {
+          "test_id": "T-028",
+          "scenario": "부모·자식 중복 집계"
+        },
+        {
+          "test_id": "T-029",
+          "scenario": "대상 ID 집합 검증"
+        },
+        {
+          "test_id": "T-030",
+          "scenario": "완전합계와 부분합"
+        },
+        {
+          "test_id": "T-031",
+          "scenario": "실제 0·미상·미정·해당없음"
+        },
+        {
+          "test_id": "T-032",
+          "scenario": "직접값과 합산값 차이"
+        },
+        {
+          "test_id": "T-033",
+          "scenario": "인구 정의 불일치"
+        },
+        {
+          "test_id": "T-050",
+          "scenario": "큰 수와 표시 정밀도"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    },
+    {
+      "function_id": "R-F04",
+      "owner_file_code": "R20",
+      "name": "인구 변동 잔차",
+      "source_sheets": [
+        "21 인구 변동"
+      ],
+      "source_pattern_ids": [
+        "4a4e0159104a4b70daee",
+        "5092c279a1f8579cbbfb"
+      ],
+      "algorithm": "기간·정의 동일한 기초인구+출생-사망+유입-유출+기타와 말기인구 비교. 필수 성분 미입력은 계산 불가; 잔차를 없애기 위한 역산 입력 금지.",
+      "test_ids": [
+        "T-031",
+        "T-033"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-031",
+          "scenario": "실제 0·미상·미정·해당없음"
+        },
+        {
+          "test_id": "T-033",
+          "scenario": "인구 정의 불일치"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json",
+      "additional_acceptance_cases": [
+        {
+          "case": "R-POP-BALANCE-01",
+          "setup": "TEST 기초100, 출생10, 사망2, 유입5, 유출3, 기타0, 말기110",
+          "expected": "잔차0; 원자료 변동 없음",
+          "status": "미실행"
+        },
+        {
+          "case": "R-POP-BALANCE-02",
+          "setup": "위 TEST에서 출생값만 제거",
+          "expected": "출생 미입력 표시; 잔차를 정상0으로 표시하거나 역산하지 않음",
+          "status": "미실행"
+        }
+      ]
+    },
+    {
+      "function_id": "R-F05",
+      "owner_file_code": "R20",
+      "name": "인구 성장률",
+      "source_sheets": [
+        "11_행성_연간지표"
+      ],
+      "source_pattern_ids": [
+        "2d729f9ff173e218e68e",
+        "ee8d3a6a42c89870e768",
+        "a3f6ae43857d94a790dd",
+        "edc5ddb26f8ac45fac9e",
+        "877f933c8da0f0e60e30",
+        "a086068e7b6f4de09d8c",
+        "02d2eb73ac4d50c56e76",
+        "2d5e740df90e21d85e0d",
+        "eaca6da90582dc99920b",
+        "d4082f6bffebbb727199",
+        "eba98983a1b522f2adb9",
+        "4c220b9022c50dd13f74",
+        "383fb328270525a16391",
+        "0d2e9aad53a600742473",
+        "a977619a9dc4c85f547d",
+        "be08576ecc2bb5e0da8f",
+        "fa952c53b65d8f21c835",
+        "2109f70800ad38385475",
+        "06e65a9fbebd6d00419a",
+        "6b5f7b52b59e97f5cc76",
+        "97518ee254027587f709"
+      ],
+      "algorithm": "연속된 실제 전년도와 동일 정의일 때 (current/prior)-1. 전기0·전기 없음·기년/루트 차이를 사유로 표시. 비연속 관측 비교는 직전관측 증감 별도.",
+      "test_ids": [
+        "T-021",
+        "T-022",
+        "T-047",
+        "T-048"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-021",
+          "scenario": "A/B 루트 격리"
+        },
+        {
+          "test_id": "T-022",
+          "scenario": "구형/현행 기년 격리"
+        },
+        {
+          "test_id": "T-047",
+          "scenario": "누락 연도와 성장률"
+        },
+        {
+          "test_id": "T-048",
+          "scenario": "전기 0과 성장률"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    },
+    {
+      "function_id": "R-F06",
+      "owner_file_code": "R30;R40",
+      "name": "분포·사회지표 조회와 검증",
+      "source_sheets": [
+        "30 문화 분포",
+        "31 종교 분포",
+        "32 언어 분포",
+        "33 종족 분포"
+      ],
+      "source_pattern_ids": [
+        "61fffd40de261629b474",
+        "53b6d8d13aee3afc9326",
+        "29b89a3aa912810d1b0a",
+        "81fc916179f2c311fe35",
+        "e04c3c1a37e544ef1016",
+        "f652ef1196ba32ee095d",
+        "6f4836969374ea6b1429",
+        "be44ab7d6710bcacdf39",
+        "38d96fc2637f621d7d9b",
+        "5c308c1ffc875edaf5de",
+        "197d3d902648d70693fd",
+        "03b3e2dab437efaa7bde"
+      ],
+      "algorithm": "분류축/분모/조사기준/복수응답 분리. 배타적 완전 구성에만 합100% 검사. 종교 상하위 동시합산 금지. 모어와 사용가능 언어를 분리. 도시화율은 정의·분모 없는 평균/합산 금지.",
+      "test_ids": [
+        "T-041",
+        "T-042",
+        "T-043",
+        "T-044",
+        "T-049"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-041",
+          "scenario": "분모 일치"
+        },
+        {
+          "test_id": "T-042",
+          "scenario": "상위 종교·하위 종파"
+        },
+        {
+          "test_id": "T-043",
+          "scenario": "복수응답과 공식 단일분류"
+        },
+        {
+          "test_id": "T-044",
+          "scenario": "인구 가중평균"
+        },
+        {
+          "test_id": "T-049",
+          "scenario": "퍼센트 입력"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    },
+    {
+      "function_id": "R-F07",
+      "owner_file_code": "R50",
+      "name": "영토·통치기간 조회",
+      "source_sheets": [
+        "10 정치 지역관계",
+        "15_지역_소속이력",
+        "03_영토_이력"
+      ],
+      "source_pattern_ids": [
+        "ca41e9cd58b4f06007e9",
+        "ef025cc382aa8e79a127",
+        "d8dcb60168dee7342026",
+        "116199586619327fdf70",
+        "9d40f28763a447f2a8d8",
+        "57e8d14939f5a6380b43",
+        "f55cee842b7e692272eb"
+      ],
+      "algorithm": "지역·국가·관계종류·루트·시점·적용범위로 조회. 같은 지역의 통치/법적영유/주장 병존 허용. nation별 목록은 제공표 필터, N에 영토 재입력 금지. 정확한 종료 배타적, 연도 종료 포함, 미상/지속 구분.",
+      "test_ids": [
+        "T-010",
+        "T-013",
+        "T-016",
+        "T-019",
+        "T-020",
+        "T-021",
+        "T-034",
+        "T-035",
+        "T-036"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-010",
+          "scenario": "재실행 중복 방지"
+        },
+        {
+          "test_id": "T-013",
+          "scenario": "다중 출처 보존"
+        },
+        {
+          "test_id": "T-016",
+          "scenario": "48개월·30일 입력"
+        },
+        {
+          "test_id": "T-019",
+          "scenario": "연도 단위 정밀도"
+        },
+        {
+          "test_id": "T-020",
+          "scenario": "종료 미상과 지속 중"
+        },
+        {
+          "test_id": "T-021",
+          "scenario": "A/B 루트 격리"
+        },
+        {
+          "test_id": "T-034",
+          "scenario": "통치·주장 병존"
+        },
+        {
+          "test_id": "T-035",
+          "scenario": "부분 통치 자동 배분 방지"
+        },
+        {
+          "test_id": "T-036",
+          "scenario": "영토관계 단일 원본"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    },
+    {
+      "function_id": "R-F08",
+      "owner_file_code": "R60",
+      "name": "경제 집계·채택·비율",
+      "source_sheets": [
+        "40 경제 지역값",
+        "13_지역_경제",
+        "11_행성_연간지표"
+      ],
+      "source_pattern_ids": [
+        "5ab847678b70ec1e917a",
+        "2f81ad769f231019b9e6",
+        "5804bd4849b5c4491cf2",
+        "271f72af1b5815dfff86",
+        "2d729f9ff173e218e68e",
+        "ee8d3a6a42c89870e768",
+        "a3f6ae43857d94a790dd",
+        "edc5ddb26f8ac45fac9e",
+        "877f933c8da0f0e60e30",
+        "a086068e7b6f4de09d8c",
+        "02d2eb73ac4d50c56e76",
+        "2d5e740df90e21d85e0d",
+        "eaca6da90582dc99920b",
+        "d4082f6bffebbb727199",
+        "eba98983a1b522f2adb9",
+        "4c220b9022c50dd13f74",
+        "383fb328270525a16391",
+        "0d2e9aad53a600742473",
+        "a977619a9dc4c85f547d",
+        "be08576ecc2bb5e0da8f",
+        "fa952c53b65d8f21c835",
+        "2109f70800ad38385475",
+        "06e65a9fbebd6d00419a",
+        "6b5f7b52b59e97f5cc76",
+        "97518ee254027587f709",
+        "44c01050897a9ee55364",
+        "51db7033bdfd8833f8c7",
+        "cc249d61c18ff05cd6cd"
+      ],
+      "algorithm": "명목/실질/미분류, 통화, 기준가격, 루트/기년/기간, 대상집합 일치별로 합산. 직접값·부분합·완전합·차이·채택을 구분. 인구당값은 적합 인구가 있을 때만; 영토면적 비례 GDP 자동배분 금지.",
+      "test_ids": [
+        "T-014",
+        "T-028",
+        "T-029",
+        "T-030",
+        "T-031",
+        "T-035",
+        "T-045",
+        "T-046",
+        "T-047",
+        "T-048",
+        "T-050"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-014",
+          "scenario": "같은 키의 서로 다른 후보값"
+        },
+        {
+          "test_id": "T-028",
+          "scenario": "부모·자식 중복 집계"
+        },
+        {
+          "test_id": "T-029",
+          "scenario": "대상 ID 집합 검증"
+        },
+        {
+          "test_id": "T-030",
+          "scenario": "완전합계와 부분합"
+        },
+        {
+          "test_id": "T-031",
+          "scenario": "실제 0·미상·미정·해당없음"
+        },
+        {
+          "test_id": "T-035",
+          "scenario": "부분 통치 자동 배분 방지"
+        },
+        {
+          "test_id": "T-045",
+          "scenario": "GDP 가격기준·통화"
+        },
+        {
+          "test_id": "T-046",
+          "scenario": "1인당 GDP"
+        },
+        {
+          "test_id": "T-047",
+          "scenario": "누락 연도와 성장률"
+        },
+        {
+          "test_id": "T-048",
+          "scenario": "전기 0과 성장률"
+        },
+        {
+          "test_id": "T-050",
+          "scenario": "큰 수와 표시 정밀도"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    },
+    {
+      "function_id": "R-F09",
+      "owner_file_code": "R60;R70",
+      "name": "자원·시설 사실 분리",
+      "source_sheets": [
+        "51 자원 분포",
+        "60 거점 시설",
+        "61 교통망"
+      ],
+      "source_pattern_ids": [
+        "77ac9f06c9f8c9fe88d2",
+        "52d13d50f5ac848d13f5",
+        "25965f02a63328f80981",
+        "54697e77685fd0fb24b5",
+        "234fdb56336b058b2abd",
+        "ce5fa57f946c7ac641e8",
+        "ba2cdf58f8169b59944e",
+        "50ae9acb0f6e1474220a"
+      ],
+      "algorithm": "매장/존재/품질 R70, 생산 R60, 시설/노선 설계 R10. 공용 단위 원문 보존 후 의미 판별. 생산/매장 통합은 H90, R70이 R60을 import하지 않음.",
+      "test_ids": [
+        "T-039",
+        "T-040",
+        "T-069"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-039",
+          "scenario": "자원 매장과 생산 분리"
+        },
+        {
+          "test_id": "T-040",
+          "scenario": "시설·노선 누락 방지"
+        },
+        {
+          "test_id": "T-069",
+          "scenario": "순환 연결 검사"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    },
+    {
+      "function_id": "R-F10",
+      "owner_file_code": "R70",
+      "name": "행성 물리 산식 재구현",
+      "source_sheets": [
+        "10_행성_기본값"
+      ],
+      "source_pattern_ids": [
+        "c20ff05013a115a9990f",
+        "5bbf8d8b6797987006f7",
+        "33a443dd54135153bae8",
+        "470af544177269ccc828",
+        "bae9d18188b4f7776cc3",
+        "b33d2ff95d706d087938",
+        "ba5df7a2d59ddc256571"
+      ],
+      "algorithm": "반경=대응 지름/2; 해양율=1-육지율은 이분 정의 확인시; 면적=원문 표면적×비율은 양쪽 입력과 정의가 있을 때. 타원체 면적은 원식·근거 보존하고 계산값으로만 제공; 원문 표면적/반경 덮어쓰기 금지.",
+      "test_ids": [
+        "T-038",
+        "T-031",
+        "T-050"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-038",
+          "scenario": "행성 물리 충돌 보존"
+        },
+        {
+          "test_id": "T-031",
+          "scenario": "실제 0·미상·미정·해당없음"
+        },
+        {
+          "test_id": "T-050",
+          "scenario": "큰 수와 표시 정밀도"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json",
+      "property_formulas": [
+        {
+          "property_id": "equatorial_radius",
+          "expression": "equatorial_diameter / 2",
+          "required": [
+            "equatorial_diameter"
+          ],
+          "source_cell": "D4"
+        },
+        {
+          "property_id": "polar_radius",
+          "expression": "polar_diameter / 2",
+          "required": [
+            "polar_diameter"
+          ],
+          "source_cell": "D5"
+        },
+        {
+          "property_id": "ocean_share",
+          "expression": "1 - land_share",
+          "required": [
+            "land_share",
+            "approved binary land/ocean definition"
+          ],
+          "source_cell": "D9"
+        },
+        {
+          "property_id": "land_area",
+          "expression": "surface_area * land_share",
+          "required": [
+            "surface_area",
+            "land_share"
+          ],
+          "source_cell": "D10"
+        },
+        {
+          "property_id": "ocean_area",
+          "expression": "surface_area * ocean_share",
+          "required": [
+            "surface_area",
+            "ocean_share"
+          ],
+          "source_cell": "D11"
+        },
+        {
+          "property_id": "orbital_period",
+          "expression": "C00.civil_day * C00.civil_year_days + C00.year_correction",
+          "required": [
+            "same approved calendar revision for all three operands"
+          ],
+          "source_cell": "D24"
+        },
+        {
+          "property_id": "ellipsoid_area",
+          "expression": "if a=b then 4*pi*a^2 else 2*pi*a^2*(1+(b/a)^2*atanh(sqrt(1-(b/a)^2))/sqrt(1-(b/a)^2)); a=equatorial_radius,b=polar_radius",
+          "required": [
+            "a>0",
+            "b>0",
+            "a>=b",
+            "same property revision and unit"
+          ],
+          "source_cell": "D25"
+        }
+      ],
+      "formula_guards": "Missing operands return numeric blank plus reason, not numeric 0. Unequal axes outside a>=b are unsupported by this preserved oblate formula and must raise method/shape error. Computed outputs remain calculated candidates; source status is not promoted."
+    },
+    {
+      "function_id": "R-F11",
+      "owner_file_code": "R10;R20;R30;R40;R50;R60;R70",
+      "name": "제공표·오류·범위확장 계약",
+      "source_sheets": [
+        "01-지역 마스터",
+        "02_지역_관계",
+        "70 지역 특성",
+        "60 거점 시설",
+        "61 교통망",
+        "20 인구",
+        "12_지역_인구",
+        "21 인구 변동",
+        "30 문화 분포",
+        "32 언어 분포",
+        "33 종족 분포",
+        "31 종교 분포",
+        "10 정치 지역관계",
+        "15_지역_소속이력",
+        "03_영토_이력",
+        "40 경제 지역값",
+        "13_지역_경제",
+        "41 산업",
+        "42 교역",
+        "50 환경 지역값",
+        "14_지역_자연환경",
+        "51 자원 분포",
+        "10_행성_기본값",
+        "11_행성_연간지표"
+      ],
+      "source_pattern_ids": [
+        "edf5c5466ca269b613a0",
+        "5c383ac6e5d9dd99ece4",
+        "6293f3d006da6259630b",
+        "a5e9f54e58eb0acda7f0",
+        "ca41e9cd58b4f06007e9",
+        "ef025cc382aa8e79a127",
+        "d8dcb60168dee7342026",
+        "fb114aee1a67d6ec3c44",
+        "6e1ef33a3ffbdfee3a14",
+        "4a4e0159104a4b70daee",
+        "5092c279a1f8579cbbfb",
+        "61fffd40de261629b474",
+        "53b6d8d13aee3afc9326",
+        "29b89a3aa912810d1b0a",
+        "81fc916179f2c311fe35",
+        "e04c3c1a37e544ef1016",
+        "f652ef1196ba32ee095d",
+        "6f4836969374ea6b1429",
+        "be44ab7d6710bcacdf39",
+        "38d96fc2637f621d7d9b",
+        "5c308c1ffc875edaf5de",
+        "197d3d902648d70693fd",
+        "03b3e2dab437efaa7bde",
+        "5ab847678b70ec1e917a",
+        "2f81ad769f231019b9e6",
+        "5804bd4849b5c4491cf2",
+        "271f72af1b5815dfff86",
+        "4e90b8df7f0fccf489b2",
+        "fd5873e08cc8cc7c7151",
+        "bfe42347873b7fefb4ef",
+        "8582a069d00de082b015",
+        "3e29e04615e31eff9fa9",
+        "a371aa331ade443ecd62",
+        "0c51db0c084ac14805bc",
+        "77ac9f06c9f8c9fe88d2",
+        "52d13d50f5ac848d13f5",
+        "25965f02a63328f80981",
+        "54697e77685fd0fb24b5",
+        "234fdb56336b058b2abd",
+        "ce5fa57f946c7ac641e8",
+        "ba2cdf58f8169b59944e",
+        "50ae9acb0f6e1474220a",
+        "fb7f13db4f01eac295ad",
+        "8516f1a39334db430e41",
+        "1561c1b3432bb67a44e1",
+        "f86acd6f145389eed442",
+        "2e630f42e14e5f4f31b0",
+        "a9eea8fc971f73438688",
+        "65ac893cdee1e22b7059",
+        "7245f95f88b8955298ad",
+        "f7155cee522a8ed1f398",
+        "80103dfa047426534023",
+        "3533b8489bec5145e2d3",
+        "c20ff05013a115a9990f",
+        "5bbf8d8b6797987006f7",
+        "33a443dd54135153bae8",
+        "470af544177269ccc828",
+        "bae9d18188b4f7776cc3",
+        "b33d2ff95d706d087938",
+        "ba5df7a2d59ddc256571",
+        "2d729f9ff173e218e68e",
+        "ee8d3a6a42c89870e768",
+        "a3f6ae43857d94a790dd",
+        "edc5ddb26f8ac45fac9e",
+        "877f933c8da0f0e60e30",
+        "a086068e7b6f4de09d8c",
+        "02d2eb73ac4d50c56e76",
+        "2d5e740df90e21d85e0d",
+        "eaca6da90582dc99920b",
+        "d4082f6bffebbb727199",
+        "eba98983a1b522f2adb9",
+        "4c220b9022c50dd13f74",
+        "383fb328270525a16391",
+        "0d2e9aad53a600742473",
+        "a977619a9dc4c85f547d",
+        "be08576ecc2bb5e0da8f",
+        "fa952c53b65d8f21c835",
+        "2109f70800ad38385475",
+        "06e65a9fbebd6d00419a",
+        "6b5f7b52b59e97f5cc76",
+        "97518ee254027587f709",
+        "2afe28d5367e2f85209b",
+        "ed72ec3d74a12ac8c8aa",
+        "54372ea7d422ad53a32c",
+        "44c01050897a9ee55364",
+        "51db7033bdfd8833f8c7",
+        "cc249d61c18ff05cd6cd",
+        "116199586619327fdf70",
+        "9d40f28763a447f2a8d8",
+        "57e8d14939f5a6380b43",
+        "f55cee842b7e692272eb"
+      ],
+      "algorithm": "닫힌 PUB 범위와 버전 헤더 검증. 수신 성공/권한/오류/자료없음/부분합을 분리. 테스트 사본에서 원본 수정 반영·행 추가·정렬·삭제·확장·불명ID/중복·null/0·연결실패 확인 후 운영 적용.",
+      "test_ids": [
+        "T-068",
+        "T-069",
+        "T-070",
+        "T-071",
+        "T-072",
+        "T-073",
+        "T-075",
+        "T-076",
+        "T-078",
+        "T-079",
+        "T-081",
+        "T-082",
+        "T-083"
+      ],
+      "test_scenarios": [
+        {
+          "test_id": "T-068",
+          "scenario": "V2 연결 원본 식별"
+        },
+        {
+          "test_id": "T-069",
+          "scenario": "순환 연결 검사"
+        },
+        {
+          "test_id": "T-070",
+          "scenario": "연결 허용/실패 표시"
+        },
+        {
+          "test_id": "T-071",
+          "scenario": "원본 변경 반영"
+        },
+        {
+          "test_id": "T-072",
+          "scenario": "제공표 헤더 변경"
+        },
+        {
+          "test_id": "T-073",
+          "scenario": "범위 초과·확장"
+        },
+        {
+          "test_id": "T-075",
+          "scenario": "복구 시험"
+        },
+        {
+          "test_id": "T-076",
+          "scenario": "시험 데이터 격리"
+        },
+        {
+          "test_id": "T-078",
+          "scenario": "검사대상0과 정상 구별"
+        },
+        {
+          "test_id": "T-079",
+          "scenario": "혼합 릴리스 탐지"
+        },
+        {
+          "test_id": "T-081",
+          "scenario": "코드북·드롭다운 동기화"
+        },
+        {
+          "test_id": "T-082",
+          "scenario": "공개·보호 설정"
+        },
+        {
+          "test_id": "T-083",
+          "scenario": "오래된 값·시각 표시"
+        }
+      ],
+      "test_note": "체크리스트 시나리오 대응만 작성. 해당 테스트의 타분야 부분은 별도 담당하며 시험 통과 근거 아님",
+      "implementation_status": "명세 작성",
+      "online_test_status": "미실행",
+      "source_patterns_preserved": "PH1/formula_patterns_and_dependencies.json"
+    }
+  ]
+}

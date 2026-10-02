@@ -1,0 +1,686 @@
+{
+  "generated_at": "2026-10-02T09:54:50.057406+00:00",
+  "scope": "전용 TEST6 native 소형연결시험",
+  "run_id": "TEST-SF-20261002-01",
+  "case_results": {
+    "SF01": {
+      "api_result": "passed",
+      "evidence_files": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF01_initial_api_result.json"
+      ],
+      "ui_status": "별도 root UI증거 기록 참조"
+    },
+    "SF02": {
+      "api_result": "passed",
+      "evidence_files": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF01_initial_api_result.json",
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF02_end_exclusive_api_result.json",
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF02_restore_point_api_result.json"
+      ],
+      "ui_status": "별도 root UI증거 기록 참조"
+    },
+    "SF03": {
+      "api_result": "passed",
+      "evidence_files": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF03_change_api_result.json"
+      ],
+      "ui_status": "별도 root UI증거 기록 참조"
+    },
+    "SF04": {
+      "api_result": "passed",
+      "evidence_files": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF04_numeric_zero_api_result.json",
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF04_empty_api_result.json",
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF04_connection_failure_api_result.json",
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF04_restore_api_result.json"
+      ],
+      "ui_status": "별도 root UI증거 기록 참조"
+    },
+    "SF05": {
+      "api_result": "passed",
+      "evidence_files": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF05_header_drift_api_result.json",
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF05_restore_api_result.json"
+      ],
+      "ui_status": "별도 root UI증거 기록 참조"
+    },
+    "SF06": {
+      "api_result": "passed",
+      "evidence_files": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF06_append_boundary_api_result.json",
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\SF06_expand_all_ranges_api_result.json"
+      ],
+      "ui_status": "별도 root UI증거 기록 참조"
+    }
+  },
+  "api_passed_cases": 6,
+  "api_failed_cases": 0,
+  "api_incomplete_cases": 0,
+  "api_tool_errors": [],
+  "actual_spreadsheet_ids_observed": [
+    "16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo",
+    "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY",
+    "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+    "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+    "1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww",
+    "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY"
+  ],
+  "all_observed_api_targets_within_test_allowlist": true,
+  "production_or_v1_mutations_performed_by_this_agent": false,
+  "test_files": {
+    "C00": {
+      "spreadsheet_id": "1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY",
+      "url": "https://docs.google.com/spreadsheets/d/1A5-tEVWXvyOkdix7cjEeolJEPfABV7ZsnHowQhXblAY/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71000000,
+        "01_설정": 71000001,
+        "IN_기준개정이력": 71000002,
+        "IN_공통기준": 71000003,
+        "IN_코드북": 71000004,
+        "PUB_STANDARDS": 71000005,
+        "PUB_CODEBOOK": 71000006,
+        "VALID_자료": 71000007,
+        "VIEW_소형흐름": 71000008,
+        "META_STANDARDS": 71000009,
+        "META_CODEBOOK": 71000010
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\C00_00_structure.json",
+          "requests": 22,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\C00_00_structure_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 22
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\C00_01_headers_config_fixtures.json",
+          "requests": 61,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\C00_01_headers_config_fixtures_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 61
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\C00_02_sample_formulas.json",
+          "requests": 7,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\C00_02_sample_formulas_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 7
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\C00_03_fill_capacity.json",
+          "requests": 2,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\C00_03_fill_capacity_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 2
+        }
+      }
+    },
+    "R10": {
+      "spreadsheet_id": "1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8",
+      "url": "https://docs.google.com/spreadsheets/d/1CN4SBkNA9mwhmcHDTAXD5-GbphMPQCrslq5kUtaTFO8/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71001000,
+        "01_설정": 71001001,
+        "IN_지역목록": 71001002,
+        "VIEW_지역목록_조회계산": 71001003,
+        "PUB_REGIONS": 71001004,
+        "VALID_자료": 71001005,
+        "VIEW_소형흐름": 71001006,
+        "META_REGIONS": 71001007,
+        "REF_CODEBOOK": 71001008,
+        "RMETA_CODEBOOK": 71001009
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R10_00_structure.json",
+          "requests": 21,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\R10_00_structure_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 21
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R10_01_headers_config_fixtures.json",
+          "requests": 51,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\R10_01_headers_config_fixtures_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 50
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R10_02_sample_formulas.json",
+          "requests": 8,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\R10_02_sample_formulas_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 8
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R10_03_fill_capacity.json",
+          "requests": 2,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\R10_03_fill_capacity_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 2
+        }
+      }
+    },
+    "R20": {
+      "spreadsheet_id": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+      "url": "https://docs.google.com/spreadsheets/d/1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71002000,
+        "01_설정": 71002001,
+        "IN_인구관측": 71002002,
+        "VIEW_인구관측_조회계산": 71002003,
+        "PUB_POPULATION": 71002004,
+        "VALID_자료": 71002005,
+        "VIEW_소형흐름": 71002006,
+        "META_POPULATION": 71002007,
+        "REF_CODEBOOK": 71002008,
+        "RMETA_CODEBOOK": 71002009,
+        "REF_REGIONS": 71002010,
+        "RMETA_REGIONS": 71002011
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R20_00_structure.json",
+          "requests": 23,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\R20_00_structure_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 23
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R20_01_headers_config_fixtures.json",
+          "requests": 61,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\R20_01_headers_config_fixtures_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 61
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R20_02_sample_formulas.json",
+          "requests": 10,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\R20_02_sample_formulas_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 10
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\R20_03_fill_capacity.json",
+          "requests": 2,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\R20_03_fill_capacity_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 2
+        }
+      }
+    },
+    "N30": {
+      "spreadsheet_id": "1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww",
+      "url": "https://docs.google.com/spreadsheets/d/1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71003000,
+        "01_설정": 71003001,
+        "IN_PERSON": 71003002,
+        "PUB_PERSON": 71003003,
+        "VALID_자료": 71003004,
+        "VIEW_소형흐름": 71003005,
+        "META_PERSON": 71003006
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N30_00_structure.json",
+          "requests": 18,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\N30_00_structure_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 18
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N30_01_headers_config_fixtures.json",
+          "requests": 35,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\N30_01_headers_config_fixtures_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 35
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N30_02_sample_formulas.json",
+          "requests": 3,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\N30_02_sample_formulas_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 3
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N30_03_fill_capacity.json",
+          "requests": 1,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\N30_03_fill_capacity_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 1
+        }
+      }
+    },
+    "N20": {
+      "spreadsheet_id": "16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo",
+      "url": "https://docs.google.com/spreadsheets/d/16DTrlrf9pb64fzAe_pd5BW5IKkzG6nUIExuWufLbfyo/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71004000,
+        "01_설정": 71004001,
+        "IN_OFFICE": 71004002,
+        "IN_OFFICE_TERM": 71004003,
+        "VIEW_OFFICE_TERM": 71004004,
+        "PUB_OFFICE": 71004005,
+        "PUB_OFFICE_TERM": 71004006,
+        "VALID_자료": 71004007,
+        "VIEW_소형흐름": 71004008,
+        "META_OFFICE": 71004009,
+        "META_OFFICE_TERM": 71004010,
+        "REF_PERSON": 71004011,
+        "RMETA_PERSON": 71004012
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N20_00_structure.json",
+          "requests": 24,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\N20_00_structure_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 24
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N20_01_headers_config_fixtures.json",
+          "requests": 69,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\N20_01_headers_config_fixtures_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 69
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N20_02_sample_formulas.json",
+          "requests": 10,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\N20_02_sample_formulas_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 10
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\N20_03_fill_capacity.json",
+          "requests": 3,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\N20_03_fill_capacity_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 3
+        }
+      }
+    },
+    "H90": {
+      "spreadsheet_id": "1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY",
+      "url": "https://docs.google.com/spreadsheets/d/1kBV-OIpHm8hHm412r9nDoZrWKMdY2a8c-e2H2pElHEY/edit?usp=drivesdk",
+      "sheet_ids": {
+        "00_안내": 71005000,
+        "01_설정": 71005001,
+        "CONFIG_조회조건": 71005002,
+        "VIEW_황제재위결합": 71005003,
+        "CHECK_검사결과": 71005004,
+        "CHECK_연결상태": 71005005,
+        "VALID_자료": 71005006,
+        "VIEW_소형흐름": 71005007,
+        "REF_POPULATION": 71005008,
+        "RMETA_POPULATION": 71005009,
+        "REF_PERSON": 71005010,
+        "RMETA_PERSON": 71005011,
+        "REF_OFFICE_TERM": 71005012,
+        "RMETA_OFFICE_TERM": 71005013,
+        "REF_CODEBOOK": 71005014,
+        "RMETA_CODEBOOK": 71005015
+      },
+      "stages": {
+        "00_structure": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\H90_00_structure.json",
+          "requests": 27,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\H90_00_structure_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 27
+        },
+        "01_headers_config_fixtures": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\H90_01_headers_config_fixtures.json",
+          "requests": 82,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\H90_01_headers_config_fixtures_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 82
+        },
+        "02_sample_formulas": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\H90_02_sample_formulas.json",
+          "requests": 14,
+          "status": "실행 확인",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\H90_02_sample_formulas_response.json",
+          "online_request_sent": true,
+          "actual_request_count": 14
+        },
+        "03_fill_capacity": {
+          "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_requests\\H90_03_fill_capacity.json",
+          "requests": 0,
+          "status": "실행 확인 · 요청0개(해당 없음)",
+          "execution_receipt": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\small_flow_execution\\H90_03_fill_capacity_response.json",
+          "online_request_sent": false
+        }
+      }
+    }
+  },
+  "test_graph": [
+    {
+      "provider": "TEST-C00",
+      "consumer": "TEST-R10",
+      "dataset_id": "PUB_CODEBOOK_V2"
+    },
+    {
+      "provider": "TEST-C00",
+      "consumer": "TEST-R20",
+      "dataset_id": "PUB_CODEBOOK_V2"
+    },
+    {
+      "provider": "TEST-R10",
+      "consumer": "TEST-R20",
+      "dataset_id": "PUB_REGIONS_V2"
+    },
+    {
+      "provider": "TEST-N30",
+      "consumer": "TEST-N20",
+      "dataset_id": "PUB_PERSON_V2"
+    },
+    {
+      "provider": "TEST-R20",
+      "consumer": "TEST-H90",
+      "dataset_id": "PUB_POPULATION_V2"
+    },
+    {
+      "provider": "TEST-N30",
+      "consumer": "TEST-H90",
+      "dataset_id": "PUB_PERSON_V2"
+    },
+    {
+      "provider": "TEST-N20",
+      "consumer": "TEST-H90",
+      "dataset_id": "PUB_OFFICE_TERM_V2"
+    },
+    {
+      "provider": "TEST-C00",
+      "consumer": "TEST-H90",
+      "dataset_id": "PUB_CODEBOOK_V2"
+    }
+  ],
+  "test_graph_cycle_count": 0,
+  "source_value_status": "값 있음 — REG온라인 인구검증옵션원문을TEST코드북에만사용",
+  "schema_drift_delay": "SF05변형·복원모두1차read에서이전값관측→갱신대기기록→5초후2차read에서기대값관측",
+  "time_measurement": "*_write_response의완료시각과*_readback의확인시각을보존. propagation_upper_bound_ms는순차API관측의상한이며즉시성보장아님.",
+  "final_fixture_restore": {
+    "api_validation": "passed",
+    "ui_evidence": "pending root final screen",
+    "actual": {
+      "population": 100,
+      "count": 1,
+      "person_via_term": "시험 인물",
+      "person_direct": "시험 인물",
+      "point_active": true,
+      "names_equal": true,
+      "source_population": 100,
+      "source_person": "시험 인물",
+      "boundary_source_id": null,
+      "boundary_pub_id": null,
+      "boundary_ref_id": null,
+      "boundary_calc_id": null,
+      "validation_count": 1,
+      "overflow": "범위내",
+      "source_revision_R20": "TEST.REV.7",
+      "source_revision_N30": "TEST.REV.3",
+      "source_revision_N20": "TEST.REV.3",
+      "source_count": 1,
+      "consumer_count": 1
+    },
+    "retained_capacity": 11,
+    "write_completed_at": {
+      "R20": 1790934794693,
+      "N30": 1790934803291,
+      "N20": 1790934810101,
+      "H90": 1790934816206
+    },
+    "observed_at": "2026-10-02T09:53:38.839Z",
+    "elapsed_ms": 34238,
+    "propagation_upper_bound_ms": {
+      "R20": 24147,
+      "N30": 15549,
+      "N20": 8739,
+      "H90": 2634
+    },
+    "test_suite_84_status": "unchanged"
+  },
+  "retained_capacity": "R20입력/계산/PUB 및H90소비·계산은11행용량(마지막14행), 원래fixture복구후경계추가행은빈칸.",
+  "ui_evidence": [
+    {
+      "source": "root 협업메시지",
+      "observation": "H90초기UI 인구100/건수1/원본위치/두경로이름/재직TRUE/이름일치TRUE 확인. 대화도구이미지증거이며로컬PNG없음.",
+      "confirmed": true
+    },
+    {
+      "source": "root 확인 대기",
+      "observation": "SF06확장후250/2행 및최종복구화면",
+      "confirmed": false
+    }
+  ],
+  "checklist_84": {
+    "automatic_updates": 0,
+    "fully_covered_global_tests_recommended_as_pass": [],
+    "partial_coverage_only": [
+      {
+        "test_id": "T-009",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "합성 TEST IDs만 확인. 기존 전체 개체 ID 집합 정렬·이동 전후 대조는 별도."
+      },
+      {
+        "test_id": "T-018",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "단일 임기의 시작포함/끝제외 확인. 102년 같은날 A→B 교체·중첩오탐 전체 시나리오는 별도."
+      },
+      {
+        "test_id": "T-031",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "정상0/빈행/연결실패만 확인. 미상·미정·해당없음 관측 집계는 별도."
+      },
+      {
+        "test_id": "T-068",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "TEST8연결 공급자ID 확인. 운영16전체 실제 import 전수검색은 별도."
+      },
+      {
+        "test_id": "T-069",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "TEST6 실제ID 그래프 무순환 및N30 역수신없음 확인. 운영전체 그래프 검증은 별도."
+      },
+      {
+        "test_id": "T-070",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "TEST승인전·승인후·잘못된범위 확인. 운영전체 접근실패/권한변경 영향 검증은 별도."
+      },
+      {
+        "test_id": "T-071",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "R20인구·N30이름 변경 반영 확인. 지역명 변경 및N40 포함 전체경로는 별도."
+      },
+      {
+        "test_id": "T-072",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "TEST R20→H90 필수헤더개명 감지·차단·복구 확인. 운영전체 제공계약 범위는 별도."
+      },
+      {
+        "test_id": "T-073",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "TEST R20→H90 입력/계산/검증/PUB/REF 경계확장 확인. 운영전체 표의 확장시험은 별도."
+      },
+      {
+        "test_id": "T-078",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "TEST빈인구 0행을 자료없음으로표시. 운영전체 입력표 검사대상없음 처리는 별도."
+      },
+      {
+        "test_id": "T-083",
+        "recommended_status": "기존상태유지 · 소형시험부분증거첨부",
+        "scope_gap": "헤더반영 지연을 실제관측·갱신대기로 기록. 캐시고정+시계만갱신 시나리오는 별도."
+      }
+    ]
+  },
+  "overall_migration_completion": "주장하지 않음",
+  "evidence_sha256": {
+    "C00_00_preflight_metadata.json": "41083fbbfdb83be6f7065e460fb9d70b5e2abf4f900deb1962a9645417f5c27b",
+    "C00_00_structure_response.json": "76538ccfd1d61c2956a922b251634fdfd119ccba4537545a4f393357a0b0b588",
+    "C00_01_headers_config_fixtures_response.json": "58a4f33eb968a7b52ed9acb4ea34c27334956caca9f5983d743d1fa97ac4bb13",
+    "C00_02_sample_formulas_response.json": "31bc6312beac960bb675d465789a1b1fad03769844b9fa467570e42f8bacfa49",
+    "C00_02_sample_readback.json": "a2933f58a7e439065bc221ec4adb1735ffd89af3afec59377acb528db5d5c458",
+    "C00_03_fill_capacity_response.json": "841a51a2c57c868bccf90ad07e14cf5a3ab098603734e5d06f57bfa4b3ce72f4",
+    "C00_baseline_full_readback.json": "33760f1e795e8689a48963bcad8552a50022893ff331655265f744b983bcddb2",
+    "H90_00_preflight_metadata.json": "394efcbe1b5fbf64c41e77542c0a472f3500bb9effe3ffd856e1d599c3c6719e",
+    "H90_00_structure_response.json": "370f0e36e464389d7fe8a643a73a8d00219a1be061aca4900a69500b195163e1",
+    "H90_01_headers_config_fixtures_response.json": "528ff6b30fe7afbc3237413096cfbac84384cfebcb4efef936cec2185e6e837e",
+    "H90_01_prewrite_metadata.json": "d7f7a1e62f92e7af2d3af83bd32881d9a7f40f6464234d3ddce5414d8c82606c",
+    "H90_02_sample_formulas_response.json": "96dcaadd2a93d44c6b235122aeea51b6f86e399ef34ce7056773d85f34e4eb4b",
+    "H90_02_sample_readback.json": "daab4b222b7f23e97820a8f33ccb56635dad43c72d5433385f045e6eb08d6b86",
+    "H90_03_fill_capacity_response.json": "3f974de59bd4c4765853cf80d526a10aeab598c7ceefb221b026c6f137baa173",
+    "H90_baseline_full_readback.json": "7e810db50eb997ded0399e91850036980e18be3b7cfe33fb15c588b082909ca5",
+    "H90_name_error_guard_patch.json": "917ce801bd33bb3e88432c57fe6e517991600a885b7c385d9c704e123b3d86b7",
+    "H90_permission_confirmed.json": "2e450754136026e51709ace64bd3d7f2f1e82c8170b7c14e1c8ce5a288af8226",
+    "H90_permission_pending_patch.json": "b900669f20e99b31fdc9e0b347763a8c10c91aa20cc99bc05df82b27e3cbecf0",
+    "N20_00_preflight_metadata.json": "62402eed111c729a402052aef6d33e496527d6a8cddb5a9f6416501d4c8338d7",
+    "N20_00_structure_response.json": "f1b4132ce4889e988e2fc824b48f3fe635b417e4cfe455d3696082821260c88e",
+    "N20_01_headers_config_fixtures_response.json": "30e0b3e62339d3ca655c083d30167a3bb81d2b66b15830910e45c492a56b9ca7",
+    "N20_01_prewrite_metadata.json": "134fcc530bef66a1af254d0e4b400635f8223197cec92d2bade8dbcac2e60c75",
+    "N20_02_sample_formulas_response.json": "34120e4e3e7f13840779160513d3f19fcedbff84b6643f261dde797a33a35019",
+    "N20_02_sample_readback.json": "1b41f05f8b9c5cf8e438b9e598dea4c0cf603b03b7401a224dd269148d56a16d",
+    "N20_03_fill_capacity_response.json": "e86a64848b988cd792eadd47296722210886354ea008593b4723c932292671d0",
+    "N20_after_permission_readback.json": "b9e691484f5b15440fa9838c1d42d50de023b785e5fa55c413da21cf3fa6b514",
+    "N20_baseline_full_readback.json": "7543ff218c049335149ffc943e1f209a33305d0c1560297a46f06b9ec148b0fc",
+    "N20_permission_confirmed.json": "a3d4987cba006c35c5c8a6b0d258ee1059fa3d83bd3e219c3282fb567ec99d26",
+    "N20_permission_pending_patch.json": "61698c91faf14093346b7cdc936154e87f77447436b5e7c1bf5710d23818b780",
+    "N30_00_preflight_metadata.json": "e760f51c7702314d4bb21067b2937fc1605c11097244356f023b76d550131ef2",
+    "N30_00_structure_response.json": "b4e289cd5b8837b8e0f310c98669dc655b827e0b5617356c642ea3dfe01fe405",
+    "N30_01_headers_config_fixtures_response.json": "c70a69a7917d1a2e3f550ad27de2c56bafe737cd4cd8140d1206f7a4f2547e42",
+    "N30_01_prewrite_metadata.json": "db57ef3f24ac278654e165b88c5f7967a8708631a0ec48cc6ad2fa92d328283c",
+    "N30_02_sample_formulas_response.json": "5f46e360a3dd3287f15c5ed0159f86c97343a9868eae057346eb1d127013c008",
+    "N30_02_sample_readback.json": "cda36cfce66ce00fba7a5a7040f87858a9dd251242d0b7dd4f7e7e70a0cd1c7c",
+    "N30_03_fill_capacity_response.json": "756f1b9263626479b63999b8624dda73e8b05b321146caa2d3b646666f2d7259",
+    "N30_baseline_full_readback.json": "c65895d84332b2ca918d97c4c5568962913c166c50e83d0cf44d63c681054ffc",
+    "R10_00_preflight_metadata.json": "772d7ef465c1872d12ad353eb97309925dd063e610f2d78f08b906a5a25817ac",
+    "R10_00_structure_response.json": "67fccd7aeaeb708e34284e782abc919b9569b54d9a06a9b7f94260ca55477f81",
+    "R10_01_headers_config_fixtures_response.json": "1f27697478f8f400eb2740ccac51f8346b047303bb7de6c70405c35c12b9e34d",
+    "R10_01_prewrite_metadata.json": "2909f13cbcab0bb0ae4341e834073d5d9dac28398edd574b9f0bea26215317f9",
+    "R10_02_sample_formulas_response.json": "9c48e6585014367752de021b7b9a0ee8d84d044d6628ef59c4e2fc75cfc5909c",
+    "R10_02_sample_readback.json": "8c6b04f28c446e1a9329c3aec5b87a6f333fbc78b09f6e91e8f9b257b12536af",
+    "R10_03_fill_capacity_response.json": "c11de886e396aaa1c086d9d34503f1f385e3333ede2882d309966d289503265d",
+    "R10_after_permission_readback.json": "41ed1a0262318221c334bf0c62e0256fcf32cb4abe53bda52208e4c88c380865",
+    "R10_baseline_full_readback.json": "781669fd90b6e423737d64b960cf380e7396d1ce709462c02d4279b4e12df4c9",
+    "R10_permission_confirmed.json": "2a4d50c185670600de0eb79be3eb71fbd1767dbb56f45ff2245c23f790e92e3d",
+    "R10_permission_pending_patch.json": "8caa6e1d1f3fbfcb289c92275f1c9baaddcf41d2d2f76e1394559645c5f1b450",
+    "R20_00_preflight_metadata.json": "3674d0162c761609d94088cb25f23d8e51f2c0b7433a3c658f51163e8c3acdc4",
+    "R20_00_structure_response.json": "d819c2b9ea61446a7bed29984fc40ca71d5da588946a4a3db9f2c3a23594f878",
+    "R20_01_headers_config_fixtures_response.json": "cd5814d391c9685ea1582fa092b54257deef497a38df7371406e3157b3cae6cd",
+    "R20_01_prewrite_metadata.json": "d9c9b8ea773cb60321941e722d9575b872260699a8d84b32df2043af4502836a",
+    "R20_02_sample_formulas_response.json": "c425e15d28bb7aeea128e4551b1017e7184b01eff1698536d254a572d1f0c17a",
+    "R20_02_sample_readback.json": "4d519729037bcc71df06f073bb0aeb81d1d8a8f7472a6f7f8bdf6f69d045bc6d",
+    "R20_03_fill_capacity_response.json": "3d260dff1a6f04ea2956bf405b88ce216d477b178e1f154f5f5956210f431ed5",
+    "R20_after_permission_readback.json": "57e6aea091f839de77cfd9d16f925487b9fb072100c571346781cec11255e6e9",
+    "R20_baseline_full_readback.json": "86f6e83f324f193376b47759b754697a7c889101728ff36930b5d2bad7bde30c",
+    "R20_permission_confirmed.json": "05db742bb73cc7411d98396d3513597819cdcba563a5f0d28d36c1ca68b4a608",
+    "R20_permission_pending_patch.json": "4ba0c6fcfbc466e9e2fa187304a98e48948d3810329177cd43c4392cdf321370",
+    "SF01_initial_api_result.json": "1edbd64323f3b56de71a78bd1a8e3ae871e26881fe76a155a434138c8a3deb08",
+    "SF02_end_exclusive_api_result.json": "99135ba9c7fb1ba8f531e0dd9e3002690a76da16d89615c9fc90c08e65ee7a1d",
+    "SF02_end_exclusive_prewrite_backup.json": "4d78a2f97a8411d9d3073c489fb0d0ef772eecb2cc5899960f89486a0fcc6f3b",
+    "SF02_end_exclusive_readback.json": "505febe305ac541a8d5a73b20678dd40720be638c01adc6be12425fc11942a9f",
+    "SF02_end_exclusive_write_response.json": "2f8e47493f13d498216180cae1810f932a67f1a6499711c79d326c5af0f7128b",
+    "SF02_restore_point_api_result.json": "3a663cdd654978cb2021b84ad31aa2c63af6f04aa6ee0b3587b287d998960fc8",
+    "SF02_restore_point_prewrite_backup.json": "914a22fc2902f2e8a0dc4c0f9db27a729548ec3fd86e77b737d30eca3235c5eb",
+    "SF02_restore_point_readback.json": "43fea261189271a54023465c2f72ebe3a04205a779e526374a03aa7b205a99bc",
+    "SF02_restore_point_write_response.json": "f2b389a61890a79e4d25313ed25f86bfb7d5a353ba645f5cd5e63e914ce17ae4",
+    "SF03_change_api_result.json": "22afc250e46e6752b3175b020dcb3b6e5fc64cc80d4975d3c31245521a598875",
+    "SF03_change_H90_prewrite_backup.json": "25a4121846db9ba1ae57b67e53e62d3aa4ae92303483850068a56b8c44eae691",
+    "SF03_change_H90_write_response.json": "bf90b1d7c1bdbf15692e9796eee2b0e10b79e8808c5941c35b91a07fc305fea6",
+    "SF03_change_N20_prewrite_backup.json": "7eb03030e1c2beb2996fca147aba4c06a1dd766c46aa55d9b54855fef43bdcd2",
+    "SF03_change_N20_write_response.json": "3e22fcfe639108dc719cf42c2bfc2425e5fa11745bb2251fbde2679e7997ca31",
+    "SF03_change_N30_prewrite_backup.json": "1298dd8945e222abc8647cdffa8653b8960bab068625f3b46e14402d22cae207",
+    "SF03_change_N30_write_response.json": "10b1e4396b04e6f3970b8bb161d92d11ac86d75be40ee9ccace26f4c7aaffca2",
+    "SF03_change_R20_prewrite_backup.json": "2ef09fde0ed3369e3dcc82cfb63ff1836964c4b2fe2dee64fd1a8dd713868600",
+    "SF03_change_R20_write_response.json": "640c4c4dcdefce19ea37684cc987a60d43d4dc9b319f930a01b1b81bebd29c40",
+    "SF03_change_readback_1.json": "a04ad5b59603af5138893d67dc5afac72720afcf5e0ad05d7d0a8ece585d3579",
+    "SF04_connection_failure_api_result.json": "823b1566a0c87515d1babcc4d1fe859dd93c8b4df532d1e4abe5da0ab0f5614a",
+    "SF04_connection_failure_H90_prewrite_backup.json": "d1838d623019ba32723c68ad531f2a9094cd1b27f88ee09a6b421cff32eb6083",
+    "SF04_connection_failure_H90_write_response.json": "b7c044111be1195b5215c4ed2431c8f10847faa139263f0c5930f7215bc0ab15",
+    "SF04_connection_failure_readback_1.json": "5c30151c87af2a60d5abef0dd317ff4bb85be15d793cef469f9d1196785d6e6e",
+    "SF04_empty_api_result.json": "09614b7b4897821b9c6436e37d4cb7ad56beb7e6cee8f04a91d1a08aff28df88",
+    "SF04_empty_H90_prewrite_backup.json": "9c3ef5efa4696e13fe94ae7420225e91416ce298d77c971b72b49517f2c08b33",
+    "SF04_empty_H90_write_response.json": "2086062cfc132e977e0001db2fe0ee611aedc6afa1ca88fbd2799d6a6807a10f",
+    "SF04_empty_R20_prewrite_backup.json": "ed6a34ec5ec3060dcbe29fc482a69b58a07c3e3184d7f7e314976db137527c76",
+    "SF04_empty_R20_write_response.json": "4878e2dcb09561d4fa88f15fad032db85628ae13442da1dc7bcf546e7f286c3b",
+    "SF04_empty_readback_1.json": "c97b873a0183c467680aaa04ddf2284d951b214bc656dfe429000fda8d7d7c1d",
+    "SF04_numeric_zero_api_result.json": "a1ce9c3c6a2ed8dd0342a710e00cc27ab65e9df4c032afeffbf7262ed17a0136",
+    "SF04_numeric_zero_H90_prewrite_backup.json": "806b6907c3cc0575c843d3392d5c82b62271e4ced4629afe3cb993adeccbcc72",
+    "SF04_numeric_zero_H90_write_response.json": "584e25299b6ed8882d35f07189b1ed30c6ae28fad70382fca12caf71c38d86ed",
+    "SF04_numeric_zero_R20_prewrite_backup.json": "0f1198f8b7050c004cda028df4bfbd5f4aa536c210c709b69d3b242647ff8faf",
+    "SF04_numeric_zero_R20_write_response.json": "dd14a05f785fbaaa6af3d5e2eb40b5060418cb767372ec47a4f3bb15d522db1c",
+    "SF04_numeric_zero_readback_1.json": "812726c952d419dde0c77fee9d877dc3234b6d8f14b588cfd2510bfe77b5a96c",
+    "SF04_restore_api_result.json": "99be9d0af14e0c102961914eb77301b2d3eaff2bb1705ac3c41a6f6bf4ec8cc7",
+    "SF04_restore_H90_prewrite_backup.json": "dffa853023101bbe70c12088ed883d6ef5e9e48b322125dd0d79ba8784805477",
+    "SF04_restore_H90_write_response.json": "6928d5fcd53f4fe02ced1fc989c2f62b689f0d8e4ea89c836e6b0ecd339f8a0f",
+    "SF04_restore_R20_prewrite_backup.json": "d5a95a1880fbd3ae1fe3128c5bad2fac5c1409dec59a9605655a9f6ab539ff3f",
+    "SF04_restore_R20_write_response.json": "7b6a68a2bca8a34351dc2c1eaf97de29b3d5d4d3a733749e26b73187a40b6de8",
+    "SF04_restore_readback_1.json": "7b7c0981dea87f6776a5fc2229a318f081f4bd883fb58b52df291a7759f48f9a",
+    "SF05_header_drift_api_result.json": "bb060ab9c16ad4b9ac2b9bae700dfa80ad998a882db414199a5e72420b98152a",
+    "SF05_header_drift_R20_prewrite_backup.json": "2ce39314339c27e010a6a55c60e4254a6367c55cc755a1d1da0090fb2d5a8482",
+    "SF05_header_drift_R20_write_response.json": "df805edd50cda108981bb9da10994f8f41b1d4ede3b74b58292fbd143b1755e0",
+    "SF05_header_drift_readback_1.json": "6b8ef14eb42698517d267081e193dd9a018b6117a284f63f3768d953c5cc56bc",
+    "SF05_header_drift_readback_2.json": "ce01e6c0d915cf339003f402ab38e6f6f155657e8f9bc001cc1e8b89860ff38a",
+    "SF05_restore_api_result.json": "96688eca2bbb3d1daa4c18218832000a3b446210d89363cb9c1e72ce71a1bae0",
+    "SF05_restore_R20_prewrite_backup.json": "0fb26ca8f100f2ef3835336646b92b934f3f561d8e66a3239ee521ab7436227c",
+    "SF05_restore_R20_write_response.json": "26bdf5705a4dbb944a59ae63bff768283a18b4ad091c7d6c322892bf84079fca",
+    "SF05_restore_readback_1.json": "d06d049a98a33e7b92ae7b7604f984924846d70ddef3ad4745b9e6e0c43981d9",
+    "SF05_restore_readback_2.json": "b9ff799ba4afdf89f9775d84665c06fd250d4dfec6fc534113bdcd0f357509ce",
+    "SF06_after_append_H90_five_ranges.json": "915f6e95f67f7259ce771d9375ed5424786941f776ae570767a5404143c7a0dd",
+    "SF06_after_append_R20_five_ranges.json": "e45c9fccf7116688c331046d9d724cb62536d4a5daa54182b61e374aa79ca6e6",
+    "SF06_after_expand_H90_five_ranges_1.json": "47bfa4ac2f7917eed37886ca2579148f2fe8bb704c26a442d9d55d00ffc26208",
+    "SF06_after_expand_R20_five_ranges_1.json": "176473417723e85125754031a7036fa18a47f5625be76d2767eb7c410048e847",
+    "SF06_append_boundary_api_result.json": "bad6b838adb404ee4c7323b98c2476d48ae50cbec9be97598656ba08664c79b0",
+    "SF06_append_boundary_R20_write_response.json": "e0f3032b130b5517b7e175fa3b490a5ef304969edb0c6c2bbec2be48647f1bca",
+    "SF06_before_append_H90_five_ranges.json": "71cfee284bec6660b37176c1c6025f94e8ff6232893858c86299890baa3a211c",
+    "SF06_before_append_H90_metadata.json": "6c91849f47ab0dfda57d810485ee993e4d1fc6343864d389c39827520a1b0540",
+    "SF06_before_append_R20_five_ranges.json": "e90c874b9eaa9173b89c1cb24dde8edb47bfc71b53d4a7855efb965bb81b150f",
+    "SF06_before_append_R20_metadata.json": "2143795bdc9ed47b975bf1d9b3395f1ee4366e360074f5a920b0705c3707641c",
+    "SF06_before_expand_R20_named_ranges_probe.json": "bfac38ae31e6d5a67c5780b380db43a01e1c6a5e314be46c2b89b6a93155206a",
+    "SF06_expand_all_ranges_api_result.json": "dc28d3796d0c2550f3c2911f1af59142c4759cb8c0a8fbf60c3e77a0d1d066ce",
+    "SF06_expand_all_ranges_H90_write_response.json": "e74bf39f3fbc995551e638a30e26f32c6e877cbe9a393cc4bf30311ba49a0095",
+    "SF06_expand_all_ranges_R20_write_response.json": "b0c7010622185f58126d8fa2076b7412d6066a210422bfcc6218f09578c71022",
+    "SF_final_restore_api_result.json": "3788c7623dbb5aed3fa059781f1491a8a35a51081acdc2ad82738865a8e7fc28",
+    "SF_final_restore_H90_prewrite_backup.json": "59526bae7b60f37febb0947f65b24395b1a1db64b81ba4f9c67058a73f51cf4b",
+    "SF_final_restore_H90_readback_1.json": "936fb92a8587918ca23b372a0dd61ab389416522655bbc92aab4591c3aa21087",
+    "SF_final_restore_H90_write_response.json": "8c6a8ab70887876faf30ddcae108aadad130104fa6ddd3b58b56254c53406c53",
+    "SF_final_restore_N20_prewrite_backup.json": "a2aa845a37982630013de0398519bac9cdba9c377d2e620122a4bf4a5e59eb77",
+    "SF_final_restore_N20_write_response.json": "6150218fc6e4349cedd4cfc8b5b74e374ff32e957a28c9dd095bb37a4a18eba2",
+    "SF_final_restore_N30_prewrite_backup.json": "3bf14c78937048946fb766b2108bc2f5a0b13039dc3bbb0e34f5c8422df94780",
+    "SF_final_restore_N30_readback_1.json": "c37408cd13089bed594e876a7f1cc172560b9b5637f45c3611bf817a575b0172",
+    "SF_final_restore_N30_write_response.json": "6048bdf65059036ed8d945d29d21ea83f08d4324a8248f4120fd2392a6644c03",
+    "SF_final_restore_R20_prewrite_backup.json": "be3d14e3217714237e5648b276564630b5c99cf8612fdb3b23d6ba6bea4a0e27",
+    "SF_final_restore_R20_readback_1.json": "1b7fa623af39bc883041749224e8d5c983d9c7a3d1f3abfe5b464fc0494b6998",
+    "SF_final_restore_R20_write_response.json": "1860ee64b80674619d254c328c257782f191ab5fd06bc0253a26bc3441c4eb8b"
+  },
+  "initial_stage_totals": {
+    "applied": 23,
+    "not_applicable": 1,
+    "pending": 0,
+    "failed": 0
+  }
+}

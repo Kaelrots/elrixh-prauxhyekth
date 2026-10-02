@@ -1,0 +1,2629 @@
+{
+  "schema_version": "1.0.0",
+  "tables": {
+    "states": {
+      "rows": 1954,
+      "description": "모든 state 정의, 명칭, province 목록, 허브, 특성·자원 및 픽셀 가중 집계. 기본 테이블.",
+      "columns": [
+        {
+          "name": "state_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "is_sea_state_file",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "province_hexes",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "province_token_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "province_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "province_assignment_blocks",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "traits",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "arable_land",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "arable_resources",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "capped_resources",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "resource_blocks",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "subsistence_building",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "field_presence",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "city_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "port_hex",
+          "types": []
+        },
+        {
+          "name": "farm_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "mine_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "wood_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "strategic_region_keys",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "pixel_area",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "area_fraction",
+          "types": [
+            "float",
+            "int"
+          ]
+        },
+        {
+          "name": "centroid_x",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_y",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_min_x",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_min_y",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_max_x",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_max_y",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_min_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_min_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_max_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_max_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "circular_centroid_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "circular_resultant_x",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "present_province_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "missing_province_hexes",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "missing_province_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "geometry_status",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "has_ambiguous_province_ownership",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "state_color_hex",
+          "types": []
+        }
+      ]
+    },
+    "provinces": {
+      "rows": 44542,
+      "description": "지도 전체 고유 RGB와 모든 참조 HEX의 합집합. 위치·영역·state 역매핑·수역 명시값.",
+      "columns": [
+        {
+          "name": "province_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "province_token",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "hex_css",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "rgb_r",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "rgb_g",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "rgb_b",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "map_present",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "state_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_ids",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_keys",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_record_ids",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "assignment_status",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "is_sea_start",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "is_lake",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "explicit_terrain",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "water_class",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "pixel_area",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "area_fraction",
+          "types": [
+            "float",
+            "int"
+          ]
+        },
+        {
+          "name": "centroid_x",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_y",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_min_x",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_min_y",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_max_x",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_max_y",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_min_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_min_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_max_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_max_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "circular_centroid_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "circular_resultant_x",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "representative_x",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "representative_y",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "touches_left_edge",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "touches_right_edge",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "touches_top_edge",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "touches_bottom_edge",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "touches_both_x_edges",
+          "types": [
+            "bool"
+          ]
+        }
+      ]
+    },
+    "province_state_memberships": {
+      "rows": 35401,
+      "description": "원문 province 토큰별 state 관계. 반복과 순서 보존; 면적 집계 시에는 중복 제거.",
+      "columns": [
+        {
+          "name": "state_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "province_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "province_token",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "membership_order",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "province_to_states": {
+      "rows": 44542,
+      "description": "HEX별 state 역매핑. 복수 소속을 배열로 보존; state가 없으면 빈 배열.",
+      "columns": [
+        {
+          "name": "province_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_ids",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_keys",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_record_ids",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "map_present",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "assignment_status",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "state_hubs": {
+      "rows": 9770,
+      "description": "모든 state × city/port/farm/mine/wood. 미지정·빈 문자열·HEX 구분 및 허브 명칭과 위치.",
+      "columns": [
+        {
+          "name": "state_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "hub_type",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "province_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "raw_value",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "value_status",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "in_declared_state",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localization_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "map_present",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "centroid_x",
+          "types": []
+        },
+        {
+          "name": "centroid_y",
+          "types": []
+        },
+        {
+          "name": "centroid_x_norm",
+          "types": []
+        },
+        {
+          "name": "centroid_y_norm",
+          "types": []
+        },
+        {
+          "name": "actual_state_keys",
+          "types": [
+            "list"
+          ]
+        }
+      ]
+    },
+    "state_traits_memberships": {
+      "rows": 252,
+      "description": "state와 trait 식별자의 관계.",
+      "columns": [
+        {
+          "name": "state_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "trait_key",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "state_resources": {
+      "rows": 2958,
+      "description": "경작 가능 자원과 capped/resource 자원 블록. 경작지 총량은 states.arable_land.",
+      "columns": [
+        {
+          "name": "state_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "resource_kind",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "resource_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "amount",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "raw_value",
+          "types": [
+            "int",
+            "str"
+          ]
+        }
+      ]
+    },
+    "strategic_regions": {
+      "rows": 13,
+      "description": "전략지역, 명칭, 수도 province, 원본 map_color, state 목록 및 합집합 지리.",
+      "columns": [
+        {
+          "name": "region_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "region_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "capital_province_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "map_color_raw",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "state_keys",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_token_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "pixel_area",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "area_fraction",
+          "types": [
+            "float",
+            "int"
+          ]
+        },
+        {
+          "name": "centroid_x",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_y",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "centroid_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_min_x",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_min_y",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_max_x",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_max_y",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "bbox_min_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_min_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_max_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "bbox_max_y_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "circular_centroid_x_norm",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "circular_resultant_x",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "defined_state_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "missing_state_keys",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "province_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "capital_on_map",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "capital_in_declared_region",
+          "types": [
+            "bool"
+          ]
+        }
+      ]
+    },
+    "strategic_region_states": {
+      "rows": 216,
+      "description": "전략지역의 원문 state 관계. 반복·미정의 state도 보존.",
+      "columns": [
+        {
+          "name": "region_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "region_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_ids",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_record_ids",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_defined",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "membership_order",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "province_adjacency": {
+      "rows": 131898,
+      "description": "4방향 픽셀 변 공유 관계. wrap_x=yes에 따라 좌우 경계 연결 포함. 게임 이동 가능성 아님.",
+      "columns": [
+        {
+          "name": "province_hex_a",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "province_hex_b",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "shared_pixel_edges",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "seam_pixel_edges",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "state_adjacency": {
+      "rows": 3999,
+      "description": "양쪽 province의 state가 각각 유일할 때만 집계한 state 공유 경계.",
+      "columns": [
+        {
+          "name": "state_record_id_a",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_key_a",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id_a",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_record_id_b",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_key_b",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id_b",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "shared_pixel_edges",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "seam_pixel_edges",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "province_height_raw": {
+      "rows": 44522,
+      "description": "각 province에 겹치는 16-bit 원본 높이맵 샘플의 수·합·최소·최대·평균. 미터 단위 아님.",
+      "columns": [
+        {
+          "name": "province_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "height_sample_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "height_raw_sum",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "height_raw_min",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "height_raw_max",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "height_raw_mean",
+          "types": [
+            "float"
+          ]
+        }
+      ]
+    },
+    "state_height_raw": {
+      "rows": 1954,
+      "description": "state province 합집합의 16-bit 높이맵 원시 통계. 빈 state는 평균·최소·최대 null.",
+      "columns": [
+        {
+          "name": "state_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "height_sample_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "height_raw_sum",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "height_raw_min",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "height_raw_max",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "height_raw_mean",
+          "types": [
+            "float"
+          ]
+        }
+      ]
+    },
+    "province_river_palette_counts": {
+      "rows": 57636,
+      "description": "province별 rivers.png 팔레트 인덱스 픽셀 수. 인덱스 의미는 추정하지 않음.",
+      "columns": [
+        {
+          "name": "province_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "palette_index",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "pixel_count",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "river_palette": {
+      "rows": 7,
+      "description": "강 지도에서 실제 사용한 인덱스와 RGB, 전체 픽셀 수.",
+      "columns": [
+        {
+          "name": "palette_index",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "rgb_r",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "rgb_g",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "rgb_b",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "map_pixel_count",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "map_object_instances": {
+      "rows": 5,
+      "description": "원본 지도 객체/허브 배치 좌표. 게임의 x/y/z 원본 좌표이며 PNG 좌표 변환·state 연결은 확정하지 않음.",
+      "columns": [
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "object_type",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "object_name",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "instance_index",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "instance_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "position_raw",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "x_raw",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "y_raw",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "z_raw",
+          "types": [
+            "float"
+          ]
+        },
+        {
+          "name": "rotation_raw",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "scale_raw",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_keys_with_same_numeric_id",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "state_match_status",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        }
+      ]
+    },
+    "map_object_groups": {
+      "rows": 99,
+      "description": "선택한 지도 객체 그룹과 인스턴스 수. 자동 생성 식생 배치 폴더는 제외.",
+      "columns": [
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "object_type",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "entity",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "layer",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "declared_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "instance_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        }
+      ]
+    },
+    "map_editor_completion": {
+      "rows": 46786,
+      "description": "편집기 완료 표시 원문. category 0의 숫자→RGB HEX는 값의 일치로 추론. category 1 숫자는 state 연결 미확인. 게임 활성 여부나 완성도 보증 아님.",
+      "columns": [
+        {
+          "name": "editor_category",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "raw_identifier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "completed_raw",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "province_hex_candidate",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "province_hex_on_map",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "state_key_candidate",
+          "types": []
+        },
+        {
+          "name": "state_record_ids",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "interpretation",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "country_definitions": {
+      "rows": 28,
+      "description": "country_definitions 식별자, 로컬라이즈 이름과 모든 원본 필드.",
+      "columns": [
+        {
+          "name": "identifier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "color_raw",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "country_tag",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "country_type",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "tier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "capital_state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "culture_keys",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "religion_key",
+          "types": []
+        },
+        {
+          "name": "definition_comment",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "cultures": {
+      "rows": 6,
+      "description": "cultures 식별자, 로컬라이즈 이름과 모든 원본 필드.",
+      "columns": [
+        {
+          "name": "identifier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "color_raw",
+          "types": [
+            "dict",
+            "list"
+          ]
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "religion_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "traits",
+          "types": [
+            "list"
+          ]
+        }
+      ]
+    },
+    "religions": {
+      "rows": 2,
+      "description": "religions 식별자, 로컬라이즈 이름과 모든 원본 필드.",
+      "columns": [
+        {
+          "name": "identifier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "color_raw",
+          "types": [
+            "list"
+          ]
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "religion_key",
+          "types": []
+        },
+        {
+          "name": "traits",
+          "types": [
+            "list"
+          ]
+        }
+      ]
+    },
+    "state_traits": {
+      "rows": 9,
+      "description": "state_traits 식별자, 로컬라이즈 이름과 모든 원본 필드.",
+      "columns": [
+        {
+          "name": "identifier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "color_raw",
+          "types": []
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        }
+      ]
+    },
+    "discrimination_traits": {
+      "rows": 2,
+      "description": "discrimination_traits 식별자, 로컬라이즈 이름과 모든 원본 필드.",
+      "columns": [
+        {
+          "name": "identifier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "color_raw",
+          "types": []
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        }
+      ]
+    },
+    "terrain": {
+      "rows": 25,
+      "description": "terrain 식별자, 로컬라이즈 이름과 모든 원본 필드.",
+      "columns": [
+        {
+          "name": "identifier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_english",
+          "types": []
+        },
+        {
+          "name": "name_korean",
+          "types": []
+        },
+        {
+          "name": "name_key_derived",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_key_derived_is_official",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "color_raw",
+          "types": []
+        },
+        {
+          "name": "raw_fields",
+          "types": [
+            "dict"
+          ]
+        }
+      ]
+    },
+    "country_cultures": {
+      "rows": 29,
+      "description": "국가와 주 문화 식별자의 관계. 영토 소유권 아님.",
+      "columns": [
+        {
+          "name": "country_tag",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "culture_key",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "culture_name_tokens": {
+      "rows": 769,
+      "description": "문화 정의의 인명·성명 토큰과 순서.",
+      "columns": [
+        {
+          "name": "culture_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_group",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_token",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "sequence",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "localized_names",
+          "types": [
+            "dict"
+          ]
+        }
+      ]
+    },
+    "geographic_identifier_references": {
+      "rows": 250,
+      "description": "보존한 스크립트의 state/country/culture 식별자 참조와 원문 위치.",
+      "columns": [
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "field_path",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "identifier_type",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "identifier",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "raw_token",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "localization_all": {
+      "rows": 5974,
+      "description": "모든 확보한 localization 문장. 중복 키와 원문 파일·줄 보존.",
+      "columns": [
+        {
+          "name": "localization_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "language",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "version",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "value",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "localization_geography": {
+      "rows": 4853,
+      "description": "state·hub·region 및 식별자 명칭, 정의 매칭과 정적 별칭 해석.",
+      "columns": [
+        {
+          "name": "localization_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "language",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "version",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "value",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "entity_type",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "matched_definition",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "resolved_value",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "localization_unmatched_geography": {
+      "rows": 2834,
+      "description": "명칭은 있으나 확보한 정의와 연결되지 않은 지명.",
+      "columns": [
+        {
+          "name": "localization_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "language",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "version",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "value",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "entity_type",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "matched_definition",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "resolved_value",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "province_terrain_overrides": {
+      "rows": 9,
+      "description": "province_terrains.txt의 명시적인 지형만 추출; 다른 지역의 지형은 추정하지 않음.",
+      "columns": [
+        {
+          "name": "province_hex",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "terrain_key",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "map_settings": {
+      "rows": 7,
+      "description": "default.map 설정. sea_starts/lakes 원문 토큰 및 wrap_x.",
+      "columns": [
+        {
+          "name": "key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "value",
+          "types": [
+            "list",
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "special_adjacencies": {
+      "rows": 0,
+      "description": "원본 특수 이동 연결. 이번 원본은 헤더만 있고 데이터 행 없음.",
+      "columns": [
+        {
+          "name": "From",
+          "types": []
+        },
+        {
+          "name": "To",
+          "types": []
+        },
+        {
+          "name": "Type",
+          "types": []
+        },
+        {
+          "name": "Through",
+          "types": []
+        },
+        {
+          "name": "start_x",
+          "types": []
+        },
+        {
+          "name": "start_y",
+          "types": []
+        },
+        {
+          "name": "stop_x",
+          "types": []
+        },
+        {
+          "name": "stop_y",
+          "types": []
+        },
+        {
+          "name": "adjacency_rule_name",
+          "types": []
+        },
+        {
+          "name": "Comment",
+          "types": []
+        }
+      ]
+    },
+    "validation_issues": {
+      "rows": 45,
+      "description": "원본 결손·중복·참조 오류. 자동 수정하지 않음.",
+      "columns": [
+        {
+          "name": "kind",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "entity",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "detail",
+          "types": [
+            "dict",
+            "list",
+            "str"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "line",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "empty_or_unmapped_states": {
+      "rows": 560,
+      "description": "빈 state, 지도에서 전혀 찾지 못한 state, 부분적으로만 찾은 state.",
+      "columns": [
+        {
+          "name": "state_record_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "state_id",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "state_key",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "name_korean",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "province_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "present_province_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "missing_province_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "geometry_status",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "source_line",
+          "types": [
+            "int"
+          ]
+        }
+      ]
+    },
+    "source_files": {
+      "rows": 98,
+      "description": "Drive 출처, 수정 시각, 다운로드 길이와 SHA-256.",
+      "columns": [
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "drive_file_id",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "drive_url",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "mime_type",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "drive_size_bytes",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "modified_time",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "downloaded",
+          "types": [
+            "bool"
+          ]
+        },
+        {
+          "name": "local_size_bytes",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "sha256",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "exclusion_reason",
+          "types": [
+            "str"
+          ]
+        }
+      ]
+    },
+    "inspected_history_and_localization_folders": {
+      "rows": 15,
+      "description": "하위 폴더 직접 조회 결과. history/states,pops,buildings 등의 빈 상태 증거.",
+      "columns": [
+        {
+          "name": "folder",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "direct_child_count",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "is_empty",
+          "types": [
+            "bool"
+          ]
+        }
+      ]
+    },
+    "parsed_file_summary": {
+      "rows": 77,
+      "description": "텍스트 정의 파일별 추출 개수와 빈 파일 상태.",
+      "columns": [
+        {
+          "name": "source_file",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "top_level_entries",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "parser_issues",
+          "types": [
+            "int"
+          ]
+        },
+        {
+          "name": "empty_or_comments_only",
+          "types": [
+            "bool"
+          ]
+        }
+      ]
+    },
+    "extraction_summary": {
+      "rows": 34,
+      "description": "전체 개수와 검증 통계.",
+      "columns": [
+        {
+          "name": "metric",
+          "types": [
+            "str"
+          ]
+        },
+        {
+          "name": "value",
+          "types": [
+            "dict",
+            "int",
+            "list",
+            "str"
+          ]
+        }
+      ]
+    }
+  },
+  "json_encoding": "UTF-8",
+  "csv_encoding": "UTF-8 BOM",
+  "csv_arrays_objects": "JSON inside a CSV cell",
+  "nulls": "JSON null; CSV empty cell",
+  "hex_format": "6 uppercase digits without prefix; always read as string",
+  "state_record_id": "state_key@relative_source_file:source_line; protects duplicate keys/IDs",
+  "raw_ast_format": "ordered assignments with key, operator, value, source line; bare-list values retained as arrays; typed rgb/hsv objects retained",
+  "coordinates": {
+    "origin": "top left",
+    "x": "rightward, zero based pixel index",
+    "y": "downward, zero based pixel index",
+    "centroid": "mean pixel indexes, weighted by pixel counts",
+    "centroid_norm": "(centroid_x+0.5)/width and (centroid_y+0.5)/height",
+    "bbox": "integer pixel indexes, max inclusive",
+    "bbox_norm": "min/size and (max+1)/size; edges of occupied pixel cells",
+    "area": "count of pixels; not square kilometres",
+    "circular_centroid_x_norm": "circular mean of 2*pi*(x+0.5)/width; diagnostic for horizontal wrap; low resultant = unstable",
+    "circular_resultant_x": "magnitude of circular mean, from 0 to 1"
+  }
+}

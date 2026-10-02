@@ -1,0 +1,1625 @@
+{
+  "call_id": "C00-READ-003",
+  "checked_at": "2026-10-02 09:36:38 UTC",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs/edit",
+      "properties": {
+        "title": "C00 · 공통 기준·분류·출처 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 1621939270,
+            "title": "IN_사건대상관계",
+            "index": 50,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 103,
+              "columnCount": 10,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 52
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1003228581,
+            "title": "IN_출처레지스트리",
+            "index": 51,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 128,
+              "columnCount": 14,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "문서명"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "문서명"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "문서 종류"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "문서 종류"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "판본"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "판본"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원문 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원문 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "링크"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "링크"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "정본 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "정본 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "작성/수정일"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "작성/수정일"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "비고"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "비고"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "사용 범위"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "사용 범위"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_title"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_title"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_kind"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_kind"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "edition_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "edition_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "original_location"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "original_location"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "url"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "url"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "canon_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "canon_status"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "modified_at_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "modified_at_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "notes"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "notes"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "usage_scope"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "usage_scope"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_namespace"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_namespace"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: string_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "src.001"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "src.001"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=A2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.source_id"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "세계관 설정 가이드; 행성 평면 지도 편집기 편.md"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "세계관 설정 가이드; 행성 평면 지도 편집기 편.md"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=B2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.source_title"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "Markdown"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "Markdown"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=C2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.source_kind"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "2026-09-18 작성본"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "2026-09-18 작성본"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=D2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.edition_raw"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "§2 공통 기준, §4~6 분야별/시간·집계, §9 준비 기준"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "§2 공통 기준, §4~6 분야별/시간·집계, §9 준비 기준"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=E2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.original_location"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "https://drive.google.com/file/d/1vJxgNil8aoZlQD0hUDKE9Hvzn5pztOyw/view?usp=drivesdk"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "https://drive.google.com/file/d/1vJxgNil8aoZlQD0hUDKE9Hvzn5pztOyw/view?usp=drivesdk"
+                      },
+                      "userEnteredFormat": {
+                        "textFormat": {
+                          "link": {
+                            "uri": "https://drive.google.com/file/d/1vJxgNil8aoZlQD0hUDKE9Hvzn5pztOyw/view?usp=drivesdk"
+                          }
+                        }
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=F2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.url"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "검토 필요"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "검토 필요"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=G2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.canon_status"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "2026-09-18"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "2026-09-18"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=H2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.modified_at_raw"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "세계관 사실 정본이 아니라 지도 DB 작성·운영 가이드. 운영규칙의 근거로 사용."
+                      },
+                      "effectiveValue": {
+                        "stringValue": "세계관 사실 정본이 아니라 지도 DB 작성·운영 가이드. 운영규칙의 근거로 사용."
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=I2\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.notes"
+                    },
+                    {},
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "REG-V1"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "REG-V1"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.source_namespace"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.legacy_locator"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                      },
+                      "note": "원문/기술계보 보존 · 정본 채택 아님\n원본 위치: 1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=552935386|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\n전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json#/tables/5/source_evidence/0\n필드: C00.출처레지스트리.source_snapshot_id"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 77
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1327313186,
+            "title": "IN_입력기본값",
+            "index": 52,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 103,
+              "columnCount": 5,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "default_route"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "default_route"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "default_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "default_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: string_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 52
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1399062665,
+            "title": "IN_인구정의",
+            "index": 53,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 203,
+              "columnCount": 9,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · inclusion_scope_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · inclusion_scope_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · registration_basis_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · registration_basis_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · source_standard_revision_ids"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · source_standard_revision_ids"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "definition_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "definition_name"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "population_definition_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "population_definition_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "definition_revision_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "definition_revision_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "inclusion_scope_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "inclusion_scope_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "registration_basis_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "registration_basis_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_standard_revision_ids"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_standard_revision_ids"
+                      },
+                      "note": "자료형: string_array"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 152
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1290973061,
+            "title": "IN_단위정의",
+            "index": 54,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 203,
+              "columnCount": 6,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "units_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "units_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "default_currency_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "default_currency_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "unit_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "unit_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: string_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 152
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1068408005,
+            "title": "IN_기년대응",
+            "index": 55,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 203,
+              "columnCount": 15,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · from_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · from_era"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · from_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · from_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · to_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · to_era"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · to_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · to_year"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · mapping_type"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · mapping_type"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · approval_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · approval_status"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · era_edition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · era_edition"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · source_namespace"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · source_namespace"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_era_description"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_era_description"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "current_era_description"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "current_era_description"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "era_mapping_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era_mapping_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "from_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "from_era"
+                      },
+                      "note": "자료형: string"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "from_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "from_year"
+                      },
+                      "note": "자료형: integer"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "to_era"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "to_era"
+                      },
+                      "note": "자료형: string"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "to_year"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "to_year"
+                      },
+                      "note": "자료형: integer"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "mapping_type"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "mapping_type"
+                      },
+                      "note": "자료형: string"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "approval_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "approval_status"
+                      },
+                      "note": "자료형: string"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "era_edition"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "era_edition"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_namespace"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_namespace"
+                      },
+                      "note": "자료형: string_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 152
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1274119250,
+            "title": "IN_계산정책",
+            "index": 56,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 203,
+              "columnCount": 9,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "selection_rule_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "selection_rule_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "coverage_rule_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "coverage_rule_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "missing_period_rule_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "missing_period_rule_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "ratio_storage_rule_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "ratio_storage_rule_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "policy_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "policy_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "policy_revision_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "policy_revision_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: string_nullable"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "startRow": 3
+            },
+            {
+              "startRow": 152
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 1172720049,
+            "title": "IN_시간정책",
+            "index": 57,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 203,
+              "columnCount": 13,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 1,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "값"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "값"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "행번호가 아닌 고정 식별자; 기존 값이 없으면 이관대응에 고정 발급 기록"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 위치"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 위치"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "원본 스냅샷 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "설정 상태"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "설정 상태"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · policy_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · policy_name"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · policy_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · policy_raw"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "출처 ID"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "출처 ID"
+                      }
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "항목 · source_namespace"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "항목 · source_namespace"
+                      },
+                      "note": "한글 의미 확정 전 원문 표기 보존. PH1 명세의 기술 필드와 동일하며 데이터값/설정은 생성하지 않음."
+                    }
+                  ]
+                },
+                {
+                  "values": [
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "annual_boundary_rule_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "annual_boundary_rule_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "unknown_end_rule_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "unknown_end_rule_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "exact_boundary_rule_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "exact_boundary_rule_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "annual_point_difference_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "annual_point_difference_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "policy_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "policy_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "policy_revision_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "policy_revision_id"
+                      },
+                      "note": "자료형: string / 필수키 또는 필수 필드"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "legacy_locator"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_snapshot_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "setting_status"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "policy_name"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "policy_name"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "policy_raw"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "policy_raw"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_id"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_id"
+                      },
+                      "note": "자료형: string_nullable"
+                    },
+                    {
+                      "userEnteredValue": {
+                        "stringValue": "source_namespace"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "source_namespace"
+                      },
+                      "note": "자료형: string_nullable"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

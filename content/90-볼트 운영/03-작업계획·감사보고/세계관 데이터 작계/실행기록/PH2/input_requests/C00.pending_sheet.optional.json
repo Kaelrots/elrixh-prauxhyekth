@@ -1,0 +1,4780 @@
+{
+  "status": "OPTIONAL_PREPARED_NOT_SENT",
+  "spreadsheet_id": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+  "planned_sheet_id": 1235509559,
+  "planned_title": "09_운영결정대기",
+  "precondition": "Live metadata must show this title absent and planned sheetId unused. If already present, reuse after header/data comparison instead of addSheet. This is a work log, not another input source.",
+  "body": {
+    "requests": [
+      {
+        "addSheet": {
+          "properties": {
+            "sheetId": 1235509559,
+            "title": "09_운영결정대기",
+            "gridProperties": {
+              "rowCount": 102,
+              "columnCount": 14,
+              "frozenRowCount": 3
+            }
+          }
+        }
+      },
+      {
+        "updateCells": {
+          "range": {
+            "sheetId": 1235509559,
+            "startRowIndex": 0,
+            "endRowIndex": 1,
+            "startColumnIndex": 0,
+            "endColumnIndex": 1
+          },
+          "rows": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "PH2 운영 결정대기 — 원문·판본 보존 / 정본 채택 아님"
+                  }
+                }
+              ]
+            }
+          ],
+          "fields": "userEnteredValue"
+        }
+      },
+      {
+        "updateCells": {
+          "range": {
+            "sheetId": 1235509559,
+            "startRowIndex": 1,
+            "endRowIndex": 2,
+            "startColumnIndex": 0,
+            "endColumnIndex": 1
+          },
+          "rows": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌 8행 + 역법 대응 5행을 포함. 결정 전 원문 덮어쓰기·값 추정 금지. 전체 계보: C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\pending.json"
+                  }
+                }
+              ]
+            }
+          ],
+          "fields": "userEnteredValue"
+        }
+      },
+      {
+        "updateCells": {
+          "range": {
+            "sheetId": 1235509559,
+            "startRowIndex": 2,
+            "endRowIndex": 65,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "rows": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "대기 ID"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "분야"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "논리표"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "구분"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문 항목"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문 설정 상태"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문 값(JSON)"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "대기 사유"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "작업 상태"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "운영 입력 제외"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원본 위치"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "계보 파일"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "계보 위치"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "다음 조치"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.57d1db56ccfdd7ac5ec7"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "std.map.projection"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "검토 필요"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"standard_id\": \"std.map.projection\", \"domain\": \"지도\", \"item_name\": \"평면지도 투영\", \"value_raw\": \"미발견 — 사용하는 지도 투영법 또는 자체 투영 규칙을 지정해야 함\", \"unit_format\": \"공간 기준\", \"description\": \"면적·거리 계산 전에 필요.\", \"setting_status\": \"검토 필요\", \"source_id\": \"src.001\", \"revision_id\": \"rev.reg.0fedcccc058305f3ec46a550\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=39|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"standard_id\": \"std.map.projection\", \"domain\": \"지도\", \"item_name\": \"평면지도 투영\", \"value_raw\": \"미발견 — 사용하는 지도 투영법 또는 자체 투영 규칙을 지정해야 함\", \"unit_format\": \"공간 기준\", \"description\": \"면적·거리 계산 전에 필요.\", \"setting_status\": \"검토 필요\", \"source_id\": \"src.001\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "MULTIPLE_STANDARD_REVISIONS_PENDING: All members of the original duplicate-standard revision group remain pending; no latest-row adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=39|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/0"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.2db6eba09c01f0650722"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "std.map.wrap_x"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "검토 필요"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"standard_id\": \"std.map.wrap_x\", \"domain\": \"지도\", \"item_name\": \"좌우 연결\", \"value_raw\": \"미발견 — 세계지도 좌우 경계가 연결되는지 결정 필요\", \"unit_format\": \"공간 기준\", \"description\": \"경계·인접성·경로 계산에 필요.\", \"setting_status\": \"검토 필요\", \"source_id\": \"src.001\", \"revision_id\": \"rev.reg.7131c32a534f833f29a93d03\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=40|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"standard_id\": \"std.map.wrap_x\", \"domain\": \"지도\", \"item_name\": \"좌우 연결\", \"value_raw\": \"미발견 — 세계지도 좌우 경계가 연결되는지 결정 필요\", \"unit_format\": \"공간 기준\", \"description\": \"경계·인접성·경로 계산에 필요.\", \"setting_status\": \"검토 필요\", \"source_id\": \"src.001\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "MULTIPLE_STANDARD_REVISIONS_PENDING: All members of the original duplicate-standard revision group remain pending; no latest-row adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=40|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.938ed2fd494995c26efa"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "std.map.wrap_y"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "검토 필요"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"standard_id\": \"std.map.wrap_y\", \"domain\": \"지도\", \"item_name\": \"상하/극지 연결\", \"value_raw\": \"미발견 — 상하 경계와 극지 처리 방식 결정 필요\", \"unit_format\": \"공간 기준\", \"description\": \"극지 인접성 계산에 필요.\", \"setting_status\": \"검토 필요\", \"source_id\": \"src.001\", \"revision_id\": \"rev.reg.d5ea4a96d6e748b9a37d18b9\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=41|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"standard_id\": \"std.map.wrap_y\", \"domain\": \"지도\", \"item_name\": \"상하/극지 연결\", \"value_raw\": \"미발견 — 상하 경계와 극지 처리 방식 결정 필요\", \"unit_format\": \"공간 기준\", \"description\": \"극지 인접성 계산에 필요.\", \"setting_status\": \"검토 필요\", \"source_id\": \"src.001\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "MULTIPLE_STANDARD_REVISIONS_PENDING: All members of the original duplicate-standard revision group remain pending; no latest-row adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=41|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/2"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.59adbe000bd886ec5f79"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "std.map.scale"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "검토 필요"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"standard_id\": \"std.map.scale\", \"domain\": \"지도\", \"item_name\": \"실제 축척\", \"value_raw\": \"미발견 — 픽셀↔실제 거리/면적 변환에 사용할 검증된 축척 필요\", \"unit_format\": \"축척\", \"description\": \"실제 면적과 인구밀도를 계산할 때 필요.\", \"setting_status\": \"검토 필요\", \"source_id\": \"src.001\", \"revision_id\": \"rev.reg.eae8d2c99e0a5ae05e9a0c13\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=42|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"standard_id\": \"std.map.scale\", \"domain\": \"지도\", \"item_name\": \"실제 축척\", \"value_raw\": \"미발견 — 픽셀↔실제 거리/면적 변환에 사용할 검증된 축척 필요\", \"unit_format\": \"축척\", \"description\": \"실제 면적과 인구밀도를 계산할 때 필요.\", \"setting_status\": \"검토 필요\", \"source_id\": \"src.001\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "MULTIPLE_STANDARD_REVISIONS_PENDING: All members of the original duplicate-standard revision group remain pending; no latest-row adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=42|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/3"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.7b4366ed922df962467d"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "std.map.projection"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "초안"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"standard_id\": \"std.map.projection\", \"domain\": \"지도\", \"item_name\": \"편집용 전세계 투영\", \"value_raw\": \"Equirectangular / Plate Carrée 계열을 기본 편집 투영으로 사용\", \"unit_format\": \"projected x/y\", \"description\": \"전세계 직사각형 지도 편집에는 단순하고 seam·픽셀 변환이 예측 가능하다. 단, 면적·거리의 정밀 계산은 이 투영의 픽셀값으로 하지 않는다.\", \"setting_status\": \"초안\", \"source_id\": \"src.018\", \"revision_id\": \"rev.reg.ec44051ae6fb1185a12763c6\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=87|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"standard_id\": \"std.map.projection\", \"domain\": \"지도\", \"item_name\": \"편집용 전세계 투영\", \"value_raw\": \"Equirectangular / Plate Carrée 계열을 기본 편집 투영으로 사용\", \"unit_format\": \"projected x/y\", \"description\": \"전세계 직사각형 지도 편집에는 단순하고 seam·픽셀 변환이 예측 가능하다. 단, 면적·거리의 정밀 계산은 이 투영의 픽셀값으로 하지 않는다.\", \"setting_status\": \"초안\", \"source_id\": \"src.018\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "MULTIPLE_STANDARD_REVISIONS_PENDING: All members of the original duplicate-standard revision group remain pending; no latest-row adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=87|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/4"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.8eda4c673bb5a99ce20d"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "std.map.wrap_x"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "초안"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"standard_id\": \"std.map.wrap_x\", \"domain\": \"지도\", \"item_name\": \"좌우 연결\", \"value_raw\": \"true — ±180°에서 수평 wrap\", \"unit_format\": \"boolean\", \"description\": \"전세계 경도축은 순환한다. seam을 넘는 객체는 렌더러에서 wrap 처리하고 표준 교환 파일에서는 필요 시 MultiGeometry로 절단한다.\", \"setting_status\": \"초안\", \"source_id\": \"src.017\", \"revision_id\": \"rev.reg.caded9fe2c1b2ab4e74ea76e\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=89|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"standard_id\": \"std.map.wrap_x\", \"domain\": \"지도\", \"item_name\": \"좌우 연결\", \"value_raw\": \"true — ±180°에서 수평 wrap\", \"unit_format\": \"boolean\", \"description\": \"전세계 경도축은 순환한다. seam을 넘는 객체는 렌더러에서 wrap 처리하고 표준 교환 파일에서는 필요 시 MultiGeometry로 절단한다.\", \"setting_status\": \"초안\", \"source_id\": \"src.017\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "MULTIPLE_STANDARD_REVISIONS_PENDING: All members of the original duplicate-standard revision group remain pending; no latest-row adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=89|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/5"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.9986e1b16dcca65d6209"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "std.map.wrap_y"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "초안"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"standard_id\": \"std.map.wrap_y\", \"domain\": \"지도\", \"item_name\": \"상하/극지 연결\", \"value_raw\": \"false — 위·아래는 극점 경계\", \"unit_format\": \"boolean\", \"description\": \"위도는 -90°~+90°로 제한하고 Y축을 순환시키지 않는다.\", \"setting_status\": \"초안\", \"source_id\": \"src.017\", \"revision_id\": \"rev.reg.aaee766d4d6a53975ac5983e\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=90|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"standard_id\": \"std.map.wrap_y\", \"domain\": \"지도\", \"item_name\": \"상하/극지 연결\", \"value_raw\": \"false — 위·아래는 극점 경계\", \"unit_format\": \"boolean\", \"description\": \"위도는 -90°~+90°로 제한하고 Y축을 순환시키지 않는다.\", \"setting_status\": \"초안\", \"source_id\": \"src.017\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "MULTIPLE_STANDARD_REVISIONS_PENDING: All members of the original duplicate-standard revision group remain pending; no latest-row adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=90|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/6"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.72b13561872844fb0bd9"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기준 판본 충돌"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "std.map.scale"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "초안"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"standard_id\": \"std.map.scale\", \"domain\": \"지도\", \"item_name\": \"픽셀↔공간 축척\", \"value_raw\": \"고정 px/km 값을 정본으로 두지 않고 CRS extent ÷ raster dimensions로 파생\", \"unit_format\": \"derived\", \"description\": \"20k→40k처럼 해상도를 바꿔도 세계 좌표는 유지한다. 실제 거리·면적은 CRS/타원체에서 계산하고 픽셀은 표시 해상도로만 취급한다.\", \"setting_status\": \"초안\", \"source_id\": \"src.022\", \"revision_id\": \"rev.reg.d4781ec53aae9b9081724cf9\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=92|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"standard_id\": \"std.map.scale\", \"domain\": \"지도\", \"item_name\": \"픽셀↔공간 축척\", \"value_raw\": \"고정 px/km 값을 정본으로 두지 않고 CRS extent ÷ raster dimensions로 파생\", \"unit_format\": \"derived\", \"description\": \"20k→40k처럼 해상도를 바꿔도 세계 좌표는 유지한다. 실제 거리·면적은 CRS/타원체에서 계산하고 픽셀은 표시 해상도로만 취급한다.\", \"setting_status\": \"초안\", \"source_id\": \"src.022\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "MULTIPLE_STANDARD_REVISIONS_PENDING: All members of the original duplicate-standard revision group remain pending; no latest-row adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=92|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/7"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.29ee87bd5c4e21b3bd34"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "planet_scope_id"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"planet_scope_id\", \"description_raw\": \"기존 01-지역 마스터의 행성 ID\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"planet_scope_id\", \"description_raw\": \"기존 01-지역 마스터의 행성 ID\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/9"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.b6d02558c5cb085fa0c3"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "R10"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "R10.분야설정"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"default_planet_id\": \"planet.1\"}, \"source_literals\": {\"default_planet_id\": \"planet.1\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['config_id']; REQUIRED_FIELD_MISSING: ['config_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/10"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.e5d1209076c25cd02b21"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기본 루트"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"기본 루트\", \"description_raw\": \"새 행 입력 시 지정. A/B루트와 혼합하지 않음\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"기본 루트\", \"description_raw\": \"새 행 입력 시 지정. A/B루트와 혼합하지 않음\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/11"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.2ae44c28293a61dbaa37"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.입력기본값"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"default_route\": \"구형 미분기\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"default_route\": \"구형 미분기\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['default_id']; REQUIRED_FIELD_MISSING: ['default_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/12"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.227c2d1c7ce820436d56"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "집계 층위"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"집계 층위\", \"description_raw\": \"기본 집계는 행성 직속 대륙권 22개. 복수 소속 전략지역권 중복을 피함\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=4|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"집계 층위\", \"description_raw\": \"기본 집계는 행성 직속 대륙권 22개. 복수 소속 전략지역권 중복을 피함\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=4|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/13"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.d29c78e215648c3baae4"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "공식 인구 정의"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"공식 인구 정의\", \"description_raw\": \"현행 00 공통 기준의 공식 인구\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=5|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"공식 인구 정의\", \"description_raw\": \"현행 00 공통 기준의 공식 인구\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=5|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/15"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.182932e888e2bfe35ad9"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.인구정의"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"definition_name\": \"등록 인구\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=5|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"definition_name\": \"등록 인구\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['population_definition_id', 'definition_revision_id']; REQUIRED_FIELD_MISSING: ['population_definition_id', 'definition_revision_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=5|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/16"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.beef80a7ad3d3b66417d"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "단위"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"단위\", \"description_raw\": \"기존 SI·통화 기준 유지\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=6|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"단위\", \"description_raw\": \"기존 SI·통화 기준 유지\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=6|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/17"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.ffb164743f8d3acba725"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.단위정의"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"units_raw\": \"명 / km² / 엘하스\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=6|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"units_raw\": \"명 / km² / 엘하스\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['unit_id']; REQUIRED_FIELD_MISSING: ['unit_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=6|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/18"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.23a6f60f5e180020c37b"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "구형 제2기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"구형 제2기\", \"description_raw\": \"구형 3000년=제3기 0년. 일괄 연도 변환 없음\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=7|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"구형 제2기\", \"description_raw\": \"구형 3000년=제3기 0년. 일괄 연도 변환 없음\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=7|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/19"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.a56f36615c14d2904475"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기년대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"legacy_era_description\": \"별도 기년으로 보존\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=7|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"legacy_era_description\": \"별도 기년으로 보존\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['era_mapping_id']; REQUIRED_FIELD_MISSING: ['era_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=7|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/20"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.aaa9038b06367f13680f"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "현행 제2기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"현행 제2기\", \"description_raw\": \"제3기 연도는 변경 없음\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=8|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"현행 제2기\", \"description_raw\": \"제3기 연도는 변경 없음\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=8|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/21"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.46bd34258a4df64c522f"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기년대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"current_era_description\": \"2000년=제3기 0년\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=8|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"current_era_description\": \"2000년=제3기 0년\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['era_mapping_id']; REQUIRED_FIELD_MISSING: ['era_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=8|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/22"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.fecdaaaef84726200576"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "채택 규칙"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"채택 규칙\", \"description_raw\": \"부분합은 채택하지 않음. 직접설정 0은 유효값\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=9|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"채택 규칙\", \"description_raw\": \"부분합은 채택하지 않음. 직접설정 0은 유효값\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=9|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/23"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.34c4778e9417cc711ffa"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.계산정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"selection_rule_raw\": \"직접설정 또는 완전 지역합산\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=9|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"selection_rule_raw\": \"직접설정 또는 완전 지역합산\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['policy_id', 'policy_revision_id']; REQUIRED_FIELD_MISSING: ['policy_id', 'policy_revision_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=9|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/24"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.b3007a342aae555304ef"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "합산 완료"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"합산 완료\", \"description_raw\": \"동일 루트·기년·연도·단위·정의·통화·기준가격만 합산\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=10|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"합산 완료\", \"description_raw\": \"동일 루트·기년·연도·단위·정의·통화·기준가격만 합산\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=10|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/25"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.136a572a9a17a37fc796"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.계산정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"coverage_rule_raw\": \"유효 행 수=고유 지역 수=대상 지역 수\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=10|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"coverage_rule_raw\": \"유효 행 수=고유 지역 수=대상 지역 수\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['policy_id', 'policy_revision_id']; REQUIRED_FIELD_MISSING: ['policy_id', 'policy_revision_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=10|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/26"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.5aa62704a61f23fcd7d9"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "자료 입력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"자료 입력\", \"description_raw\": \"기존 20 인구·40 경제 지역값은 보존. 새 구조화 연간 입력은 이 탭 사용\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=11|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"자료 입력\", \"description_raw\": \"기존 20 인구·40 경제 지역값은 보존. 새 구조화 연간 입력은 이 탭 사용\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=11|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/27"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.b449de6af4db2a0d6bc3"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "지역 원본"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"지역 원본\", \"description_raw\": \"지역 ID·명칭·상하관계 원본 유지\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=12|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"지역 원본\", \"description_raw\": \"지역 ID·명칭·상하관계 원본 유지\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=12|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/29"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.766f5da2bf79371148aa"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "지역 관계"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"지역 관계\", \"description_raw\": \"기존 두 상위 지역 ID를 펼친 자동 조회\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=13|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"지역 관계\", \"description_raw\": \"기존 두 상위 지역 ID를 펼친 자동 조회\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=13|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/31"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.3b29ce5f2975180eb8d5"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "환경 원본"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"환경 원본\", \"description_raw\": \"14_지역_자연환경은 구조화 기록 확장용\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=14|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"환경 원본\", \"description_raw\": \"14_지역_자연환경은 구조화 기록 확장용\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=14|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/33"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.0dc1aaaa14e469300b9d"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "정치 관계 원본"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"정치 관계 원본\", \"description_raw\": \"15_지역_소속이력은 기년·정수연도 확장용\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=15|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"정치 관계 원본\", \"description_raw\": \"15_지역_소속이력은 기년·정수연도 확장용\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=15|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/35"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.c12706780ee19b417336"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "출처 원본"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"출처 원본\", \"description_raw\": \"src.025 천체, src.026 최종 역법을 그대로 참조\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=16|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"출처 원본\", \"description_raw\": \"src.025 천체, src.026 최종 역법을 그대로 참조\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=16|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/37"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.a5dd1dc86b250655b290"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "연도 경계"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"연도 경계\", \"description_raw\": \"기존 00 공통 기준의 상세 시간 [시작,종료) 초안은 유지\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=17|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"연도 경계\", \"description_raw\": \"기존 00 공통 기준의 상세 시간 [시작,종료) 초안은 유지\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=17|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/39"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.b328db2319d4b075c505"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.시간정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"annual_boundary_rule_raw\": \"신규 연간 임기·소속은 양끝 포함\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=17|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"annual_boundary_rule_raw\": \"신규 연간 임기·소속은 양끝 포함\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['policy_id', 'policy_revision_id']; REQUIRED_FIELD_MISSING: ['policy_id', 'policy_revision_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=17|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/40"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.3282c7837b5c0262ae49"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "입력 용량"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"입력 용량\", \"description_raw\": \"준비된 1000개 입력행 사용. 추가 확장 시 수식 참조 범위 확인\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=18|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"입력 용량\", \"description_raw\": \"준비된 1000개 입력행 사용. 추가 확장 시 수식 참조 범위 확인\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=18|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/41"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.41bead8d18e94fe8d53f"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.범위레지스트리"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"legacy_input_capacity\": 1000, \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=18|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"legacy_input_capacity\": \"1000.0\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['dataset_id']; REQUIRED_FIELD_MISSING: ['dataset_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=18|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/42"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.47f63231173560443b02"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "GDP 분류"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"GDP 분류\", \"description_raw\": \"구형 GDP를 실질값으로 간주하지 않음\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=19|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"GDP 분류\", \"description_raw\": \"구형 GDP를 실질값으로 간주하지 않음\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=19|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/43"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.5eff4951e23841e842f7"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.지표사전"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"gdp_classification_rule\": \"명목·실질·미분류를 분리\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=19|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"gdp_classification_rule\": \"명목·실질·미분류를 분리\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "UNRESOLVED_PRIMARY_KEY: ['metric_id']; REQUIRED_FIELD_MISSING: ['metric_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=19|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/44"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.187d93ad617d380910f1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.설정출처대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "연방 국가 데이터"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"source_key\": \"연방 국가 데이터\", \"description_raw\": \"행성 자료와 연결된 국가별 원자료·자동 연표\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=20|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\"}, \"source_literals\": {\"source_key\": \"연방 국가 데이터\", \"description_raw\": \"행성 자료와 연결된 국가별 원자료·자동 연표\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NON_INPUT_DESTINATION: Archive/configuration/view material is preserved; this manifest includes only input tables; UNRESOLVED_PRIMARY_KEY: ['metadata_mapping_id']; REQUIRED_FIELD_MISSING: ['metadata_mapping_id']"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=20|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/45"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.712e0b212c90c4cc9399"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "역법 원문 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "civil_day"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "확정"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"civil_day\", \"item_name\": \"민간·행정 1일\", \"value_numeric\": 86400, \"unit_format\": \"s\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\", \"notes\": \"정확히 24시간\", \"revision_id\": \"rev.reg.9a968266cc8efc9a182d9b74\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=18|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"civil_day\", \"item_name\": \"민간·행정 1일\", \"value_numeric\": \"86400.0\", \"unit_format\": \"s\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\", \"notes\": \"정확히 24시간\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "EXPLICIT_SEMANTIC_REVIEW: existing C00 standard_id/revision correspondence; no invented standard_id and no adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=18|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/46"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.14df3ff5f981eaab09a0"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "역법 원문 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "civil_year_days"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "확정"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"civil_year_days\", \"item_name\": \"1년 날짜 수\", \"value_numeric\": 1440, \"unit_format\": \"일\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\", \"notes\": \"윤년 없음\", \"revision_id\": \"rev.reg.d49600b267858b95e6b165ea\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=19|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"civil_year_days\", \"item_name\": \"1년 날짜 수\", \"value_numeric\": \"1440.0\", \"unit_format\": \"일\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\", \"notes\": \"윤년 없음\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "EXPLICIT_SEMANTIC_REVIEW: existing C00 standard_id/revision correspondence; no invented standard_id and no adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=19|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/47"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.588deb6cfc2a3ac021e2"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "역법 원문 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "year_correction"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "확정"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"year_correction\", \"item_name\": \"연간 역외 보정\", \"value_numeric\": 432, \"unit_format\": \"s\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\", \"notes\": \"24월 30일 종료 후 삽입\", \"revision_id\": \"rev.reg.d2004dbb2db7d81938b58ffc\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=20|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"year_correction\", \"item_name\": \"연간 역외 보정\", \"value_numeric\": \"432.0\", \"unit_format\": \"s\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\", \"notes\": \"24월 30일 종료 후 삽입\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "EXPLICIT_SEMANTIC_REVIEW: existing C00 standard_id/revision correspondence; no invented standard_id and no adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=20|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/48"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.f93056cb4887007ff85e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "역법 원문 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "months_per_year"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "확정"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"months_per_year\", \"item_name\": \"1년 개월 수\", \"value_numeric\": 48, \"unit_format\": \"개월\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\", \"revision_id\": \"rev.reg.20771759a2cc642b6dfb02be\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=21|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"months_per_year\", \"item_name\": \"1년 개월 수\", \"value_numeric\": \"48.0\", \"unit_format\": \"개월\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "EXPLICIT_SEMANTIC_REVIEW: existing C00 standard_id/revision correspondence; no invented standard_id and no adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=21|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/49"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.af78a0d5d2fd3c446b10"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기준개정이력"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "역법 원문 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "days_per_month"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "확정"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"days_per_month\", \"item_name\": \"1개월 날짜 수\", \"value_numeric\": 30, \"unit_format\": \"일\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\", \"revision_id\": \"rev.reg.5ae798f197a43b0ecb6df38e\", \"legacy_locator\": \"1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=22|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_snapshot_id\": \"REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e\", \"source_namespace\": \"REG-V1\"}, \"source_literals\": {\"planet_scope_id\": \"planet.1\", \"original_property_id\": \"days_per_month\", \"item_name\": \"1개월 날짜 수\", \"value_numeric\": \"30.0\", \"unit_format\": \"일\", \"generation_method\": \"직접 결정\", \"setting_status\": \"확정\", \"source_id\": \"src.026\", \"original_location\": \"최종 역법\"}, \"source_fragment_raw\": null}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "EXPLICIT_SEMANTIC_REVIEW: existing C00 standard_id/revision correspondence; no invented standard_id and no adoption"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230002|row=22|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/50"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.04ce9ee9b2d48fbb7a84"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.단위정의"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"엘하스\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=9|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/54"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.0b4045853e5e8e33694e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.시간정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"시작·종료연도 포함\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=10|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/55"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.8b52dd0cd0251c129fbc"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.시간정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"기록된 시작연도만 표시\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=11|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/56"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.715eb690ff07d54009d6"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.지표사전"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"명목·실질·미분류 입력란 분리\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=12|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/57"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.11234493d3d0de7fdd6e"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기년대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"구형 제2기 3000년 = 제3기 0년\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=13|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/58"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.a665c5370b9fb94c17a9"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.기년대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"현행 제2기 2000년 = 제3기 0년\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=14|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/59"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.aab67239ef00f0147ac1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.인구정의"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"등록 인구\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=15|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/60"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.f8a109f664bee33bab35"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.계산정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"빈칸\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=21|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/62"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.3284b23a117d1cc631bb"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.역법"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"48개월 × 30일, 1440일 + 432초\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=23|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/64"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.09fc183f9861a33e2d55"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.계산정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"73.45% 또는 0.7345\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=36|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/71"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.a3d327c77eeb5f5c728f"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.계산적합조건"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"통화·인구 정의·가격 기준 확인\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=37|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/72"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.94de4604beebf6297cf8"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.시간정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"시작 포함·정확한 종료일 제외\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=47|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/81"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.551aca26e8a43c1cff53"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.표기정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"한국어 → 엘룬 → 영어·기타\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=54|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/84"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.7389074c6980f70e77b0"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.표기정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"HEX 원본 + 자동 컬러칩\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=55|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/85"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.79b74083cf3f32a14e62"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.시간정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"84~86 연중 이력 / 87~88 특정 일\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=58|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/86"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.c4fff8e29951b08f8d46"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.시간정책"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "필드/키/단일원본 대응 대기"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "NAT-V1:1611835517:B"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"candidate_fields\": {}, \"source_literals\": {}, \"source_fragment_raw\": \"시작 포함 · 정확한 종료일 제외\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "METADATA_OWNERSHIP_AND_KEY_PENDING: 동일 공통기준/정책의 REG·NAT 후보와 대조해 단일원본 확정. 행별 입력 원본을 중복 생성하지 않음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "결정대기 · 미채택"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1mTRKFfCFtiTmuAR6QwrslcBI6Q-wutYzVP_weDAW9uI|gid=1611835517|row=59|NAT-V1:sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending/87"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문·판본 보존 후 대응 결정. 임의 정본 선택/빈 키 채우기 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.b768ba998449419a02ed"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.국가식별목록"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "국가명 단일소유 명세 수정"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "neutral_name"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "\"엘리시움 신성제국 연방\""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "국가명 입력 원본은 N10. C00는 최소 공통 식별자만 입력하며 neutral_name은 공란. 원문은 계보/보존 payload에 유지. C00→N10 import를 만들지 않고 표시명은 H90에서 조회."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "명세 수정 대기 · 원문 보존"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=1659135409|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=C2"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/pending_fields/0"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "REG-V1:1659135409:C의 C00.국가식별목록.neutral_name input 대응을 운영 입력에서 제외하고 원문 보존 대응으로 수정 필요"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.d7d126105adbca2ab94f"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "R10"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "R10.지역관계"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문 상위지역 미참조"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "gal.1"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "{\"relation_id\": \"rel.reg.186f1013ee408c4d7682fbea\"}"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "sec.1의 원문 상위 ID gal.1에 대응하는 지역 실자료 없음. 원문 표시 하르아지엘 은하 보존."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문 입력 보존 · 참조오류"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": false
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=608402244|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=G3"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/tables/9/source_evidence/0"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "기존 근거를 확인하기 전 은하 엔티티/관계 기간 생성 또는 정상조회 채택 금지."
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "pend.ph2.4cf2b4d6c065ad109f72"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C00.코드북"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "REG 드롭다운 선택지 대응"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "setting_status:임시/미명명"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": ""
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "[{\"source_field_id\": \"REG-V1:608402244:O\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}, {\"source_field_id\": \"REG-V1:1659135409:J\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}, {\"source_field_id\": \"REG-V1:1994704254:K\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}, {\"source_field_id\": \"REG-V1:107402225:K\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}, {\"source_field_id\": \"REG-V1:413334864:K\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}, {\"source_field_id\": \"REG-V1:2060259922:L\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}, {\"source_field_id\": \"REG-V1:242559508:G\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}, {\"source_field_id\": \"REG-V1:986639480:I\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}, {\"source_field_id\": \"REG-V1:1685371830:K\", \"target_group\": \"setting_status\", \"options_missing_exact_code\": [\"임시\", \"미명명\"], \"action\": \"Preserve original option spelling; update codebook only after correspondence decision, never normalize silently\"}]"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "REG 9필드의 임시/미명명 선택지는 NAT 코드북 setting_status에 없음. 이번 수용자료에는 두 값 없음."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "선택지 대응 대기 · 임의 추가 안 함"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "boolValue": true
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "REG 원본 드롭다운 메타데이터"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_batch_candidates.json"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "/ownership_checks/5/validation_exact_code_differences"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "원문 선택지와 공통코드 대응 결정. 임시/미명명은 개별 설정 확정 의미로 해석하지 않음."
+                  }
+                }
+              ]
+            }
+          ],
+          "fields": "userEnteredValue"
+        }
+      },
+      {
+        "addTable": {
+          "table": {
+            "name": "V2_WORK_PENDING_PH2_C00",
+            "range": {
+              "sheetId": 1235509559,
+              "startRowIndex": 2,
+              "endRowIndex": 65,
+              "startColumnIndex": 0,
+              "endColumnIndex": 14
+            }
+          }
+        }
+      }
+    ],
+    "includeSpreadsheetInResponse": false
+  },
+  "expected_range": "'09_운영결정대기'!A3:N65",
+  "expected_headers": [
+    "대기 ID",
+    "분야",
+    "논리표",
+    "구분",
+    "원문 항목",
+    "원문 설정 상태",
+    "원문 값(JSON)",
+    "대기 사유",
+    "작업 상태",
+    "운영 입력 제외",
+    "원본 위치",
+    "계보 파일",
+    "계보 위치",
+    "다음 조치"
+  ],
+  "expected_row_count": 62,
+  "expected_values_sha256": "beb6f5a176083a4697028f080059f1c786f38b706edbb8b8ed4a57784da2813d"
+}

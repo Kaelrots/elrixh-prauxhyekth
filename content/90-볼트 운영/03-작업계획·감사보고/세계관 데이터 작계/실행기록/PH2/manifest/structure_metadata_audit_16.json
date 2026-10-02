@@ -1,0 +1,1778 @@
+{
+  "checked_at": "2026-10-02T09:54:01.273022+00:00",
+  "scope": "최종 저장 native metadata 대조; 업무기능/연결/권한/재계산/84시험 통과 아님",
+  "files": [
+    {
+      "file_code": "C00",
+      "status": "partial",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\table_preflight_C00.json",
+      "supplemental_evidence": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_execution\\final_ui_C00.json"
+      ],
+      "known_extra_tabs": [
+        {
+          "sheetId": 1235509559,
+          "title": "09_운영결정대기",
+          "index": 1,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 102,
+            "columnCount": 14,
+            "frozenRowCount": 3
+          }
+        }
+      ],
+      "native_sections_available": true,
+      "native_metadata_epoch": "입력 전 table_preflight; 최신 시트 속성은 final_ui로 별도 확인. 입력 후 native 정보 재조회는 미확인",
+      "unverified_checks": [
+        "입력 후 native table IDs/ranges/types",
+        "입력 후 namedRanges",
+        "입력 후 output warning protections",
+        "입력 후 legacy native table metadata"
+      ],
+      "spreadsheet_id": "1AlKHWRBxGYXORe9gB-dqGCZbVxGLnuhXDburez38Kzs",
+      "total_tabs_observed": 78,
+      "planned_new_tabs_checked": 41,
+      "native_tables_checked": 33,
+      "named_ranges_checked": 53,
+      "legacy_tabs_hidden": 36,
+      "legacy_native_tables_unchanged": 6,
+      "observed_native_tables": [
+        {
+          "name": "V2T_C00_1b4e17e968334f07",
+          "tableId": "1628412927",
+          "range": {
+            "sheetId": 1240558339,
+            "startRowIndex": 2,
+            "endRowIndex": 203,
+            "startColumnIndex": 0,
+            "endColumnIndex": 27
+          },
+          "column_count": 27
+        },
+        {
+          "name": "V2T_C00_b14fe36c81e80f3e",
+          "tableId": "1770024121",
+          "range": {
+            "sheetId": 1275369193,
+            "startRowIndex": 2,
+            "endRowIndex": 178,
+            "startColumnIndex": 0,
+            "endColumnIndex": 5
+          },
+          "column_count": 5
+        },
+        {
+          "name": "V2T_C00_626ff6e85c1b0fd2",
+          "tableId": "1520705432",
+          "range": {
+            "sheetId": 1800416531,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 11
+          },
+          "column_count": 11
+        },
+        {
+          "name": "V2T_C00_588d90067d845bff",
+          "tableId": "1326200502",
+          "range": {
+            "sheetId": 1361086029,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 11
+          },
+          "column_count": 11
+        },
+        {
+          "name": "V2T_C00_7f906d14dcfc3e9c",
+          "tableId": "1897224396",
+          "range": {
+            "sheetId": 1365659835,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          },
+          "column_count": 16
+        },
+        {
+          "name": "V2T_C00_ff45107d89f38efa",
+          "tableId": "1076861421",
+          "range": {
+            "sheetId": 1687189085,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          },
+          "column_count": 16
+        },
+        {
+          "name": "V2T_C00_2d5e18c3c5163330",
+          "tableId": "1467995839",
+          "range": {
+            "sheetId": 1893847316,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          },
+          "column_count": 16
+        },
+        {
+          "name": "V2T_C00_48179edc6d50e045",
+          "tableId": "1686547351",
+          "range": {
+            "sheetId": 1564685225,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 17
+          },
+          "column_count": 17
+        },
+        {
+          "name": "V2T_C00_0b51f1237467ac65",
+          "tableId": "1143584631",
+          "range": {
+            "sheetId": 1577686916,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 12
+          },
+          "column_count": 12
+        },
+        {
+          "name": "V2T_C00_8ecb6a2cf965f6e3",
+          "tableId": "1306724844",
+          "range": {
+            "sheetId": 1118572980,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "column_count": 14
+        },
+        {
+          "name": "V2T_C00_686c91c2beda5525",
+          "tableId": "1544875181",
+          "range": {
+            "sheetId": 1532883984,
+            "startRowIndex": 2,
+            "endRowIndex": 153,
+            "startColumnIndex": 0,
+            "endColumnIndex": 22
+          },
+          "column_count": 22
+        },
+        {
+          "name": "V2T_C00_2299d5531f9bb600",
+          "tableId": "1722432104",
+          "range": {
+            "sheetId": 1276602687,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 30
+          },
+          "column_count": 30
+        },
+        {
+          "name": "V2T_C00_a6812c572af399b5",
+          "tableId": "1534395391",
+          "range": {
+            "sheetId": 1621939270,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 10
+          },
+          "column_count": 10
+        },
+        {
+          "name": "V2T_C00_cd09fa334e905f38",
+          "tableId": "1344436859",
+          "range": {
+            "sheetId": 1003228581,
+            "startRowIndex": 2,
+            "endRowIndex": 78,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "column_count": 14
+        },
+        {
+          "name": "V2T_C00_c5ab909a8ee63e48",
+          "tableId": "1714186377",
+          "range": {
+            "sheetId": 1327313186,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 5
+          },
+          "column_count": 5
+        },
+        {
+          "name": "V2T_C00_b864809ec837e03a",
+          "tableId": "1289485854",
+          "range": {
+            "sheetId": 1399062665,
+            "startRowIndex": 2,
+            "endRowIndex": 153,
+            "startColumnIndex": 0,
+            "endColumnIndex": 9
+          },
+          "column_count": 9
+        },
+        {
+          "name": "V2T_C00_de5680704f1f61a5",
+          "tableId": "1185444240",
+          "range": {
+            "sheetId": 1290973061,
+            "startRowIndex": 2,
+            "endRowIndex": 153,
+            "startColumnIndex": 0,
+            "endColumnIndex": 6
+          },
+          "column_count": 6
+        },
+        {
+          "name": "V2T_C00_db596880ee97893d",
+          "tableId": "1852231385",
+          "range": {
+            "sheetId": 1068408005,
+            "startRowIndex": 2,
+            "endRowIndex": 153,
+            "startColumnIndex": 0,
+            "endColumnIndex": 15
+          },
+          "column_count": 15
+        },
+        {
+          "name": "V2T_C00_08d6f89c47a72e82",
+          "tableId": "1603427974",
+          "range": {
+            "sheetId": 1274119250,
+            "startRowIndex": 2,
+            "endRowIndex": 153,
+            "startColumnIndex": 0,
+            "endColumnIndex": 9
+          },
+          "column_count": 9
+        },
+        {
+          "name": "V2T_C00_8c0b18c944fca5a0",
+          "tableId": "1214854978",
+          "range": {
+            "sheetId": 1172720049,
+            "startRowIndex": 2,
+            "endRowIndex": 153,
+            "startColumnIndex": 0,
+            "endColumnIndex": 13
+          },
+          "column_count": 13
+        },
+        {
+          "name": "V2T_C00_9d87e80a3bd18125",
+          "tableId": "1873399256",
+          "range": {
+            "sheetId": 1859561242,
+            "startRowIndex": 2,
+            "endRowIndex": 453,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          },
+          "column_count": 16
+        },
+        {
+          "name": "V2T_C00_4e19acf209e4e8ff",
+          "tableId": "1437999860",
+          "range": {
+            "sheetId": 1910026633,
+            "startRowIndex": 2,
+            "endRowIndex": 128,
+            "startColumnIndex": 0,
+            "endColumnIndex": 5
+          },
+          "column_count": 5
+        },
+        {
+          "name": "V2T_C00_e5bc9a99d8fb016b",
+          "tableId": "1053072410",
+          "range": {
+            "sheetId": 1510018651,
+            "startRowIndex": 2,
+            "endRowIndex": 128,
+            "startColumnIndex": 0,
+            "endColumnIndex": 6
+          },
+          "column_count": 6
+        },
+        {
+          "name": "V2T_C00_f65f99dc4dc78946",
+          "tableId": "1541759208",
+          "range": {
+            "sheetId": 1163765884,
+            "startRowIndex": 2,
+            "endRowIndex": 128,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "column_count": 14
+        },
+        {
+          "name": "V2T_C00_ca6064c64d0902eb",
+          "tableId": "1146934341",
+          "range": {
+            "sheetId": 1687803382,
+            "startRowIndex": 2,
+            "endRowIndex": 328,
+            "startColumnIndex": 0,
+            "endColumnIndex": 11
+          },
+          "column_count": 11
+        },
+        {
+          "name": "V2T_C00_0bbc165cbc8c9734",
+          "tableId": "1324013757",
+          "range": {
+            "sheetId": 1047060123,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 9
+          },
+          "column_count": 9
+        },
+        {
+          "name": "V2T_C00_9051ab3f81774bfd",
+          "tableId": "1387085616",
+          "range": {
+            "sheetId": 1576422099,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 4
+          },
+          "column_count": 4
+        },
+        {
+          "name": "V2T_C00_2a176570050933a5",
+          "tableId": "1940028707",
+          "range": {
+            "sheetId": 1738838720,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 12
+          },
+          "column_count": 12
+        },
+        {
+          "name": "V2T_C00_5fce0ebdc666bb2c",
+          "tableId": "1266933038",
+          "range": {
+            "sheetId": 1795510692,
+            "startRowIndex": 2,
+            "endRowIndex": 178,
+            "startColumnIndex": 0,
+            "endColumnIndex": 19
+          },
+          "column_count": 19
+        },
+        {
+          "name": "V2T_C00_3eaf01f374e7c2c1",
+          "tableId": "1716589185",
+          "range": {
+            "sheetId": 1071751880,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 11
+          },
+          "column_count": 11
+        },
+        {
+          "name": "V2T_C00_bdc40d069077575a",
+          "tableId": "1815451865",
+          "range": {
+            "sheetId": 1408542048,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 11
+          },
+          "column_count": 11
+        },
+        {
+          "name": "V2T_C00_afa97936209f8298",
+          "tableId": "1598151816",
+          "range": {
+            "sheetId": 1300583134,
+            "startRowIndex": 2,
+            "endRowIndex": 5928,
+            "startColumnIndex": 0,
+            "endColumnIndex": 13
+          },
+          "column_count": 13
+        },
+        {
+          "name": "V2T_C00_6a0c259736318760",
+          "tableId": "1660516331",
+          "range": {
+            "sheetId": 1069233420,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 6
+          },
+          "column_count": 6
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "R10",
+      "status": "partial",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_requests\\table_preflight_R10.json",
+      "supplemental_evidence": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_execution\\final_ui_R10.json"
+      ],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "입력 전 table_preflight; 최신 시트 속성은 final_ui로 별도 확인. 입력 후 native 정보 재조회는 미확인",
+      "unverified_checks": [
+        "입력 후 native table IDs/ranges/types",
+        "입력 후 namedRanges",
+        "입력 후 output warning protections",
+        "입력 후 legacy native table metadata"
+      ],
+      "spreadsheet_id": "1dvRwvw-6IbzAF0fgtC2pelEBi7a5U41GiOn9ynP8Khs",
+      "total_tabs_observed": 50,
+      "planned_new_tabs_checked": 14,
+      "native_tables_checked": 8,
+      "named_ranges_checked": 25,
+      "legacy_tabs_hidden": 36,
+      "legacy_native_tables_unchanged": 6,
+      "observed_native_tables": [
+        {
+          "name": "V2T_R10_4bb0027fc723f36b",
+          "tableId": "1041342919",
+          "range": {
+            "sheetId": 1976774094,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 2
+          },
+          "column_count": 2
+        },
+        {
+          "name": "V2T_R10_75b036893cf18f24",
+          "tableId": "1219000085",
+          "range": {
+            "sheetId": 1419560957,
+            "startRowIndex": 2,
+            "endRowIndex": 203,
+            "startColumnIndex": 0,
+            "endColumnIndex": 13
+          },
+          "column_count": 13
+        },
+        {
+          "name": "V2T_R10_5d34278f9491da0c",
+          "tableId": "1623254926",
+          "range": {
+            "sheetId": 1539694861,
+            "startRowIndex": 2,
+            "endRowIndex": 203,
+            "startColumnIndex": 0,
+            "endColumnIndex": 36
+          },
+          "column_count": 36
+        },
+        {
+          "name": "V2T_R10_f3856372e2db424d",
+          "tableId": "1516938874",
+          "range": {
+            "sheetId": 1374975006,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 41
+          },
+          "column_count": 41
+        },
+        {
+          "name": "V2T_R10_c69b5307329718c3",
+          "tableId": "1010868394",
+          "range": {
+            "sheetId": 1390096359,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 42
+          },
+          "column_count": 42
+        },
+        {
+          "name": "V2T_R10_cc7eb1c721086f1b",
+          "tableId": "1295655517",
+          "range": {
+            "sheetId": 1526599239,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 34
+          },
+          "column_count": 34
+        },
+        {
+          "name": "V2T_R10_1789aef4b0a5c423",
+          "tableId": "1907357674",
+          "range": {
+            "sheetId": 1634247777,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          },
+          "column_count": 38
+        },
+        {
+          "name": "V2T_R10_11044c90c5fb7f2e",
+          "tableId": "1629511309",
+          "range": {
+            "sheetId": 1765350352,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "column_count": 14
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "R20",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_R20.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1YmKg_nwwwmlCtsUeHhlb31c9bwXtxzTBCg-qDmbHSmc",
+      "total_tabs_observed": 45,
+      "planned_new_tabs_checked": 9,
+      "native_tables_checked": 4,
+      "named_ranges_checked": 16,
+      "legacy_tabs_hidden": 36,
+      "legacy_native_tables_unchanged": 6,
+      "observed_native_tables": [
+        {
+          "name": "V2T_R20_bbc9b9c3220624c3",
+          "tableId": "1780551691",
+          "range": {
+            "sheetId": 1078858273,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 2
+          },
+          "column_count": 2
+        },
+        {
+          "name": "V2T_R20_0adeba9bc1323c3c",
+          "tableId": "1092829428",
+          "range": {
+            "sheetId": 1703542067,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 48
+          },
+          "column_count": 48
+        },
+        {
+          "name": "V2T_R20_b47d4f6d84151b7e",
+          "tableId": "1231267584",
+          "range": {
+            "sheetId": 1158750776,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 50
+          },
+          "column_count": 50
+        },
+        {
+          "name": "V2T_R20_e3a369c08d2b7975",
+          "tableId": "1880023766",
+          "range": {
+            "sheetId": 1276814083,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 50
+          },
+          "column_count": 50
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "R30",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_R30.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1eX-6GggyBVwPt2PdQRaptQ07FIJNsjzMXej72r4CbI4",
+      "total_tabs_observed": 47,
+      "planned_new_tabs_checked": 11,
+      "native_tables_checked": 4,
+      "named_ranges_checked": 19,
+      "legacy_tabs_hidden": 36,
+      "legacy_native_tables_unchanged": 6,
+      "observed_native_tables": [
+        {
+          "name": "V2T_R30_f5d05ca9b0b38cd7",
+          "tableId": "1834778957",
+          "range": {
+            "sheetId": 1618619459,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 48
+          },
+          "column_count": 48
+        },
+        {
+          "name": "V2T_R30_cfd637c183629fb2",
+          "tableId": "1267311313",
+          "range": {
+            "sheetId": 1156000028,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 48
+          },
+          "column_count": 48
+        },
+        {
+          "name": "V2T_R30_f2665eeb1687e8c4",
+          "tableId": "1960883443",
+          "range": {
+            "sheetId": 1715157138,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 49
+          },
+          "column_count": 49
+        },
+        {
+          "name": "V2T_R30_d0fbdd8d3dfc83ba",
+          "tableId": "1465129551",
+          "range": {
+            "sheetId": 1233389478,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 51
+          },
+          "column_count": 51
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "R40",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_R40.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1cm6ZhqKYprOr481Wg85pIAPOPKlfCEHx1ZFMCVCeew8",
+      "total_tabs_observed": 44,
+      "planned_new_tabs_checked": 8,
+      "native_tables_checked": 2,
+      "named_ranges_checked": 11,
+      "legacy_tabs_hidden": 36,
+      "legacy_native_tables_unchanged": 6,
+      "observed_native_tables": [
+        {
+          "name": "V2T_R40_5f3fea215b832d58",
+          "tableId": "1007585171",
+          "range": {
+            "sheetId": 1504024803,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 49
+          },
+          "column_count": 49
+        },
+        {
+          "name": "V2T_R40_ef1ec0a60e268dca",
+          "tableId": "1255531900",
+          "range": {
+            "sheetId": 1379746093,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 34
+          },
+          "column_count": 34
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "R50",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_R50.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "16X9ZEvbsXA8HvTx2uAIG1XnJo-ztJxkj_7iNONoruNg",
+      "total_tabs_observed": 43,
+      "planned_new_tabs_checked": 7,
+      "native_tables_checked": 2,
+      "named_ranges_checked": 12,
+      "legacy_tabs_hidden": 36,
+      "legacy_native_tables_unchanged": 6,
+      "observed_native_tables": [
+        {
+          "name": "V2T_R50_0891786b52399a4b",
+          "tableId": "1137555134",
+          "range": {
+            "sheetId": 1960897623,
+            "startRowIndex": 2,
+            "endRowIndex": 128,
+            "startColumnIndex": 0,
+            "endColumnIndex": 3
+          },
+          "column_count": 3
+        },
+        {
+          "name": "V2T_R50_81a6c4bfce7882d9",
+          "tableId": "1919060941",
+          "range": {
+            "sheetId": 1356902270,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 41
+          },
+          "column_count": 41
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "R60",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_R60.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1e-SwXsHJ6NyZ1iv_dJeKs-4TUYb2RXF-GUkfWcoDk-M",
+      "total_tabs_observed": 50,
+      "planned_new_tabs_checked": 14,
+      "native_tables_checked": 6,
+      "named_ranges_checked": 24,
+      "legacy_tabs_hidden": 36,
+      "legacy_native_tables_unchanged": 6,
+      "observed_native_tables": [
+        {
+          "name": "V2T_R60_fd537c579e325b04",
+          "tableId": "1611759273",
+          "range": {
+            "sheetId": 1498336218,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 49
+          },
+          "column_count": 49
+        },
+        {
+          "name": "V2T_R60_ce2e3f2c8c5be929",
+          "tableId": "1019305457",
+          "range": {
+            "sheetId": 1535117652,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 51
+          },
+          "column_count": 51
+        },
+        {
+          "name": "V2T_R60_0e1e2a069305f676",
+          "tableId": "1807095291",
+          "range": {
+            "sheetId": 1288338611,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 42
+          },
+          "column_count": 42
+        },
+        {
+          "name": "V2T_R60_a65c3825512aaa4a",
+          "tableId": "1078511524",
+          "range": {
+            "sheetId": 1616850053,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 47
+          },
+          "column_count": 47
+        },
+        {
+          "name": "V2T_R60_3a7c77b85d74a78a",
+          "tableId": "1684187630",
+          "range": {
+            "sheetId": 1396305079,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 43
+          },
+          "column_count": 43
+        },
+        {
+          "name": "V2T_R60_c9c101d87d37a767",
+          "tableId": "1571055313",
+          "range": {
+            "sheetId": 1695309931,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 50
+          },
+          "column_count": 50
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "R70",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_R70.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1dNen0b9il3myHy1-q0_rqVei0sC2uK9Fw3b78mgrd5g",
+      "total_tabs_observed": 45,
+      "planned_new_tabs_checked": 9,
+      "native_tables_checked": 3,
+      "named_ranges_checked": 15,
+      "legacy_tabs_hidden": 36,
+      "legacy_native_tables_unchanged": 6,
+      "observed_native_tables": [
+        {
+          "name": "V2T_R70_a9c8510894a5ef52",
+          "tableId": "1746104280",
+          "range": {
+            "sheetId": 1173316898,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 46
+          },
+          "column_count": 46
+        },
+        {
+          "name": "V2T_R70_934910c830c799e0",
+          "tableId": "1373844402",
+          "range": {
+            "sheetId": 1807554611,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 49
+          },
+          "column_count": 49
+        },
+        {
+          "name": "V2T_R70_c16f0bcb2d05e148",
+          "tableId": "1286652637",
+          "range": {
+            "sheetId": 1858918494,
+            "startRowIndex": 2,
+            "endRowIndex": 78,
+            "startColumnIndex": 0,
+            "endColumnIndex": 26
+          },
+          "column_count": 26
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "N10",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_N10.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1JEpeH_q6Go0ADyCncW9vj8mkn96qg2QDViF9tyoDdgY",
+      "total_tabs_observed": 64,
+      "planned_new_tabs_checked": 13,
+      "native_tables_checked": 6,
+      "named_ranges_checked": 27,
+      "legacy_tabs_hidden": 51,
+      "legacy_native_tables_unchanged": 28,
+      "observed_native_tables": [
+        {
+          "name": "V2T_N10_ae59c4d638e22c25",
+          "tableId": "1485869023",
+          "range": {
+            "sheetId": 1889434481,
+            "startRowIndex": 2,
+            "endRowIndex": 128,
+            "startColumnIndex": 0,
+            "endColumnIndex": 3
+          },
+          "column_count": 3
+        },
+        {
+          "name": "V2T_N10_e8319cd681f2c7a1",
+          "tableId": "1575870892",
+          "range": {
+            "sheetId": 1896678656,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 29
+          },
+          "column_count": 29
+        },
+        {
+          "name": "V2T_N10_df449a95bf02582b",
+          "tableId": "1459169039",
+          "range": {
+            "sheetId": 1734539930,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 14
+          },
+          "column_count": 14
+        },
+        {
+          "name": "V2T_N10_5e33110dce64ba6b",
+          "tableId": "1714441062",
+          "range": {
+            "sheetId": 1801809879,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 30
+          },
+          "column_count": 30
+        },
+        {
+          "name": "V2T_N10_8f6786de3275569d",
+          "tableId": "1577946089",
+          "range": {
+            "sheetId": 1697623594,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 34
+          },
+          "column_count": 34
+        },
+        {
+          "name": "V2T_N10_51a3c317f6467b29",
+          "tableId": "1139957220",
+          "range": {
+            "sheetId": 1993735515,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 30
+          },
+          "column_count": 30
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "N20",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_N20.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1l1_oFuohj0krEWKUtVXglnWfckvCUbXNEeURKre6rxc",
+      "total_tabs_observed": 83,
+      "planned_new_tabs_checked": 32,
+      "native_tables_checked": 19,
+      "named_ranges_checked": 84,
+      "legacy_tabs_hidden": 51,
+      "legacy_native_tables_unchanged": 28,
+      "observed_native_tables": [
+        {
+          "name": "V2T_N20_097fb6f053bd05ff",
+          "tableId": "1027075398",
+          "range": {
+            "sheetId": 1208862508,
+            "startRowIndex": 2,
+            "endRowIndex": 128,
+            "startColumnIndex": 0,
+            "endColumnIndex": 16
+          },
+          "column_count": 16
+        },
+        {
+          "name": "V2T_N20_f2bfee30d11276d8",
+          "tableId": "1519724508",
+          "range": {
+            "sheetId": 1006511911,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 36
+          },
+          "column_count": 36
+        },
+        {
+          "name": "V2T_N20_f1e5f14d2014e5bd",
+          "tableId": "1681534603",
+          "range": {
+            "sheetId": 1039018940,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 18
+          },
+          "column_count": 18
+        },
+        {
+          "name": "V2T_N20_1c1ec5a057323359",
+          "tableId": "1855266122",
+          "range": {
+            "sheetId": 1393472389,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 37
+          },
+          "column_count": 37
+        },
+        {
+          "name": "V2T_N20_14add64c96d8db2b",
+          "tableId": "1057886645",
+          "range": {
+            "sheetId": 1644832039,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 39
+          },
+          "column_count": 39
+        },
+        {
+          "name": "V2T_N20_5ecdfd90bc20dbc8",
+          "tableId": "1087122950",
+          "range": {
+            "sheetId": 1580671636,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 37
+          },
+          "column_count": 37
+        },
+        {
+          "name": "V2T_N20_2b0944e78d1794d7",
+          "tableId": "1228626224",
+          "range": {
+            "sheetId": 1296571419,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 37
+          },
+          "column_count": 37
+        },
+        {
+          "name": "V2T_N20_87f916f08c5339df",
+          "tableId": "1944153491",
+          "range": {
+            "sheetId": 1837120749,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 39
+          },
+          "column_count": 39
+        },
+        {
+          "name": "V2T_N20_4426cd9f420d67ba",
+          "tableId": "1637906385",
+          "range": {
+            "sheetId": 1733347491,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 49
+          },
+          "column_count": 49
+        },
+        {
+          "name": "V2T_N20_042afc415f125a79",
+          "tableId": "1610376151",
+          "range": {
+            "sheetId": 1873643469,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 22
+          },
+          "column_count": 22
+        },
+        {
+          "name": "V2T_N20_b2ec3553f2ba7fa4",
+          "tableId": "1761005608",
+          "range": {
+            "sheetId": 1194707536,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 27
+          },
+          "column_count": 27
+        },
+        {
+          "name": "V2T_N20_432b7cdabc310d25",
+          "tableId": "1814994310",
+          "range": {
+            "sheetId": 1578431020,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 50
+          },
+          "column_count": 50
+        },
+        {
+          "name": "V2T_N20_d32e82f99ce38334",
+          "tableId": "1967381218",
+          "range": {
+            "sheetId": 1326277358,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 38
+          },
+          "column_count": 38
+        },
+        {
+          "name": "V2T_N20_37d52d601070e902",
+          "tableId": "1695315467",
+          "range": {
+            "sheetId": 1179898770,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 26
+          },
+          "column_count": 26
+        },
+        {
+          "name": "V2T_N20_d5f008bc10200dcd",
+          "tableId": "1927461694",
+          "range": {
+            "sheetId": 1161311897,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 22
+          },
+          "column_count": 22
+        },
+        {
+          "name": "V2T_N20_d69544e58d38316a",
+          "tableId": "1513453162",
+          "range": {
+            "sheetId": 1834400929,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 36
+          },
+          "column_count": 36
+        },
+        {
+          "name": "V2T_N20_8d7ccb8e67a2904f",
+          "tableId": "1316000688",
+          "range": {
+            "sheetId": 1665953280,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 34
+          },
+          "column_count": 34
+        },
+        {
+          "name": "V2T_N20_a02630847da3ea19",
+          "tableId": "1252177283",
+          "range": {
+            "sheetId": 1837616895,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 19
+          },
+          "column_count": 19
+        },
+        {
+          "name": "V2T_N20_caee8a500f6bee1c",
+          "tableId": "1519857835",
+          "range": {
+            "sheetId": 1020761398,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          },
+          "column_count": 35
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "N30",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_N30.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "15aNd3EzVD0-EzShTZ0Hg1ff4shVvz9YNHfesezIjDfc",
+      "total_tabs_observed": 62,
+      "planned_new_tabs_checked": 11,
+      "native_tables_checked": 4,
+      "named_ranges_checked": 29,
+      "legacy_tabs_hidden": 51,
+      "legacy_native_tables_unchanged": 28,
+      "observed_native_tables": [
+        {
+          "name": "V2T_N30_44054d949626663f",
+          "tableId": "1088626977",
+          "range": {
+            "sheetId": 1238893580,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 29
+          },
+          "column_count": 29
+        },
+        {
+          "name": "V2T_N30_57accea86b113a4c",
+          "tableId": "1702556001",
+          "range": {
+            "sheetId": 1030652436,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 36
+          },
+          "column_count": 36
+        },
+        {
+          "name": "V2T_N30_3190a13fa570e18e",
+          "tableId": "1468582309",
+          "range": {
+            "sheetId": 1150415925,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 33
+          },
+          "column_count": 33
+        },
+        {
+          "name": "V2T_N30_1f11b48674185a4a",
+          "tableId": "1770958402",
+          "range": {
+            "sheetId": 1475839882,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 39
+          },
+          "column_count": 39
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "N40",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_N40.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1Gbw-GT10Kv3oKqaollUe5n9tfKh54d_DW7PaOBix2PU",
+      "total_tabs_observed": 61,
+      "planned_new_tabs_checked": 10,
+      "native_tables_checked": 3,
+      "named_ranges_checked": 14,
+      "legacy_tabs_hidden": 51,
+      "legacy_native_tables_unchanged": 28,
+      "observed_native_tables": [
+        {
+          "name": "V2T_N40_ef7e39d2dc43f318",
+          "tableId": "1102247281",
+          "range": {
+            "sheetId": 1447912419,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 37
+          },
+          "column_count": 37
+        },
+        {
+          "name": "V2T_N40_d3cb106305b70793",
+          "tableId": "1108784791",
+          "range": {
+            "sheetId": 1030601308,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 37
+          },
+          "column_count": 37
+        },
+        {
+          "name": "V2T_N40_e3f1cf8456a617fd",
+          "tableId": "1264172142",
+          "range": {
+            "sheetId": 1085497423,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          },
+          "column_count": 35
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "N50",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_N50.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1Wrb-c63hlrVrJYbMQqLip3iFP9hlOaTsYX0lXhvrIZ0",
+      "total_tabs_observed": 63,
+      "planned_new_tabs_checked": 12,
+      "native_tables_checked": 5,
+      "named_ranges_checked": 21,
+      "legacy_tabs_hidden": 51,
+      "legacy_native_tables_unchanged": 28,
+      "observed_native_tables": [
+        {
+          "name": "V2T_N50_6f67e545bcebfea2",
+          "tableId": "1027567320",
+          "range": {
+            "sheetId": 1497229612,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 41
+          },
+          "column_count": 41
+        },
+        {
+          "name": "V2T_N50_a5ce05d75f7ea862",
+          "tableId": "1245731617",
+          "range": {
+            "sheetId": 1653005894,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          },
+          "column_count": 35
+        },
+        {
+          "name": "V2T_N50_6629e0dcaa5fff75",
+          "tableId": "1709709691",
+          "range": {
+            "sheetId": 1058259930,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 34
+          },
+          "column_count": 34
+        },
+        {
+          "name": "V2T_N50_4e8f7cee164944bc",
+          "tableId": "1279451400",
+          "range": {
+            "sheetId": 1524678672,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 34
+          },
+          "column_count": 34
+        },
+        {
+          "name": "V2T_N50_43f785ef987030f6",
+          "tableId": "1962112714",
+          "range": {
+            "sheetId": 1942586517,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 36
+          },
+          "column_count": 36
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "N60",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\finish_native_N60.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1hllCMZpWQwajPsVbcxDmreOL7hyNdjqQZ-9dyskZtyE",
+      "total_tabs_observed": 8,
+      "planned_new_tabs_checked": 8,
+      "native_tables_checked": 3,
+      "named_ranges_checked": 12,
+      "legacy_tabs_hidden": 0,
+      "legacy_native_tables_unchanged": 0,
+      "observed_native_tables": [
+        {
+          "name": "V2T_N60_38f0222e63816e7c",
+          "tableId": "1699494711",
+          "range": {
+            "sheetId": 1537385571,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 30
+          },
+          "column_count": 30
+        },
+        {
+          "name": "V2T_N60_d01f93e545b1407a",
+          "tableId": "1827651469",
+          "range": {
+            "sheetId": 216992942,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 31
+          },
+          "column_count": 31
+        },
+        {
+          "name": "V2T_N60_c90f677a74373871",
+          "tableId": "1792773853",
+          "range": {
+            "sheetId": 485288278,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 32
+          },
+          "column_count": 32
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "N70",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\finish_native_N70.json",
+      "supplemental_evidence": [],
+      "known_extra_tabs": [],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1vTc4nWwOV0J2FLol5Ul6rpZC5JpY0vae_jZa9lygBT8",
+      "total_tabs_observed": 8,
+      "planned_new_tabs_checked": 8,
+      "native_tables_checked": 3,
+      "named_ranges_checked": 13,
+      "legacy_tabs_hidden": 0,
+      "legacy_native_tables_unchanged": 0,
+      "observed_native_tables": [
+        {
+          "name": "V2T_N70_675be3e4c2f04fde",
+          "tableId": "1547109516",
+          "range": {
+            "sheetId": 53113518,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 32
+          },
+          "column_count": 32
+        },
+        {
+          "name": "V2T_N70_a828889d10889f62",
+          "tableId": "1669240240",
+          "range": {
+            "sheetId": 1788721528,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 35
+          },
+          "column_count": 35
+        },
+        {
+          "name": "V2T_N70_d57feabd5511697e",
+          "tableId": "1040237181",
+          "range": {
+            "sheetId": 265096872,
+            "startRowIndex": 2,
+            "endRowIndex": 53,
+            "startColumnIndex": 0,
+            "endColumnIndex": 33
+          },
+          "column_count": 33
+        }
+      ],
+      "errors": []
+    },
+    {
+      "file_code": "H90",
+      "status": "pass",
+      "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\structure_compat\\native_after_structure_H90.json",
+      "supplemental_evidence": [
+        "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\H90_directory_readback.json"
+      ],
+      "known_extra_tabs": [
+        {
+          "sheetId": 1100202602,
+          "title": "01_분야파일",
+          "index": 1,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 50,
+            "columnCount": 4,
+            "frozenRowCount": 3
+          }
+        }
+      ],
+      "native_sections_available": true,
+      "native_metadata_epoch": "final structure response",
+      "unverified_checks": [],
+      "spreadsheet_id": "1IwtNuUdGlHbRYIBcc-Rc-VbTrPz6Sr8ITbygCx3_ePs",
+      "total_tabs_observed": 78,
+      "planned_new_tabs_checked": 26,
+      "native_tables_checked": 3,
+      "named_ranges_checked": 131,
+      "legacy_tabs_hidden": 51,
+      "legacy_native_tables_unchanged": 28,
+      "observed_native_tables": [
+        {
+          "name": "V2T_H90_3fd28a5c89fe7f67",
+          "tableId": "1537093065",
+          "range": {
+            "sheetId": 1261303499,
+            "startRowIndex": 2,
+            "endRowIndex": 128,
+            "startColumnIndex": 0,
+            "endColumnIndex": 17
+          },
+          "column_count": 17
+        },
+        {
+          "name": "V2T_H90_584aa50c2bc72c55",
+          "tableId": "1730373314",
+          "range": {
+            "sheetId": 1261303499,
+            "startRowIndex": 134,
+            "endRowIndex": 260,
+            "startColumnIndex": 0,
+            "endColumnIndex": 6
+          },
+          "column_count": 6
+        },
+        {
+          "name": "V2T_H90_a2d4e486cced0b46",
+          "tableId": "1183061368",
+          "range": {
+            "sheetId": 1261303499,
+            "startRowIndex": 266,
+            "endRowIndex": 317,
+            "startColumnIndex": 0,
+            "endColumnIndex": 8
+          },
+          "column_count": 8
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "summary": {
+    "files": 16,
+    "pass": 14,
+    "fail": 0,
+    "unverified": 0,
+    "partial": 2,
+    "base_tabs_checked": 233,
+    "known_extra_tabs": 2,
+    "errors": 0,
+    "new_native_tables_checked": 108,
+    "named_ranges_checked": 506
+  },
+  "separate_cell_verification": {
+    "path": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\manifest\\native_read_verification.json",
+    "read_calls_present": 85,
+    "technical_error_count": 0,
+    "technical_header_cells": 14003
+  },
+  "checklist_result_unchanged": true,
+  "known_extra_native_table": {
+    "file_code": "C00",
+    "evidence": "C:\\구글 드라이브\\세계관\\90-볼트 운영\\03-작업계획·감사보고\\세계관 데이터 작계\\실행기록\\PH2\\input_execution\\021_C00_pending_sheet.receipt.json",
+    "evidence_kind": "addTable success response; excluded from 108 base-table comparisons",
+    "table": {
+      "tableId": "177074261",
+      "name": "V2_WORK_PENDING_PH2_C00",
+      "range": {
+        "sheetId": 1235509559,
+        "startRowIndex": 2,
+        "endRowIndex": 65,
+        "startColumnIndex": 0,
+        "endColumnIndex": 14
+      },
+      "rowsProperties": {
+        "headerColorStyle": {
+          "rgbColor": {
+            "red": 0.20784314,
+            "green": 0.40784314,
+            "blue": 0.32941177
+          }
+        },
+        "firstBandColorStyle": {
+          "rgbColor": {
+            "red": 1,
+            "green": 1,
+            "blue": 1
+          }
+        },
+        "secondBandColorStyle": {
+          "rgbColor": {
+            "red": 0.9647059,
+            "green": 0.972549,
+            "blue": 0.9764706
+          }
+        }
+      },
+      "columnProperties": [
+        {
+          "columnName": "대기 ID"
+        },
+        {
+          "columnIndex": 1,
+          "columnName": "분야"
+        },
+        {
+          "columnIndex": 2,
+          "columnName": "논리표"
+        },
+        {
+          "columnIndex": 3,
+          "columnName": "구분"
+        },
+        {
+          "columnIndex": 4,
+          "columnName": "원문 항목"
+        },
+        {
+          "columnIndex": 5,
+          "columnName": "원문 설정 상태"
+        },
+        {
+          "columnIndex": 6,
+          "columnName": "원문 값(JSON)"
+        },
+        {
+          "columnIndex": 7,
+          "columnName": "대기 사유"
+        },
+        {
+          "columnIndex": 8,
+          "columnName": "작업 상태"
+        },
+        {
+          "columnIndex": 9,
+          "columnName": "운영 입력 제외"
+        },
+        {
+          "columnIndex": 10,
+          "columnName": "원본 위치"
+        },
+        {
+          "columnIndex": 11,
+          "columnName": "계보 파일"
+        },
+        {
+          "columnIndex": 12,
+          "columnName": "계보 위치"
+        },
+        {
+          "columnIndex": 13,
+          "columnName": "다음 조치"
+        }
+      ]
+    },
+    "final_native_readback": "unverified"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "checked_at": "2026-10-02T09:53:38.267Z",
+  "elapsed_ms": 33666,
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "spreadsheetId": "1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww",
+      "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1cXBRwxjEdGWYmJ0p913LjhC6pHO7OSiWkO3utZ9_uww/edit",
+      "properties": {
+        "title": "TEST-N30 · 소형 연결시험 · 세계관 데이터 V2",
+        "locale": "ko_KR",
+        "timeZone": "Asia/Seoul"
+      },
+      "sheets": [
+        {
+          "properties": {
+            "sheetId": 71003002,
+            "title": "IN_PERSON",
+            "index": 2,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 3,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "TEST-PERSON-001",
+                      "userEnteredValue": {
+                        "stringValue": "TEST-PERSON-001"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-PERSON-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "시험 인물",
+                      "userEnteredValue": {
+                        "stringValue": "시험 인물"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시험 인물"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "properties": {
+            "sheetId": 71003003,
+            "title": "PUB_PERSON",
+            "index": 3,
+            "sheetType": "GRID",
+            "gridProperties": {
+              "rowCount": 120,
+              "columnCount": 80,
+              "frozenRowCount": 3,
+              "frozenColumnCount": 1
+            }
+          },
+          "data": [
+            {
+              "startRow": 3,
+              "rowData": [
+                {
+                  "values": [
+                    {
+                      "formattedValue": "TEST-PERSON-001",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_PERSON!A4=\"\",\"\",IF(IN_PERSON!A4=\"\",\"\",IN_PERSON!A4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "TEST-PERSON-001"
+                      }
+                    },
+                    {
+                      "formattedValue": "시험 인물",
+                      "userEnteredValue": {
+                        "formulaValue": "=IF(IN_PERSON!A4=\"\",\"\",IF(IN_PERSON!B4=\"\",\"\",IN_PERSON!B4))"
+                      },
+                      "effectiveValue": {
+                        "stringValue": "시험 인물"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "isError": false
+  }
+}

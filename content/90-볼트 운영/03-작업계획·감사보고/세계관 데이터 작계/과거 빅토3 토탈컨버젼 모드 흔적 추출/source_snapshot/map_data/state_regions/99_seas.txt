@@ -1,0 +1,266 @@
+﻿# Vanilla sea states start at 3000 so I've just retained that. Unlike land states, sea states only include one province per state. FOrtunately though, aside from getting a bunch of errors, the game still functions without you deifning these if you dont want to. I've defined the example province map sea provinces though to reduce the error count when you start working on your own.
+#You will want to remove these though if you add your own province map as the game typically doesn't like when you define provinces that arent on the map.
+
+STATE_DYUELRONIAH_SEA = {
+    id = 3000
+    provinces = { "xC696EF" }
+}
+
+STATE_HAILRIXH_SEA = {
+    id = 3001
+    provinces = { "x8326DA" }
+}
+
+STATE_GRIENDH_SEA = {
+    id = 3002
+    provinces = { "xD1B0D0" }
+}
+
+STATE_WEST_RAVANT_SEA = {
+    id = 3003
+    provinces = { "x6A6719" }
+}
+
+STATE_MIDDLE_RAVANT_SEA = {
+    id = 3004
+    provinces = { "x2528AC" }
+}
+
+STATE_EAST_RAVANT_SEA = {
+    id = 3005
+    provinces = { "x80C0E9" }
+}
+
+STATE_RUSLRANIAH_SEA = {
+    id = 3006
+    provinces = { "xFAF7B7" }
+}
+
+STATE_VERTZEAH_SEA = {
+    id = 3007
+    provinces = { "x72D304" }
+}
+
+STATE_ASFELRANIAH_SEA = {
+    id = 3008
+    provinces = { "x6CBEA6" }
+}
+
+STATE_INSTANCZATH_SEA = {
+    id = 3009
+    provinces = { "x03A14A" }
+}
+
+STATE_ROUNANTS_CHANNEL = {
+    id = 3010
+    provinces = { "xFA1CF1" }
+}
+
+STATE_INNANTS_CHANNEL = {
+    id = 3011
+    provinces = { "x079CCC" }
+}
+
+STATE_AKYUVAH_INNER_SEA = {
+    id = 3012
+    provinces = { "xF13C82" }
+}
+
+STATE_ROTONTO_SEA = {
+    id = 3013
+    provinces = { "x1419B2" }
+}
+
+STATE_SEOHAN_SEA = {
+    id = 3015
+    provinces = { "x609FC8" }
+}
+
+STATE_NAMHAN_SEA = {
+    id = 3016
+    provinces = { "x56C4E7" }
+}
+
+STATE_DONGHAN_SEA = {
+    id = 3017
+    provinces = { "x47B5EC" }
+}
+
+STATE_GARTEN_CHANNEL = {
+    id = 3018
+    provinces = { "x66DFE5" }
+}
+
+STATE_INSTOLTS_CHANNEL = {
+    id = 3019
+    provinces = { "x62BCE9" }
+}
+
+STATE_KOVELRAVAHN_CHANNEL = {
+    id = 3020
+    provinces = { "x6ABADB" }
+}
+
+STATE_AIPANTEGIYUEM_SEA = {
+    id = 3021
+    provinces = { "x7E79F2" }
+}
+
+STATE_AKANPACZATAH_SEA = {
+    id = 3022
+    provinces = { "x7070CE" }
+}
+
+STATE_INDALRONIAH_SEA = {
+    id = 3023
+    provinces = { "x1370EF" }
+}
+
+STATE_EVELRANTO_SEA = {
+    id = 3024
+    provinces = { "x024366" }
+}
+
+STATE_SEOGYEONG_BAY = {
+    id = 3025
+    provinces = { "x4C9BF0" }
+}
+
+STATE_ANTONIUXH_SEA = {
+    id = 3026
+    provinces = { "x87F9F5" }
+}
+
+STATE_SAVHRAH_SEA = {
+    id = 3027
+    provinces = { "xB0C6E5" }
+}
+
+STATE_KARVALRANDORH_SEA = {
+    id = 3028
+    provinces = { "x64BDEA" }
+}
+
+STATE_RAIXHPANTEGIYUEM_SEA = {
+    id = 3029
+    provinces = { "x85BDCA" }
+}
+
+STATE_KIYELRAVHDAH_SEA = {
+    id = 3030
+    provinces = { "xA4CDF6" }
+}
+
+STATE_KANTAVHRELRAH_SEA = {
+    id = 3031
+    provinces = { "x8FACF1" }
+}
+
+STATE_OVHRAN_KAERONIAN_SEA = {
+    id = 3032
+    provinces = { "x92C4F0" }
+}
+
+STATE_KARLRONTH_SEA = {
+    id = 3033
+    provinces = { "x99B1D9" }
+}
+
+STATE_SEISIPHRANTH_SEA = {
+    id = 3034
+    provinces = { "x7A84AF" }
+}
+
+STATE_OVHRELTZRUHN_SEA = {
+    id = 3035
+    provinces = { "x6AA8E5" }
+}
+
+STATE_VEST_DEXHPLRANKA_SEA = {
+    id = 3036
+    provinces = { "x7CC9F9" }
+}
+
+STATE_SOVIENDERH_INNER_SEA = {
+    id = 3037
+    provinces = { "x86A0EE" }
+}
+
+STATE_AUS_DEXHPLRANKA_SEA = {
+    id = 3038
+    provinces = { "x96B3F4" }
+}
+
+STATE_ZAUFENTH_YURHKHVIAH_SEA = {
+    id = 3039
+    provinces = { "x667CFB" }
+}
+
+STATE_ENDOXHINIUS_SEA = {
+    id = 3040
+    provinces = { "x6770A8" }
+}
+
+STATE_OVIENDERH_SEA = {
+    id = 3041
+    provinces = { "x92DCEA" }
+}
+
+STATE_SHURELRIANTZ_SEA = {
+    id = 3042
+    provinces = { "x7EA0BE" }
+}
+
+STATE_OSTEN_YURHKHVIAH_SEA = {
+    id = 3043
+    provinces = { "x96C6EC" }
+}
+
+STATE_VELRONIANTH_SEA = {
+    id = 3044
+    provinces = { "x80C3D6" }
+}
+
+STATE_ZERNINVELRASHITZI_SEA = {
+    id = 3045
+    provinces = { "x6D9092" }
+}
+
+STATE_ZEIPALRANKAH_SEA = {
+    id = 3046
+    provinces = { "x7AB5BE" }
+}
+
+STATE_KALRUNIAH_INNER_SEA = {
+    id = 3047
+    provinces = { "x8BE5D1" }
+}
+
+STATE_CZENTRAL_YURITEIXHEN_SEA = {
+    id = 3048
+    provinces = { "x819EDC" }
+}
+
+STATE_IKOUVANTATZ_SEA = {
+    id = 3049
+    provinces = { "x6E98D0" }
+}
+
+STATE_SHUREIKAHN_SEA = {
+    id = 3050
+    provinces = { "x78BEDA" }
+}
+
+STATE_RILRAITH_SEA = {
+    id = 3051
+    provinces = { "x0BF3E7" }
+}
+
+STATE_OSPVAHN_SEA = {
+    id = 3052
+    provinces = { "x0622F9" }
+}
+#STATE_ = {
+#    id = 
+#    provinces = {  }
+#}

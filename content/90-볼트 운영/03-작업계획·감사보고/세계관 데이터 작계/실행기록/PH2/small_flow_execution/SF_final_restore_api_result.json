@@ -1,0 +1,41 @@
+{
+  "api_validation": "passed",
+  "ui_evidence": "pending root final screen",
+  "actual": {
+    "population": 100,
+    "count": 1,
+    "person_via_term": "시험 인물",
+    "person_direct": "시험 인물",
+    "point_active": true,
+    "names_equal": true,
+    "source_population": 100,
+    "source_person": "시험 인물",
+    "boundary_source_id": null,
+    "boundary_pub_id": null,
+    "boundary_ref_id": null,
+    "boundary_calc_id": null,
+    "validation_count": 1,
+    "overflow": "범위내",
+    "source_revision_R20": "TEST.REV.7",
+    "source_revision_N30": "TEST.REV.3",
+    "source_revision_N20": "TEST.REV.3",
+    "source_count": 1,
+    "consumer_count": 1
+  },
+  "retained_capacity": 11,
+  "write_completed_at": {
+    "R20": 1790934794693,
+    "N30": 1790934803291,
+    "N20": 1790934810101,
+    "H90": 1790934816206
+  },
+  "observed_at": "2026-10-02T09:53:38.839Z",
+  "elapsed_ms": 34238,
+  "propagation_upper_bound_ms": {
+    "R20": 24147,
+    "N30": 15549,
+    "N20": 8739,
+    "H90": 2634
+  },
+  "test_suite_84_status": "unchanged"
+}

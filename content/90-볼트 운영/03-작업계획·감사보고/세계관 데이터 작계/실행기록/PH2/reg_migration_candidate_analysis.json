@@ -1,0 +1,1116 @@
+{
+  "status": "REG full snapshot candidate extraction and static data diagnostics; online migration not performed",
+  "source_snapshot_id": "REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+  "summary": {
+    "source_tabs": 36,
+    "source_input_candidate_rows": 309,
+    "source_fact_or_definition_rows": 290,
+    "source_metadata_configuration_rows": 19,
+    "calculated_property_metadata_rows": 7,
+    "annual_empty_scaffold_rows": 120,
+    "annual_scaffold_metrics": {
+      "population": 24,
+      "gdp_nominal": 24,
+      "gdp_real": 24,
+      "gdp_unclassified": 24,
+      "urbanization": 24
+    },
+    "regional_population_numeric_observations": 0,
+    "regional_economy_numeric_observations": 0,
+    "region_rows": 133,
+    "unique_region_ids": 133,
+    "parent_relation_candidates": 142,
+    "multiple_parent_regions": 9,
+    "duplicate_same_parent_slot_groups": 0,
+    "missing_parent_ids": 1,
+    "known_graph_cycles": 0,
+    "standard_revision_candidates": 105,
+    "unique_standard_ids": 101,
+    "duplicate_standard_id_groups": 4,
+    "local_target_record_candidates": 572,
+    "literal_native_classification": {
+      "native_user_literal": 4023,
+      "native_blank_export_empty": 7,
+      "export_empty_native_omitted": 4
+    },
+    "native_conflicts": 0,
+    "target_assignment_conflicts": 0,
+    "native_unverified_nonempty_literal_cells": 0,
+    "direct_numeric_zero_literals": 0,
+    "online_writes": 0,
+    "operational_tests_passed": 0,
+    "online_migrated_records": 0,
+    "observed_dropdown_configuration_groups": 62,
+    "observed_dropdown_option_values": 263,
+    "records_with_unresolved_primary_keys": 37,
+    "unknown_target_fields": 0
+  },
+  "per_sheet": [
+    {
+      "sheet": "00 공통 기준",
+      "sheet_id": 861639760,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_with_id": 105,
+        "formula_only_not_input_fact": 895
+      },
+      "input_candidate_rows": 105,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 1000,
+      "style_only_cells_excluded": 1790,
+      "fact_empty": false
+    },
+    {
+      "sheet": "01-지역 마스터",
+      "sheet_id": 608402244,
+      "row_classes": {
+        "header_or_query_controls": 2,
+        "literal_input_candidate_with_id": 133,
+        "formula_only_not_input_fact": 868
+      },
+      "input_candidate_rows": 133,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 3002,
+      "style_only_cells_excluded": 10540,
+      "fact_empty": false
+    },
+    {
+      "sheet": "02 국가 마스터",
+      "sheet_id": 1659135409,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_with_id": 1,
+        "formula_only_not_input_fact": 998
+      },
+      "input_candidate_rows": 1,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 1998,
+      "style_only_cells_excluded": 2997,
+      "fact_empty": false
+    },
+    {
+      "sheet": "03 문화 마스터",
+      "sheet_id": 1994704254,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 1998,
+      "style_only_cells_excluded": 3996,
+      "fact_empty": true
+    },
+    {
+      "sheet": "04 종교 마스터",
+      "sheet_id": 107402225,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 1998,
+      "style_only_cells_excluded": 3996,
+      "fact_empty": true
+    },
+    {
+      "sheet": "05 언어 마스터",
+      "sheet_id": 413334864,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_with_id": 8,
+        "ordering_only_review_not_fact": 9,
+        "formula_only_not_input_fact": 982
+      },
+      "input_candidate_rows": 8,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 1998,
+      "style_only_cells_excluded": 4985,
+      "fact_empty": false
+    },
+    {
+      "sheet": "06 종족 마스터",
+      "sheet_id": 2060259922,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 1998,
+      "style_only_cells_excluded": 4995,
+      "fact_empty": true
+    },
+    {
+      "sheet": "07 자원 마스터",
+      "sheet_id": 242559508,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 999,
+      "style_only_cells_excluded": 1998,
+      "fact_empty": true
+    },
+    {
+      "sheet": "08 특성 사전",
+      "sheet_id": 986639480,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 999,
+      "style_only_cells_excluded": 2997,
+      "fact_empty": true
+    },
+    {
+      "sheet": "09 경제 지표 정의",
+      "sheet_id": 1685371830,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 999,
+      "style_only_cells_excluded": 3996,
+      "fact_empty": true
+    },
+    {
+      "sheet": "10 정치 지역관계",
+      "sheet_id": 1681007841,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 2999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 8997,
+      "style_only_cells_excluded": 17994,
+      "fact_empty": true
+    },
+    {
+      "sheet": "11 역사 사건",
+      "sheet_id": 91414319,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 2999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 8997,
+      "style_only_cells_excluded": 14995,
+      "fact_empty": true
+    },
+    {
+      "sheet": "20 인구",
+      "sheet_id": 456698286,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 2999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 5998,
+      "style_only_cells_excluded": 17994,
+      "fact_empty": true
+    },
+    {
+      "sheet": "21 인구 변동",
+      "sheet_id": 453108903,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 2999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 5998,
+      "style_only_cells_excluded": 14995,
+      "fact_empty": true
+    },
+    {
+      "sheet": "30 문화 분포",
+      "sheet_id": 204899797,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 14997,
+      "style_only_cells_excluded": 29994,
+      "fact_empty": true
+    },
+    {
+      "sheet": "31 종교 분포",
+      "sheet_id": 891214331,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 14997,
+      "style_only_cells_excluded": 29994,
+      "fact_empty": true
+    },
+    {
+      "sheet": "32 언어 분포",
+      "sheet_id": 1273735161,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 14997,
+      "style_only_cells_excluded": 34993,
+      "fact_empty": true
+    },
+    {
+      "sheet": "33 종족 분포",
+      "sheet_id": 310772620,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 14997,
+      "style_only_cells_excluded": 29994,
+      "fact_empty": true
+    },
+    {
+      "sheet": "40 경제 지역값",
+      "sheet_id": 1185232972,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 19996,
+      "style_only_cells_excluded": 29994,
+      "fact_empty": true
+    },
+    {
+      "sheet": "41 산업",
+      "sheet_id": 545095279,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 9998,
+      "style_only_cells_excluded": 19996,
+      "fact_empty": true
+    },
+    {
+      "sheet": "42 교역",
+      "sheet_id": 1215027434,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 14997,
+      "style_only_cells_excluded": 24995,
+      "fact_empty": true
+    },
+    {
+      "sheet": "50 환경 지역값",
+      "sheet_id": 1577841913,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 9998,
+      "style_only_cells_excluded": 19996,
+      "fact_empty": true
+    },
+    {
+      "sheet": "51 자원 분포",
+      "sheet_id": 20957297,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 14997,
+      "style_only_cells_excluded": 29994,
+      "fact_empty": true
+    },
+    {
+      "sheet": "60 거점 시설",
+      "sheet_id": 130412256,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 2999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 5998,
+      "style_only_cells_excluded": 11996,
+      "fact_empty": true
+    },
+    {
+      "sheet": "61 교통망",
+      "sheet_id": 1832485931,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 2999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 8997,
+      "style_only_cells_excluded": 17994,
+      "fact_empty": true
+    },
+    {
+      "sheet": "70 지역 특성",
+      "sheet_id": 1161488954,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 4999
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 14997,
+      "style_only_cells_excluded": 24995,
+      "fact_empty": true
+    },
+    {
+      "sheet": "90 출처",
+      "sheet_id": 552935386,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_with_id": 26
+      },
+      "input_candidate_rows": 26,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 0,
+      "style_only_cells_excluded": 1973,
+      "fact_empty": false
+    },
+    {
+      "sheet": "00_기준_메타",
+      "sheet_id": 900230000,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_without_id_review": 19
+      },
+      "input_candidate_rows": 19,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 1,
+      "style_only_cells_excluded": 0,
+      "fact_empty": false
+    },
+    {
+      "sheet": "02_지역_관계",
+      "sheet_id": 900230001,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 2002
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 14014,
+      "style_only_cells_excluded": 0,
+      "fact_empty": true
+    },
+    {
+      "sheet": "10_행성_기본값",
+      "sheet_id": 900230002,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "literal_input_candidate_with_id": 24
+      },
+      "input_candidate_rows": 17,
+      "calculated_property_metadata_rows": 7,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 7,
+      "style_only_cells_excluded": 34,
+      "fact_empty": false
+    },
+    {
+      "sheet": "11_행성_연간지표",
+      "sheet_id": 900230003,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "derived_or_configuration_literal_review": 120,
+        "formula_only_not_input_fact": 880
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 120,
+      "source_formula_cells": 9000,
+      "style_only_cells_excluded": 13848,
+      "fact_empty": true
+    },
+    {
+      "sheet": "12_지역_인구",
+      "sheet_id": 900230004,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "default_false_only_not_fact": 1000
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 2000,
+      "style_only_cells_excluded": 12000,
+      "fact_empty": true
+    },
+    {
+      "sheet": "13_지역_경제",
+      "sheet_id": 900230005,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "default_false_only_not_fact": 1000
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 2000,
+      "style_only_cells_excluded": 15000,
+      "fact_empty": true
+    },
+    {
+      "sheet": "14_지역_자연환경",
+      "sheet_id": 900230006,
+      "row_classes": {
+        "header_or_query_controls": 1
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 0,
+      "style_only_cells_excluded": 4011,
+      "fact_empty": true
+    },
+    {
+      "sheet": "15_지역_소속이력",
+      "sheet_id": 900230007,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "formula_only_not_input_fact": 1000
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 1000,
+      "style_only_cells_excluded": 14000,
+      "fact_empty": true
+    },
+    {
+      "sheet": "99_검증",
+      "sheet_id": 900230008,
+      "row_classes": {
+        "header_or_query_controls": 1,
+        "derived_or_configuration_literal_review": 4013
+      },
+      "input_candidate_rows": 0,
+      "calculated_property_metadata_rows": 0,
+      "configuration_scaffold_rows": 0,
+      "source_formula_cells": 8013,
+      "style_only_cells_excluded": 0,
+      "fact_empty": true
+    }
+  ],
+  "target_counts": {
+    "C00.기준개정이력": 110,
+    "C00.공통기준": 101,
+    "R10.지역목록": 133,
+    "C00.국가식별목록": 1,
+    "C00.개체별칭": 1,
+    "N10.국가목록원문속성": 1,
+    "C00.언어분류": 8,
+    "C00.출처레지스트리": 26,
+    "C00.설정출처대응": 19,
+    "R10.분야설정": 1,
+    "C00.입력기본값": 1,
+    "R20.집계설정": 1,
+    "C00.인구정의": 1,
+    "C00.단위정의": 1,
+    "C00.기년대응": 2,
+    "C00.계산정책": 2,
+    "H90.운영안내": 6,
+    "C00.시간정책": 1,
+    "C00.범위레지스트리": 1,
+    "C00.지표사전": 1,
+    "R70.행성기본값": 12,
+    "R10.지역관계": 142
+  },
+  "region_graph": {
+    "missing_parents": [
+      {
+        "child": "sec.1",
+        "parent": "gal.1",
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=608402244|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=G3",
+        "original_display_name": "하르아지엘 은하",
+        "action": "keep original parent ID and display text; do not synthesize missing entity"
+      }
+    ],
+    "duplicate_parent_slots": [],
+    "cycles": [],
+    "legacy_cache_rows": 142,
+    "direct_edges_missing_cache": [],
+    "cache_edges_without_direct_input": [],
+    "cache_rule": "existing 02 relation formula output crosswalk confirms original G/I edges; never a second source record"
+  },
+  "standard_revision_collisions": [
+    {
+      "standard_id": "std.map.projection",
+      "revision_count": 2,
+      "revisions": [
+        {
+          "revision_id": "rev.reg.0fedcccc058305f3ec46a550",
+          "value_raw": "미발견 — 사용하는 지도 투영법 또는 자체 투영 규칙을 지정해야 함",
+          "setting_status": "검토 필요",
+          "legacy_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=39|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+        },
+        {
+          "revision_id": "rev.reg.ec44051ae6fb1185a12763c6",
+          "value_raw": "Equirectangular / Plate Carrée 계열을 기본 편집 투영으로 사용",
+          "setting_status": "초안",
+          "legacy_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=87|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+        }
+      ],
+      "action": "preserve all; no latest-row adoption"
+    },
+    {
+      "standard_id": "std.map.wrap_x",
+      "revision_count": 2,
+      "revisions": [
+        {
+          "revision_id": "rev.reg.7131c32a534f833f29a93d03",
+          "value_raw": "미발견 — 세계지도 좌우 경계가 연결되는지 결정 필요",
+          "setting_status": "검토 필요",
+          "legacy_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=40|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+        },
+        {
+          "revision_id": "rev.reg.caded9fe2c1b2ab4e74ea76e",
+          "value_raw": "true — ±180°에서 수평 wrap",
+          "setting_status": "초안",
+          "legacy_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=89|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+        }
+      ],
+      "action": "preserve all; no latest-row adoption"
+    },
+    {
+      "standard_id": "std.map.wrap_y",
+      "revision_count": 2,
+      "revisions": [
+        {
+          "revision_id": "rev.reg.d5ea4a96d6e748b9a37d18b9",
+          "value_raw": "미발견 — 상하 경계와 극지 처리 방식 결정 필요",
+          "setting_status": "검토 필요",
+          "legacy_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=41|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+        },
+        {
+          "revision_id": "rev.reg.aaee766d4d6a53975ac5983e",
+          "value_raw": "false — 위·아래는 극점 경계",
+          "setting_status": "초안",
+          "legacy_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=90|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+        }
+      ],
+      "action": "preserve all; no latest-row adoption"
+    },
+    {
+      "standard_id": "std.map.scale",
+      "revision_count": 2,
+      "revisions": [
+        {
+          "revision_id": "rev.reg.eae8d2c99e0a5ae05e9a0c13",
+          "value_raw": "미발견 — 픽셀↔실제 거리/면적 변환에 사용할 검증된 축척 필요",
+          "setting_status": "검토 필요",
+          "legacy_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=42|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+        },
+        {
+          "revision_id": "rev.reg.d4781ec53aae9b9081724cf9",
+          "value_raw": "고정 px/km 값을 정본으로 두지 않고 CRS extent ÷ raster dimensions로 파생",
+          "setting_status": "초안",
+          "legacy_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=861639760|row=92|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e"
+        }
+      ],
+      "action": "preserve all; no latest-row adoption"
+    }
+  ],
+  "date_issues": [
+    {
+      "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=413334864|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=H2",
+      "raw": "제1기 원(0)년",
+      "target": {
+        "file_code": "C00",
+        "table": "언어분류",
+        "field": "start_raw",
+        "role": "input",
+        "rule": "원문·기존 ID·값 상태·설정 상태·근거·판본을 보존하고 확정 상태를 새로 추정하지 않음. legacy_locator를 이관레코드 관계로 연결. 원문 날짜를 먼저 보존하고 파싱이 확실한 구성만 날짜필드로 구조화. 시작/종료연도 창작 금지.",
+        "source_selector": "all_data_rows"
+      },
+      "lexically_explicit_components": null,
+      "status": "미분류 원문; 월일/끝연도/지속 여부 추정 금지"
+    },
+    {
+      "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=413334864|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=I2",
+      "raw": "제1기 말년",
+      "target": {
+        "file_code": "C00",
+        "table": "언어분류",
+        "field": "end_raw",
+        "role": "input",
+        "rule": "원문·기존 ID·값 상태·설정 상태·근거·판본을 보존하고 확정 상태를 새로 추정하지 않음. legacy_locator를 이관레코드 관계로 연결. 원문 날짜를 먼저 보존하고 파싱이 확실한 구성만 날짜필드로 구조화. 시작/종료연도 창작 금지.",
+        "source_selector": "all_data_rows"
+      },
+      "lexically_explicit_components": null,
+      "status": "미분류 원문; 월일/끝연도/지속 여부 추정 금지"
+    },
+    {
+      "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=413334864|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=H3",
+      "raw": "제2기 1년",
+      "target": {
+        "file_code": "C00",
+        "table": "언어분류",
+        "field": "start_raw",
+        "role": "input",
+        "rule": "원문·기존 ID·값 상태·설정 상태·근거·판본을 보존하고 확정 상태를 새로 추정하지 않음. legacy_locator를 이관레코드 관계로 연결. 원문 날짜를 먼저 보존하고 파싱이 확실한 구성만 날짜필드로 구조화. 시작/종료연도 창작 금지.",
+        "source_selector": "all_data_rows"
+      },
+      "lexically_explicit_components": {
+        "era_raw": "제2기",
+        "year": 1,
+        "precision": "year"
+      },
+      "status": "기년판본/루트 대응 미확정; 원문 보존"
+    },
+    {
+      "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=413334864|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=I3",
+      "raw": "-",
+      "target": {
+        "file_code": "C00",
+        "table": "언어분류",
+        "field": "end_raw",
+        "role": "input",
+        "rule": "원문·기존 ID·값 상태·설정 상태·근거·판본을 보존하고 확정 상태를 새로 추정하지 않음. legacy_locator를 이관레코드 관계로 연결. 원문 날짜를 먼저 보존하고 파싱이 확실한 구성만 날짜필드로 구조화. 시작/종료연도 창작 금지.",
+        "source_selector": "all_data_rows"
+      },
+      "lexically_explicit_components": null,
+      "status": "미분류 원문; 월일/끝연도/지속 여부 추정 금지"
+    }
+  ],
+  "display_literal_exceptions": [
+    {
+      "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=608402244|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e|cell=H3",
+      "source_field_id": "REG-V1:608402244:H",
+      "raw_value": "하르아지엘 은하",
+      "target_role": "calculated",
+      "target": {
+        "file_code": "R10",
+        "table": "지역관계_조회계산",
+        "field": "parent_name",
+        "role": "calculated",
+        "row_condition": "all source records",
+        "rule": "all source records",
+        "data_type": "text_nullable",
+        "reference": ""
+      },
+      "reason": "literal override in a declared derived/display field; preserve without treating display name as another entity master"
+    }
+  ],
+  "numeric_zero_literals": [],
+  "native_conflicts": [],
+  "target_assignment_conflicts": [],
+  "native_unverified_literal_cells": [],
+  "row_admission_evidence": {
+    "default_false_only_rows": 2000,
+    "ordering_only_rows": 9,
+    "formula_only_rows": 81603,
+    "diagnostic_configuration_rows_99": 4013,
+    "rule": "default FALSE, sorting-only, formula-only, diagnostics and empty annual scaffolds do not become factual observations; all raw evidence remains in PH1/PH0"
+  },
+  "small_flow_readiness": {
+    "C00": "standards revisions, sources, languages and nation identity have seed candidates; preserve unresolved calendar/revision conflicts",
+    "R10": "133 regions + 142 relationships, keep gal.1 unresolved; 9 multi-parent relationships retained",
+    "blocking_facts_to_invent": [],
+    "needs_runtime_checks": [
+      "native source-currentness check",
+      "native table upload and ID readback",
+      "formula/lookup/protection/permission",
+      "input/compute/validation/export/consumer range coverage"
+    ]
+  },
+  "input_artifact_sha256": {
+    "PH1\\source_row_inventory.csv": "b3d8ab3e35d2b69717162e92599edbf67b72b9d6f93ffe24358f71b49968f73a",
+    "PH1\\literal_cells.csv": "3967653fde7286653ee14e34a65ea8fb2fbf291a33ac7f5470a5f742014b87c5",
+    "PH1\\formula_nonempty_cache_observations.csv": "5487346544f617b7e2a48c7ce4a50c2cef6998fa80b4e70d722fd6db792ea0b6",
+    "PH1\\명세확정\\field_spec.csv": "7182de941a1e588abaf49b238365a88bed6b51c5ccad481778384a6bc2d5f394",
+    "PH0\\REG_headers_0.json": "9e709a4273c6066920e63ff5f51475423255b54366c8c4644429d558f7843da7",
+    "PH0\\REG_headers_1.json": "12761365c2dd42c38a2d64577c34512a28cd40fa19497afb2b2f446ee24c13e4",
+    "PH0\\REG_headers_2.json": "319ea0af5b0e687705acedac93a3dd762218c95f3773edb5813c1b831ef9ad3d",
+    "PH0\\REG_headers_3.json": "f7e3c5af3ae688b2e918b1223bc19e8d9e8a14388c22090cd8b5aa2cacf9e72d",
+    "PH0\\REG_headers_4.json": "5a32ef116ac2e8194edd2ba06d2ba29170a592b14cfd54c6b00e0189a8a8acb6",
+    "PH0\\REG_headers_5.json": "9c6ef38030a4c0374de4788b768aaeb15fbcb2afd425651804f63827571b9037",
+    "PH0\\native_data_0.json": "946ee2a0a004b17f3c07d00cfe394a0c926ddfea7ab4eefaa36791cfb53aeb64",
+    "PH0\\native_data_1.json": "149098957468b9e6e391c6c0198e16b2a0a01c2721d53209b2da9cdfdd08cc12",
+    "PH0\\native_data_2.json": "e1b09247dc9231475537ba47d0b8d5b08534544cdee2366a0b679e0b0acd865b",
+    "PH0\\native_data_3.json": "3ec65eda033fd9e4ca34c655370ec283b54420bc04f710068dd182c5aeaa6c11",
+    "PH0\\native_data_4.json": "d23ebaf6c5f5c0419e63be338cabcd026f98354a4f8b3c5a51e4f5a274d77e2b",
+    "PH0\\native_data_5.json": "4fc581d11fb33bae33229ddfc2cd7c5c6bbc6a6775563ec2013f9fc3075c7d21",
+    "PH0\\native_data_6.json": "c480f729bfa724a94a8c9ac52529352ce87a8797fe81dec070c785433622e5c3",
+    "PH0\\native_data_7.json": "38606c48828f799b3d219bd7bcbf8f380be7271857db06ba1ed2a9de78266dd6",
+    "PH0\\native_data_8.json": "327918c7ceefbe0304a545ad26dbcadeca603f8c737dd7f0d93e661f6dce4f9c",
+    "PH0\\native_data_9.json": "0159dccd758b040bd7c7c9c2619b628a524b678686df42790be44b9502134c8f"
+  },
+  "runtime_status": "미실행",
+  "destination_integrity": {
+    "unknown_target_fields": [],
+    "records_with_unresolved_primary_keys": [
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "R10.분야설정",
+        "missing_primary_keys": [
+          "config_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=2|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.입력기본값",
+        "missing_primary_keys": [
+          "default_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=3|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=4|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "R20.집계설정",
+        "missing_primary_keys": [
+          "config_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=4|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=5|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.인구정의",
+        "missing_primary_keys": [
+          "population_definition_id",
+          "definition_revision_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=5|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=6|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.단위정의",
+        "missing_primary_keys": [
+          "unit_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=6|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=7|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.기년대응",
+        "missing_primary_keys": [
+          "era_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=7|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=8|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.기년대응",
+        "missing_primary_keys": [
+          "era_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=8|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=9|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.계산정책",
+        "missing_primary_keys": [
+          "policy_id",
+          "policy_revision_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=9|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=10|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.계산정책",
+        "missing_primary_keys": [
+          "policy_id",
+          "policy_revision_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=10|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=11|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "H90.운영안내",
+        "missing_primary_keys": [
+          "guide_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=11|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=12|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "H90.운영안내",
+        "missing_primary_keys": [
+          "guide_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=12|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=13|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "H90.운영안내",
+        "missing_primary_keys": [
+          "guide_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=13|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=14|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "H90.운영안내",
+        "missing_primary_keys": [
+          "guide_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=14|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=15|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "H90.운영안내",
+        "missing_primary_keys": [
+          "guide_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=15|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=16|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "H90.운영안내",
+        "missing_primary_keys": [
+          "guide_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=16|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=17|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.시간정책",
+        "missing_primary_keys": [
+          "policy_id",
+          "policy_revision_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=17|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=18|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.범위레지스트리",
+        "missing_primary_keys": [
+          "dataset_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=18|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=19|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.지표사전",
+        "missing_primary_keys": [
+          "metric_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=19|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      },
+      {
+        "table": "C00.설정출처대응",
+        "missing_primary_keys": [
+          "metadata_mapping_id"
+        ],
+        "source_locator": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw|gid=900230000|row=20|REG-V1:sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+        "action": "retain raw candidate; do not assign semantic unit/metric/definition/era/policy identity without correspondence review"
+      }
+    ],
+    "nation_source_attribute_join_issue": "N10.국가목록원문속성 has record_id but lacks nation_id; source_entity_id is lineage only, pending owner contract"
+  },
+  "codebook_evidence": {
+    "source_codebook_fact_rows": 0,
+    "observed_dropdown_configuration_groups": 62,
+    "status": "existing native ONE_OF_LIST settings preserved separately; no codebook facts created from choices",
+    "coverage": "observed native snapshot cells only; no claim of full data-validation range verification"
+  }
+}

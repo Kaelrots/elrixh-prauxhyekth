@@ -1,0 +1,241 @@
+{
+  "time": "2026-10-02T11:43:25.557Z",
+  "environment": "Actual Templater 2.13.1 WASM parser + mock Vault/Editor/YAML API (PyYAML)",
+  "parser_sha256": "824bafbb3bd37bdb3811ae424a2d088d9629bd43b4ec4b04aa6ea284d8681cc2",
+  "pass": 58,
+  "fail": 0,
+  "results": [
+    {
+      "name": "실제 시작형 전체 삽입: core",
+      "result": "PASS"
+    },
+    {
+      "name": "구획 구성: core",
+      "result": "PASS"
+    },
+    {
+      "name": "시각 문법과 미입력 유지: core",
+      "result": "PASS"
+    },
+    {
+      "name": "기존 문서 삽입 거부: core",
+      "result": "PASS"
+    },
+    {
+      "name": "시작형 생성기 누락 안내: core",
+      "result": "PASS"
+    },
+    {
+      "name": "실제 시작형 전체 삽입: continental",
+      "result": "PASS"
+    },
+    {
+      "name": "구획 구성: continental",
+      "result": "PASS"
+    },
+    {
+      "name": "시각 문법과 미입력 유지: continental",
+      "result": "PASS"
+    },
+    {
+      "name": "기존 문서 삽입 거부: continental",
+      "result": "PASS"
+    },
+    {
+      "name": "시작형 생성기 누락 안내: continental",
+      "result": "PASS"
+    },
+    {
+      "name": "실제 시작형 전체 삽입: administrative",
+      "result": "PASS"
+    },
+    {
+      "name": "구획 구성: administrative",
+      "result": "PASS"
+    },
+    {
+      "name": "시각 문법과 미입력 유지: administrative",
+      "result": "PASS"
+    },
+    {
+      "name": "기존 문서 삽입 거부: administrative",
+      "result": "PASS"
+    },
+    {
+      "name": "시작형 생성기 누락 안내: administrative",
+      "result": "PASS"
+    },
+    {
+      "name": "Frontmatter 원본 변경은 세 시작형에 함께 반영",
+      "result": "PASS"
+    },
+    {
+      "name": "Core 본문 한 곳 변경은 세 시작형에 함께 반영",
+      "result": "PASS"
+    },
+    {
+      "name": "연속성·적용범위·기준시점·주소 값 보존",
+      "result": "PASS"
+    },
+    {
+      "name": "B루트 누락 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "B루트 명시 생성",
+      "result": "PASS"
+    },
+    {
+      "name": "복원 출처 및 호환값 보존",
+      "result": "PASS"
+    },
+    {
+      "name": "original과 복원 출처 충돌 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화 \"지역: 부제\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화 \"위키 [[표현]]\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화 \"따옴표 \\\"지역\\\"\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화 \"역슬래시\\\\지역\"",
+      "result": "PASS"
+    },
+    {
+      "name": "특수 제목 직렬화 \"줄\\n바꿈\"",
+      "result": "PASS"
+    },
+    {
+      "name": "공백 필수값 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "저장 전 편집 내용 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "다른 활성 문서는 변경하거나 대상으로 삼지 않음",
+      "result": "PASS"
+    },
+    {
+      "name": "공백만 있는 새 노트 허용",
+      "result": "PASS"
+    },
+    {
+      "name": "상태·고정 분류 재정의 거부 draft",
+      "result": "PASS"
+    },
+    {
+      "name": "상태·고정 분류 재정의 거부 정본상태",
+      "result": "PASS"
+    },
+    {
+      "name": "상태·고정 분류 재정의 거부 스키마버전",
+      "result": "PASS"
+    },
+    {
+      "name": "상태·고정 분류 재정의 거부 세부유형",
+      "result": "PASS"
+    },
+    {
+      "name": "상태·고정 분류 재정의 거부 사용된 템플릿",
+      "result": "PASS"
+    },
+    {
+      "name": "상태·고정 분류 재정의 거부 분야",
+      "result": "PASS"
+    },
+    {
+      "name": "본문 누락 시 전체 중단 01-지역 Core.md",
+      "result": "PASS"
+    },
+    {
+      "name": "본문 누락 시 전체 중단 02-자연환경.md",
+      "result": "PASS"
+    },
+    {
+      "name": "본문 누락 시 전체 중단 03-점유와 지역 이력.md",
+      "result": "PASS"
+    },
+    {
+      "name": "본문 누락 시 전체 중단 04-행정 인구 생활권.md",
+      "result": "PASS"
+    },
+    {
+      "name": "본문 누락 시 전체 중단 05-참고 및 문서 관리.md",
+      "result": "PASS"
+    },
+    {
+      "name": "잘못된 구성요소 거부 \"\"",
+      "result": "PASS"
+    },
+    {
+      "name": "잘못된 구성요소 거부 \"---\\n제목: 중복\\n---\\n# 개요\"",
+      "result": "PASS"
+    },
+    {
+      "name": "잘못된 구성요소 거부 \"# 개요\\n<% 1+1 %>\"",
+      "result": "PASS"
+    },
+    {
+      "name": "공통 원본 누락 시 전체 중단",
+      "result": "PASS"
+    },
+    {
+      "name": "공통 생성기 누락 안내",
+      "result": "PASS"
+    },
+    {
+      "name": "격리용 공통 sourcePath 재정의",
+      "result": "PASS"
+    },
+    {
+      "name": "조합 중 본문 변경 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "조합 중 대상 저장 내용 변경 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "조합 중 대상 편집기 변경 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "지원하지 않는 시작형 unknown",
+      "result": "PASS"
+    },
+    {
+      "name": "지원하지 않는 시작형 __proto__",
+      "result": "PASS"
+    },
+    {
+      "name": "지원하지 않는 시작형 constructor",
+      "result": "PASS"
+    },
+    {
+      "name": "미정의 옵션 거부",
+      "result": "PASS"
+    },
+    {
+      "name": "수정일 버튼 열람만으로 쓰지 않음",
+      "result": "PASS"
+    },
+    {
+      "name": "수정일 버튼은 표시 지역의 수정일만 변경",
+      "result": "PASS"
+    },
+    {
+      "name": "수정일 버튼은 인물·템플릿 원본에서 중단",
+      "result": "PASS"
+    }
+  ]
+}

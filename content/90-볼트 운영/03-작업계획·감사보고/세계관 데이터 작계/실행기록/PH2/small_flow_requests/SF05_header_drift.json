@@ -1,0 +1,49 @@
+{
+  "step_id": "SF05_header_drift",
+  "run_id": "TEST-SF-20261002-01",
+  "result": "미실행",
+  "preconditions": [
+    "앞 단계 native 읽기 확인",
+    "정확한 TEST 대상 ID 검증"
+  ],
+  "writes": [
+    {
+      "spreadsheet_id": "1Ov5M1nzGkuGk-uZ6rsWWTscQhtK3As43WtnZrPZeN2w",
+      "file_code": "TEST-R20",
+      "requests": [
+        {
+          "updateCells": {
+            "range": {
+              "sheetId": 71002004,
+              "startRowIndex": 2,
+              "endRowIndex": 3,
+              "startColumnIndex": 3,
+              "endColumnIndex": 4
+            },
+            "rows": [
+              {
+                "values": [
+                  {
+                    "userEnteredValue": {
+                      "stringValue": "TEST_DRIFT_value_numeric"
+                    }
+                  }
+                ]
+              }
+            ],
+            "fields": "userEnteredValue"
+          }
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "H90_connection": "스키마 불일치",
+    "H90_VIEW_소형흐름_B6": "스키마 불일치"
+  },
+  "readback": [
+    "R20:PUB_POPULATION!A3:AZ3",
+    "H90:REF_POPULATION!A3:AZ3",
+    "H90:VIEW_소형흐름!A4:B6"
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "project_id": "WORLD-DATA-V2",
+  "spec_owner": "common_hub",
+  "created_at": "2026-10-02T17:25:24+09:00",
+  "status": "PH1 상세 설계 초안 · 온라인 작성/이관/운영 시험 미실행",
+  "source_snapshot_ids": {
+    "REG-V1": "sha256:1456ec38314c47f740a205e375891d0773d39228b5da678dfd4ffc1da56be15e",
+    "NAT-V1": "sha256:f590df6a0c855911011be0f83d942add1f8dcf1a218bcdf053393d1ce37519c1"
+  },
+  "assignment_rule": "source row 소유. 입력 원본 owner와 명세 작성자는 별개.",
+  "source_documents": [
+    "01_세계관_데이터_V2_분리고도화_WORK_작업계획서.md",
+    "02_기존87개시트_이관대응표.csv",
+    "PH1/actual_field_mapping_draft.csv",
+    "PH1/sheet_inventory.json",
+    "PH1/headers_notes_links_validations.json"
+  ],
+  "coverage": {
+    "source_sheets": 27,
+    "source_field_ids": 381,
+    "unique_spec_rows": 381,
+    "missing_spec_rows": 0,
+    "static_coverage_only": true
+  },
+  "acceptance_tests": {
+    "passed": 1,
+    "passed_ids": [
+      "T-002"
+    ],
+    "not_run": 83,
+    "basis": "상위 작업의 새 V1 시작/종료 전체 비교 증거. 이 명세 작성은 추가 시험 통과 아님"
+  },
+  "PH1_complete": false,
+  "operating_files_created_by_this_subtask": 0,
+  "online_actions_by_this_subtask": 0,
+  "issues": [
+    {
+      "issue_id": "CH-001",
+      "subject": "첨부 기준 XLSX 부재",
+      "category": "PH0 증거 게이트",
+      "evidence_basis": "05 구조JSON과 온라인 snapshot만 존재; 셀값 전체 diff 미검증",
+      "next_action": "사용자에게 묻고 있는 온라인 snapshot 기준 예외 여부를 기다림. 승인이 없으면 PH2 착수/PH0완료 금지.",
+      "source_field_ids": [],
+      "status": "PH0 기준 선택 응답 대기",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "PH1의 sourcefield 목적지는 현 온라인 snapshot으로 명세. 기준본 동일성은 아직 주장하지 않는다."
+    },
+    {
+      "issue_id": "CH-002",
+      "subject": "REG 국가마스터의 비연방 상세속성 소유",
+      "category": "owner 범위 검토",
+      "evidence_basis": "REG02 E:I 부모/존속/통치 원문 필드 존재",
+      "next_action": "N10 담당과 국가목록원문속성 스키마를 병합 검토; C00는 중립식별/별칭 유지, R50 관계 추정 금지.",
+      "source_field_ids": [
+        "REG-V1:1659135409:E",
+        "REG-V1:1659135409:F",
+        "REG-V1:1659135409:G",
+        "REG-V1:1659135409:H",
+        "REG-V1:1659135409:I"
+      ],
+      "status": "명세 처리규칙 지정 완료",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "C00 중립목록/별칭과 N10 국가목록원문속성 필드 목적지·키를 명시. 통합 담당은 같은 사실의 입력표 중복이 없도록 schema merge한다."
+    },
+    {
+      "issue_id": "CH-003",
+      "subject": "동일 기준 ID의 복수 개정 및 축 항목 의미",
+      "category": "세계관 결정",
+      "evidence_basis": "REG00 std.map 4종 중복과 std.map.crs.axis의 실행시점 원문 관측은 live_decision_observations와 연결",
+      "next_action": "revision_id별 모두 보존하고 채택상태/의미는 사용자 결정 전 미해결. 마지막 행 자동 채택 금지.",
+      "source_field_ids": [],
+      "status": "행별 정본 채택 대기",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "서로 다른 후보를 기준개정이력에 보존하고 미채택으로 안전하게 이관하는 명세 완료. 세계관 값 선택은 하지 않는다."
+    },
+    {
+      "issue_id": "CH-004",
+      "subject": "서술 날짜·원문 단위·기년 대응 파싱",
+      "category": "구조화 한계",
+      "evidence_basis": "C00 분류/REG사건의 시작종료와 메타의 서술 규칙",
+      "next_action": "raw를 보존하고 날짜/단위가 명확한 부분만 구조화. 자동추론 확대 금지.",
+      "source_field_ids": [],
+      "status": "명세 처리규칙 지정 완료",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "서술 원문과 구조화된 구성필드를 별도 보존. 파싱 불가/기년 불확실은 계산 제외·원문조회로 명확히 처리한다."
+    },
+    {
+      "issue_id": "CH-005",
+      "subject": "원본/파생 역할 오인 방지",
+      "category": "명세 보정",
+      "evidence_basis": "NAT41/43 M/89 spill 결과가 literal이라 초안 source_role은 input일 수 있음",
+      "next_action": "새 target role을 archive/display/formula로 구별. source_role_original은 원 관측값 유지.",
+      "source_field_ids": [],
+      "status": "명세 역할 보정 완료",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "381행 target role이 literal source role과 분리되어 있고 호환 캐시/동적결과는 입력 사실로 승격하지 않는다."
+    },
+    {
+      "issue_id": "CH-006",
+      "subject": "코드북 legacy 그룹과 네이티브 칩 동기화",
+      "category": "구현 전 계약",
+      "evidence_basis": "NAT00코드북 AQ:BB legacy 그룹 및 91안내의 구형 칩60열 기록",
+      "next_action": "현재 네이티브 inventory와 각 소비필드 의미를 매칭한 뒤 배포; 과거60개를 현재 수량으로 확정하지 않음.",
+      "source_field_ids": [],
+      "status": "명세 지정 · 네이티브 실행시험 대기",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "legacy 그룹명을 유지해 group_code 계약으로 배포하고 native 칩 검증은 T081로 추적. 현재 60개를 단정하지 않는다."
+    },
+    {
+      "issue_id": "CH-007",
+      "subject": "제공표 이름과 외부분야 스키마 병합",
+      "category": "PH1 통합 검토",
+      "evidence_basis": "N20/N30/R50 등 다른 담당 원본을 H90 기능 required_datasets로 참조",
+      "next_action": "각 담당 schema의 table_id와 keys를 병합 대조하고 제공범위/필수헤더 확정 후 PH1 종료. 현재 function dataset이 구체 ID로 해결됐다고 주장하지 않음.",
+      "source_field_ids": [],
+      "status": "C00 typed 계약 완료 · 통합 alias 적용 대상",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "8개 제공계약의 모든 C00 source bindings를 실제 field와 검증했다. H90 외부 dataset aliases는 통합 담당이 region/nation 제공계약에 맞춰 고정한다."
+    },
+    {
+      "issue_id": "CH-008",
+      "subject": "V1 호환시트 미확인 헤더",
+      "category": "보존 메타 해석",
+      "evidence_basis": "NAT41 AM/AN/AR/AS/AT/AV/AX 일부 source header 미확인",
+      "next_action": "열위치 기반 보존필드를 지정했으나 실제 의미는 원 제공표 열과 대조 필요. 운영 제공표에서는 R10 정식 기술헤더로 읽음.",
+      "source_field_ids": [
+        "NAT-V1:1795511654:AM",
+        "NAT-V1:1795511654:AN",
+        "NAT-V1:1795511654:AR",
+        "NAT-V1:1795511654:AS",
+        "NAT-V1:1795511654:AT",
+        "NAT-V1:1795511654:AV",
+        "NAT-V1:1795511654:AX"
+      ],
+      "status": "퇴역 보존 및 운영 대체 명세 완료",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "미확인 구판 헤더는 정확 source_cell/column으로 보존하고 운영 의미는 R10 typed 제공표로 대체. 추정 원문 라벨을 정본으로 채택하지 않는다."
+    },
+    {
+      "issue_id": "CH-009",
+      "subject": "REG 합산완료의 단순 개수 동치 문구",
+      "category": "운영규칙 재구현",
+      "evidence_basis": "REG00메타 10행 원문 유효행수=고유지역수=대상지역수",
+      "next_action": "문구 원문은 보존하되 V2는 실제 대상ID 집합도 일치 검사. 동수지만 다른 ID인 T029를 필수로 연결.",
+      "source_field_ids": [],
+      "status": "V2 개선규칙 명시 완료",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "원문 개수조건을 보존하되 H05에서 실제 ID 집합 일치와 T029를 요구한다."
+    },
+    {
+      "issue_id": "CH-010",
+      "subject": "R70 유래 역법 후보표 병합",
+      "category": "PH1 계약 병합",
+      "evidence_basis": "지역 담당의 C00.공통기준_개정후보 5속성",
+      "next_action": "integration_contracts.REG-C00-CALENDAR-CANDIDATE의 필드 대응을 적용하고 동일 내용 개정/원문 ID를 대조. 독립 이중 입력표를 만들지 않음.",
+      "source_field_ids": [],
+      "status": "명시적 canonical 필드 대응 완료",
+      "does_not_authorize_setting_invention": true,
+      "is_ph1_field_design_blocker": false,
+      "resolution_or_current_boundary": "임시 후보명을 기준개정이력으로 옮기는 integration_contracts에 14개 필드 변환과 역법 파생 원칙을 지정했다."
+    }
+  ],
+  "observation_vs_design": "source_header/source_role/수식캐시는 실제 관측; target schema/기능은 구현 전 설계. 계획 미정은 세계관 값으로 채우지 않음.",
+  "unsupported_claims": [
+    "온라인 운영이관 완료",
+    "381필드 의미검증 완료",
+    "PH1완료",
+    "모든 시험 통과",
+    "첨부본과 셀값 동일"
+  ]
+}

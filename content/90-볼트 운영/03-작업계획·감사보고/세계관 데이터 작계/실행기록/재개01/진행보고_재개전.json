@@ -1,0 +1,209 @@
+{
+  "status": "미완료 · PH0 첨부 기준본 차분 대기",
+  "project_folder": "https://drive.google.com/drive/folders/1VGwXPx59hEl0VGlMWitymxkesTsHVxyF",
+  "backup_folder": "https://drive.google.com/drive/folders/1LaoWsUZnNs-fGDOkfq_gO3fdvkCu4jo9",
+  "logs_folder": "https://drive.google.com/drive/folders/1-bKopCrg7nkDtAEJXlRMCWcs2JseOJCE",
+  "operating_files_created": 0,
+  "operating_files_planned": 16,
+  "H90_url": null,
+  "migration": {
+    "records_migrated": 0,
+    "fields_inventoried": 1539,
+    "fields_decided": 0,
+    "transforms_applied": 0,
+    "preservation": "V1 네이티브 백업 2개, 실행시점 XLSX 2개, 시작/종료 관측 및 필드·행·수식 인벤토리"
+  },
+  "tests": {
+    "passed": 1,
+    "failed": 0,
+    "not_run": 83,
+    "passed_ids": [
+      "T-002"
+    ],
+    "note": "V1 무변경만 실제 통과. 로컬 준비검사와 나머지 V2 운영시험은 구별."
+  },
+  "V1_unchanged": {
+    "status": "확인",
+    "checked_at": "2026-10-02T16:53:59+09:00",
+    "checks": [
+      {
+        "source": "REG-V1",
+        "metadata_equal": true,
+        "sheet_metadata_equal": true,
+        "export_literal_and_formula_equal": true,
+        "formula_cache_changed_cells": 0
+      },
+      {
+        "source": "NAT-V1",
+        "metadata_equal": true,
+        "sheet_metadata_equal": true,
+        "export_literal_and_formula_equal": true,
+        "formula_cache_changed_cells": 0
+      }
+    ],
+    "evidence": "PH0/T-002_evidence.json"
+  },
+  "remaining_canon_issues": [
+    {
+      "decision_id": "DQ-001",
+      "subject": "공통 지도기준의 초기 검토/후속 초안",
+      "source_hint": "std.map.projection; std.map.wrap_x; std.map.wrap_y; std.map.scale",
+      "owner_file_codes": "C00",
+      "basis_type": "계획서 지시 + 실행시점 온라인 원문 관측",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": true,
+      "legacy_locators": [
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 39,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 40,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 41,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 42,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 87,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 89,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 90,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        },
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 92,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        }
+      ],
+      "safe_preservation_rule": "기준 ID와 개정 ID를 분리하고 원문·판본·채택 상태 보존",
+      "setting_decision_status": "결정 대기 · 원문 보존",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    },
+    {
+      "decision_id": "DQ-002",
+      "subject": "축 기준 항목명과 값의 의미 불일치",
+      "source_hint": "std.map.crs.axis",
+      "owner_file_codes": "C00",
+      "basis_type": "계획서 지시 + 실행시점 온라인 원문 관측",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": true,
+      "legacy_locators": [
+        {
+          "source_file_id": "1EACdRIiAPGk4LAbttpXZiJd_cuqIh-cVi4jQsbfmqDw",
+          "source_sheet_id": 861639760,
+          "source_sheet_name": "00 공통 기준",
+          "row": 86,
+          "snapshot_id": "WORLD-DATA-V2-20261002-01a0fb83",
+          "evidence": "live_decision_observations.json"
+        }
+      ],
+      "safe_preservation_rule": "원문을 임의 치환하지 않고 의미 검토 대상으로 남김",
+      "setting_decision_status": "결정 대기 · 원문 보존",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    },
+    {
+      "decision_id": "DQ-003",
+      "subject": "행성 원문 반경/지름환산 반경/표면적 대조",
+      "source_hint": "10_행성_기본값",
+      "owner_file_codes": "R70",
+      "basis_type": "계획서의 첨부본 관측 및 보존 지시",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": false,
+      "legacy_locators": [],
+      "safe_preservation_rule": "직접 원문과 계산값을 보존하고 채택 미결정이면 자동 정본 승격 금지",
+      "setting_decision_status": "결정 대기 후보",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    },
+    {
+      "decision_id": "DQ-004",
+      "subject": "국가 외국어 이름의 역할·판본 차이",
+      "source_hint": "지역 국가목록 / 국가 기본정보",
+      "owner_file_codes": "C00;N10",
+      "basis_type": "계획서의 첨부본 관측 및 보존 지시",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": false,
+      "legacy_locators": [],
+      "safe_preservation_rule": "공식 표기·중립 목록명·원문 별칭·구판의 역할을 보존하고 최신값 자동선택 금지",
+      "setting_decision_status": "결정 대기 후보",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    },
+    {
+      "decision_id": "DQ-005",
+      "subject": "종족·인적 분류의 후보 정의/분류체계 충돌",
+      "source_hint": "공통 분류사전",
+      "owner_file_codes": "C00;R30",
+      "basis_type": "계획서의 첨부본 관측 및 보존 지시",
+      "basis_document": "01 계획서 2.3절/4.1절/4.8절",
+      "live_cell_observation_confirmed": false,
+      "legacy_locators": [],
+      "safe_preservation_rule": "정의·판본·설정 상태와 충돌 연결을 보존하고 확정으로 일괄 변경하지 않음",
+      "setting_decision_status": "결정 대기 후보",
+      "selected_setting_value": null,
+      "technical_implementation_status": "미실행"
+    }
+  ],
+  "blocker": [
+    {
+      "id": "B-001",
+      "category": "자료 없음",
+      "description": "기준 첨부 XLSX 두 실물이 작업 폴더·볼트 파일검색·Drive 정확 MIME/제목 검색에 없음. 05 JSON에는 헤더/셀값이 없어 셀 단위 변경 차분을 입증할 수 없음.",
+      "scope": "PH0 종료 및 PH2 착수 게이트",
+      "next_action": "기준 첨부 XLSX 위치 확인 후 해시 검증하고 실행본과 비교",
+      "user_question": "원파일의 로컬 경로 또는 Drive 링크",
+      "status": "응답 대기"
+    }
+  ],
+  "recovery": "V1 원본 계속 사용. V2 운영파일/신규입력은 아직 없어 롤백할 운영 데이터 없음. 실행상태의 실제 백업·폴더 ID를 재조회하고 같은 파일을 다시 만들지 않는다.",
+  "technical_completion": false,
+  "operating_transition": "아직 기술 구축 전; 운영 전환 요청하지 않음",
+  "resume": "기준 XLSX 두 개의 SHA256 확인 → 현재 보존본과 셀/수식/메모 차분 → PH0 종료 판단 → PH1 1,539개 열 대응 및 기능 명세 확정. 기존 폴더·백업 ID를 재사용하고 중복 생성 금지.",
+  "T-074_override": "V1 원본 시험쓰기 금지. 후속 차분 시험은 TEST 원본 복제본으로 수행.",
+  "checked_at": "2026-10-02T16:53:59+09:00"
+}

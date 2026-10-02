@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>Work_실행지시문_통합용어집_정본반영_2026-10-01</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="Work_실행지시문_통합용어집_정본반영_2026-10-01"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Work_실행지시문_통합용어집_정본반영_2026-10-01"/><meta name="twitter:description" content="Work 실행 지시문 — 《엘리스 프라우셰크트》 통합 용어집 확장 정본 반영 0."/><meta property="og:description" content="Work 실행 지시문 — 《엘리스 프라우셰크트》 통합 용어집 확장 정본 반영 0."/><meta property="og:image:alt" content="Work 실행 지시문 — 《엘리스 프라우셰크트》 통합 용어집 확장 정본 반영 0."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/03-작업계획·감사보고/통합-용어집-개편/Work_실행지시문_통합용어집_정본반영_2026-10-01"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/03-작업계획·감사보고/통합-용어집-개편/Work_실행지시문_통합용어집_정본반영_2026-10-01"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Work 실행 지시문 — 《엘리스 프라우셰크트》 통합 용어집 확장 정본 반영 0."/><meta name="generator" content="Quartz"/><link href="../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiQzpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/03-작업계획·감사보고/통합-용어집-개편/Work_실행지시문_통합용어집_정본반영_2026-10-01"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1279" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1279" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-904" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-904" class="mobile-toc-dialog" aria-labelledby="toc-904-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-904-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#work-실행-지시문--엘리스-프라우셰크트-통합-용어집-확장-정본-반영" data-for="work-실행-지시문--엘리스-프라우셰크트-통합-용어집-확장-정본-반영">Work 실행 지시문 — 《엘리스 프라우셰크트》 통합 용어집 확장 정본 반영</a></li><li class="depth-1"><a href="#0-작업-목표" data-for="0-작업-목표">0. 작업 목표</a></li><li class="depth-0"><a href="#1-최상위-권위자료" data-for="1-최상위-권위자료">1. 최상위 권위자료</a></li><li class="depth-1"><a href="#권위-우선순위" data-for="권위-우선순위">권위 우선순위</a></li><li class="depth-0"><a href="#2-작업-시작-전-필수-사전점검" data-for="2-작업-시작-전-필수-사전점검">2. 작업 시작 전 필수 사전점검</a></li><li class="depth-1"><a href="#21-구조-확인" data-for="21-구조-확인">2.1 구조 확인</a></li><li class="depth-1"><a href="#22-정본-선택-원칙" data-for="22-정본-선택-원칙">2.2 정본 선택 원칙</a></li><li class="depth-1"><a href="#23-변경-전-스냅샷" data-for="23-변경-전-스냅샷">2.3 변경 전 스냅샷</a></li><li class="depth-0"><a href="#3-실제-반영-대상" data-for="3-실제-반영-대상">3. 실제 반영 대상</a></li><li class="depth-1"><a href="#a-통합-용어집" data-for="a-통합-용어집">A. 통합 용어집</a></li><li class="depth-2"><a href="#해야-할-일" data-for="해야-할-일">해야 할 일</a></li><li class="depth-2"><a href="#반드시-반영할-주요-신규확장-핵심어" data-for="반드시-반영할-주요-신규확장-핵심어">반드시 반영할 주요 신규·확장 핵심어</a></li><li class="depth-1"><a href="#b-존재영혼종족" data-for="b-존재영혼종족">B. 존재·영혼·종족</a></li><li class="depth-2"><a href="#반영-원칙" data-for="반영-원칙">반영 원칙</a></li><li class="depth-2"><a href="#수치-주의" data-for="수치-주의">수치 주의</a></li><li class="depth-1"><a href="#c-초월자신제국도교" data-for="c-초월자신제국도교">C. 초월자·신·제국도교</a></li><li class="depth-2"><a href="#반드시-일관화할-정의" data-for="반드시-일관화할-정의">반드시 일관화할 정의</a></li><li class="depth-2"><a href="#금지" data-for="금지">금지</a></li><li class="depth-2"><a href="#제국도교-5단계" data-for="제국도교-5단계">제국도교 5단계</a></li><li class="depth-1"><a href="#d-마법에너지" data-for="d-마법에너지">D. 마법·에너지</a></li><li class="depth-2"><a href="#반영할-상위관계" data-for="반영할-상위관계">반영할 상위관계</a></li><li class="depth-2"><a href="#반드시-hold-유지" data-for="반드시-hold-유지">반드시 HOLD 유지</a></li><li class="depth-1"><a href="#e-차원차원재난" data-for="e-차원차원재난">E. 차원·차원재난</a></li><li class="depth-2"><a href="#핵심-관계" data-for="핵심-관계">핵심 관계</a></li><li class="depth-2"><a href="#p1-전이지형" data-for="p1-전이지형">P1 전이지형</a></li><li class="depth-2"><a href="#hold" data-for="hold">HOLD</a></li><li class="depth-1"><a href="#f-천체특수물리" data-for="f-천체특수물리">F. 천체·특수물리</a></li><li class="depth-2"><a href="#확정-반영" data-for="확정-반영">확정 반영</a></li><li class="depth-2"><a href="#hold-1" data-for="hold-1">HOLD</a></li><li class="depth-1"><a href="#g-역사시대" data-for="g-역사시대">G. 역사·시대</a></li><li class="depth-2"><a href="#반영-규칙" data-for="반영-규칙">반영 규칙</a></li><li class="depth-1"><a href="#h-언어문자" data-for="h-언어문자">H. 언어·문자</a></li><li class="depth-2"><a href="#확정" data-for="확정">확정</a></li><li class="depth-2"><a href="#금지-1" data-for="금지-1">금지</a></li><li class="depth-1"><a href="#i-헌정법제" data-for="i-헌정법제">I. 헌정·법제</a></li><li class="depth-2"><a href="#현행-헌법의-기준본을-먼저-식별" data-for="현행-헌법의-기준본을-먼저-식별">현행 헌법의 기준본을 먼저 식별</a></li><li class="depth-2"><a href="#반드시-교정" data-for="반드시-교정">반드시 교정</a></li><li class="depth-2"><a href="#전문사전" data-for="전문사전">전문사전</a></li><li class="depth-0"><a href="#4-전문사전색인-생성-원칙" data-for="4-전문사전색인-생성-원칙">4. 전문사전·색인 생성 원칙</a></li><li class="depth-1"><a href="#새-색인형-전문사전-신설을-우선-검토할-분야" data-for="새-색인형-전문사전-신설을-우선-검토할-분야">새 색인형 전문사전 신설을 우선 검토할 분야</a></li><li class="depth-1"><a href="#기존-앵커-우선" data-for="기존-앵커-우선">기존 앵커 우선</a></li><li class="depth-0"><a href="#5-통합-용어집에-넣지-않을-것" data-for="5-통합-용어집에-넣지-않을-것">5. 통합 용어집에 넣지 않을 것</a></li><li class="depth-0"><a href="#6-수정-방식" data-for="6-수정-방식">6. 수정 방식</a></li><li class="depth-1"><a href="#61-최소수정-원칙" data-for="61-최소수정-원칙">6.1 최소수정 원칙</a></li><li class="depth-1"><a href="#62-링크별칭" data-for="62-링크별칭">6.2 링크·별칭</a></li><li class="depth-0"><a href="#7-qa-필수항목" data-for="7-qa-필수항목">7. QA 필수항목</a></li><li class="depth-0"><a href="#8-완료-보고-형식" data-for="8-완료-보고-형식">8. 완료 보고 형식</a></li><li class="depth-1"><a href="#81-변경-파일-목록" data-for="81-변경-파일-목록">8.1 변경 파일 목록</a></li><li class="depth-1"><a href="#82-신규-파일" data-for="82-신규-파일">8.2 신규 파일</a></li><li class="depth-1"><a href="#83-hold" data-for="83-hold">8.3 HOLD</a></li><li class="depth-1"><a href="#84-검증" data-for="84-검증">8.4 검증</a></li><li class="depth-1"><a href="#85-최종-판정" data-for="85-최종-판정">8.5 최종 판정</a></li><li class="depth-0"><a href="#9-절대-금지" data-for="9-절대-금지">9. 절대 금지</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1279"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1279" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../90-볼트-운영/03-작업계획·감사보고/">03 작업계획·감사보고</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../90-볼트-운영/03-작업계획·감사보고/통합-용어집-개편/">통합 용어집 개편</a></div></nav><h1 class="article-title">Work_실행지시문_통합용어집_정본반영_2026-10-01</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-02T05:36:48.463Z">2026년 10월 02일</time><span>23 분 소요</span></p></div></div><article class="popover-hint"><h1 id="work-실행-지시문--엘리스-프라우셰크트-통합-용어집-확장-정본-반영">Work 실행 지시문 — 《엘리스 프라우셰크트》 통합 용어집 확장 정본 반영<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#work-실행-지시문--엘리스-프라우셰크트-통합-용어집-확장-정본-반영" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="0-작업-목표">0. 작업 목표<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-작업-목표" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>다음 Google Drive 세계관 볼트에서 2026-10-01 ChatGPT 논의를 통해 확정된
+세계관 핵심용어·전문용어·국소충돌 해결사항·정보구조 결정을 실제 정본 문서에 반영한다.</p>
+<ul>
+<li>세계관 볼트 루트<br/>
+<a href="https://drive.google.com/drive/folders/1NWMsSX1v7_dHCYaeKirutPpLq4xqKf7y" class="external">https://drive.google.com/drive/folders/1NWMsSX1v7_dHCYaeKirutPpLq4xqKf7y<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p>이 작업은 새로운 설정을 창작하는 단계가 아니다.
+<font style="font-weight:bold;">이미 확정된 결정사항을 현재 Drive 구조와 정본 문서에 안전하게 반영하는 편집·정합화 작업</font>이다.</p>
+<hr/>
+<h1 id="1-최상위-권위자료">1. 최상위 권위자료<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-최상위-권위자료" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>다음 두 문서를 반드시 먼저 읽는다.</p>
+<ol>
+<li><code>세계관_통합_용어집_확장_결정_마스터_07_최종감사통과_2026-10-01.md</code></li>
+<li><code>세계관_통합_용어집_최종_정합성_감사보고서_07_2026-10-01.md</code></li>
+</ol>
+<h2 id="권위-우선순위">권위 우선순위<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#권위-우선순위" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>충돌 시 다음 순서만 따른다.</p>
+<ol>
+<li>07 최종감사통과 마스터의 <code>확정 정의</code>, <code>선택</code>, <code>저자 확정</code>, <code>감사 교정</code></li>
+<li>4단계 국소 충돌 해결 결과</li>
+<li>5단계 분야별 전문사전 배치 결정</li>
+<li>07 감사보고서의 정합성 교정 및 Work 적용 지침</li>
+<li>현재 활성 정본 원문의 비충돌 부분</li>
+<li>06 이하의 논의기록 및 과거 원문은 경위 확인용</li>
+</ol>
+<p>다음 표시는 <font style="font-weight:bold;">정본 결정으로 사용하지 않는다.</font></p>
+<ul>
+<li><code>HOLD</code></li>
+<li><code>미확정</code></li>
+<li><code>추천 예시</code></li>
+<li><code>복원 원문</code></li>
+<li><code>과거 문헌</code></li>
+<li><code>미검토</code></li>
+<li>B루트 전용 설정</li>
+<li>외부 게임·도구 참고안</li>
+</ul>
+<p>빈칸을 채우기 위해 Work가 임의로 설정을 창작해서는 안 된다.</p>
+<hr/>
+<h1 id="2-작업-시작-전-필수-사전점검">2. 작업 시작 전 필수 사전점검<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-작업-시작-전-필수-사전점검" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>실제 수정 전에 반드시 현재 Drive 상태를 다시 조회한다.</p>
+<h2 id="21-구조-확인">2.1 구조 확인<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-구조-확인" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>세계관 루트의 현재 폴더 구조 확인</li>
+<li>2026-09-30 구조개편 이후 경로 이동 여부 확인</li>
+<li>같은 파일명의 중복 사본·Quartz 사본·staging·구식 보존본 구분</li>
+<li>실제 활성 정본 또는 현행 작업본 식별</li>
+<li>각 대상 파일의 <code>정본상태</code>, <code>기원상태</code>, <code>복원여부</code>, <code>문서유형</code> 확인</li>
+</ol>
+<h2 id="22-정본-선택-원칙">2.2 정본 선택 원칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-정본-선택-원칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>활성 <code>canon</code> 원문을 우선한다.</li>
+<li>현행 작업이 별도 <code>provisional</code>/정본화 준비본에서 진행 중이면 현재 승계 관계를 확인한다.</li>
+<li><code>(보존용·구식 문서)</code>와 <code>archival</code>은 수정 대상으로 삼지 않는다.</li>
+<li>Quartz <code>content</code>, <code>content.__staging</code>, HTML 산출물은 원본 Markdown의 대체 정본으로 사용하지 않는다.</li>
+<li>동일 문서의 여러 작업본이 존재하면 최신 파일이라는 이유만으로 선택하지 말고 실제 승계·정본 관계를 확인한다.</li>
+</ul>
+<h2 id="23-변경-전-스냅샷">2.3 변경 전 스냅샷<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#23-변경-전-스냅샷" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>각 수정 대상마다 다음을 기록한다.</p>
+<ul>
+<li>현재 파일명</li>
+<li>Drive ID</li>
+<li>현재 경로</li>
+<li>정본상태</li>
+<li>수정 전 해시 또는 내용 스냅샷</li>
+<li>수정 이유</li>
+<li>어느 07 결정에 따른 변경인지</li>
+</ul>
+<hr/>
+<h1 id="3-실제-반영-대상">3. 실제 반영 대상<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-실제-반영-대상" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>아래는 최소 범위다. 현재 구조를 확인한 뒤 동등한 최신 정본 파일이 있으면 그 파일에 반영한다.</p>
+<h2 id="a-통합-용어집">A. 통합 용어집<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-통합-용어집" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>핵심 대상:</p>
+<p><code>00-세계관 공통설정/00-세계관 통합 용어집_확정개념반영.md</code></p>
+<h3 id="해야-할-일">해야 할 일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#해야-할-일" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>기존 공통 용어 28개는 원칙적으로 유지</li>
+<li>07에서 <code>G</code> 또는 <code>G+S</code>로 결정된 대표 개념 추가</li>
+<li>기존 항목 중 이번 결정에 영향을 받은 항목의 정의 갱신</li>
+<li>세부수치·법적 효과·긴 전문설명은 넣지 않고 전문사전/원문 링크로 연결</li>
+<li>별칭·구칭·축약형을 정리</li>
+<li><code>정의 확정 보류</code> 목록은 07 HOLD 기준으로 재정리</li>
+</ol>
+<h3 id="반드시-반영할-주요-신규확장-핵심어">반드시 반영할 주요 신규·확장 핵심어<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반드시-반영할-주요-신규확장-핵심어" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="존재론영혼">존재론·영혼<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#존재론영혼" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>격</li>
+<li>존재 위상</li>
+<li>위격</li>
+<li>영혼</li>
+<li>각성</li>
+</ul>
+<h4 id="마법에너지">마법·에너지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마법에너지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>위상력</li>
+<li>마력</li>
+<li>신성력</li>
+<li>생명력</li>
+<li>마나</li>
+</ul>
+<h4 id="초월신">초월·신<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#초월신" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>수도자</li>
+<li>선지자</li>
+<li>신</li>
+<li>초월신론</li>
+<li>기존 초월자·준초월자·초월자 후보 정의 갱신</li>
+</ul>
+<h4 id="차원">차원<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#차원" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>차원 균열</li>
+<li>차원 침식</li>
+<li>혼돈계의 별칭/구칭으로 <code>전이계</code> 연결</li>
+<li>차원류·혼류·불안정 차원류 관계 갱신</li>
+</ul>
+<h4 id="천체지리역사">천체·지리·역사<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#천체지리역사" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>라리셴베르크</li>
+<li>에아르트</li>
+<li>류아블론츠 성계</li>
+<li>하르아지엘 은하</li>
+<li>루카프탄-사일루트 은하단</li>
+<li>지역 5층위 체계</li>
+<li>라리셴베르크의 시대 구분</li>
+</ul>
+<h4 id="언어">언어<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#언어" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>엘루닉어 = 언어</li>
+<li>엘룬 = 문자</li>
+</ul>
+<h4 id="헌정">헌정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#헌정" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>준-자유민주주의</li>
+<li>연방국가·황제–신민계약</li>
+<li>중심 5축·보완 3축·헌정상 원수기관 체계</li>
+<li>성계권역주</li>
+</ul>
+<hr/>
+<h2 id="b-존재영혼종족">B. 존재·영혼·종족<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-존재영혼종족" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>주요 대상:</p>
+<ul>
+<li><code>신인류.md</code></li>
+<li>관련 존재·종족 상세문서</li>
+</ul>
+<h3 id="반영-원칙">반영 원칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반영-원칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>07의 정의와 충돌하는 구식 표현만 수정한다.</p>
+<p>특히 다음을 정합화한다.</p>
+<ul>
+<li><code>격</code>을 단순 출력·혈통의 완성품처럼 서술하지 않음</li>
+<li>혈통 각인은 주로 육체·선천조건에 작용하며 일부가 영혼 각인에 포함될 수 있음</li>
+<li>영혼 각인은 영혼 자체나 완전 기억 저장장치가 아님</li>
+<li><code>3층 세습 모델</code>은 상호 배타적 3층이 아니라 세 개의 계승경로</li>
+<li>영혼 안착은 일반화된 영혼–육체 결합 과정</li>
+<li>신체결합고리는 영혼–육체의 기능적/구조적 인터페이스</li>
+<li>마나 회로는 신체결합고리 전체와 동일하지 않음</li>
+<li>환생주기는 사망부터 다음 육체 안착까지</li>
+<li>과거 헌정·참정·등록 설명은 현행 헌법보다 우선하지 않음</li>
+</ul>
+<h3 id="수치-주의">수치 주의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#수치-주의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>신인류.md</code> 안의 TFR, 400%, 임신기간, 과거 사회정책 등은
+이번 용어집 작업만을 근거로 수정·삭제·정본화하지 않는다.
+07에서 직접 충돌 대상으로 지정한 내용만 다룬다.</p>
+<hr/>
+<h2 id="c-초월자신제국도교">C. 초월자·신·제국도교<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-초월자신제국도교" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>주요 대상:</p>
+<ul>
+<li><code>초월자.md</code></li>
+<li>제국도교 교리의 초월신론·선지자·신 관련 문서</li>
+<li>필요 시 관련 용어 풋노트·색인</li>
+</ul>
+<h3 id="반드시-일관화할-정의">반드시 일관화할 정의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반드시-일관화할-정의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="초월자">초월자<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#초월자" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>인간의 육신과 인간의 영혼을 유지함</li>
+<li>격·위격·능력·존재 위상이 통상적 인간의 한계를 넘어섬</li>
+<li>여전히 인간 존재양식에 속함</li>
+</ul>
+<h4 id="신">신<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#신" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>초월자가 자기 격을 다시 초월</li>
+<li>승천하여 인간 육신 의존을 벗어남</li>
+<li>영혼 자체가 독립적 존재기반이 됨</li>
+</ul>
+<h4 id="초월신-1">초월신<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#초월신-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>위 경로로 신이 된 존재를 가리키는 제국도교 신학 용어</li>
+</ul>
+<h4 id="신앙">신앙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#신앙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>신의 존재를 성립시키는 보편적 필수조건이 아님</li>
+<li>위격 안정·현현·영향력 등에 영향을 줄 수 있음</li>
+</ul>
+<h3 id="금지">금지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#금지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>다음은 확정하지 않는다.</p>
+<ul>
+<li>집단신앙 자체가 별개의 신을 생성한다는 설정</li>
+<li>개념·영역 자체가 다른 기원의 신을 생성한다는 설정</li>
+<li>비인간 존재에게 인간과 동일한 초월→승천 경로가 적용된다는 설정</li>
+</ul>
+<p>이들은 HOLD다.</p>
+<h3 id="제국도교-5단계">제국도교 5단계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#제국도교-5단계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>일반인 → 수도자 → 선지자 → 초월자 → 신</code></p>
+<p>은 <font style="font-weight:bold;">제국도교의 수행·교리 모형</font>으로 표현한다.
+우주 전체에 강제되는 단일한 객관적 순서로 쓰지 않는다.</p>
+<hr/>
+<h2 id="d-마법에너지">D. 마법·에너지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d-마법에너지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>주요 대상:</p>
+<ul>
+<li><code>마법 기본설정.md</code></li>
+<li>마법·에너지 관련 현행 원문</li>
+<li>새 색인형 <code>마법·에너지 용어 사전</code>이 필요하면 생성</li>
+</ul>
+<h3 id="반영할-상위관계">반영할 상위관계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반영할-상위관계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>위상력</span></span>
+<span data-line><span>↓</span></span>
+<span data-line><span>마력</span></span>
+<span data-line><span>├─ 속성 마력</span></span>
+<span data-line><span>├─ 신성력</span></span>
+<span data-line><span>├─ 생명력</span></span>
+<span data-line><span>└─ 기타 운용형</span></span>
+<span data-line><span>↓ 생명체 내부에서 정형</span></span>
+<span data-line><span>마나</span></span></code></pre></figure>
+<h4 id="마력-회로">마력 회로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마력-회로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>마력을 수용·전달·변환·제어하는 회로의 상위개념.</p>
+<h4 id="마나-회로">마나 회로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마나-회로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>생명체 내부의 생체 마력 회로.
+마력을 개체가 사용할 수 있는 마나로 정형·순환시키며 영혼–육체 결합에도 관여.</p>
+<h3 id="반드시-hold-유지">반드시 HOLD 유지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반드시-hold-유지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>친화력·전도율의 보편적 반비례 법칙</li>
+<li>다중속성 정확 퍼센트</li>
+<li>무영창 추가 소비율</li>
+<li>신성계 마법의 절대 무역류</li>
+<li>성급별 정확한 수치</li>
+<li><code>마법</code> 자체가 모든 의례·장치형·자연 초상현상을 포함하는지 여부</li>
+</ul>
+<p>복원 마법 문서의 좋은 개념은 현대화하되,
+복원 경고와 미확정 수치는 유지한다.</p>
+<hr/>
+<h2 id="e-차원차원재난">E. 차원·차원재난<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#e-차원차원재난" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>주요 대상:</p>
+<ul>
+<li><code>차원 구분 용어 정의.md</code></li>
+<li><code>차원류.md</code></li>
+<li><code>대전이.md</code></li>
+</ul>
+<h3 id="핵심-관계">핵심 관계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#핵심-관계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="전이계">전이계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#전이계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>제4차원이 아님</li>
+<li>혼돈계의 과거·비표준 혼용명</li>
+<li>별도 독립 차원 항목으로 신설하지 않음</li>
+</ul>
+<h4 id="차원류">차원류<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#차원류" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>차원 장막·균열 주변에서 형성되는 국지적 차원 유동현상의 상위개념.</p>
+<h4 id="혼류--소울-플럭스">혼류 / 소울 플럭스<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#혼류--소울-플럭스" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>차원 간섭으로 형성되는 차원류 가운데 영혼 이동이 중심인 유형.</p>
+<h4 id="불안정-차원류">불안정 차원류<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#불안정-차원류" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>제0차 대전이 이후 국소 발생 가능</li>
+<li>정확한 최초시점은 불명</li>
+<li>제1차 대전이 이후 광범위하게 확산·관측·연구됨</li>
+</ul>
+<h4 id="차원-균열">차원 균열<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#차원-균열" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>장막·차원구조의 국소 파손·불연속.</p>
+<h4 id="차원-침식">차원 침식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#차원-침식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>균열·간섭이 누적되어 물질·에너지·생태·공간구조·국소 존재조건이 점진적으로 변질되는 진행성 결과.</p>
+<h3 id="p1-전이지형">P1 전이지형<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#p1-전이지형" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>온전 전이 코어</li>
+<li>전이 파편지대 (<code>파편 지대</code> 축약)</li>
+<li>복층 지각</li>
+</ul>
+<p>을 07 정의에 맞게 정리한다.</p>
+<h3 id="hold">HOLD<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hold" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>플럭스 경보 상세 단계</li>
+<li>위상 편차 단위</li>
+<li>혼성비 계측법</li>
+<li>와류 지수 단위</li>
+<li>장막 스트레스 계량법</li>
+<li>위상 디퓨저 상세</li>
+<li>미검토 분류체계의 수치</li>
+</ul>
+<hr/>
+<h2 id="f-천체특수물리">F. 천체·특수물리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#f-천체특수물리" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>주요 대상:</p>
+<ul>
+<li>류아블론츠 성계 정보 설정</li>
+<li>라리셴베르크 관련 천체 마스터</li>
+<li>필요 시 색인형 <code>천체·특수물리 용어 사전</code></li>
+</ul>
+<h3 id="확정-반영">확정 반영<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#확정-반영" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>차원장막 왜곡중력장</code></p>
+<ul>
+<li>차원 장막과 천체 질량·공간구조의 상호작용으로 중력을 보정·왜곡</li>
+<li>라리셴베르크는 자연 발생의 대표적 사례</li>
+<li>후대 위상기술이 발전하면 타 행성·천체에 인공 구축 가능</li>
+</ul>
+<h3 id="hold-1">HOLD<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hold-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>정확한:</p>
+<ul>
+<li>내부 안정권</li>
+<li>버퍼 링</li>
+<li>전이 코리더 존</li>
+<li>중력장계면</li>
+<li>GM_eff</li>
+<li>각 경계·수치</li>
+</ul>
+<p>는 기존 정본성·수치 검토 없이 새로 확정하지 않는다.</p>
+<hr/>
+<h2 id="g-역사시대">G. 역사·시대<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#g-역사시대" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>주요 대상:</p>
+<ul>
+<li><code>라리셴베르크의 시대 구분.md</code></li>
+<li>관련 역사 index 및 연표</li>
+</ul>
+<h3 id="반영-규칙">반영 규칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반영-규칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>무표기 <code>제1기</code> = 제1기 역사시대 전체</li>
+<li><code>광의의 제1기</code>라고 쓸 때만 제1차 대전이·비역사 시기까지 포함</li>
+<li><code>비역사 시기</code>는 상위 전환구간</li>
+<li><code>비역사 시대</code>는 제1차 대전이 이후~제2기 개막의 구체시대</li>
+<li>제2차 대전이 이전은 공통역사</li>
+<li>A루트 = 정사 《엘리스 프라우셰크트》</li>
+<li>B루트 = 이사·대체루트 《잔망의 헬라이오스》</li>
+</ul>
+<p>B루트 멸망 설정을 A루트에 혼입하지 않는다.</p>
+<hr/>
+<h2 id="h-언어문자">H. 언어·문자<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#h-언어문자" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>주요 대상:</p>
+<ul>
+<li>엘루닉어 폴더 index</li>
+<li>엘룬 관련 문서</li>
+<li>폰트 프로젝트는 구현자료로만 연결</li>
+</ul>
+<h3 id="확정">확정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#확정" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>엘루닉어 = 언어</li>
+<li>엘룬 = 문자</li>
+</ul>
+<h3 id="금지-1">금지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#금지-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>폰트의 라틴키 매핑을:</p>
+<ul>
+<li>음운체계</li>
+<li>문자 목록</li>
+<li>전사법</li>
+</ul>
+<p>으로 자동 승격하지 않는다.</p>
+<p>문법·음운·방언·전사체계가 없는 것은 현재 설정 상태 자체다.
+빈 내용을 Work가 생성하지 않는다.</p>
+<hr/>
+<h2 id="i-헌정법제">I. 헌정·법제<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#i-헌정법제" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="현행-헌법의-기준본을-먼저-식별">현행 헌법의 기준본을 먼저 식별<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#현행-헌법의-기준본을-먼저-식별" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2026-09-29 이후 여러 정본화 준비본·풋노트 반영본이 있으므로
+현재 실제 승계본을 확인한 뒤 수정한다.</p>
+<h3 id="반드시-교정">반드시 교정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#반드시-교정" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>차원인정 → 차원안정</code></p>
+<p>고위능력자 정의의 해당 오탈자는 명백한 교정사항이다.</p>
+<h3 id="전문사전">전문사전<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#전문사전" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>기존:</p>
+<p><code>연방 법제 용어·약어집.md</code></p>
+<p>를 새로 중복 생성하지 말고 확장 대상으로 사용한다.</p>
+<p>추가·보강 대상:</p>
+<ul>
+<li>ICX</li>
+<li>JSA</li>
+<li>증강 인체</li>
+<li>고위능력자</li>
+<li>특수 능력자군</li>
+<li>UST</li>
+<li>FST</li>
+<li>재가</li>
+<li>거가</li>
+<li>부서(副署)</li>
+<li>기관 간 합동재의</li>
+<li>양원 합동재의</li>
+<li>연방 법률·연방 황제령의 동위 기본규범층</li>
+</ul>
+<p>기존 KPI·SLA·RACI/DACI·RCA·C/E·AAR는
+현재 해설집의 실제 원문 정의를 우선한다.</p>
+<hr/>
+<h1 id="4-전문사전색인-생성-원칙">4. 전문사전·색인 생성 원칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-전문사전색인-생성-원칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>무조건 새 파일을 만들지 않는다.</p>
+<h2 id="새-색인형-전문사전-신설을-우선-검토할-분야">새 색인형 전문사전 신설을 우선 검토할 분야<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#새-색인형-전문사전-신설을-우선-검토할-분야" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>존재·영혼·신인류 용어 사전</li>
+<li>초월·신적 존재 용어 사전</li>
+<li>마법·에너지 용어 사전</li>
+<li>차원학·차원재난 용어 사전</li>
+<li>천체·특수물리 용어 사전</li>
+</ol>
+<p>현재 구조상 이미 동등한 역할의 정본 문서/index가 있으면
+새 파일 대신 기존 파일을 확장한다.</p>
+<h2 id="기존-앵커-우선">기존 앵커 우선<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#기존-앵커-우선" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>지역 층위 체계 및 용어 정의.md</code></li>
+<li><code>라리셴베르크의 시대 구분.md</code></li>
+<li><code>연방 법제 용어·약어집.md</code></li>
+<li><code>자원 개요 모음.md</code></li>
+<li><code>윤리관·사상·이데올로기 통합 설정.md</code></li>
+<li>엘루닉어 폴더 index</li>
+</ul>
+<hr/>
+<h1 id="5-통합-용어집에-넣지-않을-것">5. 통합 용어집에 넣지 않을 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-통합-용어집에-넣지-않을-것" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>다음은 통합 용어집에 올리지 않는다.</p>
+<ul>
+<li>TMC, gate_id, tree_map, rel_type 등 볼트 메타데이터</li>
+<li>개별 함선·무장·센서·모듈</li>
+<li>독립 원전이 없는 대화 수집 후보</li>
+<li>외부 게임 참고를 그대로 세계관 용어화한 항목</li>
+<li>HOLD 상태의 미확정 수치·장비·계측법</li>
+</ul>
+<hr/>
+<h1 id="6-수정-방식">6. 수정 방식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-수정-방식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="61-최소수정-원칙">6.1 최소수정 원칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#61-최소수정-원칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>설정이 이미 07과 일치하면 문장을 억지로 다시 쓰지 않는다.</li>
+<li>정의 충돌·다의성·구식 설명이 있는 부분만 수정한다.</li>
+<li>원문의 문체·표 구조·Obsidian/Quartz 링크 형식을 유지한다.</li>
+<li>HTML을 새로 늘리지 않는다.</li>
+<li>가능하면 기존 heading/anchor를 유지한다.</li>
+</ul>
+<h2 id="62-링크별칭">6.2 링크·별칭<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#62-링크별칭" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>정식 표제와 별칭을 다음처럼 정리한다.</p>
+<div class="scroll-x nowrap"><div class="table-container"><table><thead><tr><th>정식</th><th>별칭·축약</th></tr></thead><tbody><tr><td>존재 위상</td><td>문맥상 위상</td></tr><tr><td>혼돈계</td><td>전이계</td></tr><tr><td>혼류</td><td>소울 플럭스</td></tr><tr><td>라리셴베르크</td><td>신지구</td></tr><tr><td>에아르트</td><td>구지구</td></tr><tr><td>류아블론츠 성계</td><td>류아블론츠 항성계</td></tr><tr><td>성계권역주</td><td>성권주, 섹터</td></tr><tr><td>전이 파편지대</td><td>파편 지대</td></tr></tbody></table></div></div>
+<p><code>마나 회로</code>, <code>각성</code>, <code>초월 각성</code>, <code>비역사 시기</code>, <code>비역사 시대</code>처럼
+서로 다른 개념은 aliases로 합치지 않는다.</p>
+<hr/>
+<h1 id="7-qa-필수항목">7. QA 필수항목<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-qa-필수항목" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>모든 수정 후 다음을 검사한다.</p>
+<ol>
+<li>깨진 위키링크 없음</li>
+<li>잘못된 anchor 없음</li>
+<li>중복 표제어 없음</li>
+<li>aliases 충돌 없음</li>
+<li>공통 용어와 전문사전 정의가 서로 모순되지 않음</li>
+<li>D/P/국소충돌 결정이 누락되지 않음</li>
+<li>HOLD가 정본으로 승격되지 않음</li>
+<li>B루트가 A루트에 혼입되지 않음</li>
+<li>구식 헌정 설명이 현행 헌법보다 우선하지 않음</li>
+<li>복원 마법 문서의 미확정 수치가 정본화되지 않음</li>
+<li><code>차원인정</code> 오탈자 잔존 여부 검사</li>
+<li><code>전이계</code>가 제4차원으로 남은 곳 검사</li>
+<li><code>혼류=차원류 전체</code>로 오독되는 문장 검사</li>
+<li><code>7성급=초월자</code> 식 등치 검사</li>
+<li><code>신앙 필수=신 존재</code> 절대명제 잔존 검사</li>
+<li><code>엘룬=언어</code> 또는 <code>엘루닉어=문자</code> 역전 표기 검사</li>
+<li>기존 28개 통합용어 링크 호환성 검사</li>
+</ol>
+<hr/>
+<h1 id="8-완료-보고-형식">8. 완료 보고 형식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-완료-보고-형식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Work는 완료 후 반드시 다음을 보고한다.</p>
+<h2 id="81-변경-파일-목록">8.1 변경 파일 목록<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#81-변경-파일-목록" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>각 파일마다:</p>
+<ul>
+<li>파일명</li>
+<li>Drive ID</li>
+<li>이전 경로 / 현재 경로</li>
+<li>정본상태</li>
+<li>수정 유형</li>
+<li>핵심 변경사항</li>
+<li>근거 결정 ID</li>
+</ul>
+<h2 id="82-신규-파일">8.2 신규 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#82-신규-파일" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>신설한 전문사전·index가 있으면:</p>
+<ul>
+<li>생성 이유</li>
+<li>기존 파일로 대체할 수 없었던 이유</li>
+<li>역할</li>
+<li>연결된 원문 목록</li>
+</ul>
+<h2 id="83-hold">8.3 HOLD<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#83-hold" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>반영하지 않은 항목을 전부 목록화하고,
+왜 보류했는지 기록한다.</p>
+<h2 id="84-검증">8.4 검증<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#84-검증" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>링크 검사</li>
+<li>용어 충돌 검사</li>
+<li>정본상태 검사</li>
+<li>별칭 검사</li>
+<li>핵심 문자열 검색 결과</li>
+<li>수정 전후 diff 요약</li>
+</ul>
+<h2 id="85-최종-판정">8.5 최종 판정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#85-최종-판정" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>다음 중 하나로 끝낸다.</p>
+<ul>
+<li><code>PASS — 전체 반영 및 QA 완료</code></li>
+<li><code>PASS WITH HOLD — 확정 범위 반영 완료, HOLD는 미반영</code></li>
+<li><code>BLOCKED — 정본 식별 또는 충돌 때문에 사용자 판단 필요</code></li>
+</ul>
+<p>사용자가 이미 07에서 확정한 문제를 다시 질문하지 않는다.
+새로운 진짜 충돌이 발견된 경우에만 BLOCKED 항목으로 보고한다.</p>
+<hr/>
+<h1 id="9-절대-금지">9. 절대 금지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-절대-금지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>07 결정을 임의 재설계</li>
+<li>HOLD를 추론으로 채움</li>
+<li>과거 복원문서 전체를 최신 정본으로 승격</li>
+<li>보존용·구식 문서 수정</li>
+<li>B루트를 A루트 정사로 병합</li>
+<li>통합 용어집을 세부설정·수치 백과사전으로 비대화</li>
+<li>동일 역할 전문사전을 이유 없이 중복 생성</li>
+<li>실제 정본을 찾지 않고 파일명만 보고 무작정 수정</li>
+</ul></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-529"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-529"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-905" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-905" class="toc-content"><li class="depth-0"><a href="#work-실행-지시문--엘리스-프라우셰크트-통합-용어집-확장-정본-반영" data-for="work-실행-지시문--엘리스-프라우셰크트-통합-용어집-확장-정본-반영">Work 실행 지시문 — 《엘리스 프라우셰크트》 통합 용어집 확장 정본 반영</a></li><li class="depth-1"><a href="#0-작업-목표" data-for="0-작업-목표">0. 작업 목표</a></li><li class="depth-0"><a href="#1-최상위-권위자료" data-for="1-최상위-권위자료">1. 최상위 권위자료</a></li><li class="depth-1"><a href="#권위-우선순위" data-for="권위-우선순위">권위 우선순위</a></li><li class="depth-0"><a href="#2-작업-시작-전-필수-사전점검" data-for="2-작업-시작-전-필수-사전점검">2. 작업 시작 전 필수 사전점검</a></li><li class="depth-1"><a href="#21-구조-확인" data-for="21-구조-확인">2.1 구조 확인</a></li><li class="depth-1"><a href="#22-정본-선택-원칙" data-for="22-정본-선택-원칙">2.2 정본 선택 원칙</a></li><li class="depth-1"><a href="#23-변경-전-스냅샷" data-for="23-변경-전-스냅샷">2.3 변경 전 스냅샷</a></li><li class="depth-0"><a href="#3-실제-반영-대상" data-for="3-실제-반영-대상">3. 실제 반영 대상</a></li><li class="depth-1"><a href="#a-통합-용어집" data-for="a-통합-용어집">A. 통합 용어집</a></li><li class="depth-2"><a href="#해야-할-일" data-for="해야-할-일">해야 할 일</a></li><li class="depth-2"><a href="#반드시-반영할-주요-신규확장-핵심어" data-for="반드시-반영할-주요-신규확장-핵심어">반드시 반영할 주요 신규·확장 핵심어</a></li><li class="depth-1"><a href="#b-존재영혼종족" data-for="b-존재영혼종족">B. 존재·영혼·종족</a></li><li class="depth-2"><a href="#반영-원칙" data-for="반영-원칙">반영 원칙</a></li><li class="depth-2"><a href="#수치-주의" data-for="수치-주의">수치 주의</a></li><li class="depth-1"><a href="#c-초월자신제국도교" data-for="c-초월자신제국도교">C. 초월자·신·제국도교</a></li><li class="depth-2"><a href="#반드시-일관화할-정의" data-for="반드시-일관화할-정의">반드시 일관화할 정의</a></li><li class="depth-2"><a href="#금지" data-for="금지">금지</a></li><li class="depth-2"><a href="#제국도교-5단계" data-for="제국도교-5단계">제국도교 5단계</a></li><li class="depth-1"><a href="#d-마법에너지" data-for="d-마법에너지">D. 마법·에너지</a></li><li class="depth-2"><a href="#반영할-상위관계" data-for="반영할-상위관계">반영할 상위관계</a></li><li class="depth-2"><a href="#반드시-hold-유지" data-for="반드시-hold-유지">반드시 HOLD 유지</a></li><li class="depth-1"><a href="#e-차원차원재난" data-for="e-차원차원재난">E. 차원·차원재난</a></li><li class="depth-2"><a href="#핵심-관계" data-for="핵심-관계">핵심 관계</a></li><li class="depth-2"><a href="#p1-전이지형" data-for="p1-전이지형">P1 전이지형</a></li><li class="depth-2"><a href="#hold" data-for="hold">HOLD</a></li><li class="depth-1"><a href="#f-천체특수물리" data-for="f-천체특수물리">F. 천체·특수물리</a></li><li class="depth-2"><a href="#확정-반영" data-for="확정-반영">확정 반영</a></li><li class="depth-2"><a href="#hold-1" data-for="hold-1">HOLD</a></li><li class="depth-1"><a href="#g-역사시대" data-for="g-역사시대">G. 역사·시대</a></li><li class="depth-2"><a href="#반영-규칙" data-for="반영-규칙">반영 규칙</a></li><li class="depth-1"><a href="#h-언어문자" data-for="h-언어문자">H. 언어·문자</a></li><li class="depth-2"><a href="#확정" data-for="확정">확정</a></li><li class="depth-2"><a href="#금지-1" data-for="금지-1">금지</a></li><li class="depth-1"><a href="#i-헌정법제" data-for="i-헌정법제">I. 헌정·법제</a></li><li class="depth-2"><a href="#현행-헌법의-기준본을-먼저-식별" data-for="현행-헌법의-기준본을-먼저-식별">현행 헌법의 기준본을 먼저 식별</a></li><li class="depth-2"><a href="#반드시-교정" data-for="반드시-교정">반드시 교정</a></li><li class="depth-2"><a href="#전문사전" data-for="전문사전">전문사전</a></li><li class="depth-0"><a href="#4-전문사전색인-생성-원칙" data-for="4-전문사전색인-생성-원칙">4. 전문사전·색인 생성 원칙</a></li><li class="depth-1"><a href="#새-색인형-전문사전-신설을-우선-검토할-분야" data-for="새-색인형-전문사전-신설을-우선-검토할-분야">새 색인형 전문사전 신설을 우선 검토할 분야</a></li><li class="depth-1"><a href="#기존-앵커-우선" data-for="기존-앵커-우선">기존 앵커 우선</a></li><li class="depth-0"><a href="#5-통합-용어집에-넣지-않을-것" data-for="5-통합-용어집에-넣지-않을-것">5. 통합 용어집에 넣지 않을 것</a></li><li class="depth-0"><a href="#6-수정-방식" data-for="6-수정-방식">6. 수정 방식</a></li><li class="depth-1"><a href="#61-최소수정-원칙" data-for="61-최소수정-원칙">6.1 최소수정 원칙</a></li><li class="depth-1"><a href="#62-링크별칭" data-for="62-링크별칭">6.2 링크·별칭</a></li><li class="depth-0"><a href="#7-qa-필수항목" data-for="7-qa-필수항목">7. QA 필수항목</a></li><li class="depth-0"><a href="#8-완료-보고-형식" data-for="8-완료-보고-형식">8. 완료 보고 형식</a></li><li class="depth-1"><a href="#81-변경-파일-목록" data-for="81-변경-파일-목록">8.1 변경 파일 목록</a></li><li class="depth-1"><a href="#82-신규-파일" data-for="82-신규-파일">8.2 신규 파일</a></li><li class="depth-1"><a href="#83-hold" data-for="83-hold">8.3 HOLD</a></li><li class="depth-1"><a href="#84-검증" data-for="84-검증">8.4 검증</a></li><li class="depth-1"><a href="#85-최종-판정" data-for="85-최종-판정">8.5 최종 판정</a></li><li class="depth-0"><a href="#9-절대-금지" data-for="9-절대-금지">9. 절대 금지</a></li></ul></div><div class="backlinks"><button type="button" class="backlinks-header" aria-expanded="true" aria-controls="backlinks-panel-342"><h3>백링크</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="backlinks-content" id="backlinks-panel-342"><ul id="list-1" class="overflow"><li><a href="../../../90-볼트-운영/01-수정기록/수정-기록-모음" class="internal">수정 기록 모음</a></li><li><a href="../../../90-볼트-운영/03-작업계획·감사보고/통합-용어집-개편/Work_실제반영_완료보고서_통합용어집_2026-10-01" class="internal">Work_실제반영_완료보고서_통합용어집_2026-10-01</a></li><li class="overflow-end"></li></ul></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript.js" type="module" data-persist="true"></script></html>
