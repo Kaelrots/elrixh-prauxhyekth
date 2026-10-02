@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>🎨 엘리스 프라우셰크트; 제국 기원 아이콘 마스터 정의서</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="🎨 엘리스 프라우셰크트; 제국 기원 아이콘 마스터 정의서"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="🎨 엘리스 프라우셰크트; 제국 기원 아이콘 마스터 정의서"/><meta name="twitter:description" content="🎨 엘리스 프라우셰크트: 제국 기원 아이콘 마스터 정의서 (v2.7 Final Verified) 문서 성격: 국가/세력이 현재의 체제를 갖추고 우주(또는 세계) 무대에 등장하기까지의 역사적 배경(Origin Story)을 시각화."/><meta property="og:description" content="🎨 엘리스 프라우셰크트: 제국 기원 아이콘 마스터 정의서 (v2.7 Final Verified) 문서 성격: 국가/세력이 현재의 체제를 갖추고 우주(또는 세계) 무대에 등장하기까지의 역사적 배경(Origin Story)을 시각화."/><meta property="og:image:alt" content="🎨 엘리스 프라우셰크트: 제국 기원 아이콘 마스터 정의서 (v2.7 Final Verified) 문서 성격: 국가/세력이 현재의 체제를 갖추고 우주(또는 세계) 무대에 등장하기까지의 역사적 배경(Origin Story)을 시각화."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/🎨-엘리스-프라우셰크트;-제국-기원-아이콘-마스터-정의서"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/🎨-엘리스-프라우셰크트;-제국-기원-아이콘-마스터-정의서"/><link rel="icon" href="../../../../static/icon.png"/><meta name="description" content="🎨 엘리스 프라우셰크트: 제국 기원 아이콘 마스터 정의서 (v2.7 Final Verified) 문서 성격: 국가/세력이 현재의 체제를 갖추고 우주(또는 세계) 무대에 등장하기까지의 역사적 배경(Origin Story)을 시각화."/><meta name="generator" content="Quartz"/><link href="../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/🎨-엘리스-프라우셰크트;-제국-기원-아이콘-마스터-정의서"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1209" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1209" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-804" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-804" class="mobile-toc-dialog" aria-labelledby="toc-804-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-804-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#-엘리스-프라우셰크트-제국-기원-아이콘-마스터-정의서-v27-final-verified" data-for="-엘리스-프라우셰크트-제국-기원-아이콘-마스터-정의서-v27-final-verified">🎨 엘리스 프라우셰크트: 제국 기원 아이콘 마스터 정의서 (v2.7 Final Verified)</a></li><li class="depth-1"><a href="#0--빠른-참조-요약표-cheat-sheet" data-for="0--빠른-참조-요약표-cheat-sheet">0. ⚡ 빠른 참조 요약표 (Cheat Sheet)</a></li><li class="depth-1"><a href="#️-1-정치와-통합-unification--political" data-for="️-1-정치와-통합-unification--political">🏛️ 1. 정치와 통합 (Unification &amp; Political)</a></li><li class="depth-1"><a href="#-2-재난과-생존-disaster--survival" data-for="-2-재난과-생존-disaster--survival">🔥 2. 재난과 생존 (Disaster &amp; Survival)</a></li><li class="depth-1"><a href="#-3-환경과-거주-environment--habitat" data-for="-3-환경과-거주-environment--habitat">🌌 3. 환경과 거주 (Environment &amp; Habitat)</a></li><li class="depth-1"><a href="#️-4-기술과-진화-tech--evolution" data-for="️-4-기술과-진화-tech--evolution">⚙️ 4. 기술과 진화 (Tech &amp; Evolution)</a></li><li class="depth-1"><a href="#-5-신비와-이능-arcane--mystery" data-for="-5-신비와-이능-arcane--mystery">🔮 5. 신비와 이능 (Arcane &amp; Mystery)</a></li><li class="depth-1"><a href="#-6-외교와-종속-diplomacy--relation" data-for="-6-외교와-종속-diplomacy--relation">🤝 6. 외교와 종속 (Diplomacy &amp; Relation)</a></li><li class="depth-1"><a href="#-7-서사와-탐구-narrative--quest" data-for="-7-서사와-탐구-narrative--quest">📜 7. 서사와 탐구 (Narrative &amp; Quest)</a></li><li class="depth-1"><a href="#-8-이종-생태-및-변이-exotic--mutation" data-for="-8-이종-생태-및-변이-exotic--mutation">🧬 8. 이종 생태 및 변이 (Exotic &amp; Mutation)</a></li><li class="depth-1"><a href="#-9-특수-상태-special-status" data-for="-9-특수-상태-special-status">🛸 9. 특수 상태 (Special Status)</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1209"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1209" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/">02 일지·브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/">99 정리해야 하는 설정 브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/">제2권역; 역사와 인류</a></div></nav><h1 class="article-title">🎨 엘리스 프라우셰크트; 제국 기원 아이콘 마스터 정의서</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:33.512Z">2026년 9월 30일</time><span>42 분 소요</span></p></div></div><article class="popover-hint"><h1 id="-엘리스-프라우셰크트-제국-기원-아이콘-마스터-정의서-v27-final-verified">🎨 엘리스 프라우셰크트: 제국 기원 아이콘 마스터 정의서 (v2.7 Final Verified)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-엘리스-프라우셰크트-제국-기원-아이콘-마스터-정의서-v27-final-verified" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>
+<p><font style="font-weight:bold;">문서 성격:</font> 국가/세력이 현재의 체제를 갖추고 우주(또는 세계) 무대에 등장하기까지의 <font style="font-weight:bold;">역사적 배경(Origin Story)</font>을 시각화.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">업데이트(v2.7):</font> 요약표와 본문 대조 전수 검사 완료. (수량 표기 오류 수정: 63개 → <font style="font-weight:bold;">64개</font>)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">총 수량:</font> 9개 대분류, 64개 세부 기원.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">디자인 스타일:</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> Narrative Vector Art (서사적 플랫 아트), Circular Emblem.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">삽화:</font> Cinematic Concept Art, High Detail, Dramatic Lighting.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>完</p>
+<h2 id="0--빠른-참조-요약표-cheat-sheet">0. ⚡ 빠른 참조 요약표 (Cheat Sheet)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0--빠른-참조-요약표-cheat-sheet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<div class="scroll-x nowrap"><div class="table-container"><table><thead><tr><th><font style="font-weight:bold;">대분류 (Category)</font></th><th><font style="font-weight:bold;">기원 명칭 (Name)</font></th><th><font style="font-weight:bold;">아이콘 형상 (Symbol)</font></th><th><font style="font-weight:bold;">테마 색상 (Color)</font></th></tr></thead><tbody><tr><td><font style="font-weight:bold;">🏛️ 정치와 통합</font></td><td><font style="font-weight:bold;">번영적 통일</font></td><td>맞잡은 손, 후광</td><td>`Royal Blue`</td></tr><tr><td>(Unity Blue)</td><td><font style="font-weight:bold;">혼합 진화</font></td><td>겹쳐진 두 얼굴 실루엣</td><td>`Dual Orange`</td></tr><tr><td></td><td><font style="font-weight:bold;">잃어버린 식민지</font></td><td>끊어진 사슬, 별</td><td>`Lonely Navy`</td></tr><tr><td></td><td><font style="font-weight:bold;">은하의 문턱</font></td><td>행성 궤도의 관문</td><td>`Gateway Cyan`</td></tr><tr><td></td><td><font style="font-weight:bold;">전설적 정복자</font></td><td>지도에 꽂힌 검, 왕관</td><td>`Conqueror Gold`</td></tr><tr><td></td><td><font style="font-weight:bold;">국가주의 열망</font></td><td>펄럭이는 깃발, 군중</td><td>`Zealot Red`</td></tr><tr><td></td><td><font style="font-weight:bold;">유배지</font></td><td>철조망, 부러진 족쇄</td><td>`Prison Grey`</td></tr><tr><td><font style="font-weight:bold;">🔥 재난과 생존</font></td><td><font style="font-weight:bold;">포스트 아포칼립스</font></td><td>방독면, 폐허 도시</td><td>`Toxic Green`</td></tr><tr><td>(Disaster Red)</td><td><font style="font-weight:bold;">파멸의 전조</font></td><td>금이 간 행성, 시계</td><td>`Warning Red`</td></tr><tr><td></td><td><font style="font-weight:bold;">잔존자</font></td><td>덩굴 감긴 마천루</td><td>`Ruined Beige`</td></tr><tr><td></td><td><font style="font-weight:bold;">무자비한 산업화</font></td><td>공장 굴뚝, 기어</td><td>`Smog Grey`</td></tr><tr><td></td><td><font style="font-weight:bold;">빙하기 생존</font></td><td>눈결정 속의 불꽃</td><td>`Frost White`</td></tr><tr><td></td><td><font style="font-weight:bold;">역병 생존자</font></td><td>바이러스 기호, 십자가</td><td>`Sickness Purple`</td></tr><tr><td><font style="font-weight:bold;">🌌 환경과 거주</font></td><td><font style="font-weight:bold;">공허 거주자</font></td><td>육각형 궤도 거주구</td><td>`Space Black`</td></tr><tr><td>(Habitat Green)</td><td><font style="font-weight:bold;">지하 문명</font></td><td>동굴 입구, 곡괭이</td><td>`Cave Brown`</td></tr><tr><td></td><td><font style="font-weight:bold;">생명의 씨앗</font></td><td>거대한 꽃, 나비</td><td>`Paradise Pink`</td></tr><tr><td></td><td><font style="font-weight:bold;">해양 낙원</font></td><td>거대한 파도, 물방울</td><td>`Ocean Blue`</td></tr><tr><td></td><td><font style="font-weight:bold;">부서진 고리</font></td><td>끊어진 링월드 구조물</td><td>`Ancient Gold`</td></tr><tr><td></td><td><font style="font-weight:bold;">생명의 나무</font></td><td>행성을 감싼 나무 뿌리</td><td>`Vital Green`</td></tr><tr><td></td><td><font style="font-weight:bold;">부서진 족쇄</font></td><td>사슬, 맞잡은 이종족 손</td><td>`Liberty Blue`</td></tr><tr><td></td><td><font style="font-weight:bold;">폭풍의 기수</font></td><td>먹구름, 항해하는 함선</td><td>`Storm Cyan`</td></tr><tr><td></td><td><font style="font-weight:bold;">유목 함대</font></td><td>행성 없는 함대 대열</td><td>`Nomad Yellow`</td></tr><tr><td><font style="font-weight:bold;">⚙️ 기술과 진화</font></td><td><font style="font-weight:bold;">기계론자</font></td><td>인간 손 vs 로봇 손</td><td>`Steel Blue`</td></tr><tr><td>(Tech Silver)</td><td><font style="font-weight:bold;">사이버네틱 신조</font></td><td>반기계 얼굴, 후광</td><td>`Cyber Yellow`</td></tr><tr><td></td><td><font style="font-weight:bold;">클론 군대</font></td><td>배양조 속 태아</td><td>`Genetic Teal`</td></tr><tr><td></td><td><font style="font-weight:bold;">과잉 개조</font></td><td>과열된 붉은 DNA</td><td>`Risk Red`</td></tr><tr><td></td><td><font style="font-weight:bold;">인조 배양</font></td><td>인공 자궁 기계, 아기</td><td>`Hopeful White`</td></tr><tr><td></td><td><font style="font-weight:bold;">기억 계승자</font></td><td>뇌 속의 책/칩</td><td>`Data Blue`</td></tr><tr><td></td><td><font style="font-weight:bold;">기계 행성</font></td><td>금속 회로 행성</td><td>`Cyber Silver`</td></tr><tr><td></td><td><font style="font-weight:bold;">프레임 월드</font></td><td>행성 핵, 건설 프레임</td><td>`Frame Orange`</td></tr><tr><td></td><td><font style="font-weight:bold;">가상 현실</font></td><td>VR 헤드셋, 디지털 세계</td><td>`Matrix Green`</td></tr><tr><td><font style="font-weight:bold;">🔮 신비와 이능</font></td><td><font style="font-weight:bold;">장막의 스승</font></td><td>수정구, 제3의 눈</td><td>`Psionic Pink`</td></tr><tr><td>(Arcane Purple)</td><td><font style="font-weight:bold;">네크로파지</font></td><td>해골 기생체</td><td>`Death Black`</td></tr><tr><td></td><td><font style="font-weight:bold;">용의 비호</font></td><td>행성을 감싼 용</td><td>`Dragon Blue`</td></tr><tr><td></td><td><font style="font-weight:bold;">차원 기사단</font></td><td>차원 균열, 검과 방패</td><td>`Order Gold`</td></tr><tr><td></td><td><font style="font-weight:bold;">차원 균열</font></td><td>찢어진 공간의 빛</td><td>`Void Purple`</td></tr><tr><td></td><td><font style="font-weight:bold;">마력 각성</font></td><td>손바닥 위 폭발하는 마력</td><td>`Magic Blue`</td></tr><tr><td></td><td><font style="font-weight:bold;">공포의 어둠</font></td><td>어둠 속의 수많은 눈</td><td>`Shadow Black`</td></tr><tr><td></td><td><font style="font-weight:bold;">마력 중독</font></td><td>갈라진 피부, 보라색 마력</td><td>`Cursed Violet`</td></tr><tr><td></td><td><font style="font-weight:bold;">차원 세계</font></td><td>균열 속 도시</td><td>`Astral Purple`</td></tr><tr><td></td><td><font style="font-weight:bold;">현인신</font></td><td>옥좌, 거대한 신적 형상</td><td>`Divine Gold`</td></tr><tr><td><font style="font-weight:bold;">🤝 외교와 종속</font></td><td><font style="font-weight:bold;">몰락의 후예</font></td><td>꼭두각시 줄, 거인의 손</td><td>`Puppet Purple`</td></tr><tr><td>(Diplo Gold)</td><td><font style="font-weight:bold;">패권국</font></td><td>큰 별을 공전하는 작은 별</td><td>`Hegemon Gold`</td></tr><tr><td></td><td><font style="font-weight:bold;">공동의 터전</font></td><td>원탁 위의 세 손</td><td>`Union Cyan`</td></tr><tr><td></td><td><font style="font-weight:bold;">제국 영지</font></td><td>왕좌 앞 무릎 꿇은 사람</td><td>`Vassal Grey`</td></tr><tr><td></td><td><font style="font-weight:bold;">분리주의자</font></td><td>찢어진 깃발, 불타는 사슬</td><td>`Rebel Red`</td></tr><tr><td></td><td><font style="font-weight:bold;">기업 제국</font></td><td>빌딩, 화폐 기호</td><td>`Profit Yellow`</td></tr><tr><td></td><td><font style="font-weight:bold;">계몽된 자</font></td><td>빛줄기(Uplift), 원시인</td><td>`Enlightened White`</td></tr><tr><td><font style="font-weight:bold;">📜 서사와 탐구</font></td><td><font style="font-weight:bold;">기사단 원정</font></td><td>성배, 기사의 검</td><td>`Holy Gold`</td></tr><tr><td>(Quest Platinum)</td><td><font style="font-weight:bold;">선구자의 발자취</font></td><td>거인의 발자국, 작은 사람</td><td>`Ancient Beige`</td></tr><tr><td></td><td><font style="font-weight:bold;">피의 복수</font></td><td>족쇄 쥔 손, 피 묻은 단검</td><td>`Vengeance Red`</td></tr><tr><td></td><td><font style="font-weight:bold;">진실의 탐구자</font></td><td>우주를 보는 돋보기</td><td>`Truth White`</td></tr><tr><td></td><td><font style="font-weight:bold;">고대 기록 보관소</font></td><td>행성을 감싼 책/두루마리</td><td>`Archive Beige`</td></tr><tr><td><font style="font-weight:bold;">🧬 이종 생태</font></td><td><font style="font-weight:bold;">수정 생명체</font></td><td>보석 얼굴/손</td><td>`Crystal Pink`</td></tr><tr><td>(Exotic Teal)</td><td><font style="font-weight:bold;">차원 구성체</font></td><td>왜곡된 시계, 기하학 형체</td><td>`Rift Blue`</td></tr><tr><td></td><td><font style="font-weight:bold;">마나 포식군</font></td><td>갉아먹힌 행성, 곤충</td><td>`Hunger Orange`</td></tr><tr><td></td><td><font style="font-weight:bold;">군체 의식</font></td><td>벌집, 여왕 실루엣</td><td>`Hive Yellow`</td></tr><tr><td></td><td><font style="font-weight:bold;">생체 함선</font></td><td>우주 고래, 등 위의 도시</td><td>`Organic Green`</td></tr><tr><td></td><td><font style="font-weight:bold;">재앙적 탄생</font></td><td>충돌하는 운석, 크레이터</td><td>`Meteor Red`</td></tr><tr><td></td><td><font style="font-weight:bold;">풍요로운 동반자</font></td><td>꽃가루, 우주 나비</td><td>`Symbiosis Pink`</td></tr><tr><td><font style="font-weight:bold;">🛸 특수 상태</font></td><td><font style="font-weight:bold;">원시 문명</font></td><td>돌도끼, 피라미드</td><td>`Primitive Brown`</td></tr><tr><td>(Status Grey)</td><td><font style="font-weight:bold;">몰락 제국</font></td><td>낡은 옥좌, 꺼져가는 태양</td><td>`Fallen Gold`</td></tr><tr><td></td><td><font style="font-weight:bold;">약탈자</font></td><td>해골 장식 함선</td><td>`Raider Red`</td></tr><tr><td></td><td><font style="font-weight:bold;">미지의 제국</font></td><td>지도 위 물음표(?)</td><td>`Mystery Violet`</td></tr></tbody></table></div></div>
+<h2 id="️-1-정치와-통합-unification--political">🏛️ 1. 정치와 통합 (Unification &amp; Political)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-1-정치와-통합-unification--political" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="-번영적-통일-prosperous-unification">🤝 번영적 통일 (Prosperous Unification)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-번영적-통일-prosperous-unification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성 위에서 맞잡은 <font style="font-weight:bold;">두 손</font>과 빛나는 <font style="font-weight:bold;">후광</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Royal Blue</code> (로얄 블루)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 여명이 밝아오는 수도의 스카이라인. 최첨단 마천루 사이로 수많은 비행 차량들이 질서 정연하게 이동하고, 거대한 홀로그램 전광판에는 ‘하나 된 행성’을 상징하는 로고가 희망차게 빛나고 있다.</p>
+</li>
+</ul>
+<h4 id="-혼합-진화-syncretic-evolution">🧬 혼합 진화 (Syncretic Evolution)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-혼합-진화-syncretic-evolution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 큰 실루엣과 작은 실루엣이 겹쳐진 <font style="font-weight:bold;">두 얼굴</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Dual Orange</code> (이중 주황)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 거대한 건설 현장의 로우 앵글. 덩치가 크고 근육질인 종족들이 묵묵히 무거운 자재를 나르고, 그 위쪽 유리 통제실에서 왜소하지만 지적인 종족이 홀로그램 설계도를 지휘하는 계급적 대비.</p>
+</li>
+</ul>
+<h4 id="-잃어버린-식민지-lost-colony">📡 잃어버린 식민지 (Lost Colony)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-잃어버린-식민지-lost-colony" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 끊어진 <font style="font-weight:bold;">사슬</font>과 홀로 빛나는 <font style="font-weight:bold;">별</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Lonely Navy</code> (고독 남색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 이끼 낀 낡은 식민지 우주선의 착륙 지점(LZ). 그 주변으로 독자적인 양식의 도시가 형성되어 있다. 밤하늘의 특정 별(잊혀진 본국)을 가리키는 오래된 동상 앞에 한 아이가 서서 하늘을 올려다본다.</p>
+</li>
+</ul>
+<h4 id="-은하의-문턱-galactic-doorstep">🚪 은하의 문턱 (Galactic Doorstep)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-은하의-문턱-galactic-doorstep" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성 궤도에 떠 있는 거대한 <font style="font-weight:bold;">고리형 구조물(관문)</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Gateway Cyan</code> (관문 청록)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 행성의 대기권 밖, 행성 크기에 육박하는 거대하고 묵직한 고대 관문의 실루엣. 최신형 연구선 한 척이 그 압도적인 구조물의 표면에 작은 점처럼 접근하여 스캔하고 있는 웅장한 구도.</p>
+</li>
+</ul>
+<h4 id="-전설적인-정복자-under-one-rule">👑 전설적인 정복자 (Under One Rule)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-전설적인-정복자-under-one-rule" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 세계지도 위에 꽂힌 <font style="font-weight:bold;">거대한 검</font>과 <font style="font-weight:bold;">왕관</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Conqueror Gold</code> (정복자 황금)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 수십만 명의 군대가 오와 열을 맞춰 도열한 광장. 높은 단상 위, 백발이 성성하지만 강인한 눈빛의 정복자가 망토를 휘날리며 서 있고, 그의 뒤로 통합 제국의 거대한 깃발들이 펄럭인다.</p>
+</li>
+</ul>
+<h4 id="-국가주의적-열망-nationalistic-zeal">🚩 국가주의적 열망 (Nationalistic Zeal)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-국가주의적-열망-nationalistic-zeal" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 펄럭이는 <font style="font-weight:bold;">대형 깃발</font>과 열광하는 <font style="font-weight:bold;">군중</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Zealot Red</code> (열광 적색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 붉은 조명이 가득한 야간 광장에서 열광적으로 환호하는 군중들. 그들의 손에는 모두 같은 깃발이 들려 있으며, 거대한 스크린 속 지도자가 우주를 가리키며 선동적인 연설을 하고 있다.</p>
+</li>
+</ul>
+<h4 id="️-유배지-penal-colony">⛓️ 유배지 (Penal Colony)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-유배지-penal-colony" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성을 감싼 <font style="font-weight:bold;">철조망</font>과 <font style="font-weight:bold;">부러진 족쇄</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Prison Grey</code> (감옥 회색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 붉은 모래폭풍이 부는 황무지 위에 세워진 고철 요새. 험상궂은 문신을 한 무장한 사람들이 급조된 무기를 들고 경계를 서고 있으며, 배경에는 불시착한 죄수 호송선의 잔해가 본부로 개조되어 있다.</p>
+</li>
+</ul>
+<h2 id="-2-재난과-생존-disaster--survival">🔥 2. 재난과 생존 (Disaster &amp; Survival)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2-재난과-생존-disaster--survival" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="️-포스트-아포칼립스-post-apocalyptic">☢️ 포스트 아포칼립스 (Post-Apocalyptic)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-포스트-아포칼립스-post-apocalyptic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">방독면</font>을 쓴 얼굴과 <font style="font-weight:bold;">폐허</font>가 된 도시 배경.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Toxic Green</code> (독성 녹색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 뼈대만 남은 마천루의 철골 위. 방독면과 누더기 망토를 쓴 스캐빈저(생존자)가 녹색 안개로 뒤덮인 폐허 도시를 내려다보고 있다. 그의 손에는 정체불명의 발광 유물이 들려 있다.</p>
+</li>
+</ul>
+<h4 id="️-파멸의-전조-doomsday">☄️ 파멸의 전조 (Doomsday)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-파멸의-전조-doomsday" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 금이 간 <font style="font-weight:bold;">행성</font>과 뒤에 있는 <font style="font-weight:bold;">시계</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Warning Red</code> (경고 빨강)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 하늘을 가득 메운 거대한 붉은 혜성(또는 갈라지는 지표면). 공포에 질린 시민들이 우주선 발사대로 필사적으로 달려가고, 마지막 탈출선이 엔진 굉음을 내며 이륙하는 긴박한 최후의 순간.</p>
+</li>
+</ul>
+<h4 id="️-잔존자-remnants">🏛️ 잔존자 (Remnants)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-잔존자-remnants" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 덩굴이 감긴 무너진 <font style="font-weight:bold;">마천루</font> 또는 <font style="font-weight:bold;">첨탑</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Ruined Beige</code> (폐허 베이지)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 울창한 정글 속에 파묻힌 초고대 금속 도시. 이끼 낀 거대한 마천루 사이로, 횃불을 든 탐험대가 아직도 희미하게 빛나는 고대의 홀로그램 단말기를 조심스럽게 건드려보는 장면.</p>
+</li>
+</ul>
+<h4 id="-무자비한-산업화-relentless-industrialists">🏭 무자비한 산업화 (Relentless Industrialists)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-무자비한-산업화-relentless-industrialists" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 검은 연기를 뿜는 <font style="font-weight:bold;">공장 굴뚝</font>과 <font style="font-weight:bold;">기어</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Smog Grey</code> (스모그 회색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 하늘이 보이지 않을 정도로 빽빽한 공장 지대. 검은 매연 사이로 용광로의 붉은 빛만이 번쩍이며, 방호복을 입은 노동자들이 끝도 없이 쏟아지는 자원을 컨베이어 벨트에 싣고 있다.</p>
+</li>
+</ul>
+<h4 id="️-빙하기의-생존자-ice-age">❄️ 빙하기의 생존자 (Ice Age)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-빙하기의-생존자-ice-age" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">눈의 결정</font> 속에 갇힌 <font style="font-weight:bold;">불꽃</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Frost White</code> (서리 흰색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 끝없는 설원 한가운데, 거대한 지열 발전소(또는 마력로)를 중심으로 형성된 돔 도시. 돔 밖의 맹렬한 눈보라와 대비되는 돔 내부의 따뜻하고 아늑한 주황색 불빛.</p>
+</li>
+</ul>
+<h4 id="-역병-생존자-plague-survivor">🦠 역병 생존자 (Plague Survivor)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-역병-생존자-plague-survivor" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">바이러스/세균</font> 기호와 <font style="font-weight:bold;">십자가(치료)</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Sickness Purple</code> (질병 보라)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 하얀 방호복을 입은 의료진들이 오염된 물건들을 소각하고 있는 장면. 그 뒤로 완치된 생존자들이 서로를 부둥켜안고 울고 있으며, 하늘에는 정화의 비가 내리고 있다.</p>
+</li>
+</ul>
+<h2 id="-3-환경과-거주-environment--habitat">🌌 3. 환경과 거주 (Environment &amp; Habitat)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-3-환경과-거주-environment--habitat" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="️-공허-거주자-void-dwellers">🛰️ 공허 거주자 (Void Dwellers)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-공허-거주자-void-dwellers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 우주 공간에 떠 있는 <font style="font-weight:bold;">육각형 거주구</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Space Black</code> (우주 검정)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 거대한 스페이스 콜로니의 내부. 인공 하늘과 위쪽으로 휘어진 지표면이 보이고, 창밖으로는 부서진 모성의 파편들이 떠다닌다. 무중력 구역에서 아이들이 날아다니며 놀고 있다.</p>
+</li>
+</ul>
+<h4 id="️-지하-문명-subterranean">⛏️ 지하 문명 (Subterranean)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-지하-문명-subterranean" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">동굴 입구</font>와 <font style="font-weight:bold;">곡괭이/보석</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Cave Brown</code> (동굴 갈색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 거대한 지하 공동(空洞). 발광 버섯과 수정들이 천연 조명처럼 천장을 밝히고, 절벽을 깎아 만든 석조 건물들이 층층이 쌓여 있다. 드워프풍의 거대 굴착기가 암반을 뚫고 있는 모습.</p>
+</li>
+</ul>
+<h4 id="-생명의-씨앗-life-seeded">🌺 생명의 씨앗 (Life-Seeded)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-생명의-씨앗-life-seeded" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 거대한 <font style="font-weight:bold;">꽃</font>과 <font style="font-weight:bold;">나비</font>가 있는 낙원.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Paradise Pink</code> (낙원 핑크)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 에덴동산을 연상시키는 비현실적으로 아름다운 숲. 집채만한 꽃들이 만발해 있고, 맹수조차 온순해 보이는 평화로운 풍경 속에 화려한 비단 옷을 입은 귀족들이 산책하고 있다.</p>
+</li>
+</ul>
+<h4 id="-해양-낙원-ocean-paradise">🌊 해양 낙원 (Ocean Paradise)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-해양-낙원-ocean-paradise" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 거대한 <font style="font-weight:bold;">파도</font>와 <font style="font-weight:bold;">물방울</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Ocean Blue</code> (대양 파랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 심해에 건설된 투명한 돔 도시. 거대한 해양 생물(고래 등)들이 돔 위를 유유히 헤엄치고 있고, 도시 내부에는 형광 산호초와 하이테크 건물이 조화를 이루며 신비롭게 빛나고 있다.</p>
+</li>
+</ul>
+<h4 id="-부서진-고리-shattered-ring">💍 부서진 고리 (Shattered Ring)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-부서진-고리-shattered-ring" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 끊어진 <font style="font-weight:bold;">거대한 고리(Ring)</font> 구조물.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Ancient Gold</code> (고대 황금)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 행성 표면이 아닌, 인공 대지 위에서 하늘을 올려다본 시점. 하늘을 가로지르는 거대한 고리(링월드)의 아치가 보이며, 저 멀리 고리가 끊어진 단면에서 파편이 흩날리는 장엄한 풍경.</p>
+</li>
+</ul>
+<h4 id="-생명의-나무-tree-of-life">🌳 생명의 나무 (Tree of Life)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-생명의-나무-tree-of-life" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성을 감싸 안은 <font style="font-weight:bold;">거대한 나무 뿌리</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Vital Green</code> (생명 녹색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 구름을 뚫고 성층권까지 솟아오른 초거대 세계수. 그 뿌리 사이사이에 도시가 형성되어 있으며, 나무에서 눈처럼 떨어지는 황금빛 포자를 주민들이 경건하게 받아들이고 있다.</p>
+</li>
+</ul>
+<h4 id="️-부서진-족쇄-broken-shackles">⛓️ 부서진 족쇄 (Broken Shackles)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-부서진-족쇄-broken-shackles" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">부러진 사슬</font>과 서로 다른 모양의 <font style="font-weight:bold;">맞잡은 손</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Liberty Blue</code> (자유 파랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 거대한 노예 운반선의 추락 잔해 앞. 족쇄를 끊어낸 서로 다른 피부색과 외형의 외계인들이 모닥불 주위에 둘러앉아 있다. 그들의 눈빛에는 공포 대신 연대와 결의가 차 있다.</p>
+</li>
+</ul>
+<h4 id="-폭풍의-기수-storm-riders">⚡ 폭풍의 기수 (Storm Riders)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-폭풍의-기수-storm-riders" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 거대한 <font style="font-weight:bold;">먹구름/폭풍</font>을 가르는 <font style="font-weight:bold;">함선</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Storm Cyan</code> (폭풍 청록)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 행성을 휘감는 보랏빛 플라즈마 폭풍 속. 번개를 피하지 않고 오히려 그 에너지를 흡수하는 ‘에너지 돛’을 단 비행선들이, 폭풍의 눈을 향해 대담하게 항해하는 역동적인 모습.</p>
+</li>
+</ul>
+<h4 id="-유목-함대-nomad-fleet">🌌 유목 함대 (Nomad Fleet)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-유목-함대-nomad-fleet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성 없이 <font style="font-weight:bold;">우주를 항해하는 함대</font>의 대열.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Nomad Yellow</code> (유목 노랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 끝없이 펼쳐진 우주 공간. 수천 척의 낡고 수리된 함선들이 거대한 띠를 이루며 이동하고 있다. 기함(Mothership)의 창밖으로 성운이 흐르고, 함교의 선원들은 별자리를 지도 삼아 항로를 논의한다.</p>
+</li>
+</ul>
+<h2 id="️-4-기술과-진화-tech--evolution">⚙️ 4. 기술과 진화 (Tech &amp; Evolution)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-4-기술과-진화-tech--evolution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="-기계론자-mechanist">🤖 기계론자 (Mechanist)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-기계론자-mechanist" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 인간의 손과 <font style="font-weight:bold;">로봇의 손</font>이 마주 보는 형상.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Steel Blue</code> (강철 파랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 인간 감독관이 태블릿으로 가볍게 지시를 내리면, 수십 대의 작업용 로봇들이 일사불란하게 거대한 건축물을 조립하는 현장. 인간들은 힘든 노동에서 해방되어 여유로운 모습이다.</p>
+</li>
+</ul>
+<h4 id="-사이버네틱-신조-cybernetic-creed">🦾 사이버네틱 신조 (Cybernetic Creed)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-사이버네틱-신조-cybernetic-creed" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">반은 기계</font>인 얼굴과 <font style="font-weight:bold;">후광</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Cyber Yellow</code> (사이버 노랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 하이테크 사원 내부. 사제복을 입었지만 팔과 눈이 정교한 기계로 된 승려가, 무릎 꿇은 신도에게 기계 팔을 이식해 주는 ‘세례 의식’을 거행한다. 성스러운 기계음(Choir)이 울려 퍼진다.</p>
+</li>
+</ul>
+<h4 id="-클론-군대-clone-army">🧪 클론 군대 (Clone Army)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-클론-군대-clone-army" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">배양조(Tank)</font> 안에 떠 있는 태아.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Genetic Teal</code> (유전자 청록)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 끝없이 늘어선 거대한 원통형 배양조들의 열병식. 그 안에는 똑같이 생긴 병사들이 잠들어 있다. 막 깨어난 한 명의 클론 병사가 배양 용액이 빠진 투명한 배양조 안에서 결연한 표정으로 눈을 뜨고 있다. 그의 앞에는 제복과 무기가 가지런히 놓여 있고, 배양조 밖으로는 이미 장비를 갖추고 도열하기 시작한 수많은 클론 병사들의 실루엣이 거대한 홀을 가득 메우고 있다.</p>
+</li>
+</ul>
+<h4 id="-과잉-개조-overtuned">🧬 과잉 개조 (Overtuned)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-과잉-개조-overtuned" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">DNA 나선</font>이 과열되어 <font style="font-weight:bold;">붉게 빛나는</font> 모습.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Risk Red</code> (위험 적색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 실험실 같은 생활 공간. 거대한 기계를 맨손으로 들어 올리는 등 초인적인 능력을 발휘하는 시민들이 보이지만, 구석에는 급격한 노화 부작용으로 쓰러져 있는 젊은이의 모습이 대조된다.</p>
+</li>
+</ul>
+<h4 id="-인조-배양-synthetic-fertility">🍼 인조 배양 (Synthetic Fertility)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-인조-배양-synthetic-fertility" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">인공 자궁</font> 기계와 아기.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Hopeful Gold</code> (희망 금색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 멸균된 하얀 방. 수천 개의 인공 자궁 캡슐이 벽면을 가득 채우고 있고, 섬세한 기계 팔이 캡슐 속의 태아들을 돌보고 있다. 창밖으로 황폐화된 세상이 보여, 이 방만이 유일한 희망임을 암시한다.</p>
+</li>
+</ul>
+<h4 id="-기억-계승자-memory-keeper">💾 기억 계승자 (Memory Keeper)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-기억-계승자-memory-keeper" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 머리(뇌) 속에서 빛나는 <font style="font-weight:bold;">책/칩</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Data Blue</code> (데이터 파랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 거대한 데이터 라이브러리(또는 영혼의 성소). 노인이 아이의 머리에 손(또는 케이블)을 얹자, 아이의 눈동자 속으로 수많은 역사적 사건의 파노라마가 빛처럼 흘러들어가는 신비로운 전승 의식.</p>
+</li>
+</ul>
+<h4 id="️-기계-행성-machine-world">🖥️ 기계 행성 (Machine World)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-기계-행성-machine-world" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 금속 회로로 뒤덮인 <font style="font-weight:bold;">기계 행성</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Cyber Silver</code> (사이버 은색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 흙 한 줌, 물 한 방울 없는 100% 금속의 지표면. 끝없이 펼쳐진 회로와 서버 타워 사이를 비행 드론들이 데이터 패킷처럼 오가고, 행성의 핵에서 뿜어져 나오는 냉각수가 강처럼 흐른다.</p>
+</li>
+</ul>
+<h4 id="️-프레임-월드-frame-world">🏗️ 프레임 월드 (Frame World)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-프레임-월드-frame-world" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성 핵을 둘러싼 거대한 <font style="font-weight:bold;">건설용 프레임(뼈대)</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Frame Orange</code> (건설 주황)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 텅 빈 우주 공간에 떠 있는 붉게 타오르는 인공 중력 핵. 그 주위를 육각형의 금속 프레임들이 감싸고 있고, 수많은 건설선들이 달라붙어 인공 대지를 조립하고 있는 웅장한 공학적 광경.</p>
+</li>
+</ul>
+<h4 id="-가상-현실-simulated-reality">💻 가상 현실 (Simulated Reality)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-가상-현실-simulated-reality" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 머리에 <font style="font-weight:bold;">VR 헤드셋/케이블</font>을 쓴 사람과 디지털 세계.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Matrix Green</code> (매트릭스 녹색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 끝없이 펼쳐진 서버 랙(Rack)의 숲. 수십억 개의 보관 캡슐이 푸른 빛을 내며 정렬되어 있고, 현실 세계는 고요하지만 네트워크 내부(모니터 속)는 화려한 축제가 벌어지고 있는 이질적인 풍경.</p>
+</li>
+</ul>
+<h2 id="-5-신비와-이능-arcane--mystery">🔮 5. 신비와 이능 (Arcane &amp; Mystery)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-5-신비와-이능-arcane--mystery" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="️-장막의-스승-teachers-of-the-shroud">🧙‍♀️ 장막의 스승 (Teachers of the Shroud)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-장막의-스승-teachers-of-the-shroud" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">수정구</font> 에서 나오는 오라.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Psionic Pink</code> (사이오닉 핑크)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 보라색 안개가 자욱한 명상의 방. 승려들이 가부좌를 틀고 공중에 붕 뜬 채 명상하고 있으며, 그들의 머리 위로 현실 공간이 일렁이며 이계(장막)의 기괴하고도 신비로운 풍경이 투영된다.</p>
+</li>
+</ul>
+<h4 id="-네크로파지-necrophage">💀 네크로파지 (Necrophage)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-네크로파지-necrophage" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 해골 모양의 <font style="font-weight:bold;">기생체</font>가 생명체를 감싸는 모습.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Death Black</code> (죽음 검정)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 어두운 지하 사원. 공포에 질린 포로들이 제단으로 끌려가고 있고, 사제가 검은 연기를 불어넣자 포로의 몸이 뒤틀리며 네크로파지 종족으로 변태(Metamorphosis)하는 끔찍한 과정.</p>
+</li>
+</ul>
+<h4 id="-용의-비호-here-be-dragons">🐉 용의 비호 (Here Be Dragons)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-용의-비호-here-be-dragons" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성을 감싸고 있는 <font style="font-weight:bold;">용의 실루엣</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Dragon Blue</code> (드래곤 파랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 도시 상공을 덮을 만큼 거대한 우주 용(Sky Dragon)이 유유히 날고 있고, 그 용의 비늘에서 떨어지는 마력을 채집하기 위해 문명의 작은 비행정들이 분주히 따라다니는 공생의 현장.</p>
+</li>
+</ul>
+<h4 id="️-차원-기사단-knights-of-the-rift">⚔️ 차원 기사단 (Knights of the Rift)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-차원-기사단-knights-of-the-rift" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 차원 균열 앞을 막아선 <font style="font-weight:bold;">기사의 검과 방패</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Order Gold</code> (기사단 황금)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 하늘이 찢어진 듯한 거대한 차원 균열 앞. 마법 강화복(Power Armor)을 입은 기사단이 방진을 짜고, 균열에서 쏟아져 나오는 그림자 괴물들을 향해 성스러운 빛이 감도는 검을 겨누고 있다.</p>
+</li>
+</ul>
+<h4 id="-차원-균열-dimensional-rift">🌀 차원 균열 (Dimensional Rift)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-차원-균열-dimensional-rift" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 찢어진 <font style="font-weight:bold;">공간의 틈</font>에서 쏟아지는 빛.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Void Purple</code> (공허 보라)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 행성 하늘의 절반을 집어삼킨 거대한 보라색 소용돌이(균열). 그 균열의 중력 때문에 지상의 건물 파편과 바위들이 하늘로 조금씩 떠오르고 있으며, 학자들이 그 현상을 필사적으로 연구하고 있다.</p>
+</li>
+</ul>
+<h4 id="️-마력-각성-magical-awakening">🧙‍♂️ 마력 각성 (Magical Awakening)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-마력-각성-magical-awakening" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 손바닥 위에서 <font style="font-weight:bold;">폭발하듯 피어나는 마력</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Magic Blue</code> (마법 파랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 평범한 현대 도시의 거리. 하지만 회사원이 서류 가방 대신 지팡이를 들고 출근하고, 교통정리 경찰이 수신호 대신 염동력으로 차들을 들어 옮기는, 마법과 일상이 섞인 혼란스러운 풍경.</p>
+</li>
+</ul>
+<h4 id="-공포의-어둠-fear-of-the-dark">🌑 공포의 어둠 (Fear of the Dark)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-공포의-어둠-fear-of-the-dark" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 어둠 속에서 빛나는 수많은 <font style="font-weight:bold;">눈</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Shadow Black</code> (그림자 검정)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 과도할 정도로 요새화된 벙커 도시. 창문은 모두 두꺼운 장갑으로 막혀 있고, 감시탑의 서치라이트가 밤하늘을 편집증적으로 훑고 있다. 시민들은 하늘을 쳐다보기를 두려워하며 고개를 숙이고 다닌다.</p>
+</li>
+</ul>
+<h4 id="-마력-중독-mana-addiction">🩸 마력 중독 (Mana Addiction)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-마력-중독-mana-addiction" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">갈라진 피부</font> 사이로 새어 나오는 <font style="font-weight:bold;">보라색 마력</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Cursed Violet</code> (저주 보라)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 화려하지만 병적인 분위기의 귀족 연회장. 사람들이 마력이 담긴 앰플을 탐욕스럽게 들이키고 있다. 앰플을 마신 자들의 눈은 보라색으로 빛나지만, 마시지 못한 자는 구석에서 피부가 갈라지는 고통에 몸부림친다.</p>
+</li>
+</ul>
+<h4 id="-차원-세계-riftworld">🌌 차원 세계 (Riftworld)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-차원-세계-riftworld" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 우주가 아닌 <font style="font-weight:bold;">균열 속 풍경</font>에 떠 있는 도시.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Astral Purple</code> (아스트랄 보라)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 별이 없는 기하학적인 하늘. 물리 법칙을 무시하고 부유하는 섬들 사이에 빛으로 된 다리가 연결되어 있고, 주민들은 걷는 대신 점멸(Blink)하듯 공간 이동으로 움직이고 있다.</p>
+</li>
+</ul>
+<h4 id="-현인신-living-deity">⚡ 현인신 (Living Deity)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-현인신-living-deity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 옥좌에 앉은 인물 뒤로 비치는 <font style="font-weight:bold;">거대한 신적 아바타(형상)</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Divine Gold</code> (신성 황금)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 거대한 광장. 수백만의 신도들이 엎드려 있고, 그 중앙의 높은 제단 위에 통치자가 서 있다. 통치자가 손을 들자 하늘에서 빛이 내려와 그의 몸을 감싸고, 군중들이 열광한다.</p>
+</li>
+</ul>
+<h2 id="-6-외교와-종속-diplomacy--relation">🤝 6. 외교와 종속 (Diplomacy &amp; Relation)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-6-외교와-종속-diplomacy--relation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="-몰락의-후예-scion">🙇 몰락의 후예 (Scion)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-몰락의-후예-scion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 거인의 손이 <font style="font-weight:bold;">꼭두각시 줄</font>을 쥐고 있는 모습.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Puppet Purple</code> (꼭두각시 보라)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 소박한 문명의 수도 상공에 떠 있는, 이해할 수 없는 디자인의 초고도 문명 전함. 그 전함에서 내려온 사절에게 지도자가 무릎을 꿇고 공물을 바치고 있지만, 표정은 안도감과 굴욕감이 묘하게 섞여 있다.</p>
+</li>
+</ul>
+<h4 id="-패권국-hegemon">🦁 패권국 (Hegemon)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-패권국-hegemon" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 중앙의 큰 별을 <font style="font-weight:bold;">공전하는 작은 별들</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Hegemon Gold</code> (패권 황금)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 화려한 원탁 회의장. 중앙의 상석에 앉은 주인공 종족이 거만하게 서류를 던지면, 주변에 앉은 다른 종족 대표들이 눈치를 보며 서명하는 권력의 불균형이 느껴지는 장면.</p>
+</li>
+</ul>
+<h4 id="-공동의-터전-common-ground">🤝 공동의 터전 (Common Ground)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-공동의-터전-common-ground" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">원탁</font>에 놓인 세 개의 손.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Union Cyan</code> (연합 청록)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 세 개의 서로 다른 종족 깃발이 나란히 걸린 연방 의회 발코니. 세 종족의 대표가 손을 맞잡고 아래의 환호하는 군중들에게 인사하고 있으며, 하늘에는 세 종족의 함선들이 섞여서 에어쇼를 펼친다.</p>
+</li>
+</ul>
+<h4 id="-제국-영지-imperial-fiefdom">📜 제국 영지 (Imperial Fiefdom)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-제국-영지-imperial-fiefdom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 왕좌 앞에 <font style="font-weight:bold;">무릎 꿇은 사람</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Vassal Grey</code> (봉신 회색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 행성 궤도에 건설된 거대한 ‘징세 정거장’. 식민지에서 생산된 자원들이 외계 징세관의 감독 하에 끝도 없이 수송선에 실려 나가고, 노동자들은 그 모습을 허탈하게 바라보고 있다.</p>
+</li>
+</ul>
+<h4 id="-분리주의자-separatists">✊ 분리주의자 (Separatists)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-분리주의자-separatists" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">찢어진 깃발</font>과 불타는 사슬.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Rebel Red</code> (반군 적색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 시가전이 끝난 직후의 그을린 의사당. 제국의 깃발이 바닥에 떨어져 짓밟혀 있고, 혁명군 병사가 그 위에 급조된 신생 독립국의 깃발을 꽂으며 승리의 함성을 지르고 있다.</p>
+</li>
+</ul>
+<h4 id="-기업-제국-corporate-sovereign">🏢 기업 제국 (Corporate Sovereign)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-기업-제국-corporate-sovereign" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성 위에 우뚝 선 <font style="font-weight:bold;">빌딩</font>과 <font style="font-weight:bold;">화폐 기호</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Profit Yellow</code> (이윤 노랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 행성 전체가 거대한 쇼핑몰이자 오피스인 도시. 모든 건물에 네온사인이 번쩍이며 광고를 송출하고, 시민들은 사원증을 목에 걸고 바쁘게 움직인다. 하늘에는 “소비는 미덕”이라는 홀로그램이 떠 있다.</p>
+</li>
+</ul>
+<h4 id="-계몽된-자-uplifted">🧩 계몽된 자 (Uplifted)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-계몽된-자-uplifted" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 하늘에서 내려오는 <font style="font-weight:bold;">빛줄기(Uplift)</font>를 받는 <font style="font-weight:bold;">원시인</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Enlightened White</code> (계몽 흰색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 정글 속에 방치된 하이테크 모놀리스(비석). 원시적인 복장을 한 종족들이 그 비석을 신처럼 숭배하며, 비석에서 나오는 홀로그램 데이터를 통해 수학과 과학을 배우고 있는 기묘한 부조화.</p>
+</li>
+</ul>
+<h2 id="-7-서사와-탐구-narrative--quest">📜 7. 서사와 탐구 (Narrative &amp; Quest)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-7-서사와-탐구-narrative--quest" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="️-기사단-원정-questing-knights">⚔️ 기사단 원정 (Questing Knights)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-기사단-원정-questing-knights" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 성배를 향해 뻗은 <font style="font-weight:bold;">기사의 검</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Holy Gold</code> (성스러운 황금)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 우주선 함교(Bridge)지만 내부는 성당처럼 스테인드글라스로 장식되어 있다. 함장석 대신 제단이 놓여 있고, 기사단장이 성계 지도를 펼쳐 놓고 ‘성배’의 위치를 추적하며 기도를 올리고 있다.</p>
+</li>
+</ul>
+<h4 id="-선구자의-발자취-path-of-precursors">👣 선구자의 발자취 (Path of Precursors)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-선구자의-발자취-path-of-precursors" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 거인의 <font style="font-weight:bold;">발자국</font>을 따라 걷는 <font style="font-weight:bold;">작은 사람</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Ancient Beige</code> (고대 베이지)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 고고학 발굴 현장. 먼지 덮인 고대 석판을 해석하자 우주의 특정 좌표가 빛나며 드러나고, 이를 지켜보던 탐사대원들이 환호하며 우주선을 향해 달려가는 모험의 시작.</p>
+</li>
+</ul>
+<h4 id="-피의-복수-vendetta">🩸 피의 복수 (Vendetta)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-피의-복수-vendetta" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">부러진 족쇄</font>를 쥔 손과 <font style="font-weight:bold;">피 묻은 단검</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Vengeance Red</code> (복수 적색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 어두운 훈련소. 벽면에는 침략자 외계인의 해부도와 약점이 가득 붙어 있다. 어린아이부터 노인까지 전 국민이 사격 훈련을 하고 있으며, 그들의 눈에는 서늘한 살기와 복수심이 어려 있다.</p>
+</li>
+</ul>
+<h4 id="️-진실의-탐구자-truth-seekers">🕵️ 진실의 탐구자 (Truth Seekers)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-진실의-탐구자-truth-seekers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 우주 배경을 들여다보는 거대한 <font style="font-weight:bold;">돋보기(눈)</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Truth Skyblue</code> (진실 하늘색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 행성 크기의 거대한 전파 망원경(관측소). 수천 명의 학자들이 모여 우주 배경 복사의 노이즈를 분석하고 있고, 모니터에 희미하게 나타난 ‘어떤 인위적인 패턴(진실의 실마리)‘을 보고 경악하는 모습.</p>
+</li>
+</ul>
+<h4 id="-고대-기록-보관소-ancient-archive">📚 고대 기록 보관소 (Ancient Archive)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-고대-기록-보관소-ancient-archive" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 행성을 감싸고 있는 거대한 <font style="font-weight:bold;">책/두루마리</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Archive Beige</code> (기록 베이지)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 지표면 전체가 도서관과 서버실로 뒤덮인 행성. 수천 층 높이의 서가 사이를 관리용 드론들이 날아다니고, 사서들이 고대 홀로그램 기록을 분류하고 있는 엄숙하고 지적인 분위기.</p>
+</li>
+</ul>
+<h2 id="-8-이종-생태-및-변이-exotic--mutation">🧬 8. 이종 생태 및 변이 (Exotic &amp; Mutation)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-8-이종-생태-및-변이-exotic--mutation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="-수정-생명체-lithoid">💎 수정 생명체 (Lithoid)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정-생명체-lithoid" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">보석</font>으로 이루어진 얼굴이나 손.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Crystal Pink</code> (수정 핑크)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 형형색색의 크리스탈로 이루어진 숲. 움직이는 거대한 바위(수정 생명체)들이 광맥을 우적우적 씹어 먹고 있으며, 그들의 몸 내부에서 나오는 빛이 어두운 동굴을 아름답게 비추고 있다.</p>
+</li>
+</ul>
+<h4 id="-차원-구성체-dimension-fabricated">⏳ 차원 구성체 (Dimension Fabricated)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-차원-구성체-dimension-fabricated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 기하학적으로 <font style="font-weight:bold;">왜곡된 시계</font>와 형체.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Rift Blue</code> (균열 파랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 2차원과 3차원이 섞인 듯한 기괴한 공간. 종이접기처럼 접히거나 폴리곤이 깨진 듯한 형상의 존재들이, 현실의 물리 법칙을 무시하고 공중을 미끄러지듯 기묘하게 이동하고 있다.</p>
+</li>
+</ul>
+<h4 id="-마나-포식군-mana-locust">🦗 마나 포식군 (Mana Locust)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-마나-포식군-mana-locust" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">갉아먹힌 사과</font>와 곤충 실루엣.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Hunger Orange</code> (기아 주황)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 우주에서 바라본 행성의 모습. 곤충 떼 같은 함선들이 지나간 자리는 녹색이 사라지고 회색 황무지로 변해 있다. 행성을 뼈만 남기고 갉아먹은 뒤 다음 먹이(행성)를 향해 떠나는 끔찍한 행렬.</p>
+</li>
+</ul>
+<h4 id="-군체-의식-hive-progenitor">🍄 군체 의식 (Hive Progenitor)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-군체-의식-hive-progenitor" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">육각형 벌집</font>과 여왕의 실루엣.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Hive Yellow</code> (하이브 노랑)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 끝없이 펼쳐진 유기물 점막으로 덮인 도시. 모든 생명체가 하나의 거대한 신경망처럼 연결되어 일사불란하게 움직인다. 그 중심에 산처럼 거대한 여왕이 자리 잡고 텔레파시 파동을 내뿜고 있다.</p>
+</li>
+</ul>
+<h4 id="-생체-함선-organic-mother-ship">🐳 생체 함선 (Organic Mother-Ship)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-생체-함선-organic-mother-ship" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 거대한 <font style="font-weight:bold;">우주 고래/오징어</font>의 실루엣과 그 위의 도시.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Organic Green</code> (유기농 녹색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 심우주를 유영하는 거대한 우주 고래. 그 고래의 등에는 돔으로 덮인 도시들이 따개비처럼 붙어 있고, 고래의 촉수 사이로 작은 생체 전투기들이 호위하듯 출격하고 있다.</p>
+</li>
+</ul>
+<h4 id="️-재앙적-탄생-calamitous-birth">☄️ 재앙적 탄생 (Calamitous Birth)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-재앙적-탄생-calamitous-birth" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 지표면에 충돌하는 <font style="font-weight:bold;">불타는 운석</font>과 크레이터.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Meteor Red</code> (운석 적색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 거대한 크레이터의 중심. 아직 열기가 식지 않은 붉은 운석에서 암석 생명체들이 알을 깨고 나오듯 기어 나오고 있다. 주변은 충돌의 여파로 초토화되었지만, 그들은 그 환경을 즐기는 듯하다.</p>
+</li>
+</ul>
+<h4 id="-풍요로운-동반자-fruitful-partnership">🦋 풍요로운 동반자 (Fruitful Partnership)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-풍요로운-동반자-fruitful-partnership" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 꽃가루를 나르는 <font style="font-weight:bold;">거대한 우주 고래</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Symbiosis Pink</code> (공생 핑크)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 우주로 날아오르는 거대한 티양키(우주 고래). 그 고래의 몸에는 문명의 이주민들이 탑승한 포드(Pod)들이 꽃가루처럼 주렁주렁 매달려 있다. 평화롭고 몽환적인 우주 확산의 장면.</p>
+</li>
+</ul>
+<h2 id="-9-특수-상태-special-status">🛸 9. 특수 상태 (Special Status)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-9-특수-상태-special-status" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h4 id="-원시-문명-primitivepre-ftl">🔥 원시 문명 (Primitive/Pre-FTL)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-원시-문명-primitivepre-ftl" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> <font style="font-weight:bold;">돌도끼</font> 또는 <font style="font-weight:bold;">피라미드</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Primitive Brown</code> (원시 갈색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 밤하늘을 가로지르는 우주선(관측소)의 불빛을 보며, 지상의 원시 부족민들이 신이라 여기고 절을 하거나 횃불을 들고 경계하는 모습.</p>
+</li>
+</ul>
+<h4 id="-몰락-제국-fallen-empire">💤 몰락 제국 (Fallen Empire)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-몰락-제국-fallen-empire" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 덩굴이 감긴 <font style="font-weight:bold;">낡은 옥좌</font> 또는 꺼져가는 태양.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Fallen Gold</code> (몰락 황금)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 상상할 수 없을 만큼 진보했지만 텅 빈 도시. 자동 관리 드론만이 거리를 청소하고 있고, 소수의 주민들은 가상현실에 빠져 있거나 쾌락에 젖어 무기력하게 누워 있는, 찬란하지만 죽어가는 황혼의 문명.</p>
+</li>
+</ul>
+<h4 id="️-약탈자-marauder">🏴‍☠️ 약탈자 (Marauder)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-약탈자-marauder" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 뼈와 고철로 장식된 <font style="font-weight:bold;">해골 함선</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Raider Red</code> (약탈 적색)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 여러 함선의 잔해를 덕지덕지 용접해 만든 거대하고 기괴한 기함(Flagship). 함교에는 해골 장식이 가득하고, 함장은 약탈한 보물들 위에 앉아 호탕하게 웃고 있다.</p>
+</li>
+</ul>
+<h4 id="-미지의-제국-unknown-empire">❓ 미지의 제국 (Unknown Empire)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-미지의-제국-unknown-empire" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 성계 지도 위에 떠 있는 <font style="font-weight:bold;">물음표(?)</font>.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> <code>Mystery Violet</code> (미스터리 보라)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🖼️ 삽화(Scene):</font> 노이즈가 섞인 통신 화면. 상대방의 모습은 실루엣조차 보이지 않고, 오직 기계적인 잡음이나 이해할 수 없는 외계어만이 흘러나오는 불안한 모니터 화면.</p>
+</li>
+</ul></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-479"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-479"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-805" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-805" class="toc-content"><li class="depth-0"><a href="#-엘리스-프라우셰크트-제국-기원-아이콘-마스터-정의서-v27-final-verified" data-for="-엘리스-프라우셰크트-제국-기원-아이콘-마스터-정의서-v27-final-verified">🎨 엘리스 프라우셰크트: 제국 기원 아이콘 마스터 정의서 (v2.7 Final Verified)</a></li><li class="depth-1"><a href="#0--빠른-참조-요약표-cheat-sheet" data-for="0--빠른-참조-요약표-cheat-sheet">0. ⚡ 빠른 참조 요약표 (Cheat Sheet)</a></li><li class="depth-1"><a href="#️-1-정치와-통합-unification--political" data-for="️-1-정치와-통합-unification--political">🏛️ 1. 정치와 통합 (Unification &amp; Political)</a></li><li class="depth-1"><a href="#-2-재난과-생존-disaster--survival" data-for="-2-재난과-생존-disaster--survival">🔥 2. 재난과 생존 (Disaster &amp; Survival)</a></li><li class="depth-1"><a href="#-3-환경과-거주-environment--habitat" data-for="-3-환경과-거주-environment--habitat">🌌 3. 환경과 거주 (Environment &amp; Habitat)</a></li><li class="depth-1"><a href="#️-4-기술과-진화-tech--evolution" data-for="️-4-기술과-진화-tech--evolution">⚙️ 4. 기술과 진화 (Tech &amp; Evolution)</a></li><li class="depth-1"><a href="#-5-신비와-이능-arcane--mystery" data-for="-5-신비와-이능-arcane--mystery">🔮 5. 신비와 이능 (Arcane &amp; Mystery)</a></li><li class="depth-1"><a href="#-6-외교와-종속-diplomacy--relation" data-for="-6-외교와-종속-diplomacy--relation">🤝 6. 외교와 종속 (Diplomacy &amp; Relation)</a></li><li class="depth-1"><a href="#-7-서사와-탐구-narrative--quest" data-for="-7-서사와-탐구-narrative--quest">📜 7. 서사와 탐구 (Narrative &amp; Quest)</a></li><li class="depth-1"><a href="#-8-이종-생태-및-변이-exotic--mutation" data-for="-8-이종-생태-및-변이-exotic--mutation">🧬 8. 이종 생태 및 변이 (Exotic &amp; Mutation)</a></li><li class="depth-1"><a href="#-9-특수-상태-special-status" data-for="-9-특수-상태-special-status">🛸 9. 특수 상태 (Special Status)</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../postscript.js" type="module" data-persist="true"></script></html>

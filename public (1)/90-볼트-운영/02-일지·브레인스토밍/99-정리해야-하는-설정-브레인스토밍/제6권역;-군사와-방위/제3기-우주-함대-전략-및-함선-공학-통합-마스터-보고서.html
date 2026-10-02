@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서"/><meta name="twitter:description" content="제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서 문서 번역 코드: ELX-NAV-MASTER-3RD-001 보안 등급: 연방 군사전략국 최고 기밀 (황실 직속 관리) 버전: 2.5 (민간 선박 및 신비 공학 통합본) 1."/><meta property="og:description" content="제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서 문서 번역 코드: ELX-NAV-MASTER-3RD-001 보안 등급: 연방 군사전략국 최고 기밀 (황실 직속 관리) 버전: 2.5 (민간 선박 및 신비 공학 통합본) 1."/><meta property="og:image:alt" content="제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서 문서 번역 코드: ELX-NAV-MASTER-3RD-001 보안 등급: 연방 군사전략국 최고 기밀 (황실 직속 관리) 버전: 2.5 (민간 선박 및 신비 공학 통합본) 1."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제6권역;-군사와-방위/제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제6권역;-군사와-방위/제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서"/><link rel="icon" href="../../../../static/icon.png"/><meta name="description" content="제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서 문서 번역 코드: ELX-NAV-MASTER-3RD-001 보안 등급: 연방 군사전략국 최고 기밀 (황실 직속 관리) 버전: 2.5 (민간 선박 및 신비 공학 통합본) 1."/><meta name="generator" content="Quartz"/><link href="../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제6권역;-군사와-방위/제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1264" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1264" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-856" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-856" class="mobile-toc-dialog" aria-labelledby="toc-856-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-856-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서" data-for="제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서">제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서</a></li><li class="depth-1"><a href="#1-함대-위계-체계-fleet-hierarchy--classification" data-for="1-함대-위계-체계-fleet-hierarchy--classification">1. 함대 위계 체계 (Fleet Hierarchy &amp; Classification)</a></li><li class="depth-2"><a href="#11-스크리닝-및-경량-전력-screening-forces" data-for="11-스크리닝-및-경량-전력-screening-forces">1.1 스크리닝 및 경량 전력 (Screening Forces)</a></li><li class="depth-2"><a href="#12-중형-타격-및-전열-전력-line-forces" data-for="12-중형-타격-및-전열-전력-line-forces">1.2 중형 타격 및 전열 전력 (Line Forces)</a></li><li class="depth-2"><a href="#13-결전-주력함-및-전략-자산-capital--strategic-assets" data-for="13-결전-주력함-및-전략-자산-capital--strategic-assets">1.3 결전 주력함 및 전략 자산 (Capital &amp; Strategic Assets)</a></li><li class="depth-2"><a href="#14-초월-및-특수-함급-transcendental-classes" data-for="14-초월-및-특수-함급-transcendental-classes">1.4 초월 및 특수 함급 (Transcendental Classes)</a></li><li class="depth-2"><a href="#15-민간-및-비전투-함급-civilian--non-combat-classes" data-for="15-민간-및-비전투-함급-civilian--non-combat-classes">1.5 민간 및 비전투 함급 (Civilian &amp; Non-combat Classes)</a></li><li class="depth-1"><a href="#2-실전-전술-및-3차원-진형-교리-tactical-formations" data-for="2-실전-전술-및-3차원-진형-교리-tactical-formations">2. 실전 전술 및 3차원 진형 교리 (Tactical Formations)</a></li><li class="depth-1"><a href="#3-모듈형-함선-구조-및-파츠-표준-modular-engineering" data-for="3-모듈형-함선-구조-및-파츠-표준-modular-engineering">3. 모듈형 함선 구조 및 파츠 표준 (Modular Engineering)</a></li><li class="depth-2"><a href="#31-섹션-구조-frame-sections" data-for="31-섹션-구조-frame-sections">3.1 섹션 구조 (Frame Sections)</a></li><li class="depth-2"><a href="#32-핵심-계통-파츠-core-systems" data-for="32-핵심-계통-파츠-core-systems">3.2 핵심 계통 파츠 (Core Systems)</a></li><li class="depth-1"><a href="#4-아케인-공학-융합-기술-arcane-engineering-fusion" data-for="4-아케인-공학-융합-기술-arcane-engineering-fusion">4. 아케인-공학 융합 기술 (Arcane-Engineering Fusion)</a></li><li class="depth-1"><a href="#5-군수-행정-및-향후-확장-과제-exploration--expansion" data-for="5-군수-행정-및-향후-확장-과제-exploration--expansion">5. 군수, 행정 및 향후 확장 과제 (Exploration &amp; Expansion)</a></li><li class="depth-2"><a href="#51-가문별-독자-설계-및-표준화-분쟁" data-for="51-가문별-독자-설계-및-표준화-분쟁">5.1 가문별 독자 설계 및 표준화 분쟁</a></li><li class="depth-2"><a href="#52-성계권역주sector별-생산-특화" data-for="52-성계권역주sector별-생산-특화">5.2 성계권역주(Sector)별 생산 특화</a></li><li class="depth-2"><a href="#53-차세대-연구-항목" data-for="53-차세대-연구-항목">5.3 차세대 연구 항목</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1264"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1264" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/">02 일지·브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/">99 정리해야 하는 설정 브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제6권역;-군사와-방위/">제6권역; 군사와 방위</a></div></nav><h1 class="article-title">제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:33.695Z">2026년 9월 30일</time><span>11 분 소요</span></p></div></div><article class="popover-hint"><h1 id="제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서">제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><font style="font-weight:bold;">문서 번역 코드:</font> ELX-NAV-MASTER-3RD-001</p>
+<p><font style="font-weight:bold;">보안 등급:</font> 연방 군사전략국 최고 기밀 (황실 직속 관리)</p>
+<p><font style="font-weight:bold;">버전:</font> 2.5 (민간 선박 및 신비 공학 통합본)</p>
+<h2 id="1-함대-위계-체계-fleet-hierarchy--classification">1. 함대 위계 체계 (Fleet Hierarchy &amp; Classification)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-함대-위계-체계-fleet-hierarchy--classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>엘리시움 연방군은 NSC3 표준과 ACOT 기술을 기반으로 함선을 전술적 역할과 운용 목적에 따라 분류한다.</p>
+<h3 id="11-스크리닝-및-경량-전력-screening-forces">1.1 스크리닝 및 경량 전력 (Screening Forces)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-스크리닝-및-경량-전력-screening-forces" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">초계함 (Corvette):</font> 고기동 정찰 및 어뢰 투사. ‘차원 잔광 억제기’를 장착하여 기습에 특화.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">호위함 (Frigate):</font> 유도무기 플랫폼. 적 센서를 교란하는 전자전 패키지의 중추.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">구축함 (Destroyer):</font> 함대 방공(Picket)의 핵심. 소형함 사냥꾼으로서 주력함을 함재기와 미사일로부터 보호.</p>
+</li>
+</ul>
+<h3 id="12-중형-타격-및-전열-전력-line-forces">1.2 중형 타격 및 전열 전력 (Line Forces)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-중형-타격-및-전열-전력-line-forces" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">강습순양함 (Strike Cruiser):</font> 구축함과 순양함의 간극을 메우는 고성능 함급. 장기 원정 및 측면 포격 교리에 최적화.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">순양함 (Cruiser):</font> 함대의 범용적 중추. 격납고, 강습, 포격 등 모듈 교체를 통해 모든 작전 환경에 대응.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">전투순양함 (Battlecruiser):</font> 순양함의 기동성과 전함의 화력을 절충한 화력 앵커링 자산.</p>
+</li>
+</ul>
+<h3 id="13-결전-주력함-및-전략-자산-capital--strategic-assets">1.3 결전 주력함 및 전략 자산 (Capital &amp; Strategic Assets)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-결전-주력함-및-전략-자산-capital--strategic-assets" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">전함 (Battleship):</font> 척추 탑재형(Spinal Mount) 주포를 장착한 원거리 화력의 정점.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">항공모함 (Carrier):</font> 다차원 타격 함재기를 운용하여 전역 제우권을 장악.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">타이탄 (Titan):</font> 함대 기함. ‘심판 광선’과 함대 강화 오라(Aura) 방사.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">저거너트 (Juggernaut):</font> 이동식 거대 조선소 및 전략 거점 점유 플랫폼.</p>
+</li>
+</ul>
+<h3 id="14-초월-및-특수-함급-transcendental-classes">1.4 초월 및 특수 함급 (Transcendental Classes)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#14-초월-및-특수-함급-transcendental-classes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">다크 드라이브 함급 (Dark Matter Tiers):</font> 암흑 물질 기술이 적용되어 차원 항로의 제약을 무시하는 최상위 전력.
+엘리스 프라우셰크트- <font style="font-weight:bold;">성황급 (Holy Emperor Class):</font> 황실 전용 비대칭 모델. 모노리스 직결 연산 링크와 초고출력 마력 증폭 가동로 탑재.</li>
+</ul>
+<h3 id="15-민간-및-비전투-함급-civilian--non-combat-classes">1.5 민간 및 비전투 함급 (Civilian &amp; Non-combat Classes)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15-민간-및-비전투-함급-civilian--non-combat-classes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>연방의 경제 활동, 확장, 신비 연구를 뒷받침하는 비전투 자산들이다.</p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">산업 및 물류 (Industrial &amp; Logistics):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">성간 화물선 (Freighter):</font> 성계 간 자원 수송의 동맥. 대형 컨테이너 규격 표준 준수.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">자원 추출선 (Mining Ship):</font> 소행성대 및 불모 행성 채굴과 기초 제련 수행.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">이동식 정제소 (Mobile Refinery):</font> 마력 결정체 및 미정제 원료를 현지에서 군수/민간 연료로 변환.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">개척 및 인프라 (Colonization &amp; Infrastructure):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">개척선 (Colony Ship):</font> 수만 명의 이주민과 초기 테라포밍 장비를 탑재한 거대 거주 함선.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">궤도 건설선 (Construction Vessel):</font> 스타베이스, 관문, 채굴 스테이션 등 우주 구조물 건설 전문 공병 자산.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">과학 및 탐사 (Science &amp; Exploration):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">성계 조사선 (Survey Vessel):</font> 미개척 성계 행성 데이터 수집 및 이상 현상 정밀 분석.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아케인 연구함 (Arcane Research Lab):</font> 차원류의 흐름이나 모노리스 파편의 에너지를 연구하는 특수 실험실.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">사회 및 엘리트 (Social &amp; Elite):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">황실/귀족 요트 (Luxury Yacht):</font> 명문 가문의 위상을 상징하는 개인 선박. 초고성능 쉴드와 호화 거주 구획 보유.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">성간 여객선 (Passenger Liner):</font> 성계권역주 사이를 오가는 대중교통 및 대규모 인원 수송 자산.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">엘리스 프라우셰크트 환경 특화 (Environment Specific):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">마나 포획선 (Mana Collector):</font> 우주 공간에 산재한 잔류 마나나 성운 가스를 수집하여 마나 배터리 충전.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">차원 회랑 정비함 (Corridor Tender):</font> 하이퍼레인의 뒤틀림을 보정하고 관문망의 위상 잔광을 정화하여 항로 안전 유지.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-실전-전술-및-3차원-진형-교리-tactical-formations">2. 실전 전술 및 3차원 진형 교리 (Tactical Formations)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-실전-전술-및-3차원-진형-교리-tactical-formations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>라리셴베르크-류아블론츠 난류권의 특수 환경을 고려한 4대 표준 진형이다.</p>
+<ol>
+<li>
+<p><font style="font-weight:bold;">다이아몬드 차폐 (Diamond Screen):</font> 주력함을 중앙에 두고 전후좌우를 호위함이 감싸는 형태. 오라 효과 극대화 및 미사일 방어에 유리.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">쐐기형 돌파 (Echelon Spearhead):</font> 하이퍼레인 진출입구(브리치 포인트) 점유용. 정면 화력을 집중시켜 적의 중장갑 방어선을 돌파.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">구형 방벽 (Spherical Shell):</font> 상하 전후좌우 모든 방향에서 적이 출몰할 수 있는 ‘성계 외곽 난류권’ 통과 시 필수적인 전방위 방어막 형성.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">산개형 위상 (Phased Dispersal):</font> ‘차원 재난’이나 ‘마력 역류’ 공격 시 피해를 분산시키기 위해 각 함선이 독립적인 도약 비콘 거리를 유지하는 배치.</p>
+</li>
+</ol>
+<h2 id="3-모듈형-함선-구조-및-파츠-표준-modular-engineering">3. 모듈형 함선 구조 및 파츠 표준 (Modular Engineering)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-모듈형-함선-구조-및-파츠-표준-modular-engineering" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>모든 함선은 4대 핵심 섹션과 규격화된 파츠로 구성되어 생산성과 유지보수 효율을 보장한다.</p>
+<h3 id="31-섹션-구조-frame-sections">3.1 섹션 구조 (Frame Sections)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-섹션-구조-frame-sections" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">함수 (Bow):</font> 주무장(X/T 슬롯) 및 척추 탑재형 대구경 병기.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">함체 (Core):</font> 보조 포탑, 격납고(H), 화물 및 거주 구획, 함교 컴퓨터.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">함미 (Stern):</font> 엔진 추진기 및 후방 방어용 포인트 디펜스(PD).</p>
+</li>
+</ul>
+<h3 id="32-핵심-계통-파츠-core-systems">3.2 핵심 계통 파츠 (Core Systems)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-핵심-계통-파츠-core-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">동력원 (Reactor):</font> 핵분열(T1) → 냉융합(T3) → 반물질(T4) → 영점(T5) → 다크 매터(ACOT).</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">추진기 (Thrusters):</font> 아속도 기동성과 회피율을 결정. 이온 및 암흑 물질 엔진.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">FTL 드라이브:</font> 하이퍼/점프/사이오닉 드라이브. 차원류 대응 등급에 따라 항행 속도 차별화.</p>
+</li>
+</ul>
+<h2 id="4-아케인-공학-융합-기술-arcane-engineering-fusion">4. 아케인-공학 융합 기술 (Arcane-Engineering Fusion)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-아케인-공학-융합-기술-arcane-engineering-fusion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>엘리스 프라우셰크트 세계관 고유의 신비 기술이 적용된 특수 모듈이다.</p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">마력 정류기 (Mana Rectifier):</font> 엔진의 잔류 마력을 정제하여 차원류 역류 사고를 방지하는 필수 파츠.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">모노리스 연산 링크 (Monolith Link):</font> 행성 모노리스와 실시간 동기화하여 초장거리 사격 정밀도를 800% 이상 향상.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">영혼 공명 장갑 (Soul-Resonance Armor):</font> 승무원의 정신적 의지에 반응하여 위상 강도가 실시간으로 변화하는 생체-금속 복합 장갑.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">위상 장갑 (Phased Armor):</font> 피탄 순간 선체의 위상을 미세하게 틀어 물리적 타격을 무효화 (ACOT급 이상).</p>
+</li>
+</ul>
+<h2 id="5-군수-행정-및-향후-확장-과제-exploration--expansion">5. 군수, 행정 및 향후 확장 과제 (Exploration &amp; Expansion)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-군수-행정-및-향후-확장-과제-exploration--expansion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="51-가문별-독자-설계-및-표준화-분쟁">5.1 가문별 독자 설계 및 표준화 분쟁<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#51-가문별-독자-설계-및-표준화-분쟁" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">명문 가문 커스텀:</font> 각 가문의 위상을 상징하는 독자적인 ‘커스텀 섹션’ 개발. 연방 표준 규격과의 호환성 검증이 정치적 쟁점이 됨.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">황실 재가:</font> 모든 비표준 설계는 황실 차원관리청의 ‘차원 안전성’ 재가를 득해야 함.</p>
+</li>
+</ul>
+<h3 id="52-성계권역주sector별-생산-특화">5.2 성계권역주(Sector)별 생산 특화<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#52-성계권역주sector별-생산-특화" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">자원 최적화:</font> 용암 행성이 많은 성계에서는 특수 합금 생산에 특화된 함선을, 가스 행성이 많은 성계에서는 에너지 무기 강화 함선을 주로 생산.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">엘디움 공급망:</font> 부양 지형 안정화에 쓰이는 엘디움을 선체 경량화 파츠에 도입하기 위한 물류망 구축.</p>
+</li>
+</ul>
+<h3 id="53-차세대-연구-항목">5.3 차세대 연구 항목<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#53-차세대-연구-항목" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">즈로(Zro) 기반 사이오닉 센서:</font> 물질적 장벽을 무시하고 적의 ‘살의’와 ‘위상 잔광’을 탐지.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">차원 서핑(Dimensional Surfing):</font> 차원류의 흐름을 전술적으로 이용하여 연료 소모 없이 고속 기동하는 항행술 연구.</p>
+</li>
+</ul>
+<p><font style="font-weight:bold;">작성 기관:</font> 연방 군사전략국 통합전략기획실</p>
+<p><font style="font-weight:bold;">최종 승인:</font> 엘리시움 신성제국 연방 황제 카엘로츠 디 하일레이움</p></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-506"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-506"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-857" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-857" class="toc-content"><li class="depth-0"><a href="#제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서" data-for="제3기-우주-함대-전략-및-함선-공학-통합-마스터-보고서">제3기 우주 함대 전략 및 함선 공학 통합 마스터 보고서</a></li><li class="depth-1"><a href="#1-함대-위계-체계-fleet-hierarchy--classification" data-for="1-함대-위계-체계-fleet-hierarchy--classification">1. 함대 위계 체계 (Fleet Hierarchy &amp; Classification)</a></li><li class="depth-2"><a href="#11-스크리닝-및-경량-전력-screening-forces" data-for="11-스크리닝-및-경량-전력-screening-forces">1.1 스크리닝 및 경량 전력 (Screening Forces)</a></li><li class="depth-2"><a href="#12-중형-타격-및-전열-전력-line-forces" data-for="12-중형-타격-및-전열-전력-line-forces">1.2 중형 타격 및 전열 전력 (Line Forces)</a></li><li class="depth-2"><a href="#13-결전-주력함-및-전략-자산-capital--strategic-assets" data-for="13-결전-주력함-및-전략-자산-capital--strategic-assets">1.3 결전 주력함 및 전략 자산 (Capital &amp; Strategic Assets)</a></li><li class="depth-2"><a href="#14-초월-및-특수-함급-transcendental-classes" data-for="14-초월-및-특수-함급-transcendental-classes">1.4 초월 및 특수 함급 (Transcendental Classes)</a></li><li class="depth-2"><a href="#15-민간-및-비전투-함급-civilian--non-combat-classes" data-for="15-민간-및-비전투-함급-civilian--non-combat-classes">1.5 민간 및 비전투 함급 (Civilian &amp; Non-combat Classes)</a></li><li class="depth-1"><a href="#2-실전-전술-및-3차원-진형-교리-tactical-formations" data-for="2-실전-전술-및-3차원-진형-교리-tactical-formations">2. 실전 전술 및 3차원 진형 교리 (Tactical Formations)</a></li><li class="depth-1"><a href="#3-모듈형-함선-구조-및-파츠-표준-modular-engineering" data-for="3-모듈형-함선-구조-및-파츠-표준-modular-engineering">3. 모듈형 함선 구조 및 파츠 표준 (Modular Engineering)</a></li><li class="depth-2"><a href="#31-섹션-구조-frame-sections" data-for="31-섹션-구조-frame-sections">3.1 섹션 구조 (Frame Sections)</a></li><li class="depth-2"><a href="#32-핵심-계통-파츠-core-systems" data-for="32-핵심-계통-파츠-core-systems">3.2 핵심 계통 파츠 (Core Systems)</a></li><li class="depth-1"><a href="#4-아케인-공학-융합-기술-arcane-engineering-fusion" data-for="4-아케인-공학-융합-기술-arcane-engineering-fusion">4. 아케인-공학 융합 기술 (Arcane-Engineering Fusion)</a></li><li class="depth-1"><a href="#5-군수-행정-및-향후-확장-과제-exploration--expansion" data-for="5-군수-행정-및-향후-확장-과제-exploration--expansion">5. 군수, 행정 및 향후 확장 과제 (Exploration &amp; Expansion)</a></li><li class="depth-2"><a href="#51-가문별-독자-설계-및-표준화-분쟁" data-for="51-가문별-독자-설계-및-표준화-분쟁">5.1 가문별 독자 설계 및 표준화 분쟁</a></li><li class="depth-2"><a href="#52-성계권역주sector별-생산-특화" data-for="52-성계권역주sector별-생산-특화">5.2 성계권역주(Sector)별 생산 특화</a></li><li class="depth-2"><a href="#53-차세대-연구-항목" data-for="53-차세대-연구-항목">5.3 차세대 연구 항목</a></li></ul></div><div class="backlinks"><button type="button" class="backlinks-header" aria-expanded="true" aria-controls="backlinks-panel-328"><h3>백링크</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="backlinks-content" id="backlinks-panel-328"><ul id="list-1" class="overflow"><li><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제6권역;-군사와-방위/제2기-통합-군사-편제-및-특수-병종-총람" class="internal">제2기 통합 군사 편제 및 특수 병종 총람</a></li><li><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제6권역;-군사와-방위/🎨-엘리스-프라우셰크트;-함선-및-함대-전략-아이콘" class="internal">🎨 엘리스 프라우셰크트; 함선 및 함대 전략 아이콘</a></li><li class="overflow-end"></li></ul></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../postscript.js" type="module" data-persist="true"></script></html>

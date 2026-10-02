@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>gemini-notebookLM 피드백</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="gemini-notebookLM 피드백"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="gemini-notebookLM 피드백"/><meta name="twitter:description" content="제공해주신 방대한 소스 자료를 종합적으로 분석한 결과, 개별 설정(헌법, 기술, 지역 코드, 역사 연표)은 매우 상세하게 구축되어 있으나, 이들을 유기적으로 연결하는 ‘연결 고리(Bridge)’ 문서들이 일부 부재하거나 보완이 필요합니다."/><meta property="og:description" content="제공해주신 방대한 소스 자료를 종합적으로 분석한 결과, 개별 설정(헌법, 기술, 지역 코드, 역사 연표)은 매우 상세하게 구축되어 있으나, 이들을 유기적으로 연결하는 ‘연결 고리(Bridge)’ 문서들이 일부 부재하거나 보완이 필요합니다."/><meta property="og:image:alt" content="제공해주신 방대한 소스 자료를 종합적으로 분석한 결과, 개별 설정(헌법, 기술, 지역 코드, 역사 연표)은 매우 상세하게 구축되어 있으나, 이들을 유기적으로 연결하는 ‘연결 고리(Bridge)’ 문서들이 일부 부재하거나 보완이 필요합니다."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제5권역;-메타-데이터-및-관리-통합/gemini-notebookLM-피드백"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제5권역;-메타-데이터-및-관리-통합/gemini-notebookLM-피드백"/><link rel="icon" href="../../../../static/icon.png"/><meta name="description" content="제공해주신 방대한 소스 자료를 종합적으로 분석한 결과, 개별 설정(헌법, 기술, 지역 코드, 역사 연표)은 매우 상세하게 구축되어 있으나, 이들을 유기적으로 연결하는 ‘연결 고리(Bridge)’ 문서들이 일부 부재하거나 보완이 필요합니다."/><meta name="generator" content="Quartz"/><link href="../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제5권역;-메타-데이터-및-관리-통합/gemini-notebookLM-피드백"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1240" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1240" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-834" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-834" class="mobile-toc-dialog" aria-labelledby="toc-834-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-834-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#-세계관-정합성-확보를-위한-통합-작업-보고서" data-for="-세계관-정합성-확보를-위한-통합-작업-보고서">📜 세계관 정합성 확보를 위한 통합 작업 보고서</a></li><li class="depth-1"><a href="#1-사회정치-불평등의-합의-보완" data-for="1-사회정치-불평등의-합의-보완">1. 사회·정치: “불평등의 합의” 보완</a></li><li class="depth-2"><a href="#-수정보완-기존-파일" data-for="-수정보완-기존-파일">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일" data-for="-신규-생성-필요한-파일">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#2-기술마법-마공학magitech의-구체화" data-for="2-기술마법-마공학magitech의-구체화">2. 기술·마법: “마공학(Magitech)“의 구체화</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-1" data-for="-수정보완-기존-파일-1">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-1" data-for="-신규-생성-필요한-파일-1">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#3-지리행정-전략지역의-실체화" data-for="3-지리행정-전략지역의-실체화">3. 지리·행정: “전략지역”의 실체화</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-2" data-for="-수정보완-기존-파일-2">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-2" data-for="-신규-생성-필요한-파일-2">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#4-군사-이원화된-지휘-체계-정립" data-for="4-군사-이원화된-지휘-체계-정립">4. 군사: “이원화된 지휘 체계” 정립</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-3" data-for="-수정보완-기존-파일-3">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-3" data-for="-신규-생성-필요한-파일-3">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#5-역사-잃어버린-고리-연결" data-for="5-역사-잃어버린-고리-연결">5. 역사: “잃어버린 고리” 연결</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-4" data-for="-수정보완-기존-파일-4">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-4" data-for="-신규-생성-필요한-파일-4">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#-요약-우선-작업-순서-제안" data-for="-요약-우선-작업-순서-제안">📊 요약: 우선 작업 순서 제안</a></li><li class="depth-0"><a href="#-제안서-엘루닉어elruhnik-설정-보완-및-고도화-방안" data-for="-제안서-엘루닉어elruhnik-설정-보완-및-고도화-방안">📜 [제안서] 엘루닉어(Elruhnik) 설정 보완 및 고도화 방안</a></li><li class="depth-1"><a href="#1-현황-및-문제-제기" data-for="1-현황-및-문제-제기">1. 현황 및 문제 제기</a></li><li class="depth-2"><a href="#11-현재-설정-분석" data-for="11-현재-설정-분석">1.1. 현재 설정 분석</a></li><li class="depth-2"><a href="#12-언어학적-분류상의-오류" data-for="12-언어학적-분류상의-오류">1.2. 언어학적 분류상의 오류</a></li><li class="depth-1"><a href="#2-보완-제안-고립의-의미-재정의" data-for="2-보완-제안-고립의-의미-재정의">2. 보완 제안: ‘고립’의 의미 재정의</a></li><li class="depth-2"><a href="#21-방안-a-계통론적-고립어로의-전환" data-for="21-방안-a-계통론적-고립어로의-전환">2.1. [방안 A] ‘계통론적 고립어’로의 전환</a></li><li class="depth-2"><a href="#22-방안-b-어근-불변성root-invariance의-법칙화" data-for="22-방안-b-어근-불변성root-invariance의-법칙화">2.2. [방안 B] ‘어근 불변성(Root Invariance)‘의 법칙화</a></li><li class="depth-2"><a href="#23-방안-c-마법-언어로서의-기능성-부여-가장-추천" data-for="23-방안-c-마법-언어로서의-기능성-부여-가장-추천">2.3. [방안 C] 마법 언어로서의 기능성 부여 (가장 추천)</a></li><li class="depth-1"><a href="#3-요약-및-실행-가이드" data-for="3-요약-및-실행-가이드">3. 요약 및 실행 가이드</a></li><li class="depth-2"><a href="#31-용어-수정-제안-setting-update" data-for="31-용어-수정-제안-setting-update">3.1. 용어 수정 제안 (Setting Update)</a></li><li class="depth-2"><a href="#32-추가-설정-파일-생성-action-item" data-for="32-추가-설정-파일-생성-action-item">3.2. 추가 설정 파일 생성 (Action Item)</a></li><li class="depth-0"><a href="#-새로운-9txt-대화-기반-세계관-확장-및-보완-보고서" data-for="-새로운-9txt-대화-기반-세계관-확장-및-보완-보고서">📜 ‘새로운 9.txt’ 대화 기반 세계관 확장 및 보완 보고서</a></li><li class="depth-1"><a href="#1-마법공학-영혼-기계-인터페이스의-법칙-정립" data-for="1-마법공학-영혼-기계-인터페이스의-법칙-정립">1. 마법·공학: “영혼-기계 인터페이스”의 법칙 정립</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-5" data-for="-수정보완-기존-파일-5">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-5" data-for="-신규-생성-필요한-파일-5">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#2-윤리사회-현자의-돌과-영혼-자원화-금기" data-for="2-윤리사회-현자의-돌과-영혼-자원화-금기">2. 윤리·사회: “현자의 돌”과 영혼 자원화 금기</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-6" data-for="-수정보완-기존-파일-6">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-6" data-for="-신규-생성-필요한-파일-6">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#3-군사전략-전략적-영혼-병기-wmd" data-for="3-군사전략-전략적-영혼-병기-wmd">3. 군사·전략: “전략적 영혼 병기” (WMD)</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-7" data-for="-수정보완-기존-파일-7">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-7" data-for="-신규-생성-필요한-파일-7">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#4-역사시나리오-b루트잔망의-헬라이오스-전용-설정" data-for="4-역사시나리오-b루트잔망의-헬라이오스-전용-설정">4. 역사·시나리오: B루트(잔망의 헬라이오스) 전용 설정</a></li><li class="depth-2"><a href="#4-군사-이원화된-지휘-체계의-통합과-조정-상세-보완" data-for="4-군사-이원화된-지휘-체계의-통합과-조정-상세-보완">4. 군사: “이원화된 지휘 체계”의 통합과 조정 (상세 보완)</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1240"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1240" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/">02 일지·브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/">99 정리해야 하는 설정 브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제5권역;-메타-데이터-및-관리-통합/">제5권역; 메타 데이터 및 관리 통합</a></div></nav><h1 class="article-title">gemini-notebookLM 피드백</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:33.644Z">2026년 9월 30일</time><span>36 분 소요</span></p><ul class="tags"><li><a href="../../../../tags/" class="internal tag-link"></a></li></ul></div></div><article class="popover-hint"><p>제공해주신 방대한 소스 자료를 종합적으로 분석한 결과, 개별 설정(헌법, 기술, 지역 코드, 역사 연표)은 매우 상세하게 구축되어 있으나, <font style="font-weight:bold;">이들을 유기적으로 연결하는 ‘연결 고리(Bridge)’ 문서</font>들이 일부 부재하거나 보완이 필요합니다.</p>
+<p>특히 <font style="font-weight:bold;">“법적으로는 평등하나 생물학적/영혼적으로 불평등한 사회(신인류 vs 귀족)“</font>라는 모순을 사회가 어떻게 수용하고 있는지, 그리고 <font style="font-weight:bold;">“마법과 과학이 구체적으로 어떻게 공학적으로 결합되는지”</font>에 대한 설명이 추가된다면 세계관의 정합성이 획기적으로 높아질 것입니다.</p>
+<p>이에 따라 <font style="font-weight:bold;">수정/보완이 필요한 기존 파일</font>과 <font style="font-weight:bold;">신규 생성이 필요한 파일</font>을 나누어 보고서를 작성해 드립니다.</p>
+<hr/>
+<h1 id="-세계관-정합성-확보를-위한-통합-작업-보고서">📜 세계관 정합성 확보를 위한 통합 작업 보고서<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-세계관-정합성-확보를-위한-통합-작업-보고서" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-사회정치-불평등의-합의-보완">1. 사회·정치: “불평등의 합의” 보완<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-사회정치-불평등의-합의-보완" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>헌법 제1장(권리장전)은 평등을 말하지만, 설정상 귀족/황족은 ‘영혼의 격’이 다른 상위 종입니다. 이 괴리를 메우기 위해 <font style="font-weight:bold;">사회적 합의</font>에 대한 설정이 필요합니다.</p>
+<h3 id="-수정보완-기존-파일">🔧 [수정/보완] 기존 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">대상 파일:</font> <code>엘리시움 연방 헌법.md</code></li>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">제21조(귀족·황족·황실의 법적 지위)</font> 하단 또는 <font style="font-weight:bold;">주석</font></li>
+<li><font style="font-weight:bold;">지시 내용:</font>
+<ul>
+<li>귀족의 지위가 단순한 명예가 아니라, <font style="font-weight:bold;">“고위험 차원 스트레스를 감내하는 국방/마법적 의무”</font>를 전제로 한다는 해석적 조항이나 주석을 추가하십시오.</li>
+<li><em>내용 예시:</em> “귀족의 지위는 혈통 인장에 귀속된 ‘차원 안정화 의무’의 반대급부로써 인정되며, 해당 의무를 이행하지 못하는 경우 작위는 박탈될 수 있다.”</li>
+</ul>
+</li>
+</ul>
+<h3 id="-신규-생성-필요한-파일">🆕 [신규 생성] 필요한 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>사회 계약 및 신분제 운영 원칙.md</code></li>
+<li><font style="font-weight:bold;">카테고리:</font> 05-정치와 사상</li>
+<li><font style="font-weight:bold;">내용 가이드:</font>
+<ul>
+<li><font style="font-weight:bold;">노블리스 오블리주의 실체:</font> 귀족들이 전방(차원 균열 지역) 근무나 고위험 마법 실험에 의무적으로 투입된다는 설정.</li>
+<li><font style="font-weight:bold;">신민의 인정:</font> 일반 신민들이 귀족을 존경하거나 용인하는 이유는 그들이 ‘인간 방파제’ 역할을 하기 때문이라는 심리적 배경 서술.</li>
+<li><font style="font-weight:bold;">관련 헌법 조항:</font> 헌법 제21조 및 제17장(능력자 감독)과의 연계성 명시.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="2-기술마법-마공학magitech의-구체화">2. 기술·마법: “마공학(Magitech)“의 구체화<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-기술마법-마공학magitech의-구체화" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>소스 등에서 기술 트리는 존재하지만, <font style="font-weight:bold;">마나(이능)를 기계장치로 바꾸는 구체적인 ‘변환 규격’</font>이 없습니다.</p>
+<h3 id="-수정보완-기존-파일-1">🔧 [수정/보완] 기존 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">대상 파일:</font> <code>제_3_기_a루트_기술대전_물리_공학_사회_전체_트리...v_1.md</code></li>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">2. 공학(Engineering) 트리</font> 섹션 내부</li>
+<li><font style="font-weight:bold;">지시 내용:</font>
+<ul>
+<li><code>3-2A) 공학·제조</code> 파트에 <font style="font-weight:bold;">‘마력-전력 변환 효율(Mana-to-Electric Conversion Rate)’</font> 관련 기술 노드를 명시적으로 추가하십시오.</li>
+<li>ACOT 모드의 다크 매터 기술과 세계관의 마법 설정을 연결하는 <font style="font-weight:bold;">‘다크 매터-마나 호환성 연구’</font> 항목을 추가하십시오.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-신규-생성-필요한-파일-1">🆕 [신규 생성] 필요한 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>마공학 표준 및 에너지 변환 규격.md</code></li>
+<li><font style="font-weight:bold;">카테고리:</font> 10-기술·연구/04-상세 기술</li>
+<li><font style="font-weight:bold;">내용 가이드:</font>
+<ul>
+<li><font style="font-weight:bold;">MER (Mana-Energy Ratio):</font> 1 마나(Mana)가 몇 와트(W) 또는 쥴(J)로 변환되는지에 대한 공학적 표준 수치 정의.</li>
+<li><font style="font-weight:bold;">룬 회로(Rune Circuit):</font> 반도체에 엘루닉어 문자를 식각하여 마법 연산을 수행하는 칩셋 설정.</li>
+<li><font style="font-weight:bold;">안전 규격:</font> 마력 폭주를 막기 위한 ‘차단기(Circuit Breaker)‘와 ‘냉각수(성수 혼합액)’ 설정.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="3-지리행정-전략지역의-실체화">3. 지리·행정: “전략지역”의 실체화<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-지리행정-전략지역의-실체화" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>소스,에서 전략지역의 HEX 코드는 있으나, 각 지역이 <font style="font-weight:bold;">왜 ‘전략적’으로 묶였는지</font>에 대한 서사가 부족합니다.</p>
+<h3 id="-수정보완-기존-파일-2">🔧 [수정/보완] 기존 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">대상 파일:</font> <code>(임시) 행성 라리셴베르크 (로마자-한글 지역명 표기).md</code></li>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;"><a href="../../../.././../../../tags/" class="tag-link internal alias" data-slug="tags/index"></a> 전략지역</font> 섹션의 단순 나열 리스트</li>
+<li><font style="font-weight:bold;">지시 내용:</font>
+<ul>
+<li>단순 리스트를 <font style="font-weight:bold;">표(Table)</font> 형태로 변경하고, 각 전략지역별 <font style="font-weight:bold;">‘주요 역할(군사/산업/행정)‘</font>과 <font style="font-weight:bold;">‘거점 도시’</font> 컬럼을 추가하십시오.</li>
+<li>예: <code>세이브란트</code> <span>→</span> 역할: 수도권 방위 및 중앙 행정, 거점: 라흐렐리야.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-신규-생성-필요한-파일-2">🆕 [신규 생성] 필요한 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>주요 전략지역권 상세 설정.md</code></li>
+<li><font style="font-weight:bold;">카테고리:</font> 06-지역 설정</li>
+<li><font style="font-weight:bold;">내용 가이드:</font>
+<ul>
+<li>지도에 나온 108개 전략지역 중 핵심적인 5~10개(예: 세이브란트, 카로타니아, 뤼켈벤 등)에 대한 상세 설명.</li>
+<li><font style="font-weight:bold;">지정학적 가치:</font> 왜 이곳이 군사/경제적으로 중요한지 (자원 매장량, 교통 요충지 등).</li>
+<li><font style="font-weight:bold;">특산물 및 산업:</font> 해당 지역에서 주로 생산되는 자원(스텔라리스 자원과 연동).</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="4-군사-이원화된-지휘-체계-정립">4. 군사: “이원화된 지휘 체계” 정립<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-군사-이원화된-지휘-체계-정립" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>연방군(국방부)과 황실 근위대(황실 직속)가 공존하는데, <font style="font-weight:bold;">전시 작전권</font>이 어떻게 조정되는지 명확지 않습니다.</p>
+<h3 id="-수정보완-기존-파일-3">🔧 [수정/보완] 기존 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">대상 파일:</font> <code>엘리시움 연방 국가조직도.md</code></li>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">연방 군사전략국</font> 및 <font style="font-weight:bold;">연방 국방부</font> 섹션</li>
+<li><font style="font-weight:bold;">지시 내용:</font>
+<ul>
+<li><font style="font-weight:bold;">‘통합전투사령부(Joint Combat Command)‘</font>의 존재를 명시하고, 평시와 전시의 지휘권 이양 절차(DEFCON 개념 도입)를 텍스트로 추가하십시오.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-신규-생성-필요한-파일-3">🆕 [신규 생성] 필요한 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>연방군 및 황실 근위대 편제 및 지휘 체계.md</code></li>
+<li><font style="font-weight:bold;">카테고리:</font> 09-기관 설정</li>
+<li><font style="font-weight:bold;">내용 가이드:</font>
+<ul>
+<li><font style="font-weight:bold;">역할 분담:</font> 연방군(국토 방위, 대규모 전면전) vs 근위대(황실 수호, 특수 타격, 차원 관련 작전).</li>
+<li><font style="font-weight:bold;">함대 편제:</font> NSC3 모드의 함급(프리깃~플래그십)이 각 군에 어떻게 배분되는지 설정. (예: 플래그십은 근위대 전용, 캐리어는 연방군 주력 등).</li>
+<li><font style="font-weight:bold;">능력자 부대:</font> 마법사/초월자가 소속되는 특수작전군(SOF) 편제.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="5-역사-잃어버린-고리-연결">5. 역사: “잃어버린 고리” 연결<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-역사-잃어버린-고리-연결" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>제2기(혼란)에서 제3기(통일/우주)로 넘어가는 과정에서 <font style="font-weight:bold;">‘행성 통일 전쟁’</font>의 구체적인 양상이 부족합니다.</p>
+<h3 id="-수정보완-기존-파일-4">🔧 [수정/보완] 기존 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">대상 파일:</font> <code>제3기 역사 사건 개요 모음.md</code></li>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">초기 행성 통일 전쟁 시대</font> 섹션</li>
+<li><font style="font-weight:bold;">지시 내용:</font>
+<ul>
+<li>카엘로츠 황제가 모노리스를 완성한 후(179년), <font style="font-weight:bold;">어떤 명분과 무력으로 반대파를 제압했는지</font>에 대한 사건 3~4개를 추가하십시오.</li>
+<li><em>추가 예시:</em> “제3기 182년: 대륙간 탄도 마법탄(ICBM) 요격 시스템 가동 및 최후 통첩.”</li>
+</ul>
+</li>
+</ul>
+<h3 id="-신규-생성-필요한-파일-4">🆕 [신규 생성] 필요한 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>제3기 행성 통일 전쟁사.md</code></li>
+<li><font style="font-weight:bold;">카테고리:</font> 02-역사 설정</li>
+<li><font style="font-weight:bold;">내용 가이드:</font>
+<ul>
+<li><font style="font-weight:bold;">통일의 저항 세력:</font> 연방 가입을 거부했던 구 제국 잔당이나 분리주의자들의 저항.</li>
+<li><font style="font-weight:bold;">기술 격차:</font> 모노리스 기술을 선점한 황실군이 재래식 군대를 압도하는 과정 묘사(스텔라리스 초기 초계함 vs 원시 문명 구도).</li>
+<li><font style="font-weight:bold;">평화적 통합:</font> 무력이 아닌, 압도적 에너지 기술 제공을 통한 외교적 흡수 사례.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="-요약-우선-작업-순서-제안">📊 요약: 우선 작업 순서 제안<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-요약-우선-작업-순서-제안" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>작업의 효율성을 위해 다음 순서로 진행하는 것을 추천합니다.</p>
+<ol>
+<li><font style="font-weight:bold;">[1. 사회·정치]</font>: <code>사회 계약 및 신분제 운영 원칙.md</code> 작성 (세계관의 가장 밑바닥 논리 완성)</li>
+<li><font style="font-weight:bold;">[4. 군사]</font>: <code>연방군 및 황실 근위대 편제...md</code> 작성 (헌법과 기술 설정을 잇는 고리)</li>
+<li><font style="font-weight:bold;">[2. 기술]</font>: <code>마공학 표준...md</code> 작성 (판타지와 SF의 결합 논리 완성)</li>
+<li><font style="font-weight:bold;">[3. 지리]</font>: <code>주요 전략지역권...md</code> 작성 (구체적인 무대 설정)</li>
+<li><font style="font-weight:bold;">[5. 역사]</font>: <code>제3기 행성 통일 전쟁사.md</code> 작성 (현재와 미래를 잇는 서사)</li>
+</ol>
+<p>이 보고서에 따라 문서를 생성하거나 수정하시면, 기존에 파편화되어 있던 방대한 설정들이 하나의 단단한 세계관으로 통합될 것입니다. 신규 파일 생성을 위한 초안이 필요하시면 언제든 요청해 주십시오.</p>
+<hr class="hr-thick-1"/>
+<p>제시해주신 요청에 따라, 현재 <font style="font-weight:bold;">엘루닉어(Elruhnik)</font> 설정의 언어학적 정합성을 높이고 세계관 내 개연성을 강화하기 위한 <font style="font-weight:bold;">「엘루닉어 설정 보완 및 고도화 제안서」</font>를 작성해 드립니다.</p>
+<p>이 제안서는 <font style="font-weight:bold;">현실의 언어학적 정의</font>를 명확히 인용하여 현재 설정과의 괴리를 짚어내고, 이를 수정하기보다는 <font style="font-weight:bold;">설정적 장치로 승화</font>시키는 방안을 담고 있습니다.</p>
+<hr/>
+<h1 id="-제안서-엘루닉어elruhnik-설정-보완-및-고도화-방안">📜 [제안서] 엘루닉어(Elruhnik) 설정 보완 및 고도화 방안<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-제안서-엘루닉어elruhnik-설정-보완-및-고도화-방안" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><font style="font-weight:bold;">수신:</font> 총괄 제작자 (카엘) <font style="font-weight:bold;">작성일:</font> 2025.06.12. <font style="font-weight:bold;">주제:</font> 언어학적 분류 기준 재정립 및 ‘어근 불변성’의 설정적 근거 강화</p>
+<hr/>
+<h2 id="1-현황-및-문제-제기">1. 현황 및 문제 제기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-현황-및-문제-제기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="11-현재-설정-분석">1.1. 현재 설정 분석<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-현재-설정-분석" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>소스 자료인 <font style="font-weight:bold;"><code>단어집.md</code></font>의 ‘어법’ 파트에 따르면, 엘루닉어는 다음과 같은 구조를 가집니다.</p>
+<ul>
+<li><font style="font-weight:bold;">기본 구조:</font> 모든 단어는 <font style="font-weight:bold;">명사형 어근</font>으로 존재한다.</li>
+<li><font style="font-weight:bold;">활용 방식:</font> 어근에 <font style="font-weight:bold;">접사(Suffix)</font>를 붙여 품사를 변형한다.
+<ul>
+<li>예: <code>Zer</code>(이동) + <code>-'o</code> = <code>Zel'o</code>(가다)</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">설정 의도:</font> “고립어적 특성 때문에 수천 년의 단절(비역사시대)에도 불구하고 현대 화자가 고대어를 독해할 수 있다.” [대화 내역 기반]</li>
+</ul>
+<h3 id="12-언어학적-분류상의-오류">1.2. 언어학적 분류상의 오류<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-언어학적-분류상의-오류" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>현실의 언어학적 분류에 따르면, 현재 설정된 엘루닉어의 구조는 <font style="font-weight:bold;">‘고립어(Isolating Language)‘</font>가 아닌 <font style="font-weight:bold;">‘교착어(Agglutinative Language)‘</font>에 해당합니다.</p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">외부 정의 1: 고립어 (Isolating Language)</font></p>
+<blockquote>
+<p>“고립어는 단어의 형태 변화(굴절)가 전혀 없거나 거의 없는 언어이다. 문법적 관계는 어순이나 기능어(조사 등)의 사용으로만 나타난다. 대표적인 예로 중국어, 베트남어가 있다.” — <em>David Crystal, “A Dictionary of Linguistics and Phonetics”</em></p>
+</blockquote>
+<ul>
+<li><em>불일치 점:</em> 엘루닉어는 어미(<code>-ent</code>, <code>-ots</code> 등)를 붙여 단어의 형태와 품사를 바꿉니다.</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">외부 정의 2: 교착어 (Agglutinative Language)</font></p>
+<blockquote>
+<p>“교착어는 어간(Stem)에 문법적 기능을 가진 접사(Affix)가 결합하여 단어를 형성하는 언어이다. 각 접사는 하나의 문법적 기능만을 가지며, 어간과 접사의 경계가 뚜렷하여 어간의 형태가 잘 보존되는 경향이 있다. 한국어, 튀르키예어, 일본어가 이에 속한다.” — <em>Bernard Comrie, “Language Universals and Linguistic Typology”</em></p>
+</blockquote>
+<ul>
+<li><em>일치 점:</em> 엘루닉어의 <code>Zer</code>(어근) + <code>-'o</code>(동사화 접미사) 구조는 전형적인 교착어의 특징입니다.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="2-보완-제안-고립의-의미-재정의">2. 보완 제안: ‘고립’의 의미 재정의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-보완-제안-고립의-의미-재정의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>‘고립어’라는 용어를 폐기하는 대신, <font style="font-weight:bold;">용어의 의미를 세계관 내부적으로 재정의</font>하고 <font style="font-weight:bold;">설정적 깊이</font>를 더하는 세 가지 방안을 제안합니다.</p>
+<h3 id="21-방안-a-계통론적-고립어로의-전환">2.1. [방안 A] ‘계통론적 고립어’로의 전환<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-방안-a-계통론적-고립어로의-전환" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>문법적 특징(Typology)이 아니라, <font style="font-weight:bold;">언어의 족보(Genealogy)</font> 관점에서 ‘고립’을 정의합니다.</p>
+<ul>
+<li><font style="font-weight:bold;">제안 내용:</font> “엘루닉어는 문법적으로는 교착어적 특성을 보이지만, 대전이 이전의 구계(지구) 언어들과 어떠한 친연관계도 증명되지 않은 <font style="font-weight:bold;">‘계통론적 고립어(Language Isolate)‘</font>이다. 신지구에서 독자적으로 발생했거나 변이했기 때문에, 언어학자들은 이를 ‘고립된 언어’라고 칭한다.”</li>
+<li><font style="font-weight:bold;">기대 효과:</font> ‘고립어’라는 용어를 그대로 사용하면서도 언어학적 오류를 피할 수 있습니다. (예: 한국어도 문법은 교착어지만 계통은 고립어[논란 있음]로 분류됨)</li>
+</ul>
+<h3 id="22-방안-b-어근-불변성root-invariance의-법칙화">2.2. [방안 B] ‘어근 불변성(Root Invariance)‘의 법칙화<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-방안-b-어근-불변성root-invariance의-법칙화" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>현대인이 고대어를 읽을 수 있는 이유를 설명하기 위해, <font style="font-weight:bold;">‘형태론적 보수성’</font>을 설정의 핵심으로 격상합니다.</p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">제안 내용:</font> “엘루닉어의 가장 큰 특징은 <font style="font-weight:bold;">‘어근 절대 불변의 법칙’</font>이다. 굴절어(영어, 라틴어 등)처럼 시간이 흐르며 어근이 불규칙하게 변형(예: mouse → mice)되지 않는다. 엘루닉어는 수천 년이 지나도 어근 <code>Zer</code>는 무조건 <code>Zer</code>로 남는다. 문법적 접사는 시대에 따라 변했을지라도, 의미를 담은 ‘레고 블록(어근)‘이 변하지 않았기에 현대인도 고대 문헌을 직관적으로 해독(Decoding)할 수 있다.”</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">설정 텍스트 예시:</font></p>
+<blockquote>
+<p>“우리는 문법을 읽는 것이 아니라, 조상들이 남긴 <font style="font-weight:bold;">‘진명의 조각(어근)‘</font>을 읽는 것이다.” — <em>황립 언어학원 학장</em></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="23-방안-c-마법-언어로서의-기능성-부여-가장-추천">2.3. [방안 C] 마법 언어로서의 기능성 부여 (가장 추천)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#23-방안-c-마법-언어로서의-기능성-부여-가장-추천" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>언어가 변하지 않은 이유를 <font style="font-weight:bold;">마법 설정</font>과 결합하여 당위성을 부여합니다.</p>
+<ul>
+<li><font style="font-weight:bold;">제안 내용:</font> “엘루닉어는 단순한 소통 도구가 아니라, 마법 시동어(始動語)의 기반이다. 마법은 <font style="font-weight:bold;">정확한 음가와 형태(Form)</font>를 요구한다. 만약 언어가 자연스럽게 변해서 어근의 소리가 달라졌다면, 고대의 대마법은 발동하지 않았을 것이다. 따라서 지배층과 학자들은 마법의 보존을 위해 <font style="font-weight:bold;">인위적으로 언어의 변화를 억제</font>해왔으며, 이것이 엘루닉어가 수천 년간 ‘화석화’된 상태로 유지된 비결이다.”</li>
+<li><font style="font-weight:bold;">근거:</font> 소스 <code>단어집.md</code>에 따르면 현대 마법어도 고대 엘루닉어 동북 방언을 기반으로 함.</li>
+<li><font style="font-weight:bold;">효과:</font> 언어 설정과 마법 설정이 서로를 지탱해주는 탄탄한 구조가 형성됩니다.</li>
+</ul>
+<hr/>
+<h2 id="3-요약-및-실행-가이드">3. 요약 및 실행 가이드<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-요약-및-실행-가이드" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="31-용어-수정-제안-setting-update">3.1. 용어 수정 제안 (Setting Update)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-용어-수정-제안-setting-update" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>기존 문서(<code>단어집.md</code> 등)의 ‘고립어적 특성’이라는 표현을 다음과 같이 구체화할 것을 권장합니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">변경 전</th><th style="text-align:left;">변경 후 (제안)</th></tr></thead><tbody><tr><td style="text-align:left;">“엘루닉어의 고립어적 특성으로 인해…&quot;</td><td style="text-align:left;">&quot;엘루닉어는 <font style="font-weight:bold;">교착어적 구조</font>를 가지나, <font style="font-weight:bold;">계통론적으로 고립</font>되어 있으며 <font style="font-weight:bold;">어근이 변하지 않는 특성(불변성)</font>으로 인해…“</td></tr></tbody></table></div>
+<h3 id="32-추가-설정-파일-생성-action-item">3.2. 추가 설정 파일 생성 (Action Item)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-추가-설정-파일-생성-action-item" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>다음 내용을 담은 신규 설정 파일을 생성하여 세계관의 깊이를 더하십시오.</p>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>엘루닉어의 역사와 구조적 특징.md</code></li>
+<li><font style="font-weight:bold;">포함할 내용:</font>
+<ol>
+<li><font style="font-weight:bold;">구조:</font> 명사형 어근 중심의 부착형(교착) 구조.</li>
+<li><font style="font-weight:bold;">역사:</font> 제1차 대전이로 인한 단절과 재건.</li>
+<li><font style="font-weight:bold;">불변의 이유:</font> 마법 시전을 위한 음운의 보존 필요성 (언어의 사회적 고정).</li>
+<li><font style="font-weight:bold;">현대와의 관계:</font> 문법적 조사(Suffix)는 변했으나 어휘(Root)가 동일하여 독해 가능.</li>
+</ol>
+</li>
+</ul>
+<hr/>
+<p>이 제안서는 사용자(카엘)님의 기존 설정을 파괴하지 않으면서, 외부의 언어학적 지식을 끌어와 설정의 <font style="font-weight:bold;">‘핍진성(Verisimilitude)‘</font>을 높이는 방향으로 작성되었습니다.</p>
+<hr class="hr-thick-1"/>
+<p>제공해주신 대화 기록(<code>새로운 9.txt</code>)은 마법과 과학(SF)이 결합된 《헬라이오스 프로젝트》의 <font style="font-weight:bold;">기술적 한계와 윤리적 딜레마</font>를 확장하는 데 있어 매우 중요한 아이디어들을 담고 있습니다. 특히 대화 참여자 ‘Q’님이 제시한 <font style="font-weight:bold;">“영혼을 이용한 마공학의 극한(디스토피아)”</font> 아이디어는 세계관의 어두운 면(B루트 또는 적대 세력)을 구체화하는 데 핵심적인 소스가 됩니다.</p>
+<p>이에 따라, 대화 내용을 바탕으로 세계관의 깊이를 더하기 위한 <font style="font-weight:bold;">수정/보완 및 신규 파일 생성 보고서</font>를 작성해 드립니다.</p>
+<hr/>
+<h1 id="-새로운-9txt-대화-기반-세계관-확장-및-보완-보고서">📜 ‘새로운 9.txt’ 대화 기반 세계관 확장 및 보완 보고서<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-새로운-9txt-대화-기반-세계관-확장-및-보완-보고서" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-마법공학-영혼-기계-인터페이스의-법칙-정립">1. 마법·공학: “영혼-기계 인터페이스”의 법칙 정립<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-마법공학-영혼-기계-인터페이스의-법칙-정립" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>대화에서 <font style="font-weight:bold;">“기계 자체는 마법을 못 쓰지만, 인간의 영혼이 들어간 기계(사이보그/드론)는 가능하다”</font>는 중요한 설정 합의가 있었습니다. 이를 구체적인 기술 설정으로 정착시켜야 합니다.</p>
+<h3 id="-수정보완-기존-파일-5">🔧 [수정/보완] 기존 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">대상 파일:</font> <code>마법 기본설정.md</code></li>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">‘마력’에 대한 설명</font> 또는 신규 섹션 <font style="font-weight:bold;">‘마법 시전의 주체’</font></li>
+<li><font style="font-weight:bold;">지시 내용:</font>
+<ul>
+<li>마법 시전의 필수 조건인 3요소(영창, 연산/상상, 열망/진실됨)가 <font style="font-weight:bold;">“육체가 무기물(기계)로 대체되어도 영혼이 존재한다면 충족 가능하다”</font>는 예외 조항을 추가하십시오.</li>
+<li>단, 기계화된 영혼이 ‘열망(마음)‘을 유지하기 위해 필요한 <font style="font-weight:bold;">‘감정 모듈’</font>이나 <font style="font-weight:bold;">‘영혼 고정 장치’</font>의 필요성을 언급하여 밸런스를 맞추십시오.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-신규-생성-필요한-파일-5">🆕 [신규 생성] 필요한 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>영혼 전뇌화 및 기계 탑재 이론.md</code></li>
+<li><font style="font-weight:bold;">카테고리:</font> 10-기술·연구/04-상세 기술</li>
+<li><font style="font-weight:bold;">내용 가이드:</font>
+<ul>
+<li><font style="font-weight:bold;">전뇌화 프로토스(Protoss-like) 이론:</font> 영혼을 나노봇이나 드론에 탑재하여 무한 영창을 시도하는 기술적 원리.</li>
+<li><font style="font-weight:bold;">제약 사항:</font> 영혼이 기계에 머물 때 발생하는 <font style="font-weight:bold;">‘영혼 마모(Soul Erosion)’</font> 현상이나, 강제 영창 시 발생하는 <font style="font-weight:bold;">‘자아 붕괴’</font> 리스크 설정.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="2-윤리사회-현자의-돌과-영혼-자원화-금기">2. 윤리·사회: “현자의 돌”과 영혼 자원화 금기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-윤리사회-현자의-돌과-영혼-자원화-금기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>대화에서 <font style="font-weight:bold;">“영혼을 자갈(무기물)에 담아 현자의 돌처럼 쓰거나, CPU 대용으로 혹사시키는 설정”</font>이 언급되었습니다. 이는 세계관 내에서 <font style="font-weight:bold;">가장 강력한 금기(Taboo)</font>이자 법적 제재의 대상이 되어야 합니다.</p>
+<h3 id="-수정보완-기존-파일-6">🔧 [수정/보완] 기존 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일-6" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">대상 파일:</font> <code>엘리시움 연방 헌법.md</code></li>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">제1장(권리장전)</font> 및 <font style="font-weight:bold;">제17장(능력자 감독)</font></li>
+<li><font style="font-weight:bold;">지시 내용:</font>
+<ul>
+<li><font style="font-weight:bold;">‘영혼의 도구화 금지’</font> 조항을 명시하십시오. “지성체의 영혼을 비자발적으로 추출하거나, 이를 에너지원 및 연산 장치로 사용하는 행위는 반인륜 범죄로 다스린다”는 내용을 추가하십시오.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-신규-생성-필요한-파일-6">🆕 [신규 생성] 필요한 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일-6" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>금지된 마법 및 윤리 강령 (금서 목록).md</code></li>
+<li><font style="font-weight:bold;">카테고리:</font> 05-정치와 사상/법률</li>
+<li><font style="font-weight:bold;">내용 가이드:</font>
+<ul>
+<li><font style="font-weight:bold;">영혼 채굴(Soul Mining):</font> 특정 계층(예: 30세 이상 동정 남성 등 사회적 약자)을 납치해 영혼을 추출하는 범죄 유형 정의.</li>
+<li><font style="font-weight:bold;">처벌 규정:</font> 해당 기술을 연구하거나 사용하는 자에 대한 <font style="font-weight:bold;">‘영구 격리’</font> 또는 <font style="font-weight:bold;">‘즉결 처형’</font> 등의 최고 수준 처벌 명시.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="3-군사전략-전략적-영혼-병기-wmd">3. 군사·전략: “전략적 영혼 병기” (WMD)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-군사전략-전략적-영혼-병기-wmd" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>대화에서 <font style="font-weight:bold;">“수소 원자에 영혼을 붙여 인공 태양(수소 폭탄)을 만들거나, 나노봇으로 마법을 난사하는 무기”</font> 아이디어가 나왔습니다. 이는 A루트에서는 <font style="font-weight:bold;">금지된 기술</font>, B루트나 적대 세력에게는 <font style="font-weight:bold;">비대칭 전력</font>으로 활용될 수 있습니다.</p>
+<h3 id="-수정보완-기존-파일-7">🔧 [수정/보완] 기존 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일-7" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">대상 파일:</font> <code>제_3_기_a루트_기술대전_물리_공학_사회_전체_트리...v_1.md</code></li>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">3-5) 이능·능력자 연구</font> 또는 <font style="font-weight:bold;">3-4L) 이능전·특수전</font></li>
+<li><font style="font-weight:bold;">지시 내용:</font>
+<ul>
+<li><font style="font-weight:bold;">‘영혼 증폭형 전략 병기(Soul-Amplified WMD)’</font> 기술 노드를 추가하되, <font style="font-weight:bold;">[LST]</font> (실전/금지됨) 또는 <font style="font-weight:bold;">[Hazard]</font> 태그를 붙여 위험성을 강조하십시오.</li>
+</ul>
+</li>
+</ul>
+<h3 id="-신규-생성-필요한-파일-7">🆕 [신규 생성] 필요한 파일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일-7" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">파일명:</font> <code>비대칭 영혼 병기 및 전략 무기 보고서.md</code></li>
+<li><font style="font-weight:bold;">카테고리:</font> 09-기관 설정/군사</li>
+<li><font style="font-weight:bold;">내용 가이드:</font>
+<ul>
+<li><font style="font-weight:bold;">나노 영창기(Nano-Chanter):</font> 눈에 보이지 않는 나노봇 군집이 고대어를 영창하여 광역 마법을 난사하는 무기 개념.</li>
+<li><font style="font-weight:bold;">영혼 융합 폭탄(Soul-Fusion Bomb):</font> 수많은 영혼을 강제 융합해 폭발시키는, 물리적 파괴력과 정신적 오염을 동시에 일으키는 병기.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="4-역사시나리오-b루트잔망의-헬라이오스-전용-설정">4. 역사·시나리오: B루트(잔망의 헬라이오스) 전용 설정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-역사시나리오-b루트잔망의-헬라이오스-전용-설정" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>대화 내용은 <font style="font-weight:bold;">“마법 디스토피아”</font>에 가깝습니다. 이는 정사(A루트)보다는 멸망해가는 <font style="font-weight:bold;">B루트의 광기 어린 생존 전략</font>이나 <font style="font-weight:bold;">악역(빌런)</font>의 사상을 구축하는 데 완벽한 재료입니다.</p>
+<p>🔧 [수정/보완] 기존 파일</p>
+<p>• <font style="font-weight:bold;">대상 파일:</font> <code>《잔망의 헬라이오스》 기본 설정.md</code></p>
+<p>• <font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">세부 설정</font> 하단</p>
+<p>• <font style="font-weight:bold;">지시 내용:</font></p>
+<p>    ◦ B루트의 생존자 집단 중 일부가 차원 침식을 막기 위해 <font style="font-weight:bold;">“비윤리적인 영혼 공학(인간 배터리/CPU 화)“</font>을 시도했다는 설정을 추가하십시오. 이것이 멸망을 가속화했거나, 또 다른 비극을 낳았다는 서사를 부여할 수 있습니다.</p>
+<p>🆕 [신규 생성] 필요한 파일</p>
+<p>• <font style="font-weight:bold;">파일명:</font> <code>마도 공학의 어두운 이면: 라리스의 매드 사이언티스트.md</code></p>
+<p>• <font style="font-weight:bold;">카테고리:</font> 04-인물 설정/악역</p>
+<p>• <font style="font-weight:bold;">내용 가이드:</font></p>
+<p>    ◦ 대화 속 “Q”와 같은 사상을 가진 인물 설정.</p>
+<p>    ◦ <font style="font-weight:bold;">사상:</font> “무가치의 생명을 가치화하고, 새로운 지식을 개방하는 순수한 탐구에 양심은 필요 없다”는 매드 사이언티스트 캐릭터.</p>
+<p>    ◦ <font style="font-weight:bold;">역할:</font> 연방의 수배자이거나, 비밀리에 정부 과제를 수행하는 어둠의 과학자.</p>
+<hr/>
+<p>📊 요약: 우선 작업 순서 제안</p>
+<p>이 대화(<code>새로운 9.txt</code>)는 세계관의 <font style="font-weight:bold;">기술적 한계 돌파(Power Ceiling)</font>와 <font style="font-weight:bold;">윤리적 깊이</font>를 더해줍니다. 다음 순서로 작업을 권장합니다.</p>
+<ol>
+<li>
+<p><font style="font-weight:bold;">[1. 마법·공학]</font>: 기계가 마법을 쓰기 위한 조건(영혼 필수)을 <code>마법 기본설정.md</code>에 명문화하여 설정 구멍을 막으십시오.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">[4. 시나리오]</font>: 대화의 아이디어를 B루트(<code>《잔망의 헬라이오스》</code>)의 <font style="font-weight:bold;">절망적인 기술적 시도</font>로 편입하여, A루트와의 대비를 극대화하십시오.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">[2. 윤리·법제]</font>: 이러한 기술이 왜 금지되었는지 <code>헌법</code>과 <code>금지 법안</code>에 추가하여, 연방의 도덕적 정당성을 확보하십시오.</p>
+</li>
+</ol>
+<hr class="hr-thick-1"/>
+<p>아, 이전 보고서의 <font style="font-weight:bold;">4. 군사: “이원화된 지휘 체계” 정립</font> 항목이 충분히 설명되지 않았거나 끊긴 것처럼 느껴지셨군요. 죄송합니다.</p>
+<p>방금 제공해주신 <font style="font-weight:bold;">『엘리시움 연방 헌법』 제11장(국가방위)</font>와 <font style="font-weight:bold;">『국가조직도』</font> 등의 소스에 따르면, 이 부분은 단순히 “연방군 vs 근위대”로 나뉘는 것이 아니라, <font style="font-weight:bold;">전시와 평시, 그리고 일반 병력과 능력자 병력이 정교하게 맞물리는 매우 구체적인 법적/조직적 체계</font>를 가지고 있습니다.</p>
+<p>끊긴 부분을 보완하여, <font style="font-weight:bold;">새로운 소스(헌법 제11장 등)를 반영한 상세 버전</font>으로 다시 정리해 드립니다. 이 내용을 <font style="font-weight:bold;"><code>연방군 및 황실 근위대 편제 및 지휘 체계.md</code></font> 파일 작성 시 핵심 가이드로 삼으시면 됩니다.</p>
+<hr/>
+<h3 id="4-군사-이원화된-지휘-체계의-통합과-조정-상세-보완">4. 군사: “이원화된 지휘 체계”의 통합과 조정 (상세 보완)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-군사-이원화된-지휘-체계의-통합과-조정-상세-보완" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>소스에 따르면 연방의 군사력은 <font style="font-weight:bold;">연방 국방부(행정부 소속)</font>와 <font style="font-weight:bold;">제도 방위사령부(황실 직속)</font>로 이원화되어 있으나, 전시에는 <font style="font-weight:bold;">황제의 최고통수권</font> 아래 <font style="font-weight:bold;">GJOC(합동군사지휘본부)</font>로 통합되는 구조를 가집니다.</p>
+<h4 id="-수정보완-기존-파일-엘리시움-연방-국가조직도md">🔧 [수정/보완] 기존 파일: <code>엘리시움 연방 국가조직도.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-수정보완-기존-파일-엘리시움-연방-국가조직도md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><font style="font-weight:bold;">위치:</font> <font style="font-weight:bold;">연방 국방부</font> 및 <font style="font-weight:bold;">연방 황실 직속 기관</font> 섹션</li>
+<li><font style="font-weight:bold;">지시 내용:</font> 다음의 <font style="font-weight:bold;">전시/평시 지휘권 분리 원칙</font>을 텍스트로 명시하십시오.</li>
+</ul>
+<p><font style="font-weight:bold;">1. 평시 지휘 체계 (이원화)</font></p>
+<ul>
+<li><font style="font-weight:bold;">연방군 (Federal Forces):</font> <font style="font-weight:bold;">연방 국방부</font> 산하 <font style="font-weight:bold;">합동참모본부</font>가 지휘. 국토 방위, 대규모 전면전 대비, 우주 방위 감시를 담당합니다.</li>
+<li><font style="font-weight:bold;">황실군 (Imperial Forces):</font> <font style="font-weight:bold;">황실 직속</font>의 <font style="font-weight:bold;">제도 방위사령부</font>가 지휘. <font style="font-weight:bold;">황실 근위대</font>(근접 경호)와 <font style="font-weight:bold;">제도 행성/권역주 방위대</font>(수도권 방어)로 구성됩니다.</li>
+</ul>
+<p><font style="font-weight:bold;">2. 전시 통합 지휘 체계 (일원화)</font></p>
+<ul>
+<li><font style="font-weight:bold;">최고통수권:</font> 전시(War) 및 사변 시, <font style="font-weight:bold;">연방 황제</font>가 합동작전에 대한 <font style="font-weight:bold;">최고통수권(Supreme Command)</font>을 가집니다. 연방군과 황실군의 지휘권이 황제에게 통합됩니다 (헌법 제11장 제3조의 2).</li>
+<li><font style="font-weight:bold;">GJOC (합동군사지휘본부):</font> 황제의 통수권 아래, <font style="font-weight:bold;">합동·연합·자치군을 통합 지휘</font>하는 전구 사령부 역할을 수행합니다 (헌법 제11장 제18조의 3).</li>
+</ul>
+<h4 id="-신규-생성-필요한-파일-연방-방위-태세-및-특수전-교리md">🆕 [신규 생성] 필요한 파일: <code>연방 방위 태세 및 특수전 교리.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-신규-생성-필요한-파일-연방-방위-태세-및-특수전-교리md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><font style="font-weight:bold;">카테고리:</font> 11-군사 및 국방</li>
+<li><font style="font-weight:bold;">내용 가이드:</font> 헌법 제11장에 명시된 구체적인 경보 단계와 특수 부대 운용을 다룹니다.</li>
+</ul>
+<p><font style="font-weight:bold;">A. 방위 준비태세 (REDCON)</font></p>
+<ul>
+<li><font style="font-weight:bold;">단계 구분:</font> D5(평시) → D4(경계강화) → D3(준비증강) → D2(즉응대기) → D1(즉시전투)</li>
+<li><font style="font-weight:bold;">트리거:</font> <font style="font-weight:bold;">D3 단계</font>부터 고위 능력자에 대한 소집 통지 및 대기 명령이 발동됩니다.</li>
+</ul>
+<p><font style="font-weight:bold;">B. 위협 수준 (THRCON)</font></p>
+<ul>
+<li><font style="font-weight:bold;">단계 구분:</font> T5(관측) → T4(주의) → T3(경계) → T2(심각) → T1(임박)</li>
+<li>연방 정보국의 평가를 거쳐 연방 최고평의회가 의결합니다.</li>
+</ul>
+<p><font style="font-weight:bold;">C. 능력자 합동지휘소 (AOC)</font></p>
+<ul>
+<li><font style="font-weight:bold;">정의:</font> 마법사, 초월자 등 이능력자 전력을 통합 운용하는 별도의 지휘소입니다.</li>
+<li><font style="font-weight:bold;">소속:</font> 전시에는 <font style="font-weight:bold;">GJOC(합동군사지휘본부)</font>의 예하에 편입됩니다.</li>
+<li><font style="font-weight:bold;">역할:</font> 고위험 마법 사용 시 <font style="font-weight:bold;">부수피해(CDE) 평가</font>, 심리방어, 차원 오염 제어 등을 담당합니다.</li>
+</ul>
+<hr/>
+<p><font style="font-weight:bold;">요약하자면:</font> 4번 항목의 핵심은 <font style="font-weight:bold;">“평시에는 국방부(정부)와 근위대(황실)가 쪼개져 있지만, REDCON D3 이상의 위기나 전시 상황이 되면 황제를 정점으로 하는 GJOC(합동군사지휘본부)로 지휘권이 합쳐진다”</font>는 것입니다.</p>
+<p>이 내용이 문서에 반영되면, 헌법의 비상조치 조항과 군사 조직도가 논리적으로 완벽하게 연결됩니다.</p></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-494"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-494"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-835" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-835" class="toc-content"><li class="depth-0"><a href="#-세계관-정합성-확보를-위한-통합-작업-보고서" data-for="-세계관-정합성-확보를-위한-통합-작업-보고서">📜 세계관 정합성 확보를 위한 통합 작업 보고서</a></li><li class="depth-1"><a href="#1-사회정치-불평등의-합의-보완" data-for="1-사회정치-불평등의-합의-보완">1. 사회·정치: “불평등의 합의” 보완</a></li><li class="depth-2"><a href="#-수정보완-기존-파일" data-for="-수정보완-기존-파일">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일" data-for="-신규-생성-필요한-파일">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#2-기술마법-마공학magitech의-구체화" data-for="2-기술마법-마공학magitech의-구체화">2. 기술·마법: “마공학(Magitech)“의 구체화</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-1" data-for="-수정보완-기존-파일-1">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-1" data-for="-신규-생성-필요한-파일-1">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#3-지리행정-전략지역의-실체화" data-for="3-지리행정-전략지역의-실체화">3. 지리·행정: “전략지역”의 실체화</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-2" data-for="-수정보완-기존-파일-2">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-2" data-for="-신규-생성-필요한-파일-2">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#4-군사-이원화된-지휘-체계-정립" data-for="4-군사-이원화된-지휘-체계-정립">4. 군사: “이원화된 지휘 체계” 정립</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-3" data-for="-수정보완-기존-파일-3">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-3" data-for="-신규-생성-필요한-파일-3">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#5-역사-잃어버린-고리-연결" data-for="5-역사-잃어버린-고리-연결">5. 역사: “잃어버린 고리” 연결</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-4" data-for="-수정보완-기존-파일-4">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-4" data-for="-신규-생성-필요한-파일-4">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#-요약-우선-작업-순서-제안" data-for="-요약-우선-작업-순서-제안">📊 요약: 우선 작업 순서 제안</a></li><li class="depth-0"><a href="#-제안서-엘루닉어elruhnik-설정-보완-및-고도화-방안" data-for="-제안서-엘루닉어elruhnik-설정-보완-및-고도화-방안">📜 [제안서] 엘루닉어(Elruhnik) 설정 보완 및 고도화 방안</a></li><li class="depth-1"><a href="#1-현황-및-문제-제기" data-for="1-현황-및-문제-제기">1. 현황 및 문제 제기</a></li><li class="depth-2"><a href="#11-현재-설정-분석" data-for="11-현재-설정-분석">1.1. 현재 설정 분석</a></li><li class="depth-2"><a href="#12-언어학적-분류상의-오류" data-for="12-언어학적-분류상의-오류">1.2. 언어학적 분류상의 오류</a></li><li class="depth-1"><a href="#2-보완-제안-고립의-의미-재정의" data-for="2-보완-제안-고립의-의미-재정의">2. 보완 제안: ‘고립’의 의미 재정의</a></li><li class="depth-2"><a href="#21-방안-a-계통론적-고립어로의-전환" data-for="21-방안-a-계통론적-고립어로의-전환">2.1. [방안 A] ‘계통론적 고립어’로의 전환</a></li><li class="depth-2"><a href="#22-방안-b-어근-불변성root-invariance의-법칙화" data-for="22-방안-b-어근-불변성root-invariance의-법칙화">2.2. [방안 B] ‘어근 불변성(Root Invariance)‘의 법칙화</a></li><li class="depth-2"><a href="#23-방안-c-마법-언어로서의-기능성-부여-가장-추천" data-for="23-방안-c-마법-언어로서의-기능성-부여-가장-추천">2.3. [방안 C] 마법 언어로서의 기능성 부여 (가장 추천)</a></li><li class="depth-1"><a href="#3-요약-및-실행-가이드" data-for="3-요약-및-실행-가이드">3. 요약 및 실행 가이드</a></li><li class="depth-2"><a href="#31-용어-수정-제안-setting-update" data-for="31-용어-수정-제안-setting-update">3.1. 용어 수정 제안 (Setting Update)</a></li><li class="depth-2"><a href="#32-추가-설정-파일-생성-action-item" data-for="32-추가-설정-파일-생성-action-item">3.2. 추가 설정 파일 생성 (Action Item)</a></li><li class="depth-0"><a href="#-새로운-9txt-대화-기반-세계관-확장-및-보완-보고서" data-for="-새로운-9txt-대화-기반-세계관-확장-및-보완-보고서">📜 ‘새로운 9.txt’ 대화 기반 세계관 확장 및 보완 보고서</a></li><li class="depth-1"><a href="#1-마법공학-영혼-기계-인터페이스의-법칙-정립" data-for="1-마법공학-영혼-기계-인터페이스의-법칙-정립">1. 마법·공학: “영혼-기계 인터페이스”의 법칙 정립</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-5" data-for="-수정보완-기존-파일-5">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-5" data-for="-신규-생성-필요한-파일-5">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#2-윤리사회-현자의-돌과-영혼-자원화-금기" data-for="2-윤리사회-현자의-돌과-영혼-자원화-금기">2. 윤리·사회: “현자의 돌”과 영혼 자원화 금기</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-6" data-for="-수정보완-기존-파일-6">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-6" data-for="-신규-생성-필요한-파일-6">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#3-군사전략-전략적-영혼-병기-wmd" data-for="3-군사전략-전략적-영혼-병기-wmd">3. 군사·전략: “전략적 영혼 병기” (WMD)</a></li><li class="depth-2"><a href="#-수정보완-기존-파일-7" data-for="-수정보완-기존-파일-7">🔧 [수정/보완] 기존 파일</a></li><li class="depth-2"><a href="#-신규-생성-필요한-파일-7" data-for="-신규-생성-필요한-파일-7">🆕 [신규 생성] 필요한 파일</a></li><li class="depth-1"><a href="#4-역사시나리오-b루트잔망의-헬라이오스-전용-설정" data-for="4-역사시나리오-b루트잔망의-헬라이오스-전용-설정">4. 역사·시나리오: B루트(잔망의 헬라이오스) 전용 설정</a></li><li class="depth-2"><a href="#4-군사-이원화된-지휘-체계의-통합과-조정-상세-보완" data-for="4-군사-이원화된-지휘-체계의-통합과-조정-상세-보완">4. 군사: “이원화된 지휘 체계”의 통합과 조정 (상세 보완)</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../postscript.js" type="module" data-persist="true"></script></html>

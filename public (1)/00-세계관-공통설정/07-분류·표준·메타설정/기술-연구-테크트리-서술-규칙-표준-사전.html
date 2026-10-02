@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>기술 연구 테크트리 서술 규칙 표준 사전</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="기술 연구 테크트리 서술 규칙 표준 사전"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="기술 연구 테크트리 서술 규칙 표준 사전"/><meta name="twitter:description" content="표준 문서(규칙·사전) 이 문서는 테크트리 문서군의 단일 기준(Single Source of Truth) 입니다. 개별 시대/게이트/엣지 문서는 본 규칙을 참조하며, 규칙과 충돌 시 본 문서가 우선합니다."/><meta property="og:description" content="표준 문서(규칙·사전) 이 문서는 테크트리 문서군의 단일 기준(Single Source of Truth) 입니다. 개별 시대/게이트/엣지 문서는 본 규칙을 참조하며, 규칙과 충돌 시 본 문서가 우선합니다."/><meta property="og:image:alt" content="표준 문서(규칙·사전) 이 문서는 테크트리 문서군의 단일 기준(Single Source of Truth) 입니다. 개별 시대/게이트/엣지 문서는 본 규칙을 참조하며, 규칙과 충돌 시 본 문서가 우선합니다."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/00-세계관-공통설정/07-분류·표준·메타설정/기술-연구-테크트리-서술-규칙-표준-사전"/><meta property="twitter:url" content="https://kaelrots.github.io/00-세계관-공통설정/07-분류·표준·메타설정/기술-연구-테크트리-서술-규칙-표준-사전"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="표준 문서(규칙·사전) 이 문서는 테크트리 문서군의 단일 기준(Single Source of Truth) 입니다. 개별 시대/게이트/엣지 문서는 본 규칙을 참조하며, 규칙과 충돌 시 본 문서가 우선합니다."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="00-세계관-공통설정/07-분류·표준·메타설정/기술-연구-테크트리-서술-규칙-표준-사전"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-37" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-37" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-24" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-24" class="mobile-toc-dialog" aria-labelledby="toc-24-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-24-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-1"><a href="#작성수정일" data-for="작성수정일">작성/수정일</a></li><li class="depth-2"><a href="#과거-문서-계승-및-복원-여부" data-for="과거-문서-계승-및-복원-여부">과거 문서 계승 및 복원 여부</a></li><li class="depth-2"><a href="#상세-수정-내역" data-for="상세-수정-내역">상세 수정 내역</a></li><li class="depth-0"><a href="#0-목적" data-for="0-목적">0. 목적</a></li><li class="depth-0"><a href="#작업-프로세스표준" data-for="작업-프로세스표준">작업 프로세스(표준)</a></li><li class="depth-1"><a href="#0-1-표준-워크플로우권장-순서" data-for="0-1-표준-워크플로우권장-순서">0-1. 표준 워크플로우(권장 순서)</a></li><li class="depth-1"><a href="#0-2-작업-단위추천-코어-8개-루프" data-for="0-2-작업-단위추천-코어-8개-루프">0-2. 작업 단위(추천: “코어 8개” 루프)</a></li><li class="depth-1"><a href="#0-3-변경유지보수-규칙필수" data-for="0-3-변경유지보수-규칙필수">0-3. 변경/유지보수 규칙(필수)</a></li><li class="depth-1"><a href="#0-4-빠른-품질-점검체크리스트" data-for="0-4-빠른-품질-점검체크리스트">0-4. 빠른 품질 점검(체크리스트)</a></li><li class="depth-0"><a href="#1-적용-범위-및-전제" data-for="1-적용-범위-및-전제">1. 적용 범위 및 전제</a></li><li class="depth-1"><a href="#1-1-적용-범위" data-for="1-1-적용-범위">1-1. 적용 범위</a></li><li class="depth-1"><a href="#1-2-우선순위" data-for="1-2-우선순위">1-2. 우선순위</a></li><li class="depth-0"><a href="#2-문서-유형doc_type-정의" data-for="2-문서-유형doc_type-정의">2. 문서 유형(doc_type) 정의</a></li><li class="depth-1"><a href="#2-1-doc_type-목록" data-for="2-1-doc_type-목록">2-1. doc_type 목록</a></li><li class="depth-1"><a href="#2-2-역할-분리-원칙" data-for="2-2-역할-분리-원칙">2-2. 역할 분리 원칙</a></li><li class="depth-0"><a href="#3-식별자identifier-규칙" data-for="3-식별자identifier-규칙">3. 식별자(Identifier) 규칙</a></li><li class="depth-1"><a href="#3-1-시대-코드era" data-for="3-1-시대-코드era">3-1. 시대 코드(era)</a></li><li class="depth-1"><a href="#3-2-게이트-idgate_id" data-for="3-2-게이트-idgate_id">3-2. 게이트 ID(gate_id)</a></li><li class="depth-1"><a href="#3-3-표-no번호-원칙" data-for="3-3-표-no번호-원칙">3-3. 표 No(번호) 원칙</a></li><li class="depth-1"><a href="#3-4-이름게이트명-원칙" data-for="3-4-이름게이트명-원칙">3-4. 이름(게이트명) 원칙</a></li><li class="depth-0"><a href="#4-tmc성숙도단계-표기-규칙" data-for="4-tmc성숙도단계-표기-규칙">4. TMC(성숙도·단계) 표기 규칙</a></li><li class="depth-1"><a href="#4-1-기본-형식" data-for="4-1-기본-형식">4-1. 기본 형식</a></li><li class="depth-1"><a href="#4-2-기간범위-표기" data-for="4-2-기간범위-표기">4-2. 기간/범위 표기</a></li><li class="depth-1"><a href="#4-3-선택-특수-코드special-code" data-for="4-3-선택-특수-코드special-code">4-3. (선택) 특수 코드(Special Code)</a></li><li class="depth-0"><a href="#5-특수-코드special-code-사전" data-for="5-특수-코드special-code-사전">5. 특수 코드(Special Code) 사전</a></li><li class="depth-0"><a href="#6-연구트리-3단계-매핑-규칙tree_map" data-for="6-연구트리-3단계-매핑-규칙tree_map">6. 연구트리 3단계 매핑 규칙(tree_map)</a></li><li class="depth-1"><a href="#6-0-세부-유형sub_type-전제공통-12종" data-for="6-0-세부-유형sub_type-전제공통-12종">6-0. 세부 유형(sub_type) 전제(공통 12종)</a></li><li class="depth-1"><a href="#6-1-매핑-필수" data-for="6-1-매핑-필수">6-1. 매핑 필수</a></li><li class="depth-1"><a href="#6-2-복수-매핑-허용-기준" data-for="6-2-복수-매핑-허용-기준">6-2. 복수 매핑 허용 기준</a></li><li class="depth-1"><a href="#6-3-표기-형식" data-for="6-3-표기-형식">6-3. 표기 형식</a></li><li class="depth-1"><a href="#6-4-매핑-검증-원칙" data-for="6-4-매핑-검증-원칙">6-4. 매핑 검증 원칙</a></li><li class="depth-0"><a href="#7-선후관계edge-규칙" data-for="7-선후관계edge-규칙">7. 선후관계(Edge) 규칙</a></li><li class="depth-1"><a href="#7-1-관계의-단일-키" data-for="7-1-관계의-단일-키">7-1. 관계의 단일 키</a></li><li class="depth-1"><a href="#7-2-hardsoft-선행조건" data-for="7-2-hardsoft-선행조건">7-2. Hard/Soft 선행조건</a></li><li class="depth-1"><a href="#7-3-엣지-레지스트리rel_type-사전" data-for="7-3-엣지-레지스트리rel_type-사전">7-3. 엣지 레지스트리(rel_type) 사전</a></li><li class="depth-1"><a href="#7-4-weight-규칙선택" data-for="7-4-weight-규칙선택">7-4. weight 규칙(선택)</a></li><li class="depth-1"><a href="#7-5-시대-점프-엣지" data-for="7-5-시대-점프-엣지">7-5. 시대 점프 엣지</a></li><li class="depth-1"><a href="#7-6-사이클순환-규칙" data-for="7-6-사이클순환-규칙">7-6. 사이클(순환) 규칙</a></li><li class="depth-0"><a href="#8-문서별-필수-요소최소-스키마" data-for="8-문서별-필수-요소최소-스키마">8. 문서별 필수 요소(최소 스키마)</a></li><li class="depth-1"><a href="#8-1-시대-인덱스era_gate_index" data-for="8-1-시대-인덱스era_gate_index">8-1. 시대 인덱스(era_gate_index)</a></li><li class="depth-1"><a href="#8-2-게이트-노드gate_node" data-for="8-2-게이트-노드gate_node">8-2. 게이트 노드(gate_node)</a></li><li class="depth-1"><a href="#8-3-엣지-레지스트리gate_edges" data-for="8-3-엣지-레지스트리gate_edges">8-3. 엣지 레지스트리(gate_edges)</a></li><li class="depth-0"><a href="#9-금지권장-규칙" data-for="9-금지권장-규칙">9. 금지·권장 규칙</a></li><li class="depth-1"><a href="#9-1-금지" data-for="9-1-금지">9-1. 금지</a></li><li class="depth-1"><a href="#9-2-권장" data-for="9-2-권장">9-2. 권장</a></li><li class="depth-0"><a href="#10-품질-점검-체크리스트" data-for="10-품질-점검-체크리스트">10. 품질 점검 체크리스트</a></li><li class="depth-1"><a href="#10-1-신규-게이트-추가-시" data-for="10-1-신규-게이트-추가-시">10-1. 신규 게이트 추가 시</a></li><li class="depth-1"><a href="#10-2-트리관계-점검" data-for="10-2-트리관계-점검">10-2. 트리(관계) 점검</a></li><li class="depth-0"><a href="#11-변경버전-관리-규칙" data-for="11-변경버전-관리-규칙">11. 변경·버전 관리 규칙</a></li><li class="depth-0"><a href="#12-부록-최소-예시" data-for="12-부록-최소-예시">12. 부록: 최소 예시</a></li><li class="depth-1"><a href="#12-1-gate_node선행후속-예시" data-for="12-1-gate_node선행후속-예시">12-1. gate_node(선행/후속 예시)</a></li><li class="depth-1"><a href="#12-2-gate_edges관계-예시" data-for="12-2-gate_edges관계-예시">12-2. gate_edges(관계 예시)</a></li><li class="depth-0"><a href="#관련-링크" data-for="관련-링크">관련 링크</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-37"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-37" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../00-세계관-공통설정/">00 세계관 공통설정</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../00-세계관-공통설정/07-분류·표준·메타설정/">07 분류·표준·메타설정</a></div></nav><h1 class="article-title">기술 연구 테크트리 서술 규칙 표준 사전</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:26.541Z">2026년 9월 30일</time><span>16 분 소요</span></p></div></div><article class="popover-hint"><blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>표준 문서(규칙·사전) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<center>이 문서는 <font style="font-weight:bold;">테크트리 문서군의 단일 기준(Single Source of Truth)</font> 입니다. <br/>개별 시대/게이트/엣지 문서는 본 규칙을 참조하며, 규칙과 충돌 시 <font style="font-weight:bold;">본 문서가 우선</font>합니다.</center>
+</div>
+</blockquote>
+<hr class="hr-thick-2"/>
+<h2 id="작성수정일">작성/수정일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#작성수정일" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="과거-문서-계승-및-복원-여부">과거 문서 계승 및 복원 여부<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#과거-문서-계승-및-복원-여부" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<div class="scroll-x nowrap"><div class="table-container"><table><thead><tr><th colspan="4">과거 문서 계승 및 복원 여부</th></tr></thead><tbody><tr><td colspan="2">여부</td><td colspan="2">원문 관련</td></tr><tr><td>⭕</td><td>❌</td><td>최초 작성일</td><td rowspan="3">❌</td></tr><tr><td><input id="hc-6863" type="checkbox"/></td><td><input id="hc-1418" type="checkbox" checked/></td><td>최종 수정일</td></tr><tr><td colspan="3">복원 문서명</td></tr></tbody></table></div></div>
+<h3 id="상세-수정-내역">상세 수정 내역<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#상세-수정-내역" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../../90-볼트-운영/01-수정기록/템플릿-수정-기록#90-기타-문서-기본-템플릿" class="internal alias" data-slug="90-볼트-운영/01-수정기록/템플릿-수정-기록">90-기타 문서 기본 템플릿</a></li>
+<li><a href="../../90-볼트-운영/01-수정기록/문서수정기록-파일링크" class="internal alias" data-slug="90-볼트-운영/01-수정기록/문서수정기록-파일링크">문서수정기록 파일링크</a></li>
+</ul>
+<hr class="hr-thick-1"/>
+<h1 id="0-목적">0. 목적<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-목적" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>본 문서는 <font style="font-weight:bold;">제2기 이후 기술·연구 테크트리</font>를 “시대별 게이트(노드) + 선후관계(엣지)”로 운영하기 위한 <font style="font-weight:bold;">서술 규칙/표준/사전</font>이다.</li>
+<li>목표:</li>
+<li>(1) 문서량이 증가해도 <font style="font-weight:bold;">ID·표기·분류·관계가 흔들리지 않게</font> 한다.</li>
+<li>(2) <code>A → B</code> 선후관계로 <font style="font-weight:bold;">트리/그래프를 생성</font>할 수 있게 한다.</li>
+<li>(3) 시대 인덱스(목차)와 게이트 노드(본문)를 분리해 <font style="font-weight:bold;">중복/충돌을 방지</font>한다.</li>
+</ul>
+<hr class="hr-thick-1"/>
+<h1 id="작업-프로세스표준">작업 프로세스(표준)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#작업-프로세스표준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>문서 역할(SSOT) </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li><font style="font-weight:bold;">10-01 시대 인덱스</font>: 시대별 “게이트 목록/발급대장” (gate_id 발급은 여기서 선확정)</li>
+<li><font style="font-weight:bold;">10-02 게이트 노드</font>: 게이트 1개 설명(왜 게이트인가/매핑/요약/연계)</li>
+<li><font style="font-weight:bold;">10-03 엣지 레지스트리</font>: 관계(선후/배타/대체)의 <font style="font-weight:bold;">단일 기준(SSOT)</font></li>
+<li><font style="font-weight:bold;">10-04 상세 기술(선택)</font>: 세계관 핵심 기술만 백과사전급으로 분기</li>
+</ul>
+</div>
+</blockquote>
+<h2 id="0-1-표준-워크플로우권장-순서">0-1. 표준 워크플로우(권장 순서)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-1-표준-워크플로우권장-순서" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><font style="font-weight:bold;">시대 정의(시대 문서)</font>
+<ul>
+<li>시대 경계(기간) + 변곡점 축(생산/군사/통치/차원/대외)만 먼저 확정</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">10-01 시대 인덱스 작성(게이트 목록/발급)</font>
+<ul>
+<li><code>gate_id</code> 발급(불변) + 인링크 골격</li>
+<li>최소 기입: <code>tree_map</code>, <code>sub_type(공통12)</code>, <code>TMC(·CODE 허용)</code>, <code>한 줄 효과</code>, <code>Ref 키워드</code></li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">10-02 게이트 노드 생성(코어부터)</font>
+<ul>
+<li>최소 스키마(YAML) + “왜 게이트인가” + 매핑 근거</li>
+<li><font style="font-weight:bold;">중요 기술</font>만 <code>detail_doc</code>로 <font style="font-weight:bold;">10-04 상세 기술</font> 분기</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">10-03 엣지 레지스트리 작성(관계 원장)</font>
+<ul>
+<li>시대 내부(로컬) → 교차시대(점프) 순</li>
+<li>교차시대 엣지는 <code>note</code> 1줄 이상 필수</li>
+</ul>
+</li>
+<li>(선택) <font style="font-weight:bold;">검증/시각화 출력(코딩 영역)</font>
+<ul>
+<li>10-03을 입력으로 그래프 생성/사이클/중복/누락 자동검증</li>
+</ul>
+</li>
+</ol>
+<h2 id="0-2-작업-단위추천-코어-8개-루프">0-2. 작업 단위(추천: “코어 8개” 루프)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-2-작업-단위추천-코어-8개-루프" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>① 인덱스에 코어 8개 채움 → ② 노드 8개 생성 → ③ 엣지로 뼈대(10~30개) 잡기</li>
+<li>이후 “확장 후보”를 12~22개로 늘리면서 ①②③을 반복(얇게 순환)</li>
+</ul>
+<h2 id="0-3-변경유지보수-규칙필수">0-3. 변경/유지보수 규칙(필수)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-3-변경유지보수-규칙필수" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>gate_id</code>는 <font style="font-weight:bold;">발급 후 불변</font>(이름/설명은 바뀌어도 됨)</li>
+<li>관계 충돌 시 우선순위:
+<ol>
+<li><font style="font-weight:bold;">10-03 엣지 레지스트리</font></li>
+<li>10-02 게이트 노드(설명/맥락)</li>
+<li>10-01 인덱스(목록)</li>
+</ol>
+</li>
+<li>삭제 대신 <code>status: deprecated</code>로 폐기(관계/노드 추적성 유지)</li>
+<li>시대 점프(교차시대) 엣지는 <font style="font-weight:bold;">근거(note/source) 없는 채로 금지</font></li>
+</ul>
+<h2 id="0-4-빠른-품질-점검체크리스트">0-4. 빠른 품질 점검(체크리스트)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-4-빠른-품질-점검체크리스트" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> 10-01의 <code>gate_id</code>와 10-02/10-03의 ID가 1:1로 대응</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 모든 노드에 <code>tree_map</code> ≥ 1, <code>sub_type</code> 1개 지정</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 교차시대 엣지에 <code>note</code> 존재</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>alt_path</code>와 <code>mutex</code> 혼용 없음</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 의도치 않은 사이클(특히 <code>prereq_hard</code>) 없음</li>
+</ul>
+<hr class="hr-thick-1"/>
+<h1 id="1-적용-범위-및-전제">1. 적용 범위 및 전제<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-적용-범위-및-전제" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-1-적용-범위">1-1. 적용 범위<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-1-적용-범위" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>적용 기수: <font style="font-weight:bold;">제2기 이후</font></li>
+<li>적용 대상 문서군:</li>
+<li>시대 인덱스 문서(게이트 목록)</li>
+<li>게이트 노드 하위문서</li>
+<li>엣지 레지스트리(관계 표)</li>
+<li>(선택) 트리 시각화/검증 문서</li>
+</ul>
+<h2 id="1-2-우선순위">1-2. 우선순위<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-2-우선순위" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>(1) 본 문서(규칙·사전)</li>
+<li>(2) 제2기 연구트리 분류체계(3단계) 정의 문서</li>
+<li>(3) 시대/게이트/엣지 개별 문서</li>
+</ul>
+<hr class="hr-thick-1"/>
+<h1 id="2-문서-유형doc_type-정의">2. 문서 유형(doc_type) 정의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-문서-유형doc_type-정의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="2-1-doc_type-목록">2-1. doc_type 목록<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-1-doc_type-목록" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>tech_tree_rules</code>: 본 문서(규칙)</li>
+<li><code>era_gate_index</code>: 시대 인덱스(시대별 게이트 표)</li>
+<li><code>gate_node</code>: 게이트 노드(단일 진실)</li>
+<li><code>gate_edges</code>: 엣지 레지스트리(관계 표)</li>
+<li>(선택) <code>gate_tree_view</code>: 트리 시각화/검증(mermaid/필터/레이어)</li>
+</ul>
+<h2 id="2-2-역할-분리-원칙">2-2. 역할 분리 원칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-2-역할-분리-원칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>시대 문서(인덱스): <font style="font-weight:bold;">얇게(표/요약/링크만)</font></li>
+<li>게이트 문서(노드): <font style="font-weight:bold;">두껍게(정의/근거/관계/연계)</font></li>
+<li>엣지 문서(관계): <font style="font-weight:bold;">관계만(표 중심)</font></li>
+</ul>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>금지 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>시대 인덱스 문서에 “관계 본문”을 길게 적지 않는다. <br/>게이트 노드 문서에 “전역 관계표”를 복붙하지 않는다.</p>
+</div>
+</blockquote>
+<hr class="hr-thick-2"/>
+<h1 id="3-식별자identifier-규칙">3. 식별자(Identifier) 규칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-식별자identifier-규칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="3-1-시대-코드era">3-1. 시대 코드(era)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-1-시대-코드era" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>형식: <code>2-01</code>, <code>2-02</code>, … <code>2-99</code></li>
+<li>의미: <code>2기-시대번호</code></li>
+<li>예시: <code>2-03</code> = 제2기 03시대</li>
+</ul>
+<h2 id="3-2-게이트-idgate_id">3-2. 게이트 ID(gate_id)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-2-게이트-idgate_id" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>형식: <code>G2-&lt;era>-&lt;nnn></code></li>
+<li><code>&lt;era></code>: <code>01</code>～<code>99</code> (시대번호 2자리)</li>
+<li><code>&lt;nnn></code>: <code>001</code>～<code>999</code> (3자리 연번)</li>
+<li>예시:</li>
+<li><code>G2-03-001</code></li>
+<li><code>G2-03-014</code></li>
+</ul>
+<h2 id="3-3-표-no번호-원칙">3-3. 표 No(번호) 원칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-3-표-no번호-원칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>시대 인덱스 표의 <code>No</code>는 <font style="font-weight:bold;">보기용</font>이다.</li>
+<li>게이트를 추가/삭제하며 번호가 변경되어도 <font style="font-weight:bold;">gate_id는 절대 변경하지 않는다.</font></li>
+</ul>
+<h2 id="3-4-이름게이트명-원칙">3-4. 이름(게이트명) 원칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-4-이름게이트명-원칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>게이트명은 바뀔 수 있다(명칭 개편/번역 수정 등).</li>
+<li>그러나 링크/관계/키는 <font style="font-weight:bold;">항상 gate_id</font>를 기준으로 한다.</li>
+</ul>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>불변 규칙 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<p><font style="font-weight:bold;">gate_id는 한 번 발급하면 영구 불변</font>이다.</p>
+</div>
+</blockquote>
+<hr class="hr-thick-2"/>
+<h1 id="4-tmc성숙도단계-표기-규칙">4. TMC(성숙도·단계) 표기 규칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-tmc성숙도단계-표기-규칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="4-1-기본-형식">4-1. 기본 형식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-1-기본-형식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>형식: <code>&lt;ERA>-&lt;TRL></code></li>
+<li>ERA(시대축): <code>ANC / MED / EMO / IND / MOD / NFU / FUT / SPC</code></li>
+<li>TRL(성숙도): <code>1</code>～<code>9</code></li>
+</ul>
+<h2 id="4-2-기간범위-표기">4-2. 기간/범위 표기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-2-기간범위-표기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>범위형: <code>MOD-7～9</code> 처럼 표기한다.</li>
+<li>문서 전체에서 <code>~</code>는 사용하지 않고 <font style="font-weight:bold;"><code>～</code></font> 로 통일한다.</li>
+</ul>
+<h2 id="4-3-선택-특수-코드special-code">4-3. (선택) 특수 코드(Special Code)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-3-선택-특수-코드special-code" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>특수 코드는 <code>·</code>로 결합한다.</li>
+<li>표기 권장: <code>&lt;ERA>-&lt;TRL>·CODE</code>
+<ul>
+<li>CODE: <code>LST / ARC / TRN</code></li>
+</ul>
+</li>
+<li>예시:
+<ul>
+<li><code>MOD-7～9·LST</code> (현대 후기급으로 ‘추정’되나 전승 단절)</li>
+<li><code>NFU-5·ARC</code> (근미래 중기급 + 신비)</li>
+<li><code>SPC-2·TRN</code> (우주 시대 분류 + 초월)</li>
+</ul>
+</li>
+<li>주의: “실전”은 실전(實戰)이 아니라 <font style="font-weight:bold;">실전(失傳)</font> 의미로 사용한다.</li>
+</ul>
+<hr class="hr-thick-1"/>
+<h1 id="5-특수-코드special-code-사전">5. 특수 코드(Special Code) 사전<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-특수-코드special-code-사전" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>특수 코드는 <font style="font-weight:bold;">선택 사항</font>이다. 쓰려면 아래 정의를 따른다.</p>
+</blockquote>
+<div class="scroll-x nowrap"><div class="table-container"><table><thead><tr><th>CODE</th><th>의미</th><th>사용 기준(권장)</th></tr></thead><tbody><tr><td>`LST`</td><td>실전/失傳 기술</td><td>존재 증거는 있으나, 표준/매뉴얼/교육체계 붕괴로 “재현 가능한 지식”으로 전승되지 못한 기술</td></tr><tr><td>`ARC`</td><td>신비 기술</td><td>원리 불명/가설 난립, 재현성 낮음, 이능·차원·종교/신성 요소와 구조적으로 강결합</td></tr><tr><td>`TRN`</td><td>초월 기술</td><td>현 체계로 해석·역공학·재현 루프가 성립하지 않는 블랙박스 기술</td></tr></tbody></table></div></div>
+<blockquote class="callout tip" data-callout="tip">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>운영 원칙 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<ul>
+<li>남발 금지. ‘게이트의 본질’이 명확할 때만 붙인다.</li>
+<li><code>ARC + TRN</code>은 원칙적으로 배타적: TRN 판정이면 ARC를 생략해도 된다(초월이 상위 개념).</li>
+<li>표기: <code>기술 수준: &lt;ERA>-&lt;TRL>·CODE</code></li>
+</ul>
+</div>
+</blockquote>
+<hr class="hr-thick-2"/>
+<h1 id="6-연구트리-3단계-매핑-규칙tree_map">6. 연구트리 3단계 매핑 규칙(tree_map)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-연구트리-3단계-매핑-규칙tree_map" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="6-0-세부-유형sub_type-전제공통-12종">6-0. 세부 유형(sub_type) 전제(공통 12종)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-0-세부-유형sub_type-전제공통-12종" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>세부 유형은 트리마다 따로 만들지 않고, <font style="font-weight:bold;">공통 12종으로 통일</font>한다.</li>
+<li>원칙: 노드는 <font style="font-weight:bold;"><code>트랙(3단계)</code> + <code>세부유형(1～12)</code></font> 조합으로 구성된다.</li>
+<li>공통 12종:
+<ol>
+<li>이론/원리</li>
+<li>계측/표준</li>
+<li>공정/제조</li>
+<li>인프라/네트워크</li>
+<li>제도/법규</li>
+<li>조직/운영</li>
+<li>종교교리/규범</li>
+<li>군사교리/훈련</li>
+<li>통제/보안</li>
+<li>대외/접촉</li>
+<li>시험/검증(V&amp;V)</li>
+<li>모델/시뮬레이션/소프트웨어(SIM)</li>
+</ol>
+</li>
+<li>표기(권장): <code>sub_type: &quot;&lt;번호>. &lt;이름>&quot;</code> (예: <code>sub_type: &quot;2. 계측/표준&quot;</code>)</li>
+</ul>
+<h2 id="6-1-매핑-필수">6-1. 매핑 필수<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-1-매핑-필수" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><font style="font-weight:bold;">모든 gate_node는 최소 1개의 3단계 매핑을 가져야 한다.</font></li>
+<li>시대 인덱스(era_gate_index)에도 동일 매핑을 요약 기입한다.</li>
+</ul>
+<h2 id="6-2-복수-매핑-허용-기준">6-2. 복수 매핑 허용 기준<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-2-복수-매핑-허용-기준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>복수 매핑은 허용하되, 아래 중 하나를 충족해야 한다:</li>
+<li>(A) 하나의 게이트가 실제로 2개 이상의 분야를 <font style="font-weight:bold;">동시에</font> 개방한다.</li>
+<li>(B) ‘핵심 매핑 1개 + 보조 매핑 1개’로 설명 가능하다.</li>
+</ul>
+<h2 id="6-3-표기-형식">6-3. 표기 형식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-3-표기-형식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>표기: <code>3-XX → (하위 트랙명)</code></li>
+<li>복수 매핑 시: 줄바꿈/리스트로 나열</li>
+</ul>
+<h2 id="6-4-매핑-검증-원칙">6-4. 매핑 검증 원칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-4-매핑-검증-원칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>존재하지 않는 <code>3-XX</code> 코드를 임의로 사용하지 않는다.</li>
+<li>애매하면, 게이트 노드 문서의 “매핑 근거”에 <font style="font-weight:bold;">왜 그 트랙인지</font> 2～5줄로 명시한다.</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h1 id="7-선후관계edge-규칙">7. 선후관계(Edge) 규칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-선후관계edge-규칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="7-1-관계의-단일-키">7-1. 관계의 단일 키<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-1-관계의-단일-키" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>관계는 항상 <code>gate_id</code>로만 표현한다.</li>
+<li>게이트명으로 관계를 정의하지 않는다.</li>
+</ul>
+<h2 id="7-2-hardsoft-선행조건">7-2. Hard/Soft 선행조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-2-hardsoft-선행조건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>Hard</code>: 없으면 <font style="font-weight:bold;">절대</font> 성립/운용이 불가능한 선행</li>
+<li><code>Soft</code>: 강하게 권장되나, 우회/대체 경로가 가능한 선행</li>
+</ul>
+<h2 id="7-3-엣지-레지스트리rel_type-사전">7-3. 엣지 레지스트리(rel_type) 사전<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-3-엣지-레지스트리rel_type-사전" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<div class="scroll-x nowrap"><div class="table-container"><table><thead><tr><th>rel_type</th><th>의미</th><th>사용 예</th></tr></thead><tbody><tr><td>`prereq_hard`</td><td>필수 선행</td><td>제도/인프라가 없으면 기술이 불가능</td></tr><tr><td>`prereq_soft`</td><td>권장 선행</td><td>효율/확산을 위해 필요, 우회 가능</td></tr><tr><td>`alt_path`</td><td>대체 경로(동등)</td><td>A 루트 또는 B 루트 중 하나로 도달</td></tr><tr><td>`synergy`</td><td>시너지</td><td>둘 다 있으면 성능/파급이 증가</td></tr><tr><td>`obsoletes`</td><td>사실상 대체/구식화</td><td>상위 기술이 하위 기술을 흡수</td></tr><tr><td>`mutex`</td><td>상호배타</td><td>같은 슬롯(교리/제도)에서 동시 불가</td></tr></tbody></table></div></div>
+<h2 id="7-4-weight-규칙선택">7-4. weight 규칙(선택)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-4-weight-규칙선택" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>weight</code>는 0.0～1.0 사이로 둔다.</li>
+<li>1.0 = 거의 필수 수준</li>
+<li>0.6 = 강한 권장</li>
+<li>0.3 = 느슨한 연계</li>
+</ul>
+<h2 id="7-5-시대-점프-엣지">7-5. 시대 점프 엣지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-5-시대-점프-엣지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>2-01 → 2-04</code>처럼 시대를 크게 건너뛰는 엣지는 허용하되,</li>
+<li>엣지 레지스트리의 <code>note</code>에 <font style="font-weight:bold;">왜 점프하는지</font> 반드시 1줄 이상 적는다.</li>
+</ul>
+<h2 id="7-6-사이클순환-규칙">7-6. 사이클(순환) 규칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-6-사이클순환-규칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>의도치 않은 사이클은 금지.</li>
+<li>의도된 순환(상호강화 루프)을 표현해야 한다면:</li>
+<li><code>synergy</code>로 표현하고,</li>
+<li><code>prereq_*</code>로 사이클을 만들지 않는다.</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h1 id="8-문서별-필수-요소최소-스키마">8. 문서별 필수 요소(최소 스키마)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-문서별-필수-요소최소-스키마" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="8-1-시대-인덱스era_gate_index">8-1. 시대 인덱스(era_gate_index)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-1-시대-인덱스era_gate_index" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>반드시 포함:</li>
+<li>시대 코드(era), 시대명(era_name)</li>
+<li>게이트 표(최소 core 8개)</li>
+<li>각 행에: <code>gate_id</code>, <code>인링크</code>, <code>tree_map</code>, <code>TMC</code>, <code>한줄 효과</code></li>
+</ul>
+<h2 id="8-2-게이트-노드gate_node">8-2. 게이트 노드(gate_node)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-2-게이트-노드gate_node" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>반드시 포함:</li>
+<li><code>gate_id</code>, <code>gate_name</code>, <code>era</code>, <code>tmc</code>, <code>tree_map</code></li>
+<li><code>prereq.hard[]</code>, <code>prereq.soft[]</code>, <code>unlocks[]</code> (없으면 빈 배열)</li>
+<li>본문 섹션: <code>개요 / 왜 게이트인가 / 매핑 근거 / 선행 / 후속</code></li>
+</ul>
+<h2 id="8-3-엣지-레지스트리gate_edges">8-3. 엣지 레지스트리(gate_edges)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-3-엣지-레지스트리gate_edges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>반드시 포함:</li>
+<li><code>from_gate</code>, <code>to_gate</code>, <code>rel_type</code></li>
+<li>(권장) <code>weight</code>, <code>note</code></li>
+</ul>
+<hr class="hr-thick-2"/>
+<h1 id="9-금지권장-규칙">9. 금지·권장 규칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-금지권장-규칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="9-1-금지">9-1. 금지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-1-금지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>gate_id 재사용/재발급(중복) 금지</li>
+<li>게이트명을 키로 삼는 관계 정의 금지</li>
+<li>시대 인덱스에 관계 본문을 길게 서술 금지</li>
+<li>존재하지 않는 3단계 코드 임의 생성 금지</li>
+</ul>
+<h2 id="9-2-권장">9-2. 권장<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-2-권장" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>게이트 노드에는 “경계선(포함/비포함)”을 1줄이라도 적기</li>
+<li>시대 점프 엣지는 반드시 <code>note</code>로 설명</li>
+<li>오버레이는 정말 필요할 때만</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h1 id="10-품질-점검-체크리스트">10. 품질 점검 체크리스트<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-품질-점검-체크리스트" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="10-1-신규-게이트-추가-시">10-1. 신규 게이트 추가 시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-1-신규-게이트-추가-시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> gate_id 유일성 확인</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 시대 인덱스 표에 <code>gate_id + 인링크</code> 반영</li>
+<li class="task-list-item"><input type="checkbox" disabled/> gate_node에 <code>tree_map</code> 최소 1개 존재</li>
+<li class="task-list-item"><input type="checkbox" disabled/> prereq/unlocks가 있으면 엣지 레지스트리에도 반영</li>
+<li class="task-list-item"><input type="checkbox" disabled/> “왜 게이트인가”가 시대 변곡점과 연결되어 있음</li>
+</ul>
+<h2 id="10-2-트리관계-점검">10-2. 트리(관계) 점검<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-2-트리관계-점검" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> 의도치 않은 사이클 없음</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 허브 과집중(병목)이 의도인지 확인</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 시대 점프 엣지에 note 존재</li>
+<li class="task-list-item"><input type="checkbox" disabled/> mutex/alt_path를 혼동하지 않음</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h1 id="11-변경버전-관리-규칙">11. 변경·버전 관리 규칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-변경버전-관리-규칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>본 문서의 변경은 <font style="font-weight:bold;">문서버전</font>을 올리고, <code>최근 변경 요약</code>에 1줄 기록한다.</li>
+<li>규칙 변경이 개별 문서에 영향을 줄 경우:</li>
+<li>(권장) “영향 범위(예: 게이트 노드 전체)”를 변경 요약에 함께 적는다.</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h1 id="12-부록-최소-예시">12. 부록: 최소 예시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-부록-최소-예시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="12-1-gate_node선행후속-예시">12-1. gate_node(선행/후속 예시)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-1-gate_node선행후속-예시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>G2-03-001</code> (Hard) → <code>G2-03-010</code></li>
+<li><code>G2-03-001</code> (Soft) → <code>G2-04-003</code></li>
+</ul>
+<h2 id="12-2-gate_edges관계-예시">12-2. gate_edges(관계 예시)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-2-gate_edges관계-예시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<div class="scroll-x nowrap"><div class="table-container"><table><thead><tr><th>from_gate</th><th>to_gate</th><th>rel_type</th><th>weight</th><th>note</th></tr></thead><tbody><tr><td>G2-03-001</td><td>G2-03-010</td><td>prereq_hard</td><td>1.0</td><td>핵심 선행</td></tr><tr><td>G2-03-001</td><td>G2-04-003</td><td>prereq_soft</td><td>0.6</td><td>우회 가능</td></tr><tr><td>G2-03-005</td><td>G2-03-006</td><td>mutex</td><td>1.0</td><td>같은 교리 슬롯</td></tr></tbody></table></div></div>
+<hr class="hr-thick-2"/>
+<h1 id="관련-링크">관련 링크<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#관련-링크" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><a href="../../01-신계-차원/02-라리셴베르크/08-과학·기술/연구트리/제2기/제2기-연구트리-분류체계-3단계-하위-세부-보완본" class="internal alias" data-slug="01-신계-차원/02-라리셴베르크/08-과학·기술/연구트리/제2기/제2기-연구트리-분류체계-3단계-하위-세부-보완본">제2기 연구트리 분류체계 3단계 하위 세부 보완본</a></li>
+<li><a href="../../10-기술·연구-테크트리-설정-템플릿-(초안-개요)" class="internal alias" data-slug="10-기술·연구-테크트리-설정-템플릿-(초안-개요)">10-기술·연구 테크트리 설정 템플릿 (초안 개요)</a></li>
+</ul></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-12"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-12"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-25" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-25" class="toc-content"><li class="depth-1"><a href="#작성수정일" data-for="작성수정일">작성/수정일</a></li><li class="depth-2"><a href="#과거-문서-계승-및-복원-여부" data-for="과거-문서-계승-및-복원-여부">과거 문서 계승 및 복원 여부</a></li><li class="depth-2"><a href="#상세-수정-내역" data-for="상세-수정-내역">상세 수정 내역</a></li><li class="depth-0"><a href="#0-목적" data-for="0-목적">0. 목적</a></li><li class="depth-0"><a href="#작업-프로세스표준" data-for="작업-프로세스표준">작업 프로세스(표준)</a></li><li class="depth-1"><a href="#0-1-표준-워크플로우권장-순서" data-for="0-1-표준-워크플로우권장-순서">0-1. 표준 워크플로우(권장 순서)</a></li><li class="depth-1"><a href="#0-2-작업-단위추천-코어-8개-루프" data-for="0-2-작업-단위추천-코어-8개-루프">0-2. 작업 단위(추천: “코어 8개” 루프)</a></li><li class="depth-1"><a href="#0-3-변경유지보수-규칙필수" data-for="0-3-변경유지보수-규칙필수">0-3. 변경/유지보수 규칙(필수)</a></li><li class="depth-1"><a href="#0-4-빠른-품질-점검체크리스트" data-for="0-4-빠른-품질-점검체크리스트">0-4. 빠른 품질 점검(체크리스트)</a></li><li class="depth-0"><a href="#1-적용-범위-및-전제" data-for="1-적용-범위-및-전제">1. 적용 범위 및 전제</a></li><li class="depth-1"><a href="#1-1-적용-범위" data-for="1-1-적용-범위">1-1. 적용 범위</a></li><li class="depth-1"><a href="#1-2-우선순위" data-for="1-2-우선순위">1-2. 우선순위</a></li><li class="depth-0"><a href="#2-문서-유형doc_type-정의" data-for="2-문서-유형doc_type-정의">2. 문서 유형(doc_type) 정의</a></li><li class="depth-1"><a href="#2-1-doc_type-목록" data-for="2-1-doc_type-목록">2-1. doc_type 목록</a></li><li class="depth-1"><a href="#2-2-역할-분리-원칙" data-for="2-2-역할-분리-원칙">2-2. 역할 분리 원칙</a></li><li class="depth-0"><a href="#3-식별자identifier-규칙" data-for="3-식별자identifier-규칙">3. 식별자(Identifier) 규칙</a></li><li class="depth-1"><a href="#3-1-시대-코드era" data-for="3-1-시대-코드era">3-1. 시대 코드(era)</a></li><li class="depth-1"><a href="#3-2-게이트-idgate_id" data-for="3-2-게이트-idgate_id">3-2. 게이트 ID(gate_id)</a></li><li class="depth-1"><a href="#3-3-표-no번호-원칙" data-for="3-3-표-no번호-원칙">3-3. 표 No(번호) 원칙</a></li><li class="depth-1"><a href="#3-4-이름게이트명-원칙" data-for="3-4-이름게이트명-원칙">3-4. 이름(게이트명) 원칙</a></li><li class="depth-0"><a href="#4-tmc성숙도단계-표기-규칙" data-for="4-tmc성숙도단계-표기-규칙">4. TMC(성숙도·단계) 표기 규칙</a></li><li class="depth-1"><a href="#4-1-기본-형식" data-for="4-1-기본-형식">4-1. 기본 형식</a></li><li class="depth-1"><a href="#4-2-기간범위-표기" data-for="4-2-기간범위-표기">4-2. 기간/범위 표기</a></li><li class="depth-1"><a href="#4-3-선택-특수-코드special-code" data-for="4-3-선택-특수-코드special-code">4-3. (선택) 특수 코드(Special Code)</a></li><li class="depth-0"><a href="#5-특수-코드special-code-사전" data-for="5-특수-코드special-code-사전">5. 특수 코드(Special Code) 사전</a></li><li class="depth-0"><a href="#6-연구트리-3단계-매핑-규칙tree_map" data-for="6-연구트리-3단계-매핑-규칙tree_map">6. 연구트리 3단계 매핑 규칙(tree_map)</a></li><li class="depth-1"><a href="#6-0-세부-유형sub_type-전제공통-12종" data-for="6-0-세부-유형sub_type-전제공통-12종">6-0. 세부 유형(sub_type) 전제(공통 12종)</a></li><li class="depth-1"><a href="#6-1-매핑-필수" data-for="6-1-매핑-필수">6-1. 매핑 필수</a></li><li class="depth-1"><a href="#6-2-복수-매핑-허용-기준" data-for="6-2-복수-매핑-허용-기준">6-2. 복수 매핑 허용 기준</a></li><li class="depth-1"><a href="#6-3-표기-형식" data-for="6-3-표기-형식">6-3. 표기 형식</a></li><li class="depth-1"><a href="#6-4-매핑-검증-원칙" data-for="6-4-매핑-검증-원칙">6-4. 매핑 검증 원칙</a></li><li class="depth-0"><a href="#7-선후관계edge-규칙" data-for="7-선후관계edge-규칙">7. 선후관계(Edge) 규칙</a></li><li class="depth-1"><a href="#7-1-관계의-단일-키" data-for="7-1-관계의-단일-키">7-1. 관계의 단일 키</a></li><li class="depth-1"><a href="#7-2-hardsoft-선행조건" data-for="7-2-hardsoft-선행조건">7-2. Hard/Soft 선행조건</a></li><li class="depth-1"><a href="#7-3-엣지-레지스트리rel_type-사전" data-for="7-3-엣지-레지스트리rel_type-사전">7-3. 엣지 레지스트리(rel_type) 사전</a></li><li class="depth-1"><a href="#7-4-weight-규칙선택" data-for="7-4-weight-규칙선택">7-4. weight 규칙(선택)</a></li><li class="depth-1"><a href="#7-5-시대-점프-엣지" data-for="7-5-시대-점프-엣지">7-5. 시대 점프 엣지</a></li><li class="depth-1"><a href="#7-6-사이클순환-규칙" data-for="7-6-사이클순환-규칙">7-6. 사이클(순환) 규칙</a></li><li class="depth-0"><a href="#8-문서별-필수-요소최소-스키마" data-for="8-문서별-필수-요소최소-스키마">8. 문서별 필수 요소(최소 스키마)</a></li><li class="depth-1"><a href="#8-1-시대-인덱스era_gate_index" data-for="8-1-시대-인덱스era_gate_index">8-1. 시대 인덱스(era_gate_index)</a></li><li class="depth-1"><a href="#8-2-게이트-노드gate_node" data-for="8-2-게이트-노드gate_node">8-2. 게이트 노드(gate_node)</a></li><li class="depth-1"><a href="#8-3-엣지-레지스트리gate_edges" data-for="8-3-엣지-레지스트리gate_edges">8-3. 엣지 레지스트리(gate_edges)</a></li><li class="depth-0"><a href="#9-금지권장-규칙" data-for="9-금지권장-규칙">9. 금지·권장 규칙</a></li><li class="depth-1"><a href="#9-1-금지" data-for="9-1-금지">9-1. 금지</a></li><li class="depth-1"><a href="#9-2-권장" data-for="9-2-권장">9-2. 권장</a></li><li class="depth-0"><a href="#10-품질-점검-체크리스트" data-for="10-품질-점검-체크리스트">10. 품질 점검 체크리스트</a></li><li class="depth-1"><a href="#10-1-신규-게이트-추가-시" data-for="10-1-신규-게이트-추가-시">10-1. 신규 게이트 추가 시</a></li><li class="depth-1"><a href="#10-2-트리관계-점검" data-for="10-2-트리관계-점검">10-2. 트리(관계) 점검</a></li><li class="depth-0"><a href="#11-변경버전-관리-규칙" data-for="11-변경버전-관리-규칙">11. 변경·버전 관리 규칙</a></li><li class="depth-0"><a href="#12-부록-최소-예시" data-for="12-부록-최소-예시">12. 부록: 최소 예시</a></li><li class="depth-1"><a href="#12-1-gate_node선행후속-예시" data-for="12-1-gate_node선행후속-예시">12-1. gate_node(선행/후속 예시)</a></li><li class="depth-1"><a href="#12-2-gate_edges관계-예시" data-for="12-2-gate_edges관계-예시">12-2. gate_edges(관계 예시)</a></li><li class="depth-0"><a href="#관련-링크" data-for="관련-링크">관련 링크</a></li></ul></div><div class="backlinks"><button type="button" class="backlinks-header" aria-expanded="true" aria-controls="backlinks-panel-12"><h3>백링크</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="backlinks-content" id="backlinks-panel-12"><ul id="list-1" class="overflow"><li><a href="../../00-세계관-공통설정/" class="internal">index</a></li><li><a href="../../01-신계-차원/02-라리셴베르크/" class="internal">index</a></li><li><a href="../../" class="internal">환영합니다! 《엘리스 프라우셰크트》 메인</a></li><li class="overflow-end"></li></ul></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

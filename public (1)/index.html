@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>환영합니다! 《엘리스 프라우셰크트》 메인</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="환영합니다! 《엘리스 프라우셰크트》 메인"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="환영합니다! 《엘리스 프라우셰크트》 메인"/><meta name="twitter:description" content="《엘리스 프라우셰크트》카엘 창작 세계관 🌌 이 사이트는? 🌌 엘리스 프라우셰크트(엘리스 프로젝트)에 오신 것을 환영합니다 이곳은 차원의 장막을 넘어 신지구: 라리셴베르크에 정착한 인류의 방대한 기록 보관소입니다."/><meta property="og:description" content="《엘리스 프라우셰크트》카엘 창작 세계관 🌌 이 사이트는? 🌌 엘리스 프라우셰크트(엘리스 프로젝트)에 오신 것을 환영합니다 이곳은 차원의 장막을 넘어 신지구: 라리셴베르크에 정착한 인류의 방대한 기록 보관소입니다."/><meta property="og:image:alt" content="《엘리스 프라우셰크트》카엘 창작 세계관 🌌 이 사이트는? 🌌 엘리스 프라우셰크트(엘리스 프로젝트)에 오신 것을 환영합니다 이곳은 차원의 장막을 넘어 신지구: 라리셴베르크에 정착한 인류의 방대한 기록 보관소입니다."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/index"/><meta property="twitter:url" content="https://kaelrots.github.io/index"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="《엘리스 프라우셰크트》카엘 창작 세계관 🌌 이 사이트는? 🌌 엘리스 프라우셰크트(엘리스 프로젝트)에 오신 것을 환영합니다 이곳은 차원의 장막을 넘어 신지구: 라리셴베르크에 정착한 인류의 방대한 기록 보관소입니다."/><meta name="generator" content="Quartz"/><link href="./index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="index"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1353" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1353" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-934" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-934" class="mobile-toc-dialog" aria-labelledby="toc-934-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-934-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#-이-사이트는" data-for="-이-사이트는">🌌 이 사이트는?</a></li><li class="depth-1"><a href="#-엘리스-프라우셰크트엘리스-프로젝트에-오신-것을-환영합니다" data-for="-엘리스-프라우셰크트엘리스-프로젝트에-오신-것을-환영합니다">🌌 엘리스 프라우셰크트(엘리스 프로젝트)에 오신 것을 환영합니다</a></li><li class="depth-2"><a href="#-엘리스-프라우셰크트-세계관-탐험-가이드" data-for="-엘리스-프라우셰크트-세계관-탐험-가이드">🧭 엘리스 프라우셰크트 세계관 탐험 가이드</a></li><li class="depth-2"><a href="#-문서-상태-안내-필독" data-for="-문서-상태-안내-필독">📢 문서 상태 안내 (필독)</a></li><li class="depth-1"><a href="#-사이트-이용-방법" data-for="-사이트-이용-방법">🧭 사이트 이용 방법</a></li><li class="depth-2"><a href="#-최근-수정된-문서들" data-for="-최근-수정된-문서들">🚀 최근 수정된 문서들</a></li><li class="depth-2"><a href="#-복원-문서-관련" data-for="-복원-문서-관련">📢 복원 문서 관련</a></li><li class="depth-1"><a href="#-사이트를-만든-목적" data-for="-사이트를-만든-목적">🌟 사이트를 만든 목적</a></li><li class="depth-1"><a href="#-최근-업데이트-사항-퍼블리시-웹" data-for="-최근-업데이트-사항-퍼블리시-웹">❓ 최근 업데이트 사항 (퍼블리시 웹)</a></li><li class="depth-1"><a href="#-저작권" data-for="-저작권">🔒 저작권</a></li><li class="depth-1"><a href="#-기타" data-for="-기타">💫 기타</a></li><li class="depth-0"><a href="#-저작권-및-이용-제한-안내" data-for="-저작권-및-이용-제한-안내">🚫 저작권 및 이용 제한 안내</a></li><li class="depth-1"><a href="#-무단-이용-금지-사항" data-for="-무단-이용-금지-사항">🔒 무단 이용 금지 사항</a></li><li class="depth-1"><a href="#️-법적-책임-안내" data-for="️-법적-책임-안내">⚖️ 법적 책임 안내</a></li><li class="depth-1"><a href="#-이용-문의-및-협의" data-for="-이용-문의-및-협의">📩 이용 문의 및 협의</a></li><li class="depth-1"><a href="#-주의" data-for="-주의">📌 주의</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1353"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1353" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><h1 class="article-title">환영합니다! 《엘리스 프라우셰크트》 메인</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:34.009Z">2026년 9월 30일</time><span>14 분 소요</span></p></div></div><article class="popover-hint"><p><font style="font-weight:bold;font-size:1.85em;"></font></p><center><font style="font-weight:bold;font-size:1.85em;"><font color="#88dfd0">《엘리스 프라우셰크트》<br/>카엘 창작 세계관</font></font></center><p></p>
+<img src="./assets/media/엘리시움-연방-문장-(채색).png" alt="엘리시움 연방 문장 (채색).png" width="400"/>
+<h1 id="-이-사이트는">🌌 이 사이트는?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-이-사이트는" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="-엘리스-프라우셰크트엘리스-프로젝트에-오신-것을-환영합니다">🌌 엘리스 프라우셰크트<code>(엘리스 프로젝트)</code>에 오신 것을 환영합니다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-엘리스-프라우셰크트엘리스-프로젝트에-오신-것을-환영합니다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이곳은 차원의 장막을 넘어 <font style="font-weight:bold;">신지구: 라리셴베르크</font>에 정착한 인류의 방대한 기록 보관소입니다.
+<font style="font-weight:bold;">엘리시움 신성제국 연방</font>을 중심으로 펼쳐지는 마법과 과학, 역사와 헌정의 이야기를 탐험해 보세요.</p>
+<hr class="hr-thick-3"/>
+<h3 id="-엘리스-프라우셰크트-세계관-탐험-가이드">🧭 엘리스 프라우셰크트 세계관 탐험 가이드<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-엘리스-프라우셰크트-세계관-탐험-가이드" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 거대한 세계의 <font style="font-weight:bold;">10가지 핵심 축</font>을 따라 여행을 시작해 보세요.</p>
+<ol>
+<li><font style="font-weight:bold;">역사의 흐름</font>: <a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/라리셴베르크의-시대-구분" class="internal alias" data-slug="01-신계-차원/02-라리셴베르크/02-역사·시대/라리셴베르크의-시대-구분">라리셴베르크의 시대 구분</a> — 선사시대부터 우주시대까지, 문명의 흥망성쇠와 거대한 연대기
+<ul>
+<li><font style="font-weight:bold;">구지구의 기억</font>: <a href="./02-구계-차원/01-태양계/01-에아르트/역사-및-설정/제73분기-구지구의-역사-분기점" class="internal alias" data-slug="02-구계-차원/01-태양계/01-에아르트/역사-및-설정/제73분기-구지구의-역사-분기점">제73분기 구지구의 역사 분기점</a> — 제1차 대전이로 멸망한 <font style="font-weight:bold;">제73분기 지구(에아르트)</font>의 엇갈린 역사</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">세계의 지도</font>: <a href="./01-신계-차원/02-라리셴베르크/01-지리·지역/지역-목록" class="internal alias" data-slug="01-신계-차원/02-라리셴베르크/01-지리·지역/지역-목록">지역 목록</a> — 지구 표면적의 6,003배에 달하는 거대한 행성의 대륙과 전략 요충지</li>
+<li><font style="font-weight:bold;">통치와 법</font>: <a href="./01-신계-차원/02-라리셴베르크/03-국가·정치/엘리시움-신성제국-연방/01-헌정·헌법/엘리시움-연방-헌법" class="internal alias" data-slug="01-신계-차원/02-라리셴베르크/03-국가·정치/엘리시움-신성제국-연방/01-헌정·헌법/엘리시움-연방-헌법">엘리시움 연방 헌법</a> — 신성 제국이자 <font style="font-weight:bold;">‘일극우위 연방’</font>인 국가의 헌정 질서와 통치 구조
+<ul>
+<li><font style="font-weight:bold;">구지구의 유산</font>: <a href="./02-구계-차원/01-태양계/01-에아르트/국가-설정/제73분기-구지구-국가-설정" class="internal alias" data-slug="02-구계-차원/01-태양계/01-에아르트/국가-설정/제73분기-구지구-국가-설정">제73분기 구지구 국가 설정</a> — 대전이 이전, 구지구에 존재했던 국가들의 기록</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">힘의 원리</font>: <a href="./00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정" class="internal alias" data-slug="00-세계관-공통설정/04-능력·마법·에너지/마법-기본설정">마법 기본설정</a> — 차원의 섭리를 빌려 세계를 비틀어내는 이능력(마법·신성력·생명력)의 법칙</li>
+<li><font style="font-weight:bold;">행정 체계</font>: <a href="./01-신계-차원/02-라리셴베르크/01-지리·지역/라리셴베르크의-지역-구분" class="internal alias" data-slug="01-신계-차원/02-라리셴베르크/01-지리·지역/라리셴베르크의-지역-구분">라리셴베르크의 지역 구분</a> — <font style="font-weight:bold;">거대한 행성을 통치하기 위한 황제직할령과 자치령의 이원화된 행정 구조</font></li>
+<li><font style="font-weight:bold;">기술 문명</font>: <a href="./00-세계관-공통설정/07-분류·표준·메타설정/기술-연구-테크트리-서술-규칙-표준-사전" class="internal alias" data-slug="00-세계관-공통설정/07-분류·표준·메타설정/기술-연구-테크트리-서술-규칙-표준-사전">기술 연구 테크트리 서술 규칙 표준 사전</a> — <font style="font-weight:bold;">하이퍼레인</font> 개통부터 <font style="font-weight:bold;">모노리스</font> 완성, 그리고 <font style="font-weight:bold;">기술 게이트(Tech Gate)</font>를 넘어 우주로 향하는 문명의 도약</li>
+<li><font style="font-weight:bold;">신인류의 생태</font>: <a href="./00-세계관-공통설정/03-존재·종족/신인류" class="internal alias" data-slug="00-세계관-공통설정/03-존재·종족/신인류">신인류</a> — 차원 간섭으로 진화하여 노화를 극복하고 이능을 각성한 새로운 인류의 생태
+<ul>
+<li><font style="font-weight:bold;">영혼의 위계</font>: <a href="./00-세계관-공통설정/03-존재·종족/초월자" class="internal alias" data-slug="00-세계관-공통설정/03-존재·종족/초월자">초월자</a> — <font style="font-weight:bold;">영혼의 격(格)</font>을 높여 신의 경지에 다다른 <font style="font-weight:bold;">21인의 초월자</font>와 승격의 단계</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">차원과 재난</font>: <a href="./00-세계관-공통설정/01-우주론·차원/차원류" class="internal alias" data-slug="00-세계관-공통설정/01-우주론·차원/차원류">차원류</a>, <a href="./00-세계관-공통설정/02-대전이·차원재난/대전이" class="internal alias" data-slug="00-세계관-공통설정/02-대전이·차원재난/대전이">대전이</a> — 세계를 멸망시켰던 <font style="font-weight:bold;">차원 장막의 붕괴(대전이)</font>와 그 전조가 되는 <font style="font-weight:bold;">에너지의 흐름(차원류)</font>에 대한 기록</li>
+<li><font style="font-weight:bold;">언어와 문자</font>: <a href="./01-신계-차원/02-라리셴베르크/06-언어·문자/엘루닉어/90-사료·구단어집/단어집" class="internal alias" data-slug="01-신계-차원/02-라리셴베르크/06-언어·문자/엘루닉어/90-사료·구단어집/단어집">단어집</a>, <a href="./01-신계-차원/02-라리셴베르크/06-언어·문자/엘루닉어/현대-엘루닉어/현대-엘루닉어-기본설정" class="internal alias" data-slug="01-신계-차원/02-라리셴베르크/06-언어·문자/엘루닉어/현대-엘루닉어/현대-엘루닉어-기본설정">현대 엘루닉어 기본설정</a> — 고대와 현대를 잇는 <font style="font-weight:bold;">문자(엘룬)</font>와, 모든 연방 신민을 하나로 묶는 <font style="font-weight:bold;">공용어(엘루닉어)</font>의 체계</li>
+<li><font style="font-weight:bold;">시간과 달력</font>: <a href="./01-신계-차원/01-천체·우주지리/03-류아블론츠-성계/류아블론츠-성계-정보-설정#행성-신지구-라리셴베르크" class="internal alias" data-slug="01-신계-차원/01-천체·우주지리/03-류아블론츠-성계/류아블론츠-성계-정보-설정">행성 신지구 라리셴베르크</a> — <font style="font-weight:bold;">1년이 1,440일(48개월)</font>인 거대 행성의 독자적인 시간 감각과 역법</li>
+</ol>
+<p align="right">💠 일부 미작성 문서가 포함되어 있을 수 있습니다.</p>
+<hr class="hr-thick-3"/>
+<h3 id="-문서-상태-안내-필독">📢 문서 상태 안내 (필독)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-문서-상태-안내-필독" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 사이트에는 10년 넘게 축적된 방대한 설정이 혼재되어 있습니다. 문서 상단의 <font style="font-weight:bold;">경고문</font>을 꼭 확인해 주세요.</p>
+<blockquote class="callout note is-collapsible" data-callout="note" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>문서 범례 </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<ul>
+<li><font style="font-weight:bold;">[정식 설정]</font>: 별도 경고문이 없는 최신 문서입니다. (A루트 정사)</li>
+<li><font style="font-weight:bold;">[복원 문서]</font>: 과거(2011~2023) 노트를 디지털화한 것으로, 현 설정과 다를 수 있습니다.</li>
+<li><font style="font-weight:bold;">[B루트]</font>: 멸망 시나리오인 《잔망의 헬라이오스》 전용 설정입니다.</li>
+</ul>
+</div>
+</blockquote>
+<ul>
+<li>이 사이트는 Obsidian의 Publish 서비스를 이용하여 제작된 사이트입니다.</li>
+<li><font style="font-weight:bold;">다크 모드</font>를 기준으로 제작하였습니다. 라이트 모드는 현재 지원되지 않습니다.</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h2 id="-사이트-이용-방법">🧭 사이트 이용 방법<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-사이트-이용-방법" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><span style="background:rgba(136, 223, 208, 0.55);">좌측에 메뉴</span>가 존재합니다. 폴더를 누르면 폴더 내부의 문서가 보입니다.</li>
+<li>읽고 싶은 문서를 클릭하면 해당 문서가 열립니다.</li>
+<li>하이퍼링크 ex) <a href="./90-볼트-운영/01-수정기록/템플릿-수정-기록" class="internal alias" data-slug="90-볼트-운영/01-수정기록/템플릿-수정-기록">템플릿 수정 기록</a> 를 누르면 해당 문서로 바로 이동됩니다.</li>
+<li>우측에는 현재 문서와 관련된 문서가 상단에 그래프 뷰로 표시됩니다.</li>
+<li>우측 하단에는 현재 문서의 목차가 나옵니다. 원하는 파트를 클릭하면 바로 그 부분으로 스크롤됩니다.</li>
+</ul>
+<hr class="hr-thick-3"/>
+<h3 id="-최근-수정된-문서들">🚀 최근 수정된 문서들<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-최근-수정된-문서들" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<center><font style="font-size:1.5em;"><a class="internal-link internal alias" data-href="90-볼트 운영/01-수정기록/수정 기록 모음" href="./90-볼트-운영/01-수정기록/수정-기록-모음" data-slug="90-볼트-운영/01-수정기록/수정-기록-모음">
+  》》》》》 수정 기록 모음 《《《《《
+</a>
+</font></center>
+<font style="font-size:1.25em;"><a class="internal-link internal alias" data-href="90-볼트 운영/01-수정기록/수정 기록 모음" href="./90-볼트-운영/01-수정기록/수정-기록-모음" data-slug="90-볼트-운영/01-수정기록/수정-기록-모음">수정 기록 모음</a></font>에서 최근 수정된 문서, 가장 많이 수정된 문서, 최근 30일 이내 수정된 문서 (최대 30개)의 리스트를 볼 수 있습니다.
+-  가장 많이 수정된 문서의 수정 기록의 시작은 2025.08.04. 이후부터 집계되었습니다.
+<hr class="hr-thick-3"/>
+<h3 id="-복원-문서-관련">📢 복원 문서 관련<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-복원-문서-관련" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font color="#ff69b4">복원 여부에 체크</font>되어 있는 문서는 <font color="#ff69b4">최신화되지 않은 문서</font>입니다.</li>
+<li>이 문서들은 단순히 과거 기록을 디지털화하여 복원한 것일 뿐입니다.
+<ul>
+<li>2011년에서 2023년 사이에 작성된 노트, Word, Excel, Sheet 기록을 단순 복원한 것입니다.</li>
+<li><font color="#ff69b4">현재 제 머릿속에 있는 설정이나, 최신 설정 등과는 맞지 않을 수 있습니다.</font></li>
+<li>새로이 정립된 세부적인 설정, 사용되는 단어의 어조나 형식, 개념 등과 정합성이 어긋날 수 있습니다.
+<ul>
+<li>이러한 경우에는 복원 여부에 체크되지 않은, <font color="#88dfd0">새로이 작성된 문서의 설정이 정식 설정</font>입니다.</li>
+<li>템플릿 제작 작업이 끝나면, 템플릿 형식을 기준으로 <font color="#88dfd0">모든 복원 문서는 리빌딩 될 예정</font>입니다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>복원된 문서에는 하단과 같은 경고 문구가 작성되어 있습니다.</li>
+</ul>
+<blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>복원 문서 주의 사항 </p></div>
+                  
+                </div>
+<div class="callout-content">
+<center>이 문서는 최신화되지 않았습니다.<br/>단순히 과거의 기록을 복원한 문서입니다.<br/>세부 설정, 사용 단어와 개념 등에서 정합성이 어긋날 수 있습니다.<br/>(2011년 ~ 2023년 사이 원문이 작성된 문서)</center>
+</div>
+</blockquote>
+<ul>
+<li>기타 경고문은 <a href="./90-볼트-운영/01-수정기록/웹-가이드/각종-경고문-가이드" class="internal alias" data-slug="90-볼트-운영/01-수정기록/웹-가이드/각종-경고문-가이드">각종 경고문 가이드</a> 에서 확인 부탁드립니다.</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h2 id="-사이트를-만든-목적">🌟 사이트를 만든 목적<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-사이트를-만든-목적" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>카엘 창작 세계관 프로젝트: <font style="font-weight:bold;"><font color="#88dfd0">《엘리스 프라우셰크트》</font></font> 와 관련된 설정 문서들과 그를 보조할 시각 자료 등을 함께 보실 수 있습니다.</li>
+<li>원하는 문서를 둘러보시고, 고칠 부분이나 피드백 주실 부분이 있다면, <font color="#88dfd0">디스코드 @h_kael (카엘)</font>로 연락주시길 바랍니다.</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h2 id="-최근-업데이트-사항-퍼블리시-웹">❓ 최근 업데이트 사항 (퍼블리시 웹)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-최근-업데이트-사항-퍼블리시-웹" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>표가 <span style="background:rgba(136, 223, 208, 0.55);">좌우로 길어질 경우</span>, 자동으로 <span style="background:rgba(136, 223, 208, 0.55);">횡방향 스크롤이 생성</span>됩니다.
+<ul>
+<li><span style="background:rgba(136, 223, 208, 0.55);">마우스로 드래그</span>하여 본문 크기를 초과한 부분의 표를 볼 수 있습니다.</li>
+</ul>
+</li>
+<li>일정 이하의 해상도, 일정 이상의 UI 배율로 인해서 <span style="background:rgba(255, 215, 0, 0.55);">우측 패널</span>의 표시가 어려울 경우, 우측 패널이 보이지 않습니다.
+<ul>
+<li>현재 위치한 <span style="background:rgba(255, 215, 0, 0.55);">문서와 타 문서 간의 연계를 시각화</span>시킨 표.</li>
+<li>현재 위치한 <span style="background:rgba(255, 215, 0, 0.55);">문서의 헤더를 모은 목차</span> 리스트.</li>
+</ul>
+</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h2 id="-저작권">🔒 저작권<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-저작권" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>문서 형식, 세부 설정, 창작 용어, 창작 언어 등을 포함한 카엘의 창작 세계관의 모든 문서와 시각 자료의 저작권은 저(카엘)에게 있습니다.</li>
+<li>하단에서 <a href="#-%EC%A0%80%EC%9E%91%EA%B6%8C-%EB%B0%8F-%EC%9D%B4%EC%9A%A9-%EC%A0%9C%ED%95%9C-%EC%95%88%EB%82%B4" class="internal alias">저작권 관련 내용</a>을 서술했습니다.</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h2 id="-기타">💫 기타<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-기타" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>404 Error가 뜬다면, 제가 아직 해당 문서를 작성하지 않았거나, 작성하였지만 퀄리티 문제로 퍼블리시하여 웹에 게재하지 않은 상태입니다.</li>
+<li>자유롭게 둘러보실 수 있도록 인링크와 표의 시인성을 계속 보강중입니다.</li>
+<li>2025년 7월 27일 (일요일), 오전 01시 59분 (01:59) 기준으로, 제가 옵시디언에서 편집하면서 보는 화면과 여러분이 웹에서 보는 화면이 거의 일치합니다!</li>
+</ul>
+<hr class="hr-thick-1"/>
+<h1 id="-저작권-및-이용-제한-안내">🚫 저작권 및 이용 제한 안내<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-저작권-및-이용-제한-안내" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote class="callout warning is-collapsible" data-callout="warning" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>저작권 경고 (Copyright Warning) </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p>　이 웹사이트(<code>https://publish.obsidian.md/kael/</code>)에 게시된 모든 텍스트, 이미지, 지도, 설정 문서 및 기타 창작물 일체(이하 “콘텐츠”)는 대한민국 「저작권법」 및 국제조약(베른협약, WIPO 저작권 조약 등)에 따라 보호받는 저작물이며, 해당 권리는 저작자인 <font style="font-weight:bold;">카엘(Kael)</font> 에게 있습니다.</p>
+<p>　단, 일부 시각적 자료(이미지)의 경우에는 외부 작가님에게 커미션의 형태로 의뢰하여 완성된 것일 수 있습니다. 이러한 자료의 무단 도용 및 사용은 해당 작가님의 저작권자로서의 권리를 침해하는 행위이며, 그와 관련된 법적 조치와 책임에 대해서는 본 사이트의 소유주는 책임을 지지 않습니다.</p>
+</div>
+</blockquote>
+<hr class="hr-thick-2"/>
+<h2 id="-무단-이용-금지-사항">🔒 무단 이용 금지 사항<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-무단-이용-금지-사항" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>다음 행위는 명백한 <font style="font-weight:bold;">저작권 침해</font>에 해당하며, 민·형사상 책임이 발생할 수 있습니다:</p>
+<ul>
+<li>저작자의 동의 없이 콘텐츠를 <font style="font-weight:bold;">복제</font>, <font style="font-weight:bold;">배포</font>, <font style="font-weight:bold;">가공</font>, <font style="font-weight:bold;">스크린샷</font>, <font style="font-weight:bold;">다운로드</font>, <font style="font-weight:bold;">2차적 저작물로 이용</font>하는 행위</li>
+<li>이미지 또는 문서 파일을 <font style="font-weight:bold;">링크 없이 외부 공유</font>하거나, <font style="font-weight:bold;">원저작자를 표시하지 않는 형태로 이용</font>하는 행위</li>
+<li>개인적인 감상 외의 목적으로 저장, 재게시, 상업적 활용하는 행위</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h2 id="️-법적-책임-안내">⚖️ 법적 책임 안내<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-법적-책임-안내" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>대한민국 「저작권법」 제136조에 따라, 상업적 목적 없이도 <font style="font-weight:bold;">권리자의 허락 없이 저작물을 복제하거나 배포한 자는 5년 이하의 징역 또는 5천만 원 이하의 벌금</font>에 처해질 수 있습니다.</li>
+<li>국제적으로도 베른협약 및 WIPO 저작권 조약에 따라 <font style="font-weight:bold;">저작권 보호는 국경을 초월하며</font>, 해당 콘텐츠가 해외에서 무단 도용될 경우 <font style="font-weight:bold;">국제 저작권 보호 기관 또는 현지 법률에 따라 법적 조치를 받을 수 있습니다.</font></li>
+</ul>
+<hr class="hr-thick-2"/>
+<h2 id="-이용-문의-및-협의">📩 이용 문의 및 협의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-이용-문의-및-협의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>합법적인 인용 또는 이용이 필요한 경우, 아래 연락처를 통해 사전 허락을 요청해주시기 바랍니다.
+Discord: @h_kael (카엘)
+𝕏: @Kaelrots (카엘)
+E-Mail: <a href="mailto:hyeonkael@gmail.com" class="external">hyeonkael@gmail.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+※ 문의 시 용도, 범위, 플랫폼 등을 상세히 기재해 주세요.</li>
+</ul>
+<hr class="hr-thick-2"/>
+<h2 id="-주의">📌 주의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-주의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout warning is-collapsible" data-callout="warning" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>주의 </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p><font style="font-weight:bold;">스크린 캡처, 브라우저 캐시 추출 등 기술적 회피 시도는 모두 의도된 저작권 회피 행위로 간주</font>되며, 그에 따른 법적 조치는 저작권자의 재량에 따라 엄중히 진행됩니다.</p>
+</div>
+</blockquote></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-550"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-550"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-935" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-935" class="toc-content"><li class="depth-0"><a href="#-이-사이트는" data-for="-이-사이트는">🌌 이 사이트는?</a></li><li class="depth-1"><a href="#-엘리스-프라우셰크트엘리스-프로젝트에-오신-것을-환영합니다" data-for="-엘리스-프라우셰크트엘리스-프로젝트에-오신-것을-환영합니다">🌌 엘리스 프라우셰크트(엘리스 프로젝트)에 오신 것을 환영합니다</a></li><li class="depth-2"><a href="#-엘리스-프라우셰크트-세계관-탐험-가이드" data-for="-엘리스-프라우셰크트-세계관-탐험-가이드">🧭 엘리스 프라우셰크트 세계관 탐험 가이드</a></li><li class="depth-2"><a href="#-문서-상태-안내-필독" data-for="-문서-상태-안내-필독">📢 문서 상태 안내 (필독)</a></li><li class="depth-1"><a href="#-사이트-이용-방법" data-for="-사이트-이용-방법">🧭 사이트 이용 방법</a></li><li class="depth-2"><a href="#-최근-수정된-문서들" data-for="-최근-수정된-문서들">🚀 최근 수정된 문서들</a></li><li class="depth-2"><a href="#-복원-문서-관련" data-for="-복원-문서-관련">📢 복원 문서 관련</a></li><li class="depth-1"><a href="#-사이트를-만든-목적" data-for="-사이트를-만든-목적">🌟 사이트를 만든 목적</a></li><li class="depth-1"><a href="#-최근-업데이트-사항-퍼블리시-웹" data-for="-최근-업데이트-사항-퍼블리시-웹">❓ 최근 업데이트 사항 (퍼블리시 웹)</a></li><li class="depth-1"><a href="#-저작권" data-for="-저작권">🔒 저작권</a></li><li class="depth-1"><a href="#-기타" data-for="-기타">💫 기타</a></li><li class="depth-0"><a href="#-저작권-및-이용-제한-안내" data-for="-저작권-및-이용-제한-안내">🚫 저작권 및 이용 제한 안내</a></li><li class="depth-1"><a href="#-무단-이용-금지-사항" data-for="-무단-이용-금지-사항">🔒 무단 이용 금지 사항</a></li><li class="depth-1"><a href="#️-법적-책임-안내" data-for="️-법적-책임-안내">⚖️ 법적 책임 안내</a></li><li class="depth-1"><a href="#-이용-문의-및-협의" data-for="-이용-문의-및-협의">📩 이용 문의 및 협의</a></li><li class="depth-1"><a href="#-주의" data-for="-주의">📌 주의</a></li></ul></div><div class="backlinks"><button type="button" class="backlinks-header" aria-expanded="true" aria-controls="backlinks-panel-336"><h3>백링크</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="backlinks-content" id="backlinks-panel-336"><ul id="list-1" class="overflow"><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/01-상대-고대-시대/레니베츠-건국" class="internal">레니베츠 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/01-상대-고대-시대/베테르츠-건국" class="internal">베테르츠 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/01-상대-고대-시대/셰닐리야-건국" class="internal">셰닐리야 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/01-상대-고대-시대/아흐가르트-건국" class="internal">아흐가르트 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/01-상대-고대-시대/오베일로니아-건국" class="internal">오베일로니아 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/02-중하대-고대-시대/루베이츠-건국" class="internal">루베이츠 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/02-중하대-고대-시대/셰닐리츠-왕국-건국" class="internal">셰닐리츠 왕국 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/02-중하대-고대-시대/일로니아-건국" class="internal">일로니아 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/02-중하대-고대-시대/케뤼테르츠-건국" class="internal">케뤼테르츠 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/02-중하대-고대-시대/크로벨츠-건국" class="internal">크로벨츠 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/02-중하대-고대-시대/하노아이아-건국" class="internal">하노아이아 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/02-중하대-고대-시대/헤르에르트-건국" class="internal">헤르에르트 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/03-초기-중세-시대/셰브라이-독립" class="internal">셰브라이 독립</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/03-초기-중세-시대/케뤼테르츠-그루펜츠-전쟁" class="internal">케뤼테르츠-그루펜츠 전쟁</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/06-근세-시대/듀벨로니아-왕국-건국" class="internal">듀벨로니아 왕국 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/07-초기-근대-시대/가르테르온-왕국-건국" class="internal">가르테르온 왕국 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/07-초기-근대-시대/둥펑린-인민공화국-건국" class="internal">둥펑린 인민공화국 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/07-초기-근대-시대/로블린-왕국-건국" class="internal">로블린 왕국 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/07-초기-근대-시대/셰톤-인민공화국-건국" class="internal">셰톤 인민공화국 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/07-초기-근대-시대/시안-대공국-성립" class="internal">시안 대공국 성립</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/그라츠-전쟁" class="internal">그라츠 전쟁</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/그랑블루츠-자치령-설립-승인" class="internal">그랑블루츠 자치령 설립 승인</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/그륫트-조약" class="internal">그륫트 조약</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/다이알로트-조약" class="internal">다이알로트 조약</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/라그라티온-작전" class="internal">라그라티온 작전</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/라이엔토니-연방제국-성립" class="internal">라이엔토니 연방제국 성립</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/레피츠린트-광맥-대량-발견" class="internal">레피츠린트 광맥 대량 발견</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/아셰르-선언" class="internal">아셰르 선언</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/안티나트로스-공화국-건국" class="internal">안티나트로스 공화국 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/08-중기-근대-시대/타브로이츠-조약" class="internal">타브로이츠 조약</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/가르덴티츠-대공국-설립" class="internal">가르덴티츠 대공국 설립</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/듀엘란-조약" class="internal">듀엘란 조약</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/라카렐린스크의-굴욕" class="internal">라카렐린스크의 굴욕</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/루스트니아-자치령-설립" class="internal">루스트니아 자치령 설립</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/류엘로츠-조약" class="internal">류엘로츠 조약</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/세일로니아-왕국-독립" class="internal">세일로니아 왕국 독립</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/셀란베르트-안줄란트-연합왕국-성립" class="internal">셀란베르트-안줄란트 연합왕국 성립</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/아나토레크-자치령-설치" class="internal">아나토레크 자치령 설치</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제1기/09-후기-근대-시대/아나토레크-전쟁" class="internal">아나토레크 전쟁</a></li><li><a href="./01-신계-차원/02-라리셴베르크/02-역사·시대/연대기/제2기/크랴니츠-공국-건국" class="internal">크랴니츠 공국 건국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/03-국가·정치/제2기-국가/자주-국가/3-지역일반국/크랴니츠-공국" class="internal">크랴니츠 공국</a></li><li><a href="./01-신계-차원/02-라리셴베르크/05-문화·종교/제국도교/루벨리니온-제국도교" class="internal">루벨리니온 제국도교</a></li><li><a href="./90-볼트-운영/01-수정기록/복각용-원문-문서-목록" class="internal">복각용 원문 문서 목록</a></li><li><a href="./90-볼트-운영/03-작업계획·감사보고/볼트-구조개편/엘리스_프라우셰크트_세계관_볼트_구조개편_마이그레이션_매니페스트_v1.2_현재구조반영_2026-09-30" class="internal">엘리스_프라우셰크트_세계관_볼트_구조개편_마이그레이션_매니페스트_v1.2_현재구조반영_2026-09-30</a></li><li class="overflow-end"></li></ul></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript.js" type="module" data-persist="true"></script></html>

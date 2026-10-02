@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>보완_패치_모음_검토용</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="보완_패치_모음_검토용"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="보완_패치_모음_검토용"/><meta name="twitter:description" content="보완 패치 모음 (검토용) 이번 보강의 목표 후천 형질 세습(유전/각인/제도)을 3층 구조로 정리해서, “혈통 우월성”이 생물학+형이상+사회구조로 동시에 굴러가게 만들기."/><meta property="og:description" content="보완 패치 모음 (검토용) 이번 보강의 목표 후천 형질 세습(유전/각인/제도)을 3층 구조로 정리해서, “혈통 우월성”이 생물학+형이상+사회구조로 동시에 굴러가게 만들기."/><meta property="og:image:alt" content="보완 패치 모음 (검토용) 이번 보강의 목표 후천 형질 세습(유전/각인/제도)을 3층 구조로 정리해서, “혈통 우월성”이 생물학+형이상+사회구조로 동시에 굴러가게 만들기."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/보완_패치_모음_검토용"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/보완_패치_모음_검토용"/><link rel="icon" href="../../../../static/icon.png"/><meta name="description" content="보완 패치 모음 (검토용) 이번 보강의 목표 후천 형질 세습(유전/각인/제도)을 3층 구조로 정리해서, “혈통 우월성”이 생물학+형이상+사회구조로 동시에 굴러가게 만들기."/><meta name="generator" content="Quartz"/><link href="../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/보완_패치_모음_검토용"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1174" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1174" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-772" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-772" class="mobile-toc-dialog" aria-labelledby="toc-772-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-772-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#보완-패치-모음-검토용" data-for="보완-패치-모음-검토용">보완 패치 모음 (검토용)</a></li><li class="depth-1"><a href="#이번-보강의-목표" data-for="이번-보강의-목표">이번 보강의 목표</a></li><li class="depth-1"><a href="#적용-파일핵심" data-for="적용-파일핵심">적용 파일(핵심)</a></li><li class="depth-0"><a href="#patch-1-설정-보강--신규-문서--연구트리-항목-추가" data-for="patch-1-설정-보강--신규-문서--연구트리-항목-추가">PATCH 1) 설정 보강 + 신규 문서 + 연구트리 항목 추가</a></li><li class="depth-1"><a href="#적용-후-셀프-체크리스트" data-for="적용-후-셀프-체크리스트">적용 후 셀프 체크리스트</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1174"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1174" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/">02 일지·브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/">99 정리해야 하는 설정 브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/">제2권역; 역사와 인류</a></div></nav><h1 class="article-title">보완_패치_모음_검토용</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:33.522Z">2026년 9월 30일</time><span>25 분 소요</span></p><ul class="tags"><li><a href="../../../../tags/" class="internal tag-link"></a></li></ul></div></div><article class="popover-hint"><h1 id="보완-패치-모음-검토용">보완 패치 모음 (검토용)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#보완-패치-모음-검토용" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="이번-보강의-목표">이번 보강의 목표<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이번-보강의-목표" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><font style="font-weight:bold;">후천 형질 세습(유전/각인/제도)</font>을 3층 구조로 정리해서, “혈통 우월성”이 <em>생물학+형이상+사회구조</em>로 동시에 굴러가게 만들기.</li>
+<li><font style="font-weight:bold;">환생/기억 계승</font>을 0~5 스펙으로 표준화해서, 신인류/초월자/차원 구분 문서 간의 표현을 <font style="font-weight:bold;">서로 호환</font>시키기.</li>
+</ul>
+<h2 id="적용-파일핵심">적용 파일(핵심)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#적용-파일핵심" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>신인류.md</code> : 유전/각인/제도 3층 구조 + 출생/재생산 + 사망/환생(스펙/위계)</li>
+<li><code>차원 구분 용어 정의.md</code> : 캔버스/픽셀 모델 + 영혼 위계/기억 계승 스펙</li>
+<li><code>초월자.md</code> : 초월자 위계가 기억 계승 스펙과 연결된다는 보강 노트</li>
+<li><code>제2기 연구트리 ... 반영본.md</code> : 3-11E) Memory Ladder 항목 추가</li>
+<li>(신규) <code>영혼 순환 · 환생 · 세습 규정.md</code></li>
+</ul>
+<hr/>
+<h1 id="patch-1-설정-보강--신규-문서--연구트리-항목-추가">PATCH 1) 설정 보강 + 신규 문서 + 연구트리 항목 추가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#patch-1-설정-보강--신규-문서--연구트리-항목-추가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="diff" data-theme="github-light github-dark"><code data-language="diff" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;">--- a/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/01-#Uc2e0#Uacc4 #Uad00#Ub828/00-#Uc911#Uc2ec #Uc124#Uc815 #Ubc0f #Uc2dc#Ub300/#Uc2e0#Uc778#Ub958.md</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+++ b/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/01-#Uc2e0#Uacc4 #Uad00#Ub828/00-#Uc911#Uc2ec #Uc124#Uc815 #Ubc0f #Uc2dc#Ub300/#Uc2e0#Uc778#Ub958.md</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ## 유전적 특이성</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> </span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 신인류는 유전적으로 특이성을 가지고 있다.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 신인류의 귀족 계층/황족/고위 직위를 가진 자들은 이러한 차이점을 바탕으로,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 태어나자마자 신을 믿는 신앙인을 양산할 수 있는 기반이 되며, 종교 국가를 쉽게 세울 수 있게 되었다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 후천 형질과 세습: 기본 규칙과 예외</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **기본 규칙**: 개인이 후천적으로 얻은 지식·근육·전투 숙련·마력 운용 기술은 **그 자체로** 자손에게 유전되지 않는다.  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+  (세습되는 것은 ‘훈련 결과’가 아니라, *훈련을 가능하게 하는 선천적 바탕*과 *그 바탕을 극대화하는 사회·제도*다.)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **예외 A — 생식세포 변이(각인)**: 차원류/혼돈계 에너지의 장기·고농도 노출, 혹은 의도적 **태아 각인 의례**는 **생식세포(또는 태아 발달 과정)**에 변이를 남겨, 특정 형질(마력회로 민감도, 신경-마력 동기화, 감각 스펙트럼 등)을 *유전 가능한 형태*로 고정시킬 수 있다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **예외 B — 후성(後性)유전**: 극단적 환경·강한 스트레스·특정 약물/의례로 생긴 후성유전적 표지는 **일부 세대에 한해** 약하게 전달될 수 있으나, 장기적으로는 희미해지거나 리셋되기 쉽다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **예외 C — 문화/제도 세습**: 교육·교단·가문 네트워크·자원 접근성으로 인해 ‘후천적 성취’가 **통계적으로** 세대 간 재현된다(실질적 세습). 이는 생물학적 유전과 구분한다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 혈통 우월성의 3층 구조</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 층위 | 무엇이 세습되는가 | 어떻게 유지되는가 | 깨지는 지점 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+|---|---|---|---|</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 1층: 유전자(선천) | 감각/대사/신경·근육 기본치, 마력 감응성의 바닥값 | 가문 내 선택 교배, 태아 각인, 차원류 관리 | 혼혈·무작위 교배, 장기 저노출 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 2층: 영혼 각인(형이상) | ‘잠재력의 천장’, 기억 계승 확률, 차원 적합성 | 교단 의례, 훈련을 통한 영혼 등급 상승, 환생 유도 | 영혼 소모(과도한 차원 간섭), 파편화 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 3층: 제도(사회) | 교육·자원·정보·법적 특권 | 귀족제/교단/국가의 배분 구조 | 혁명·붕괴·전쟁, 제도 개편 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> [!tip]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> **정리**: “후천 형질이 유전되나?”에 대한 작중 대답은 **‘원칙적으로는 아니오’**.  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> 다만 **차원류/의례/각인**이 생식세포·태아 발달에 개입하면, ‘후천을 유전으로 바꾸는 경로’가 열린다.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> </span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ## 출생과 재생산</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 개요</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+신지구 신인류의 재생산은 **생물학적 임신/출산**을 기본으로 하되, 차원 간섭과 종교·국가 제도로 인해 다음의 3요소가 결합된 형태로 운영된다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+1. **유전(선천)**: 혈통 유전자의 기본치</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+2. **각인(태아/생식세포 단계 개입)**: 차원류/의례/약물/마법을 통한 *유전 가능한 고정*</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+3. **선별/교육(사회)**: 성장 과정에서의 훈련·자원 투입</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 태아 각인(유전 고정)의 대표 방식</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **임신 전 각인**: 부모의 생식세포에 차원류 노출·정제·의례를 가해 ‘가문형’ 유전 표지를 강화</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **임신 중 각인**: 태아 발달 단계에 맞춰 각인 의례를 집행(신경계/감각계/마력회로 단계별로 개입 가능)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **출생 직후 각성 유도**: 유전 고정이라기보다 “발현 트리거”에 가깝다(성장기 훈련의 효율을 높임)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 사회적 실무(제도) 관점</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 귀족/황족 가문은 **각인 + 선별 + 초정예 교육**을 결합해, 후천 성취를 ‘세대 간 재현’한다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 평민 계층은 각인 접근성이 낮아, **유전 기본치의 분산**이 크고 사회적 재현성이 낮다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 사망 및 환생</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 개요</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+신인류의 사망 이후에는 영혼이 **신계로 이동**하며, 일정 기간의 ‘정리/재편’을 거친 뒤 **환생**이 가능하다.  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+환생은 “전생 인격의 완전 복원”이라기보다, **영혼의 연속성** 위에서 기억·성향이 *확률적으로* 이어지는 체계다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 과정(표준 모델)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+1. **분리**: 육체 사망과 함께 영혼이 신계로 이탈</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+2. **정리/재편(대기 기간)**: 영혼이 축적된 경험을 층위화하고, 과도한 파편을 정리</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+3. **안착**: 새 생명의 수태/배양 단계에서 영혼이 ‘자리잡기’에 성공하면 환생</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+4. **발현**: 성장 과정에서 기억/성향이 꿈·기시감·각성 등으로 표면화</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> [!note]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> **대기 기간(가이드)**: 통상 **100~150년(신지구년)** 단위로 서술하는 편이 안정적이다.  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> (신지구 1년이 지구 기준 약 4년에 가깝다면, 지구 시간으로는 약 400~600년 규모가 된다.)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 전생의 기억과 경험의 영향을 받는가?</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+영향은 “있다/없다”가 아니라 **스펙트럼**이다.  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+작중에서 가장 다루기 쉬운 기준은 아래 0~5 등급이다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 등급 | 기억 계승 양상 | 본인 체감 | 사회적 의미 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+|---|---|---|---|</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 0 | 계승 없음 | 완전한 타인 | 일반적 다수 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 1 | 기시감/취향 잔향 | “왜인지 익숙” | 사소한 동기 부여 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 2 | 꿈/감정 파편 | 악몽/데자뷰 | 종교적 해석의 재료 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 3 | 단편 기억(장면/기술) | 특정 상황에서 ‘떠오름’ | 일부 능력/공포/집착 재현 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 4 | 의식적 접속(의례/수련) | 원하면 접근 가능 | 교단·국가가 통제/활용 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 5 | 거의 완전 계승 | 전생과 연속된 자아 | 극희귀(성인·초월자급) |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 영혼 단계(작중 표준안)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **일반인**: 0~2가 대부분</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **성직자/수도자**: 1~3 비율 상승</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **선지자**: 2~4가 흔함</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **성인**: 3~5가 가능(사회가 ‘공인’)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **초월자**: 4~5에 고정에 가깝다</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **신**: 5 + 기억의 외부화/분산 저장까지 가능</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 경험론적 도서관(설정 슬롯)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+신계에는 ‘경험/기억이 완전히 사라지지 않고, 층위화되어 축적되는 장소/현상’이 존재한다.  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+이는 아래 두 역할을 수행한다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **환생 안정화**: 영혼이 파편화되지 않도록 ‘정리/재편’의 기준점 제공</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **의례적 접근**: 선지자/성인급은 의례·수련을 통해 일부 기억층에 접근 가능</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> [!info]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> 위 메커니즘을 독립 문서로 빼서 운영하려면: [[영혼 순환 · 환생 · 세습 규정]] (신규) 를 사용.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ## 참고</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;">--- a/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/99-#Uae30#Ud0c0 #Uc6a9#Uc5b4#Uc9d1/#Ucc28#Uc6d0 #Uad6c#Ubd84 #Uc6a9#Uc5b4 #Uc815#Uc758.md</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+++ b/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/99-#Uae30#Ud0c0 #Uc6a9#Uc5b4#Uc9d1/#Ucc28#Uc6d0 #Uad6c#Ubd84 #Uc6a9#Uc5b4 #Uc815#Uc758.md</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ## 혼돈계 차원</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 구계 차원과 신계 차원이 가진 차원 에너지(=중력)은 서로 비교적 안정적이다.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> </span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 혼돈계 차원은 매우 불안정한 차원 에너지를 가지고 있으며,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 이 차원에서의 신계로 차원 간섭이 발생함에 따라서, 신계 차원에서는 [[마법 기본설정]]이라는 이능력을 사용할 수 있게 된다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 차원 표현 모델(캔버스/픽셀)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+“차원=캔버스, 영혼=픽셀”은 차원 현상을 이해하기 위한 **설명 모델**이다.  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+‘누구나 자기 좌표를 확인하는 상태창’ 같은 게임적 UI가 아니라, **관측·측정·교리적 은유**에 가깝다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **캔버스**: 하나의 차원이 갖는 위상면(場). 구계/신계/혼돈계는 서로 다른 캔버스이며, 접경에서 마찰이 생긴다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **픽셀(위상셀)**: 캔버스를 구성하는 최소 단위. 영혼은 ‘한 점’이라기보다 **최소 점유 단위**를 가진 정보-에너지체로 취급한다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **해상도/레이어(비유)**: 영혼 등급이 높아질수록 더 많은 층위(레이어)와 더 큰 점유(픽셀군)를 확보한다는 의미로 사용 가능.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 영혼 위계 및 기억 계승(표준안)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+아래는 설정 운용을 위한 표준안이며, 교단/국가에 따라 명칭은 달라질 수 있다(예: 성직자=수도자).</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 단계 | 설명 | 환생 시 기억 계승 경향 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+|---|---|---|</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 일반인 | 대부분의 인구 | 0~2 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 성직자/수도자 | 규율·의례·수련으로 영혼 안정화가 된 층 | 1~3 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 선지자 | 신계 접속/통로 역할을 수행할 수 있는 층 | 2~4 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 성인 | 사회·교단이 ‘공인’한 고등 영혼 | 3~5 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 초월자 | 신격과 경계에 가까운 존재 | 4~5 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 신 | 5 + 기억의 외부화/분산 저장까지 가능 | 5 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 기억 계승 스펙(0~5) 요약</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 0: 계승 없음</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 1: 기시감/취향 잔향</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 2: 꿈/감정 파편</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 3: 단편 기억(장면/기술)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 4: 의식적 접속(의례/수련)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 5: 거의 완전 계승</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 혼돈계(에너지/서사 운용 메모)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 혼돈계는 “에너지 보존을 교란할 수 있는 설정 슬롯”이므로, 과도한 과학적 단정은 **엔드게임 결정(모든 문제의 만능열쇠)**로 변질될 위험이 있다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 따라서 혼돈계는 **원인 불명/상위 위계**로 남기고, 작중에서 필요할 때만 “관측 체계에 따라 중력·복사·마나 등으로 해석되는 간섭” 정도로만 다루는 편이 안전하다.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> &lt;hr class=&quot;hr-thick-3&quot;></span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;">--- a/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/01-#Uc2e0#Uacc4 #Uad00#Ub828/00-#Uc911#Uc2ec #Uc124#Uc815 #Ubc0f #Uc2dc#Ub300/#Ucd08#Uc6d4#Uc790.md</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+++ b/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/01-#Uc2e0#Uacc4 #Uad00#Ub828/00-#Uc911#Uc2ec #Uc124#Uc815 #Ubc0f #Uc2dc#Ub300/#Ucd08#Uc6d4#Uc790.md</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> > 　즉, 초월자란 “영혼의 존재하는 차원”이 인간과 더 높은 위계를 가진 신의 중간 어딘가에 속해 있기 때문에</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> > 　“신에 가까운 존재”, 혹은 “신을 넘어선 존재” 정도로 여겨진다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> [!note]+ (보강) 위계·환생·기억 계승과의 관계</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> 　‘초월자’는 단순한 사회적 칭호가 아니라, **환생 시 기억 계승 확률이 급격히 상승하는 영혼 위계**로도 해석할 수 있다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> 　- **기억 계승 경향**: 초월자급은 보통 4~5(의식적 접속~거의 완전 계승)에 가깝다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> 　- **중간 단계(성인)**: 교단/국가에 따라 “성인”을 *별도 단계*로 두거나, 선지자/초월자 중 **공인된 사례**를 가리키는 *칭호*로만 쓰기도 한다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> 　- **캔버스/픽셀 모델**: 초월자에 가까워질수록 ‘점유 픽셀군(영혼의 층위/레이어)’이 커져, 파편화가 줄고 기억의 구조화가 가능해진다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> 　- (연계 문서) [[영혼 순환 · 환생 · 세습 규정]]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> </span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> #초월자 #초월신론 #종교 #루벨리니온_제국도교 </span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;">--- a/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/01-#Uc2e0#Uacc4 #Uad00#Ub828/00-#Uc911#Uc2ec #Uc124#Uc815 #Ubc0f #Uc2dc#Ub300/#Uae30#Uc220 #Uc5f0#Uad6c #Uccb4#Uacc4/#Uc81c_2_#Uae30_#Uc5f0#Uad6c#Ud2b8#Ub9ac_#Ubd84#Ub958#Uccb4#Uacc4_3_#Ub2e8#Uacc4_#Ud558#Uc704_#Uc138#Ubd80_#Ubcf4#Uc644_#Ud328#Uce58_#Ubc18#Uc601#Ubcf8.md</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+++ b/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/01-#Uc2e0#Uacc4 #Uad00#Ub828/00-#Uc911#Uc2ec #Uc124#Uc815 #Ubc0f #Uc2dc#Ub300/#Uae30#Uc220 #Uc5f0#Uad6c #Uccb4#Uacc4/#Uc81c_2_#Uae30_#Uc5f0#Uad6c#Ud2b8#Ub9ac_#Ubd84#Ub958#Uccb4#Uacc4_3_#Ub2e8#Uacc4_#Ud558#Uc704_#Uc138#Ubd80_#Ubcf4#Uc644_#Ud328#Uce58_#Ubc18#Uc601#Ubcf8.md</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> #### 3-11A) 영혼의 세습성 및 기원</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> - 영혼의 생득성 및 후천적 강화 가능성</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> - 영혼 분화(환생) 메커니즘: 가문별 발현 확률 또는 제도적 환생 통제</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> - 영혼-육체 결합(안착) 조건: 자연출생/배양/인조신체/기계체</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+#### 3-11E) 기억 계승 스펙·영혼 위계 표준화(Memory Ladder)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 기억 계승 스펙(0~5) 정의: 0(없음)～5(거의 완전 계승)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 영혼 위계(일반인/성직자/선지자/성인/초월자/신)와 스펙 매핑(세계관 규정)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- ‘차원=캔버스, 영혼=픽셀(위상셀)’ 모델을 관측·교리 은유로 정리</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- (연계 문서) [[차원 구분 용어 정의]] / [[신인류]] / (신규) [[영혼 순환 · 환생 · 세습 규정]]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> </span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> #### 3-11B) 신계의 군주 신(Deus)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> - 신계 차원에 존재하는 최상위 영혼 개체</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;">--- a/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/01-#Uc2e0#Uacc4 #Uad00#Ub828/00-#Uc911#Uc2ec #Uc124#Uc815 #Ubc0f #Uc2dc#Ub300/#Uc601#Ud63c #Uc21c#Ud658 · #Ud658#Uc0dd · #Uc138#Uc2b5 #Uaddc#Uc815.md</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+++ b/00-1-#Uc6a9#Uc5b4 #Ubc0f #Uc124#Uc815#Uc9d1/01-#Uc2e0#Uacc4 #Uad00#Ub828/00-#Uc911#Uc2ec #Uc124#Uc815 #Ubc0f #Uc2dc#Ub300/#Uc601#Ud63c #Uc21c#Ud658 · #Ud658#Uc0dd · #Uc138#Uc2b5 #Uaddc#Uc815.md</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">@@</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+tags:</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+  - 신계</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+  - 영혼</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+  - 환생</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+  - 세습</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+  - 설정규정</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+# 영혼 순환 · 환생 · 세습 규정</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 목적</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+이 문서는 신계-구계-혼돈계의 관계 속에서, **영혼이 사망 이후 어떤 경로로 순환하며**, 환생이 어떤 조건에서 성립하고, 그 과정에서 **기억/성향/능력의 ‘세습’이 어디까지 가능한지**를 규정하기 위한 설정 표준안이다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> [!important]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> 여기서 말하는 ‘세습’은 (1) 유전(생물학) (2) 각인(차원/의례) (3) 제도(사회) 세 경로를 구분한다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 핵심 정의</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **영혼**: 정보-에너지의 결합체. 최소 점유 단위(=위상셀/‘픽셀’)를 가지며, 위계가 높을수록 점유가 커지고 층위가 많아진다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **기억층(레이어)**: 경험이 층위화된 저장 구조. 낮은 위계는 파편화되기 쉽고, 높은 위계는 구조화가 가능하다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **파편화**: 과도한 차원 간섭/혼돈계 오염 등으로 기억층이 붕괴하여, 환생 안정성이 떨어지는 상태.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **안착(결합)**: 새 생명의 수태/배양 단계에서 영혼이 자리를 잡아, 환생(연속성)이 성립하는 과정.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **각인**: 의례·차원류·약물·마법 등을 통해 생식세포/태아 발달 과정에 개입하여, 특정 형질을 고정(유전 가능화)하거나 발현을 강화하는 행위.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 표준 순환 프로세스(SSP: Standard Soul Process)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+1. **분리**: 육체 사망과 함께 영혼이 신계로 이탈  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+2. **정리/재편**: 기억층이 층위화되고, 과도한 파편이 제거되며, 혼돈계 오염이 정화되거나 봉인됨  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+3. **대기**: 환생까지의 잠복기  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+4. **안착**: 새 개체의 수태/배양 과정에서 영혼이 결합  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+5. **발현**: 성장 과정에서 기억/성향/능력의 잔향이 표면화</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 대기 기간(가이드)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 통상 **100~150년(신지구년)** 단위로 서술한다.  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 이 수치는 “서사 운용을 위한 표준안”이며, 혼돈계 오염·의례적 개입·신의 직접 개입 등에 의해 단축/연장될 수 있다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 기억 계승 스펙(0~5)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 등급 | 기억 계승 양상 | 본인 체감 | 사회적 의미 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+|---|---|---|---|</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 0 | 계승 없음 | 완전한 타인 | 일반적 다수 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 1 | 기시감/취향 잔향 | “왜인지 익숙” | 사소한 선택 편향 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 2 | 꿈/감정 파편 | 악몽/데자뷰 | 종교적 해석의 재료 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 3 | 단편 기억(장면/기술) | 특정 상황에서 ‘떠오름’ | 일부 능력/공포/집착 재현 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 4 | 의식적 접속(의례/수련) | 원하면 접근 가능 | 교단·국가가 통제/활용 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 5 | 거의 완전 계승 | 전생과 연속된 자아 | 극희귀(성인·초월자급) |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 영혼 위계(표준안)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 단계 | 설명 | 기억 계승 경향 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+|---|---|---|</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 일반인 | 대부분의 인구 | 0~2 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 성직자/수도자 | 규율·의례·수련으로 안정화된 층 | 1~3 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 선지자 | 신계 접속/통로 역할 가능 | 2~4 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 성인 | 사회·교단이 공인한 고등 영혼(단계 또는 칭호) | 3~5 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 초월자 | 신격과 경계에 근접 | 4~5 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+| 신 | 기억의 외부화/분산 저장까지 가능 | 5 |</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> [!note]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+> “성인”은 교단/국가에 따라 **별도 단계**로 운용되거나, 선지자/초월자 중 **공인된 사례**를 가리키는 **칭호**로만 쓰일 수 있다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 세습 경로 3종(유전/각인/제도)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 1) 유전(생물학)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 선천적으로 세습되는 것은 **훈련 결과**가 아니라, *훈련을 가능하게 하는 바탕(신경·감각·대사·마력 감응성)*이다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 후천 숙련(지식·근육·기술)은 원칙적으로 유전되지 않는다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 2) 각인(차원/의례)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **생식세포 각인**: 부모 단계에서 생식세포에 변이를 남겨 세습 가능화  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **태아 각인**: 발달 단계별로 신경계/감각계/마력회로에 개입  </span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **출생 직후 각성 유도**: ‘유전 고정’이 아니라 발현 트리거 강화</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+### 3) 제도(사회)</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 교육·자원·정보·가문 네트워크가 후천 성취를 **통계적으로 재현**한다(실질적 세습).</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- 귀족제/교단/국가 제도는 ‘유전+각인’의 효과를 극대화하는 인프라로 작동한다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 예외와 금기</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **혼돈계 오염**: 기억층이 비정상적으로 변형되거나, 안착 실패(불완전 환생) 확률이 상승한다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **강제 회수/영혼 절단**: 국가/교단이 금지(또는 극비 운영)하는 기술 슬롯로 취급하는 편이 설정 안정적이다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- **완전 계승 환생체**: 5등급에 가까운 거의 완전 계승은 극희귀로 두어야, 사회 체제와 서사가 무너지지 않는다.</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+## 연계 문서</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- [[신인류]]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- [[차원 구분 용어 정의]]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">+- [[초월자]]</span></span>
+<span data-line> </span></code></pre></figure>
+<hr/>
+<h2 id="적용-후-셀프-체크리스트">적용 후 셀프 체크리스트<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#적용-후-셀프-체크리스트" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Obsidian에서 <code>[[영혼 순환 · 환생 · 세습 규정]]</code> 링크가 <font style="font-weight:bold;">정상 생성/연결</font>되는지</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>신인류.md</code>의 새 섹션이 <font style="font-weight:bold;"><a href="../../../.././../../../tags/" class="tag-link internal alias" data-slug="tags/index"></a> 참고</font> 위에 정상 삽입되어 흐름이 깨지지 않는지</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>차원 구분 용어 정의.md</code>에서 <code>&lt;hr class=&quot;hr-thick-3&quot;></code> 아래로 <font style="font-weight:bold;">기존 구조/서식이 유지</font>되는지</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 연구트리 파일에서 <code>3-11E</code>가 <code>3-11A</code>와 <code>3-11B</code> 사이에 들어가 <font style="font-weight:bold;">번호 흐름이 자연스러운지</font></li>
+</ul></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-462"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-462"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-773" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-773" class="toc-content"><li class="depth-0"><a href="#보완-패치-모음-검토용" data-for="보완-패치-모음-검토용">보완 패치 모음 (검토용)</a></li><li class="depth-1"><a href="#이번-보강의-목표" data-for="이번-보강의-목표">이번 보강의 목표</a></li><li class="depth-1"><a href="#적용-파일핵심" data-for="적용-파일핵심">적용 파일(핵심)</a></li><li class="depth-0"><a href="#patch-1-설정-보강--신규-문서--연구트리-항목-추가" data-for="patch-1-설정-보강--신규-문서--연구트리-항목-추가">PATCH 1) 설정 보강 + 신규 문서 + 연구트리 항목 추가</a></li><li class="depth-1"><a href="#적용-후-셀프-체크리스트" data-for="적용-후-셀프-체크리스트">적용 후 셀프 체크리스트</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../postscript.js" type="module" data-persist="true"></script></html>

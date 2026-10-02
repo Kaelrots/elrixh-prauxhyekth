@@ -1,169 +1,149 @@
 ---
-title: 환영합니다! 《엘리스 프라우셰크트》 메인
-분야:
-  - 세계관 안내
-  - MOC
+title: 《엘리스 프라우셰크트》
+제목: 《엘리스 프라우셰크트》
 문서유형: index
 정본상태: canon
 기원상태: original
+복원여부: false
+분야:
+  - 세계관 안내
+  - MOC
+draft: false
 ---
-
-<font style="font-weight:bold; font-size:1.85em"><center><font color="#88dfd0">《엘리스 프라우셰크트》<br>카엘 창작 세계관</font></center></font>
+<center><font color="#88dfd0"><font style="font-weight:bold; font-size:1.3em">《엘리스 프라우셰크트》<br>카엘 창작 세계관</font></font></center>
 
 <img src="/assets/media/엘리시움-연방-문장-(채색).png" alt="엘리시움 연방 문장 (채색).png" width="400">
 
-# 🌌 이 사이트는?
+# 세계관 소개
 
-## 🌌 엘리스 프라우셰크트`(엘리스 프로젝트)`에 오신 것을 환영합니다
+<font style="font-weight:bold; font-size:1.15em"><font color="#88dfd0">《엘리스 프라우셰크트》</font></font>는 차원의 장막을 넘어 <font style="font-weight:bold; font-size:1.15em"><font color="#88dfd0">신지구: 라리셴베르크</font></font>에 정착한 인류의 이야기를 담은 창작 세계관입니다.
+<font style="font-weight:bold">엘리시움 신성제국 연방</font>을 중심으로, 마법과 과학이 함께하는 문명의 역사와 헌정 질서를 다룹니다.
+신계·구계·혼돈계의 관계와 차원 장막, 대전이는 이 세계를 이해하는 출발점입니다.
+이곳에서 설정 문서와 시각 자료를 함께 살펴보며, 관심 있는 세계와 주제를 따라 탐험해 보세요.
 
-이곳은 차원의 장막을 넘어 <font style="font-weight:bold">신지구: 라리셴베르크</font>에 정착한 인류의 방대한 기록 보관소입니다.
-<font style="font-weight:bold">엘리시움 신성제국 연방</font>을 중심으로 펼쳐지는 마법과 과학, 역사와 헌정의 이야기를 탐험해 보세요.
+## 처음 방문하셨다면
 
-<hr class="hr-thick-3">
-
-### 🧭 엘리스 프라우셰크트 세계관 탐험 가이드
-이 거대한 세계의 <font style="font-weight:bold">10가지 핵심 축</font>을 따라 여행을 시작해 보세요.
-
-1.  <font style="font-weight:bold">역사의 흐름</font>: [[라리셴베르크의 시대 구분]] — 선사시대부터 우주시대까지, 문명의 흥망성쇠와 거대한 연대기
-    *   <font style="font-weight:bold">구지구의 기억</font>: [[제73분기 구지구의 역사 분기점]] — 제1차 대전이로 멸망한 <font style="font-weight:bold">제73분기 지구(에아르트)</font>의 엇갈린 역사
-2.  <font style="font-weight:bold">세계의 지도</font>: [[지역 목록]] — 지구 표면적의 6,003배에 달하는 거대한 행성의 대륙과 전략 요충지
-3.  <font style="font-weight:bold">통치와 법</font>: [[01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/01-헌정·헌법/엘리시움 연방 헌법]] — 신성 제국이자 <font style="font-weight:bold">'일극우위 연방'</font>인 국가의 헌정 질서와 통치 구조
-    *   <font style="font-weight:bold">구지구의 유산</font>: [[제73분기 구지구 국가 설정]] — 대전이 이전, 구지구에 존재했던 국가들의 기록
-4.  <font style="font-weight:bold">힘의 원리</font>: [[마법 기본설정]] — 차원의 섭리를 빌려 세계를 비틀어내는 이능력(마법·신성력·생명력)의 법칙
-5.  <font style="font-weight:bold">행정 체계</font>: [[라리셴베르크의 지역 구분]] — <font style="font-weight:bold">거대한 행성을 통치하기 위한 황제직할령과 자치령의 이원화된 행정 구조</font>
-6.  <font style="font-weight:bold">기술 문명</font>: [[기술 연구 테크트리 서술 규칙 표준 사전]] — <font style="font-weight:bold">하이퍼레인</font> 개통부터 <font style="font-weight:bold">모노리스</font> 완성, 그리고 <font style="font-weight:bold">기술 게이트(Tech Gate)</font>를 넘어 우주로 향하는 문명의 도약
-7.  <font style="font-weight:bold">신인류의 생태</font>: [[신인류]] — 차원 간섭으로 진화하여 노화를 극복하고 이능을 각성한 새로운 인류의 생태
-    *   <font style="font-weight:bold">영혼의 위계</font>: [[초월자]] — <font style="font-weight:bold">영혼의 격(格)</font>을 높여 신의 경지에 다다른 <font style="font-weight:bold">21인의 초월자</font>와 승격의 단계
-8.  <font style="font-weight:bold">차원과 재난</font>: [[차원류]], [[대전이]] — 세계를 멸망시켰던 <font style="font-weight:bold">차원 장막의 붕괴(대전이)</font>와 그 전조가 되는 <font style="font-weight:bold">에너지의 흐름(차원류)</font>에 대한 기록
-9.  <font style="font-weight:bold">언어와 문자</font>: [[단어집]], [[현대 엘루닉어 기본설정]] — 고대와 현대를 잇는 <font style="font-weight:bold">문자(엘룬)</font>와, 모든 연방 신민을 하나로 묶는 <font style="font-weight:bold">공용어(엘루닉어)</font>의 체계
-10. <font style="font-weight:bold">시간과 달력</font>: [[류아블론츠 성계 정보 설정#행성 신지구 라리셴베르크]] — <font style="font-weight:bold">1년이 1,440일(48개월)</font>인 거대 행성의 독자적인 시간 감각과 역법
-
-<p align="right">💠 일부 미작성 문서가 포함되어 있을 수 있습니다.</p>
-
-<hr class="hr-thick-3">
-
-### 📢 문서 상태 안내 (필독)
-
-이 사이트에는 10년 넘게 축적된 방대한 설정이 혼재되어 있습니다. 문서 상단의 <font style="font-weight:bold">경고문</font>을 꼭 확인해 주세요.
-
-> [!NOTE]+ 문서 범례
-> - <font style="font-weight:bold">[정식 설정]</font>: 별도 경고문이 없는 최신 문서입니다. (A루트 정사)
-> - <font style="font-weight:bold">[복원 문서]</font>: 과거(2011~2023) 노트를 디지털화한 것으로, 현 설정과 다를 수 있습니다.
-> - <font style="font-weight:bold">[B루트]</font>: 멸망 시나리오인 《잔망의 헬라이오스》 전용 설정입니다.
-
--  이 사이트는 Obsidian의 Publish 서비스를 이용하여 제작된 사이트입니다.
--  <font style="font-weight:bold">다크 모드</font>를 기준으로 제작하였습니다. 라이트 모드는 현재 지원되지 않습니다.
+1. <font style="font-weight:bold">[[00-세계관 공통설정/index|세계관의 기본 법칙]]</font> — 차원과 대전이, 존재와 능력에 관한 공통설정부터 살펴보세요.
+2. <font style="font-weight:bold">[[01-신계 차원/index|신계]]와 [[01-신계 차원/02-라리셴베르크/index|라리셴베르크]]</font> — 이야기의 무대와 행성의 주요 자료를 만나보세요.
+3. <font style="font-weight:bold">[[01-신계 차원/02-라리셴베르크/index#역사·시대|라리셴베르크의 역사]]</font> — 시대 구분과 연대기를 따라 문명의 흐름을 읽어보세요.
+4. <font style="font-weight:bold">[[01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/index|엘리시움 신성제국 연방]]</font> — 국가의 기본설정에서 헌법과 주요 기관으로 탐색을 이어가세요.
 
 <hr class="hr-thick-2">
 
-## 🧭 사이트 이용 방법
+## 세계관 주요 영역
 
--  <span style="background:rgba(136, 223, 208, 0.55)">좌측에 메뉴</span>가 존재합니다. 폴더를 누르면 폴더 내부의 문서가 보입니다.
--  읽고 싶은 문서를 클릭하면 해당 문서가 열립니다.
--  하이퍼링크 ex) [[템플릿 수정 기록]] 를 누르면 해당 문서로 바로 이동됩니다.
--  우측에는 현재 문서와 관련된 문서가 상단에 그래프 뷰로 표시됩니다.
--  우측 하단에는 현재 문서의 목차가 나옵니다. 원하는 파트를 클릭하면 바로 그 부분으로 스크롤됩니다.
+세계와 차원의 구분을 따라 들어가는 기본 탐색 경로입니다. 각 영역의 안내 문서에서 주요 설정과 하위 자료로 이어집니다.
 
-<hr class="hr-thick-3">
-
-### 🚀 최근 수정된 문서들
-
-<center><font style="font-size:1.5em"><a class="internal-link"
-   data-href="90-볼트 운영/01-수정기록/수정 기록 모음"
-   href="90-볼트 운영/01-수정기록/수정 기록 모음">
-  》》》》》 수정 기록 모음 《《《《《
-</a>
-</font></center>
-<font style="font-size:1.25em"><a class="internal-link" data-href="90-볼트 운영/01-수정기록/수정 기록 모음" href="90-볼트 운영/01-수정기록/수정 기록 모음">수정 기록 모음</a></font>에서 최근 수정된 문서, 가장 많이 수정된 문서, 최근 30일 이내 수정된 문서 (최대 30개)의 리스트를 볼 수 있습니다.
--  가장 많이 수정된 문서의 수정 기록의 시작은 2025.08.04. 이후부터 집계되었습니다.
-
-<hr class="hr-thick-3">
-
-### 📢 복원 문서 관련
-
--  <font color="#ff69b4">복원 여부에 체크</font>되어 있는 문서는 <font color="#ff69b4">최신화되지 않은 문서</font>입니다.
--  이 문서들은 단순히 과거 기록을 디지털화하여 복원한 것일 뿐입니다.
-	-  2011년에서 2023년 사이에 작성된 노트, Word, Excel, Sheet 기록을 단순 복원한 것입니다.
-	-  <font color="#ff69b4">현재 제 머릿속에 있는 설정이나, 최신 설정 등과는 맞지 않을 수 있습니다.</font>
-	-  새로이 정립된 세부적인 설정, 사용되는 단어의 어조나 형식, 개념 등과 정합성이 어긋날 수 있습니다.
-		-  이러한 경우에는 복원 여부에 체크되지 않은, <font color="#88dfd0">새로이 작성된 문서의 설정이 정식 설정</font>입니다.
-		-  템플릿 제작 작업이 끝나면, 템플릿 형식을 기준으로 <font color="#88dfd0">모든 복원 문서는 리빌딩 될 예정</font>입니다.
--  복원된 문서에는 하단과 같은 경고 문구가 작성되어 있습니다.
-
-> [!caution] 복원 문서 주의 사항
-> <center>이 문서는 최신화되지 않았습니다.<br>단순히 과거의 기록을 복원한 문서입니다.<br>세부 설정, 사용 단어와 개념 등에서 정합성이 어긋날 수 있습니다.<br>(2011년 ~ 2023년 사이 원문이 작성된 문서)</font></center>
-
--  기타 경고문은 [[각종 경고문 가이드]] 에서 확인 부탁드립니다.
+- <font style="font-weight:bold">[[00-세계관 공통설정/index|세계관 공통설정]]</font> — 여러 차원에 공통으로 적용되는 우주론·대전이·존재·능력·정치사회 개념을 안내합니다.
+- <font style="font-weight:bold">[[01-신계 차원/index|신계 차원]]</font> — 신계의 천체와 우주지리, [[01-신계 차원/02-라리셴베르크/index|라리셴베르크]]의 행성·지역·역사·문명 자료를 살펴볼 수 있습니다.
+- <font style="font-weight:bold">[[02-구계 차원/index|구계 차원]]</font> — 에아르트와 구계의 국가·역사 자료를 안내합니다. 각 자료의 현행 여부는 문서 상태와 주의 사항을 함께 확인해 주세요.
+- <font style="font-weight:bold">[[03-혼돈계 차원/index|혼돈계 차원]]</font> — 혼돈계 자료를 위한 안내 영역입니다. 현재는 상세 설정 문서가 준비되어 있지 않습니다.
+- <font style="font-weight:bold">[[80-대체루트·비정사/index|대체루트·비정사]]</font> — B루트 《잔망의 헬라이오스》 등 본편과 구분되는 연속성을 안내합니다. A루트의 현행 설정과 구분해 읽어주세요.
 
 <hr class="hr-thick-2">
 
-## 🌟 사이트를 만든 목적
+## 주제별 세계관 탐색
 
--  카엘 창작 세계관 프로젝트: <font style="font-weight:bold"><font color="#88dfd0">《엘리스 프라우셰크트》</font></font> 와 관련된 설정 문서들과 그를 보조할 시각 자료 등을 함께 보실 수 있습니다.
--  원하는 문서를 둘러보시고, 고칠 부분이나 피드백 주실 부분이 있다면, <font color="#88dfd0">디스코드 @h_kael (카엘)</font>로 연락주시길 바랍니다.
+관심 분야에서 시작하고 싶다면 아래 일곱 가지 주제를 골라보세요. 세계·차원별 분류를 가로지르는 추천 경로입니다.
 
-<hr class="hr-thick-2">
-
-## ❓ 최근 업데이트 사항 (퍼블리시 웹)
-
--  표가 <span style="background:rgba(136, 223, 208, 0.55)">좌우로 길어질 경우</span>, 자동으로 <span style="background:rgba(136, 223, 208, 0.55)">횡방향 스크롤이 생성</span>됩니다.
-	-  <span style="background:rgba(136, 223, 208, 0.55)">마우스로 드래그</span>하여 본문 크기를 초과한 부분의 표를 볼 수 있습니다.
--  일정 이하의 해상도, 일정 이상의 UI 배율로 인해서 <span style="background:rgba(255, 215, 0, 0.55)">우측 패널</span>의 표시가 어려울 경우, 우측 패널이 보이지 않습니다.
-	-  현재 위치한 <span style="background:rgba(255, 215, 0, 0.55)">문서와 타 문서 간의 연계를 시각화</span>시킨 표.
-	-  현재 위치한 <span style="background:rgba(255, 215, 0, 0.55)">문서의 헤더를 모은 목차</span> 리스트.
+- <font style="font-weight:bold">[[01-신계 차원/02-라리셴베르크/index#역사·시대|역사와 시대]]</font> — 시대 구분과 연대기로 문명의 변화를 따라갑니다.
+- <font style="font-weight:bold">[[01-신계 차원/02-라리셴베르크/index#지리·지역|지리와 지역]]</font> — 지역 구분과 층위, 지역별 자료를 살펴봅니다.
+- <font style="font-weight:bold">[[01-신계 차원/02-라리셴베르크/03-국가·정치/엘리시움 신성제국 연방/index|정치와 법]]</font> — 엘리시움 연방의 국가 개요·헌법·기관으로 이어집니다.
+- <font style="font-weight:bold">[[00-세계관 공통설정/index#검토 중인 자료|마법과 능력]]</font> — 마법 기본설정과 해당 자료의 검토 상태를 함께 확인합니다.
+- <font style="font-weight:bold">[[01-신계 차원/02-라리셴베르크/index#기술·연구|과학과 기술]]</font> — 시대별 연구트리와 기술 자료를 찾아봅니다.
+- <font style="font-weight:bold">[[00-세계관 공통설정/index#존재·종족|종족과 존재]]</font> — 신인류와 초월자에 관한 설정으로 이어집니다.
+- <font style="font-weight:bold">[[00-세계관 공통설정/index#우주론·차원|차원]]과 [[00-세계관 공통설정/index#대전이·차원재난|대전이]]</font> — 차원의 구분과 흐름, 차원재난을 이해하는 자료를 살펴봅니다.
 
 <hr class="hr-thick-2">
 
-## 🔒 저작권
+## 문서 상태 안내
 
--  문서 형식, 세부 설정, 창작 용어, 창작 언어 등을 포함한 카엘의 창작 세계관의 모든 문서와 시각 자료의 저작권은 저(카엘)에게 있습니다.
--  하단에서 [[#🚫 저작권 및 이용 제한 안내|저작권 관련 내용]]을 서술했습니다.
+문서의 현재 지위와 작성 기원은 서로 다른 정보입니다. 문서에 표시된 상태 안내와 본문의 주의 사항을 함께 확인해 주세요.
+
+<div class="scroll-x nowrap"><table>
+  <thead>
+    <tr>
+      <th>정본상태</th>
+      <th>의미</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>canon</td>
+      <td>현행 정본</td>
+    </tr>
+    <tr>
+      <td>provisional</td>
+      <td>잠정 정본 또는 검토 중인 현행안</td>
+    </tr>
+    <tr>
+      <td>draft</td>
+      <td>작성·검토 중인 초안</td>
+    </tr>
+    <tr>
+      <td>archival</td>
+      <td>현행 설정이 아닌 사료·보존 자료</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<font style="font-weight:bold">기원상태</font>의 `original`은 현 체계에서 새로 작성된 문서, `restored`는 과거 원문을 복원·계승하여 출발한 문서를 뜻합니다.
+<font style="font-weight:bold">`restored`는 `archival`과 같지 않습니다.</font> 복원된 문서도 검토와 갱신을 거쳐 현행 정본이 될 수 있으며, `복원여부`만으로 정본을 판단하지 않습니다.
+
+대체 연속성의 정본상태는 <font style="font-weight:bold">그 연속성 안에서</font> 해석합니다. B루트의 설정을 A루트 정본으로 합치지 않으며, 관련 자료는 [[80-대체루트·비정사/index|대체루트·비정사 안내]]에서 확인할 수 있습니다.
 
 <hr class="hr-thick-2">
 
-## 💫 기타
+## 최근 수정
 
--  404 Error가 뜬다면, 제가 아직 해당 문서를 작성하지 않았거나, 작성하였지만 퀄리티 문제로 퍼블리시하여 웹에 게재하지 않은 상태입니다.
--  자유롭게 둘러보실 수 있도록 인링크와 표의 시인성을 계속 보강중입니다.
--  2025년 7월 27일 (일요일), 오전 01시 59분 (01:59) 기준으로, 제가 옵시디언에서 편집하면서 보는 화면과 여러분이 웹에서 보는 화면이 거의 일치합니다!
+최근 변경사항과 작업 기록은 [[90-볼트 운영/01-수정기록/수정 기록 모음|수정 기록 모음]]에서 확인할 수 있습니다.
+
+<hr class="hr-thick-2">
+
+## 사이트 이용 안내
+
+문서 안의 링크를 따라 관련 설정으로 이동할 수 있습니다. 각 영역의 안내 문서는 주요 설정과 하위 문서를 연결합니다.
+링크가 열리지 않으면 해당 영역의 안내 문서로 돌아가 찾아보거나, 아래 연락처로 알려주세요.
 
 <hr class="hr-thick-1">
 
-# 🚫 저작권 및 이용 제한 안내
+# 저작권 및 문의
+
+문서 형식, 세부 설정, 창작 용어, 창작 언어 등을 포함한 카엘의 창작 세계관의 모든 문서와 시각 자료의 저작권은 저(카엘)에게 있습니다.
+외부 작가에게 의뢰한 시각 자료와 콘텐츠 이용에 관한 상세 사항은 아래 안내를 확인해 주세요.
+설정의 오류나 피드백은 Discord @h_kael (카엘)로 보내주시면 됩니다.
+
+## 저작권 및 이용 제한 안내
 
 > [!caution]+ 저작권 경고 (Copyright Warning)
-> 　이 웹사이트(`https://publish.obsidian.md/kael/`)에 게시된 모든 텍스트, 이미지, 지도, 설정 문서 및 기타 창작물 일체(이하 "콘텐츠")는 대한민국 「저작권법」 및 국제조약(베른협약, WIPO 저작권 조약 등)에 따라 보호받는 저작물이며, 해당 권리는 저작자인 <font style="font-weight:bold">카엘(Kael)</font> 에게 있습니다.
-> 
+> 　이 웹사이트(`https://kaelrots.github.io/elrixh-prauxhyekth/`)에 게시된 모든 텍스트, 이미지, 지도, 설정 문서 및 기타 창작물 일체(이하 "콘텐츠")는 대한민국 「저작권법」 및 국제조약(베른협약, WIPO 저작권 조약 등)에 따라 보호받는 저작물이며, 해당 권리는 저작자인 <font style="font-weight:bold">카엘(Kael)</font> 에게 있습니다.
+>
 > 　단, 일부 시각적 자료(이미지)의 경우에는 외부 작가님에게 커미션의 형태로 의뢰하여 완성된 것일 수 있습니다. 이러한 자료의 무단 도용 및 사용은 해당 작가님의 저작권자로서의 권리를 침해하는 행위이며, 그와 관련된 법적 조치와 책임에 대해서는 본 사이트의 소유주는 책임을 지지 않습니다.
 
-<hr class="hr-thick-2">
-
-## 🔒 무단 이용 금지 사항
+### 무단 이용 금지 사항
 
 다음 행위는 명백한 <font style="font-weight:bold">저작권 침해</font>에 해당하며, 민·형사상 책임이 발생할 수 있습니다:
+
 - 저작자의 동의 없이 콘텐츠를 <font style="font-weight:bold">복제</font>, <font style="font-weight:bold">배포</font>, <font style="font-weight:bold">가공</font>, <font style="font-weight:bold">스크린샷</font>, <font style="font-weight:bold">다운로드</font>, <font style="font-weight:bold">2차적 저작물로 이용</font>하는 행위
 - 이미지 또는 문서 파일을 <font style="font-weight:bold">링크 없이 외부 공유</font>하거나, <font style="font-weight:bold">원저작자를 표시하지 않는 형태로 이용</font>하는 행위
 - 개인적인 감상 외의 목적으로 저장, 재게시, 상업적 활용하는 행위
 
-<hr class="hr-thick-2">
+### 법적 책임 안내
 
-## ⚖️ 법적 책임 안내
+- 대한민국 「저작권법」 제136조에 따라, 상업적 목적 없이도 <font style="font-weight:bold">권리자의 허락 없이 저작물을 복제하거나 배포한 자는 5년 이하의 징역 또는 5천만 원 이하의 벌금</font>에 처해질 수 있습니다.
+- 국제적으로도 베른협약 및 WIPO 저작권 조약에 따라 <font style="font-weight:bold">저작권 보호는 국경을 초월하며</font>, 해당 콘텐츠가 해외에서 무단 도용될 경우 <font style="font-weight:bold">국제 저작권 보호 기관 또는 현지 법률에 따라 법적 조치를 받을 수 있습니다.</font>
 
--  대한민국 「저작권법」 제136조에 따라, 상업적 목적 없이도 <font style="font-weight:bold">권리자의 허락 없이 저작물을 복제하거나 배포한 자는 5년 이하의 징역 또는 5천만 원 이하의 벌금</font>에 처해질 수 있습니다.
--  국제적으로도 베른협약 및 WIPO 저작권 조약에 따라 <font style="font-weight:bold">저작권 보호는 국경을 초월하며</font>, 해당 콘텐츠가 해외에서 무단 도용될 경우 <font style="font-weight:bold">국제 저작권 보호 기관 또는 현지 법률에 따라 법적 조치를 받을 수 있습니다.</font>
+### 이용 문의 및 협의
 
-<hr class="hr-thick-2">
+합법적인 인용 또는 이용이 필요한 경우, 아래 연락처를 통해 사전 허락을 요청해주시기 바랍니다.
 
-## 📩 이용 문의 및 협의
--  합법적인 인용 또는 이용이 필요한 경우, 아래 연락처를 통해 사전 허락을 요청해주시기 바랍니다.
-		Discord: @h_kael (카엘)
-		𝕏: @Kaelrots (카엘)
-		E-Mail: hyeonkael@gmail.com
-	※ 문의 시 용도, 범위, 플랫폼 등을 상세히 기재해 주세요.
+- Discord: @h_kael (카엘)
+- 𝕏: @Kaelrots (카엘)
+- E-Mail: hyeonkael@gmail.com
 
-<hr class="hr-thick-2">
+※ 문의 시 용도, 범위, 플랫폼 등을 상세히 기재해 주세요.
 
-## 📌 주의
+## 주의
 
 > [!caution]+ 주의
 > <font style="font-weight:bold">스크린 캡처, 브라우저 캐시 추출 등 기술적 회피 시도는 모두 의도된 저작권 회피 행위로 간주</font>되며, 그에 따른 법적 조치는 저작권자의 재량에 따라 엄중히 진행됩니다.

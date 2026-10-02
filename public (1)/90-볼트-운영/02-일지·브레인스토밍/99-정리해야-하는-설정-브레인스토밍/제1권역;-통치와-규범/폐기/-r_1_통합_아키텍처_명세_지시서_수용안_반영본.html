@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title># r_1_통합_아키텍처_명세_지시서_수용안_반영본</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="# r_1_통합_아키텍처_명세_지시서_수용안_반영본"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="# r_1_통합_아키텍처_명세_지시서_수용안_반영본"/><meta name="twitter:description" content="R1(제1권역: 통치와 규범) 통합 아키텍처 명세 지시 문서 목적: 제1권역_통합_마스터.md를 기준(Spine)으로, 업로드된 소스 파일들을 요직(핵심 클러스터) 단위 서브마스터로 재분류·통합하고, 중복/충돌을 정리한 뒤 정본(Real Lore) 문서로 내려쓰기 하기 위한 작업 지시서."/><meta property="og:description" content="R1(제1권역: 통치와 규범) 통합 아키텍처 명세 지시 문서 목적: 제1권역_통합_마스터.md를 기준(Spine)으로, 업로드된 소스 파일들을 요직(핵심 클러스터) 단위 서브마스터로 재분류·통합하고, 중복/충돌을 정리한 뒤 정본(Real Lore) 문서로 내려쓰기 하기 위한 작업 지시서."/><meta property="og:image:alt" content="R1(제1권역: 통치와 규범) 통합 아키텍처 명세 지시 문서 목적: 제1권역_통합_마스터.md를 기준(Spine)으로, 업로드된 소스 파일들을 요직(핵심 클러스터) 단위 서브마스터로 재분류·통합하고, 중복/충돌을 정리한 뒤 정본(Real Lore) 문서로 내려쓰기 하기 위한 작업 지시서."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/폐기/-r_1_통합_아키텍처_명세_지시서_수용안_반영본"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/폐기/-r_1_통합_아키텍처_명세_지시서_수용안_반영본"/><link rel="icon" href="../../../../../static/icon.png"/><meta name="description" content="R1(제1권역: 통치와 규범) 통합 아키텍처 명세 지시 문서 목적: 제1권역_통합_마스터.md를 기준(Spine)으로, 업로드된 소스 파일들을 요직(핵심 클러스터) 단위 서브마스터로 재분류·통합하고, 중복/충돌을 정리한 뒤 정본(Real Lore) 문서로 내려쓰기 하기 위한 작업 지시서."/><meta name="generator" content="Quartz"/><link href="../../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/폐기/-r_1_통합_아키텍처_명세_지시서_수용안_반영본"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1156" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1156" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-754" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-754" class="mobile-toc-dialog" aria-labelledby="toc-754-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-754-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#r1제1권역-통치와-규범-통합-아키텍처-명세-지시-문서" data-for="r1제1권역-통치와-규범-통합-아키텍처-명세-지시-문서">R1(제1권역: 통치와 규범) 통합 아키텍처 명세 지시 문서</a></li><li class="depth-1"><a href="#0-산출물파일-목록" data-for="0-산출물파일-목록">0. 산출물(파일) 목록</a></li><li class="depth-2"><a href="#0-1-spine허브" data-for="0-1-spine허브">0-1) Spine(허브)</a></li><li class="depth-2"><a href="#0-2-서브마스터요직-클러스터" data-for="0-2-서브마스터요직-클러스터">0-2) 서브마스터(요직 클러스터)</a></li><li class="depth-2"><a href="#0-3-정본다운스트림-산출" data-for="0-3-정본다운스트림-산출">0-3) 정본(다운스트림 산출)</a></li><li class="depth-1"><a href="#1-입력-소스업로드-파일--세부-권역-분류표" data-for="1-입력-소스업로드-파일--세부-권역-분류표">1. 입력 소스(업로드 파일) → 세부 권역 분류표</a></li><li class="depth-2"><a href="#1-1-r1-spine의-기준-소스" data-for="1-1-r1-spine의-기준-소스">1-1) R1 Spine의 기준 소스</a></li><li class="depth-2"><a href="#1-2-a헌정철학국가정체성-계열" data-for="1-2-a헌정철학국가정체성-계열">1-2) A(헌정철학/국가정체성) 계열</a></li><li class="depth-2"><a href="#1-3-a2헌정수호의례정통성-기제-계열" data-for="1-3-a2헌정수호의례정통성-기제-계열">1-3) A2(헌정수호/의례/정통성 기제) 계열</a></li><li class="depth-2"><a href="#1-4-b선거인사검증icxjsa-계열" data-for="1-4-b선거인사검증icxjsa-계열">1-4) B(선거/인사검증/ICX/JSA) 계열</a></li><li class="depth-2"><a href="#1-5-c국방행정c2다영역전력-운용-계열" data-for="1-5-c국방행정c2다영역전력-운용-계열">1-5) C(국방행정/C2/다영역전력 운용) 계열</a></li><li class="depth-2"><a href="#1-6-d사법통제윤리규제금기기술-계열" data-for="1-6-d사법통제윤리규제금기기술-계열">1-6) D(사법통제/윤리규제/금기기술) 계열</a></li><li class="depth-1"><a href="#2-서브마스터별-보강제외중복정리-작업-지시" data-for="2-서브마스터별-보강제외중복정리-작업-지시">2. 서브마스터별 “보강/제외/중복정리” 작업 지시</a></li><li class="depth-2"><a href="#2-1-r1_spine허브-작업-지시" data-for="2-1-r1_spine허브-작업-지시">2-1) R1_Spine(허브) 작업 지시</a></li><li class="depth-2"><a href="#2-2-r1a_헌정철학_국가정체성-작업-지시" data-for="2-2-r1a_헌정철학_국가정체성-작업-지시">2-2) R1A_헌정철학_국가정체성 작업 지시</a></li><li class="depth-2"><a href="#2-3-r1a2_헌정수호_의례_정통성기제-작업-지시" data-for="2-3-r1a2_헌정수호_의례_정통성기제-작업-지시">2-3) R1A2_헌정수호_의례_정통성기제 작업 지시</a></li><li class="depth-2"><a href="#2-4-r1b_선거_인사검증_icx_jsa-작업-지시" data-for="2-4-r1b_선거_인사검증_icx_jsa-작업-지시">2-4) R1B_선거_인사검증_ICX_JSA 작업 지시</a></li><li class="depth-2"><a href="#2-5-r1b-app_redteam_critique_강철의지자-작업-지시" data-for="2-5-r1b-app_redteam_critique_강철의지자-작업-지시">2-5) R1B-APP_RedTeam_Critique_강철의지자 작업 지시</a></li><li class="depth-2"><a href="#2-6-r1c_국방행정_c2_다영역전력운용-작업-지시" data-for="2-6-r1c_국방행정_c2_다영역전력운용-작업-지시">2-6) R1C_국방행정_C2_다영역전력운용 작업 지시</a></li><li class="depth-2"><a href="#2-7-r1d1r1d2-작업-지시" data-for="2-7-r1d1r1d2-작업-지시">2-7) R1D1/R1D2 작업 지시</a></li><li class="depth-1"><a href="#3-교차-검증핀포인트-인터페이스-명세" data-for="3-교차-검증핀포인트-인터페이스-명세">3. 교차 검증(핀포인트) 인터페이스 명세</a></li><li class="depth-2"><a href="#3-1-r1b--r3사회계층" data-for="3-1-r1b--r3사회계층">3-1) R1B ↔ R3(사회/계층)</a></li><li class="depth-2"><a href="#3-2-r1cr1d2--r4과학기술" data-for="3-2-r1cr1d2--r4과학기술">3-2) R1C/R1D2 ↔ R4(과학/기술)</a></li><li class="depth-2"><a href="#3-3-r1d1--r2역사사건" data-for="3-3-r1d1--r2역사사건">3-3) R1D1 ↔ R2(역사/사건)</a></li><li class="depth-1"><a href="#4-정본real-lore-내려쓰기-프로토콜" data-for="4-정본real-lore-내려쓰기-프로토콜">4. 정본(Real Lore) 내려쓰기 프로토콜</a></li><li class="depth-2"><a href="#4-1-내려쓰기-규칙" data-for="4-1-내려쓰기-규칙">4-1) 내려쓰기 규칙</a></li><li class="depth-2"><a href="#4-2-내려쓰기-순서" data-for="4-2-내려쓰기-순서">4-2) 내려쓰기 순서</a></li><li class="depth-1"><a href="#5-실행-체크리스트작업자가-그대로-따라하면-되는-단계" data-for="5-실행-체크리스트작업자가-그대로-따라하면-되는-단계">5. 실행 체크리스트(작업자가 그대로 따라하면 되는 단계)</a></li><li class="depth-1"><a href="#6-메모추가-확장-옵션" data-for="6-메모추가-확장-옵션">6. 메모(추가 확장 옵션)</a></li><li class="depth-0"><a href="#7-세부-섹션별-소스-위치문서명헤더라인-범위-매핑" data-for="7-세부-섹션별-소스-위치문서명헤더라인-범위-매핑">7. 세부 섹션별 소스 위치(문서명/헤더/라인 범위) 매핑</a></li><li class="depth-1"><a href="#7-1-r1_spine_통치와_규범_인덱스md" data-for="7-1-r1_spine_통치와_규범_인덱스md">7-1) R1_Spine_통치와_규범_인덱스.md</a></li><li class="depth-2"><a href="#spine-0-서두-r1-핵심-목표문36문장" data-for="spine-0-서두-r1-핵심-목표문36문장">[Spine-0] 서두: R1 핵심 목표문(3~6문장)</a></li><li class="depth-2"><a href="#spine-1-서브마스터-링크요약목차-역할" data-for="spine-1-서브마스터-링크요약목차-역할">[Spine-1] 서브마스터 링크/요약(목차 역할)</a></li><li class="depth-2"><a href="#spine-2-옵션-기존-점검-리포트--issue-queue-링크" data-for="spine-2-옵션-기존-점검-리포트--issue-queue-링크">[Spine-2] (옵션) 기존 점검 리포트 → Issue Queue 링크</a></li><li class="depth-1"><a href="#7-2-r1a_헌정철학_국가정체성md" data-for="7-2-r1a_헌정철학_국가정체성md">7-2) R1A_헌정철학_국가정체성.md</a></li><li class="depth-2"><a href="#a-1-국가-정체성-중첩된-삼중-체제정의요약" data-for="a-1-국가-정체성-중첩된-삼중-체제정의요약">[A-1] 국가 정체성: 중첩된 삼중 체제(정의·요약)</a></li><li class="depth-2"><a href="#a-2-민주주의-이론-역량-기반-제한-민주주의핵심-명제정의1----문서-엘리시움_제_2_연방_민주주의_이론_중편md" data-for="a-2-민주주의-이론-역량-기반-제한-민주주의핵심-명제정의1----문서-엘리시움_제_2_연방_민주주의_이론_중편md">[A-2] 민주주의 이론: 역량 기반 제한 민주주의(핵심 명제/정의)$1  - 문서: 엘리시움_제_2_연방_민주주의_이론_중편.md</a></li><li class="depth-2"><a href="#a-3-정치-지형과-주요-파벌분류-기준--최소-요약" data-for="a-3-정치-지형과-주요-파벌분류-기준--최소-요약">[A-3] 정치 지형과 주요 파벌(분류 기준 + 최소 요약)</a></li><li class="depth-2"><a href="#a-4-정치철학-논고annex-고정" data-for="a-4-정치철학-논고annex-고정">[A-4] 정치철학 논고(Annex 고정)</a></li><li class="depth-1"><a href="#7-3-r1a2_헌정수호_의례_정통성기제md" data-for="7-3-r1a2_헌정수호_의례_정통성기제md">7-3) R1A2_헌정수호_의례_정통성기제.md</a></li><li class="depth-2"><a href="#a2-1-정통성통치체제-시각-언어-연결참조-링크" data-for="a2-1-정통성통치체제-시각-언어-연결참조-링크">[A2-1] 정통성/통치체제 시각 언어 연결(참조 링크)</a></li><li class="depth-2"><a href="#a2-2-정부통치체제-아이콘-정의흡수-금지-링크만" data-for="a2-2-정부통치체제-아이콘-정의흡수-금지-링크만">[A2-2] 정부·통치체제 아이콘 정의(흡수 금지, 링크만)</a></li><li class="depth-1"><a href="#7-4-r1b_선거_인사검증_icx_jsamd" data-for="7-4-r1b_선거_인사검증_icx_jsamd">7-4) R1B_선거_인사검증_ICX_JSA.md</a></li><li class="depth-2"><a href="#b-0-개요-icxjsa가-r1에서-갖는-위치요약링크" data-for="b-0-개요-icxjsa가-r1에서-갖는-위치요약링크">[B-0] 개요: ICX/JSA가 R1에서 갖는 위치(요약+링크)</a></li><li class="depth-2"><a href="#b-1-icx-규범-스펙과목체계운영원칙평가-가이드" data-for="b-1-icx-규범-스펙과목체계운영원칙평가-가이드">[B-1] ICX 규범 스펙(과목체계/운영원칙/평가 가이드)</a></li><li class="depth-2"><a href="#b-2-icx-비판리스크annex-또는-쟁점-섹션" data-for="b-2-icx-비판리스크annex-또는-쟁점-섹션">[B-2] ICX 비판/리스크(Annex 또는 ‘쟁점’ 섹션)</a></li><li class="depth-2"><a href="#b-3-jsa-규범-스펙단계유형판정이의" data-for="b-3-jsa-규범-스펙단계유형판정이의">[B-3] JSA 규범 스펙(단계/유형/판정·이의)</a></li><li class="depth-2"><a href="#b-4-jsa-비판리스크대안annex-또는-쟁점" data-for="b-4-jsa-비판리스크대안annex-또는-쟁점">[B-4] JSA 비판/리스크/대안(Annex 또는 ‘쟁점’)</a></li><li class="depth-2"><a href="#b-x-문턱-효과-완화-처리-규칙이관-명세" data-for="b-x-문턱-효과-완화-처리-규칙이관-명세">[B-X] “문턱 효과 완화” 처리 규칙(이관 명세)</a></li><li class="depth-1"><a href="#7-5-r1b-app_redteam_critique_강철의지자md" data-for="7-5-r1b-app_redteam_critique_강철의지자md">7-5) R1B-APP_RedTeam_Critique_강철의지자.md</a></li><li class="depth-2"><a href="#rt-0-레드팀-근거-링크스펙-근거만-연결" data-for="rt-0-레드팀-근거-링크스펙-근거만-연결">[RT-0] 레드팀 근거 링크(스펙 근거만 연결)</a></li><li class="depth-1"><a href="#7-6-r1c_국방행정_c2_다영역전력운용md" data-for="7-6-r1c_국방행정_c2_다영역전력운용md">7-6) R1C_국방행정_C2_다영역전력운용.md</a></li><li class="depth-2"><a href="#c-1-국방-행정-및-지휘-이양요약-규범" data-for="c-1-국방-행정-및-지휘-이양요약-규범">[C-1] 국방 행정 및 지휘 이양(요약 규범)</a></li><li class="depth-2"><a href="#c-1b-제2기-전술-교리-요약아케인-펑크-r1c는-운용-원칙만" data-for="c-1b-제2기-전술-교리-요약아케인-펑크-r1c는-운용-원칙만">[C-1b] 제2기 전술 교리 요약(아케인 펑크: R1C는 운용 원칙만)</a></li><li class="depth-2"><a href="#c-1c-우주-시대-도약을-위한-다영역-전력요약-편제운용만" data-for="c-1c-우주-시대-도약을-위한-다영역-전력요약-편제운용만">[C-1c] 우주 시대 도약을 위한 다영역 전력(요약: 편제/운용만)</a></li><li class="depth-2"><a href="#c-2-편제다영역-운용운용조직-중심" data-for="c-2-편제다영역-운용운용조직-중심">[C-2] 편제/다영역 운용(운용·조직 중심)</a></li><li class="depth-2"><a href="#c-3-c4ic2-관련-단일-구간" data-for="c-3-c4ic2-관련-단일-구간">[C-3] C4I/C2 관련 단일 구간</a></li><li class="depth-2"><a href="#c-4-마도-화약-복합-교리제안서-annex-권장" data-for="c-4-마도-화약-복합-교리제안서-annex-권장">[C-4] 마도-화약 복합 교리(제안서: Annex 권장)</a></li><li class="depth-1"><a href="#7-7-r1d1_사법통제_군법_집행절차md" data-for="7-7-r1d1_사법통제_군법_집행절차md">7-7) R1D1_사법통제_군법_집행절차.md</a></li><li class="depth-2"><a href="#d1-1-군사-사법헌병징계요약-규범" data-for="d1-1-군사-사법헌병징계요약-규범">[D1-1] 군사 사법/헌병/징계(요약 규범)</a></li><li class="depth-1"><a href="#7-8-r1d2_윤리규제_금기기술_차원침식md" data-for="7-8-r1d2_윤리규제_금기기술_차원침식md">7-8) R1D2_윤리규제_금기기술_차원침식.md</a></li><li class="depth-2"><a href="#d2-1-영혼-마모침식-임계치-준수-규정계산식물리학-제외" data-for="d2-1-영혼-마모침식-임계치-준수-규정계산식물리학-제외">[D2-1] 영혼 마모/침식 임계치 준수 ‘규정’(계산식/물리학 제외)</a></li><li class="depth-2"><a href="#d2-2-국가-절대-금기-기술위협-관리금지제한허가-규범" data-for="d2-2-국가-절대-금기-기술위협-관리금지제한허가-규범">[D2-2] 국가 절대 금기 기술/위협 관리(금지/제한/허가 규범)</a></li><li class="depth-2"><a href="#d2-3-윤리사상-아이콘흡수-금지-필요한-그룹만-링크" data-for="d2-3-윤리사상-아이콘흡수-금지-필요한-그룹만-링크">[D2-3] 윤리·사상 아이콘(흡수 금지, 필요한 그룹만 링크)</a></li><li class="depth-1"><a href="#7-9-r1_lore_정본_통치와규범md-다운스트림" data-for="7-9-r1_lore_정본_통치와규범md-다운스트림">7-9) R1_Lore_정본_통치와규범.md (다운스트림)</a></li><li class="depth-2"><a href="#lore-rule-정본에-포함-가능한-소스-범위선언문스펙만" data-for="lore-rule-정본에-포함-가능한-소스-범위선언문스펙만">[Lore-Rule] 정본에 포함 가능한 소스 범위(선언문/스펙만)</a></li><li class="depth-0"><a href="#8-누락-점검-결과파일섹션" data-for="8-누락-점검-결과파일섹션">8. 누락 점검 결과(파일/섹션)</a></li><li class="depth-1"><a href="#8-1-누락된-파일은-없음" data-for="8-1-누락된-파일은-없음">8-1) 누락된 ‘파일’은 없음</a></li><li class="depth-1"><a href="#8-2-다만-파일-내부에서-매핑에서-빠진-유의미한-섹션이-있음" data-for="8-2-다만-파일-내부에서-매핑에서-빠진-유의미한-섹션이-있음">8-2) 다만, 파일 내부에서 매핑에서 빠진 유의미한 섹션이 있음</a></li><li class="depth-2"><a href="#a-민주주의-이론-3부작-중-중편이-매핑에서-누락됨중요" data-for="a-민주주의-이론-3부작-중-중편이-매핑에서-누락됨중요">A) 민주주의 이론 3부작 중 ‘중편’이 매핑에서 누락됨(중요)</a></li><li class="depth-2"><a href="#b-r1c-관련-제1권역_통합_마스터md의-3장-하위-섹션3133-라인-매핑-누락보완-권장" data-for="b-r1c-관련-제1권역_통합_마스터md의-3장-하위-섹션3133-라인-매핑-누락보완-권장">B) R1C 관련: 제1권역_통합_마스터.md의 3장 하위 섹션(3.1~3.3) 라인 매핑 누락(보완 권장)</a></li><li class="depth-2"><a href="#c-제2기_통합_군사_편제_및_특수_병종_총람_completemd는-매핑이-일부-구간만-잡혀-있음범위-확장-필요-가능" data-for="c-제2기_통합_군사_편제_및_특수_병종_총람_completemd는-매핑이-일부-구간만-잡혀-있음범위-확장-필요-가능">C) 제2기_통합_군사_편제_및_특수_병종_총람_Complete.md는 매핑이 ‘일부 구간’만 잡혀 있음(범위 확장 필요 가능)</a></li><li class="depth-2"><a href="#d--엘리스-프라우셰크트-정부통치체제-아이콘-마스터-정의서md는-13번정체구조정당성만-매핑됨확장-필요-가능" data-for="d--엘리스-프라우셰크트-정부통치체제-아이콘-마스터-정의서md는-13번정체구조정당성만-매핑됨확장-필요-가능">D) 🎨 엘리스 프라우셰크트; 정부·통치체제 아이콘 마스터 정의서.md는 1~3번(정체/구조/정당성)만 매핑됨(확장 필요 가능)</a></li><li class="depth-2"><a href="#e-제1권역-통치와-규범md의-누락보완-필요-사항-점검-리포트는-매핑에서-빠져-있음옵션" data-for="e-제1권역-통치와-규범md의-누락보완-필요-사항-점검-리포트는-매핑에서-빠져-있음옵션">E) 제1권역; 통치와 규범.md의 ‘누락/보완 필요 사항 점검 리포트’는 매핑에서 빠져 있음(옵션)</a></li><li class="depth-1"><a href="#8-3-최소-보완-권장-세트즉시-반영하면-좋은-것" data-for="8-3-최소-보완-권장-세트즉시-반영하면-좋은-것">8-3) 최소 보완 권장 세트(즉시 반영하면 좋은 것)</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1156"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1156" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/02-일지·브레인스토밍/">02 일지·브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/">99 정리해야 하는 설정 브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/">제1권역; 통치와 규범</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/폐기/">폐기</a></div></nav><h1 class="article-title"># r_1_통합_아키텍처_명세_지시서_수용안_반영본</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:33.478Z">2026년 9월 30일</time><span>34 분 소요</span></p></div></div><article class="popover-hint"><h1 id="r1제1권역-통치와-규범-통합-아키텍처-명세-지시-문서">R1(제1권역: 통치와 규범) 통합 아키텍처 명세 지시 문서<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#r1제1권역-통치와-규범-통합-아키텍처-명세-지시-문서" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>목적: <code>제1권역_통합_마스터.md</code>를 기준(Spine)으로, 업로드된 소스 파일들을 <font style="font-weight:bold;">요직(핵심 클러스터) 단위 서브마스터</font>로 재분류·통합하고, 중복/충돌을 정리한 뒤 <font style="font-weight:bold;">정본(Real Lore) 문서로 내려쓰기</font> 하기 위한 작업 지시서.</p>
+<p>원칙: (1) <font style="font-weight:bold;">기구(기관) 고정 금지</font>: 서브마스터는 <em>기관</em>이 아니라 <em>기능/규범/프로세스</em> 기준으로 편제. (2) <font style="font-weight:bold;">기술 스펙 원장 분리</font>: 기술/무장/코어 스펙은 R4(과학/기술) 원장으로 보내고, R1에는 운용·통제·절차만 남김. (3) <font style="font-weight:bold;">정본에는 선언문만</font>: 논고/비판/레드팀은 서브마스터/부록에 보존, 정본에는 금지.</p>
+</blockquote>
+<hr/>
+<h2 id="0-산출물파일-목록">0. 산출물(파일) 목록<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-산출물파일-목록" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="0-1-spine허브">0-1) Spine(허브)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-1-spine허브" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>R1_Spine_통치와_규범_인덱스.md</code></li>
+</ul>
+<h3 id="0-2-서브마스터요직-클러스터">0-2) 서브마스터(요직 클러스터)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-2-서브마스터요직-클러스터" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>R1A_헌정철학_국가정체성.md</code></li>
+<li><code>R1A2_헌정수호_의례_정통성기제.md</code> <em>(옵션: A2를 A에 병합 가능)</em></li>
+<li><code>R1B_선거_인사검증_ICX_JSA.md</code></li>
+<li><code>R1B-APP_RedTeam_Critique_강철의지자.md</code> <em>(필수: 별도 부록 파일)</em></li>
+<li><code>R1C_국방행정_C2_다영역전력운용.md</code></li>
+<li><code>R1D1_사법통제_군법_집행절차.md</code> <em>(옵션 분리 1)</em></li>
+<li><code>R1D2_윤리규제_금기기술_차원침식.md</code> <em>(옵션 분리 2)</em></li>
+</ul>
+<h3 id="0-3-정본다운스트림-산출">0-3) 정본(다운스트림 산출)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-3-정본다운스트림-산출" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>R1_Lore_정본_통치와규범.md</code></li>
+</ul>
+<hr/>
+<h2 id="1-입력-소스업로드-파일--세부-권역-분류표">1. 입력 소스(업로드 파일) → 세부 권역 분류표<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-입력-소스업로드-파일--세부-권역-분류표" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>표기 규칙</p>
+<ul>
+<li><font style="font-weight:bold;">주 편입(Primary)</font>: 해당 서브마스터의 본문으로 흡수</li>
+<li><font style="font-weight:bold;">부록(Annex)</font>: 본문이 아니라 부록/근거로 링크 유지</li>
+<li><font style="font-weight:bold;">타 권역 이관(Transfer)</font>: R1이 아닌 다른 권역(예: R4 기술 원장, R3 사회/계층)에 내려보냄</li>
+<li><font style="font-weight:bold;">제외(Exclude)</font>: R1 통합 범위에서 제외(다른 레포에 보관은 가능)</li>
+</ul>
+</blockquote>
+<h3 id="1-1-r1-spine의-기준-소스">1-1) R1 Spine의 기준 소스<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-1-r1-spine의-기준-소스" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>제1권역_통합_마스터.md</code> → <font style="font-weight:bold;">R1_Spine (Primary)</font>
+<ul>
+<li>역할: R1 전반의 표준 용어/요약/링크 기준점</li>
+</ul>
+</li>
+<li><code>제1권역; 통치와 규범.md</code> → <font style="font-weight:bold;">R1_Spine (Annex)</font>
+<ul>
+<li>역할: 기존 원형 구조/서술의 증거(근거)로 보존. Spine에는 링크만.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-a헌정철학국가정체성-계열">1-2) A(헌정철학/국가정체성) 계열<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-2-a헌정철학국가정체성-계열" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>엘리시움_제_2_연방_민주주의_이론_상편.md</code> → <font style="font-weight:bold;">R1A (Annex)</font></li>
+<li><code>엘리시움_제_2_연방_민주주의_이론_중편.md</code> → <font style="font-weight:bold;">R1A (Annex)</font></li>
+<li><code>엘리시움_제_2_연방_민주주의_이론_하편.md</code> → <font style="font-weight:bold;">R1A (Annex)</font>
+<ul>
+<li>처리: 본문으로 대량 복붙 금지. <font style="font-weight:bold;">핵심 정의/명제</font>만 R1A에 ‘결론 문장’으로 추출하고, 각 명제는 원문 위치로 링크.</li>
+</ul>
+</li>
+<li><code>엘리시움_제_2_연방_정치철학_논고_초안.md</code> → <font style="font-weight:bold;">R1A (Annex)</font>
+<ul>
+<li>처리: 정당화 논증/대안 제시/반론은 Annex로 고정. R1A에는 ‘헌정철학 결론’만 반영.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-3-a2헌정수호의례정통성-기제-계열">1-3) A2(헌정수호/의례/정통성 기제) 계열<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-3-a2헌정수호의례정통성-기제-계열" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>🎨 엘리스 프라우셰크트; 정부·통치체제 아이콘 마스터 정의서.md</code> → <font style="font-weight:bold;">R1A2 (Annex)</font>
+<ul>
+<li>처리: 아이콘/정의는 시각 언어 표준이므로 R1A2에서는 <font style="font-weight:bold;">기관-기능 맵</font>에만 참조 링크.</li>
+</ul>
+</li>
+<li><code>🎨 엘리스 프라우셰크트; 윤리관·사상 아이콘 마스터 캔버스.md</code> → <font style="font-weight:bold;">R1A (Annex)</font>
+<ul>
+<li>처리: 이념/윤리 축을 R1A의 용어표에 연결. 본문 흡수 최소화.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-4-b선거인사검증icxjsa-계열">1-4) B(선거/인사검증/ICX/JSA) 계열<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-4-b선거인사검증icxjsa-계열" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>엘리시움 연방 인지능력 확인 시험(ICX) 개정 체계안.md</code> → <font style="font-weight:bold;">R1B (Primary)</font></li>
+<li><code>엘리시움 연방 인지능력 확인 시험(ICX) 개정 체계 및 비판적 검토 보고서.md</code> → <font style="font-weight:bold;">R1B (Primary+Annex)</font>
+<ul>
+<li>처리: <font style="font-weight:bold;">제도 스펙(과목, 시효, 자격, 예외)</font>은 Primary로 흡수. 비판/대안/위험은 ‘쟁점’으로 이동 후 Annex 링크.</li>
+</ul>
+</li>
+<li><code>엘리시움 연방 인지확인 및 직무적부심사 평가 체계.md</code> → <font style="font-weight:bold;">R1B (Primary)</font></li>
+<li><code>엘리시움 연방 직무적부심사(JSA) 체계 비판적 검토 보고서.md</code> → <font style="font-weight:bold;">R1B (Primary+Annex)</font>
+<ul>
+<li>처리: JSA의 <font style="font-weight:bold;">정량 필터 / 청문 유형 / 판정 결과 / 이의절차</font>는 Primary로, 비판은 Annex로.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><font style="font-weight:bold;">중요(이관 규칙):</font></p>
+<ul>
+<li>‘교육 격차 완화’, ‘복지/계층 연동’ 같은 <font style="font-weight:bold;">사회정책 설계</font>는 R3로 이관.</li>
+<li>R1B에는 “제도가 요구하는 완화 조건(spec)”만 남김.</li>
+</ul>
+</blockquote>
+<h3 id="1-5-c국방행정c2다영역전력-운용-계열">1-5) C(국방행정/C2/다영역전력 운용) 계열<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-5-c국방행정c2다영역전력-운용-계열" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><code>제2기_통합_군사_편제_및_특수_병종_총람_Complete.md</code> → <font style="font-weight:bold;">R1C (Primary)</font>
+<ul>
+<li>처리: 편제/지휘체계/운용교리/전시전환 프로토콜 등 ‘행정·운용’만 흡수.</li>
+<li><font style="font-weight:bold;">기술 스펙(무장 성능치/코어 물성/치수)</font>는 R4 원장으로 이관.</li>
+</ul>
+</li>
+<li><code>군사 관련 보완 제안서.md</code> → <font style="font-weight:bold;">R1C (Annex)</font>
+<ul>
+<li>처리: 제안·옵션·미채택안은 Annex로 보존하고, 채택된 결론만 Primary로 반영.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-6-d사법통제윤리규제금기기술-계열">1-6) D(사법통제/윤리규제/금기기술) 계열<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-6-d사법통제윤리규제금기기술-계열" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>(직접 소스가 위 목록에 없을 수 있음) → <font style="font-weight:bold;">R1D1/R1D2는 R1 내부에서 ‘규범 조항’로 재정의</font>
+<ul>
+<li>처리: JSA/ICX 비판 보고서, 군사 편제 문서 내 규율 조항에서 ‘사법/윤리/금기’에 해당하는 부분을 <font style="font-weight:bold;">발췌 편입</font>.</li>
+<li>기술 자체의 상세는 R4로 이관.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="2-서브마스터별-보강제외중복정리-작업-지시">2. 서브마스터별 “보강/제외/중복정리” 작업 지시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-서브마스터별-보강제외중복정리-작업-지시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="2-1-r1_spine허브-작업-지시">2-1) R1_Spine(허브) 작업 지시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-1-r1_spine허브-작업-지시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><font style="font-weight:bold;">포함(보강)</font></p>
+<ul>
+<li>R1의 목표문: “역량 기반 제한 민주주의 + 제국적 통제의 결합”을 3~6문장으로 확정.</li>
+<li>각 서브마스터 링크 + 3~8줄 요약 + 상태(초안/검증중/확정).</li>
+<li>Issue Queue(쟁점 큐): 충돌/미정/보류 항목을 ID로 관리.</li>
+</ul>
+<p><font style="font-weight:bold;">제외</font></p>
+<ul>
+<li>장문 논증, 세부 절차, 표준 외 스펙.</li>
+</ul>
+<p><font style="font-weight:bold;">중복정리 규칙</font></p>
+<ul>
+<li>동일 정의가 여러 파일에 있으면 Spine에는 <font style="font-weight:bold;">최종 정의 1개만</font>.</li>
+<li>근거는 “출처 링크”로만 달기.</li>
+</ul>
+<hr/>
+<h3 id="2-2-r1a_헌정철학_국가정체성-작업-지시">2-2) R1A_헌정철학_국가정체성 작업 지시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-2-r1a_헌정철학_국가정체성-작업-지시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><font style="font-weight:bold;">포함(보강)</font></p>
+<ul>
+<li>용어표(필수): ‘역량’, ‘참정권 자격’, ‘정통성’, ‘삼중 체제(성국/제국/연방)’ 등 핵심 정의.</li>
+<li>정치 지형: 정당/정파 블록은 “분류 기준 + 최소 요약”만.</li>
+<li>‘다수결 폭정 방지’에 대한 <font style="font-weight:bold;">제도적 결론</font>(예: 자격제/견제장치)만 수록.</li>
+</ul>
+<p><font style="font-weight:bold;">제외</font></p>
+<ul>
+<li>민주주의 이론 3부작의 장문 본문.</li>
+<li>정치철학 논고의 수사/문체/미학적 논증.</li>
+</ul>
+<p><font style="font-weight:bold;">중복정리</font></p>
+<ul>
+<li>같은 원리를 다른 표현으로 반복하면 ‘최종 문장’만 남기고 나머지는 Annex로 링크.</li>
+</ul>
+<hr/>
+<h3 id="2-3-r1a2_헌정수호_의례_정통성기제-작업-지시">2-3) R1A2_헌정수호_의례_정통성기제 작업 지시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-3-r1a2_헌정수호_의례_정통성기제-작업-지시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><font style="font-weight:bold;">포함(보강)</font></p>
+<ul>
+<li>“헌정수호 메커니즘”을 기능 기준으로 정리:
+<ul>
+<li>합헌성/탄핵/권한쟁의/정당규율 등</li>
+<li>의례/정통성 재확인 절차(국가행사/선서/상징 체계)</li>
+</ul>
+</li>
+</ul>
+<p><font style="font-weight:bold;">제외</font></p>
+<ul>
+<li>기관 조직도 세부(인원/부서) — 필요시 별도 문서로.</li>
+</ul>
+<p><font style="font-weight:bold;">중복정리</font></p>
+<ul>
+<li>아이콘 정의서는 직접 흡수하지 말고 <font style="font-weight:bold;">참조 링크</font>로만 유지.</li>
+</ul>
+<hr/>
+<h3 id="2-4-r1b_선거_인사검증_icx_jsa-작업-지시">2-4) R1B_선거_인사검증_ICX_JSA 작업 지시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-4-r1b_선거_인사검증_icx_jsa-작업-지시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><font style="font-weight:bold;">포함(보강)</font></p>
+<ul>
+<li>ICX/JSA의 “규범 스펙”을 표준화:
+<ul>
+<li>대상/시기/주기/시효</li>
+<li>과목/평가방식/판정등급</li>
+<li>이의제기/재응시/자격정지</li>
+<li>예외(면제/대체/비상조치)</li>
+</ul>
+</li>
+</ul>
+<p><font style="font-weight:bold;">제외(이관)</font></p>
+<ul>
+<li>교육격차 완화 ‘정책 설계’는 R3로 이관.
+<ul>
+<li>R1B에는 “완화 요구조건(필수 최소요건)”만 남김.</li>
+</ul>
+</li>
+<li>AI 검증의 기술적 상세(모델, 데이터, 알고리즘)는 R4로 이관.</li>
+</ul>
+<p><font style="font-weight:bold;">중복정리</font></p>
+<ul>
+<li>ICX/JSA가 서로 중복 정의하는 항목(예: ‘시효’, ‘부적격’):
+<ul>
+<li>R1B에 “공통 규칙(Common Rules)” 섹션을 만들고 1회만 정의.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 id="2-5-r1b-app_redteam_critique_강철의지자-작업-지시">2-5) R1B-APP_RedTeam_Critique_강철의지자 작업 지시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-5-r1b-app_redteam_critique_강철의지자-작업-지시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><font style="font-weight:bold;">형식 고정(필수)</font></p>
+<ul>
+<li>문체 지시 금지(냉소/조롱 등 감정형 표현 금지).</li>
+<li>대신 ‘모의 반대의견서/적대적 리뷰’ 형식으로:
+<ol>
+<li>공격 명제(Claim)</li>
+<li>공격 벡터(How it breaks)</li>
+<li>예상 사회적 파장(Impact)</li>
+<li>연방의 방어 논리/완충 장치(Defense)</li>
+<li>남는 리스크(Residual risk)</li>
+</ol>
+</li>
+</ul>
+<hr/>
+<h3 id="2-6-r1c_국방행정_c2_다영역전력운용-작업-지시">2-6) R1C_국방행정_C2_다영역전력운용 작업 지시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-6-r1c_국방행정_c2_다영역전력운용-작업-지시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><font style="font-weight:bold;">포함(보강)</font></p>
+<ul>
+<li>평시/전시 통수권 이양 프로토콜(조건/발동/종료)</li>
+<li>지휘통제(C2) 구조(기능 기준): 정보-결심-타격-평가 루프</li>
+<li>다영역(육/해/공/우주/마도) 운용 원칙과 “법적 권한 연계”</li>
+</ul>
+<p><font style="font-weight:bold;">제외(이관)</font></p>
+<ul>
+<li>무장·장비 스펙(성능치, 물성, 코어 구조) → R4 기술 원장.</li>
+</ul>
+<p><font style="font-weight:bold;">중복정리</font></p>
+<ul>
+<li>편제 문서와 보완 제안서가 동일 항목을 다루면:
+<ul>
+<li>채택본만 본문에</li>
+<li>나머지는 Annex로 링크</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 id="2-7-r1d1r1d2-작업-지시">2-7) R1D1/R1D2 작업 지시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-7-r1d1r1d2-작업-지시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><font style="font-weight:bold;">R1D1(사법/절차)</font></p>
+<ul>
+<li>군법/전시 법무관/즉결 절차/구금-심문-재판 흐름</li>
+<li>권한 남용 방지(감사/감찰/상급 승인) 장치</li>
+</ul>
+<p><font style="font-weight:bold;">R1D2(윤리/규제/금기)</font></p>
+<ul>
+<li>금기기술 등급표(금지/제한/허가)</li>
+<li>차원침식 임계치 규정(‘수치’ 자체는 R4에서 가져오되, R1에서는 “준수 의무/처벌/보고”만)</li>
+</ul>
+<p><font style="font-weight:bold;">제외(이관)</font></p>
+<ul>
+<li>‘임계치 계산식/물리학 모델’ → R4.</li>
+</ul>
+<hr/>
+<h2 id="3-교차-검증핀포인트-인터페이스-명세">3. 교차 검증(핀포인트) 인터페이스 명세<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-교차-검증핀포인트-인터페이스-명세" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="3-1-r1b--r3사회계층">3-1) R1B ↔ R3(사회/계층)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-1-r1b--r3사회계층" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>검증 질문
+<ul>
+<li>ICX/JSA 결과가 <font style="font-weight:bold;">신분/계층/거주/배급</font>에 “어떤 법적 링크”로 연결되는가?</li>
+<li>R1B에 ‘연동 근거 조항(링크)’만 존재하는가? (정책 설계가 R1B로 역류하지 않는가?)</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-r1cr1d2--r4과학기술">3-2) R1C/R1D2 ↔ R4(과학/기술)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-2-r1cr1d2--r4과학기술" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>검증 질문
+<ul>
+<li>R1에서 언급한 장비/금기기술이 R4 원장 스펙과 모순 없는가?</li>
+<li>R1에는 ‘운용/규제’만 있고 ‘스펙/공식’이 남아있지 않은가?</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-3-r1d1--r2역사사건">3-3) R1D1 ↔ R2(역사/사건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-3-r1d1--r2역사사건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>검증 질문
+<ul>
+<li>금기기술 통제와 전시 즉결 절차가 특정 역사 사건과 시간·인과 모순을 내지 않는가?</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="4-정본real-lore-내려쓰기-프로토콜">4. 정본(Real Lore) 내려쓰기 프로토콜<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-정본real-lore-내려쓰기-프로토콜" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="4-1-내려쓰기-규칙">4-1) 내려쓰기 규칙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-1-내려쓰기-규칙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>정본에는 <font style="font-weight:bold;">확정된 법령/규칙/스펙 선언문</font>만.</li>
+<li>반대의견/비판/대안/레드팀은 <font style="font-weight:bold;">정본에 절대 포함 금지</font>.</li>
+<li>정본 문장은 ‘판결문/시행령’ 톤으로.</li>
+</ul>
+<h3 id="4-2-내려쓰기-순서">4-2) 내려쓰기 순서<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-2-내려쓰기-순서" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Spine의 최종 정의 확정</li>
+<li>A→B→C→D 순으로 ‘규범 스펙’ 확정</li>
+<li>교차 검증 완료 표시(체크)</li>
+<li>정본으로 추출(복사)하되, 각 문장에는 원 소스 링크/근거 링크를 메타로만 남김</li>
+</ol>
+<hr/>
+<h2 id="5-실행-체크리스트작업자가-그대로-따라하면-되는-단계">5. 실행 체크리스트(작업자가 그대로 따라하면 되는 단계)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-실행-체크리스트작업자가-그대로-따라하면-되는-단계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><code>R1_Spine_...</code> 생성 후 링크 뼈대/Issue Queue 틀 만들기</li>
+<li>A/A2/B/C/D1/D2 파일 생성 후 “빈 목차”만 먼저 세팅</li>
+<li>각 입력 소스 파일에서 <font style="font-weight:bold;">결론 문장만</font> 발췌해 해당 서브마스터에 편입</li>
+<li>중복 정의는 ‘공통 규칙’ 섹션으로 이동</li>
+<li>기술 스펙/계산식/알고리즘은 즉시 R4 이관 표시</li>
+<li>교차 검증 질문 3세트에 대해 ‘모순 없음/해결 필요’로 표기</li>
+<li>최종 확정된 문장만 모아 <code>R1_Lore_정본_...</code> 생성</li>
+</ol>
+<hr/>
+<h2 id="6-메모추가-확장-옵션">6. 메모(추가 확장 옵션)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-메모추가-확장-옵션" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>D가 비대해지면 D1/D2 분리는 <font style="font-weight:bold;">강제</font>로 전환.</li>
+<li>B가 비대해지면 ICX와 JSA를 <code>R1B1_ICX</code> / <code>R1B2_JSA</code>로 추가 분리 가능.</li>
+</ul>
+<hr/>
+<h1 id="7-세부-섹션별-소스-위치문서명헤더라인-범위-매핑">7. 세부 섹션별 소스 위치(문서명/헤더/라인 범위) 매핑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-세부-섹션별-소스-위치문서명헤더라인-범위-매핑" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>목적: 각 서브마스터의 세부 섹션을 채울 때, <font style="font-weight:bold;">어느 원본 문서의 어느 구간을</font> 발췌/링크해야 하는지 기계적으로 지정한다.</p>
+<p>주의:</p>
+<ul>
+<li>라인 범위는 <font style="font-weight:bold;">/mnt/data에 업로드된 원본 파일 기준</font>.</li>
+<li>“Primary”는 발췌·통합 대상(결론/스펙), “Annex”는 장문·비판·대안(링크 보존), “Transfer”는 타 권역(R3/R4 등) 이관 표시.</li>
+</ul>
+</blockquote>
+<hr/>
+<h2 id="7-1-r1_spine_통치와_규범_인덱스md">7-1) <code>R1_Spine_통치와_규범_인덱스.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-1-r1_spine_통치와_규범_인덱스md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="spine-0-서두-r1-핵심-목표문36문장">[Spine-0] 서두: R1 핵심 목표문(3~6문장)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spine-0-서두-r1-핵심-목표문36문장" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>🏛️ 제1권역: 통치와 규범 통합 마스터 파일</code></li>
+<li>라인: <font style="font-weight:bold;">L1-L211</font> <em>(여기서 목표문만 발췌)</em></li>
+</ul>
+</li>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li>헤더: <code>🏛️ 제1권역: 통치와 규범 통합 마스터 파일</code></li>
+<li>라인: <font style="font-weight:bold;">L25-L143</font> <em>(참조용; Spine에는 링크 중심)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="spine-1-서브마스터-링크요약목차-역할">[Spine-1] 서브마스터 링크/요약(목차 역할)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spine-1-서브마스터-링크요약목차-역할" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>제1장: 연방의 정체성과 정치철학 (The Mind)</code> : <font style="font-weight:bold;">L7-L53</font></li>
+<li><code>제2장: 참정권 및 인사 검증 체계 (The System)</code> : <font style="font-weight:bold;">L54-L105</font></li>
+<li><code>제3장: 국방 행정 및 군사 편제 (The Body)</code> : <font style="font-weight:bold;">L106-L145</font></li>
+<li><code>제4장: 금기 및 윤리 규정 (The Redline)</code> : <font style="font-weight:bold;">L146-L186</font></li>
+<li><code>부록: 시각 언어 및 아이콘 마스터 가이드</code> : <font style="font-weight:bold;">L187-L211</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="spine-2-옵션-기존-점검-리포트--issue-queue-링크">[Spine-2] (옵션) 기존 점검 리포트 → Issue Queue 링크<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spine-2-옵션-기존-점검-리포트--issue-queue-링크" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>누락 및 보완 필요 사항 점검 리포트</code> : <font style="font-weight:bold;">L158-L181</font></li>
+<li><code>우선 조치 제안</code> : <font style="font-weight:bold;">L182-L193</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>처리 지시:
+<ul>
+<li>본문 흡수 금지. Spine의 Issue Queue 항목으로만 등록하고 원문 링크를 유지.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="7-2-r1a_헌정철학_국가정체성md">7-2) <code>R1A_헌정철학_국가정체성.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-2-r1a_헌정철학_국가정체성md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="a-1-국가-정체성-중첩된-삼중-체제정의요약">[A-1] 국가 정체성: 중첩된 삼중 체제(정의·요약)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-1-국가-정체성-중첩된-삼중-체제정의요약" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>1.1. 국가 정체성: 중첩된 삼중 체제</code></li>
+<li>라인: <font style="font-weight:bold;">L9-L23</font></li>
+</ul>
+</li>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li>헤더: <code>1.1. 국가 정체성: 중첩된 삼중 체제</code></li>
+<li>라인: <font style="font-weight:bold;">L29-L36</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="a-2-민주주의-이론-역량-기반-제한-민주주의핵심-명제정의1----문서-엘리시움_제_2_연방_민주주의_이론_중편md">[A-2] 민주주의 이론: 역량 기반 제한 민주주의(핵심 명제/정의)$1  - 문서: <code>엘리시움_제_2_연방_민주주의_이론_중편.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-2-민주주의-이론-역량-기반-제한-민주주의핵심-명제정의1----문서-엘리시움_제_2_연방_민주주의_이론_중편md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- 헤더/라인:
+  - `IV. 선거권과 ICX – 숙련된 시민 개념` : &lt;font style=&quot;font-weight:bold&quot;>L3-L19&lt;/font>
+  - `V. 피선거권과 JSA – 책임 있는 엘리트의 조건` : &lt;font style=&quot;font-weight:bold&quot;>L20-L36&lt;/font>
+  - `VI. 다수결, 군주제, 일극우위 연방 – 민주주의와 제국의 결합` : &lt;font style=&quot;font-weight:bold&quot;>L37-L52&lt;/font>
+</code></pre>
+<ul>
+<li>처리 지시:
+<ul>
+<li>Primary: 위 구간에서 ‘결론 문장/정의’만 추출</li>
+<li>Annex: 장문 논증은 링크로만 보존</li>
+</ul>
+</li>
+</ul>
+<h3 id="a-3-정치-지형과-주요-파벌분류-기준--최소-요약">[A-3] 정치 지형과 주요 파벌(분류 기준 + 최소 요약)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-3-정치-지형과-주요-파벌분류-기준--최소-요약" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>1.3. 정치 지형과 주요 파벌 (Political Landscape)</code></li>
+<li>라인: <font style="font-weight:bold;">L38-L53</font></li>
+</ul>
+</li>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li>헤더: <code>1.3. 정당 정치사 및 파벌</code></li>
+<li>라인: <font style="font-weight:bold;">L44-L53</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="a-4-정치철학-논고annex-고정">[A-4] 정치철학 논고(Annex 고정)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-4-정치철학-논고annex-고정" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>엘리시움_제_2_연방_정치철학_논고_초안.md</code>
+<ul>
+<li>헤더: <code>엘리시움 제2연방의 체제: 정치철학적 논고 초안</code></li>
+<li>라인: <font style="font-weight:bold;">L1-L28</font> <em>(전부 Annex 링크)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="7-3-r1a2_헌정수호_의례_정통성기제md">7-3) <code>R1A2_헌정수호_의례_정통성기제.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-3-r1a2_헌정수호_의례_정통성기제md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="a2-1-정통성통치체제-시각-언어-연결참조-링크">[A2-1] 정통성/통치체제 시각 언어 연결(참조 링크)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a2-1-정통성통치체제-시각-언어-연결참조-링크" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>부록: 시각 언어 및 아이콘 마스터 가이드</code></li>
+<li>라인: <font style="font-weight:bold;">L187-L211</font></li>
+</ul>
+</li>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>3. 아이콘 및 시각화 (Icons &amp; Visualization)</code> : <font style="font-weight:bold;">L79-L100</font></li>
+<li><code>3.1. 정부 및 통치체제 아이콘</code> : <font style="font-weight:bold;">L81-L89</font></li>
+<li><code>3.2. 윤리관 및 사상 아이콘</code> : <font style="font-weight:bold;">L90-L100</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="a2-2-정부통치체제-아이콘-정의흡수-금지-링크만">[A2-2] 정부·통치체제 아이콘 정의(흡수 금지, 링크만)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a2-2-정부통치체제-아이콘-정의흡수-금지-링크만" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>🎨 엘리스 프라우셰크트; 정부·통치체제 아이콘 마스터 정의서.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>1. 정체 (Polity)</code> : <font style="font-weight:bold;">L10-L33</font></li>
+<li><code>2. 구조 (Structure)</code> : <font style="font-weight:bold;">L34-L54</font></li>
+<li><code>3. 정당성 (Legitimacy)</code> : <font style="font-weight:bold;">L55-L75</font></li>
+<li><em>(선별 추가 링크 추천: R1에서 자주 참조)</em></li>
+<li><code>9. 치안 (Law)</code> : <font style="font-weight:bold;">L176-L195</font></li>
+<li><code>12. 정보 (Info)</code> : <font style="font-weight:bold;">L235-L252</font></li>
+<li><code>15. 군제 (Military)</code> : <font style="font-weight:bold;">L291-L309</font></li>
+<li><code>20. 비상 (Crisis)</code> : <font style="font-weight:bold;">L382-L401</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="7-4-r1b_선거_인사검증_icx_jsamd">7-4) <code>R1B_선거_인사검증_ICX_JSA.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-4-r1b_선거_인사검증_icx_jsamd" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="b-0-개요-icxjsa가-r1에서-갖는-위치요약링크">[B-0] 개요: ICX/JSA가 R1에서 갖는 위치(요약+링크)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-0-개요-icxjsa가-r1에서-갖는-위치요약링크" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>2.1. 인지능력 확인 시험 (ICX: Intellectual Capability Exam)</code> : <font style="font-weight:bold;">L56-L74</font></li>
+<li><code>2.2. 직무적부심사 (JSA: Job Suitability Assessment)</code> : <font style="font-weight:bold;">L75-L92</font></li>
+<li><code>2.3. 제도의 양면성과 보완책 (문턱 효과 대응)</code> : <font style="font-weight:bold;">L93-L105</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="b-1-icx-규범-스펙과목체계운영원칙평가-가이드">[B-1] ICX 규범 스펙(과목체계/운영원칙/평가 가이드)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-1-icx-규범-스펙과목체계운영원칙평가-가이드" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>엘리시움 연방 인지능력 확인 시험(ICX) 개정 체계 및 비판적 검토 보고서.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>1. 개요 및 과목 체계 (5+5 System)</code> : <font style="font-weight:bold;">L11-L40</font></li>
+<li><code>2. 운영 원칙</code> : <font style="font-weight:bold;">L41-L49</font></li>
+<li><code>세부 개괄: 과목별 평가 가이드라인 및 문제 유형</code> : <font style="font-weight:bold;">L50-L73</font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>문서: <code>엘리시움 연방 인지능력 확인 시험(ICX) 개정 체계안.md</code>
+<ul>
+<li>라인: <font style="font-weight:bold;">L1-L13</font> <em>(헤더 없음; 전체를 “스펙 비교용”으로 참조)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>처리 지시:
+<ul>
+<li>Primary: 스펙(대상/시기/과목/평가/시효/예외)</li>
+<li>Annex: 장문 해설/비판은 링크로 분리</li>
+</ul>
+</li>
+</ul>
+<h3 id="b-2-icx-비판리스크annex-또는-쟁점-섹션">[B-2] ICX 비판/리스크(Annex 또는 ‘쟁점’ 섹션)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-2-icx-비판리스크annex-또는-쟁점-섹션" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>엘리시움 연방 인지능력 확인 시험(ICX) 개정 체계 및 비판적 검토 보고서.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>비판적 검토: 행정 및 헌법적 분석 보고서</code> : <font style="font-weight:bold;">L74-L99</font></li>
+<li><code>전략적 강점 분석</code> : <font style="font-weight:bold;">L76-L82</font></li>
+<li><code>행정적 지속 가능성 및 시효 관리</code> : <font style="font-weight:bold;">L83-L91</font></li>
+<li><em>(후속 비판 구간)</em> : <font style="font-weight:bold;">L92-L99</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="b-3-jsa-규범-스펙단계유형판정이의">[B-3] JSA 규범 스펙(단계/유형/판정·이의)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-3-jsa-규범-스펙단계유형판정이의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>엘리시움 연방 직무적부심사(JSA) 체계 비판적 검토 보고서.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>2. 단계별 비판적 검토 (Critical Review of Steps)</code> : <font style="font-weight:bold;">L86-L114</font></li>
+<li><code>2.1 제1단계: 적격성 심사 (Step 1-3)</code> : <font style="font-weight:bold;">L88-L97</font></li>
+<li><code>2.2 제2단계: 청문 및 공개 검증 (Types A-C)</code> : <font style="font-weight:bold;">L98-L114</font></li>
+<li><code>5. 최종 결론</code> : <font style="font-weight:bold;">L154-L160</font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>문서: <code>엘리시움 연방 인지확인 및 직무적부심사 평가 체계.md</code>
+<ul>
+<li>라인: <font style="font-weight:bold;">L1-L14</font> <em>(헤더 없음; 전체를 “스펙 요약용”으로 참조)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="b-4-jsa-비판리스크대안annex-또는-쟁점">[B-4] JSA 비판/리스크/대안(Annex 또는 ‘쟁점’)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-4-jsa-비판리스크대안annex-또는-쟁점" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>엘리시움 연방 직무적부심사(JSA) 체계 비판적 검토 보고서.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>3. 심층 분석: 부적격 판정 기준의 실효성</code> : <font style="font-weight:bold;">L115-L138</font></li>
+<li><code>4. 제도적 위험 요소 및 대안 (Risk &amp; Mitigation)</code> : <font style="font-weight:bold;">L139-L153</font></li>
+<li><code>1. 개정안의 전략적 강점 (Strategic Strengths)</code> : <font style="font-weight:bold;">L77-L85</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="b-x-문턱-효과-완화-처리-규칙이관-명세">[B-X] “문턱 효과 완화” 처리 규칙(이관 명세)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-x-문턱-효과-완화-처리-규칙이관-명세" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Transfer:
+<ul>
+<li>‘교육 격차 완화’의 <font style="font-weight:bold;">정책 설계</font> → R3(사회/계층)</li>
+<li>‘AI 검증’의 <font style="font-weight:bold;">알고리즘/데이터/모델 상세</font> → R4(과학/기술)</li>
+</ul>
+</li>
+<li>R1B 잔류:
+<ul>
+<li>완화의 “요구조건(spec)”만(예: 의무교육 연동, 시험 응시 기회 보장, 절차적 구제 등)</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="7-5-r1b-app_redteam_critique_강철의지자md">7-5) <code>R1B-APP_RedTeam_Critique_강철의지자.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-5-r1b-app_redteam_critique_강철의지자md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="rt-0-레드팀-근거-링크스펙-근거만-연결">[RT-0] 레드팀 근거 링크(스펙 근거만 연결)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rt-0-레드팀-근거-링크스펙-근거만-연결" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source(링크 전용):
+<ul>
+<li>ICX 스펙: <code>엘리시움 연방 인지능력 확인 시험(ICX) 개정 체계 및 비판적 검토 보고서.md</code> <font style="font-weight:bold;">L11-L73</font></li>
+<li>JSA 스펙: <code>엘리시움 연방 직무적부심사(JSA) 체계 비판적 검토 보고서.md</code> <font style="font-weight:bold;">L86-L114</font></li>
+<li>문턱 효과/보완책: <code>제1권역_통합_마스터.md</code> <font style="font-weight:bold;">L93-L105</font></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="7-6-r1c_국방행정_c2_다영역전력운용md">7-6) <code>R1C_국방행정_C2_다영역전력운용.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-6-r1c_국방행정_c2_다영역전력운용md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="c-1-국방-행정-및-지휘-이양요약-규범">[C-1] 국방 행정 및 지휘 이양(요약 규범)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-1-국방-행정-및-지휘-이양요약-규범" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>3.1. 통수권 및 지휘 이양 프로토콜</code> : <font style="font-weight:bold;">L108-L117</font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>4. 국방 행정 및 군사 통치 체계</code> : <font style="font-weight:bold;">L101-L143</font></li>
+<li><code>4.1. 통수권 및 지휘 이양 프로토콜</code> : <font style="font-weight:bold;">L105-L113</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="c-1b-제2기-전술-교리-요약아케인-펑크-r1c는-운용-원칙만">[C-1b] 제2기 전술 교리 요약(아케인 펑크: R1C는 운용 원칙만)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-1b-제2기-전술-교리-요약아케인-펑크-r1c는-운용-원칙만" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>3.2. 제2기 전술 교리: '아케인 펑크' (지상군)</code></li>
+<li>라인: <font style="font-weight:bold;">L118-L131</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="c-1c-우주-시대-도약을-위한-다영역-전력요약-편제운용만">[C-1c] 우주 시대 도약을 위한 다영역 전력(요약: 편제/운용만)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-1c-우주-시대-도약을-위한-다영역-전력요약-편제운용만" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>3.3. 우주 시대 도약을 위한 다영역 전력 (해·공·우주군)</code></li>
+<li>라인: <font style="font-weight:bold;">L132-L145</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="c-2-편제다영역-운용운용조직-중심">[C-2] 편제/다영역 운용(운용·조직 중심)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-2-편제다영역-운용운용조직-중심" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제2기_통합_군사_편제_및_특수_병종_총람_Complete.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>1. 개요 (Overview)</code> : <font style="font-weight:bold;">L10-L15</font></li>
+<li><code>3. 정규 군종별 세부 편제 (Regular Forces)</code> : <font style="font-weight:bold;">L28-L506</font></li>
+<li><code>ⅩⅠ. 특수 행정 및 기술 사령부 (Special Admin &amp; R&amp;D)</code> : <font style="font-weight:bold;">L479-L501</font></li>
+<li><code>4. 환경 및 특수 목적 사령부 (Environmental Commands)</code> : <font style="font-weight:bold;">L507-L516</font></li>
+<li><code>7. [별첨 C] 전략급 초병기 및 방위 시스템</code> : <font style="font-weight:bold;">L582-L596</font> <em>(스펙은 Transfer)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="c-3-c4ic2-관련-단일-구간">[C-3] C4I/C2 관련 단일 구간<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-3-c4ic2-관련-단일-구간" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제2기_통합_군사_편제_및_특수_병종_총람_Complete.md</code>
+<ul>
+<li>헤더: <code>2. 지휘 통제 및 연산 (C4I &amp; Computation)</code></li>
+<li>라인: <font style="font-weight:bold;">L488-L492</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="c-4-마도-화약-복합-교리제안서-annex-권장">[C-4] 마도-화약 복합 교리(제안서: Annex 권장)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-4-마도-화약-복합-교리제안서-annex-권장" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>군사 관련 보완 제안서.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>제2기 마도-화약 복합 전술 교리</code> : <font style="font-weight:bold;">L158-L217</font></li>
+<li><code>무기 체계: 룬-락 머스킷</code> : <font style="font-weight:bold;">L162-L170</font></li>
+<li><code>병종별 구체적 전투 방식</code> : <font style="font-weight:bold;">L171-L192</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>처리 지시:
+<ul>
+<li>Primary: ‘운용 원칙/교리’만</li>
+<li>Transfer: ‘무장 스펙/작동원리’는 R4로</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="7-7-r1d1_사법통제_군법_집행절차md">7-7) <code>R1D1_사법통제_군법_집행절차.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-7-r1d1_사법통제_군법_집행절차md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="d1-1-군사-사법헌병징계요약-규범">[D1-1] 군사 사법/헌병/징계(요약 규범)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d1-1-군사-사법헌병징계요약-규범" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>4.3. 군사 사법 및 이단 심문</code></li>
+<li>라인: <font style="font-weight:bold;">L177-L186</font></li>
+</ul>
+</li>
+<li>문서: <code>제2기_통합_군사_편제_및_특수_병종_총람_Complete.md</code>
+<ul>
+<li>헤더: <code>8-3. 헌병 및 사법 (Military Police &amp; Discipline)</code></li>
+<li>라인: <font style="font-weight:bold;">L443-L453</font></li>
+</ul>
+</li>
+<li>문서: <code>군사 관련 보완 제안서.md</code>
+<ul>
+<li>헤더: <code>연방군 복무 규정 및 의전 (Protocols &amp; Traditions)</code></li>
+<li>라인: <font style="font-weight:bold;">L39-L55</font> <em>(채택 시 Primary, 미채택 시 Annex)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="7-8-r1d2_윤리규제_금기기술_차원침식md">7-8) <code>R1D2_윤리규제_금기기술_차원침식.md</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-8-r1d2_윤리규제_금기기술_차원침식md" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="d2-1-영혼-마모침식-임계치-준수-규정계산식물리학-제외">[D2-1] 영혼 마모/침식 임계치 준수 ‘규정’(계산식/물리학 제외)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d2-1-영혼-마모침식-임계치-준수-규정계산식물리학-제외" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>4.1. 영혼 마모 관리 수칙 (The 0.35 Protocol)</code></li>
+<li>라인: <font style="font-weight:bold;">L150-L162</font></li>
+</ul>
+</li>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li>헤더: <code>4.2. 군사 윤리 및 영혼 보호 규정</code></li>
+<li>라인: <font style="font-weight:bold;">L114-L124</font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Transfer:
+<ul>
+<li>임계치 계산식/물리학 모델 → R4</li>
+</ul>
+</li>
+</ul>
+<h3 id="d2-2-국가-절대-금기-기술위협-관리금지제한허가-규범">[D2-2] 국가 절대 금기 기술/위협 관리(금지/제한/허가 규범)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d2-2-국가-절대-금기-기술위협-관리금지제한허가-규범" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li>헤더: <code>4.2. 국가 절대 금기 기술 (B-Route Prohibited Tech)</code></li>
+<li>라인: <font style="font-weight:bold;">L163-L176</font></li>
+</ul>
+</li>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li>헤더: <code>4.3. 금지 기술 및 비대칭 위협 관리</code></li>
+<li>라인: <font style="font-weight:bold;">L125-L133</font></li>
+</ul>
+</li>
+<li>문서: <code>군사 관련 보완 제안서.md</code>
+<ul>
+<li>헤더: <code>B루트 및 금지된 기술</code></li>
+<li>라인: <font style="font-weight:bold;">L24-L38</font> <em>(스펙/작동원리 Transfer)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="d2-3-윤리사상-아이콘흡수-금지-필요한-그룹만-링크">[D2-3] 윤리·사상 아이콘(흡수 금지, 필요한 그룹만 링크)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d2-3-윤리사상-아이콘흡수-금지-필요한-그룹만-링크" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>source:
+<ul>
+<li>문서: <code>🎨 엘리스 프라우셰크트; 윤리관·사상 아이콘 마스터 캔버스.md</code>
+<ul>
+<li>헤더/라인:
+<ul>
+<li><code>전체 요약 리스트 (Summary Table)</code> : <font style="font-weight:bold;">L14-L131</font></li>
+<li><code>상세 설정 (Detailed Descriptions)</code> : <font style="font-weight:bold;">L132-L1812</font></li>
+<li><em>(선택 링크 추천)</em>
+<ul>
+<li><code>[Group 1] 정치 및 권력 구조</code> : <font style="font-weight:bold;">L134-L222</font></li>
+<li><code>[Group 6] 법과 치안</code> : <font style="font-weight:bold;">L887-L989</font></li>
+<li><code>[Group 7] 군사 교리 및 전략</code> : <font style="font-weight:bold;">L990-L1049</font></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="7-9-r1_lore_정본_통치와규범md-다운스트림">7-9) <code>R1_Lore_정본_통치와규범.md</code> (다운스트림)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-9-r1_lore_정본_통치와규범md-다운스트림" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="lore-rule-정본에-포함-가능한-소스-범위선언문스펙만">[Lore-Rule] 정본에 포함 가능한 소스 범위(선언문/스펙만)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lore-rule-정본에-포함-가능한-소스-범위선언문스펙만" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>허용(발췌 가능):
+<ul>
+<li><code>제1권역_통합_마스터.md</code> : <font style="font-weight:bold;">L7-L186</font> 중 ‘규범 스펙/선언문’</li>
+<li><code>ICX/JSA 체계 문서</code> : 스펙 구간(각각 <font style="font-weight:bold;">B-1, B-3</font>)</li>
+<li><code>군사 편제 총람</code> : 조직/운용 구간(각각 <font style="font-weight:bold;">C-2, C-3, D1-1</font>) 중 ‘규범 문장’</li>
+</ul>
+</li>
+<li>금지(정본에 직접 서술 금지, 링크만):
+<ul>
+<li>비판/대안/레드팀 문서(Annex)</li>
+<li>기술 스펙/계산식/알고리즘 상세(Transfer)</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h1 id="8-누락-점검-결과파일섹션">8. 누락 점검 결과(파일/섹션)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-누락-점검-결과파일섹션" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="8-1-누락된-파일은-없음">8-1) 누락된 ‘파일’은 없음<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-1-누락된-파일은-없음" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>현재 프로젝트에 업로드된 14개 소스 파일은 <font style="font-weight:bold;">모두 7장 매핑에 최소 1회 이상 등장</font>함.</li>
+</ul>
+<h2 id="8-2-다만-파일-내부에서-매핑에서-빠진-유의미한-섹션이-있음">8-2) 다만, 파일 내부에서 매핑에서 빠진 유의미한 섹션이 있음<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-2-다만-파일-내부에서-매핑에서-빠진-유의미한-섹션이-있음" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="a-민주주의-이론-3부작-중-중편이-매핑에서-누락됨중요">A) 민주주의 이론 3부작 중 ‘중편’이 매핑에서 누락됨(중요)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-민주주의-이론-3부작-중-중편이-매핑에서-누락됨중요" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>누락 파일/섹션:
+<ul>
+<li>문서: <code>엘리시움_제_2_연방_민주주의_이론_중편.md</code>
+<ul>
+<li><code>IV. 선거권과 ICX – 숙련된 시민 개념</code> : <font style="font-weight:bold;">L3-L19</font></li>
+<li><code>V. 피선거권과 JSA – 책임 있는 엘리트의 조건</code> : <font style="font-weight:bold;">L20-L36</font></li>
+<li><code>VI. 다수결, 군주제, 일극우위 연방 – 민주주의와 제국의 결합</code> : <font style="font-weight:bold;">L37-L52</font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>반영 위치(권장):
+<ul>
+<li><code>R1A_헌정철학_국가정체성.md</code>의 [A-2] (정의/명제 보강) 및 [A-3] (정치 지형의 제도적 의미 보강)</li>
+</ul>
+</li>
+</ul>
+<h3 id="b-r1c-관련-제1권역_통합_마스터md의-3장-하위-섹션3133-라인-매핑-누락보완-권장">B) R1C 관련: <code>제1권역_통합_마스터.md</code>의 3장 하위 섹션(3.1~3.3) 라인 매핑 누락(보완 권장)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-r1c-관련-제1권역_통합_마스터md의-3장-하위-섹션3133-라인-매핑-누락보완-권장" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>누락 섹션:
+<ul>
+<li>문서: <code>제1권역_통합_마스터.md</code>
+<ul>
+<li><code>3.1. 통수권 및 지휘 이양 프로토콜</code> : <font style="font-weight:bold;">L108-L117</font></li>
+<li><code>3.2. 제2기 전술 교리: '아케인 펑크' (지상군)</code> : <font style="font-weight:bold;">L118-L131</font></li>
+<li><code>3.3. 우주 시대 도약을 위한 다영역 전력 (해·공·우주군)</code> : <font style="font-weight:bold;">L132-L145</font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>반영 위치(권장):
+<ul>
+<li><code>R1C_국방행정_C2_다영역전력운용.md</code>의 [C-1]~[C-2]</li>
+</ul>
+</li>
+</ul>
+<h3 id="c-제2기_통합_군사_편제_및_특수_병종_총람_completemd는-매핑이-일부-구간만-잡혀-있음범위-확장-필요-가능">C) <code>제2기_통합_군사_편제_및_특수_병종_총람_Complete.md</code>는 매핑이 ‘일부 구간’만 잡혀 있음(범위 확장 필요 가능)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-제2기_통합_군사_편제_및_특수_병종_총람_completemd는-매핑이-일부-구간만-잡혀-있음범위-확장-필요-가능" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>현재 매핑은 ‘개요/정규군 편제 일부/C4I 일부/전략급 별첨 일부’ 중심.</li>
+<li>누락 가능성이 높은 큰 덩어리(필요 시 추가 매핑 권장):
+<ul>
+<li>문서: <code>제2기_통합_군사_편제_및_특수_병종_총람_Complete.md</code>
+<ul>
+<li><code>2. 국가별 디자인 양식 및 시각 효과 (Visual Style Guide)</code> : <font style="font-weight:bold;">L16-L27</font> <em>(시각 언어는 R1A2 또는 Annex로)</em></li>
+<li><code>Ⅵ. 이능력군 (Special Arcane Force)</code> : <font style="font-weight:bold;">L320-…(후속 라인 전체)</font> <em>(R1C 운용 원칙만; 스펙은 R4)</em></li>
+<li>육/해/공/로켓/우주군 세부 MOS 및 특수 DB 구간: <font style="font-weight:bold;">각 하위 헤더 전반(예: L30~L320 사이 다수)</font></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>처리 지시(재강조):
+<ul>
+<li>R1C에는 ‘운용/행정/지휘통제/권한 연계’만, 스펙/물성/작동원리는 R4로 Transfer.</li>
+</ul>
+</li>
+</ul>
+<h3 id="d--엘리스-프라우셰크트-정부통치체제-아이콘-마스터-정의서md는-13번정체구조정당성만-매핑됨확장-필요-가능">D) <code>🎨 엘리스 프라우셰크트; 정부·통치체제 아이콘 마스터 정의서.md</code>는 1~3번(정체/구조/정당성)만 매핑됨(확장 필요 가능)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d--엘리스-프라우셰크트-정부통치체제-아이콘-마스터-정의서md는-13번정체구조정당성만-매핑됨확장-필요-가능" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>현재 매핑:
+<ul>
+<li>Cheat Sheet의 <code>1. 정체</code> <font style="font-weight:bold;">L10-L33</font>, <code>2. 구조</code> <font style="font-weight:bold;">L34-L54</font>, <code>3. 정당성</code> <font style="font-weight:bold;">L55-L75</font></li>
+</ul>
+</li>
+<li>누락(필요 시 추가 매핑 권장):
+<ul>
+<li>치안/비상/행정/정보/군제 등 R1에서 직접 참조할 수 있는 범주</li>
+<li>문서(치트시트 기준):
+<ul>
+<li><code>9. 치안 (Law)</code> : <font style="font-weight:bold;">L176-L195</font></li>
+<li><code>12. 정보 (Info)</code> : <font style="font-weight:bold;">L235-L252</font></li>
+<li><code>15. 군제 (Military)</code> : <font style="font-weight:bold;">L291-L309</font></li>
+<li><code>20. 비상 (Crisis)</code> : <font style="font-weight:bold;">L382-L401</font></li>
+</ul>
+</li>
+<li>문서(확장 정의서 기준, v1.5 Expanded):
+<ul>
+<li>상위 블록 시작: <code>정부·통치체제 아이콘 마스터 정의서</code> : <font style="font-weight:bold;">L402-L1119</font> <em>(R1A2에서는 ‘기관-기능 맵’ 링크 중심으로 유지 권장)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="e-제1권역-통치와-규범md의-누락보완-필요-사항-점검-리포트는-매핑에서-빠져-있음옵션">E) <code>제1권역; 통치와 규범.md</code>의 ‘누락/보완 필요 사항 점검 리포트’는 매핑에서 빠져 있음(옵션)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#e-제1권역-통치와-규범md의-누락보완-필요-사항-점검-리포트는-매핑에서-빠져-있음옵션" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>문서: <code>제1권역; 통치와 규범.md</code>
+<ul>
+<li><code>누락 및 보완 필요 사항 점검 리포트</code> : <font style="font-weight:bold;">L158-L181</font></li>
+<li><code>우선 조치 제안</code> : <font style="font-weight:bold;">L182-L193</font></li>
+</ul>
+</li>
+<li>반영 위치(권장):
+<ul>
+<li>Spine의 Issue Queue(쟁점 큐)에 ‘참조 링크’로만 연결(본문화 지양)</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="8-3-최소-보완-권장-세트즉시-반영하면-좋은-것">8-3) 최소 보완 권장 세트(즉시 반영하면 좋은 것)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-3-최소-보완-권장-세트즉시-반영하면-좋은-것" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>민주주의 이론 <font style="font-weight:bold;">중편(IV~VI)</font> 라인 매핑 추가</li>
+<li><code>제1권역_통합_마스터.md</code>의 <font style="font-weight:bold;">3.1~3.3</font> 라인 매핑을 R1C에 추가</li>
+<li>아이콘 정의서에서 R1 관련 범주(치안/정보/군제/비상)만 선별 매핑 추가</li>
+</ol></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-453"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-453"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-755" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-755" class="toc-content"><li class="depth-0"><a href="#r1제1권역-통치와-규범-통합-아키텍처-명세-지시-문서" data-for="r1제1권역-통치와-규범-통합-아키텍처-명세-지시-문서">R1(제1권역: 통치와 규범) 통합 아키텍처 명세 지시 문서</a></li><li class="depth-1"><a href="#0-산출물파일-목록" data-for="0-산출물파일-목록">0. 산출물(파일) 목록</a></li><li class="depth-2"><a href="#0-1-spine허브" data-for="0-1-spine허브">0-1) Spine(허브)</a></li><li class="depth-2"><a href="#0-2-서브마스터요직-클러스터" data-for="0-2-서브마스터요직-클러스터">0-2) 서브마스터(요직 클러스터)</a></li><li class="depth-2"><a href="#0-3-정본다운스트림-산출" data-for="0-3-정본다운스트림-산출">0-3) 정본(다운스트림 산출)</a></li><li class="depth-1"><a href="#1-입력-소스업로드-파일--세부-권역-분류표" data-for="1-입력-소스업로드-파일--세부-권역-분류표">1. 입력 소스(업로드 파일) → 세부 권역 분류표</a></li><li class="depth-2"><a href="#1-1-r1-spine의-기준-소스" data-for="1-1-r1-spine의-기준-소스">1-1) R1 Spine의 기준 소스</a></li><li class="depth-2"><a href="#1-2-a헌정철학국가정체성-계열" data-for="1-2-a헌정철학국가정체성-계열">1-2) A(헌정철학/국가정체성) 계열</a></li><li class="depth-2"><a href="#1-3-a2헌정수호의례정통성-기제-계열" data-for="1-3-a2헌정수호의례정통성-기제-계열">1-3) A2(헌정수호/의례/정통성 기제) 계열</a></li><li class="depth-2"><a href="#1-4-b선거인사검증icxjsa-계열" data-for="1-4-b선거인사검증icxjsa-계열">1-4) B(선거/인사검증/ICX/JSA) 계열</a></li><li class="depth-2"><a href="#1-5-c국방행정c2다영역전력-운용-계열" data-for="1-5-c국방행정c2다영역전력-운용-계열">1-5) C(국방행정/C2/다영역전력 운용) 계열</a></li><li class="depth-2"><a href="#1-6-d사법통제윤리규제금기기술-계열" data-for="1-6-d사법통제윤리규제금기기술-계열">1-6) D(사법통제/윤리규제/금기기술) 계열</a></li><li class="depth-1"><a href="#2-서브마스터별-보강제외중복정리-작업-지시" data-for="2-서브마스터별-보강제외중복정리-작업-지시">2. 서브마스터별 “보강/제외/중복정리” 작업 지시</a></li><li class="depth-2"><a href="#2-1-r1_spine허브-작업-지시" data-for="2-1-r1_spine허브-작업-지시">2-1) R1_Spine(허브) 작업 지시</a></li><li class="depth-2"><a href="#2-2-r1a_헌정철학_국가정체성-작업-지시" data-for="2-2-r1a_헌정철학_국가정체성-작업-지시">2-2) R1A_헌정철학_국가정체성 작업 지시</a></li><li class="depth-2"><a href="#2-3-r1a2_헌정수호_의례_정통성기제-작업-지시" data-for="2-3-r1a2_헌정수호_의례_정통성기제-작업-지시">2-3) R1A2_헌정수호_의례_정통성기제 작업 지시</a></li><li class="depth-2"><a href="#2-4-r1b_선거_인사검증_icx_jsa-작업-지시" data-for="2-4-r1b_선거_인사검증_icx_jsa-작업-지시">2-4) R1B_선거_인사검증_ICX_JSA 작업 지시</a></li><li class="depth-2"><a href="#2-5-r1b-app_redteam_critique_강철의지자-작업-지시" data-for="2-5-r1b-app_redteam_critique_강철의지자-작업-지시">2-5) R1B-APP_RedTeam_Critique_강철의지자 작업 지시</a></li><li class="depth-2"><a href="#2-6-r1c_국방행정_c2_다영역전력운용-작업-지시" data-for="2-6-r1c_국방행정_c2_다영역전력운용-작업-지시">2-6) R1C_국방행정_C2_다영역전력운용 작업 지시</a></li><li class="depth-2"><a href="#2-7-r1d1r1d2-작업-지시" data-for="2-7-r1d1r1d2-작업-지시">2-7) R1D1/R1D2 작업 지시</a></li><li class="depth-1"><a href="#3-교차-검증핀포인트-인터페이스-명세" data-for="3-교차-검증핀포인트-인터페이스-명세">3. 교차 검증(핀포인트) 인터페이스 명세</a></li><li class="depth-2"><a href="#3-1-r1b--r3사회계층" data-for="3-1-r1b--r3사회계층">3-1) R1B ↔ R3(사회/계층)</a></li><li class="depth-2"><a href="#3-2-r1cr1d2--r4과학기술" data-for="3-2-r1cr1d2--r4과학기술">3-2) R1C/R1D2 ↔ R4(과학/기술)</a></li><li class="depth-2"><a href="#3-3-r1d1--r2역사사건" data-for="3-3-r1d1--r2역사사건">3-3) R1D1 ↔ R2(역사/사건)</a></li><li class="depth-1"><a href="#4-정본real-lore-내려쓰기-프로토콜" data-for="4-정본real-lore-내려쓰기-프로토콜">4. 정본(Real Lore) 내려쓰기 프로토콜</a></li><li class="depth-2"><a href="#4-1-내려쓰기-규칙" data-for="4-1-내려쓰기-규칙">4-1) 내려쓰기 규칙</a></li><li class="depth-2"><a href="#4-2-내려쓰기-순서" data-for="4-2-내려쓰기-순서">4-2) 내려쓰기 순서</a></li><li class="depth-1"><a href="#5-실행-체크리스트작업자가-그대로-따라하면-되는-단계" data-for="5-실행-체크리스트작업자가-그대로-따라하면-되는-단계">5. 실행 체크리스트(작업자가 그대로 따라하면 되는 단계)</a></li><li class="depth-1"><a href="#6-메모추가-확장-옵션" data-for="6-메모추가-확장-옵션">6. 메모(추가 확장 옵션)</a></li><li class="depth-0"><a href="#7-세부-섹션별-소스-위치문서명헤더라인-범위-매핑" data-for="7-세부-섹션별-소스-위치문서명헤더라인-범위-매핑">7. 세부 섹션별 소스 위치(문서명/헤더/라인 범위) 매핑</a></li><li class="depth-1"><a href="#7-1-r1_spine_통치와_규범_인덱스md" data-for="7-1-r1_spine_통치와_규범_인덱스md">7-1) R1_Spine_통치와_규범_인덱스.md</a></li><li class="depth-2"><a href="#spine-0-서두-r1-핵심-목표문36문장" data-for="spine-0-서두-r1-핵심-목표문36문장">[Spine-0] 서두: R1 핵심 목표문(3~6문장)</a></li><li class="depth-2"><a href="#spine-1-서브마스터-링크요약목차-역할" data-for="spine-1-서브마스터-링크요약목차-역할">[Spine-1] 서브마스터 링크/요약(목차 역할)</a></li><li class="depth-2"><a href="#spine-2-옵션-기존-점검-리포트--issue-queue-링크" data-for="spine-2-옵션-기존-점검-리포트--issue-queue-링크">[Spine-2] (옵션) 기존 점검 리포트 → Issue Queue 링크</a></li><li class="depth-1"><a href="#7-2-r1a_헌정철학_국가정체성md" data-for="7-2-r1a_헌정철학_국가정체성md">7-2) R1A_헌정철학_국가정체성.md</a></li><li class="depth-2"><a href="#a-1-국가-정체성-중첩된-삼중-체제정의요약" data-for="a-1-국가-정체성-중첩된-삼중-체제정의요약">[A-1] 국가 정체성: 중첩된 삼중 체제(정의·요약)</a></li><li class="depth-2"><a href="#a-2-민주주의-이론-역량-기반-제한-민주주의핵심-명제정의1----문서-엘리시움_제_2_연방_민주주의_이론_중편md" data-for="a-2-민주주의-이론-역량-기반-제한-민주주의핵심-명제정의1----문서-엘리시움_제_2_연방_민주주의_이론_중편md">[A-2] 민주주의 이론: 역량 기반 제한 민주주의(핵심 명제/정의)$1  - 문서: 엘리시움_제_2_연방_민주주의_이론_중편.md</a></li><li class="depth-2"><a href="#a-3-정치-지형과-주요-파벌분류-기준--최소-요약" data-for="a-3-정치-지형과-주요-파벌분류-기준--최소-요약">[A-3] 정치 지형과 주요 파벌(분류 기준 + 최소 요약)</a></li><li class="depth-2"><a href="#a-4-정치철학-논고annex-고정" data-for="a-4-정치철학-논고annex-고정">[A-4] 정치철학 논고(Annex 고정)</a></li><li class="depth-1"><a href="#7-3-r1a2_헌정수호_의례_정통성기제md" data-for="7-3-r1a2_헌정수호_의례_정통성기제md">7-3) R1A2_헌정수호_의례_정통성기제.md</a></li><li class="depth-2"><a href="#a2-1-정통성통치체제-시각-언어-연결참조-링크" data-for="a2-1-정통성통치체제-시각-언어-연결참조-링크">[A2-1] 정통성/통치체제 시각 언어 연결(참조 링크)</a></li><li class="depth-2"><a href="#a2-2-정부통치체제-아이콘-정의흡수-금지-링크만" data-for="a2-2-정부통치체제-아이콘-정의흡수-금지-링크만">[A2-2] 정부·통치체제 아이콘 정의(흡수 금지, 링크만)</a></li><li class="depth-1"><a href="#7-4-r1b_선거_인사검증_icx_jsamd" data-for="7-4-r1b_선거_인사검증_icx_jsamd">7-4) R1B_선거_인사검증_ICX_JSA.md</a></li><li class="depth-2"><a href="#b-0-개요-icxjsa가-r1에서-갖는-위치요약링크" data-for="b-0-개요-icxjsa가-r1에서-갖는-위치요약링크">[B-0] 개요: ICX/JSA가 R1에서 갖는 위치(요약+링크)</a></li><li class="depth-2"><a href="#b-1-icx-규범-스펙과목체계운영원칙평가-가이드" data-for="b-1-icx-규범-스펙과목체계운영원칙평가-가이드">[B-1] ICX 규범 스펙(과목체계/운영원칙/평가 가이드)</a></li><li class="depth-2"><a href="#b-2-icx-비판리스크annex-또는-쟁점-섹션" data-for="b-2-icx-비판리스크annex-또는-쟁점-섹션">[B-2] ICX 비판/리스크(Annex 또는 ‘쟁점’ 섹션)</a></li><li class="depth-2"><a href="#b-3-jsa-규범-스펙단계유형판정이의" data-for="b-3-jsa-규범-스펙단계유형판정이의">[B-3] JSA 규범 스펙(단계/유형/판정·이의)</a></li><li class="depth-2"><a href="#b-4-jsa-비판리스크대안annex-또는-쟁점" data-for="b-4-jsa-비판리스크대안annex-또는-쟁점">[B-4] JSA 비판/리스크/대안(Annex 또는 ‘쟁점’)</a></li><li class="depth-2"><a href="#b-x-문턱-효과-완화-처리-규칙이관-명세" data-for="b-x-문턱-효과-완화-처리-규칙이관-명세">[B-X] “문턱 효과 완화” 처리 규칙(이관 명세)</a></li><li class="depth-1"><a href="#7-5-r1b-app_redteam_critique_강철의지자md" data-for="7-5-r1b-app_redteam_critique_강철의지자md">7-5) R1B-APP_RedTeam_Critique_강철의지자.md</a></li><li class="depth-2"><a href="#rt-0-레드팀-근거-링크스펙-근거만-연결" data-for="rt-0-레드팀-근거-링크스펙-근거만-연결">[RT-0] 레드팀 근거 링크(스펙 근거만 연결)</a></li><li class="depth-1"><a href="#7-6-r1c_국방행정_c2_다영역전력운용md" data-for="7-6-r1c_국방행정_c2_다영역전력운용md">7-6) R1C_국방행정_C2_다영역전력운용.md</a></li><li class="depth-2"><a href="#c-1-국방-행정-및-지휘-이양요약-규범" data-for="c-1-국방-행정-및-지휘-이양요약-규범">[C-1] 국방 행정 및 지휘 이양(요약 규범)</a></li><li class="depth-2"><a href="#c-1b-제2기-전술-교리-요약아케인-펑크-r1c는-운용-원칙만" data-for="c-1b-제2기-전술-교리-요약아케인-펑크-r1c는-운용-원칙만">[C-1b] 제2기 전술 교리 요약(아케인 펑크: R1C는 운용 원칙만)</a></li><li class="depth-2"><a href="#c-1c-우주-시대-도약을-위한-다영역-전력요약-편제운용만" data-for="c-1c-우주-시대-도약을-위한-다영역-전력요약-편제운용만">[C-1c] 우주 시대 도약을 위한 다영역 전력(요약: 편제/운용만)</a></li><li class="depth-2"><a href="#c-2-편제다영역-운용운용조직-중심" data-for="c-2-편제다영역-운용운용조직-중심">[C-2] 편제/다영역 운용(운용·조직 중심)</a></li><li class="depth-2"><a href="#c-3-c4ic2-관련-단일-구간" data-for="c-3-c4ic2-관련-단일-구간">[C-3] C4I/C2 관련 단일 구간</a></li><li class="depth-2"><a href="#c-4-마도-화약-복합-교리제안서-annex-권장" data-for="c-4-마도-화약-복합-교리제안서-annex-권장">[C-4] 마도-화약 복합 교리(제안서: Annex 권장)</a></li><li class="depth-1"><a href="#7-7-r1d1_사법통제_군법_집행절차md" data-for="7-7-r1d1_사법통제_군법_집행절차md">7-7) R1D1_사법통제_군법_집행절차.md</a></li><li class="depth-2"><a href="#d1-1-군사-사법헌병징계요약-규범" data-for="d1-1-군사-사법헌병징계요약-규범">[D1-1] 군사 사법/헌병/징계(요약 규범)</a></li><li class="depth-1"><a href="#7-8-r1d2_윤리규제_금기기술_차원침식md" data-for="7-8-r1d2_윤리규제_금기기술_차원침식md">7-8) R1D2_윤리규제_금기기술_차원침식.md</a></li><li class="depth-2"><a href="#d2-1-영혼-마모침식-임계치-준수-규정계산식물리학-제외" data-for="d2-1-영혼-마모침식-임계치-준수-규정계산식물리학-제외">[D2-1] 영혼 마모/침식 임계치 준수 ‘규정’(계산식/물리학 제외)</a></li><li class="depth-2"><a href="#d2-2-국가-절대-금기-기술위협-관리금지제한허가-규범" data-for="d2-2-국가-절대-금기-기술위협-관리금지제한허가-규범">[D2-2] 국가 절대 금기 기술/위협 관리(금지/제한/허가 규범)</a></li><li class="depth-2"><a href="#d2-3-윤리사상-아이콘흡수-금지-필요한-그룹만-링크" data-for="d2-3-윤리사상-아이콘흡수-금지-필요한-그룹만-링크">[D2-3] 윤리·사상 아이콘(흡수 금지, 필요한 그룹만 링크)</a></li><li class="depth-1"><a href="#7-9-r1_lore_정본_통치와규범md-다운스트림" data-for="7-9-r1_lore_정본_통치와규범md-다운스트림">7-9) R1_Lore_정본_통치와규범.md (다운스트림)</a></li><li class="depth-2"><a href="#lore-rule-정본에-포함-가능한-소스-범위선언문스펙만" data-for="lore-rule-정본에-포함-가능한-소스-범위선언문스펙만">[Lore-Rule] 정본에 포함 가능한 소스 범위(선언문/스펙만)</a></li><li class="depth-0"><a href="#8-누락-점검-결과파일섹션" data-for="8-누락-점검-결과파일섹션">8. 누락 점검 결과(파일/섹션)</a></li><li class="depth-1"><a href="#8-1-누락된-파일은-없음" data-for="8-1-누락된-파일은-없음">8-1) 누락된 ‘파일’은 없음</a></li><li class="depth-1"><a href="#8-2-다만-파일-내부에서-매핑에서-빠진-유의미한-섹션이-있음" data-for="8-2-다만-파일-내부에서-매핑에서-빠진-유의미한-섹션이-있음">8-2) 다만, 파일 내부에서 매핑에서 빠진 유의미한 섹션이 있음</a></li><li class="depth-2"><a href="#a-민주주의-이론-3부작-중-중편이-매핑에서-누락됨중요" data-for="a-민주주의-이론-3부작-중-중편이-매핑에서-누락됨중요">A) 민주주의 이론 3부작 중 ‘중편’이 매핑에서 누락됨(중요)</a></li><li class="depth-2"><a href="#b-r1c-관련-제1권역_통합_마스터md의-3장-하위-섹션3133-라인-매핑-누락보완-권장" data-for="b-r1c-관련-제1권역_통합_마스터md의-3장-하위-섹션3133-라인-매핑-누락보완-권장">B) R1C 관련: 제1권역_통합_마스터.md의 3장 하위 섹션(3.1~3.3) 라인 매핑 누락(보완 권장)</a></li><li class="depth-2"><a href="#c-제2기_통합_군사_편제_및_특수_병종_총람_completemd는-매핑이-일부-구간만-잡혀-있음범위-확장-필요-가능" data-for="c-제2기_통합_군사_편제_및_특수_병종_총람_completemd는-매핑이-일부-구간만-잡혀-있음범위-확장-필요-가능">C) 제2기_통합_군사_편제_및_특수_병종_총람_Complete.md는 매핑이 ‘일부 구간’만 잡혀 있음(범위 확장 필요 가능)</a></li><li class="depth-2"><a href="#d--엘리스-프라우셰크트-정부통치체제-아이콘-마스터-정의서md는-13번정체구조정당성만-매핑됨확장-필요-가능" data-for="d--엘리스-프라우셰크트-정부통치체제-아이콘-마스터-정의서md는-13번정체구조정당성만-매핑됨확장-필요-가능">D) 🎨 엘리스 프라우셰크트; 정부·통치체제 아이콘 마스터 정의서.md는 1~3번(정체/구조/정당성)만 매핑됨(확장 필요 가능)</a></li><li class="depth-2"><a href="#e-제1권역-통치와-규범md의-누락보완-필요-사항-점검-리포트는-매핑에서-빠져-있음옵션" data-for="e-제1권역-통치와-규범md의-누락보완-필요-사항-점검-리포트는-매핑에서-빠져-있음옵션">E) 제1권역; 통치와 규범.md의 ‘누락/보완 필요 사항 점검 리포트’는 매핑에서 빠져 있음(옵션)</a></li><li class="depth-1"><a href="#8-3-최소-보완-권장-세트즉시-반영하면-좋은-것" data-for="8-3-최소-보완-권장-세트즉시-반영하면-좋은-것">8-3) 최소 보완 권장 세트(즉시 반영하면 좋은 것)</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../../postscript.js" type="module" data-persist="true"></script></html>

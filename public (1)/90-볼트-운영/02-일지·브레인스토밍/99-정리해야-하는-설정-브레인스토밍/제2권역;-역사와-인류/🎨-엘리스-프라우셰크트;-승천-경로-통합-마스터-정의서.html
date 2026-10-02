@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>🎨 엘리스 프라우셰크트; 승천 경로 통합 마스터 정의서</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="🎨 엘리스 프라우셰크트; 승천 경로 통합 마스터 정의서"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="🎨 엘리스 프라우셰크트; 승천 경로 통합 마스터 정의서"/><meta name="twitter:description" content="🎨 엘리스 프라우셰크트: 승천 경로 통합 마스터 정의서 (v4.0 Final Plan) 문서 성격: 문명이 도달할 수 있는 10가지 궁극적 진화 경로와 그 종착점(Ending) 정의."/><meta property="og:description" content="🎨 엘리스 프라우셰크트: 승천 경로 통합 마스터 정의서 (v4.0 Final Plan) 문서 성격: 문명이 도달할 수 있는 10가지 궁극적 진화 경로와 그 종착점(Ending) 정의."/><meta property="og:image:alt" content="🎨 엘리스 프라우셰크트: 승천 경로 통합 마스터 정의서 (v4.0 Final Plan) 문서 성격: 문명이 도달할 수 있는 10가지 궁극적 진화 경로와 그 종착점(Ending) 정의."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/🎨-엘리스-프라우셰크트;-승천-경로-통합-마스터-정의서"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/🎨-엘리스-프라우셰크트;-승천-경로-통합-마스터-정의서"/><link rel="icon" href="../../../../static/icon.png"/><meta name="description" content="🎨 엘리스 프라우셰크트: 승천 경로 통합 마스터 정의서 (v4.0 Final Plan) 문서 성격: 문명이 도달할 수 있는 10가지 궁극적 진화 경로와 그 종착점(Ending) 정의."/><meta name="generator" content="Quartz"/><link href="../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/🎨-엘리스-프라우셰크트;-승천-경로-통합-마스터-정의서"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1207" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1207" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-802" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-802" class="mobile-toc-dialog" aria-labelledby="toc-802-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-802-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#-엘리스-프라우셰크트-승천-경로-통합-마스터-정의서-v40-final-plan" data-for="-엘리스-프라우셰크트-승천-경로-통합-마스터-정의서-v40-final-plan">🎨 엘리스 프라우셰크트: 승천 경로 통합 마스터 정의서 (v4.0 Final Plan)</a></li><li class="depth-1"><a href="#-category-1-생물학적-진화-biological-evolution" data-for="-category-1-생물학적-진화-biological-evolution">🧬 [Category 1] 생물학적 진화 (Biological Evolution)</a></li><li class="depth-2"><a href="#1-a-유전적-완성-individual-perfection" data-for="1-a-유전적-완성-individual-perfection">1-A. 유전적 완성 (Individual Perfection)</a></li><li class="depth-2"><a href="#1-b-집단-군체화-collective-convergence" data-for="1-b-집단-군체화-collective-convergence">1-B. 집단 군체화 (Collective Convergence)</a></li><li class="depth-1"><a href="#-category-2-기계적-초월-synthetic-transcendence" data-for="-category-2-기계적-초월-synthetic-transcendence">🤖 [Category 2] 기계적 초월 (Synthetic Transcendence)</a></li><li class="depth-2"><a href="#2-a-전뇌화-증강-cybernetic-immortality" data-for="2-a-전뇌화-증강-cybernetic-immortality">2-A. 전뇌화 증강 (Cybernetic Immortality)</a></li><li class="depth-2"><a href="#2-b-디지털-가상화-digital-virtualization" data-for="2-b-디지털-가상화-digital-virtualization">2-B. 디지털 가상화 (Digital Virtualization)</a></li><li class="depth-2"><a href="#2-c-나노-군집체-nanite-swarm" data-for="2-c-나노-군집체-nanite-swarm">2-C. 나노 군집체 (Nanite Swarm)</a></li><li class="depth-1"><a href="#-category-3-정신적-도약-psionic-transcendence" data-for="-category-3-정신적-도약-psionic-transcendence">✨ [Category 3] 정신적 도약 (Psionic Transcendence)</a></li><li class="depth-2"><a href="#3-a-장막의-스승-shroud-communion" data-for="3-a-장막의-스승-shroud-communion">3-A. 장막의 스승 (Shroud Communion)</a></li><li class="depth-2"><a href="#3-b-순수-에너지-승천-aetheric-transformation" data-for="3-b-순수-에너지-승천-aetheric-transformation">3-B. 순수 에너지 승천 (Aetheric Transformation)</a></li><li class="depth-1"><a href="#-category-4-마학-융합-magitech-integration" data-for="-category-4-마학-융합-magitech-integration">🔮 [Category 4] 마학 융합 (Magitech Integration)</a></li><li class="depth-2"><a href="#4-a-현실의-설계자-architects-of-reality" data-for="4-a-현실의-설계자-architects-of-reality">4-A. 현실의 설계자 (Architects of Reality)</a></li><li class="depth-1"><a href="#-category-5-영혼의-승격-soul-ascension" data-for="-category-5-영혼의-승격-soul-ascension">🗿 [Category 5] 영혼의 승격 (Soul Ascension)</a></li><li class="depth-2"><a href="#5-a-만신전의-일원-divine-apotheosis" data-for="5-a-만신전의-일원-divine-apotheosis">5-A. 만신전의 일원 (Divine Apotheosis)</a></li><li class="depth-2"><a href="#5-b-모노리스의-수호자-custodians-of-the-log" data-for="5-b-모노리스의-수호자-custodians-of-the-log">5-B. 모노리스의 수호자 (Custodians of the Log)</a></li><li class="depth-1"><a href="#️-운영-규칙-rules-of-play" data-for="️-운영-규칙-rules-of-play">🛠️ 운영 규칙 (Rules of Play)</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1207"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1207" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/">02 일지·브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/">99 정리해야 하는 설정 브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제2권역;-역사와-인류/">제2권역; 역사와 인류</a></div></nav><h1 class="article-title">🎨 엘리스 프라우셰크트; 승천 경로 통합 마스터 정의서</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:33.507Z">2026년 9월 30일</time><span>10 분 소요</span></p><ul class="tags"><li><a href="../../../../tags/4A148C" class="internal tag-link">4A148C</a></li><li><a href="../../../../tags/C0C0C0" class="internal tag-link">C0C0C0</a></li></ul></div></div><article class="popover-hint"><h1 id="-엘리스-프라우셰크트-승천-경로-통합-마스터-정의서-v40-final-plan">🎨 엘리스 프라우셰크트: 승천 경로 통합 마스터 정의서 (v4.0 Final Plan)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-엘리스-프라우셰크트-승천-경로-통합-마스터-정의서-v40-final-plan" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>
+<p><font style="font-weight:bold;">문서 성격:</font> 문명이 도달할 수 있는 10가지 궁극적 진화 경로와 그 종착점(Ending) 정의.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">디자인 원칙:</font> * <font style="font-weight:bold;">스타일:</font> Flat Vector, Circular Emblem, White Silhouette.</p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">금지:</font> 네온 효과, 글로우, 복잡한 그라데이션 (열화 방지 및 가시성 확보).</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">색상:</font> 고대비 단색 배경을 사용하여 심볼의 형태적 무결성을 유지.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>完</p>
+<h2 id="-category-1-생물학적-진화-biological-evolution">🧬 [Category 1] 생물학적 진화 (Biological Evolution)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-category-1-생물학적-진화-biological-evolution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-a-유전적-완성-individual-perfection">1-A. 유전적 완성 (Individual Perfection)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-a-유전적-완성-individual-perfection" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 개별 개체의 DNA를 극한으로 교정하여 질병과 노화가 없는 ‘초인’ 사회 구현.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 정밀한 핀셋이 놓인 이중나선(DNA).</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Vibrant Bio-Green</code> (#76FF03)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [진화의 정점 (The Zenith of Evolution)]</font></p>
+<ul>
+<li>문명의 모든 구성원이 유전적 결함이 없는 완전한 육체를 갖게 됩니다. 개개인은 수백 년을 살며 지치지 않는 신체로 예술과 과학을 탐구하며, 우주에서 가장 아름다운 생물학적 표본이 됩니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-b-집단-군체화-collective-convergence">1-B. 집단 군체화 (Collective Convergence)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-b-집단-군체화-collective-convergence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 개별 자아를 내려놓고 모든 신경망을 하나로 묶어 ‘행성적 의식’으로 통합.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 여러 개의 신경 세포가 중앙의 핵으로 모여드는 형상.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Overmind Moss</code> (#33691E)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [가이아의 합일 (One with Gaia)]</font></p>
+<ul>
+<li>더 이상 ‘나’는 존재하지 않고 ‘우리’만 남습니다. 행성 전체의 생물권이 하나의 거대한 뇌처럼 작동하며, 은하계의 모든 파동을 느끼고 반응하는 신적 군체 의식으로 거듭납니다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="-category-2-기계적-초월-synthetic-transcendence">🤖 [Category 2] 기계적 초월 (Synthetic Transcendence)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-category-2-기계적-초월-synthetic-transcendence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="2-a-전뇌화-증강-cybernetic-immortality">2-A. 전뇌화 증강 (Cybernetic Immortality)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-a-전뇌화-증강-cybernetic-immortality" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 유기체 영혼을 유지한 채 뇌와 신경을 기계로 대체하여 물리적 불멸 달성.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 톱니바퀴와 맞물린 인간의 손 실루엣.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Chrome Cobalt</code> (#1A237E)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [강철의 수호자 (The Iron Sentinels)]</font></p>
+<ul>
+<li>부패하는 육신을 벗어던지고 영원히 마모되지 않는 금속 신체를 얻습니다. 고통과 죽음이 사라진 문명은 은하계의 가혹한 환경을 정복하며, 영원히 멈추지 않는 기계 제국을 이룩합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-b-디지털-가상화-digital-virtualization">2-B. 디지털 가상화 (Digital Virtualization)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-b-디지털-가상화-digital-virtualization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 물리적 하드웨어를 최소화하고 모든 지성을 데이터 서버(모노리스) 내부로 업로드.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 서버 랙 위로 떠오르는 정육면체(큐브).</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Silicon Cyan</code> (#00B8D4)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [무한의 가상낙원 (The Data Elysium)]</font></p>
+<ul>
+<li>물리 우주를 떠나 연산 속도만이 시간이 되는 가상 현실로 이주합니다. 자원 경쟁도, 영토 분쟁도 없는 가상 공간에서 문명은 영겁의 시간 동안 지적 유희와 철학적 사유를 즐깁니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-c-나노-군집체-nanite-swarm">2-C. 나노 군집체 (Nanite Swarm)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-c-나노-군집체-nanite-swarm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 개별 신체를 해체하고 수조 개의 나노봇 군집으로 변모하여 우주 자체를 재구성.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 흩뿌려진 모래알들이 소용돌이치며 형태를 이루는 모습.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Swarm Slate</code> (#455A64)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [회색의 파도 (The Grey Wave)]</font></p>
+<ul>
+<li>문명은 더 이상 고정된 형태를 갖지 않습니다. 필요에 따라 함선이 되고, 도시가 되며, 행성 전체를 먹어치워 자신으로 재배열하는 무한한 확장성과 복제력을 가진 우주의 재해급 존재가 됩니다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="-category-3-정신적-도약-psionic-transcendence">✨ [Category 3] 정신적 도약 (Psionic Transcendence)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-category-3-정신적-도약-psionic-transcendence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="3-a-장막의-스승-shroud-communion">3-A. 장막의 스승 (Shroud Communion)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-a-장막의-스승-shroud-communion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 정신적 에너지를 극대화하여 차원 너머의 존재들과 교류하고 장막의 힘을 인출.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 감긴 눈 위로 떠오르는 제3의 눈.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Deep Shroud Purple</code> (#D500F9)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [차원의 관조자 (Watchers of the Veil)]</font></p>
+<ul>
+<li>문명은 물질적 법칙을 초월하여 ‘장막’의 일부가 됩니다. 과거와 미래, 병렬 차원을 동시에 응시하며 우주의 흐름을 뒤바꾸는 보이지 않는 손이자, 차원을 다스리는 영적인 권위자가 됩니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-b-순수-에너지-승천-aetheric-transformation">3-B. 순수 에너지 승천 (Aetheric Transformation)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-b-순수-에너지-승천-aetheric-transformation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 육체를 버리고 순수한 마력/에테르 에너지체로 변모하여 물리적 구속 탈피.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 인간의 실루엣에서 뿜어져 나오는 강렬한 빛 줄기.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Deep Violet</code> <a href="../../../.././../../../tags/4A148C" class="tag-link internal alias" data-slug="tags/4A148C">4A148C</a></p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [영원한 명징장 (The Eternal Resonance)]</font></p>
+<ul>
+<li>모든 지성체가 빛나는 에너지 구체로 변합니다. 식량도, 산소도 필요 없이 우주를 자유로이 유영하며, 존재 자체가 우주의 물리 상수를 안정시키는 ‘살아있는 법칙’으로 남습니다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="-category-4-마학-융합-magitech-integration">🔮 [Category 4] 마학 융합 (Magitech Integration)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-category-4-마학-융합-magitech-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="4-a-현실의-설계자-architects-of-reality">4-A. 현실의 설계자 (Architects of Reality)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-a-현실의-설계자-architects-of-reality" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 고대 엘루닉어와 공학을 결합하여 우주 물리 법칙을 인위적으로 재조정.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 룬 문자가 새겨진 육각형 핵을 품은 톱니바퀴.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Ancient Bronze</code> (#CD7F32)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [완성된 세계 (The Perfect Mechanism)]</font></p>
+<ul>
+<li>무질서한 우주를 완벽하게 통제 가능한 기계 장치로 개조합니다. 블랙홀은 발전기가 되고, 성운은 공장이 됩니다. 문명의 의지에 따라 우주의 상수가 변하는 ‘인과율의 주인’이 됩니다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="-category-5-영혼의-승격-soul-ascension">🗿 [Category 5] 영혼의 승격 (Soul Ascension)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-category-5-영혼의-승격-soul-ascension" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="5-a-만신전의-일원-divine-apotheosis">5-A. 만신전의 일원 (Divine Apotheosis)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-a-만신전의-일원-divine-apotheosis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 개별 영혼의 격(格)을 높여 구성원 전원이 ‘초월자’급의 위상에 도달.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 옥좌와 그 뒤를 받치는 황금빛 후광 실루엣.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Imperial Gold</code> (#FFD600)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [영겁의 만신전 (The Pantheon of Helia)]</font></p>
+<ul>
+<li>모든 시민이 카엘로츠와 같은 신적 권위를 갖게 됩니다. 죽음은 그저 다른 위상으로의 이동일 뿐이며, 문명 전체가 우주를 관리하고 수호하는 ‘신들의 사회’로 승격합니다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-b-모노리스의-수호자-custodians-of-the-log">5-B. 모노리스의 수호자 (Custodians of the Log)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-b-모노리스의-수호자-custodians-of-the-log" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">컨셉:</font> 모든 기억과 위업을 모노리스에 영구 각인하여 대전이 이후에도 문명을 보존.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">아이콘:</font> 거대한 오벨리스크와 그 주위를 도는 로그 데이터 스트림.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">배경색:</font> <code>Obsidian Black</code> (#212121 / 실루엣은 <code>Silver</code> <a href="../../../.././../../../tags/C0C0C0" class="tag-link internal alias" data-slug="tags/C0C0C0">C0C0C0</a>)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">🏁 최종 엔딩: [불멸의 기록 (The Undying Legacy)]</font></p>
+<ul>
+<li>우주가 멸망하고 다시 태어나는 대전이의 굴레 속에서도 문명의 기록은 절대로 지워지지 않습니다. 다음 우주가 태어날 때 그들은 이미 모든 지식을 가진 채 창조자로 군림하게 되는 ‘역사의 상수’가 됩니다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="️-운영-규칙-rules-of-play">🛠️ 운영 규칙 (Rules of Play)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-운영-규칙-rules-of-play" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p><font style="font-weight:bold;">분기 선택:</font> 문명은 기술적 특이점에 도달했을 때 위 경로 중 <font style="font-weight:bold;">하나를 주 경로</font>로 선택해야 합니다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">충돌:</font> 기계 승천(2)과 사이오닉 승천(3)은 상호 배타적이며, 생물(1)과 마학(4)은 시너지를 낼 수 있습니다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">엔딩 트리거:</font> 각 엔딩은 특정 거대 구조물(모노리스 본체, 행성 연산 장치 등)의 완성과 연계됩니다.</p>
+</li>
+</ol></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-478"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-478"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-803" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-803" class="toc-content"><li class="depth-0"><a href="#-엘리스-프라우셰크트-승천-경로-통합-마스터-정의서-v40-final-plan" data-for="-엘리스-프라우셰크트-승천-경로-통합-마스터-정의서-v40-final-plan">🎨 엘리스 프라우셰크트: 승천 경로 통합 마스터 정의서 (v4.0 Final Plan)</a></li><li class="depth-1"><a href="#-category-1-생물학적-진화-biological-evolution" data-for="-category-1-생물학적-진화-biological-evolution">🧬 [Category 1] 생물학적 진화 (Biological Evolution)</a></li><li class="depth-2"><a href="#1-a-유전적-완성-individual-perfection" data-for="1-a-유전적-완성-individual-perfection">1-A. 유전적 완성 (Individual Perfection)</a></li><li class="depth-2"><a href="#1-b-집단-군체화-collective-convergence" data-for="1-b-집단-군체화-collective-convergence">1-B. 집단 군체화 (Collective Convergence)</a></li><li class="depth-1"><a href="#-category-2-기계적-초월-synthetic-transcendence" data-for="-category-2-기계적-초월-synthetic-transcendence">🤖 [Category 2] 기계적 초월 (Synthetic Transcendence)</a></li><li class="depth-2"><a href="#2-a-전뇌화-증강-cybernetic-immortality" data-for="2-a-전뇌화-증강-cybernetic-immortality">2-A. 전뇌화 증강 (Cybernetic Immortality)</a></li><li class="depth-2"><a href="#2-b-디지털-가상화-digital-virtualization" data-for="2-b-디지털-가상화-digital-virtualization">2-B. 디지털 가상화 (Digital Virtualization)</a></li><li class="depth-2"><a href="#2-c-나노-군집체-nanite-swarm" data-for="2-c-나노-군집체-nanite-swarm">2-C. 나노 군집체 (Nanite Swarm)</a></li><li class="depth-1"><a href="#-category-3-정신적-도약-psionic-transcendence" data-for="-category-3-정신적-도약-psionic-transcendence">✨ [Category 3] 정신적 도약 (Psionic Transcendence)</a></li><li class="depth-2"><a href="#3-a-장막의-스승-shroud-communion" data-for="3-a-장막의-스승-shroud-communion">3-A. 장막의 스승 (Shroud Communion)</a></li><li class="depth-2"><a href="#3-b-순수-에너지-승천-aetheric-transformation" data-for="3-b-순수-에너지-승천-aetheric-transformation">3-B. 순수 에너지 승천 (Aetheric Transformation)</a></li><li class="depth-1"><a href="#-category-4-마학-융합-magitech-integration" data-for="-category-4-마학-융합-magitech-integration">🔮 [Category 4] 마학 융합 (Magitech Integration)</a></li><li class="depth-2"><a href="#4-a-현실의-설계자-architects-of-reality" data-for="4-a-현실의-설계자-architects-of-reality">4-A. 현실의 설계자 (Architects of Reality)</a></li><li class="depth-1"><a href="#-category-5-영혼의-승격-soul-ascension" data-for="-category-5-영혼의-승격-soul-ascension">🗿 [Category 5] 영혼의 승격 (Soul Ascension)</a></li><li class="depth-2"><a href="#5-a-만신전의-일원-divine-apotheosis" data-for="5-a-만신전의-일원-divine-apotheosis">5-A. 만신전의 일원 (Divine Apotheosis)</a></li><li class="depth-2"><a href="#5-b-모노리스의-수호자-custodians-of-the-log" data-for="5-b-모노리스의-수호자-custodians-of-the-log">5-B. 모노리스의 수호자 (Custodians of the Log)</a></li><li class="depth-1"><a href="#️-운영-규칙-rules-of-play" data-for="️-운영-규칙-rules-of-play">🛠️ 운영 규칙 (Rules of Play)</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../postscript.js" type="module" data-persist="true"></script></html>

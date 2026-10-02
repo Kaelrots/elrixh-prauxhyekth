@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편)</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편)"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편)"/><meta name="twitter:description" content="🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편) 문서 성격: 하드 SF 성간 문명, 성국 헌정 체제, 신인류 생체 및 신학적 법리학을 반영하여 신설된 7대 확장 교리 분류(제7대~제13대) 전용 마스터 정의서."/><meta property="og:description" content="🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편) 문서 성격: 하드 SF 성간 문명, 성국 헌정 체제, 신인류 생체 및 신학적 법리학을 반영하여 신설된 7대 확장 교리 분류(제7대~제13대) 전용 마스터 정의서."/><meta property="og:image:alt" content="🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편) 문서 성격: 하드 SF 성간 문명, 성국 헌정 체제, 신인류 생체 및 신학적 법리학을 반영하여 신설된 7대 확장 교리 분류(제7대~제13대) 전용 마스터 정의서."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/01-신계-차원/02-라리셴베르크/05-문화·종교/제국도교/교리/🎨-엘리스-프라우셰크트;-종교-교리-체계-및-확장-선택자-마스터-정의서-(신설-확장-교리편)"/><meta property="twitter:url" content="https://kaelrots.github.io/01-신계-차원/02-라리셴베르크/05-문화·종교/제국도교/교리/🎨-엘리스-프라우셰크트;-종교-교리-체계-및-확장-선택자-마스터-정의서-(신설-확장-교리편)"/><link rel="icon" href="../../../../../static/icon.png"/><meta name="description" content="🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편) 문서 성격: 하드 SF 성간 문명, 성국 헌정 체제, 신인류 생체 및 신학적 법리학을 반영하여 신설된 7대 확장 교리 분류(제7대~제13대) 전용 마스터 정의서."/><meta name="generator" content="Quartz"/><link href="../../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="01-신계-차원/02-라리셴베르크/05-문화·종교/제국도교/교리/🎨-엘리스-프라우셰크트;-종교-교리-체계-및-확장-선택자-마스터-정의서-(신설-확장-교리편)"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1025" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1025" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-638" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-638" class="mobile-toc-dialog" aria-labelledby="toc-638-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-638-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#-엘리스-프라우셰크트-종교-교리-체계-및-확장-선택자-마스터-정의서-신설-확장-교리편" data-for="-엘리스-프라우셰크트-종교-교리-체계-및-확장-선택자-마스터-정의서-신설-확장-교리편">🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편)</a></li><li class="depth-0"><a href="#ⅰ-신설-7대-확장-교리-체계-doctrinal-categories-7--13" data-for="ⅰ-신설-7대-확장-교리-체계-doctrinal-categories-7--13">Ⅰ. 신설 7대 확장 교리 체계 (Doctrinal Categories 7 ~ 13)</a></li><li class="depth-1"><a href="#7--생체-및-형질-교리-bioethics--corporeality---계속" data-for="7--생체-및-형질-교리-bioethics--corporeality---계속">7. 🧬 생체 및 형질 교리 (Bioethics &amp; Corporeality - 계속)</a></li><li class="depth-2"><a href="#7-1-가역적-가변형질-성사-sacrament-of-fluidity" data-for="7-1-가역적-가변형질-성사-sacrament-of-fluidity">[7-1] 가역적 가변형질 성사 (Sacrament of Fluidity)</a></li><li class="depth-2"><a href="#7-2-인공-배양-및-복제-생식관-artificial-genesis--cloning" data-for="7-2-인공-배양-및-복제-생식관-artificial-genesis--cloning">[7-2] 인공 배양 및 복제 생식관 (Artificial Genesis &amp; Cloning)</a></li><li class="depth-2"><a href="#7-3-신체-증강-및-사이버네틱스관-augmentation--flesh-sanctity" data-for="7-3-신체-증강-및-사이버네틱스관-augmentation--flesh-sanctity">[7-3] 신체 증강 및 사이버네틱스관 (Augmentation &amp; Flesh Sanctity)</a></li><li class="depth-2"><a href="#7-4-육체의-향유와-금욕-carnal-sanctity-vs-asceticism" data-for="7-4-육체의-향유와-금욕-carnal-sanctity-vs-asceticism">[7-4] 육체의 향유와 금욕 (Carnal Sanctity vs Asceticism)</a></li><li class="depth-1"><a href="#8-️-신학적-법리학-및-영혼-책임-교리-theological-jurisprudence" data-for="8-️-신학적-법리학-및-영혼-책임-교리-theological-jurisprudence">8. ⚖️ 신학적 법리학 및 영혼 책임 교리 (Theological Jurisprudence)</a></li><li class="depth-2"><a href="#8-1-영혼-로그-분석과-전생-카르마-책임-soul-log-accountability" data-for="8-1-영혼-로그-분석과-전생-카르마-책임-soul-log-accountability">[8-1] 영혼 로그 분석과 전생 카르마 책임 (Soul Log Accountability)</a></li><li class="depth-2"><a href="#8-2-icx인지능력-확인-시험-종교적-승인-franchise-qualification" data-for="8-2-icx인지능력-확인-시험-종교적-승인-franchise-qualification">[8-2] ICX(인지능력 확인 시험) 종교적 승인 (Franchise Qualification)</a></li><li class="depth-2"><a href="#8-3-사법-재판과-신명-재판-judicial-trials--ordeals" data-for="8-3-사법-재판과-신명-재판-judicial-trials--ordeals">[8-3] 사법 재판과 신명 재판 (Judicial Trials &amp; Ordeals)</a></li><li class="depth-1"><a href="#9--성간-및-다종족-교리-interstellar--multispecies" data-for="9--성간-및-다종족-교리-interstellar--multispecies">9. 🌌 성간 및 다종족 교리 (Interstellar &amp; Multispecies)</a></li><li class="depth-2"><a href="#9-1-외계-지성체xeno-영혼관-theology-of-alien-souls" data-for="9-1-외계-지성체xeno-영혼관-theology-of-alien-souls">[9-1] 외계 지성체(Xeno) 영혼관 (Theology of Alien Souls)</a></li><li class="depth-2"><a href="#9-2-외계-생태계-및-행성-개조관-ecological-stance--terraforming" data-for="9-2-외계-생태계-및-행성-개조관-ecological-stance--terraforming">[9-2] 외계 생태계 및 행성 개조관 (Ecological Stance &amp; Terraforming)</a></li><li class="depth-2"><a href="#9-3-성간-개척-사명관-interstellar-manifest-destiny" data-for="9-3-성간-개척-사명관-interstellar-manifest-destiny">[9-3] 성간 개척 사명관 (Interstellar Manifest Destiny)</a></li><li class="depth-1"><a href="#10-️-식단-및-물질-섭취-교리-dietary--consumption" data-for="10-️-식단-및-물질-섭취-교리-dietary--consumption">10. 🍽️ 식단 및 물질 섭취 교리 (Dietary &amp; Consumption)</a></li><li class="depth-2"><a href="#10-1-물질-섭취-정결-규범-purity-of-ingestion" data-for="10-1-물질-섭취-정결-규범-purity-of-ingestion">[10-1] 물질 섭취 정결 규범 (Purity of Ingestion)</a></li><li class="depth-2"><a href="#10-2-단식-및-절식-의식-fasting--self-restraint" data-for="10-2-단식-및-절식-의식-fasting--self-restraint">[10-2] 단식 및 절식 의식 (Fasting &amp; Self-Restraint)</a></li><li class="depth-2"><a href="#10-3-성물-및-마나-결정-취급-relics--mana-crystals" data-for="10-3-성물-및-마나-결정-취급-relics--mana-crystals">[10-3] 성물 및 마나 결정 취급 (Relics &amp; Mana Crystals)</a></li><li class="depth-1"><a href="#11-️-임종-및-유산-수습-교리-mortuary--anima-succession" data-for="11-️-임종-및-유산-수습-교리-mortuary--anima-succession">11. ⚰️ 임종 및 유산 수습 교리 (Mortuary &amp; Anima Succession)</a></li><li class="depth-2"><a href="#11-1-시신-및-영혼-수습-의례-funeral-rites" data-for="11-1-시신-및-영혼-수습-의례-funeral-rites">[11-1] 시신 및 영혼 수습 의례 (Funeral Rites)</a></li><li class="depth-2"><a href="#11-2-안락사와-삶의-종결-end-of-life--euthanasia" data-for="11-2-안락사와-삶의-종결-end-of-life--euthanasia">[11-2] 안락사와 삶의 종결 (End of Life &amp; Euthanasia)</a></li><li class="depth-1"><a href="#12-️-전쟁-및-무력-행사-교리-warfare--defense" data-for="12-️-전쟁-및-무력-행사-교리-warfare--defense">12. ⚔️ 전쟁 및 무력 행사 교리 (Warfare &amp; Defense)</a></li><li class="depth-2"><a href="#12-1-무력-사용의-명분-casus-belli--just-war" data-for="12-1-무력-사용의-명분-casus-belli--just-war">[12-1] 무력 사용의 명분 (Casus Belli &amp; Just War)</a></li><li class="depth-2"><a href="#12-2-포로-대우-및-교전수칙-treatment-of-prisoners--roe" data-for="12-2-포로-대우-및-교전수칙-treatment-of-prisoners--roe">[12-2] 포로 대우 및 교전수칙 (Treatment of Prisoners &amp; ROE)</a></li><li class="depth-1"><a href="#13--경제-및-재화-교리-wealth--commerce" data-for="13--경제-및-재화-교리-wealth--commerce">13. 💰 경제 및 재화 교리 (Wealth &amp; Commerce)</a></li><li class="depth-2"><a href="#13-1-엘하스-축적-및-번영-윤리-wealth-accumulation" data-for="13-1-엘하스-축적-및-번영-윤리-wealth-accumulation">[13-1] 엘하스 축적 및 번영 윤리 (Wealth Accumulation)</a></li><li class="depth-2"><a href="#13-2-금융-및-이자-규범-usury--lending" data-for="13-2-금융-및-이자-규범-usury--lending">[13-2] 금융 및 이자 규범 (Usury &amp; Lending)</a></li><li class="depth-2"><a href="#13-3-의무-자선-및-부의-재분배-charity--redistribution" data-for="13-3-의무-자선-및-부의-재분배-charity--redistribution">[13-3] 의무 자선 및 부의 재분배 (Charity &amp; Redistribution)</a></li><li class="depth-0"><a href="#ⅱ-신설-확장-7대-교리713대-루벨리니온-제국도교-신교-vs-구교-최종-비교-매핑표" data-for="ⅱ-신설-확장-7대-교리713대-루벨리니온-제국도교-신교-vs-구교-최종-비교-매핑표">Ⅱ. 신설 확장 7대 교리(7~13대) 루벨리니온 제국도교 (신교 vs 구교) 최종 비교 매핑표</a></li><li class="depth-0"><a href="#" data-for></a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1025"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1025" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../01-신계-차원/">01 신계 차원</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../01-신계-차원/02-라리셴베르크/">02 라리셴베르크</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../01-신계-차원/02-라리셴베르크/05-문화·종교/">05 문화·종교</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../01-신계-차원/02-라리셴베르크/05-문화·종교/제국도교/">제국도교</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../01-신계-차원/02-라리셴베르크/05-문화·종교/제국도교/교리/">교리</a></div></nav><h1 class="article-title">🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편)</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:31.395Z">2026년 9월 30일</time><span>32 분 소요</span></p></div></div><article class="popover-hint"><h1 id="-엘리스-프라우셰크트-종교-교리-체계-및-확장-선택자-마스터-정의서-신설-확장-교리편">🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-엘리스-프라우셰크트-종교-교리-체계-및-확장-선택자-마스터-정의서-신설-확장-교리편" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>문서 성격: 하드 SF 성간 문명, 성국 헌정 체제, 신인류 생체 및 신학적 법리학을 반영하여 신설된 7대 확장 교리 분류(제7대~제13대) 전용 마스터 정의서.</li>
+<li>연계 원본 폴더: `세계관/01-신계 차원/02-라리셴베르크/05-문화·종교/제국도교/교리/`</li>
+<li>구성 범위: 제7대 생체·형질 교리(7-1부터 시작)부터 제13대 경제·재화 교리 전체 및 7대 신설 교리 전용 신·구교 비교 매핑표 수록.</li>
+</ul>
+<hr/>
+<h1 id="ⅰ-신설-7대-확장-교리-체계-doctrinal-categories-7--13">Ⅰ. 신설 7대 확장 교리 체계 (Doctrinal Categories 7 ~ 13)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ⅰ-신설-7대-확장-교리-체계-doctrinal-categories-7--13" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="7--생체-및-형질-교리-bioethics--corporeality---계속">7. 🧬 생체 및 형질 교리 (Bioethics &amp; Corporeality - 계속)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7--생체-및-형질-교리-bioethics--corporeality---계속" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="7-1-가역적-가변형질-성사-sacrament-of-fluidity">[7-1] 가역적 가변형질 성사 (Sacrament of Fluidity)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-1-가역적-가변형질-성사-sacrament-of-fluidity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 신전 정화 및 재축복 의전 공인 (Sacred Reset Rite) [신교 채택]</font>
+<ul>
+<li>내용: 첫 각인에 따른 역할(시더/수태자) 고정을 신성 계약으로 인정하며, 이를 델타(전능)나 제타(듀얼)로 원복하는 중앙신전의 정화 의식을 독점적 최고 성사로 공인함.</li>
+<li>[출처: 카엘 고유 설정 [황실 네같살 생체 시스템] / 힌두교 정화 의식(Shuddhi)]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 세속 나노기술(E-L 복원제) 현실적 묵인 (Technological Tolerance) [신교 실무]</font>
+<ul>
+<li>내용: 최첨단 엡실론-람다 복원제 복용을 이단으로 단죄하지 않고 현실적 의료 행위로 포용함.</li>
+<li>[출처: 카엘 고유 설정 [황실 네같살 생체 시스템] / 현대 의료 윤리학]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 자연형질 고수주의 (Flesh Fundamentalism) [보수파 안티테제]</font>
+<ul>
+<li>내용: 신이 내린 본래의 형질을 인위적 약물이나 주술로 변조하는 행위를 신체 훼손 중죄로 단죄함.</li>
+<li>[출처: 윤리관 [16-1] 🚫 자연형질 / 기독교 자연법 윤리]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">D. 유전자 변혁 숭배 (Biomorph Transmutation) [트랜스휴머니즘 풀]</font>
+<ul>
+<li>내용: 환경과 필요에 맞춰 육체를 유전적으로 끊임없이 재조작하는 것을 진화의 거룩한 의무로 여김.</li>
+<li>[출처: 윤리관 [16-1] 🧬 유전자설계 / 트랜스휴머니즘]</li>
+</ul>
+</li>
+</ul>
+<h3 id="7-2-인공-배양-및-복제-생식관-artificial-genesis--cloning">[7-2] 인공 배양 및 복제 생식관 (Artificial Genesis &amp; Cloning)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-2-인공-배양-및-복제-생식관-artificial-genesis--cloning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>A. 보편적 생명 존중 (Sanctity of All Gestation) [신교 채택]
+<ul>
+<li>내용: 체외 배양이나 인공 자궁을 통해 태어난 생명도 완전한 영혼의 그릇이자 연방 신민으로 축복함.</li>
+<li>[출처: 윤리관 [16-6] 🧪 인공 배양 / SF 스텔라리스 인공생식 윤리]</li>
+</ul>
+</li>
+<li>B. 자연 모태 수태 유일주의 (Womb Exclusivism) [보수파 안티테제]
+<ul>
+<li>내용: 오직 모태의 자연 생식으로 태어난 개체만이 온전한 영혼을 부여받는다고 믿음.</li>
+<li>[출처: 윤리관 [16-6] 🤰 자연 생식 / 가톨릭 인공수정 금지(돈움 비테)]</li>
+<li>내용: 사회적 직무와 계급에 따라 유전자를 차등 설계하고 인공 자궁에서 대량 생산하는 것을 종교적 의무로 강제함.</li>
+<li>[출처: 올더스 헉슬리 《멋진 신세계》 / 플라톤 《국가론》 수태 추첨제]</li>
+</ul>
+</li>
+</ul>
+<h3 id="7-3-신체-증강-및-사이버네틱스관-augmentation--flesh-sanctity">[7-3] 신체 증강 및 사이버네틱스관 (Augmentation &amp; Flesh Sanctity)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-3-신체-증강-및-사이버네틱스관-augmentation--flesh-sanctity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 영혼 조화형 신체 보조 (Soul-Harmonized Augmentation) [신교 채택]</font>
+<ul>
+<li>내용: 마나 회로와 영혼의 위상 진동을 방해하지 않는 범위 내에서 의수, 인공 장기, 보조 사이버네틱스 장착을 전면 승인함.</li>
+<li>[출처: 윤리관 [16-4] ⚙️ 신체증강 / 아리스토텔레스 중용론]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 신체 순수주의 및 증강 금기 (Flesh Purity) [구교/보수파 안티테제]</font>
+<ul>
+<li>내용: 육체에 인공 부품이나 금속 기계를 이식하는 행위를 영혼의 그릇을 더럽히는 불경으로 보아 파문함.</li>
+<li>[출처: 윤리관 [16-4] 🧬 신체순수 / 유대교 문신 및 신체 변형 금기]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 전뇌화 및 기계 승천 (Cybernetic Ascension) [사이보그 신앙]</font>
+<ul>
+<li>내용: 유한하고 병약한 생체 육신을 폐기하고 신경망 전체를 기계 회로로 이전하는 것을 궁극의 해탈로 숭배함.</li>
+<li>[출처: 윤리관 [9-5] 💾 기계승천 / 한스 모라벡 특이점주의]</li>
+</ul>
+</li>
+</ul>
+<h3 id="7-4-육체의-향유와-금욕-carnal-sanctity-vs-asceticism">[7-4] 육체의 향유와 금욕 (Carnal Sanctity vs Asceticism)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-4-육체의-향유와-금욕-carnal-sanctity-vs-asceticism" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 절제된 양생과 생명의 향유 (Harmonious Vitality) [신교 채택]</font>
+<ul>
+<li>내용: 육체적 건강과 생명력의 향유를 우주적 섭리로 긍정하며, 맹목적 자해나 극단적 금욕을 영혼의 낭비로 배격함.</li>
+<li>[출처: 도교 양생술(養生術) / CK3 바닐라 ‘육체의 찬양(Carnal Exaltation)’]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 극단적 육체 고행주의 (Flagellation &amp; Asceticism) [고행단 안티테제]</font>
+<ul>
+<li>내용: 육신에 채찍질과 굶주림 등의 고통을 가해야만 세속의 죄업이 씻기고 영혼의 순도가 높아진다고 믿음.</li>
+<li>[출처: CK3 바닐라 ‘고행(Asceticism)’ / 중세 채찍질 고행단(Flagellants)]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 신성 쾌락주의 (Sacred Hedonism) [향락 종파 풀]</font>
+<ul>
+<li>내용: 감각적 쾌락의 극치와 신체적 환희 속에서 우주 에테르와의 직접적인 영적 합일이 일어난다고 가르침.</li>
+<li>[출처: 고대 그리스 디오니소스 밀의 / CK3 바닐라 ‘쾌락주의(Hedonism)‘]</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="8-️-신학적-법리학-및-영혼-책임-교리-theological-jurisprudence">8. ⚖️ 신학적 법리학 및 영혼 책임 교리 (Theological Jurisprudence)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-️-신학적-법리학-및-영혼-책임-교리-theological-jurisprudence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="8-1-영혼-로그-분석과-전생-카르마-책임-soul-log-accountability">[8-1] 영혼 로그 분석과 전생 카르마 책임 (Soul Log Accountability)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-1-영혼-로그-분석과-전생-카르마-책임-soul-log-accountability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 카르마적 배상 책임 승인 (Karmic Liability) [신교 채택]</font>
+<ul>
+<li>내용: 전생의 중대한 범죄가 현생의 영혼 로그 정밀 분석을 통해 입증될 경우, 연방 법원의 카르마적 배상 판결을 종교적으로 전폭 지지함.</li>
+<li>[출처: 제1권역 통치 규범 / 마스터 레지스트리 제4조 / 불교 업보(Karma)론]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 영혼 자주권 및 전생 불가침 (Soul Privacy) [자유주의 안티테제]</font>
+<ul>
+<li>내용: 전생의 기억과 영혼 로그는 개인의 절대적 비밀 영역이므로 세속 국가나 사제단이 이를 열람·추궁할 수 없음.</li>
+<li>[출처: 윤리관 [16-9] 🔐 영혼 자주권 / 존 로크 인격동일성 및 백지설]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 원죄 세습론 (Inherited Guilt) [원죄주의 안티테제]</font>
+<ul>
+<li>내용: 조상이나 전생의 죄과가 후손의 영혼에 영구히 낙인찍혀 태어나므로 대를 이어 속죄해야 한다는 연좌제 교리.</li>
+<li>[출처: 기독교 원죄론(Peccatum Originale) / 고대 동아시아 연좌제]</li>
+</ul>
+</li>
+</ul>
+<h3 id="8-2-icx인지능력-확인-시험-종교적-승인-franchise-qualification">[8-2] ICX(인지능력 확인 시험) 종교적 승인 (Franchise Qualification)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-2-icx인지능력-확인-시험-종교적-승인-franchise-qualification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 영혼 성숙도 및 지적 소명 공인 (Intellectual Capability Mandate) [신교 채택]</font>
+<ul>
+<li>내용: ICX 시험을 단순 시험이 아닌 ‘신민의 지적·영적 연산력과 세계관적 무결성 검증’으로 보아 참정권 부여를 신성한 직무로 인정함.</li>
+<li>[출처: [인지능력 확인 시험에 관한 연방 법률] / 플라톤 철인정치]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 천부 영혼 평등론 (Natural Spiritual Egalitarianism) [평등주의 안티테제]</font>
+<ul>
+<li>내용: 연산력이나 시험 성적과 무관하게 모든 영혼은 우주 앞에서 동등하므로 어떠한 참정권 자격 필터도 죄악시함.</li>
+<li>[출처: 윤리관 [1.5-2] 🌱 천부시민권 / 퀘이커 평등주의]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 혈통·영성 독점론 (Sacred Lineage Monopoly) [신정 귀족정 풀]</font>
+<ul>
+<li>내용: 특정 고위 혈통과 성직 계급만이 신성한 판단력을 독점하므로 일반 평민에게는 참정권을 불허함.</li>
+<li>[출처: 힌두교 브라만 카스트 특권 / CK3 바닐라 ‘신성한 탄생(Divine Marriage)’]</li>
+</ul>
+</li>
+</ul>
+<h3 id="8-3-사법-재판과-신명-재판-judicial-trials--ordeals">[8-3] 사법 재판과 신명 재판 (Judicial Trials &amp; Ordeals)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-3-사법-재판과-신명-재판-judicial-trials--ordeals" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 증거 기반 세속 사법 존중 (Secular Evidentiary Law) [신교 채택]</font>
+<ul>
+<li>내용: 기적이나 주술 대신 객관적 물증과 논리적 변론에 입각한 세속 연방 법원의 사법 절차만을 합법으로 승인함.</li>
+<li>[출처: 로마법 이성주의 / 현대 법치주의]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 결투 재판 및 신명 판결 (Trial by Ordeal &amp; Combat) [구교 사료 보존]</font>
+<ul>
+<li>내용: 법적 분쟁 시 당사자 간 마법 결투나 극한의 시련을 거쳐 승리한 쪽에 신의 정의가 있다고 판정하던 구 교리.</li>
+<li>[출처: CK3 바닐라 ‘결투 재판’ / 중세 유럽 오르달리아(Ordeal)]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 영혼 심문 및 텔레파시 사법 (Mind-Scrying Inquisition) [신문관 안티테제]</font>
+<ul>
+<li>내용: 피고인의 뇌신경과 영혼을 사이오닉으로 강제 해킹하여 진실을 추출하는 초자연적 종교재판.</li>
+<li>[출처: 중세 종교재판(Inquisition) / SF 텔레파시 사법]</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="9--성간-및-다종족-교리-interstellar--multispecies">9. 🌌 성간 및 다종족 교리 (Interstellar &amp; Multispecies)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9--성간-및-다종족-교리-interstellar--multispecies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="9-1-외계-지성체xeno-영혼관-theology-of-alien-souls">[9-1] 외계 지성체(Xeno) 영혼관 (Theology of Alien Souls)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-1-외계-지성체xeno-영혼관-theology-of-alien-souls" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 지성체 영혼 보편론 (Universal Sapient Soul) [신교 성간 개방 교리]</font>
+<ul>
+<li>내용: 차원 장막 내에서 고등 지성과 에테르 감응력을 지닌 외계 종족 역시 도교적 영혼 순환계의 동등한 형제로 포섭함.</li>
+<li>[출처: 레짐 [28-2] 다종족 융합 / 불교 일체중생 실유불성(一體衆生 悉有佛性)]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 인간 영혼 유일론 (Human Soul Supremacy) [구교 / 국수주의 안티테제]</font>
+<ul>
+<li>내용: 오직 구지구 전이자 및 신인류 계통의 영혼만이 진정한 환생과 승천 자격을 지닌다는 배타적 교리.</li>
+<li>[출처: 윤리관 [16-5] 🧍 종 중심주의 / 아브라함 종교의 인간 고유 영혼설]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 제노 악마화 / 타락 위상론 (Xeno-Abomination) [절멸주의 이단]</font>
+<ul>
+<li>내용: 외계 지성체는 혼돈계의 차원 오염 물질이 뭉쳐 태어난 악마적 피조물이므로 절멸만이 답이라 가르침.</li>
+<li>[출처: 워해머 40K 인류제국 국교 / CK3 바닐라 ‘근본주의’ 이단 멸절]</li>
+</ul>
+</li>
+</ul>
+<h3 id="9-2-외계-생태계-및-행성-개조관-ecological-stance--terraforming">[9-2] 외계 생태계 및 행성 개조관 (Ecological Stance &amp; Terraforming)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-2-외계-생태계-및-행성-개조관-ecological-stance--terraforming" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 생태 조화형 환경 공학 (Harmonious Terraforming) [신교 채택]</font>
+<ul>
+<li>내용: 테라포밍과 성간 개척 시 고유 외계 생태계의 보존과 행성 마나장의 안정성을 최우선 고려함.</li>
+<li>[출처: 레짐 [24-2] 생태보존 / 윤리관 [10-2] 환경공학]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 절대적 자연 생태계 보존 (Deep Ecologism) [환경 원시주의]</font>
+<ul>
+<li>내용: 어떠한 인위적 테라포밍도 행성의 영혼을 살해하는 폭력으로 보아 우주 개척을 전면 거부함.</li>
+<li>[출처: 가이아 이론 / 딥 에콜로지(Deep Ecology)]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 무제한적 산업 자원 착취 (Resource Utilitarianism) [약탈 신앙 풀]</font>
+<ul>
+<li>내용: 우주의 모든 행성과 자원은 신민의 번영을 위해 마음껏 소비하도록 신이 내린 소모품이라 봄.</li>
+<li>[출처: 윤리관 [2-5] 🔒 자원무기화 / 극단적 추출주의]</li>
+</ul>
+</li>
+</ul>
+<h3 id="9-3-성간-개척-사명관-interstellar-manifest-destiny">[9-3] 성간 개척 사명관 (Interstellar Manifest Destiny)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-3-성간-개척-사명관-interstellar-manifest-destiny" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 우주 진출을 통한 문명 승천 (Cosmic Ascension) [신교 채택]</font>
+<ul>
+<li>내용: 성간 항행과 은하 개척은 신인류 문명이 카르다쇼프 2단계로 도약하기 위한 필연적 종교적 성무임.</li>
+<li>[출처: 연방 헌법 제10장 우주개척 / 러시아 우주주의(치올콥스키)]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 모행성 정주 고착주의 (Planetary Isolationism) [정주파 안티테제]</font>
+<ul>
+<li>내용: 신지구 라리셴베르크 바깥의 진공은 저주받은 영역이므로 행성을 벗어나는 자는 파문함.</li>
+<li>[출처: 고대 그리스 폴리스 폐쇄주의 / 아미쉬(Amish) 공동체]</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="10-️-식단-및-물질-섭취-교리-dietary--consumption">10. 🍽️ 식단 및 물질 섭취 교리 (Dietary &amp; Consumption)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-️-식단-및-물질-섭취-교리-dietary--consumption" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="10-1-물질-섭취-정결-규범-purity-of-ingestion">[10-1] 물질 섭취 정결 규범 (Purity of Ingestion)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-1-물질-섭취-정결-규범-purity-of-ingestion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 위상 정결 섭취 (Phase-Purified Consumption) [신교 채택]</font>
+<ul>
+<li>내용: 표준 마나 정류 시설과 인가된 위생 필터를 통과한 정결 식품·합성 영양제만을 섭취하도록 규정함.</li>
+<li>[출처: 유대교 코셔(Kosher) / 이슬람 할랄(Halal) 정결 규정]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 채식 및 불살생주의 (Vegetarian Asceticism) [금욕파 풀]</font>
+<ul>
+<li>내용: 동물의 생명력을 탈취하여 연명하는 행위를 영혼의 진동수를 탁하게 만드는 죄악으로 엄벌함.</li>
+<li>[출처: CK3 바닐라 ‘채식주의(Vegetarianism)’ / 자이나교 아힘사]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 의례적 영혼 포식 (Ritual Cannibalism) [이단 안티테제]</font>
+<ul>
+<li>내용: 패배한 적이나 이능력자의 육체·피를 섭취하여 그 영혼의 격과 마나를 흡수하려는 흑마법 교리.</li>
+<li>[출처: CK3 바닐라 ‘식인 풍습(Ritual Cannibalism)’]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">D. 완전 영양 합성주의 (Nutrient Synthesis) [기술파 풀]</font>
+<ul>
+<li>내용: 음식의 미각적 탐닉을 저열한 동물적 욕망으로 보며 나노 합성 캡슐 배급만을 권장함.</li>
+<li>[출처: SF 사이언티즘 완전식품관]</li>
+</ul>
+</li>
+</ul>
+<h3 id="10-2-단식-및-절식-의식-fasting--self-restraint">[10-2] 단식 및 절식 의식 (Fasting &amp; Self-Restraint)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-2-단식-및-절식-의식-fasting--self-restraint" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 성축일 주기적 정화 단식 (Periodic Purification Fasting) [신교 채택]</font>
+<ul>
+<li>내용: 연방 성탄제(48월 25일) 전후 등 주요 절기에 마나 순환을 정화하기 위해 하루 1끼 절식 수행.</li>
+<li>[출처: 이슬람 라마단(Ramadan) / 가톨릭 사순절 단식]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 상시적 극한 단식 고행 (Mortal Starvation) [고행단 풀]</font>
+<ul>
+<li>내용: 뼈가 드러날 때까지 음식을 끊고 단식함으로써 육체의 지배에서 영혼을 강제 해방시킴.</li>
+<li>[출처: 자이나교 살레카나(Sallekhana) / 초대 교회 주두성자]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 단식 불요 / 상시 만찬주의 (Epicurean Feasting) [세속주의]</font>
+<ul>
+<li>내용: 굶주림은 영혼의 연산력을 떨어뜨릴 뿐이므로 풍요로운 식사를 신성한 은총으로 즐김.</li>
+<li>[출처: 고대 에피쿠로스 학파]</li>
+</ul>
+</li>
+</ul>
+<h3 id="10-3-성물-및-마나-결정-취급-relics--mana-crystals">[10-3] 성물 및 마나 결정 취급 (Relics &amp; Mana Crystals)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-3-성물-및-마나-결정-취급-relics--mana-crystals" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 신전 공인 성물 공경 (Veneration of Relics) [신교 채택]</font>
+<ul>
+<li>내용: 초월자의 유품이나 역사적 헌정 문서를 공인된 성유물로 지정하여 보존하고 공경함.</li>
+<li>[출처: CK3 바닐라 ‘성물 공경’ / 가톨릭 성유물(Relic) 전통]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 물질 우상화 절대 금지 (Strict Aniconism) [우상파괴파 안티테제]</font>
+<ul>
+<li>내용: 어떠한 물질이나 조각상에도 신성이 깃들 수 없다고 보아 성상과 유물을 파괴함.</li>
+<li>[출처: CK3 바닐라 ‘우상파괴주의(Iconoclasm)’ / 이슬람 시르크 금지]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 고순도 마나 원석 숭배 (Mana Crystal Cult) [원시 오컬티즘]</font>
+<ul>
+<li>내용: 마나 원석 자체를 신의 심장으로 여겨 원석 앞에서 산제물을 바치는 원시 신앙.</li>
+<li>[출처: 원시 애니미즘 거석 숭배]</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="11-️-임종-및-유산-수습-교리-mortuary--anima-succession">11. ⚰️ 임종 및 유산 수습 교리 (Mortuary &amp; Anima Succession)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-️-임종-및-유산-수습-교리-mortuary--anima-succession" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="11-1-시신-및-영혼-수습-의례-funeral-rites">[11-1] 시신 및 영혼 수습 의례 (Funeral Rites)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-1-시신-및-영혼-수습-의례-funeral-rites" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 위상 환원 기화 장례 (Dimensional Dissolution / Sky Return) [신교 채택]</font>
+<ul>
+<li>내용: 사망 즉시 시신을 고열 마나로 기화 승화시켜 영혼 데이터의 차원 장막 안착을 촉진함.</li>
+<li>[출처: 티베트 불교 조장(Sky Burial) / 힌두교 안티예슈티 화장 전통]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 영혼 핵 가문 보존 (Ancestral Soul Core) [보수 귀족정 풀]</font>
+<ul>
+<li>내용: 망자의 영혼 파편 일부를 가문의 아티팩트에 영구 봉인하여 조상신으로 섬기고 조언을 구함.</li>
+<li>[출처: CK3 바닐라 ‘조상 숭배’ / 고대 로마 이마고(Imago) 전통]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 유체 공학 전면 재활용 (Necro-Utilitarianism) [기계신앙/공리주의]</font>
+<ul>
+<li>내용: 영혼이 떠난 육체는 단순한 유기물이므로 의무 장기 기증 및 바이오 합성 비료로 재활용함.</li>
+<li>[출처: 세속 생체 공리주의 / SF 소일렌트 그린 오마주]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">D. 성스러운 지하 암실 매장 (Catacomb Entombment) [매장파 안티테제]</font>
+<ul>
+<li>내용: 시신을 훼손 없이 석관에 안치하여 보존해야만 영혼이 안식을 얻는다는 보수 전통.</li>
+<li>[출처: 고대 이집트 미라 전통 / 전통 기독교 매장관]</li>
+</ul>
+</li>
+</ul>
+<h3 id="11-2-안락사와-삶의-종결-end-of-life--euthanasia">[11-2] 안락사와 삶의 종결 (End of Life &amp; Euthanasia)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-2-안락사와-삶의-종결-end-of-life--euthanasia" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 신전 주관 존엄 안식 성사 (Sanctioned Consolamentum) [신교 채택]</font>
+<ul>
+<li>내용: 치유 불가능한 차원 오염이나 뇌사 시, 영혼 데이터 마모를 막기 위해 교단 주관 안식을 합법 집전함.</li>
+<li>[출처: CK3 바닐라 카타리파 ‘위령제(Consolamentum)’ / 스위스 조력사 법제]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 자연사 절대 대기주의 (Vitalism) [보수파 안티테제]</font>
+<ul>
+<li>내용: 아무리 극심한 고통이 따르더라도 자연적인 심정지 순간까지 인위적 개입을 절대 불허함.</li>
+<li>[출처: 가톨릭 교황청 존엄사 반대 교서]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 명예로운 전사 자결 의례 (Warrior Seppuku) [무사도 풀]</font>
+<ul>
+<li>내용: 치욕을 당하거나 패배했을 때 스스로 목숨을 끊는 것을 영혼의 격을 지키는 숭고한 행위로 칭송함.</li>
+<li>[출처: 일본 무사도 할복 / 바이킹 발할라 전사관]</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="12-️-전쟁-및-무력-행사-교리-warfare--defense">12. ⚔️ 전쟁 및 무력 행사 교리 (Warfare &amp; Defense)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-️-전쟁-및-무력-행사-교리-warfare--defense" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="12-1-무력-사용의-명분-casus-belli--just-war">[12-1] 무력 사용의 명분 (Casus Belli &amp; Just War)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-1-무력-사용의-명분-casus-belli--just-war" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 헌정 수호 정당한 방위전 (Constitutional Just War) [신교 채택]</font>
+<ul>
+<li>내용: 공격적 정복 전쟁은 죄악시하되, 연방 헌정 질서 수호와 차원 위기 방어를 위한 무력 행사는 성스러운 의무로 승인함.</li>
+<li>[출처: 기독교 아우구스티누스 ‘정당한 전쟁론’ / CK3 바닐라 ‘신성 수호자’]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 교세 확장 성전주의 (Holy Warfare / Crusade) [구교/호전파 풀]</font>
+<ul>
+<li>내용: 이교도 영토를 정복하고 교세를 확장하는 무력 침공을 신의 뜻으로 선포하며 전사자의 카르마 사죄를 보장함.</li>
+<li>[출처: CK3 바닐라 ‘전쟁 사제’, ‘무장 순례’ / 이슬람 고전 지하드론]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 절대 평화주의 (Absolute Pacifism) [수도회 풀]</font>
+<ul>
+<li>내용: 어떠한 명분의 무력 행사도 영혼에 지울 수 없는 파동적 상흔을 남긴다고 보아 군복무와 살상을 거부함.</li>
+<li>[출처: CK3 바닐라 ‘평화주의(Pacifism)’ / 초기 기독교 및 퀘이커 평화증언]</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-2-포로-대우-및-교전수칙-treatment-of-prisoners--roe">[12-2] 포로 대우 및 교전수칙 (Treatment of Prisoners &amp; ROE)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-2-포로-대우-및-교전수칙-treatment-of-prisoners--roe" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 인도적 포로 구호 및 교전수칙 준수 (Humanitarian Chivalry) [신교 채택]</font>
+<ul>
+<li>내용: 국제인도법(제네바/헤이그 협약)에 입각하여 항복한 포로 대우, 병원함 보호, 비전투원 살상 금지를 의무화함.</li>
+<li>[출처: [세계관 국제법 및 조약 레퍼런스 종합.md] / 제네바 협약]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 포로 노예화 및 희생제 공헌 (Sacrificial Captivity) [암흑 종파 안티테제]</font>
+<ul>
+<li>내용: 사로잡힌 적군을 신전 노예로 삼거나 제단에 피를 바치는 산제물로 소모함.</li>
+<li>[출처: CK3 바닐라 ‘인신공양(Human Sacrifice)’ / 고대 아즈텍 제의]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 완전 박멸 및 무조건 처형 (Total Extermination) [섬멸전 종파]</font>
+<ul>
+<li>내용: 항복을 인정하지 않고 적의 씨를 말리는 무자비한 초토화를 교리로 삼음.</li>
+<li>[출처: 고대 아시리아 군사 교리 / 성경 헤렘(Herem, 진멸) 전통]</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="13--경제-및-재화-교리-wealth--commerce">13. 💰 경제 및 재화 교리 (Wealth &amp; Commerce)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13--경제-및-재화-교리-wealth--commerce" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="13-1-엘하스-축적-및-번영-윤리-wealth-accumulation">[13-1] 엘하스 축적 및 번영 윤리 (Wealth Accumulation)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-1-엘하스-축적-및-번영-윤리-wealth-accumulation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 청지기적 번영주의 (Stewardship Prosperity) [신교 채택]</font>
+<ul>
+<li>내용: 합법적 노동과 무역을 통한 엘하스 축적을 문명 부흥의 숭고한 과업으로 긍정하되 사회 환원을 강조함.</li>
+<li>[출처: 막스 베버 프로테스탄트 윤리 / 칼뱅주의 직업소명설]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 엄격한 무소유 청빈서원 (Apostolic Poverty) [탁발 수도단 풀]</font>
+<ul>
+<li>내용: 화폐와 물질적 재화는 영혼을 현세에 얽매는 사슬이므로 사제와 수도사의 사유재산 소유를 절대 금지함.</li>
+<li>[출처: 아시시의 프란치스코회 / CK3 바닐라 ‘탁발수도사(Mendicant Preachers)’]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 신성 상업주의 (Sacred Commercialism) [상인 길드 신앙 풀]</font>
+<ul>
+<li>내용: 부의 극대화와 거래의 승리 자체가 영혼의 뛰어난 연산력과 카르마적 축복을 입증하는 척도라 믿음.</li>
+<li>[출처: 르네상스 메디치가 후원 사상 / 현대 번영신학]</li>
+</ul>
+</li>
+</ul>
+<h3 id="13-2-금융-및-이자-규범-usury--lending">[13-2] 금융 및 이자 규범 (Usury &amp; Lending)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-2-금융-및-이자-규범-usury--lending" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 공정 금융 및 적정 이자 허용 (Fair Lending) [신교 채택]</font>
+<ul>
+<li>내용: 산업 발전과 성간 물류 투자를 위한 합리적 이자 수취를 합법적 상업 행위로 인정함.</li>
+<li>[출처: 칼뱅의 적정 이자 긍정론 / 현대 공정 금융 윤리학]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 고리대금 엄벌 및 이자 전면 금지 (Strict Anti-Usury) [구교 사료/전통파 풀]</font>
+<ul>
+<li>내용: 타인의 곤경을 이용한 이자 수취를 영혼 갈취로 규정하여 금융업자를 엄벌함.</li>
+<li>[출처: 이슬람 샤리아 ‘리바(Riba)’ 금지 / 중세 교회법 고리대금 파문령]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 영혼 담보 무제한 사채 (Predatory Soul Debt) [범죄 기업국가 신앙]</font>
+<ul>
+<li>내용: 빚을 갚지 못할 경우 채무자의 영혼 에너지를 강제로 추출해 노예 노동에 투입하는 고리대금 숭상.</li>
+<li>[출처: 셰익스피어 《베니스의 상인》 / 레짐 범죄기업국가]</li>
+</ul>
+</li>
+</ul>
+<h3 id="13-3-의무-자선-및-부의-재분배-charity--redistribution">[13-3] 의무 자선 및 부의 재분배 (Charity &amp; Redistribution)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-3-의무-자선-및-부의-재분배-charity--redistribution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><font style="font-weight:bold;">A. 제도화된 종교세 및 복지 기금 (Institutional Tithing) [신교 채택]</font>
+<ul>
+<li>내용: 교단 수익의 일정 비율을 의무적으로 ‘영혼 복지 기금’으로 적립하여 빈민 구제와 무상 교육에 투입함.</li>
+<li>[출처: 이슬람 자카트(Zakat) / 북유럽 국가교회 사회복지세]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">B. 자발적 적선 및 보시 (Voluntary Alms) [자선파 풀]</font>
+<ul>
+<li>내용: 강제 세금이 아닌 개인의 자발적 희사를 통해서만 진정한 카르마 정화가 이루어진다고 봄.</li>
+<li>[출처: 불교 보시(Dāna) / CK3 바닐라 ‘자선(Charity)’]</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">C. 재분배 거부 / 적자생존 (Strict Individualism) [자유지상주의 종파]</font>
+<ul>
+<li>내용: 약자에 대한 구호는 문명의 도태를 늦출 뿐이므로 모든 자선 행위를 위선으로 배격함.</li>
+<li>[출처: 아인 랜드 객관주의 / 윤리관 [2-2] 극단 개인주의]</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h1 id="ⅱ-신설-확장-7대-교리713대-루벨리니온-제국도교-신교-vs-구교-최종-비교-매핑표">Ⅱ. 신설 확장 7대 교리(7~13대) 루벨리니온 제국도교 (신교 vs 구교) 최종 비교 매핑표<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ⅱ-신설-확장-7대-교리713대-루벨리니온-제국도교-신교-vs-구교-최종-비교-매핑표" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h1 id></h1>
+<div class="scroll-x nowrap"><div class="table-container"><table><thead><tr><th>교리 대분류</th><th>세부 교리 항목</th><th>구교 (1752년 이전 복원 사료)</th><th>신교 (1752년 대공의회 이후 현행 정사)</th></tr></thead><tbody><tr><td rowspan="4"><font style="font-weight:bold;">7\. 생체 교리</font></td><td>가변형질 성사</td><td>\[7-1-C\] 자연형질 고수주의</td><td><font style="font-weight:bold;">\[7-1-A\] 신전 정화 성사 공인 \+ E-L 묵인</font></td></tr><tr><td>인공 배양관</td><td>\[7-2-B\] 자연 모태 수태 유일주의</td><td><font style="font-weight:bold;">\[7-2-A\] 보편적 생명 존중</font></td></tr><tr><td>신체 증강관</td><td>\[7-3-B\] 신체 순수주의 (증강 금기)</td><td><font style="font-weight:bold;">\[7-3-A\] 영혼 조화형 신체 보조</font></td></tr><tr><td>육체 향유/금욕</td><td>\[7-4-A\] 절제된 양생과 생명 향유</td><td><font style="font-weight:bold;">\[7-4-A\] 절제된 양생과 생명의 향유</font></td></tr><tr><td rowspan="3"><font style="font-weight:bold;">8\. 법리 교리</font></td><td>카르마 법리</td><td>\[8-1-B\] 비체계적 관습법</td><td><font style="font-weight:bold;">\[8-1-A\] 카르마적 배상 책임 승인</font></td></tr><tr><td>참정권 연계</td><td>\[8-2-C\] 혈통·영성 독점론</td><td><font style="font-weight:bold;">\[8-2-A\] ICX 영혼 성숙도 공인</font></td></tr><tr><td>사법 재판</td><td>\[8-3-B\] 결투 및 신명 재판</td><td><font style="font-weight:bold;">\[8-3-A\] 증거 기반 세속 사법 존중</font></td></tr><tr><td rowspan="3"><font style="font-weight:bold;">9\. 성간 교리</font></td><td>제노 영혼관</td><td>\[9-1-B\] 인간 영혼 유일론</td><td><font style="font-weight:bold;">\[9-1-A\] 지성체 영혼 보편론</font></td></tr><tr><td>생태 개조관</td><td>\[9-2-C\] 무제한 자원 착취</td><td><font style="font-weight:bold;">\[9-2-A\] 생태 조화형 환경 공학</font></td></tr><tr><td>개척 사명관</td><td>\[9-3-B\] 모행성 정주 고착주의</td><td><font style="font-weight:bold;">\[9-3-A\] 우주 진출을 통한 문명 승천</font></td></tr><tr><td rowspan="3"><font style="font-weight:bold;">10\. 식단 교리</font></td><td>섭취 정결</td><td>\[10-1-A\] 위상 정결 섭취</td><td><font style="font-weight:bold;">\[10-1-A\] 위상 정결 섭취</font></td></tr><tr><td>단식 의식</td><td>\[10-2-A\] 성축일 정화 단식</td><td><font style="font-weight:bold;">\[10-2-A\] 성축일 주기적 정화 단식</font></td></tr><tr><td>성물 취급</td><td>\[10-3-A\] 신전 공인 성물 공경</td><td><font style="font-weight:bold;">\[10-3-A\] 신전 공인 성물 공경</font></td></tr><tr><td rowspan="2"><font style="font-weight:bold;">11\. 장례 교리</font></td><td>영혼 수습 의례</td><td>\[11-1-B\] 영혼 핵 가문 보존</td><td><font style="font-weight:bold;">\[11-1-A\] 위상 환원 기화 장례</font></td></tr><tr><td>삶의 종결</td><td>\[11-2-B\] 자연사 절대 대기주의</td><td><font style="font-weight:bold;">\[11-2-A\] 신전 주관 존엄 안식 성사</font></td></tr><tr><td rowspan="2"><font style="font-weight:bold;">12\. 전쟁 교리</font></td><td>무력 명분</td><td>\[12-1-B\] 교세 확장 성전주의</td><td><font style="font-weight:bold;">\[12-1-A\] 헌정 수호 정당한 방위전</font></td></tr><tr><td>교전수칙</td><td>\[12-2-B\] 포로 노예화 및 인신공양</td><td><font style="font-weight:bold;">\[12-2-A\] 인도적 포로 구호 및 교전수칙</font></td></tr><tr><td rowspan="3"><font style="font-weight:bold;">13\. 경제 교리</font></td><td>번영 윤리</td><td>\[13-1-B\] 엄격한 무소유 청빈서원</td><td><font style="font-weight:bold;">\[13-1-A\] 청지기적 번영주의</font></td></tr><tr><td>금융/이자 규범</td><td>\[13-2-B\] 고리대금 엄벌 (이자 금지)</td><td><font style="font-weight:bold;">\[13-2-A\] 공정 금융 및 적정 이자 허용</font></td></tr><tr><td>부의 재분배</td><td>\[13-3-B\] 자발적 적선 및 보시</td><td><font style="font-weight:bold;">\[13-3-A\] 제도화된 종교세 및 복지 기금</font></td></tr></tbody></table></div></div></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-392"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-392"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-639" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-639" class="toc-content"><li class="depth-0"><a href="#-엘리스-프라우셰크트-종교-교리-체계-및-확장-선택자-마스터-정의서-신설-확장-교리편" data-for="-엘리스-프라우셰크트-종교-교리-체계-및-확장-선택자-마스터-정의서-신설-확장-교리편">🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (신설 확장 교리편)</a></li><li class="depth-0"><a href="#ⅰ-신설-7대-확장-교리-체계-doctrinal-categories-7--13" data-for="ⅰ-신설-7대-확장-교리-체계-doctrinal-categories-7--13">Ⅰ. 신설 7대 확장 교리 체계 (Doctrinal Categories 7 ~ 13)</a></li><li class="depth-1"><a href="#7--생체-및-형질-교리-bioethics--corporeality---계속" data-for="7--생체-및-형질-교리-bioethics--corporeality---계속">7. 🧬 생체 및 형질 교리 (Bioethics &amp; Corporeality - 계속)</a></li><li class="depth-2"><a href="#7-1-가역적-가변형질-성사-sacrament-of-fluidity" data-for="7-1-가역적-가변형질-성사-sacrament-of-fluidity">[7-1] 가역적 가변형질 성사 (Sacrament of Fluidity)</a></li><li class="depth-2"><a href="#7-2-인공-배양-및-복제-생식관-artificial-genesis--cloning" data-for="7-2-인공-배양-및-복제-생식관-artificial-genesis--cloning">[7-2] 인공 배양 및 복제 생식관 (Artificial Genesis &amp; Cloning)</a></li><li class="depth-2"><a href="#7-3-신체-증강-및-사이버네틱스관-augmentation--flesh-sanctity" data-for="7-3-신체-증강-및-사이버네틱스관-augmentation--flesh-sanctity">[7-3] 신체 증강 및 사이버네틱스관 (Augmentation &amp; Flesh Sanctity)</a></li><li class="depth-2"><a href="#7-4-육체의-향유와-금욕-carnal-sanctity-vs-asceticism" data-for="7-4-육체의-향유와-금욕-carnal-sanctity-vs-asceticism">[7-4] 육체의 향유와 금욕 (Carnal Sanctity vs Asceticism)</a></li><li class="depth-1"><a href="#8-️-신학적-법리학-및-영혼-책임-교리-theological-jurisprudence" data-for="8-️-신학적-법리학-및-영혼-책임-교리-theological-jurisprudence">8. ⚖️ 신학적 법리학 및 영혼 책임 교리 (Theological Jurisprudence)</a></li><li class="depth-2"><a href="#8-1-영혼-로그-분석과-전생-카르마-책임-soul-log-accountability" data-for="8-1-영혼-로그-분석과-전생-카르마-책임-soul-log-accountability">[8-1] 영혼 로그 분석과 전생 카르마 책임 (Soul Log Accountability)</a></li><li class="depth-2"><a href="#8-2-icx인지능력-확인-시험-종교적-승인-franchise-qualification" data-for="8-2-icx인지능력-확인-시험-종교적-승인-franchise-qualification">[8-2] ICX(인지능력 확인 시험) 종교적 승인 (Franchise Qualification)</a></li><li class="depth-2"><a href="#8-3-사법-재판과-신명-재판-judicial-trials--ordeals" data-for="8-3-사법-재판과-신명-재판-judicial-trials--ordeals">[8-3] 사법 재판과 신명 재판 (Judicial Trials &amp; Ordeals)</a></li><li class="depth-1"><a href="#9--성간-및-다종족-교리-interstellar--multispecies" data-for="9--성간-및-다종족-교리-interstellar--multispecies">9. 🌌 성간 및 다종족 교리 (Interstellar &amp; Multispecies)</a></li><li class="depth-2"><a href="#9-1-외계-지성체xeno-영혼관-theology-of-alien-souls" data-for="9-1-외계-지성체xeno-영혼관-theology-of-alien-souls">[9-1] 외계 지성체(Xeno) 영혼관 (Theology of Alien Souls)</a></li><li class="depth-2"><a href="#9-2-외계-생태계-및-행성-개조관-ecological-stance--terraforming" data-for="9-2-외계-생태계-및-행성-개조관-ecological-stance--terraforming">[9-2] 외계 생태계 및 행성 개조관 (Ecological Stance &amp; Terraforming)</a></li><li class="depth-2"><a href="#9-3-성간-개척-사명관-interstellar-manifest-destiny" data-for="9-3-성간-개척-사명관-interstellar-manifest-destiny">[9-3] 성간 개척 사명관 (Interstellar Manifest Destiny)</a></li><li class="depth-1"><a href="#10-️-식단-및-물질-섭취-교리-dietary--consumption" data-for="10-️-식단-및-물질-섭취-교리-dietary--consumption">10. 🍽️ 식단 및 물질 섭취 교리 (Dietary &amp; Consumption)</a></li><li class="depth-2"><a href="#10-1-물질-섭취-정결-규범-purity-of-ingestion" data-for="10-1-물질-섭취-정결-규범-purity-of-ingestion">[10-1] 물질 섭취 정결 규범 (Purity of Ingestion)</a></li><li class="depth-2"><a href="#10-2-단식-및-절식-의식-fasting--self-restraint" data-for="10-2-단식-및-절식-의식-fasting--self-restraint">[10-2] 단식 및 절식 의식 (Fasting &amp; Self-Restraint)</a></li><li class="depth-2"><a href="#10-3-성물-및-마나-결정-취급-relics--mana-crystals" data-for="10-3-성물-및-마나-결정-취급-relics--mana-crystals">[10-3] 성물 및 마나 결정 취급 (Relics &amp; Mana Crystals)</a></li><li class="depth-1"><a href="#11-️-임종-및-유산-수습-교리-mortuary--anima-succession" data-for="11-️-임종-및-유산-수습-교리-mortuary--anima-succession">11. ⚰️ 임종 및 유산 수습 교리 (Mortuary &amp; Anima Succession)</a></li><li class="depth-2"><a href="#11-1-시신-및-영혼-수습-의례-funeral-rites" data-for="11-1-시신-및-영혼-수습-의례-funeral-rites">[11-1] 시신 및 영혼 수습 의례 (Funeral Rites)</a></li><li class="depth-2"><a href="#11-2-안락사와-삶의-종결-end-of-life--euthanasia" data-for="11-2-안락사와-삶의-종결-end-of-life--euthanasia">[11-2] 안락사와 삶의 종결 (End of Life &amp; Euthanasia)</a></li><li class="depth-1"><a href="#12-️-전쟁-및-무력-행사-교리-warfare--defense" data-for="12-️-전쟁-및-무력-행사-교리-warfare--defense">12. ⚔️ 전쟁 및 무력 행사 교리 (Warfare &amp; Defense)</a></li><li class="depth-2"><a href="#12-1-무력-사용의-명분-casus-belli--just-war" data-for="12-1-무력-사용의-명분-casus-belli--just-war">[12-1] 무력 사용의 명분 (Casus Belli &amp; Just War)</a></li><li class="depth-2"><a href="#12-2-포로-대우-및-교전수칙-treatment-of-prisoners--roe" data-for="12-2-포로-대우-및-교전수칙-treatment-of-prisoners--roe">[12-2] 포로 대우 및 교전수칙 (Treatment of Prisoners &amp; ROE)</a></li><li class="depth-1"><a href="#13--경제-및-재화-교리-wealth--commerce" data-for="13--경제-및-재화-교리-wealth--commerce">13. 💰 경제 및 재화 교리 (Wealth &amp; Commerce)</a></li><li class="depth-2"><a href="#13-1-엘하스-축적-및-번영-윤리-wealth-accumulation" data-for="13-1-엘하스-축적-및-번영-윤리-wealth-accumulation">[13-1] 엘하스 축적 및 번영 윤리 (Wealth Accumulation)</a></li><li class="depth-2"><a href="#13-2-금융-및-이자-규범-usury--lending" data-for="13-2-금융-및-이자-규범-usury--lending">[13-2] 금융 및 이자 규범 (Usury &amp; Lending)</a></li><li class="depth-2"><a href="#13-3-의무-자선-및-부의-재분배-charity--redistribution" data-for="13-3-의무-자선-및-부의-재분배-charity--redistribution">[13-3] 의무 자선 및 부의 재분배 (Charity &amp; Redistribution)</a></li><li class="depth-0"><a href="#ⅱ-신설-확장-7대-교리713대-루벨리니온-제국도교-신교-vs-구교-최종-비교-매핑표" data-for="ⅱ-신설-확장-7대-교리713대-루벨리니온-제국도교-신교-vs-구교-최종-비교-매핑표">Ⅱ. 신설 확장 7대 교리(7~13대) 루벨리니온 제국도교 (신교 vs 구교) 최종 비교 매핑표</a></li><li class="depth-0"><a href="#" data-for></a></li></ul></div><div class="backlinks"><button type="button" class="backlinks-header" aria-expanded="true" aria-controls="backlinks-panel-291"><h3>백링크</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="backlinks-content" id="backlinks-panel-291"><ul id="list-1" class="overflow"><li><a href="../../../../../01-신계-차원/02-라리셴베르크/05-문화·종교/제국도교/교리/🎨-엘리스-프라우셰크트;-종교-교리-체계-및-확장-선택자-마스터-정의서-(상세-레퍼런스-완결판)" class="internal">🎨 엘리스 프라우셰크트; 종교 교리 체계 및 확장 선택자 마스터 정의서 (상세 레퍼런스 완결판)</a></li><li class="overflow-end"></li></ul></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../../postscript.js" type="module" data-persist="true"></script></html>

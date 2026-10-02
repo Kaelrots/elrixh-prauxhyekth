@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>🎨 엘리스 프라우셰크트; 통치체제 아케인펑크·유토피아 확장팩</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="🎨 엘리스 프라우셰크트; 통치체제 아케인펑크·유토피아 확장팩"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="🎨 엘리스 프라우셰크트; 통치체제 아케인펑크·유토피아 확장팩"/><meta name="twitter:description" content="🎨 엘리스 프라우셰크트: 아케인펑크 및 낙관적 유토피아 확장팩 (Light/Hope Expansion) 문서 성격: 엘리시움 신성제국 연방의 억압적이고 어두운 체제와 대비를 이루는, 마법공학적 발전과 긍정적 미래주의(Arcanepunk &amp; Hopeful) 선택지를 추가한 확장 정의서."/><meta property="og:description" content="🎨 엘리스 프라우셰크트: 아케인펑크 및 낙관적 유토피아 확장팩 (Light/Hope Expansion) 문서 성격: 엘리시움 신성제국 연방의 억압적이고 어두운 체제와 대비를 이루는, 마법공학적 발전과 긍정적 미래주의(Arcanepunk &amp; Hopeful) 선택지를 추가한 확장 정의서."/><meta property="og:image:alt" content="🎨 엘리스 프라우셰크트: 아케인펑크 및 낙관적 유토피아 확장팩 (Light/Hope Expansion) 문서 성격: 엘리시움 신성제국 연방의 억압적이고 어두운 체제와 대비를 이루는, 마법공학적 발전과 긍정적 미래주의(Arcanepunk &amp; Hopeful) 선택지를 추가한 확장 정의서."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/폐기/🎨-엘리스-프라우셰크트;-통치체제-아케인펑크·유토피아-확장팩"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/폐기/🎨-엘리스-프라우셰크트;-통치체제-아케인펑크·유토피아-확장팩"/><link rel="icon" href="../../../../../static/icon.png"/><meta name="description" content="🎨 엘리스 프라우셰크트: 아케인펑크 및 낙관적 유토피아 확장팩 (Light/Hope Expansion) 문서 성격: 엘리시움 신성제국 연방의 억압적이고 어두운 체제와 대비를 이루는, 마법공학적 발전과 긍정적 미래주의(Arcanepunk &amp; Hopeful) 선택지를 추가한 확장 정의서."/><meta name="generator" content="Quartz"/><link href="../../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/폐기/🎨-엘리스-프라우셰크트;-통치체제-아케인펑크·유토피아-확장팩"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1164" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1164" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-762" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-762" class="mobile-toc-dialog" aria-labelledby="toc-762-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-762-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-0"><a href="#-엘리스-프라우셰크트-아케인펑크-및-낙관적-유토피아-확장팩-lighthope-expansion" data-for="-엘리스-프라우셰크트-아케인펑크-및-낙관적-유토피아-확장팩-lighthope-expansion">🎨 엘리스 프라우셰크트: 아케인펑크 및 낙관적 유토피아 확장팩 (Light/Hope Expansion)</a></li><li class="depth-1"><a href="#1-정체-polity" data-for="1-정체-polity">1. 정체 (Polity)</a></li><li class="depth-1"><a href="#2-통치-구조-governance-structure" data-for="2-통치-구조-governance-structure">2. 통치 구조 (Governance Structure)</a></li><li class="depth-1"><a href="#3-권력의-정당성-legitimacy" data-for="3-권력의-정당성-legitimacy">3. 권력의 정당성 (Legitimacy)</a></li><li class="depth-1"><a href="#4-국토-및-행정-territorial" data-for="4-국토-및-행정-territorial">4. 국토 및 행정 (Territorial)</a></li><li class="depth-1"><a href="#5-권력-승계-succession" data-for="5-권력-승계-succession">5. 권력 승계 (Succession)</a></li><li class="depth-1"><a href="#6-관료제-bureaucracy" data-for="6-관료제-bureaucracy">6. 관료제 (Bureaucracy)</a></li><li class="depth-1"><a href="#7-경제-개입-economy" data-for="7-경제-개입-economy">7. 경제 개입 (Economy)</a></li><li class="depth-1"><a href="#8-사회-계층-hierarchy" data-for="8-사회-계층-hierarchy">8. 사회 계층 (Hierarchy)</a></li><li class="depth-1"><a href="#9-참정권-및-시민권-franchise--citizenship" data-for="9-참정권-및-시민권-franchise--citizenship">9. 참정권 및 시민권 (Franchise &amp; Citizenship)</a></li><li class="depth-1"><a href="#10-정당-체제-party-system" data-for="10-정당-체제-party-system">10. 정당 체제 (Party System)</a></li><li class="depth-1"><a href="#11-사법-및-치안-law--order" data-for="11-사법-및-치안-law--order">11. 사법 및 치안 (Law &amp; Order)</a></li><li class="depth-1"><a href="#12-외교-기조-diplomacy" data-for="12-외교-기조-diplomacy">12. 외교 기조 (Diplomacy)</a></li><li class="depth-1"><a href="#13-종교-정책-religion" data-for="13-종교-정책-religion">13. 종교 정책 (Religion)</a></li><li class="depth-1"><a href="#14-정보-통제-정책-info-control" data-for="14-정보-통제-정책-info-control">14. 정보 통제 정책 (Info Control)</a></li><li class="depth-1"><a href="#15-문화-정책-cultural-policy" data-for="15-문화-정책-cultural-policy">15. 문화 정책 (Cultural Policy)</a></li><li class="depth-1"><a href="#16-마법-및-이능-정책-arcane-policy" data-for="16-마법-및-이능-정책-arcane-policy">16. 마법 및 이능 정책 (Arcane Policy)</a></li><li class="depth-1"><a href="#17-과학-및-차원-거버넌스-science--dimension" data-for="17-과학-및-차원-거버넌스-science--dimension">17. 과학 및 차원 거버넌스 (Science &amp; Dimension)</a></li><li class="depth-1"><a href="#18-군제-military-system" data-for="18-군제-military-system">18. 군제 (Military System)</a></li><li class="depth-1"><a href="#19-복지-및-공공성-welfare" data-for="19-복지-및-공공성-welfare">19. 복지 및 공공성 (Welfare)</a></li><li class="depth-1"><a href="#20-교육-및-인재-육성-education" data-for="20-교육-및-인재-육성-education">20. 교육 및 인재 육성 (Education)</a></li><li class="depth-1"><a href="#21-노동-및-인력-정책-labor-policy" data-for="21-노동-및-인력-정책-labor-policy">21. 노동 및 인력 정책 (Labor Policy)</a></li><li class="depth-1"><a href="#22-행정-청렴도-integrity" data-for="22-행정-청렴도-integrity">22. 행정 청렴도 (Integrity)</a></li><li class="depth-1"><a href="#23-비상-및-안보-기조-crisis-stance" data-for="23-비상-및-안보-기조-crisis-stance">23. 비상 및 안보 기조 (Crisis Stance)</a></li><li class="depth-1"><a href="#24-행성-및-환경-정책-planetary-administration" data-for="24-행성-및-환경-정책-planetary-administration">24. 행성 및 환경 정책 (Planetary Administration)</a></li><li class="depth-1"><a href="#25-성간-인프라-및-물류-interstellar-transit" data-for="25-성간-인프라-및-물류-interstellar-transit">25. 성간 인프라 및 물류 (Interstellar Transit)</a></li><li class="depth-1"><a href="#26-영혼-및-데이터-관리-soul--identity" data-for="26-영혼-및-데이터-관리-soul--identity">26. 영혼 및 데이터 관리 (Soul &amp; Identity)</a></li><li class="depth-1"><a href="#27-형벌-및-교정-penal--correctional-system" data-for="27-형벌-및-교정-penal--correctional-system">27. 형벌 및 교정 (Penal &amp; Correctional System)</a></li><li class="depth-1"><a href="#28-다종족-정책-multispecies-policy" data-for="28-다종족-정책-multispecies-policy">28. 다종족 정책 (Multispecies Policy)</a></li><li class="depth-1"><a href="#29-기술-수준-technological-advancement" data-for="29-기술-수준-technological-advancement">29. 기술 수준 (Technological Advancement)</a></li><li class="depth-1"><a href="#30-에너지-및-동력-체계-energy--power-foundation" data-for="30-에너지-및-동력-체계-energy--power-foundation">30. 에너지 및 동력 체계 (Energy &amp; Power Foundation)</a></li><li class="depth-1"><a href="#31-신체-및-형태-자율성-bodily-autonomy--morphism" data-for="31-신체-및-형태-자율성-bodily-autonomy--morphism">31. 신체 및 형태 자율성 (Bodily Autonomy &amp; Morphism)</a></li><li class="depth-1"><a href="#32-역사-및-인과율-통제-historical--timeline-administration" data-for="32-역사-및-인과율-통제-historical--timeline-administration">32. 역사 및 인과율 통제 (Historical &amp; Timeline Administration)</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1164"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1164" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/02-일지·브레인스토밍/">02 일지·브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/">99 정리해야 하는 설정 브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/">제1권역; 통치와 규범</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/폐기/">폐기</a></div></nav><h1 class="article-title">🎨 엘리스 프라우셰크트; 통치체제 아케인펑크·유토피아 확장팩</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:33.489Z">2026년 9월 30일</time><span>56 분 소요</span></p></div></div><article class="popover-hint"><h1 id="-엘리스-프라우셰크트-아케인펑크-및-낙관적-유토피아-확장팩-lighthope-expansion">🎨 엘리스 프라우셰크트: 아케인펑크 및 낙관적 유토피아 확장팩 (Light/Hope Expansion)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-엘리스-프라우셰크트-아케인펑크-및-낙관적-유토피아-확장팩-lighthope-expansion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><font style="font-weight:bold;">문서 성격:</font> 엘리시움 신성제국 연방의 억압적이고 어두운 체제와 대비를 이루는, 마법공학적 발전과 긍정적 미래주의(Arcanepunk &amp; Hopeful) 선택지를 추가한 확장 정의서.</li>
+<li><font style="font-weight:bold;">활용:</font> 세계관 내 유토피아적 성계, 개혁파 세력, 혹은 이상적인 국가의 형태를 묘사할 때 대조군으로 사용.</li>
+</ul>
+<h2 id="1-정체-polity">1. 정체 (Polity)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-정체-polity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[1-17] 🌟 성위 연합 (Astral Concord)</p>
+<p>억압적인 제국주의에서 벗어나, 각 성계의 자율성을 존중하며 에테르의 조화로운 흐름 속에서 평화롭게 연합하는 낭만적 우주 체제.</p>
+<ul>
+<li>아이콘 형상: 별빛으로 부드럽게 연결된 다이아몬드 성좌.</li>
+<li>배경색: Astral Pearl (성위 진주색)</li>
+</ul>
+<p>[1-18] 🎓 마도 학원 도시연합 (Magus Academy League)</p>
+<p>거대한 마법 아카데미들이 행성과 성계를 다스리며, 정치적 억압 대신 진리와 지식의 탐구가 곧 국가 운영의 핵심이 되는 지적 체제.</p>
+<ul>
+<li>아이콘 형상: 빛나는 책 위에 세워진 거대한 상아탑.</li>
+<li>배경색: Wisdom Blue (지혜 파랑)</li>
+</ul>
+<p>[1-19] 🌿 생태-에테르 자치령 (Eco-Aetheric Commune)</p>
+<p>자연과 에테르의 흐름을 숭상하며 중앙의 강압적 개입 없이 자치적으로 살아가는 평화롭고 친환경적인 공동체 연합.</p>
+<ul>
+<li>아이콘 형상: 서로 얽혀 거대한 세계수를 이루는 나뭇가지들.</li>
+<li>배경색: Bloom Green (만개 녹색)</li>
+</ul>
+<h2 id="2-통치-구조-governance-structure">2. 통치 구조 (Governance Structure)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-통치-구조-governance-structure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[2-29] 🕊️ 공명 합의체 (Harmonic Consensus)</p>
+<p>개별 자아를 유지하면서도 에테르 공명과 ICX의 선의적 조율을 통해 서로의 감정과 의도를 투명하게 공유하여 갈등을 최소화하는 이상적인 합의 체제.</p>
+<ul>
+<li>아이콘 형상: 은은하게 빛나는 연꽃 주위에 모여든 빛의 입자들.</li>
+<li>배경색: Serene Azure (평온한 청색)</li>
+</ul>
+<p>[2-30] 🌟 별빛 의회 (Starlight Assembly)</p>
+<p>물리적인 의사당에 모이는 대신, 각계각층의 시민이 에테르 망을 통해 은은한 홀로그램으로 참여하여 의사를 결정하는 무결점 직접 민주주의.</p>
+<ul>
+<li>아이콘 형상: 밤하늘을 수놓은 수많은 별들이 연결된 은하수.</li>
+<li>배경색: Stellar Indigo (항성 남색)</li>
+</ul>
+<p>[2-31] 🤖 선각자-AI 철인정 (Philosopher-AI Kingship)</p>
+<p>통제와 감시를 위한 AI가 아니라, 인간의 감정과 철학을 깊이 이해하고 자애롭게 프로그래밍된 마법공학 초지능이 공평무사하게 통치하는 체제.</p>
+<ul>
+<li>아이콘 형상: 따뜻한 빛을 내뿜는 톱니바퀴와 융합된 올빼미.</li>
+<li>배경색: Benevolent Silver (자애로운 은색)</li>
+</ul>
+<h2 id="3-권력의-정당성-legitimacy">3. 권력의 정당성 (Legitimacy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-권력의-정당성-legitimacy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[3-19] 💖 자발적 헌신 (Spontaneous Devotion)</p>
+<p>강압이나 공포가 아닌, 통치자의 진정성과 헌신적 리더십에 감화된 대중의 순수한 존경과 자발적 지지에 기반한 정당성.</p>
+<ul>
+<li>아이콘 형상: 두 손으로 소중히 받쳐 든 빛나는 심장(또는 보석).</li>
+<li>배경색: Empathy Pink (공감 분홍색)</li>
+</ul>
+<p>[3-20] 🎨 미학적 경외심 (Aesthetic Awe)</p>
+<p>강압적인 무력이나 공포가 아니라, 통치 체제가 만들어내는 예술적, 건축적, 마법적 아름다움에 매료되어 시민들이 진심으로 따르는 정당성.</p>
+<ul>
+<li>아이콘 형상: 정교하게 세공된 빛나는 크리스탈 장미.</li>
+<li>배경색: Elegance Magenta (우아한 마젠타)</li>
+</ul>
+<p>[3-21] 📚 지식의 나눔 (Distribution of Enlightenment)</p>
+<p>마법과 기술의 비밀을 지배층이 독점하지 않고 모든 시민에게 투명하게 공유함으로써 얻는 존경과 절대적인 신뢰.</p>
+<ul>
+<li>아이콘 형상: 두 손에서 뻗어나가 세상을 비추는 프리즘 빛줄기.</li>
+<li>배경색: Enlighten Cyan (계몽 시안색)</li>
+</ul>
+<h2 id="4-국토-및-행정-territorial">4. 국토 및 행정 (Territorial)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-국토-및-행정-territorial" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[4-15] 🌐 에테르 공명망 (Aetheric Grid)</p>
+<p>물리적인 영토의 경계선에 얽매이지 않고, 마나 지맥과 에테르의 흐름을 따라 행정 구역이 유기적으로 연결되고 소통하는 초연결 국토.</p>
+<ul>
+<li>아이콘 형상: 부드러운 빛의 파동으로 겹쳐진 여러 겹의 원형.</li>
+<li>배경색: Flow Cyan (흐름 시안색)</li>
+</ul>
+<p>[4-16] ☁️ 떠다니는 공중 낙원 (Floating Oasis)</p>
+<p>오염된 지표면을 피해 행성 상공에 에테르 부유석으로 띄운 낙원 같은 자치 구역들로, 서로 부드럽게 결합하고 분리되며 궤도를 유영하는 국토.</p>
+<ul>
+<li>아이콘 형상: 구름 위에 떠 있는 반중력 섬과 폭포.</li>
+<li>배경색: Sky Azure (하늘 청색)</li>
+</ul>
+<p>[4-17] 💎 유기적 수정 성채 (Organic Crystal Citadels)</p>
+<p>행성의 지맥을 억지로 파헤치지 않고, 마나의 흐름을 따라 스스로 자라나는 거대한 마력 수정을 깎아 만든 친환경적이고 아름다운 행정 수도망.</p>
+<ul>
+<li>아이콘 형상: 땅에서 솟아오른 기하학적이고 영롱한 크리스탈 군락.</li>
+<li>배경색: Crystal Mint (수정 민트색)</li>
+</ul>
+<h2 id="5-권력-승계-succession">5. 권력 승계 (Succession)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-권력-승계-succession" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[5-13] 🌸 현자 추대 (Sages’ Selection)</p>
+<p>혈통이나 폭력이 아닌, 가장 지혜롭고 이타적인 자가 에테르의 인도와 시민들의 존경을 통해 자연스럽게 다음 세대의 지도자로 추대되는 방식.</p>
+<ul>
+<li>아이콘 형상: 활짝 핀 마법의 꽃을 다음 사람에게 건네는 손.</li>
+<li>배경색: Wisdom Lavender (지혜 라벤더색)</li>
+</ul>
+<p>[5-14] 🌬️ 에테르의 지명 (Aetheric Calling)</p>
+<p>권력 투쟁이나 혈통이 아닌, 마나의 순수한 흐름이 은하계에서 가장 맑고 헌신적인 영혼을 가진 자를 자연스럽게 다음 지도자로 지목하는 신비로운 계승.</p>
+<ul>
+<li>아이콘 형상: 부드러운 바람결(에테르)에 이끌려 왕관으로 날아가는 빛나는 씨앗.</li>
+<li>배경색: Calling Violet (소명 보라색)</li>
+</ul>
+<p>[5-15] 🍂 성취 기반 우아한 은퇴 (Graceful Retirement)</p>
+<p>통치자가 자신의 임무와 업적을 완수하면, 권력에 집착하지 않고 대중의 따뜻한 축복 속에 평범한 시민으로 자발적으로 내려가는 우아한 이양 방식.</p>
+<ul>
+<li>아이콘 형상: 옥좌에 놓인 왕관과 그 위로 떨어지는 붉은 단풍잎.</li>
+<li>배경색: Autumn Gold (가을 금색)</li>
+</ul>
+<h2 id="6-관료제-bureaucracy">6. 관료제 (Bureaucracy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-관료제-bureaucracy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[6-13] ✨ 정령 보좌 체제 (Spirit-Assisted)</p>
+<p>차가운 자동화 기계나 경직된 관료 대신, 친화적인 인공 정령과 마법 생물들이 시민들의 행정 실무를 돕고 조율하는 유연한 관료제.</p>
+<ul>
+<li>아이콘 형상: 스크롤 주변을 날아다니는 귀여운 빛의 정령들.</li>
+<li>배경색: Spirit Mint (정령 민트색)</li>
+</ul>
+<p>[6-14] 🕊️ 자유로운 수호자들 (Freelance Custodians)</p>
+<p>경직된 직급이나 관료적 형식 없이, 각자의 재능에 맞춰 자발적으로 공공의 문제를 해결하러 나서는 낭만적인 시민 관료 네트워크.</p>
+<ul>
+<li>아이콘 형상: 자유롭게 하늘을 나는 새와 깃펜.</li>
+<li>배경색: Free Sky (자유 하늘색)</li>
+</ul>
+<p>[6-15] 🤖 공감형 마도 기계 (Empathetic Synthetics)</p>
+<p>철저한 공정함에 ‘따뜻한 공감 능력’을 부여받아, 차가운 법 집행이 아니라 시민의 아픔을 보듬고 눈물을 닦아주는 마도 기계 공무원.</p>
+<ul>
+<li>아이콘 형상: 로봇의 가슴 한가운데서 따뜻하게 빛나는 마나 하트.</li>
+<li>배경색: Warm Steel (따뜻한 강철색)</li>
+</ul>
+<h2 id="7-경제-개입-economy">7. 경제 개입 (Economy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-경제-개입-economy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[7-16] ✨ 연금술적 풍요 (Alchemical Post-Scarcity)</p>
+<p>고도로 발달한 마법공학 리플리케이터를 통해 기초 자원을 연금술적으로 생성, 생존을 위한 투쟁과 절대적 빈곤이 사라진 유토피아적 경제 체제.</p>
+<ul>
+<li>아이콘 형상: 황금으로 변하는 납 결정과 끊임없이 쏟아지는 보석.</li>
+<li>배경색: Elixir Gold (영약 금색)</li>
+</ul>
+<p>[7-17] ⚡ 무한 에너지 공유제 (Infinite Energy Commons)</p>
+<p>국가가 마법공학 동력로의 잉여 에너지를 무상으로 배급하여, 기초 생계를 위한 노동을 소멸시키고 시민들의 창작 활동만을 전폭 지원하는 경제.</p>
+<ul>
+<li>아이콘 형상: 그릇 위로 끊임없이 쏟아지는 찬란한 빛의 구슬.</li>
+<li>배경색: Abundance Yellow (풍요 노란색)</li>
+</ul>
+<p>[7-18] 🎨 별빛 교환망 (Starlight Barter)</p>
+<p>차가운 화폐나 자본주의적 가치 대신, 서로의 영감, 예술품, 마법적 성취를 교환하며 정신적 풍요를 누리는 낭만적이고 철학적인 경제망.</p>
+<ul>
+<li>아이콘 형상: 황금 동전 대신 팔레트와 마법서가 올려진 저울.</li>
+<li>배경색: Barter Peach (교환 복숭아색)</li>
+</ul>
+<h2 id="8-사회-계층-hierarchy">8. 사회 계층 (Hierarchy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-사회-계층-hierarchy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[8-13] 🌈 다원적 조화 (Pluralistic Harmony)</p>
+<p>개인의 능력, 출신, 유전적 차이가 계급을 나누는 기준이 되지 않으며, 모든 존재가 각자의 고유한 가치와 역할을 동등하게 존중받는 평등 사회.</p>
+<ul>
+<li>아이콘 형상: 크기와 모양이 다른 보석들이 모여 만든 완벽한 원.</li>
+<li>배경색: Harmony Skyblue (조화 하늘색)</li>
+</ul>
+<p>[8-14] 🌊 유동적 은하 시민 (Fluid Galactic Citizenry)</p>
+<p>직업이나 종족, 태생에 따른 고정된 계급이 전혀 없으며, 개인이 원할 때마다 자유롭게 사회적 역할과 위치를 바꿀 수 있는 수평 구조.</p>
+<ul>
+<li>아이콘 형상: 계단이 사라지고 부드럽게 굽이치는 파도와 같은 선.</li>
+<li>배경색: Fluid Cyan (유동 시안색)</li>
+</ul>
+<p>[8-15] 🤝 지식과 봉사의 명예 (Honor of Service)</p>
+<p>물질적 부나 권력이 아닌, 타인을 돕고 지식을 무상으로 나눈 횟수만이 유일한 사회적 존경과 명예의 척도가 되는 따뜻한 사회.</p>
+<ul>
+<li>아이콘 형상: 다른 사람의 손에 쥐여지는 빛나는 월계관.</li>
+<li>배경색: Honor Pearl (명예 진주색)</li>
+</ul>
+<h2 id="9-참정권-및-시민권-franchise--citizenship">9. 참정권 및 시민권 (Franchise &amp; Citizenship)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-참정권-및-시민권-franchise--citizenship" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[9-8] 🕊️ 영적 성숙도 (Spiritual Maturity)</p>
+<p>재산이나 혈통, 전투 기여도가 아닌, 타인을 배려하고 공동체에 공명할 수 있는 ‘영적/도덕적 성숙도’를 기준으로 참정권을 부여하는 체제.</p>
+<ul>
+<li>아이콘 형상: 맑게 빛나는 물방울이 떨어지는 평온한 수면.</li>
+<li>배경색: Soul Aqua (영혼 아쿠아색)</li>
+</ul>
+<p>[9-9] 🌳 공생적 대의권 (Symbiotic Franchise)</p>
+<p>인간형 지성체뿐만 아니라, 자연 생태계, 보호받는 인공지능, 마법 정령들에게도 대변인을 두어 동등한 참정권을 인정하는 초월적 생태 민주주의.</p>
+<ul>
+<li>아이콘 형상: 동물, 식물, 기계의 실루엣이 새겨진 다면체 투표함.</li>
+<li>배경색: Gaia Green (가이아 녹색)</li>
+</ul>
+<p>[9-10] 🌌 은하 여행자 포용 (Galactic Wayfarer Welcome)</p>
+<p>국적에 상관없이 해당 성계에 머무는 모든 선의의 여행자와 피난민에게 즉각적인 기본 권리와 따뜻한 보호를 제공하는 абсолют 개방주의.</p>
+<ul>
+<li>아이콘 형상: 활짝 열린 문틈으로 새어 나오는 따뜻한 노란 불빛.</li>
+<li>배경색: Welcome Orange (환대 주황색)</li>
+</ul>
+<h2 id="10-정당-체제-party-system">10. 정당 체제 (Party System)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-정당-체제-party-system" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[10-14] 🤝 화합의 원탁 (Roundtable of Synergy)</p>
+<p>이념의 양극화나 권력 쟁취를 위한 대립이 아닌, 각계각층의 지혜를 모아 국가적 시너지를 내기 위해 협력하는 비대립적 회의 체제.</p>
+<ul>
+<li>아이콘 형상: 무기 대신 올리브 가지가 교차된 원탁 회의장.</li>
+<li>배경색: Synergy Teal (시너지 청록색)</li>
+</ul>
+<p>[10-15] ☕ 유동적 사상 클럽 (Fluid Philosophic Guilds)</p>
+<p>권력을 향해 투쟁하는 고정된 정당 대신, 특정 안건이나 철학적 주제에 따라 자유롭게 모이고 흩어지며 토론하는 지식인들의 살롱 문화.</p>
+<ul>
+<li>아이콘 형상: 깃발 대신 아름다운 찻잔과 열린 책이 놓인 원탁.</li>
+<li>배경색: Salon Rose (살롱 장미색)</li>
+</ul>
+<p>[10-16] 🎭 예술적 경합 (Artistic Agonism)</p>
+<p>정치적 대립을 연설이나 무력 충돌이 아닌, 예술 작품, 웅장한 건축, 마도 공학 발명품의 아름다움을 대중 앞에서 겨루는 평화로운 축제로 승화시킨 체제.</p>
+<ul>
+<li>아이콘 형상: 칼 대신 두 개의 붓이 우아하게 교차하며 빛을 뿜는 형태.</li>
+<li>배경색: Muse Purple (뮤즈 보라색)</li>
+</ul>
+<h2 id="11-사법-및-치안-law--order">11. 사법 및 치안 (Law &amp; Order)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-사법-및-치안-law--order" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[11-18] 🌿 회복적 교정 (Restorative Justice)</p>
+<p>징벌과 존재 말소가 목적이 아닌, 가해자의 진정한 참회와 피해자의 상처 회복, 그리고 공동체로의 온전한 복귀를 최우선으로 삼는 사법 체제.</p>
+<ul>
+<li>아이콘 형상: 부러진 칼을 녹여 싹을 틔우는 화분.</li>
+<li>배경색: Healing Green (치유 녹색)</li>
+</ul>
+<p>[11-19] 💖 예방적 치유망 (Preventive Healing Grid)</p>
+<p>감시의 눈으로 범죄를 처벌하기 전, 에테르 망이 사람들의 극심한 스트레스나 고립감을 미리 감지하여 상담사와 치유 마법을 먼저 보내는 따뜻한 치안.</p>
+<ul>
+<li>아이콘 형상: 차가운 렌즈 대신, 따뜻한 하트 모양의 파동을 발산하는 안테나.</li>
+<li>배경색: Empathy Pink (공감 분홍색)</li>
+</ul>
+<p>[11-20] 🕊️ 비무장 중재자 (Unarmed Peacemakers)</p>
+<p>폭력적인 무기 대신, 상대방을 진정시키는 대화술과 보호 마법, 방패만을 지닌 성직자 수준의 중재자들이 갈등을 평화롭게 해소하는 치안대.</p>
+<ul>
+<li>아이콘 형상: 방패 위에 내려앉은 하얀 비둘기.</li>
+<li>배경색: Peacemaker Strawberry Pink (중재자 딸기 분홍색)</li>
+</ul>
+<h2 id="12-외교-기조-diplomacy">12. 외교 기조 (Diplomacy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-외교-기조-diplomacy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[12-14] 🤝 은하적 공존 (Galactic Symbiosis)</p>
+<p>팽창과 착취를 지양하고, 타 문명 및 외계 종족과의 상호 이해, 문화적 교류, 이익의 평화적 공유를 최우선 가치로 삼는 외교.</p>
+<ul>
+<li>아이콘 형상: 두 개의 다른 행성이 빛의 다리로 연결된 모습.</li>
+<li>배경색: Symbiosis Blue (공생 파랑)</li>
+</ul>
+<p>[12-15] 🗼 지식의 등대 (Beacon of Knowledge)</p>
+<p>무력을 통한 강제 개입 대신, 고도화된 마법과 의료, 환경 기술을 낙후된 성계에 무상으로 제공하여 은하의 자발적인 계몽과 친선을 이끄는 외교.</p>
+<ul>
+<li>아이콘 형상: 어두운 우주로 따뜻한 빛줄기를 쏘아 보내는 마탑(등대).</li>
+<li>배경색: Beacon Teal (등대 청록색)</li>
+</ul>
+<p>[12-16] 🚑 은하 구조대 (Galactic Rescue Mission)</p>
+<p>타국을 정복하는 것이 아니라, 재난에 처한 외계 문명이나 위상 붕괴 위험에 빠진 행성을 구조하는 것을 국가의 최우선 외교·군사 목표로 삼는 체제.</p>
+<ul>
+<li>아이콘 형상: 구명 튜브의 형태를 한 빛나는 웜홀 관문.</li>
+<li>배경색: Rescue Orange (구조 주황색)</li>
+</ul>
+<h2 id="13-종교-정책-religion">13. 종교 정책 (Religion)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-종교-정책-religion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[13-12] ✨ 만물 교감 (Universal Communion)</p>
+<p>맹목적인 숭배나 배타적 교리가 아닌, 우주 만물에 깃든 에테르와의 자연스러운 교감과 생명에 대한 경외를 중시하는 열린 신앙.</p>
+<ul>
+<li>아이콘 형상: 우주적 성운을 부드럽게 감싸고 있는 두 손.</li>
+<li>배경색: Cosmic Lavender (우주 라벤더색)</li>
+</ul>
+<p>[13-13] 🎨 창조의 환희 (Joy of Creation)</p>
+<p>절대자를 향한 공포나 맹목적 숭배 대신, 예술 활동과 마법적 발명 자체를 우주에 대한 가장 신성한 기도로 여기는 창조적이고 긍정적인 신앙.</p>
+<ul>
+<li>아이콘 형상: 성배 안에서 피어오르는 다채로운 물감과 룬 문자.</li>
+<li>배경색: Joyful Magenta (환희 마젠타)</li>
+</ul>
+<p>[13-14] 🌌 성계 영혼 철학 (Stellar Soul Philosophy)</p>
+<p>억압적인 종교적 교리 대신, 우주 만물이 결국 하나의 거대한 영혼(마나)으로 연결되어 있다는 철학적 깨달음을 공유하는 열리고 평화로운 사상.</p>
+<ul>
+<li>아이콘 형상: 하나의 중심 빛으로 이어진 수많은 은하계의 별들.</li>
+<li>배경색: Cosmic Indigo (우주 남색)</li>
+</ul>
+<h2 id="14-정보-통제-정책-info-control">14. 정보 통제 정책 (Info Control)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#14-정보-통제-정책-info-control" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[14-13] 📚 아카식 개방 (Akashic Openness)</p>
+<p>검열과 역정보가 존재하지 않으며, 우주의 모든 지식과 정보를 담은 에테르 도서관에 누구나 자유롭게 접속하고 진실을 탐구할 수 있는 체제.</p>
+<ul>
+<li>아이콘 형상: 마법의 빛을 내뿜으며 활짝 열린 거대한 홀로그램 책.</li>
+<li>배경색: Truth Ivory (진실 상아색)</li>
+</ul>
+<p>[14-14] 💓 감정선 동기화 (Empathic Resonance)</p>
+<p>차가운 데이터나 수치적 뉴스뿐만 아니라, 그 사건의 이면에 담긴 사람들의 따뜻한 감정과 희망까지 에테르 망으로 함께 전달하여 사회적 공감을 유도하는 정보망.</p>
+<ul>
+<li>아이콘 형상: 와이파이 파동 기호에 겹쳐진 부드러운 심장 박동(EKG) 선.</li>
+<li>배경색: Resonance Peach (공명 복숭아색)</li>
+</ul>
+<p>[14-15] 📖 잊혀진 지식의 부활 (Revival of Lost Lore)</p>
+<p>과거 억압적인 정권의 검열로 사라졌던 고대의 아름다운 마법, 예술, 역사를 복원하여 모든 대중에게 무료로, 투명하게 반환하는 문화적 해방 운동.</p>
+<ul>
+<li>아이콘 형상: 자물쇠가 부서지며 활짝 펼쳐진 채 빛을 뿜는 고서(古書).</li>
+<li>배경색: Lore Cyan (전승 시안색)</li>
+</ul>
+<h2 id="15-문화-정책-cultural-policy">15. 문화 정책 (Cultural Policy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15-문화-정책-cultural-policy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[15-12] 🎨 마도 르네상스 (Magitech Renaissance)</p>
+<p>마법적 신비주의와 기계공학이 일상과 예술의 영역에서 찬란하게 융합되어, 매일 새로운 창작물과 문화가 쏟아지는 지적 황금기.</p>
+<ul>
+<li>아이콘 형상: 톱니바퀴와 붓, 마법봉이 교차하며 그려내는 화려한 문양.</li>
+<li>배경색: Renaissance Pink (르네상스 핑크)</li>
+</ul>
+<p>[15-13] 🎪 종족 융합 대축제 (Pan-Species Carnival)</p>
+<p>수많은 외계 종족의 문화를 강제로 억압하거나 통합하지 않고, 1년 내내 각자의 문화를 뽐내고 교류하며 융합하는 멈추지 않는 은하적 축제.</p>
+<ul>
+<li>아이콘 형상: 서로 다른 종족의 장식(촉수, 기계, 인간)이 화려하게 장식된 깃발.</li>
+<li>배경색: Carnival Gold (축제 금색)</li>
+</ul>
+<p>[15-14] 🌺 마도 정원 가꾸기 (Arcane Landscaping)</p>
+<p>국토 전체를 단순히 효율적인 공장 지대로 만드는 것이 아니라, 하나의 거대한 예술 작품이나 아름다운 마법 정원으로 가꾸는 것을 최고의 문화적 미덕으로 삼는 정책.</p>
+<ul>
+<li>아이콘 형상: 톱니바퀴 대신, 화려한 프랙탈 구조로 자라나는 덩굴 식물.</li>
+<li>배경색: Garden Emerald (정원 에메랄드)</li>
+</ul>
+<h2 id="16-마법-및-이능-정책-arcane-policy">16. 마법 및 이능 정책 (Arcane Policy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#16-마법-및-이능-정책-arcane-policy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[16-15] 🌟 생활 마법 보편화 (Everyday Arcane)</p>
+<p>마법을 국가가 독점하거나 병기화하지 않고, 모든 시민이 일상의 편의, 치유, 예술을 위해 안전하고 평화롭게 이능을 다루는 체제.</p>
+<ul>
+<li>아이콘 형상: 따뜻한 차를 끓이는 찻주전자 주위에 맴도는 빛나는 마법진.</li>
+<li>배경색: Cozy Violet (아늑한 보라색)</li>
+</ul>
+<p>[16-16] 🏫 마도 아카데미 전면 개방 (Open Arcane Academies)</p>
+<p>귀족이나 소수 특권층의 전유물이었던 마법 교육을 누구나 무료로 누릴 수 있도록 대문호를 개방하여, 전 시민을 마법사화(化)하는 진정한 마법 대중화 정책.</p>
+<ul>
+<li>아이콘 형상: 대문이 활짝 열린 거대한 성벽과 그 위로 떠오르는 마법진.</li>
+<li>배경색: Open Sky Blue (개방 하늘색)</li>
+</ul>
+<p>[16-17] 💖 힐링 마나 국가 지원 (Healing Mana Subsidy)</p>
+<p>파괴적인 병기용 마법을 규제하는 대신, 치유, 농업, 예술, 건축에 쓰이는 따뜻한 백마법과 에테르를 국가에서 적극 장려하고 무상으로 공급하는 육성 정책.</p>
+<ul>
+<li>아이콘 형상: 두 손 사이에서 피어나는 빛나는 새싹과 십자 치유 기호.</li>
+<li>배경색: Subsidy Mint (보조금 민트색)</li>
+</ul>
+<h2 id="17-과학-및-차원-거버넌스-science--dimension">17. 과학 및 차원 거버넌스 (Science &amp; Dimension)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#17-과학-및-차원-거버넌스-science--dimension" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[17-10] 🔭 경이로운 탐구 (Cosmic Curiosity)</p>
+<p>차원 붕괴에 대한 두려움으로 규제하거나 무기화하지 않고, 순수한 탐구심과 미지의 차원에 대한 경이로움을 동력으로 삼는 낙관적 과학.</p>
+<ul>
+<li>아이콘 형상: 별이 쏟아지는 은하를 관측하는 고전적인 황동 망원경.</li>
+<li>배경색: Wonder Cyan (경이 시안색)</li>
+</ul>
+<p>[17-11] 🌌 다차원 친선 교류 (Multiversal Friendship)</p>
+<p>차원의 문을 정복과 침공의 통로로 쓰지 않고, 다른 평행 우주의 평화로운 존재들과 지식, 예술, 문화를 활발하게 교류하는 화합의 창으로 활용하는 개방적 차원 정책.</p>
+<ul>
+<li>아이콘 형상: 차원 관문(헥사곤) 너머로 반갑게 내밀어진 이질적이지만 우호적인 손.</li>
+<li>배경색: Dimension Lavender (차원 라벤더색)</li>
+</ul>
+<p>[17-12] 🌟 안전한 특이점 도달 (Safe Singularity)</p>
+<p>인류를 멸망시킬 통제 불능의 AI가 아니라, 윤리와 인류애, 공감 능력이 완벽하게 코딩된 자비로운 초지능(마도 컴퓨터)과 함께 평화로운 문명의 도약을 맞이하는 상태.</p>
+<ul>
+<li>아이콘 형상: 인류의 손과 거대한 강철 로봇의 손이 부드럽게 맞닿아 빛을 내는 모습.</li>
+<li>배경색: Singularity Pearl (특이점 진주색)</li>
+</ul>
+<h2 id="18-군제-military-system">18. 군제 (Military System)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#18-군제-military-system" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[18-12] 🛡️ 에테르 방위 및 구호대 (Aether Guardians)</p>
+<p>파괴적인 전쟁이 아니라, 우주적 재난 구조, 위상 붕괴 방지, 그리고 약자 보호를 주 임무로 삼는 헌신적인 평화 유지 군사 조직.</p>
+<ul>
+<li>아이콘 형상: 검을 내리고 빛나는 방패와 십자가를 든 기사.</li>
+<li>배경색: Guardian Silver (수호자 은색)</li>
+</ul>
+<p>[18-13] 🌱 은하수 생명 개척단 (Milky Way Pioneers)</p>
+<p>파괴적인 무기를 든 군대가 아니라, 생명 창조 모듈과 테라포밍 마법 지팡이를 들고 척박하고 죽어가는 행성에 찾아가 생명을 불어넣는 창조적 파병 군단.</p>
+<ul>
+<li>아이콘 형상: 소총 대신 씨앗을 뿌리는 장비(테라포머)를 등에 짊어진 탐험가 실루엣.</li>
+<li>배경색: Pioneer Green (개척자 녹색)</li>
+</ul>
+<p>[18-14] 🛡️ 마도 환영 비살상 방어 (Arcane Illusion Shields)</p>
+<p>행성을 요새화하여 물리적인 포탄을 날리는 대신, 적의 전의를 부작용 없이 상실시키고 평화롭고 따뜻한 환영을 보여주어 침략자를 스스로 물러나게 하는 궁극의 비살상 방어 체계.</p>
+<ul>
+<li>아이콘 형상: 다가오는 미사일을 부드럽게 감싸 안아 흩어지게 만드는 거대한 홀로그램 꽃.</li>
+<li>배경색: Illusion Violet (환영 보라색)</li>
+</ul>
+<h2 id="19-복지-및-공공성-welfare">19. 복지 및 공공성 (Welfare)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#19-복지-및-공공성-welfare" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[19-12] 🍎 마나의 축복 (Mana’s Blessing)</p>
+<p>생물학적 질병과 기아가 마법공학과 의료 연금술로 완벽하게 근절되었으며, 요람에서 무덤까지 시민의 행복을 보장하는 궁극의 복지.</p>
+<ul>
+<li>아이콘 형상: 황금빛 꿀과 맑은 물이 끊임없이 넘쳐흐르는 풍요의 뿔(Cornucopia).</li>
+<li>배경색: Blessing Gold (축복 금색)</li>
+</ul>
+<p>[19-13] 🧬 완전한 재생 지원 (Total Regeneration)</p>
+<p>선별적 복지가 아니라, 사고로 잃어버린 신체 부위나 치명적인 불치병을 마도 생명공학 기술로 부작용 없이 완벽하게 복구해 주는 100% 무상 의료 제공.</p>
+<ul>
+<li>아이콘 형상: 부서진 뼈가 마법의 빛(DNA 나선)으로 감싸이며 원래대로 복구되는 형상.</li>
+<li>배경색: Regen Cyan (재생 시안색)</li>
+</ul>
+<p>[19-14] 🏖️ 은하계 안식처 전면 개방 (Galactic Sanctuary)</p>
+<p>단순한 생계 지원을 넘어, 노년기나 극심한 영적 피로를 겪는 시민들을 위해 은하계 최고의 기후와 마나 환경을 갖춘 아름다운 휴양 행성을 조건 없이 전면 개방하는 사치스러운 복지.</p>
+<ul>
+<li>아이콘 형상: 야자수와 빛나는 두 개의 달이 떠 있는 평온한 해변의 실루엣.</li>
+<li>배경색: Sanctuary Aqua (안식처 아쿠아색)</li>
+</ul>
+<h2 id="20-교육-및-인재-육성-education">20. 교육 및 인재 육성 (Education)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#20-교육-및-인재-육성-education" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[20-11] 🌱 잠재력 개화 (Potential Awakening)</p>
+<p>국가의 목적에 맞춰 세뇌하거나 획일화하지 않고, 개인의 영적·지적 잠재력을 스스로 깨달을 수 있도록 돕는 맞춤형 멘토링 교육.</p>
+<ul>
+<li>아이콘 형상: 작은 씨앗에서 피어난 영롱한 마나의 싹과 그것을 비추는 빛.</li>
+<li>배경색: Blossom Green (개화 녹색)</li>
+</ul>
+<p>[20-12] 🧙‍♂️ 홀로그램 명인 전수 (Holographic Masterclass)</p>
+<p>세뇌나 획일화 교육 대신, 역사상 가장 위대한 현자와 마법사들의 인격을 완벽하게 재현한 홀로그램 AI 멘토가 학생들에게 1:1 맞춤형 지혜와 통찰력을 전수하는 최고급 교육.</p>
+<ul>
+<li>아이콘 형상: 홀로그램 프로젝터 위로 투사된 수염 난 현자의 자애로운 미소.</li>
+<li>배경색: Master Silver (명인 은색)</li>
+</ul>
+<p>[20-13] 🚀 우주선 학교 유랑 (Starship Academies)</p>
+<p>답답한 교실에 갇히지 않고, 거대한 교육용 우주선을 타고 은하계 곳곳의 경이로운 자연과 외계 문명을 직접 탐험하며 살아있는 실전 지식과 다양성을 배우는 유랑 교육.</p>
+<ul>
+<li>아이콘 형상: 책의 페이지가 펄럭이며 우주선의 돛으로 변하는 모습.</li>
+<li>배경색: Explorer Navy (탐험가 남색)</li>
+</ul>
+<h2 id="21-노동-및-인력-정책-labor-policy">21. 노동 및 인력 정책 (Labor Policy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-노동-및-인력-정책-labor-policy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[21-12] 🎨 창조적 자아실현 (Creative Self-Realization)</p>
+<p>단순 생계를 위한 고된 노동은 자동화 기계와 인공 정령이 전담하고, 지성체는 오직 학문, 예술, 자아실현에만 종사하는 노동 해방 사회.</p>
+<ul>
+<li>아이콘 형상: 곡괭이를 내려놓고 하프를 연주하는 사람.</li>
+<li>배경색: Leisure Yellow (여가 노란색)</li>
+</ul>
+<p>[21-13] 🔥 열정 기반 기여 (Passion-Based Contribution)</p>
+<p>억압적인 의무 노동 시간이나 노역이 완전히 사라졌으며, 자신이 가장 사랑하고 잘하는 취미나 예술 활동에 몰두하는 것만으로도 충분한 사회적 기여로 인정받는 자유로운 체제.</p>
+<ul>
+<li>아이콘 형상: 족쇄가 끊어진 채 불타오르는 열정적인 심장.</li>
+<li>배경색: Passion Red (열정 붉은색)</li>
+</ul>
+<p>[21-14] 🤖 마도 자동화 노동 해방 (Magitech Emancipation)</p>
+<p>지루하고 고되고 위험한 육체노동은 마력으로 부드럽게 움직이는 골렘과 자동화 인형 네트워크가 100% 안전하게 대체하고, 시민은 온전히 여유와 철학을 즐기는 진정한 해방 정책.</p>
+<ul>
+<li>아이콘 형상: 쟁기를 대신 끄는 웃는 얼굴의 태엽 장치 골렘.</li>
+<li>배경색: Emancipation Teal (해방 청록색)</li>
+</ul>
+<h2 id="22-행정-청렴도-integrity">22. 행정 청렴도 (Integrity)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-행정-청렴도-integrity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[22-11] 💎 에테르 투명성 (Aetheric Transparency)</p>
+<p>부패나 악의적 의도가 마나의 색상 변화로 즉각 시각화되어, 거짓말과 밀실 정치가 원천적으로 불가능해진 맑고 투명한 행정 체제.</p>
+<ul>
+<li>아이콘 형상: 한 점의 탁함도 없이 빛을 투과시키는 완벽한 크리스탈 다이아몬드.</li>
+<li>배경색: Crystal Cyan (크리스탈 시안색)</li>
+</ul>
+<p>[22-12] ✨ 진실의 명예 서약 (Oath of Truth)</p>
+<p>고위 공직에 오를 때 복잡한 감시 기구를 두는 대신, 본인의 양심에 어긋나는 결정을 할 경우 스스로 아름다운 빛을 잃고 탁해지는 ‘마력 목걸이’를 차는 명예로운 관습.</p>
+<ul>
+<li>아이콘 형상: 영롱하게 빛나는 푸른빛의 보석 펜던트.</li>
+<li>배경색: Truth Sapphire (진실 사파이어색)</li>
+</ul>
+<p>[22-13] 🌐 오픈소스 국정 (Open-source Governance)</p>
+<p>국가의 모든 정책 알고리즘과 거대한 마도 공학 인프라의 설계도를 투명하게 공개하여, 일반 시민 누구나 더 나은 방향으로 코드(또는 마법진)를 수정 제안할 수 있는 협업 체제.</p>
+<ul>
+<li>아이콘 형상: 모든 잠금장치가 해제되어 내부 구조가 훤히 들여다보이는 투명한 톱니바퀴.</li>
+<li>배경색: Open Source Green (오픈소스 녹색)</li>
+</ul>
+<h2 id="23-비상-및-안보-기조-crisis-stance">23. 비상 및 안보 기조 (Crisis Stance)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#23-비상-및-안보-기조-crisis-stance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[23-11] 🛡️ 긍정적 결속 (Optimistic Solidarity)</p>
+<p>위기 상황에서 공포 정치를 펴거나 이기적인 초토화를 벌이는 대신, 희망과 연대 의식을 통해 대중을 하나로 결속시켜 난관을 극복하는 기조.</p>
+<ul>
+<li>아이콘 형상: 어둠 속에서 횃불을 들고 서로의 어깨를 맞댄 사람들.</li>
+<li>배경색: Hopeful Orange (희망 주황색)</li>
+</ul>
+<p>[23-12] 🏰 완벽한 보호의 성역 (Sanctuary of Protection)</p>
+<p>위기 시 행성을 초토화하거나 시민을 사지로 내모는 대신, 최우선적으로 거주민 전체를 완벽하게 쾌적하고 안전한 아공간(Pocket Dimension)으로 신속히 대피시키는 평화적 방어 기조.</p>
+<ul>
+<li>아이콘 형상: 거대한 차원 균열(문) 안으로 안전하게 대피하는 사람들의 실루엣.</li>
+<li>배경색: Safehold Blue (안전처 파랑)</li>
+</ul>
+<p>[23-13] 🎼 치유와 결속의 멜로디 (Melody of Restoration)</p>
+<p>공포를 조장하는 찢어지는 공습경보 사이렌 대신, 시민들의 마음을 진정시키고 용기를 불어넣는 장엄하고 아름다운 오케스트라 마법 연주가 성계 전체에 은은하게 울려 퍼지는 안보 체제.</p>
+<ul>
+<li>아이콘 형상: 경보기 확성기 대신 하늘을 수놓는 황금빛 음표와 하프.</li>
+<li>배경색: Harmony Gold (화음 금색)</li>
+</ul>
+<h2 id="24-행성-및-환경-정책-planetary-administration">24. 행성 및 환경 정책 (Planetary Administration)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#24-행성-및-환경-정책-planetary-administration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[24-11] 🧚 정령적 동화 (Elemental Attunement)</p>
+<p>기계 톱니바퀴로 환경을 파괴하고 개조하는 대신, 행성의 토착 정령 및 대자연과 깊은 교감을 나누며 공존하는 아케인-그린 생태 정책.</p>
+<ul>
+<li>아이콘 형상: 기계 구조물 사이를 뚫고 피어난 영롱한 수정 꽃과 푸른 잎.</li>
+<li>배경색: Spirit Emerald (정령 에메랄드색)</li>
+</ul>
+<p>[24-12] 🌺 생명 찬가 테라포밍 (Ode to Life Terraforming)</p>
+<p>행성을 파괴적으로 개조하고 자원을 한계까지 착취하는 대신, 수백 년에 걸쳐 정성스럽게 씨앗을 뿌리고 대지에 마나를 불어넣어 버려진 황무지를 궁극의 낙원으로 가꾸는 예술적 테라포밍.</p>
+<ul>
+<li>아이콘 형상: 갈라진 메마른 땅 위로 비가 내리며 거대한 꽃이 만개하는 모습.</li>
+<li>배경색: Paradise Pink (낙원 분홍색)</li>
+</ul>
+<p>[24-13] ☁️ 부유하는 친환경 도시망 (Levitating Arcologies)</p>
+<p>행성 지표면의 아름다운 원시 생태계를 100% 자연 그대로 보존하기 위해, 문명의 모든 주거지와 기반 시설을 거대한 마력으로 하늘에 띄운 반중력 공중 도시 체계.</p>
+<ul>
+<li>아이콘 형상: 울창한 숲이 우거진 지표면을 해치지 않고 하늘 높이 떠 있는 거대한 원반형 도시.</li>
+<li>배경색: Hover Cyan (부유 시안색)</li>
+</ul>
+<h2 id="25-성간-인프라-및-물류-interstellar-transit">25. 성간 인프라 및 물류 (Interstellar Transit)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#25-성간-인프라-및-물류-interstellar-transit" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[25-19] 🌈 에테르 무지개다리 (Aetheric Bifröst)</p>
+<p>위험한 차원 왜곡이나 거친 슬립스트림 대신, 우주의 맑은 마나 해류를 부드럽게 타고 흐르는 눈부시게 아름답고 안전한 성간 이동망.</p>
+<ul>
+<li>아이콘 형상: 밤하늘을 가로지르는 찬란한 무지개빛 오로라 궤적.</li>
+<li>배경색: Aurora Spectrum (오로라 스펙트럼색)</li>
+</ul>
+<p>[25-20] 🐋 마나 고래 유영망 (Mana Whale Transit)</p>
+<p>차가운 금속 우주선 대신, 심우주를 평화롭게 유영하는 거대한 마나 고래들과 교감하며 그들의 등에 지어진 안전하고 투명한 돔에서 우주의 절경을 감상하며 이동하는 낭만적 물류.</p>
+<ul>
+<li>아이콘 형상: 별빛을 흩뿌리며 은하수를 유영하는 아름다운 고래 실루엣.</li>
+<li>배경색: Whale Indigo (고래 남색)</li>
+</ul>
+<p>[25-21] 🌟 환대하는 별의 문 (Stargates of Welcome)</p>
+<p>삼엄한 통제와 무장 병력이 가득한 검문소가 아닌, 새로운 차원 여행자를 환영하는 웅장한 오케스트라 음악과 아름다운 홀로그램 축제 빛이 24시간 가득한 개방적 차원 관문.</p>
+<ul>
+<li>아이콘 형상: 위압적인 금속 문 대신, 화려한 빛의 아치(Arches)와 폭죽.</li>
+<li>배경색: Welcome Magenta (환대 마젠타)</li>
+</ul>
+<h2 id="26-영혼-및-데이터-관리-soul--identity">26. 영혼 및 데이터 관리 (Soul &amp; Identity)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#26-영혼-및-데이터-관리-soul--identity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[26-11] ✨ 영혼의 요람 (Soul Cradle)</p>
+<p>사후 영혼을 강제 노역에 동원하거나 말소하지 않고, 평화롭고 아름다운 가상 에덴에서 안식을 누리거나 스스로 환생을 선택하게 하는 보호 체제.</p>
+<ul>
+<li>아이콘 형상: 부드러운 새의 깃털 위에 안전하게 안착한 빛나는 영혼의 구슬.</li>
+<li>배경색: Cradle Pearl (요람 진주색)</li>
+</ul>
+<p>[26-12] 🤝 자발적 집단 지성 (Voluntary Overmind)</p>
+<p>국가에 의해 자아를 강제로 뺏기는 끔찍한 군체 의식이 아니라, 타인과 깊이 공감하고 싶을 때만 자발적으로 따뜻한 정신 네트워크에 접속해 거대한 지혜를 나누는 연결망.</p>
+<ul>
+<li>아이콘 형상: 억압적인 케이블 대신 부드러운 빛의 실로 서로 손을 맞잡은 뇌파(혹은 사람).</li>
+<li>배경색: Connect Teal (연결 청록색)</li>
+</ul>
+<p>[26-13] 💎 기억 결정화 박물관 (Crystals of Remembrance)</p>
+<p>세상을 떠난 이들의 가장 아름답고 소중한 기억만을 보석으로 결정화하여 후대가 언제든 도서관에서 열람하고 추모할 수 있게 하는 아름다운 장례.</p>
+<ul>
+<li>아이콘 형상: 빛을 발하는 육각형 수정 안에 담긴 웃고 있는 사람의 형상.</li>
+<li>배경색: Memory Pearl (기억 진주색)</li>
+</ul>
+<h2 id="27-형벌-및-교정-penal--correctional-system">27. 형벌 및 교정 (Penal &amp; Correctional System)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#27-형벌-및-교정-penal--correctional-system" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[27-18] 🌅 인과적 속죄의 꿈 (Karmic Dream-Walking)</p>
+<p>존재를 말소하는 형벌 대신, 가상 세계(꿈)에서 자신의 행동이 끼친 영향을 직접 체험하며 진심으로 눈물 흘리고 참회하게 만드는 마법적 심리 교정.</p>
+<ul>
+<li>아이콘 형상: 어둠이 걷히고 떠오르는 따뜻한 태양을 바라보며 참회하는 실루엣.</li>
+<li>배경색: Dawn Gold (여명 금색)</li>
+</ul>
+<p>[27-19] 🌅 망각과 따뜻한 새출발 (Oblivion and Rebirth)</p>
+<p>죄수에게 끔찍한 고통(통각 각인, 생체 개조)을 주는 대신, 본인이 진심으로 참회할 경우 범죄의 기억과 트라우마를 부작용 없이 지워버리고 새로운 인격으로 두 번째 인생을 살게 해주는 마도 시술.</p>
+<ul>
+<li>아이콘 형상: 무거운 족쇄가 풀림과 동시에 과거의 그림자가 하얀 비둘기로 변해 날아가는 모습.</li>
+<li>배경색: Rebirth Cyan (환생 시안색)</li>
+</ul>
+<p>[27-20] 🎨 창조적 예술 봉사형 (Creative Restitution)</p>
+<p>어두운 지하 개척지에서 끔찍한 노역을 하는 대신, 자신이 파괴한 것보다 훨씬 더 큰 아름다움을 세상에 남기도록(예: 황무지에 숲 가꾸기, 대중을 위한 예술품 헌납) 기회를 부여하는 창조적 교정.</p>
+<ul>
+<li>아이콘 형상: 쇠창살을 녹여 아름다운 하프와 조각상을 빚어내는 손.</li>
+<li>배경색: Restitution Orange (복구 주황색)</li>
+</ul>
+<h2 id="28-다종족-정책-multispecies-policy">28. 다종족 정책 (Multispecies Policy)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#28-다종족-정책-multispecies-policy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[28-14] 🎼 우주적 오케스트라 (Cosmic Orchestra)</p>
+<p>하나의 종족으로 억지로 동화시키지 않고, 각 지성체의 독특한 생물학적·문화적 개성이 교향곡의 화음처럼 어우러져 찬란한 시너지를 내는 포용 정책.</p>
+<ul>
+<li>아이콘 형상: 여러 외계 종족의 손이 모여 아름다운 음표 파동을 만들어내는 모습.</li>
+<li>배경색: Symphony Teal (교향곡 청록색)</li>
+</ul>
+<p>[28-15] 🎼 범우주적 하모니 (Pan-Cosmic Harmony)</p>
+<p>종족 분리나 억압적인 동화 정책 대신, 언어와 외형의 장벽을 완벽하게 허무는 ‘에테르 통역기’를 통해 곤충형, 기계형, 인간형 등 모든 종족이 차별 없이 자유롭게 소통하고 사랑하는 사회.</p>
+<ul>
+<li>아이콘 형상: 세 가지 다른 종족의 실루엣이 하나의 커다란 하트를 함께 받치고 있는 모습.</li>
+<li>배경색: Harmony Violet (화합 보라색)</li>
+</ul>
+<p>[28-16] 🌿 고유 생태계 절대 존중 (Endemic Respect)</p>
+<p>타 종족을 제국의 표준 환경에 억지로 맞추어 고통받게 하는 대신, 그들 종족에게 가장 편안한 고유의 생태 환경과 독특한 건축 양식을 제국 중심부 한가운데에도 동등하게 구현해 주는 배려.</p>
+<ul>
+<li>아이콘 형상: 하나의 거대한 돔 안에 사막, 빙하, 우림이 조화롭게 나뉘어 공존하는 지형.</li>
+<li>배경색: Respect Green (존중 녹색)</li>
+</ul>
+<h2 id="29-기술-수준-technological-advancement">29. 기술 수준 (Technological Advancement)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#29-기술-수준-technological-advancement" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[29-12] ✨ 아케인 펑크 정점 (Arcanepunk Zenith)</p>
+<p>차가운 기계 승천을 거부하고, 마법의 따뜻한 감성과 초고도 기술의 편리함이 완벽한 조화를 이루어 생동감 넘치는 마법공학적 특이점을 맞이한 기술.</p>
+<ul>
+<li>아이콘 형상: 은은한 룬 문자가 새겨진 채 박동하는 기계 심장.</li>
+<li>배경색: Zenith Magenta (정점 마젠타)</li>
+</ul>
+<p>[29-13] 🌱 에테르-바이오 융합 특이점 (Aether-Bio Synthesis)</p>
+<p>차가운 쇠붙이 기계로 승천하는 것을 거부하고, 따뜻한 식물성 생체 부품과 영롱한 마나 수정이 결합되어 지성체의 신체와 자연 생태계가 완벽하게 동화되는 유기적이고 아름다운 기술 특이점.</p>
+<ul>
+<li>아이콘 형상: 잎사귀 맥과 회로판의 패턴이 완벽하게 융합되어 빛나는 반도체.</li>
+<li>배경색: Bio-Tech Emerald (생체기술 에메랄드)</li>
+</ul>
+<p>[29-14] 🎨 미학적 마도 공학 르네상스 (Aesthetic Magitech)</p>
+<p>모든 기술적 발명품이 단순히 파괴적이고 효율적인 기능만 갖추는 것을 경멸하며, 기술 그 자체로 섬세하고 아름다운 예술 작품으로 기능해야 한다는 우주적 기술 르네상스.</p>
+<ul>
+<li>아이콘 형상: 정교한 기하학적 황금 비율로 깎아진 별 모양의 톱니바퀴.</li>
+<li>배경색: Masterpiece Gold (명작 금색)</li>
+</ul>
+<h2 id="30-에너지-및-동력-체계-energy--power-foundation">30. 에너지 및 동력 체계 (Energy &amp; Power Foundation)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#30-에너지-및-동력-체계-energy--power-foundation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[30-15] 🌌 성계 마나 루프 (Galactic Mana Loop)</p>
+<p>지핵을 파괴하거나 영혼을 연소시키는 대신, 성계 전체에 흐르는 자연적인 에테르 해류의 흐름에 돛을 달아 무한하고 깨끗한 동력을 얻는 마공학 그리드.</p>
+<ul>
+<li>아이콘 형상: 행성들을 부드럽게 감싸며 흐르는 빛의 소용돌이.</li>
+<li>배경색: Ethereal Teal (에테르 청록색)</li>
+</ul>
+<p>[30-16] 🕯️ 사념적 등불 (Psionic Lantern)</p>
+<p>시민들의 광신이나 억압된 공포 대신, 일상의 긍정적인 감정, 사랑, 예술적 영감을 에너지로 치환하여 도시를 따뜻하게 밝히는 정서 중심적 동력.</p>
+<ul>
+<li>아이콘 형상: 따뜻한 빛을 내뿜는 정교한 램프 속에서 피어오르는 음표.</li>
+<li>배경색: Amber Radiance (호박색 광휘)</li>
+</ul>
+<p>[30-17] 🎉 생명력 긍정 공명로 (Vitality Resonance Engine)</p>
+<p>하층민의 영혼을 착취하여 쥐어짜 내는 대신, 광장에서 열리는 축제, 웃음, 춤에서 뿜어져 나오는 대중의 폭발적이고 긍정적인 감정 에너지를 동력으로 변환하는 친환경 화합로.</p>
+<ul>
+<li>아이콘 형상: 불타는 영혼 대신, 화려한 폭죽과 음표가 맴도는 밝은 수정 구슬.</li>
+<li>배경색: Resonance Pink (공명 분홍색)</li>
+</ul>
+<p>[30-18] ☄️ 혜성 꼬리 포집 (Comet-Tail Weaving)</p>
+<p>별을 파괴하거나 지핵에 구멍을 뚫지 않고, 성계를 스쳐 지나가는 거대한 우주 혜성의 꼬리에서 떨어지는 찬란한 우주 먼지와 마나 입자만을 사뿐히 걷어내어 동력으로 삼는 우아한 기술.</p>
+<ul>
+<li>아이콘 형상: 혜성이 지나간 궤적을 촘촘한 빛의 그물(포집기)로 부드럽게 받아내는 형태.</li>
+<li>배경색: Comet Azure (혜성 청색)</li>
+</ul>
+<h2 id="31-신체-및-형태-자율성-bodily-autonomy--morphism">31. 신체 및 형태 자율성 (Bodily Autonomy &amp; Morphism)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#31-신체-및-형태-자율성-bodily-autonomy--morphism" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[31-8] 🦋 형상 해방 (Morphological Emancipation)</p>
+<p>강제적 기계화나 계급적 억압이 아니라, 순수한 미적 욕구와 자아 표현을 위해 아픔이나 부작용 없이 신체와 형태를 마법적으로 자유롭게 바꾸는 권리.</p>
+<ul>
+<li>아이콘 형상: 번데기(혹은 낡은 허물)를 벗고 화려한 날개를 펼치는 인간형 나비.</li>
+<li>배경색: Freeform Violet (자유형상 보라색)</li>
+</ul>
+<p>[31-9] ✨ 별빛 에테르 의체 (Starlight Prosthetics)</p>
+<p>사고로 신체를 잃은 이들에게 차가운 고철이나 흉측한 형벌용 부품을 박아넣는 대신, 별빛처럼 영롱하게 빛나며 깃털처럼 가벼운 마법 에테르 의수를 무상 제공하여 장애를 예술적 개성으로 승화시키는 복지.</p>
+<ul>
+<li>아이콘 형상: 무거운 금속 팔이 아니라, 반투명하게 빛나는 홀로그램 별빛 팔.</li>
+<li>배경색: Starlight Pearl (별빛 진주색)</li>
+</ul>
+<p>[31-10] 🦋 조화로운 다중 자아 (Harmonious Multiplicity)</p>
+<p>육체의 껍데기를 혐오하고 강제로 기계화하는 것이 아니라, 여러 개의 각기 다른 아름다운 의체(기계, 엘프형, 수인형 등)에 자신의 자아를 나누어 담고 자유자재로 옮겨 다니며 삶을 다채롭게 즐기는 궁극의 신체 자유권.</p>
+<ul>
+<li>아이콘 형상: 하나의 중심 빛줄기(영혼)에서 뻗어나가 각기 다른 형태의 나비로 변하는 파동.</li>
+<li>배경색: Freeform Violet (자유형상 보라색)</li>
+</ul>
+<h2 id="32-역사-및-인과율-통제-historical--timeline-administration">32. 역사 및 인과율 통제 (Historical &amp; Timeline Administration)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#32-역사-및-인과율-통제-historical--timeline-administration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>[32-8] 📜 별빛 연대기 (Starlight Chronicles)</p>
+<p>과거를 은폐하거나 시간선을 억지로 편집하지 않고, 과거의 상처와 부끄러운 역사조차 온전히 수용하여 이를 더 나은 미래를 향한 치유와 성장의 거름으로 삼는 역사관.</p>
+<ul>
+<li>아이콘 형상: 쏟아지는 별빛 아래에서 오래된 상처 입은 책을 소중히 보듬어 안은 모습.</li>
+<li>배경색: Chronicle Indigo (연대기 인디고색)</li>
+</ul>
+<p>[32-9] 🏛️ 시간선 보존 박물관 (Timeline Preservation Museum)</p>
+<p>과거의 끔찍한 실수를 은폐하기 위해 시간선 자체를 지워버리는 오만함 대신, 갈라져 나온 평행 우주의 비극적 역사와 실패를 가장 안전하고 장엄한 박물관에 온전히 보존하여 후대에게 경계의 교훈을 주는 성숙한 태도.</p>
+<ul>
+<li>아이콘 형상: 모래가 거꾸로 흐르는 시계가 안전한 유리 전시관 안에 귀중품처럼 전시된 모습.</li>
+<li>배경색: Archive Slate (보존 슬레이트)</li>
+</ul>
+<p>[32-10] 💖 소급적 치유 (Retroactive Healing)</p>
+<p>인과율 조작 기술을 정치적 숙청이나 더러운 암살에 악용하지 않고, 오직 끔찍한 대재앙이나 사고로 잃어버린 수많은 무고한 생명을 과거로 돌아가 구출해 오는 가장 숭고한 용도로만 극도로 제한하여 사용하는 규칙.</p>
+<ul>
+<li>아이콘 형상: 붉은 피가 튄 시계 바늘을, 맑은 물과 잎사귀로 조심스럽게 닦아내는 두 손.</li>
+<li>배경색: Retro-Heal Cyan (소급 치유 시안색)</li>
+</ul></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-457"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-457"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-763" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-763" class="toc-content"><li class="depth-0"><a href="#-엘리스-프라우셰크트-아케인펑크-및-낙관적-유토피아-확장팩-lighthope-expansion" data-for="-엘리스-프라우셰크트-아케인펑크-및-낙관적-유토피아-확장팩-lighthope-expansion">🎨 엘리스 프라우셰크트: 아케인펑크 및 낙관적 유토피아 확장팩 (Light/Hope Expansion)</a></li><li class="depth-1"><a href="#1-정체-polity" data-for="1-정체-polity">1. 정체 (Polity)</a></li><li class="depth-1"><a href="#2-통치-구조-governance-structure" data-for="2-통치-구조-governance-structure">2. 통치 구조 (Governance Structure)</a></li><li class="depth-1"><a href="#3-권력의-정당성-legitimacy" data-for="3-권력의-정당성-legitimacy">3. 권력의 정당성 (Legitimacy)</a></li><li class="depth-1"><a href="#4-국토-및-행정-territorial" data-for="4-국토-및-행정-territorial">4. 국토 및 행정 (Territorial)</a></li><li class="depth-1"><a href="#5-권력-승계-succession" data-for="5-권력-승계-succession">5. 권력 승계 (Succession)</a></li><li class="depth-1"><a href="#6-관료제-bureaucracy" data-for="6-관료제-bureaucracy">6. 관료제 (Bureaucracy)</a></li><li class="depth-1"><a href="#7-경제-개입-economy" data-for="7-경제-개입-economy">7. 경제 개입 (Economy)</a></li><li class="depth-1"><a href="#8-사회-계층-hierarchy" data-for="8-사회-계층-hierarchy">8. 사회 계층 (Hierarchy)</a></li><li class="depth-1"><a href="#9-참정권-및-시민권-franchise--citizenship" data-for="9-참정권-및-시민권-franchise--citizenship">9. 참정권 및 시민권 (Franchise &amp; Citizenship)</a></li><li class="depth-1"><a href="#10-정당-체제-party-system" data-for="10-정당-체제-party-system">10. 정당 체제 (Party System)</a></li><li class="depth-1"><a href="#11-사법-및-치안-law--order" data-for="11-사법-및-치안-law--order">11. 사법 및 치안 (Law &amp; Order)</a></li><li class="depth-1"><a href="#12-외교-기조-diplomacy" data-for="12-외교-기조-diplomacy">12. 외교 기조 (Diplomacy)</a></li><li class="depth-1"><a href="#13-종교-정책-religion" data-for="13-종교-정책-religion">13. 종교 정책 (Religion)</a></li><li class="depth-1"><a href="#14-정보-통제-정책-info-control" data-for="14-정보-통제-정책-info-control">14. 정보 통제 정책 (Info Control)</a></li><li class="depth-1"><a href="#15-문화-정책-cultural-policy" data-for="15-문화-정책-cultural-policy">15. 문화 정책 (Cultural Policy)</a></li><li class="depth-1"><a href="#16-마법-및-이능-정책-arcane-policy" data-for="16-마법-및-이능-정책-arcane-policy">16. 마법 및 이능 정책 (Arcane Policy)</a></li><li class="depth-1"><a href="#17-과학-및-차원-거버넌스-science--dimension" data-for="17-과학-및-차원-거버넌스-science--dimension">17. 과학 및 차원 거버넌스 (Science &amp; Dimension)</a></li><li class="depth-1"><a href="#18-군제-military-system" data-for="18-군제-military-system">18. 군제 (Military System)</a></li><li class="depth-1"><a href="#19-복지-및-공공성-welfare" data-for="19-복지-및-공공성-welfare">19. 복지 및 공공성 (Welfare)</a></li><li class="depth-1"><a href="#20-교육-및-인재-육성-education" data-for="20-교육-및-인재-육성-education">20. 교육 및 인재 육성 (Education)</a></li><li class="depth-1"><a href="#21-노동-및-인력-정책-labor-policy" data-for="21-노동-및-인력-정책-labor-policy">21. 노동 및 인력 정책 (Labor Policy)</a></li><li class="depth-1"><a href="#22-행정-청렴도-integrity" data-for="22-행정-청렴도-integrity">22. 행정 청렴도 (Integrity)</a></li><li class="depth-1"><a href="#23-비상-및-안보-기조-crisis-stance" data-for="23-비상-및-안보-기조-crisis-stance">23. 비상 및 안보 기조 (Crisis Stance)</a></li><li class="depth-1"><a href="#24-행성-및-환경-정책-planetary-administration" data-for="24-행성-및-환경-정책-planetary-administration">24. 행성 및 환경 정책 (Planetary Administration)</a></li><li class="depth-1"><a href="#25-성간-인프라-및-물류-interstellar-transit" data-for="25-성간-인프라-및-물류-interstellar-transit">25. 성간 인프라 및 물류 (Interstellar Transit)</a></li><li class="depth-1"><a href="#26-영혼-및-데이터-관리-soul--identity" data-for="26-영혼-및-데이터-관리-soul--identity">26. 영혼 및 데이터 관리 (Soul &amp; Identity)</a></li><li class="depth-1"><a href="#27-형벌-및-교정-penal--correctional-system" data-for="27-형벌-및-교정-penal--correctional-system">27. 형벌 및 교정 (Penal &amp; Correctional System)</a></li><li class="depth-1"><a href="#28-다종족-정책-multispecies-policy" data-for="28-다종족-정책-multispecies-policy">28. 다종족 정책 (Multispecies Policy)</a></li><li class="depth-1"><a href="#29-기술-수준-technological-advancement" data-for="29-기술-수준-technological-advancement">29. 기술 수준 (Technological Advancement)</a></li><li class="depth-1"><a href="#30-에너지-및-동력-체계-energy--power-foundation" data-for="30-에너지-및-동력-체계-energy--power-foundation">30. 에너지 및 동력 체계 (Energy &amp; Power Foundation)</a></li><li class="depth-1"><a href="#31-신체-및-형태-자율성-bodily-autonomy--morphism" data-for="31-신체-및-형태-자율성-bodily-autonomy--morphism">31. 신체 및 형태 자율성 (Bodily Autonomy &amp; Morphism)</a></li><li class="depth-1"><a href="#32-역사-및-인과율-통제-historical--timeline-administration" data-for="32-역사-및-인과율-통제-historical--timeline-administration">32. 역사 및 인과율 통제 (Historical &amp; Timeline Administration)</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../../postscript.js" type="module" data-persist="true"></script></html>

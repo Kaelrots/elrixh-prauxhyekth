@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>직무적부심사(JSA) 평가 체계</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="《엘리스 프라우셰크트》
+카엘 창작 세계관"/><meta property="og:title" content="직무적부심사(JSA) 평가 체계"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="직무적부심사(JSA) 평가 체계"/><meta name="twitter:description" content="🏛️ 엘리시움 연방 국가 고시 체계: ICX 및 JSA 운영 지침 2. ⚖️ JSA (Job Suitability Assessment): “고위공직자 자격고사” 목표: 국가 운영에 필요한 고도의 전문성과 도덕적/보안적 무결성을 동시 검증."/><meta property="og:description" content="🏛️ 엘리시움 연방 국가 고시 체계: ICX 및 JSA 운영 지침 2. ⚖️ JSA (Job Suitability Assessment): “고위공직자 자격고사” 목표: 국가 운영에 필요한 고도의 전문성과 도덕적/보안적 무결성을 동시 검증."/><meta property="og:image:alt" content="🏛️ 엘리시움 연방 국가 고시 체계: ICX 및 JSA 운영 지침 2. ⚖️ JSA (Job Suitability Assessment): “고위공직자 자격고사” 목표: 국가 운영에 필요한 고도의 전문성과 도덕적/보안적 무결성을 동시 검증."/><meta property="og:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:url" content="https://kaelrots.github.io/static/og-image.png"/><meta name="twitter:image" content="https://kaelrots.github.io/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="kaelrots.github.io"/><meta property="og:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/직무적부심사(JSA)-평가-체계"/><meta property="twitter:url" content="https://kaelrots.github.io/90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/직무적부심사(JSA)-평가-체계"/><link rel="icon" href="../../../../static/icon.png"/><meta name="description" content="🏛️ 엘리시움 연방 국가 고시 체계: ICX 및 JSA 운영 지침 2. ⚖️ JSA (Job Suitability Assessment): “고위공직자 자격고사” 목표: 국가 운영에 필요한 고도의 전문성과 도덕적/보안적 무결성을 동시 검증."/><meta name="generator" content="Quartz"/><link href="../../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXOq1rOq4gCDrk5zrnbzsnbTruIxcXOyEuOqzhOq0gF9XZWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://kaelrots.github.io/index.xml"/></head><body data-slug="90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/직무적부심사(JSA)-평가-체계"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../..">《엘리스 프라우셰크트》
+카엘 창작 세계관</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button type="button" class="search-button" aria-haspopup="dialog" aria-controls="search-dialog-1154" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><dialog id="search-dialog-1154" class="search-container" aria-label="검색"><div class="search-space"><div class="search-input-row"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><button type="button" class="search-close" aria-label="검색 닫기" title="검색 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><div class="search-layout" data-preview="true"></div></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="mobile-toc"><button type="button" class="mobile-toc-trigger" aria-haspopup="dialog" aria-controls="toc-752" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg><span>목차</span></button><dialog id="toc-752" class="mobile-toc-dialog" aria-labelledby="toc-752-title"><div class="mobile-toc-sheet"><div class="mobile-toc-heading"><h2 id="toc-752-title">목차</h2><button type="button" class="mobile-toc-close" aria-label="목차 닫기" title="목차 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg></button></div><nav aria-label="목차"><ul class="mobile-toc-content"><li class="depth-1"><a href="#️-엘리시움-연방-국가-고시-체계-icx-및-jsa-운영-지침" data-for="️-엘리시움-연방-국가-고시-체계-icx-및-jsa-운영-지침">🏛️ 엘리시움 연방 국가 고시 체계: ICX 및 JSA 운영 지침</a></li><li class="depth-2"><a href="#2-️-jsa-job-suitability-assessment-고위공직자-자격고사" data-for="2-️-jsa-job-suitability-assessment-고위공직자-자격고사">2. ⚖️ JSA (Job Suitability Assessment): “고위공직자 자격고사”</a></li><li class="depth-2"><a href="#-요약-및-행정적-결론" data-for="-요약-및-행정적-결론">📝 요약 및 행정적 결론</a></li><li class="depth-0"><a href="#엘리시움-연방-직무적부심사jsa-체계-비판적-검토-보고서-v10" data-for="엘리시움-연방-직무적부심사jsa-체계-비판적-검토-보고서-v10">엘리시움 연방 직무적부심사(JSA) 체계 비판적 검토 보고서 (v1.0)</a></li><li class="depth-2"><a href="#1--jsa-제1단계-적격성-심사-절차-process-of-eligibility" data-for="1--jsa-제1단계-적격성-심사-절차-process-of-eligibility">1. 📋 JSA 제1단계: 적격성 심사 절차 (Process of Eligibility)</a></li><li class="depth-2"><a href="#2-️-jsa-제2단계-청문-및-공개-검증-hearings--public-vetting" data-for="2-️-jsa-제2단계-청문-및-공개-검증-hearings--public-vetting">2. ⚖️ JSA 제2단계: 청문 및 공개 검증 (Hearings &amp; Public Vetting)</a></li><li class="depth-2"><a href="#3--보완-문서-jsa-부적격-판정-기준-예시" data-for="3--보완-문서-jsa-부적격-판정-기준-예시">3. 📜 [보완 문서] JSA 부적격 판정 기준 예시</a></li><li class="depth-1"><a href="#1-개정안의-전략적-강점-strategic-strengths" data-for="1-개정안의-전략적-강점-strategic-strengths">1. 개정안의 전략적 강점 (Strategic Strengths)</a></li><li class="depth-1"><a href="#2-단계별-비판적-검토-critical-review-of-steps" data-for="2-단계별-비판적-검토-critical-review-of-steps">2. 단계별 비판적 검토 (Critical Review of Steps)</a></li><li class="depth-2"><a href="#21-제1단계-적격성-심사-step-1-3" data-for="21-제1단계-적격성-심사-step-1-3">2.1 제1단계: 적격성 심사 (Step 1-3)</a></li><li class="depth-2"><a href="#22-제2단계-청문-및-공개-검증-types-a-c" data-for="22-제2단계-청문-및-공개-검증-types-a-c">2.2 제2단계: 청문 및 공개 검증 (Types A-C)</a></li><li class="depth-1"><a href="#3-심층-분석-부적격-판정-기준의-실효성" data-for="3-심층-분석-부적격-판정-기준의-실효성">3. [심층 분석] 부적격 판정 기준의 실효성</a></li><li class="depth-1"><a href="#4-제도적-위험-요소-및-대안-risk--mitigation" data-for="4-제도적-위험-요소-및-대안-risk--mitigation">4. 제도적 위험 요소 및 대안 (Risk &amp; Mitigation)</a></li><li class="depth-1"><a href="#5-최종-결론" data-for="5-최종-결론">5. 최종 결론</a></li></ul></nav></div></dialog></div></div><div style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="reading-settings "><button type="button" class="reading-settings-trigger" aria-label="읽기 설정" title="읽기 설정" aria-haspopup="dialog" aria-controls="reading-settings-dialog" aria-expanded="false"><span aria-hidden="true">Aa</span></button><dialog id="reading-settings-dialog" class="reading-settings-dialog" aria-labelledby="reading-settings-title"><div class="reading-settings-header"><h2 id="reading-settings-title">읽기 설정</h2><button type="button" class="reading-settings-close" aria-label="읽기 설정 닫기"><span aria-hidden="true">×</span></button></div><fieldset><legend>글자 크기</legend><div class="reading-font-controls"><button type="button" data-font-step="-1" aria-label="글자 크기 줄이기">A−</button><output class="reading-font-size" aria-live="polite" aria-label="현재 글자 크기">100%</output><button type="button" data-font-step="1" aria-label="글자 크기 키우기">A+</button></div><button type="button" class="reading-font-reset">기본 크기로 복원</button></fieldset><fieldset><legend>화면 테마</legend><div class="reading-theme-options"><label><input type="radio" name="reading-theme" value="light"/><span>밝게</span></label><label><input type="radio" name="reading-theme" value="dark"/><span>어둡게</span></label><label><input type="radio" name="reading-theme" value="system"/><span>시스템</span></label></div></fieldset><label class="reading-mode-option"><input type="checkbox" class="reading-mode-input"/><span><strong>본문 집중 모드</strong><small>탐색 패널을 숨겨 읽기에 집중해요.</small></span></label></dialog></div></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1154"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1154" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../">홈(Home)</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/">90 볼트 운영</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/">02 일지·브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/">99 정리해야 하는 설정 브레인스토밍</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../90-볼트-운영/02-일지·브레인스토밍/99-정리해야-하는-설정-브레인스토밍/제1권역;-통치와-규범/">제1권역; 통치와 규범</a></div></nav><h1 class="article-title">직무적부심사(JSA) 평가 체계</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-30T14:38:33.474Z">2026년 9월 30일</time><span>18 분 소요</span></p></div></div><article class="popover-hint"><h2 id="️-엘리시움-연방-국가-고시-체계-icx-및-jsa-운영-지침">🏛️ 엘리시움 연방 국가 고시 체계: ICX 및 JSA 운영 지침<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-엘리시움-연방-국가-고시-체계-icx-및-jsa-운영-지침" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="2-️-jsa-job-suitability-assessment-고위공직자-자격고사">2. ⚖️ JSA (Job Suitability Assessment): “고위공직자 자격고사”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-️-jsa-job-suitability-assessment-고위공직자-자격고사" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<blockquote>
+<p><font style="font-weight:bold;">목표:</font> 국가 운영에 필요한 <font style="font-weight:bold;">고도의 전문성</font>과 <font style="font-weight:bold;">도덕적/보안적 무결성</font>을 동시 검증.</p>
+<p><font style="font-weight:bold;">구조:</font> 1차 전문성 필기(논술형) + 2차 적격성 심사(정밀 인사검증)</p>
+</blockquote>
+<h4 id="1단계-전문성-평가-professionalism-exam">[1단계] 전문성 평가 (Professionalism Exam)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1단계-전문성-평가-professionalism-exam" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><em>ICX 합격자 중 상위 성적 보유자만 응시 가능하며, 지망 직렬(행정/입법/사법/군사)별 심화 시험 실시.</em></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">통치 철학:</font> 제국도교의 교리와 연방 헌법의 정합성 논술, 자유와 권위의 균형에 대한 가치관 검증.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">정책 실무:</font> 공공데이터 분석 및 예산 편성 실무. (선택: 경제학 / 마법공학 / 군사전략 / 우주법 등)</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">위기 리더십:</font> 대전이 또는 전면전 상황 가상 시뮬레이션 대응 및 <font style="font-weight:bold;">윤리적 딜레마</font> 해결 능력 테스트.</p>
+</li>
+</ul>
+<h4 id="2단계-적격성-심사-vetting--integrity">[2단계] 적격성 심사 (Vetting &amp; Integrity)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2단계-적격성-심사-vetting--integrity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><em>필기 성적이 우수하더라도 아래 검증 과정을 통과하지 못할 시 임용 불허.</em></p>
+<div class="scroll-x nowrap"><div class="table-container"><table><thead><tr><th><font style="font-weight:bold;">심사 분과</font></th><th><font style="font-weight:bold;">검증 내용</font></th><th><font style="font-weight:bold;">비고</font></th></tr></thead><tbody><tr><td><font style="font-weight:bold;">보안 적격성</font><br/>(Security Clearance)</td><td>• 반체제 단체 및 비인가 결사체 활동 이력 추적<br/>• 타국 및 타 행성계 세력과의 내통 여부 전수 조사</td><td>정보국 주관</td></tr><tr><td><font style="font-weight:bold;">재산 및 윤리</font><br/>(Ethics &amp; Assets)</td><td>• 재산 형성 과정의 투명성 (탈세, 부당 투기 여부)<br/>• 과거 범죄 경력 및 공직자로서의 도덕적 결함 심사</td><td>청문회 수준</td></tr><tr><td><font style="font-weight:bold;">혈통 및 이능</font><br/>(Lineage &amp; Ability)</td><td>• <font style="font-weight:bold;">혈통:</font> 가문의 역사적 오점(반역, 부역 이력) 확인<br/>• <font style="font-weight:bold;">이능:</font> 마력 폭주 위험성 및 정신 오염도 정밀 측정</td><td><font style="font-weight:bold;">세계관 고유</font></td></tr></tbody></table></div></div>
+<hr/>
+<h3 id="-요약-및-행정적-결론">📝 요약 및 행정적 결론<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-요약-및-행정적-결론" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>
+<p><font style="font-weight:bold;">일반 신민 (Voter):</font> ICX 통과가 필수적이며, 이는 “신문을 읽고, 가계부를 쓰며, 대피소를 찾을 줄 아는 지적 수준”을 보증합니다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">통치 엘리트 (Official):</font> ICX 만점에 가까운 지능은 물론, JSA를 통해 <font style="font-weight:bold;">사상적 순수성(보안)</font>과 <font style="font-weight:bold;">신체적 안정성(이능)</font>까지 입증된 “완벽한 신민”만이 칼자루를 쥘 수 있습니다.</p>
+</li>
+</ol>
+<blockquote>
+<p>본 시스템은 <font style="font-weight:bold;">“무지한 표는 국가의 독이며, 검증되지 않은 권력은 재앙이다”</font>라는 연방의 무결성 원칙을 법적으로 실현한 결과물입니다.</p>
+</blockquote>
+<hr class="hr-thick-1"/>
+<h1 id="엘리시움-연방-직무적부심사jsa-체계-비판적-검토-보고서-v10">엘리시움 연방 직무적부심사(JSA) 체계 비판적 검토 보고서 (v1.0)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#엘리시움-연방-직무적부심사jsa-체계-비판적-검토-보고서-v10" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>작성: 연방 선거감독청 및 윤리심사위원회 합동 자문단</p>
+<p>대상: JSA [3단계 검증 및 3유형 청문] 체계안</p>
+<p>핵심 원칙: 엘리트 관료제(Meritocracy), 헌정 수호, 기술-정신 무결성</p>
+<blockquote class="callout note is-collapsible is-collapsed" data-callout="note" data-callout-fold>
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>원문 </p></div>
+                  <div class="fold-callout-icon"></div>
+                </div>
+<div class="callout-content">
+<p><font style="font-weight:bold;">[수석 세계관/헌법 자문 AI]</font>로서, 귀하가 요청하신 <font style="font-weight:bold;">JSA(Job Suitability Assessment; 직무적부심사)</font>의 전체 프로세스를 <font style="font-weight:bold;">[1단계: 적격성 심사 절차]</font>와 <font style="font-weight:bold;">[2단계: 청문 및 검증 유형]</font>으로 나누어 체계화해 드립니다.</p>
+<p>이 절차는 <font style="font-weight:bold;">연방 선거감독청(Federal Election Oversight Agency)</font> 산하 <font style="font-weight:bold;">후보자등록위원회</font>와 <font style="font-weight:bold;">윤리심사위원회</font>가 주관하며, 엘리시움 연방의 통치 철학인 <font style="font-weight:bold;">“검증된 엘리트에 의한 통치”</font>를 실현하는 핵심 행정 절차입니다.</p>
+<hr/>
+<h3 id="1--jsa-제1단계-적격성-심사-절차-process-of-eligibility">1. 📋 JSA 제1단계: 적격성 심사 절차 (Process of Eligibility)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1--jsa-제1단계-적격성-심사-절차-process-of-eligibility" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>JSA의 첫 단계는 <font style="font-weight:bold;">정량적·행정적 필터링</font>입니다. 이 과정은 비공개로 진행되며, 결격 사유가 발견되면 즉시 탈락(Cut-off) 처리됩니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:left;">단계</th><th style="text-align:left;">명칭</th><th style="text-align:left;">주관 및 검증 내용</th><th style="text-align:left;">비고</th></tr></thead><tbody><tr><td style="text-align:left;"><font style="font-weight:bold;">Step 1</font></td><td style="text-align:left;"><font style="font-weight:bold;">기본 자격 확인</font><br/>(Basic Qualification)</td><td style="text-align:left;"><font style="font-weight:bold;">[선거감독청]</font><br/>- <font style="font-weight:bold;">ICX(인지능력 확인 시험)</font> 유효 등급 보유 여부 확인.<br/>- 연방 신민권, 거주 기간, 병역/공역 의무 이행 여부.<br/>- 이중국적 및 해외 영주권 보유 여부(안보 위해성).</td><td style="text-align:left;"><font style="font-weight:bold;">필수 전제</font></td></tr><tr><td style="text-align:left;"><font style="font-weight:bold;">Step 2</font></td><td style="text-align:left;"><font style="font-weight:bold;">전문 역량 평가</font><br/>(Competency Exam)</td><td style="text-align:left;"><font style="font-weight:bold;">[인사혁신처 / 각 직능 협회]</font><br/>- 지원 직렬별 <font style="font-weight:bold;">고등 논술 및 실무 시험</font>.<br/><em>(예: 사법관은 법리 논술, 행정관은 정책 시뮬레이션)</em><br/>- 선출직의 경우, 정당 추천서나 일정 수 이상의 신민 서명.</td><td style="text-align:left;"><font style="font-weight:bold;">P/F 방식</font><br/>(일정 점수 미달 시 탈락)</td></tr><tr><td style="text-align:left;"><font style="font-weight:bold;">Step 3</font></td><td style="text-align:left;"><font style="font-weight:bold;">정밀 신원 검증</font><br/>(Deep Vetting)</td><td style="text-align:left;"><font style="font-weight:bold;">[연방 정보국 &amp; 감사원]</font><br/>- <font style="font-weight:bold;">보안:</font> 반체제 활동, 적성국(B루트 잔존 세력 등) 접촉 이력.<br/>- <font style="font-weight:bold;">재산:</font> 최근 10년간의 자금 흐름, 탈세, 미공개 정보 이용.<br/>- <font style="font-weight:bold;">혈통/이능:</font> 마나 회로의 안정성(폭주 위험), 가문 내 반역 이력.</td><td style="text-align:left;"><font style="font-weight:bold;">가장 높은 탈락률</font></td></tr></tbody></table></div>
+<hr/>
+<h3 id="2-️-jsa-제2단계-청문-및-공개-검증-hearings--public-vetting">2. ⚖️ JSA 제2단계: 청문 및 공개 검증 (Hearings &amp; Public Vetting)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-️-jsa-제2단계-청문-및-공개-검증-hearings--public-vetting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>1단계를 통과한 후보자는 직위의 중요도와 성격에 따라 <font style="font-weight:bold;">3가지 유형의 청문 절차</font> 중 하나를 거치게 됩니다. 이는 <font style="font-weight:bold;">“엘리트의 도덕성과 철학”</font>을 대중과 의회 앞에 증명하는 과정입니다.</p>
+<h4 id="type-a-공개-고위직-인사청문회-public-high-profile-hearing">Type A. 공개 고위직 인사청문회 (Public High-Profile Hearing)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#type-a-공개-고위직-인사청문회-public-high-profile-hearing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<blockquote>
+<p><font style="font-weight:bold;">대상:</font> 연방 황실 직속 기관장, 최고평의회 최고대신(장관급), 대법관, 헌법원장 등 <font style="font-weight:bold;">국가 핵심 요직</font>.</p>
+</blockquote>
+<ul>
+<li><font style="font-weight:bold;">성격:</font> 전 과정이 미디어를 통해 생중계되는 <font style="font-weight:bold;">정치적·도덕적 심판대</font>.</li>
+<li><font style="font-weight:bold;">검증 항목:</font>
+<ul>
+<li><font style="font-weight:bold;">통치 철학:</font> 헌법 가치(자유주의, 신성제국 정체성)에 대한 충성도.</li>
+<li><font style="font-weight:bold;">위기 관리:</font> 대전이, 전쟁 등 국가 비상사태 시의 지휘관적 판단력(압박 면접).</li>
+<li><font style="font-weight:bold;">도덕성:</font> JSA 1단계에서 걸러지지 않은 사생활, 과거 발언, 윤리적 흠결.</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">결정:</font> 연방 총의회(상원/하원)의 표결로 인준 여부 결정.</li>
+</ul>
+<h4 id="type-b-실무-역량-검증-청문회-competency-verification-hearing">Type B. 실무 역량 검증 청문회 (Competency Verification Hearing)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#type-b-실무-역량-검증-청문회-competency-verification-hearing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<blockquote>
+<p><font style="font-weight:bold;">대상:</font> 각 부처의 실국장급 기술 관료, 전문위원회 위원, 공기업 사장 등 <font style="font-weight:bold;">전문직</font>.</p>
+</blockquote>
+<ul>
+<li><font style="font-weight:bold;">성격:</font> 해당 분야 전문가 패널과 의원들이 참여하는 <font style="font-weight:bold;">정책 토론회 및 구술 면접</font>.</li>
+<li><font style="font-weight:bold;">검증 항목:</font>
+<ul>
+<li><font style="font-weight:bold;">전문성:</font> 해당 분야의 기술적 이해도(마법공학, 우주항행, 경제모델 등).</li>
+<li><font style="font-weight:bold;">정책 비전:</font> 구체적인 정책 로드맵과 실행 가능성.</li>
+<li><font style="font-weight:bold;">이해충돌:</font> 직무와 관련된 주식 보유, 민간 기업과의 유착 여부.</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">결정:</font> 소관 상임위원회의 보고서 채택으로 갈음.</li>
+</ul>
+<h4 id="type-c-비공개-보안-청문회-closed-security-hearing">Type C. 비공개 보안 청문회 (Closed Security Hearing)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#type-c-비공개-보안-청문회-closed-security-hearing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<blockquote>
+<p><font style="font-weight:bold;">대상:</font> 국방부, 정보국, 전략자원관리부, 황실 근위대 등 <font style="font-weight:bold;">기밀·안보·이능 관련 특수직</font>.</p>
+</blockquote>
+<ul>
+<li><font style="font-weight:bold;">성격:</font> 철저한 보안 유지 하에 진행되는 <font style="font-weight:bold;">사상 및 보안 등급 심사</font>. (기록은 봉인됨)</li>
+<li><font style="font-weight:bold;">검증 항목:</font>
+<ul>
+<li><font style="font-weight:bold;">충성심:</font> 황실과 연방에 대한 절대적 충성심 검증(마법적 서약 포함 가능).</li>
+<li><font style="font-weight:bold;">정신 방벽:</font> 정신계 마법이나 세뇌에 대한 저항력 테스트.</li>
+<li><font style="font-weight:bold;">차원 오염:</font> 신체 및 영혼의 차원 침식도 정밀 측정(잠재적 괴물화 방지).</li>
+</ul>
+</li>
+<li><font style="font-weight:bold;">결정:</font> 황실 직속 감찰 기구와 소수 의회 지도부의 합의로 결정.</li>
+</ul>
+<hr/>
+<h3 id="3--보완-문서-jsa-부적격-판정-기준-예시">3. 📜 [보완 문서] JSA 부적격 판정 기준 예시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3--보완-문서-jsa-부적격-판정-기준-예시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>JSA를 통과하지 못하는 구체적인 사례를 규정집 형태로 정리하면 설정의 디테일이 살아납니다.</p>
+<blockquote>
+<p><font style="font-weight:bold;">[연방 공직 후보자 부적격 판정 기준 (발췌)]</font></p>
+<ol>
+<li><font style="font-weight:bold;">인지 부조화:</font> ICX 점수는 높으나, JSA 심층 면접에서 논리적 정합성이 결여되거나 심각한 반사회적 인격 장애가 의심되는 경우.</li>
+<li><font style="font-weight:bold;">마력 불안정성 (Flux Instability):</font> 최근 5년 내 마력 폭주(Mana Overload) 사고 이력이 있거나, 정기 검사에서 정신 오염도가 ‘경계’ 수준 이상인 경우.</li>
+<li><font style="font-weight:bold;">헌정 부정:</font> 연방 헌법의 핵심 가치(권리장전, 황실의 권위 등)를 공개적으로 부정하거나, 반국가 단체(B루트 추종자 등)에 후원한 이력.</li>
+<li><font style="font-weight:bold;">금융 투명성 결여:</font> 설명할 수 없는 재산 증식이 확인되거나, 해외(타 성계/자치령) 비밀 계좌 보유가 발각된 경우.</li>
+</ol>
+</blockquote>
+<p>이 체계는 <font style="font-weight:bold;">“능력 있는 자가 권력을 갖되, 그 능력과 도덕성을 끊임없이 의심받고 증명해야 한다”</font>는 엘리시움 연방의 통치 이념을 완벽하게 보여줍니다.</p>
+</div>
+</blockquote>
+<h2 id="1-개정안의-전략적-강점-strategic-strengths">1. 개정안의 전략적 강점 (Strategic Strengths)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-개정안의-전략적-강점-strategic-strengths" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p><font style="font-weight:bold;">다층적 방어선 (Multi-layered Defense):</font> 1단계의 정량적 필터링과 2단계의 정성적 검증을 분리함으로써, 부적격자가 공론장에 진입하여 발생할 수 있는 정치적 소모를 사전에 차단한다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">직무 특성별 맞춤형 청문 (Tailored Hearings):</font> 모든 공직자에게 동일한 잣대를 들이대는 대신, ‘정치적 책임(Type A)’, ‘전문성(Type B)’, ‘안보적 충성(Type C)‘으로 검증의 초점을 분산하여 행정 효율을 극대화했다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">세계관적 리스크 관리:</font> ‘마력 불안정성’과 ‘차원 오염’을 검증 항목에 명시함으로써, 단순한 비리가 아닌 ‘존재론적 재앙’으로부터 연방을 보호하려는 의지가 돋보인다.</p>
+</li>
+</ol>
+<h2 id="2-단계별-비판적-검토-critical-review-of-steps">2. 단계별 비판적 검토 (Critical Review of Steps)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-단계별-비판적-검토-critical-review-of-steps" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="21-제1단계-적격성-심사-step-1-3">2.1 제1단계: 적격성 심사 (Step 1-3)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#21-제1단계-적격성-심사-step-1-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">Step 3 - 정밀 신원 검증 (Deep Vetting):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">비판:</font> “마나 회로의 안정성” 및 “가문 내 반역 이력”은 <font style="font-weight:bold;">연대 책임 및 유전적 차별</font>의 소지가 있다. 이는 능력자가 아닌 신민이나, 루트 2(아류 인류) 출신 귀화자들에게 불공정하게 작용할 수 있다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">보완:</font> 가문의 이력보다는 ‘개인의 현대적 충성도’를 우선하며, 마나 불안정성이 ‘치료 가능한 수준’일 경우 조건부 합격 제도를 도입해야 한다.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="22-제2단계-청문-및-공개-검증-types-a-c">2.2 제2단계: 청문 및 공개 검증 (Types A-C)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#22-제2단계-청문-및-공개-검증-types-a-c" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><font style="font-weight:bold;">Type A (공개 고위직):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">비판:</font> ‘압박 면접’ 형태의 생중계는 후보자의 역량보다는 ‘연설 능력’이나 ‘정치적 쇼맨십’에 좌우될 위험이 크다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">보완:</font> 통치 철학 검증 시, 과거의 실질적인 행정 데이터와 결합된 시뮬레이션 질의를 강화해야 한다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">Type C (비공개 보안):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">비판:</font> “기록은 봉인됨”이라는 원칙이 <font style="font-weight:bold;">‘밀실 인사’</font>나 <font style="font-weight:bold;">‘황실의 사유화’</font>로 악용될 수 있다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">보완:</font> 비공개 청문이라 할지라도, 연방 의회 내 ‘안보특별위원회’ 소수 위원들에게는 암호화된 요약본을 공유하여 최소한의 상호 견제를 유지해야 한다.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-심층-분석-부적격-판정-기준의-실효성">3. [심층 분석] 부적격 판정 기준의 실효성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-심층-분석-부적격-판정-기준의-실효성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p><font style="font-weight:bold;">인지 부조화 (Cognitive Dissonance):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">검토:</font> 논리적 정합성 측정은 주관적일 수 있다. 특정 정치적 견해를 ‘인지 부조화’로 몰아갈 위험이 있다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">대안:</font> AI 기반의 ‘발언 일관성 분석’ 및 ‘논리 모순 탐지 알고리즘’을 사용하여 검증의 객관성을 확보한다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">마력 불안정성 (Flux Instability):</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">검토:</font> 이는 공직자의 신체적 결함인가, 아니면 정신적 결함인가?</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">대안:</font> 단순 이력을 넘어, 현재의 ‘정신적 방벽 강도’와 ‘마력 제어 능력’을 실시간 시뮬레이션으로 테스트하여 판정한다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">금융 투명성 결여:</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">검토:</font> 타 성계(루트 2 세력권 등)와의 비밀 계좌는 안보와 직결된다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">대안:</font> 암호화폐 및 위상 전이 자산에 대한 ‘전 은하적 추적망’과의 공조를 JSA의 필수 전제로 둔다.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-제도적-위험-요소-및-대안-risk--mitigation">4. 제도적 위험 요소 및 대안 (Risk &amp; Mitigation)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-제도적-위험-요소-및-대안-risk--mitigation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p><font style="font-weight:bold;">엘리트 카르텔의 고착화:</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">위험:</font> ICX와 JSA를 모두 통과한 이들이 자신들만의 ‘특권 계층’을 형성하여 신규 진입자를 배척할 수 있다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">대안:</font> ‘JSA 준비 과정’의 투명한 공개와 더불어, 자수성가형 인재를 위한 ‘특별 역량 검증 트랙’을 상설 운영한다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><font style="font-weight:bold;">Type C 청문의 남용:</font></p>
+<ul>
+<li>
+<p><font style="font-weight:bold;">위험:</font> 안보를 이유로 중요한 직책을 Type C로 분류하여 대중의 감시를 피하려 할 수 있다.</p>
+</li>
+<li>
+<p><font style="font-weight:bold;">대안:</font> 특정 직위를 Type C로 분류할 때는 연방 헌법원의 ‘안보 적합성 판결’을 거치도록 강제한다.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="5-최종-결론">5. 최종 결론<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-최종-결론" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>JSA는 <font style="font-weight:bold;">“권력은 검증의 대가이다”</font>라는 엘리시움의 통치 철학을 완성하는 도구입니다.</p>
+<p>특히 <font style="font-weight:bold;">‘정신 방벽 테스트’</font>나 <font style="font-weight:bold;">‘차원 오염 측정’</font>과 같은 요소는 단순한 도덕성을 넘어 ‘종의 안전’을 지키는 필수적인 절차입니다. 다만, 이 검증 과정이 특정 가문의 기득권을 지키는 ‘장벽’이 되지 않도록, 검증 기준의 객관화(AI 도입)와 사후 감시 체계가 반드시 병행되어야 합니다.</p>
+<p><font style="font-weight:bold;">자문 제언:</font> JSA 탈락자 중 ‘역량은 뛰어나나 보안상 결격’인 인재들을 위해, 비민감 분야에서 전문성을 발휘할 수 있는 ‘보조 관료’ 트랙을 별도로 운영하여 인적 자원 낭비를 방지할 것을 권장합니다.</p></article><hr/><div class="page-footer"><dialog id="quartz-image-viewer" class="image-viewer" aria-label="이미지 확대 보기"><div class="image-viewer-toolbar"><p class="image-viewer-title">이미지</p><div class="image-viewer-controls" role="group" aria-label="이미지 보기 설정"><button type="button" data-image-action="out" aria-label="이미지 축소" title="축소 (-)">−</button><output class="image-viewer-scale" aria-label="이미지 배율">100%</output><button type="button" data-image-action="in" aria-label="이미지 확대" title="확대 (+)">+</button><button type="button" data-image-action="fit" title="화면에 맞추기 (0)">맞춤</button><a class="image-viewer-original" target="_blank" rel="noopener noreferrer">원본 ↗</a><button type="button" data-image-action="close" aria-label="이미지 확대 보기 닫기" title="닫기 (Esc)" autofocus>×</button></div></div><div class="image-viewer-viewport" tabindex="0" aria-label="이미지 영역. 확대 후 드래그하거나 방향키로 이동할 수 있습니다."><img class="image-viewer-image" alt draggable="false"/><p class="image-viewer-error" role="status" hidden>이미지를 불러오지 못했어요. 원본을 열어 확인해 주세요.</p></div><p class="image-viewer-hint">버튼·두 손가락으로 확대 · 드래그로 이동</p></dialog></div></div><div class="right sidebar"><div class="graph"><button type="button" class="graph-header" aria-expanded="true" aria-controls="graph-panel-452"><h3>그래프 뷰</h3><svg class="fold" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="graph-outer" id="graph-panel-452"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button type="button" class="global-graph-icon" aria-label="Global Graph" aria-haspopup="dialog"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer" role="dialog" aria-modal="true" aria-label="그래프 뷰"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div><button type="button" class="global-graph-close" aria-label="전체 그래프 닫기"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-753" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="toc-753" class="toc-content"><li class="depth-1"><a href="#️-엘리시움-연방-국가-고시-체계-icx-및-jsa-운영-지침" data-for="️-엘리시움-연방-국가-고시-체계-icx-및-jsa-운영-지침">🏛️ 엘리시움 연방 국가 고시 체계: ICX 및 JSA 운영 지침</a></li><li class="depth-2"><a href="#2-️-jsa-job-suitability-assessment-고위공직자-자격고사" data-for="2-️-jsa-job-suitability-assessment-고위공직자-자격고사">2. ⚖️ JSA (Job Suitability Assessment): “고위공직자 자격고사”</a></li><li class="depth-2"><a href="#-요약-및-행정적-결론" data-for="-요약-및-행정적-결론">📝 요약 및 행정적 결론</a></li><li class="depth-0"><a href="#엘리시움-연방-직무적부심사jsa-체계-비판적-검토-보고서-v10" data-for="엘리시움-연방-직무적부심사jsa-체계-비판적-검토-보고서-v10">엘리시움 연방 직무적부심사(JSA) 체계 비판적 검토 보고서 (v1.0)</a></li><li class="depth-2"><a href="#1--jsa-제1단계-적격성-심사-절차-process-of-eligibility" data-for="1--jsa-제1단계-적격성-심사-절차-process-of-eligibility">1. 📋 JSA 제1단계: 적격성 심사 절차 (Process of Eligibility)</a></li><li class="depth-2"><a href="#2-️-jsa-제2단계-청문-및-공개-검증-hearings--public-vetting" data-for="2-️-jsa-제2단계-청문-및-공개-검증-hearings--public-vetting">2. ⚖️ JSA 제2단계: 청문 및 공개 검증 (Hearings &amp; Public Vetting)</a></li><li class="depth-2"><a href="#3--보완-문서-jsa-부적격-판정-기준-예시" data-for="3--보완-문서-jsa-부적격-판정-기준-예시">3. 📜 [보완 문서] JSA 부적격 판정 기준 예시</a></li><li class="depth-1"><a href="#1-개정안의-전략적-강점-strategic-strengths" data-for="1-개정안의-전략적-강점-strategic-strengths">1. 개정안의 전략적 강점 (Strategic Strengths)</a></li><li class="depth-1"><a href="#2-단계별-비판적-검토-critical-review-of-steps" data-for="2-단계별-비판적-검토-critical-review-of-steps">2. 단계별 비판적 검토 (Critical Review of Steps)</a></li><li class="depth-2"><a href="#21-제1단계-적격성-심사-step-1-3" data-for="21-제1단계-적격성-심사-step-1-3">2.1 제1단계: 적격성 심사 (Step 1-3)</a></li><li class="depth-2"><a href="#22-제2단계-청문-및-공개-검증-types-a-c" data-for="22-제2단계-청문-및-공개-검증-types-a-c">2.2 제2단계: 청문 및 공개 검증 (Types A-C)</a></li><li class="depth-1"><a href="#3-심층-분석-부적격-판정-기준의-실효성" data-for="3-심층-분석-부적격-판정-기준의-실효성">3. [심층 분석] 부적격 판정 기준의 실효성</a></li><li class="depth-1"><a href="#4-제도적-위험-요소-및-대안-risk--mitigation" data-for="4-제도적-위험-요소-및-대안-risk--mitigation">4. 제도적 위험 요소 및 대안 (Risk &amp; Mitigation)</a></li><li class="depth-1"><a href="#5-최종-결론" data-for="5-최종-결론">5. 최종 결론</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../../postscript.js" type="module" data-persist="true"></script></html>
