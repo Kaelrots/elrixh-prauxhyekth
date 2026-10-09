@@ -36,6 +36,24 @@ jobs:
       - name: Run mirror_assets.py
         run: python mirror_assets.py
       # ---- 여기까지 추가 ----
+      - name: Read approved ELP transition configuration
+        id: elp-transition
+        run: node scripts/elp-legacy-transition.mjs --gate config/elp-legacy-transition.json
+      - name: Check out approved ELP output
+        if: steps.elp-transition.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: Kaelrots/elrixh-prauxhyekth-site
+          ref: ${{ steps.elp-transition.outputs.target_commit }}
+          path: .elp-target-site
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.elp-site.json
+            /site/
+      - name: Preserve old pages and add verified ELP document redirects
+        if: steps.elp-transition.outputs.enabled == 'true'
+        run: node scripts/elp-legacy-transition.mjs --apply config/elp-legacy-transition.json public .elp-target-site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
